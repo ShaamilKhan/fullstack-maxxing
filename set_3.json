@@ -1,0 +1,1653 @@
+[
+  {
+    "id": "q0241",
+    "topic": "TypeScript",
+    "question": "Default access modifier in TypeScript?",
+    "options": [
+      "A. public",
+      "B. private",
+      "C. protected"
+    ],
+    "answer_index": 0,
+    "explanation": "TypeScript supports three access modifiers: public (default, accessible everywhere), private (only within the declaring class), and protected (within the class and its subclasses). These are compile-time constraints; JavaScript output does not enforce them at runtime.",
+    "corrected": false
+  },
+  {
+    "id": "q0242",
+    "topic": "JavaScript",
+    "question": "What is async/await?",
+    "options": [
+      "A. New syntax to write JavaScript promises",
+      "B. New syntax to consume JavaScript promises",
+      "C. New syntax to consume asynchronous callbacks"
+    ],
+    "answer_index": 1,
+    "explanation": "A Promise represents the eventual completion or failure of an async operation. It has three states: pending, fulfilled (resolved), or rejected. Once settled, the state is immutable — you cannot re-resolve or re-reject it. Use .then() for success and .catch() for errors.",
+    "corrected": false
+  },
+  {
+    "id": "q0243",
+    "topic": "HTML & CSS",
+    "question": "Which of the following is an attribute CSS selector?",
+    "options": [
+      "A. [selector]",
+      "B. .selector",
+      "C. #selector"
+    ],
+    "answer_index": 0,
+    "explanation": "\"[selector]\" is correct. The distractors (\".selector\" and \"#selector\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"[selector]\" in HTML & CSS distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0244",
+    "topic": "React",
+    "question": "When is it recommended to pass this.setState a function instead of an object?",
+    "options": [
+      "A. When the new state should completely replace the old state.",
+      "B. When the new state does not depend on the old state.",
+      "C. When the new state depends on the old state."
+    ],
+    "answer_index": 2,
+    "explanation": "The correct answer is \"When the new state depends on the old state.\". The other options (\"When the new state should completely replace the old state.\", \"When the new state does not depend on the old state.\") do not accurately represent the concept described. This is a standard principle in React — recognising \"When the new state depends on the old state.\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q0245",
+    "topic": "JavaScript",
+    "question": "A promise represents what?",
+    "options": [
+      "A. A single value in the future",
+      "B. Multiple values in the present",
+      "C. Multiple values in the future",
+      "D. A single value in the present"
+    ],
+    "answer_index": 0,
+    "explanation": "A promise represents the eventual completion (or failure) of a single asynchronous operation and its resulting value.",
+    "corrected": false
+  },
+  {
+    "id": "q0246",
+    "topic": "HTML & CSS",
+    "question": "Can a component be styled with a global styled sheet?",
+    "options": [
+      "A. Only function components can be styled with a global styled sheet",
+      "B. Only if the component returns HTML elements",
+      "C. Yes",
+      "D. No"
+    ],
+    "answer_index": 2,
+    "explanation": "The correct answer is \"Yes\". The other options (\"Only function components can be styled with a global styled sheet\", \"Only if the component returns HTML elements\") do not accurately represent the concept described. This is a standard principle in HTML & CSS — recognising \"Yes\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q0247",
+    "topic": "Angular",
+    "question": "Where should you sort and filter data?",
+    "options": [
+      "A. In a directive",
+      "B. In a pipe",
+      "C. In your component",
+      "D. In a filter"
+    ],
+    "answer_index": 2,
+    "explanation": "The correct answer is \"In your component\". The other options (\"In a directive\", \"In a pipe\") do not accurately represent the concept described. This is a standard principle in Angular — recognising \"In your component\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q0248",
+    "topic": "Core Java & OOP",
+    "question": "What's the right syntax to assign the function doSomething as the handler of a click event?",
+    "options": [
+      "A. onClick={doSomething}",
+      "B. onClick={() => doSomething}",
+      "C. onClick={doSomething()}"
+    ],
+    "answer_index": 0,
+    "explanation": "\"onClick={doSomething}\" is correct. The distractors (\"onClick={() => doSomething}\" and \"onClick={doSomething()}\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"onClick={doSomething}\" in Core Java & OOP distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0249",
+    "topic": "TypeScript",
+    "question": "Assuming you define the statement: \"var person: string;\" TypeScript will alert you that there is an error if you enter which additional code?",
+    "options": [
+      "A. person = { name: 'Colleen', age: 25; }",
+      "B. person = 0",
+      "C. person = ['Colleen', 'John'];",
+      "D. All of the above"
+    ],
+    "answer_index": 3,
+    "explanation": "The correct answer is \"All of the above\". The other options (\"person = { name: 'Colleen', age: 25; }\", \"person = 0\") do not accurately represent the concept described. This is a standard principle in TypeScript — recognising \"All of the above\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q0250",
+    "topic": "Core Java & OOP",
+    "question": "What is the format of the data returned by the JSON Server API?",
+    "options": [
+      "A. YAML",
+      "B. XML",
+      "C. JSON"
+    ],
+    "answer_index": 2,
+    "explanation": "The answer is \"JSON\". This is the standard definition or correct identification for the concept described. Review the Core Java & OOP documentation to understand how \"JSON\" fits into the broader context.",
+    "corrected": false
+  },
+  {
+    "id": "q0251",
+    "topic": "React",
+    "question": "What syntax do you use to render the App component into an HTML element with id \"root\"?",
+    "options": [
+      "A. ReactDOM.render(App, document.getElementById(\"root\"));",
+      "B. React.render(App, document.getElementById(\"root\"));",
+      "C. ReactDOM.mountNode(<App />, document.getElementById(\"root\"));",
+      "D. ReactDOM.render(<App />, document.getElementById(\"root\"));"
+    ],
+    "answer_index": 3,
+    "explanation": "render() is the only mandatory method in a React class component. It must return a React element (JSX), null, or a fragment. React calls render() on every state or props change; keeping it pure (no side effects) ensures predictable re-rendering.",
+    "corrected": false
+  },
+  {
+    "id": "q0252",
+    "topic": "React",
+    "question": "What function can be used to change the state of a React component?",
+    "options": [
+      "A. this.state = {}",
+      "B. this.setState",
+      "C. this.changeState"
+    ],
+    "answer_index": 1,
+    "explanation": "\"this.setState\" is correct. The distractors (\"this.state = {}\" and \"this.changeState\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"this.setState\" in React distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0253",
+    "topic": "Core Java & OOP",
+    "question": "What can we do if components A and B are siblings and they require access to the same state element?",
+    "options": [
+      "A. Restructure the application to have A and B be related differently",
+      "B. Place the state in either A or B",
+      "C. Place the state in a third component C that is a sibling to A and B",
+      "D. Place the state in the parent component of A and B"
+    ],
+    "answer_index": 3,
+    "explanation": "\"Place the state in the parent component of A and B\" is correct. The distractors (\"Restructure the application to have A and B be related differently\" and \"Place the state in either A or B\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"Place the state in the parent component of A and B\" in Core Java & OOP distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0254",
+    "topic": "TypeScript",
+    "question": "What is the name of the file that manages TypeScript projects?",
+    "options": [
+      "A. tsproj.config",
+      "B. tsmeta.json",
+      "C. tsconfig.json",
+      "D. package.json"
+    ],
+    "answer_index": 2,
+    "explanation": "tsconfig.json is the TypeScript project configuration file. It controls compiler options (target ES version, strict mode, module system), file inclusion/exclusion, and path aliases. Running tsc with no arguments uses tsconfig.json from the current directory.",
+    "corrected": true
+  },
+  {
+    "id": "q0255",
+    "topic": "TypeScript",
+    "question": "When dealing with asynchronous functions, what type of generic must your return type be?",
+    "options": [
+      "A. Async",
+      "B. Promise",
+      "C. Array",
+      "D. AsyncAwait"
+    ],
+    "answer_index": 1,
+    "explanation": "A Promise represents the eventual completion or failure of an async operation. It has three states: pending, fulfilled (resolved), or rejected. Once settled, the state is immutable — you cannot re-resolve or re-reject it. Use .then() for success and .catch() for errors.",
+    "corrected": false
+  },
+  {
+    "id": "q0256",
+    "topic": "Node.js & Express",
+    "question": "What tool installs type declaration files?",
+    "options": [
+      "A. Duck",
+      "B. npm",
+      "C. Ruby",
+      "D. NuGet",
+      "E. Async"
+    ],
+    "answer_index": 1,
+    "explanation": "\"npm\" is correct. The distractors (\"Duck\" and \"Ruby\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"npm\" in Node.js & Express distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0257",
+    "topic": "JavaScript",
+    "question": "What should appear to the left of the arrow in an arrow function?",
+    "options": [
+      "A. Function name",
+      "B. Function parameters",
+      "C. Curly braces",
+      "D. Function return value",
+      "E. Number of function parameters"
+    ],
+    "answer_index": 1,
+    "explanation": "\"Function parameters\" is correct. The distractors (\"Function name\" and \"Curly braces\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"Function parameters\" in JavaScript distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0258",
+    "topic": "Core Java & OOP",
+    "question": "What character separates a variable from its type annotation in a declaration?",
+    "options": [
+      "A. #",
+      "B. $",
+      "C. %",
+      "D. :"
+    ],
+    "answer_index": 3,
+    "explanation": "Java annotations are declared with @interface. Elements inside look like method declarations but have no body; default values are set with default keyword. All annotations implicitly extend java.lang.annotation.Annotation and cannot have an explicit extends clause.",
+    "corrected": false
+  },
+  {
+    "id": "q0259",
+    "topic": "TypeScript",
+    "question": "How would you define a string type variable with the value bar in TypeScript?",
+    "options": [
+      "A. let string: foo = 'bar';",
+      "B. let foo:string = 'bar';",
+      "C. let string foo = 'bar';",
+      "D. let foo (string) = 'bar';"
+    ],
+    "answer_index": 1,
+    "explanation": "\"let foo:string = 'bar';\" is correct. The distractors (\"let string: foo = 'bar';\" and \"let string foo = 'bar';\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"let foo:string = 'bar';\" in TypeScript distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0260",
+    "topic": "JavaScript",
+    "question": "What keyword requires a variable to be declared before it's used?",
+    "options": [
+      "A. let",
+      "B. dim",
+      "C. declare",
+      "D. set"
+    ],
+    "answer_index": 0,
+    "explanation": "\"let\" is correct. The distractors (\"dim\" and \"declare\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"let\" in JavaScript distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0261",
+    "topic": "TypeScript",
+    "question": "What keyword declares a class member in the class rather than an instance of the class?",
+    "options": [
+      "A. enum",
+      "B. static",
+      "C. intersection",
+      "D. function",
+      "E. async"
+    ],
+    "answer_index": 1,
+    "explanation": "\"static\" is correct. The distractors (\"enum\" and \"intersection\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"static\" in TypeScript distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0262",
+    "topic": "JavaScript",
+    "question": "Within which function scope would a variable that you declare using the keyword var cover?",
+    "options": [
+      "A. Within the entire function scope",
+      "B. Within an if statement scope",
+      "C. Within a for loop scope",
+      "D. Within a while loop scope"
+    ],
+    "answer_index": 0,
+    "explanation": "The correct answer is \"Within the entire function scope\". The other options (\"Within an if statement scope\", \"Within a for loop scope\") do not accurately represent the concept described. This is a standard principle in JavaScript — recognising \"Within the entire function scope\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q0263",
+    "topic": "Core Java & OOP",
+    "question": "What keyword lets you derive a subclass from a superclass?",
+    "options": [
+      "A. stretches",
+      "B. extends",
+      "C. sub",
+      "D. follows",
+      "E. buildsUpon"
+    ],
+    "answer_index": 1,
+    "explanation": "\"extends\" is correct. The distractors (\"stretches\" and \"sub\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"extends\" in Core Java & OOP distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0264",
+    "topic": "Core Java & OOP",
+    "question": "EventEmitter class's simple interface, which basically encompasses two methods, can be used to trigger custom events and listen to events as well.",
+    "options": [
+      "A. exit()",
+      "B. superscript()",
+      "C. subscribe()",
+      "D. emit()"
+    ],
+    "answer_index": 2,
+    "explanation": "The correct answer is \"subscribe()\". The other options (\"exit()\", \"superscript()\") do not accurately represent the concept described. This is a standard principle in Core Java & OOP — recognising \"subscribe()\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q0265",
+    "topic": "Node.js & Express",
+    "question": "Route ______ allow us to pass values in our URL to our component so we can dynamically change our view content.",
+    "options": [
+      "A. pipes",
+      "B. modules",
+      "C. variables",
+      "D. parameters"
+    ],
+    "answer_index": 3,
+    "explanation": "The correct answer is \"parameters\". The other options (\"pipes\", \"modules\") do not accurately represent the concept described. This is a standard principle in Node.js & Express — recognising \"parameters\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q0266",
+    "topic": "JavaScript",
+    "question": "A promise represents the final result of an ______ operation.",
+    "options": [
+      "A. asynchronous",
+      "B. synchronous"
+    ],
+    "answer_index": 0,
+    "explanation": "A promise represents the eventual completion (or failure) of a single asynchronous operation and its resulting value.",
+    "corrected": false
+  },
+  {
+    "id": "q0267",
+    "topic": "JavaScript",
+    "question": "The promise becomes ______ after resolving or rejecting.",
+    "options": [
+      "A. mutable",
+      "B. ignored",
+      "C. immutable",
+      "D. recurring"
+    ],
+    "answer_index": 2,
+    "explanation": "A Promise represents the eventual completion or failure of an async operation. It has three states: pending, fulfilled (resolved), or rejected. Once settled, the state is immutable — you cannot re-resolve or re-reject it. Use .then() for success and .catch() for errors.",
+    "corrected": false
+  },
+  {
+    "id": "q0268",
+    "topic": "HTML & CSS",
+    "question": "If you chain multiple pipes together, they are executed ______.",
+    "options": [
+      "A. in parallel",
+      "B. LIFO order",
+      "C. in the order in which you specify them",
+      "D. none of above"
+    ],
+    "answer_index": 2,
+    "explanation": "The correct answer is \"in the order in which you specify them\". The other options (\"in parallel\", \"LIFO order\") do not accurately represent the concept described. This is a standard principle in HTML & CSS — recognising \"in the order in which you specify them\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q0269",
+    "topic": "JavaScript",
+    "question": "The ______ filter waits for a promise and returns the most recent value received. It then updates the view.",
+    "options": [
+      "A. sync",
+      "B. async",
+      "C. promise",
+      "D. custom"
+    ],
+    "answer_index": 1,
+    "explanation": "A Promise represents the eventual completion or failure of an async operation. It has three states: pending, fulfilled (resolved), or rejected. Once settled, the state is immutable — you cannot re-resolve or re-reject it. Use .then() for success and .catch() for errors.",
+    "corrected": false
+  },
+  {
+    "id": "q0270",
+    "topic": "HTML & CSS",
+    "question": "Data bindings are applied as ______ or as special sequences of characters in strings.",
+    "options": [
+      "A. expressions",
+      "B. attributes on HTML elements",
+      "C. elements itself",
+      "D. none of above"
+    ],
+    "answer_index": 1,
+    "explanation": "The correct answer is \"attributes on HTML elements\". The other options (\"expressions\", \"elements itself\") do not accurately represent the concept described. This is a standard principle in HTML & CSS — recognising \"attributes on HTML elements\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q0271",
+    "topic": "JavaScript",
+    "question": "A data binding has these four parts:",
+    "options": [
+      "A. host element, curly brackets, target, expression",
+      "B. host element, square brackets, target, evaluation",
+      "C. host element, square brackets, target, expression",
+      "D. host element, parentheses, target, expression"
+    ],
+    "answer_index": 2,
+    "explanation": "The correct answer is \"host element, square brackets, target, expression\". The other options (\"host element, curly brackets, target, expression\", \"host element, square brackets, target, evaluation\") do not accurately represent the concept described. This is a standard principle in JavaScript — recognising \"host element, square brackets, target, expression\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q0272",
+    "topic": "HTML & CSS",
+    "question": "Attribute binding is similar to property binding but is tied to the ______ rather than the DOM property.",
+    "options": [
+      "A. Page attribute",
+      "B. DOM attribute",
+      "C. Root attribute",
+      "D. HTML attribute"
+    ],
+    "answer_index": 3,
+    "explanation": "The correct answer is \"HTML attribute\". The other options (\"Page attribute\", \"DOM attribute\") do not accurately represent the concept described. This is a standard principle in HTML & CSS — recognising \"HTML attribute\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q0273",
+    "topic": "HTML & CSS",
+    "question": "Using the ______ animation function, the parent animation can allow the child animation to run at the exact correct time.",
+    "options": [
+      "A. animateChild",
+      "B. childAnimate",
+      "C. animateInner",
+      "D. innerChild"
+    ],
+    "answer_index": 0,
+    "explanation": "The correct answer is \"animateChild\". The other options (\"childAnimate\", \"animateInner\") do not accurately represent the concept described. This is a standard principle in HTML & CSS — recognising \"animateChild\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q0274",
+    "topic": "JavaScript",
+    "question": "Animations are fired using animation property bindings which are prefixed with an ______ symbol.",
+    "options": [
+      "A. &",
+      "B. #",
+      "C. $",
+      "D. @"
+    ],
+    "answer_index": 3,
+    "explanation": "The correct answer is \"@\". The other options (\"&\", \"#\") do not accurately represent the concept described. This is a standard principle in JavaScript — recognising \"@\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q0275",
+    "topic": "HTML & CSS",
+    "question": "It's always possible to make use of animation input parameters by setting more data via the ______ property.",
+    "options": [
+      "A. options.param",
+      "B. option.params",
+      "C. option.param",
+      "D. options.params"
+    ],
+    "answer_index": 3,
+    "explanation": "The correct answer is \"options.params\". The other options (\"options.param\", \"option.params\") do not accurately represent the concept described. This is a standard principle in HTML & CSS — recognising \"options.params\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q0276",
+    "topic": "HTML & CSS",
+    "question": "Which bootstrap styles are used to create a vertical pills navigation?",
+    "options": [
+      "A. .nav, .nav-tabs",
+      "B. .nav, .nav-pills",
+      "C. .nav, .nav-pills, .nav-stacked",
+      "D. .nav, .nav-tabs, .nav-justified"
+    ],
+    "answer_index": 2,
+    "explanation": "\".nav, .nav-pills, .nav-stacked\" is correct. The distractors (\".nav, .nav-tabs\" and \".nav, .nav-pills\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \".nav, .nav-pills, .nav-stacked\" in HTML & CSS distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0277",
+    "topic": "HTML & CSS",
+    "question": "Which bootstrap styles are used to create a justified tabs navigation?",
+    "options": [
+      "A. .nav, .nav-tabs",
+      "B. .nav, .nav-pills",
+      "C. .nav, .nav-pills, .nav-stacked",
+      "D. .nav, .nav-tabs, .nav-justified"
+    ],
+    "answer_index": 3,
+    "explanation": "Bootstrap navigation tabs use <ul class='nav nav-tabs'> as the wrapper. Each tab is an <li class='nav-item'> containing an <a class='nav-link'>. The active tab gets the .active class. Tab switching typically requires Bootstrap's JavaScript.",
+    "corrected": false
+  },
+  {
+    "id": "q0278",
+    "topic": "Core Java & OOP",
+    "question": "Which class indicates a dropdown menu?",
+    "options": [
+      "A. .dropdown-list",
+      "B. .select",
+      "C. .dropdown"
+    ],
+    "answer_index": 2,
+    "explanation": "\".dropdown\" is correct. The distractors (\".dropdown-list\" and \".select\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \".dropdown\" in Core Java & OOP distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0279",
+    "topic": "HTML & CSS",
+    "question": "Bootstrap's grid system allows up to ______.",
+    "options": [
+      "A. 6 columns across the page",
+      "B. 12 columns across the page",
+      "C. 8 columns across the page",
+      "D. 16 columns across the page"
+    ],
+    "answer_index": 1,
+    "explanation": "Bootstrap's grid uses 12 equal columns. Column classes (col-sm-4, col-md-6, etc.) specify how many of the 12 columns an element spans. Columns within a row must sum to 12. The grid is responsive — column widths change at breakpoints (sm, md, lg, xl).",
+    "corrected": false
+  },
+  {
+    "id": "q0280",
+    "topic": "HTML & CSS",
+    "question": "Which class makes an image automatically adjust to fit the size of the screen?",
+    "options": [
+      "A. .img-res-image",
+      "B. .img-responsive-image",
+      "C. .img-responsive",
+      "D. .img-res"
+    ],
+    "answer_index": 2,
+    "explanation": "Bootstrap 3's .img-responsive makes images scale with their container (max-width:100%, height:auto). Bootstrap 4+ renames this to .img-fluid. It prevents images from overflowing their containers on small screens.",
+    "corrected": false
+  },
+  {
+    "id": "q0281",
+    "topic": "Core Java & OOP",
+    "question": "Which class should be used to indicate a button group?",
+    "options": [
+      "A. btn-group-buttons",
+      "B. btn-group",
+      "C. btn-grp",
+      "D. btn-buttons"
+    ],
+    "answer_index": 1,
+    "explanation": "\"btn-group\" is correct. The distractors (\"btn-group-buttons\" and \"btn-grp\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"btn-group\" in Core Java & OOP distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0282",
+    "topic": "Spring Core",
+    "question": "Expression Language is the part of Core Container in Spring Framework.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "explanation": "This statement is TRUE. Expression Language is the part of Core Container in Spring Framework is correct behaviour in Spring Core. Understanding when this holds (and its exceptions) is essential for assessments.",
+    "corrected": false
+  },
+  {
+    "id": "q0283",
+    "topic": "Spring Core",
+    "question": "AOP is the part of Core Container in Spring Framework.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 1,
+    "explanation": "This statement is FALSE. AOP is the part of Core Container in Spring Framework does not accurately describe the behaviour in Spring Core. Make sure you understand the correct behaviour to avoid this common misconception.",
+    "corrected": false
+  },
+  {
+    "id": "q0284",
+    "topic": "Spring Core",
+    "question": "In which Spring version has Spring Expression Language been supported?",
+    "options": [
+      "A. Spring 2.0",
+      "B. Spring 2.5",
+      "C. Spring 3.0",
+      "D. Spring 4.0"
+    ],
+    "answer_index": 2,
+    "explanation": "The correct answer is \"Spring 3.0\". The other options (\"Spring 2.0\", \"Spring 2.5\") do not accurately represent the concept described. This is a standard principle in Spring Core — recognising \"Spring 3.0\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q0285",
+    "topic": "Spring Core",
+    "question": "How to get the object of DAO in Spring Framework?",
+    "options": [
+      "A. Using new operator",
+      "B. Using Spring Dependency Injection",
+      "C. Using static factory method",
+      "D. Using reflection API"
+    ],
+    "answer_index": 1,
+    "explanation": "Dependency Injection (DI) is a design pattern where a class receives its dependencies from outside rather than creating them. This decouples components, making them easier to test and swap. Spring, Angular, and NestJS all use DI containers to manage object lifecycles.",
+    "corrected": false
+  },
+  {
+    "id": "q0286",
+    "topic": "Spring Core",
+    "question": "Which is correct for Spring Framework?",
+    "options": [
+      "A. Spring framework is a heavy-weight solution.",
+      "B. Spring framework is a light-weight solution.",
+      "C. Spring framework is only for web applications.",
+      "D. Spring framework does not support dependency injection."
+    ],
+    "answer_index": 1,
+    "explanation": "\"Spring framework is a light-weight solution.\" is correct. The distractors (\"Spring framework is a heavy-weight solution.\" and \"Spring framework is only for web applications.\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"Spring framework is a light-weight solution.\" in Spring Core distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0287",
+    "topic": "Spring Core",
+    "question": "In which Spring version were Java 5 features introduced?",
+    "options": [
+      "A. Spring 2.0",
+      "B. Spring 2.5",
+      "C. Spring 3.0",
+      "D. Spring 4.0"
+    ],
+    "answer_index": 2,
+    "explanation": "The correct answer is \"Spring 3.0\". The other options (\"Spring 2.0\", \"Spring 2.5\") do not accurately represent the concept described. This is a standard principle in Spring Core — recognising \"Spring 3.0\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q0288",
+    "topic": "Spring Core",
+    "question": "Can we integrate Spring with Struts?",
+    "options": [
+      "A. Yes",
+      "B. No"
+    ],
+    "answer_index": 0,
+    "explanation": "The correct answer is \"Yes\". The other options (\"No\") do not accurately represent the concept described. This is a standard principle in Spring Core — recognising \"Yes\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q0289",
+    "topic": "Spring Core",
+    "question": "How to use idref in Spring Framework?",
+    "options": [
+      "A. With setter method only",
+      "B. With constructor argument only",
+      "C. With setter method and constructor argument both",
+      "D. Using annotation only"
+    ],
+    "answer_index": 2,
+    "explanation": "\"With setter method and constructor argument both\" is correct. The distractors (\"With setter method only\" and \"With constructor argument only\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"With setter method and constructor argument both\" in Spring Core distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0290",
+    "topic": "Spring Core",
+    "question": "Which is the part of the Data Access layer in Spring Framework?",
+    "options": [
+      "A. JDBC",
+      "B. ORM",
+      "C. JMS",
+      "D. All of the above"
+    ],
+    "answer_index": 2,
+    "explanation": "\"JMS\" is correct. The distractors (\"JDBC\" and \"ORM\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"JMS\" in Spring Core distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0291",
+    "topic": "Spring Core",
+    "question": "How could you externalize constants from a Spring configuration file or a Spring annotation into a .properties file?",
+    "options": [
+      "A. By using the <context:property-placeholder /> tag",
+      "B. By using the <util:constant /> tag",
+      "C. By declaring the ConstantPlaceholderConfigurer bean post processor",
+      "D. By using the c: namespace"
+    ],
+    "answer_index": 0,
+    "explanation": "Java annotations are declared with @interface. Elements inside look like method declarations but have no body; default values are set with default keyword. All annotations implicitly extend java.lang.annotation.Annotation and cannot have an explicit extends clause.",
+    "corrected": false
+  },
+  {
+    "id": "q0292",
+    "topic": "Core Java & OOP",
+    "question": "To validate Java beans in a web application using annotations.",
+    "options": [
+      "A. XML",
+      "B. Java Based",
+      "C. JSR-303 standard",
+      "D. All of the mentioned"
+    ],
+    "answer_index": 3,
+    "explanation": "Java annotations are declared with @interface. Elements inside look like method declarations but have no body; default values are set with default keyword. All annotations implicitly extend java.lang.annotation.Annotation and cannot have an explicit extends clause.",
+    "corrected": false
+  },
+  {
+    "id": "q0293",
+    "topic": "Core Java & OOP",
+    "question": "Annotation used to indicate a field has to have a minimum of 2 characters.",
+    "options": [
+      "A. @NotNull",
+      "B. @Size",
+      "C. @MaxSize",
+      "D. @Length"
+    ],
+    "answer_index": 1,
+    "explanation": "Java annotations are declared with @interface. Elements inside look like method declarations but have no body; default values are set with default keyword. All annotations implicitly extend java.lang.annotation.Annotation and cannot have an explicit extends clause.",
+    "corrected": false
+  },
+  {
+    "id": "q0294",
+    "topic": "Spring Core",
+    "question": "Spring MVC supports generating Excel files using which of the following libraries?",
+    "options": [
+      "A. Apache POI library",
+      "B. JExcelAPI library",
+      "C. All of the mentioned",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 2,
+    "explanation": "All of the mentioned is the correct answer. Review the question topic (Java OOP) for deeper context.",
+    "corrected": false
+  },
+  {
+    "id": "q0295",
+    "topic": "Core Java & OOP",
+    "question": "By default, XmlViewResolver loads view beans from /WEB-INF/views.xml which is final.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 1,
+    "explanation": "This statement is FALSE. By default, XmlViewResolver loads view beans from /WEB-INF/views.xml which is final does not accurately describe the behaviour in Core Java & OOP. Make sure you understand the correct behaviour to avoid this common misconception.",
+    "corrected": false
+  },
+  {
+    "id": "q0296",
+    "topic": "Core Java & OOP",
+    "question": "SpEL statements are recognizable.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "explanation": "This statement is TRUE. SpEL statements are recognizable is correct behaviour in Core Java & OOP. Understanding when this holds (and its exceptions) is essential for assessments.",
+    "corrected": false
+  },
+  {
+    "id": "q0297",
+    "topic": "Spring Core",
+    "question": "To publish a REST service with Spring.",
+    "options": [
+      "A. Publishing an application's data as a REST service",
+      "B. Accessing data from third-party REST services",
+      "C. None of the mentioned",
+      "D. Both publishing and accessing REST services"
+    ],
+    "answer_index": 3,
+    "explanation": "The correct answer is \"Both publishing and accessing REST services\". The other options (\"Publishing an application's data as a REST service\", \"Accessing data from third-party REST services\") do not accurately represent the concept described. This is a standard principle in Spring Core — recognising \"Both publishing and accessing REST services\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q0298",
+    "topic": "Core Java & OOP",
+    "question": "Which of the following statements is true regarding the @ResponseStatus annotation?",
+    "options": [
+      "A. @ResponseStatus is detected on nested exceptions",
+      "B. The ExceptionHandlerExceptionResolver uses the @ResponseStatus annotation to map exception to HTTP status code",
+      "C. A controller handler annotated with @ResponseStatus is overridden by RedirectView status",
+      "D. The @ResponseStatus annotation can only be used on methods"
+    ],
+    "answer_index": 0,
+    "explanation": "@ResponseStatus is detected on nested exceptions is the correct answer. Review the question topic (Java OOP) for deeper context.",
+    "corrected": false
+  },
+  {
+    "id": "q0299",
+    "topic": "Spring Core",
+    "question": "Default LocaleResolver used by Spring.",
+    "options": [
+      "A. AcceptHeaderLocale",
+      "B. AcceptHeader",
+      "C. AcceptHeaderLocaleResolver",
+      "D. AcceptLocaleResolver"
+    ],
+    "answer_index": 2,
+    "explanation": "The correct answer is \"AcceptHeaderLocaleResolver\". The other options (\"AcceptHeaderLocale\", \"AcceptHeader\") do not accurately represent the concept described. This is a standard principle in Spring Core — recognising \"AcceptHeaderLocaleResolver\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q0300",
+    "topic": "Core Java & OOP",
+    "question": "Alternative way to resolve locales.",
+    "options": [
+      "A. AcceptHeaderLocale",
+      "B. AcceptHeader",
+      "C. AcceptHeaderLocaleResolver",
+      "D. SessionLocaleResolver"
+    ],
+    "answer_index": 3,
+    "explanation": "The correct answer is \"SessionLocaleResolver\". The other options (\"AcceptHeaderLocale\", \"AcceptHeader\") do not accurately represent the concept described. This is a standard principle in Core Java & OOP — recognising \"SessionLocaleResolver\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q0301",
+    "topic": "Core Java & OOP",
+    "question": "Annotation which allows the Jaxb2Marshaller marshaller to detect a class's (object's) fields.",
+    "options": [
+      "A. @XmlRootElement",
+      "B. @XmlRoot",
+      "C. @NotNull",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 0,
+    "explanation": "Java annotations are declared with @interface. Elements inside look like method declarations but have no body; default values are set with default keyword. All annotations implicitly extend java.lang.annotation.Annotation and cannot have an explicit extends clause.",
+    "corrected": false
+  },
+  {
+    "id": "q0302",
+    "topic": "Spring Core",
+    "question": "Considering two classes AccountServiceImpl and ClientServiceImpl not inheriting from each other, what is the result of the pointcut expression execution(* *..AccountServiceImpl.update(..)) && execution(* *..ClientServiceImpl.update(..))?",
+    "options": [
+      "A. No joint point is defined",
+      "B. Matches public update methods of the two classes",
+      "C. Matches any update methods of the two classes regardless of visibility",
+      "D. Matches update methods with one or more arguments"
+    ],
+    "answer_index": 0,
+    "explanation": "\"No joint point is defined\" is the odd one out in this context. The other options (\"Matches public update methods of the two classes\" and \"Matches any update methods of the two classes regardless of visibility\") all correctly describe or belong to the stated category. Knowing what is NOT part of a concept is as important as knowing what is.",
+    "corrected": false
+  },
+  {
+    "id": "q0303",
+    "topic": "Spring Core",
+    "question": "Select the right statement about referring a Spring configuration file inside the package com.example.myapp using ClassPathXmlApplicationContext.",
+    "options": [
+      "A. All of the above",
+      "B. The classpath: prefix could be omitted",
+      "C. Package name using the dot character is not well formatted",
+      "D. The slash character preceding com.example could be omitted"
+    ],
+    "answer_index": 0,
+    "explanation": "\"All of the above\" is correct. The distractors (\"The classpath: prefix could be omitted\" and \"Package name using the dot character is not well formatted\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"All of the above\" in Spring Core distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0304",
+    "topic": "Spring Core",
+    "question": "Select method signatures that match the pointcut execution(* com.test.service..*.*(*))",
+    "options": [
+      "A. void com.test.service.MyServiceImpl.transfert(Money amount)",
+      "B. void com.test.service.account.MyServiceImpl.transfert(Money amount)",
+      "C. void com.test.service.MyServiceImpl.transfert(Account account, Money amount)",
+      "D. void com.test.service.account.MyServiceImpl.transfert(Account account, Money amount)",
+      "E. None of the above"
+    ],
+    "answer_index": 0,
+    "explanation": "\"void com.test.service.MyServiceImpl.transfert(Money amount)\" is correct. The distractors (\"void com.test.service.account.MyServiceImpl.transfert(Money amount)\" and \"void com.test.service.MyServiceImpl.transfert(Account account, Money amount)\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"void com.test.service.MyServiceImpl.transfert(Money amount)\" in Spring Core distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0305",
+    "topic": "Spring Core",
+    "question": "Given the Spring bean configuration with p:bankName=\"NationalBank\", which statement is correct?",
+    "options": [
+      "A. The p namespace has to be declared",
+      "B. NationalBank is a scalar value",
+      "C. Bean id is bankServiceImpl",
+      "D. The BankServiceImpl references a NationalBank bean"
+    ],
+    "answer_index": 0,
+    "explanation": "The correct answer is \"The p namespace has to be declared\". The other options (\"NationalBank is a scalar value\", \"Bean id is bankServiceImpl\") do not accurately represent the concept described. This is a standard principle in Spring Core — recognising \"The p namespace has to be declared\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q0306",
+    "topic": "Spring Core",
+    "question": "Which of the following is correct about dependency injection?",
+    "options": [
+      "A. It helps in decoupling application objects from each other.",
+      "B. It helps in deciding the dependencies of objects.",
+      "C. It stores object states in a database.",
+      "D. It stores object states in the file system."
+    ],
+    "answer_index": 0,
+    "explanation": "It helps in decoupling application objects from each other. is the correct answer. Review the question topic (Java OOP) for deeper context.",
+    "corrected": false
+  },
+  {
+    "id": "q0307",
+    "topic": "Spring Core",
+    "question": "Which are the correct implementation classes of ApplicationContext?",
+    "options": [
+      "A. FileSystemXmlApplicationContext, ClassPathXmlApplicationContext, WebXmlApplicationContext",
+      "B. FileSystemApplicationContext, ClassPathApplicationContext, WebApplicationContext",
+      "C. AdvancedApplicationContext, FileApplicationContext",
+      "D. FileSystemApplicationContext, ClassPathApplicationContext"
+    ],
+    "answer_index": 0,
+    "explanation": "'FileSystemXmlApplicationContext, ClassPathXmlApplicationContext, WebXmlApplicationContext' is correct.",
+    "corrected": false
+  },
+  {
+    "id": "q0308",
+    "topic": "TypeScript",
+    "question": "What is true about <set> collection configuration elements?",
+    "options": [
+      "A. This helps in wiring a list of values, allowing duplicates.",
+      "B. This helps in wiring a list of values but without any duplicates.",
+      "C. This can inject name-value pairs of any type.",
+      "D. This can inject name-value pairs where both are Strings."
+    ],
+    "answer_index": 1,
+    "explanation": "List.of() (Java 9+) returns an immutable list — add/set/remove throw UnsupportedOperationException. It rejects null elements (unlike Arrays.asList). Use List.copyOf() to make an immutable copy of an existing collection.",
+    "corrected": false
+  },
+  {
+    "id": "q0309",
+    "topic": "Spring Core",
+    "question": "What is the constructor mode of autowiring?",
+    "options": [
+      "A. Autowiring by property name",
+      "B. Spring first tries constructor then byType",
+      "C. Autowiring by property type",
+      "D. Similar to byType but applies to constructor arguments"
+    ],
+    "answer_index": 3,
+    "explanation": "The answer is \"Similar to byType but applies to constructor arguments\". This is the standard definition or correct identification for the concept described. Review the Spring Core documentation to understand how \"Similar to byType but applies to constructor arguments\" fits into the broader context.",
+    "corrected": false
+  },
+  {
+    "id": "q0310",
+    "topic": "Spring Core",
+    "question": "What is true about @Autowired annotation?",
+    "options": [
+      "A. It can be used on setter methods",
+      "B. It provides fine-grained control over autowiring",
+      "C. It can be used on arbitrary methods with multiple arguments",
+      "D. All of the above"
+    ],
+    "answer_index": 1,
+    "explanation": "Java annotations are declared with @interface. Elements inside look like method declarations but have no body; default values are set with default keyword. All annotations implicitly extend java.lang.annotation.Annotation and cannot have an explicit extends clause.",
+    "corrected": false
+  },
+  {
+    "id": "q0311",
+    "topic": "Core Java & OOP",
+    "question": "What are the different points where weaving can be applied?",
+    "options": [
+      "A. Compile time, load time",
+      "B. Compile time, run time",
+      "C. Run time",
+      "D. Compile time, load time, run time"
+    ],
+    "answer_index": 3,
+    "explanation": "The answer is \"Compile time, load time, run time\". This is the standard definition or correct identification for the concept described. Review the Core Java & OOP documentation to understand how \"Compile time, load time, run time\" fits into the broader context.",
+    "corrected": false
+  },
+  {
+    "id": "q0312",
+    "topic": "Core Java & OOP",
+    "question": "By default a bean is lazily loaded.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 1,
+    "explanation": "This statement is FALSE. By default a bean is lazily loaded does not accurately describe the behaviour in Core Java & OOP. Make sure you understand the correct behaviour to avoid this common misconception.",
+    "corrected": false
+  },
+  {
+    "id": "q0313",
+    "topic": "JavaScript",
+    "question": "What is the scope of bean in portlet context?",
+    "options": [
+      "A. session",
+      "B. global-session",
+      "C. prototype",
+      "D. request"
+    ],
+    "answer_index": 1,
+    "explanation": "The answer is \"global-session\". This is the standard definition or correct identification for the concept described. Review the JavaScript documentation to understand how \"global-session\" fits into the broader context.",
+    "corrected": false
+  },
+  {
+    "id": "q0314",
+    "topic": "Spring Core",
+    "question": "What is a ContextStartedEvent event?",
+    "options": [
+      "A. This event is published when the Servlet Context is either initialized or refreshed.",
+      "B. This event is published when the HTTP Request is received.",
+      "C. This event is published when the ApplicationContext is started using the start method on the ConfigurableApplicationContext interface.",
+      "D. This event is published when the HTTP Response is returned."
+    ],
+    "answer_index": 2,
+    "explanation": "'This event is published when the ApplicationContext is started using the start method on the ConfigurableApplicationContext interface.' is correct.",
+    "corrected": false
+  },
+  {
+    "id": "q0315",
+    "topic": "Spring Core",
+    "question": "What is ContextStoppedEvent event?",
+    "options": [
+      "A. This event is published when the Servlet Context is either initialized or refreshed.",
+      "B. This event is published when the ApplicationContext is stopped using the stop method on the ConfigurableApplicationContext interface.",
+      "C. This event is published when the HTTP Request is received.",
+      "D. This event is published when the HTTP Response is returned."
+    ],
+    "answer_index": 1,
+    "explanation": "'This event is published when the ApplicationContext is stopped using the stop method on the ConfigurableApplicationContext interface.' is correct.",
+    "corrected": false
+  },
+  {
+    "id": "q0316",
+    "topic": "Core Java & OOP",
+    "question": "What is RequestHandledEvent event?",
+    "options": [
+      "A. This event is published when the Servlet Context is either initialized or refreshed.",
+      "B. This event is published when the HTTP Request is received.",
+      "C. This event is published when the HTTP session is initialized or refreshed.",
+      "D. This event is published when the HTTP Request is serviced."
+    ],
+    "answer_index": 2,
+    "explanation": "The answer is \"This event is published when the HTTP session is initialized or refreshed.\". This is the standard definition or correct identification for the concept described. Review the Core Java & OOP documentation to understand how \"This event is published when the HTTP session is initialized or refreshed.\" fits into the broader context.",
+    "corrected": false
+  },
+  {
+    "id": "q0317",
+    "topic": "JavaScript",
+    "question": "What is the prototype scope?",
+    "options": [
+      "A. This scopes a single bean definition to have any number of object instances.",
+      "B. This scopes the bean definition to a single instance per HTTP Request.",
+      "C. This scopes the bean definition to a single instance per HTTP Session.",
+      "D. This scopes the bean definition to a single instance per HTTP Application/Global session."
+    ],
+    "answer_index": 0,
+    "explanation": "The answer is \"This scopes a single bean definition to have any number of object instances.\". This is the standard definition or correct identification for the concept described. Review the JavaScript documentation to understand how \"This scopes a single bean definition to have any number of object instances.\" fits into the broader context.",
+    "corrected": false
+  },
+  {
+    "id": "q0318",
+    "topic": "TypeScript",
+    "question": "What is true about <props> collection configuration elements?",
+    "options": [
+      "A. This helps in wiring a list of values, allowing duplicates.",
+      "B. This helps in wiring a list of values but without any duplicates.",
+      "C. This can be used to inject a collection of name-value pairs where name and value can be of any type.",
+      "D. This can be used to inject a collection of name-value pairs where the name and value are both Strings."
+    ],
+    "answer_index": 3,
+    "explanation": "'This can be used to inject a collection of name-value pairs where the name and value are both Strings.' is correct.",
+    "corrected": false
+  },
+  {
+    "id": "q0319",
+    "topic": "Spring Core",
+    "question": "How to handle shut down of IoC containers?",
+    "options": [
+      "A. Using shutdownHook()",
+      "B. Using shutdownHandler()",
+      "C. Using registerHook()",
+      "D. Using registerShutdownHook()"
+    ],
+    "answer_index": 3,
+    "explanation": "\"Using registerShutdownHook()\" is correct. The distractors (\"Using shutdownHook()\" and \"Using shutdownHandler()\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"Using registerShutdownHook()\" in Spring Core distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0320",
+    "topic": "Core Java & OOP",
+    "question": "By default a bean is eagerly loaded.",
+    "options": [
+      "A. False",
+      "B. True"
+    ],
+    "answer_index": 1,
+    "explanation": "This statement is TRUE. By default a bean is eagerly loaded is correct behaviour in Core Java & OOP. Understanding when this holds (and its exceptions) is essential for assessments.",
+    "corrected": false
+  },
+  {
+    "id": "q0321",
+    "topic": "Core Java & OOP",
+    "question": "What is true about BeanPostProcessor?",
+    "options": [
+      "A. It is a concrete class.",
+      "B. It is an interface.",
+      "C. It is an abstract class.",
+      "D. None of the above."
+    ],
+    "answer_index": 1,
+    "explanation": "The answer is \"It is an interface.\". This is the standard definition or correct identification for the concept described. Review the Core Java & OOP documentation to understand how \"It is an interface.\" fits into the broader context.",
+    "corrected": false
+  },
+  {
+    "id": "q0322",
+    "topic": "Spring Core",
+    "question": "How can you inject Java Collection in Spring?",
+    "options": [
+      "A. Using list, set, map or props tag.",
+      "B. Using lit, set, map or collection tag.",
+      "C. Using list, set, props or collection tag.",
+      "D. Using list, collection, map or props tag."
+    ],
+    "answer_index": 0,
+    "explanation": "\"Using list, set, map or props tag.\" is correct. The distractors (\"Using lit, set, map or collection tag.\" and \"Using list, set, props or collection tag.\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"Using list, set, map or props tag.\" in Spring Core distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0323",
+    "topic": "Spring Core",
+    "question": "Which class is used to map a database row to a Java object in Spring?",
+    "options": [
+      "A. ResultSet",
+      "B. RowMapper",
+      "C. RowSetMapper",
+      "D. ResultSetMapper"
+    ],
+    "answer_index": 1,
+    "explanation": "\"RowMapper\" is correct. The distractors (\"ResultSet\" and \"RowSetMapper\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"RowMapper\" in Spring Core distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0324",
+    "topic": "Core Java & OOP",
+    "question": "How can the bean life cycle be controlled?",
+    "options": [
+      "A. Using init() only",
+      "B. Using InitializingBean class only",
+      "C. Using DisposableBean class only",
+      "D. All of the above"
+    ],
+    "answer_index": 3,
+    "explanation": "\"All of the above\" is correct. The distractors (\"Using init() only\" and \"Using InitializingBean class only\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"All of the above\" in Core Java & OOP distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0325",
+    "topic": "Spring Core",
+    "question": "What is a ContextStoppedEvent event?",
+    "options": [
+      "A. This event is published when the Servlet Context is either initialized or refreshed.",
+      "B. This event is published when the ApplicationContext is stopped using the stop() method on the ConfigurableApplicationContext interface.",
+      "C. This event is published when the HTTP Request is received.",
+      "D. This event is published when the HTTP Response is returned."
+    ],
+    "answer_index": 1,
+    "explanation": "'This event is published when the ApplicationContext is stopped using the stop() method on the ConfigurableApplicationContext interface.' is correct.",
+    "corrected": false
+  },
+  {
+    "id": "q0326",
+    "topic": "Spring Core",
+    "question": "Which ORM Spring supports?",
+    "options": [
+      "A. Hibernate",
+      "B. iBatis",
+      "C. JPA",
+      "D. All of the above.",
+      "E. None of the above."
+    ],
+    "answer_index": 3,
+    "explanation": "Spring ORM integrates with Hibernate, JPA, and iBatis/MyBatis through a consistent exception hierarchy (DataAccessException) and transaction management. HibernateTemplate / JpaTemplate are older APIs; current best practice is to use JPA repositories directly.",
+    "corrected": false
+  },
+  {
+    "id": "q0327",
+    "topic": "TypeScript",
+    "question": "What is true about <map> collection configuration elements?",
+    "options": [
+      "A. This helps in wiring a list of values, allowing duplicates.",
+      "B. This helps in wiring a list of values but without any duplicates.",
+      "C. This can be used to inject a collection of name-value pairs where name and value can be of any type.",
+      "D. This tag is not supported."
+    ],
+    "answer_index": 2,
+    "explanation": "'This can be used to inject a collection of name-value pairs where name and value can be of any type.' is correct.",
+    "corrected": false
+  },
+  {
+    "id": "q0328",
+    "topic": "Spring Core",
+    "question": "Core container has AOP as one of its modules.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 1,
+    "explanation": "This statement is FALSE. Core container has AOP as one of its modules does not accurately describe the behaviour in Spring Core. Make sure you understand the correct behaviour to avoid this common misconception.",
+    "corrected": false
+  },
+  {
+    "id": "q0329",
+    "topic": "Spring Core",
+    "question": "Can you inject null and empty string values in Spring?",
+    "options": [
+      "A. Yes",
+      "B. No"
+    ],
+    "answer_index": 0,
+    "explanation": "The correct answer is \"Yes\". The other options (\"No\") do not accurately represent the concept described. This is a standard principle in Spring Core — recognising \"Yes\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q0330",
+    "topic": "Spring Core",
+    "question": "What stands true for the Spring framework?",
+    "options": [
+      "A. Spring framework is a lightweight framework.",
+      "B. Spring framework is a heavy weight framework."
+    ],
+    "answer_index": 0,
+    "explanation": "\"Spring framework is a lightweight framework.\" is correct. The distractors (\"Spring framework is a heavy weight framework.\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"Spring framework is a lightweight framework.\" in Spring Core distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0331",
+    "topic": "JavaScript",
+    "question": "What is the scope of stateless bean?",
+    "options": [
+      "A. global-session",
+      "B. singleton",
+      "C. prototype",
+      "D. request"
+    ],
+    "answer_index": 1,
+    "explanation": "The answer is \"singleton\". This is the standard definition or correct identification for the concept described. Review the JavaScript documentation to understand how \"singleton\" fits into the broader context.",
+    "corrected": false
+  },
+  {
+    "id": "q0332",
+    "topic": "Spring Core",
+    "question": "Annotations work as metadata for classes and Spring uses annotations as an alternative to XML for declarative configuration. Is it true or false?",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "explanation": "Java annotations are declared with @interface. Elements inside look like method declarations but have no body; default values are set with default keyword. All annotations implicitly extend java.lang.annotation.Annotation and cannot have an explicit extends clause.",
+    "corrected": false
+  },
+  {
+    "id": "q0333",
+    "topic": "Spring Core",
+    "question": "Which of the following layers is the @Controller annotation used in?",
+    "options": [
+      "A. Service layer.",
+      "B. Presentation layer.",
+      "C. Session layer.",
+      "D. Business layer.",
+      "E. None of these."
+    ],
+    "answer_index": 1,
+    "explanation": "Java annotations are declared with @interface. Elements inside look like method declarations but have no body; default values are set with default keyword. All annotations implicitly extend java.lang.annotation.Annotation and cannot have an explicit extends clause.",
+    "corrected": false
+  },
+  {
+    "id": "q0334",
+    "topic": "JavaScript",
+    "question": "What is the prototype scope?",
+    "options": [
+      "A. This scopes a single bean definition to have any number of object instances.",
+      "B. This scopes the bean definition to a single instance per HTTP Request.",
+      "C. This scopes the bean definition to a single instance per HTTP Session.",
+      "D. This scopes the bean definition to a single instance per HTTP Application/ Global session."
+    ],
+    "answer_index": 0,
+    "explanation": "The answer is \"This scopes a single bean definition to have any number of object instances.\". This is the standard definition or correct identification for the concept described. Review the JavaScript documentation to understand how \"This scopes a single bean definition to have any number of object instances.\" fits into the broader context.",
+    "corrected": false
+  },
+  {
+    "id": "q0335",
+    "topic": "TypeScript",
+    "question": "What is true about collection configuration elements?",
+    "options": [
+      "A. This helps in wiring a list of values, allowing duplicates.",
+      "B. This helps in wiring a list of values but without any duplicates.",
+      "C. This can be used to inject a collection of name-value pairs where name and value can be of any type.",
+      "D. This can be used to inject a collection of name-value pairs where the name and value are both Strings."
+    ],
+    "answer_index": 2,
+    "explanation": "'This can be used to inject a collection of name-value pairs where name and value can be of any type.' is correct.",
+    "corrected": false
+  },
+  {
+    "id": "q0336",
+    "topic": "Spring Core",
+    "question": "What is the Join point?",
+    "options": [
+      "A. This represents a point in your application which joins two objects.",
+      "B. This represents a point in your object where you join values.",
+      "C. This represents a point in your object where you join injected values.",
+      "D. This represents a point in your application where you can plug-in the AOP aspect."
+    ],
+    "answer_index": 3,
+    "explanation": "The answer is \"This represents a point in your application where you can plug-in the AOP aspect.\". This is the standard definition or correct identification for the concept described. Review the Spring Core documentation to understand how \"This represents a point in your application where you can plug-in the AOP aspect.\" fits into the broader context.",
+    "corrected": false
+  },
+  {
+    "id": "q0337",
+    "topic": "Spring Core",
+    "question": "Which of the following aspects implementation Spring supports?",
+    "options": [
+      "A. XML Schema based aspect implementation",
+      "B. @AspectJ based aspect implementation",
+      "C. Both of the above.",
+      "D. None of the above."
+    ],
+    "answer_index": 2,
+    "explanation": "\"Both of the above.\" is correct. The distractors (\"XML Schema based aspect implementation\" and \"@AspectJ based aspect implementation\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"Both of the above.\" in Spring Core distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0338",
+    "topic": "Spring Core",
+    "question": "What are the types of transaction management Spring supports?",
+    "options": [
+      "A. Programmatic transaction management",
+      "B. Declarative transaction management",
+      "C. Both of the above.",
+      "D. None of the above."
+    ],
+    "answer_index": 2,
+    "explanation": "The answer is \"Both of the above.\". This is the standard definition or correct identification for the concept described. Review the Spring Core documentation to understand how \"Both of the above.\" fits into the broader context.",
+    "corrected": false
+  },
+  {
+    "id": "q0339",
+    "topic": "Spring Core",
+    "question": "What is a DispatcherServlet?",
+    "options": [
+      "A. DispatcherServlet is used for transaction management.",
+      "B. DispatcherServlet is used for AOP.",
+      "C. DispatcherServlet handles all the HTTP requests and responses.",
+      "D. DispatcherServlet is used for Dependency injection."
+    ],
+    "answer_index": 2,
+    "explanation": "The answer is \"DispatcherServlet handles all the HTTP requests and responses.\". This is the standard definition or correct identification for the concept described. Review the Spring Core documentation to understand how \"DispatcherServlet handles all the HTTP requests and responses.\" fits into the broader context.",
+    "corrected": false
+  },
+  {
+    "id": "q0340",
+    "topic": "Java Concurrency",
+    "question": "What is ACID in transactional management?",
+    "options": [
+      "A. Accurate, Controlled, Isolation, Durability",
+      "B. Atomicity, Consistency, Independent, Done",
+      "C. Atomicity, Consistency, Isolation, Durability",
+      "D. Accurate, Controlled, Independent, Done"
+    ],
+    "answer_index": 2,
+    "explanation": "The answer is \"Atomicity, Consistency, Isolation, Durability\". This is the standard definition or correct identification for the concept described. Review the Java Concurrency documentation to understand how \"Atomicity, Consistency, Isolation, Durability\" fits into the broader context.",
+    "corrected": false
+  },
+  {
+    "id": "q0341",
+    "topic": "Core Java & OOP",
+    "question": "Where do you define DispatcherServlet?",
+    "options": [
+      "A. In Beans configuration file.",
+      "B. Web.xml file",
+      "C. Meta-inf/dispatcher.xml",
+      "D. Web-inf/dispatcher.xml"
+    ],
+    "answer_index": 1,
+    "explanation": "The correct answer is \"Web.xml file\". The other options (\"In Beans configuration file.\", \"Meta-inf/dispatcher.xml\") do not accurately represent the concept described. This is a standard principle in Core Java & OOP — recognising \"Web.xml file\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q0342",
+    "topic": "JavaScript",
+    "question": "What does BeanPostProcessor do?",
+    "options": [
+      "A. It processes beans once a bean is initialized.",
+      "B. It defines callback methods that you can implement to provide your own instantiation logic and dependency-resolution logic.",
+      "C. It processes beans once a bean is loaded.",
+      "D. It processes beans once a bean exits."
+    ],
+    "answer_index": 1,
+    "explanation": "'It defines callback methods that you can implement to provide your own instantiation logic and dependency-resolution logic.' is correct.",
+    "corrected": false
+  },
+  {
+    "id": "q0343",
+    "topic": "Core Java & OOP",
+    "question": "Can a bean be configured to have an inner bean?",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "explanation": "This statement is TRUE. Can a bean be configured to have an inner bean is correct behaviour in Core Java & OOP. Understanding when this holds (and its exceptions) is essential for assessments.",
+    "corrected": false
+  },
+  {
+    "id": "q0344",
+    "topic": "Core Java & OOP",
+    "question": "Can we inject value and ref both together in a bean?",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "explanation": "This statement is TRUE. Can we inject value and ref both together in a bean is correct behaviour in Core Java & OOP. Understanding when this holds (and its exceptions) is essential for assessments.",
+    "corrected": false
+  },
+  {
+    "id": "q0345",
+    "topic": "Spring Core",
+    "question": "Following class can be extended to create custom events in Spring.",
+    "options": [
+      "A. SpringEvent",
+      "B. Event",
+      "C. ApplicationEvent",
+      "D. None of above"
+    ],
+    "answer_index": 2,
+    "explanation": "The correct answer is \"ApplicationEvent\". The other options (\"SpringEvent\", \"Event\") do not accurately represent the concept described. This is a standard principle in Spring Core — recognising \"ApplicationEvent\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q0346",
+    "topic": "Spring Core",
+    "question": "Which of the following is the correct assertion about Spring?",
+    "options": [
+      "A. Spring enables developers to develop enterprise-class applications using POJOs.",
+      "B. Spring is organized in a modular fashion.",
+      "C. Testing an application written with Spring is simple because environment-dependent code is moved into this framework.",
+      "D. All of the above."
+    ],
+    "answer_index": 3,
+    "explanation": "\"All of the above.\" is correct. The distractors (\"Spring enables developers to develop enterprise-class applications using POJOs.\" and \"Spring is organized in a modular fashion.\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"All of the above.\" in Spring Core distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0347",
+    "topic": "Spring Core",
+    "question": "What does AOP stand for?",
+    "options": [
+      "A. Aspect Oriented Programming",
+      "B. Any Object Programming",
+      "C. Asset Oriented Programming",
+      "D. Asset Oriented Protocol"
+    ],
+    "answer_index": 0,
+    "explanation": "The answer is \"Aspect Oriented Programming\". This is the standard definition or correct identification for the concept described. Review the Spring Core documentation to understand how \"Aspect Oriented Programming\" fits into the broader context.",
+    "corrected": false
+  },
+  {
+    "id": "q0348",
+    "topic": "Core Java & OOP",
+    "question": "What is true about cross-cutting concerns?",
+    "options": [
+      "A. The functions that span multiple points of an application are called cross cutting concerns.",
+      "B. Cross-cutting concerns are conceptually separate from the application's business logic.",
+      "C. Logging is one of the examples of cross cutting concerns.",
+      "D. All of the above."
+    ],
+    "answer_index": 0,
+    "explanation": "'The functions that span multiple points of an application are called cross cutting concerns.' is correct.",
+    "corrected": false
+  },
+  {
+    "id": "q0349",
+    "topic": "SQL & JDBC",
+    "question": "Which are the modules of the Data Access/Integration layer?",
+    "options": [
+      "A. JDBC, ORM, OXM, JMS, Transactions",
+      "B. JDBC, ORM, OXM, JMS",
+      "C. JDBC, ORM, Web, Beans",
+      "D. JDBC, ORM, OXM"
+    ],
+    "answer_index": 0,
+    "explanation": "\"JDBC, ORM, OXM, JMS, Transactions\" is correct. The distractors (\"JDBC, ORM, OXM, JMS\" and \"JDBC, ORM, Web, Beans\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"JDBC, ORM, OXM, JMS, Transactions\" in SQL & JDBC distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0350",
+    "topic": "HTML & CSS",
+    "question": "Which are the modules of the Web layer?",
+    "options": [
+      "A. WebSocket, Servlet, Web, Portlet",
+      "B. WebSocket, Servlet, Web-MVC, Web",
+      "C. HTML, JSP, Web, Portlet",
+      "D. HTML, Servlet, Web, Portlet"
+    ],
+    "answer_index": 0,
+    "explanation": "\"WebSocket, Servlet, Web, Portlet\" is correct. The distractors (\"WebSocket, Servlet, Web-MVC, Web\" and \"HTML, JSP, Web, Portlet\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"WebSocket, Servlet, Web, Portlet\" in HTML & CSS distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0351",
+    "topic": "SQL & JDBC",
+    "question": "Which of the statements is correct?",
+    "options": [
+      "A. The JDBC module provides a JDBC-abstraction layer that removes the need to do tedious JDBC related coding.",
+      "B. The ORM module provides integration layers for popular object relational mapping APIs, including JPA, JDO, Hibernate, and iBatis.",
+      "C. The Java Messaging Service (JMS) module contains features for producing and consuming messages.",
+      "D. All of the above."
+    ],
+    "answer_index": 3,
+    "explanation": "\"All of the above.\" is correct. The distractors (\"The JDBC module provides a JDBC-abstraction layer that removes the need to do tedious JDBC related coding.\" and \"The ORM module provides integration layers for popular object relational mapping APIs, including JPA, JDO, Hibernate, and iBatis.\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"All of the above.\" in SQL & JDBC distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0352",
+    "topic": "Spring Core",
+    "question": "What types of Dependency Injection does Spring support?",
+    "options": [
+      "A. Constructor based, Setter based",
+      "B. Constructor based, Setter based, Getter based",
+      "C. Setter based, Getter based, Properties based",
+      "D. Constructor based, Setter based, Properties based"
+    ],
+    "answer_index": 0,
+    "explanation": "Dependency Injection (DI) is a design pattern where a class receives its dependencies from outside rather than creating them. This decouples components, making them easier to test and swap. Spring, Angular, and NestJS all use DI containers to manage object lifecycles.",
+    "corrected": false
+  },
+  {
+    "id": "q0353",
+    "topic": "Spring Core",
+    "question": "Which of the following stands true for Spring beans?",
+    "options": [
+      "A. Spring beans are managed by the Spring IoC container.",
+      "B. Spring beans are instantiated, assembled, and otherwise managed by a Spring IoC container.",
+      "C. Spring beans are simple POJOs.",
+      "D. All of the above."
+    ],
+    "answer_index": 3,
+    "explanation": "\"All of the above.\" is correct. The distractors (\"Spring beans are managed by the Spring IoC container.\" and \"Spring beans are instantiated, assembled, and otherwise managed by a Spring IoC container.\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"All of the above.\" in Spring Core distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0354",
+    "topic": "Spring Core",
+    "question": "Which is the way to provide configuration metadata to Spring?",
+    "options": [
+      "A. XML based configuration file.",
+      "B. Annotation based configuration.",
+      "C. Java based configuration.",
+      "D. All of the above."
+    ],
+    "answer_index": 3,
+    "explanation": "\"All of the above.\" is correct. The distractors (\"XML based configuration file.\" and \"Annotation based configuration.\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"All of the above.\" in Spring Core distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0355",
+    "topic": "Spring Core",
+    "question": "What is bean scope?",
+    "options": [
+      "A. Bean scope forces Spring to produce a new bean instance as per the scope defined.",
+      "B. Bean scope defines the accessibility of bean in a Java class.",
+      "C. Bean scope defines the accessibility of bean in a Java package.",
+      "D. Bean scope defines the accessibility of bean in a web application."
+    ],
+    "answer_index": 0,
+    "explanation": "The answer is \"Bean scope forces Spring to produce a new bean instance as per the scope defined.\". This is the standard definition or correct identification for the concept described. Review the Spring Core documentation to understand how \"Bean scope forces Spring to produce a new bean instance as per the scope defined.\" fits into the broader context.",
+    "corrected": false
+  },
+  {
+    "id": "q0356",
+    "topic": "Spring Core",
+    "question": "What is no mode of autowiring?",
+    "options": [
+      "A. Default setting which means no autowiring and you should use explicit bean reference for wiring.",
+      "B. Autowiring by property name.",
+      "C. Spring first tries to wire using autowire by constructor, if it does not work, Spring tries to autowire by byType.",
+      "D. Similar to byType, but type applies to constructor arguments."
+    ],
+    "answer_index": 0,
+    "explanation": "'Default setting which means no autowiring and you should use explicit bean reference for wiring.' is correct.",
+    "corrected": false
+  },
+  {
+    "id": "q0357",
+    "topic": "Spring Core",
+    "question": "What is byName mode of autowiring?",
+    "options": [
+      "A. Default setting which means no autowiring and you should use explicit bean reference for wiring.",
+      "B. Autowiring by property name. Spring tries to match and wire its properties with the beans defined by the same names in the configuration file.",
+      "C. Spring first tries to wire using autowire by constructor, if it does not work, Spring tries to autowire by byType.",
+      "D. Similar to byType, but type applies to constructor arguments."
+    ],
+    "answer_index": 1,
+    "explanation": "'Autowiring by property name. Spring tries to match and wire its properties with the beans defined by the same names in the configuration file.' is correct.",
+    "corrected": false
+  },
+  {
+    "id": "q0358",
+    "topic": "Spring Core",
+    "question": "What is byType mode of autowiring?",
+    "options": [
+      "A. Default setting which means no autowiring and you should use explicit bean reference for wiring.",
+      "B. Autowiring by property name.",
+      "C. Spring first tries to wire using autowire by constructor, if it does not work, Spring tries to autowire by byType.",
+      "D. Autowiring by property type. Spring tries to match and wire a property if its type matches with exactly one of the beans in the configuration file."
+    ],
+    "answer_index": 3,
+    "explanation": "'Autowiring by property type. Spring tries to match and wire a property if its type matches with exactly one of the beans in the configuration file.' is correct.",
+    "corrected": false
+  },
+  {
+    "id": "q0359",
+    "topic": "Spring Core",
+    "question": "What is the constructor mode of autowiring?",
+    "options": [
+      "A. Autowiring by property name.",
+      "B. Spring first tries to wire using autowire by constructor, if it does not work, Spring tries to autowire by byType.",
+      "C. Autowiring by property type.",
+      "D. Similar to byType, but type applies to constructor arguments. If there is not exactly one bean of the constructor argument type in the container, a fatal error is raised."
+    ],
+    "answer_index": 3,
+    "explanation": "'Similar to byType, but type applies to constructor arguments. If there is not exactly one bean of the constructor argument type in the container, a fatal error is raised.' is correct.",
+    "corrected": false
+  },
+  {
+    "id": "q0360",
+    "topic": "Spring Core",
+    "question": "What is autodetect mode of autowiring?",
+    "options": [
+      "A. Similar to byType, but type applies to constructor arguments.",
+      "B. Autowiring by property name.",
+      "C. Spring first tries to wire using autowire by constructor, if it does not work, Spring tries to autowire by byType.",
+      "D. Autowiring by property type."
+    ],
+    "answer_index": 2,
+    "explanation": "'Spring first tries to wire using autowire by constructor, if it does not work, Spring tries to autowire by byType.' is correct.",
+    "corrected": false
+  }
+]

@@ -1,0 +1,1701 @@
+[
+  {
+    "id": "q0601",
+    "topic": "Java Concurrency",
+    "question": "Which Java Set implementation is sorted and synchronized?",
+    "options": [
+      "A. TreeSet",
+      "B. LinkedHashSet",
+      "C. HashSet",
+      "D. ConcurrentSkipListSet"
+    ],
+    "answer_index": 3,
+    "explanation": "The synchronized keyword in Java provides mutual exclusion — only one thread can execute a synchronized block/method on the same monitor (object) at a time. It also establishes a happens-before relationship, ensuring visibility of writes across threads.",
+    "corrected": false
+  },
+  {
+    "id": "q0602",
+    "topic": "Core Java & OOP",
+    "question": "Which of the following statements is NOT correct for JVM?",
+    "options": [
+      "A. JVM acts as a translator that translates different Machine code (on the basis of Host Machine) for a common Byte Code.",
+      "B. JVM is a Virtual Machine that acts as an intermediary between Java Application and Host Operating System.",
+      "C. JVM reads Byte Code and generates Machine Code.",
+      "D. JVM reads Source Code and generates Byte Code."
+    ],
+    "answer_index": 3,
+    "explanation": "The JVM reads bytecode (compiled .class files), not source code. The Java compiler (javac) reads source and produces bytecode.",
+    "corrected": false
+  },
+  {
+    "id": "q0603",
+    "topic": "Core Java & OOP",
+    "question": "Is the following a valid Java code snippet?\n\nOptional<String> aValue = Optional.of(\"Not Empty\");\nif (aValue.ifPresent()) {\n    System.out.println(\"Got Not Empty\");\n}",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 1,
+    "explanation": "Optional<T> is a container that may or may not hold a non-null value, replacing null checks. Use .isPresent()/.isEmpty() to check, .get() to retrieve (throws if empty), or .orElse()/.map() for safer access. It was introduced in Java 8 to reduce NullPointerExceptions.",
+    "corrected": false
+  },
+  {
+    "id": "q0604",
+    "topic": "DevOps & CI/CD",
+    "question": "Java Stream does NOT store the elements. It simply performs the aggregate operations to get the desired stream of data.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "explanation": "Java 8 Streams provide a declarative, pipeline-style API for processing collections. Operations are either intermediate (filter, map, sorted — lazy) or terminal (collect, forEach, reduce — trigger execution). Parallel streams split work across threads using the fork/join framework.",
+    "corrected": false
+  },
+  {
+    "id": "q0605",
+    "topic": "Core Java & OOP",
+    "question": "Which Java class is used to apply reduction or aggregate functions on streams?",
+    "options": [
+      "A. Filters",
+      "B. Reduction",
+      "C. Collectors"
+    ],
+    "answer_index": 2,
+    "explanation": "The Collectors utility class provides factory methods for collectors (toList, groupingBy, reducing, etc.).",
+    "corrected": false
+  },
+  {
+    "id": "q0606",
+    "topic": "Core Java & OOP",
+    "question": "Which of the following statements are true about Java finally block?",
+    "options": [
+      "A. i. A finally block is executed, only after the catch block is executed.",
+      "B. ii. A finally block is executed whether an exception is thrown or not.",
+      "C. iii. A finally block is NOT mandatory.",
+      "D. iv. A finally block is executed, only if an exception occurs."
+    ],
+    "answer_index": 1,
+    "explanation": "A finally block always runs whether or not an exception is thrown (unless JVM exits). It is NOT mandatory.",
+    "corrected": false
+  },
+  {
+    "id": "q0607",
+    "topic": "Core Java & OOP",
+    "question": "Which of these is a standard Java Interface?",
+    "options": [
+      "A. Serializable",
+      "B. Long",
+      "C. System",
+      "D. Collections"
+    ],
+    "answer_index": 0,
+    "explanation": "\"Serializable\" is correct. The distractors (\"Long\" and \"System\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"Serializable\" in Core Java & OOP distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0608",
+    "topic": "Core Java & OOP",
+    "question": "What is the replacement for PermGen space in Java 8?",
+    "options": [
+      "A. FixedGen",
+      "B. Metaspace",
+      "C. MetaGenspace"
+    ],
+    "answer_index": 1,
+    "explanation": "Java 8 replaced PermGen (Permanent Generation) with Metaspace, which resides in native memory rather than the JVM heap. Unlike PermGen, Metaspace grows dynamically by default, eliminating OutOfMemoryError: PermGen space errors. You can still cap it with -XX:MaxMetaspaceSize.",
+    "corrected": false
+  },
+  {
+    "id": "q0609",
+    "topic": "Core Java & OOP",
+    "question": "What is the output of the following Java code snippet?\n\nStringJoiner astring = new StringJoiner(\"-\", \"{\", \"}\");\nastring.add(\"A\");\nastring.add(\"B\");\nastring.add(\"C\");",
+    "options": [
+      "A. {A-B-C}",
+      "B. {A}-{B}-{C}",
+      "C. {-A-}{-B-}{-C-}"
+    ],
+    "answer_index": 0,
+    "explanation": "The answer is \"{A-B-C}\". This is the standard definition or correct identification for the concept described. Review the Core Java & OOP documentation to understand how \"{A-B-C}\" fits into the broader context.",
+    "corrected": false
+  },
+  {
+    "id": "q0610",
+    "topic": "TypeScript",
+    "question": "What is the return type of Java Lambda expressions?",
+    "options": [
+      "A. Void",
+      "B. Lambda",
+      "C. Function",
+      "D. Regex"
+    ],
+    "answer_index": 2,
+    "explanation": "A Functional Interface in Java has exactly one abstract method (SAM — Single Abstract Method). It can have any number of default or static methods. The @FunctionalInterface annotation is optional but enforces the constraint at compile time and enables lambda expressions.",
+    "corrected": false
+  },
+  {
+    "id": "q0611",
+    "topic": "Git & Version Control",
+    "question": "Name the two types of streams in Java.",
+    "options": [
+      "A. Sync and async",
+      "B. Sequential and parallel",
+      "C. Random and ordered"
+    ],
+    "answer_index": 1,
+    "explanation": "Java 8 Streams provide a declarative, pipeline-style API for processing collections. Operations are either intermediate (filter, map, sorted — lazy) or terminal (collect, forEach, reduce — trigger execution). Parallel streams split work across threads using the fork/join framework.",
+    "corrected": false
+  },
+  {
+    "id": "q0612",
+    "topic": "Core Java & OOP",
+    "question": "What is the difference between peek() and dequeue()?",
+    "options": [
+      "A. peek() returns the next item in line but dequeue() removes and returns the next item in line",
+      "B. peek() and dequeue() return the next item in line",
+      "C. peek() and dequeue() remove and return the next item in line"
+    ],
+    "answer_index": 0,
+    "explanation": "'peek() returns the next item in line but dequeue() removes and returns the next item in line' is correct.",
+    "corrected": false
+  },
+  {
+    "id": "q0613",
+    "topic": "Core Java & OOP",
+    "question": "Which one of the following statements on Java String is correct?",
+    "options": [
+      "A. replace() method replaces only first occurrences of a character in invoking string with the given character.",
+      "B. replace() method replaces last occurrence of a character in invoking string with the given character.",
+      "C. replace() method replaces all occurrences of one character in invoking string with the given character.",
+      "D. replace() method replaces all the characters in invoking string with the given character."
+    ],
+    "answer_index": 2,
+    "explanation": "'replace() method replaces all occurrences of one character in invoking string with the given character.' is correct.",
+    "corrected": false
+  },
+  {
+    "id": "q0614",
+    "topic": "Java Concurrency",
+    "question": "What is the result of the following Java code snippet?\n\nAnimal animal = new Dog();\nCat cat = (Cat) animal;\nSystem.out.println(cat.noise());\n// Exception in thread \"main\" java.lang.ClassCastException",
+    "options": [
+      "A. peep",
+      "B. bark",
+      "C. meow",
+      "D. Compilation fails",
+      "E. An exception is thrown at runtime"
+    ],
+    "answer_index": 4,
+    "explanation": "The answer is \"An exception is thrown at runtime\". This is the standard definition or correct identification for the concept described. Review the Java Concurrency documentation to understand how \"An exception is thrown at runtime\" fits into the broader context.",
+    "corrected": false
+  },
+  {
+    "id": "q0615",
+    "topic": "Core Java & OOP",
+    "question": "What is the output of the following Java code snippet with exception handling?\n\nA a = new SubB2();\na.foo(); // line 15",
+    "options": [
+      "A. B",
+      "B. B, followed by an Exception.",
+      "C. Compilation fails due to an error on line 9.",
+      "D. Compilation fails due to an error on line 15.",
+      "E. An Exception is thrown with no other output"
+    ],
+    "answer_index": 3,
+    "explanation": "The code produces 'Compilation fails due to an error on line 15.' based on Java execution semantics.",
+    "corrected": false
+  },
+  {
+    "id": "q0616",
+    "topic": "Java Concurrency",
+    "question": "What is the output of the following Java code snippet?\n\nThread t = Thread.currentThread();\nt.setName(\"new thread\");\nSystem.out.println(t);",
+    "options": [
+      "A. Thread[main,5,main]",
+      "B. Thread[new thread,5,main]",
+      "C. Thread[Thread-0,5,main]",
+      "D. Compilation fails"
+    ],
+    "answer_index": 1,
+    "explanation": "Thread.toString() returns 'Thread[name,priority,group]'. After setName(\"new thread\"), the name part changes.",
+    "corrected": false
+  },
+  {
+    "id": "q0617",
+    "topic": "Java Concurrency",
+    "question": "Which of these will create and start the MyRunnable thread?",
+    "options": [
+      "A. new MyRunnable().start()",
+      "B. new Thread(new MyRunnable()).run()",
+      "C. new Thread(new MyRunnable()).start()",
+      "D. MyRunnable.startThread()"
+    ],
+    "answer_index": 2,
+    "explanation": "\"new Thread(new MyRunnable()).start()\" is correct. The distractors (\"new MyRunnable().start()\" and \"new Thread(new MyRunnable()).run()\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"new Thread(new MyRunnable()).start()\" in Java Concurrency distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0618",
+    "topic": "Core Java & OOP",
+    "question": "Observe the code below. Which four statements are true? (Choose four)\n\nclass Mammal { }  \nclass Raccoon extends Mammal {  \n    Mammal m = new Mammal();  \n}  \nclass BabyRaccoon extends Mammal { }",
+    "options": [
+      "A. Raccoon is-a Mammal.",
+      "B. Raccoon has-a Mammal.",
+      "C. BabyRaccoon is-a Mammal.",
+      "D. BabyRaccoon is-a Raccoon.",
+      "E. BabyRaccoon has-a Mammal.",
+      "F. BabyRaccoon is-a BabyRaccoon."
+    ],
+    "answer_index": 0,
+    "explanation": "The correct answer is \"Raccoon is-a Mammal.\". The other options (\"Raccoon has-a Mammal.\", \"BabyRaccoon is-a Mammal.\") do not accurately represent the concept described. This is a standard principle in Core Java & OOP — recognising \"Raccoon is-a Mammal.\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q0619",
+    "topic": "Core Java & OOP",
+    "question": "Observe the code and predict the output:\n\nByteArrayInputStream reading example",
+    "options": [
+      "A. abc",
+      "B. ABC",
+      "C. Abc",
+      "D. Compilation fails"
+    ],
+    "answer_index": 1,
+    "explanation": "Java 8 Streams provide a declarative, pipeline-style API for processing collections. Operations are either intermediate (filter, map, sorted — lazy) or terminal (collect, forEach, reduce — trigger execution). Parallel streams split work across threads using the fork/join framework.",
+    "corrected": false
+  },
+  {
+    "id": "q0620",
+    "topic": "Core Java & OOP",
+    "question": "Predict the output of the code:\n\nStringBuffer s1 = new StringBuffer(\"Hello World\");\ns1.insert(6, \"Good \");\nSystem.out.println(s1);",
+    "options": [
+      "A. HelloGoodWorld",
+      "B. HellGoodoWorld",
+      "C. HellGood oWorld",
+      "D. Hello Good World"
+    ],
+    "answer_index": 3,
+    "explanation": "The output is \"Hello Good World\". Trace through the execution step by step: variable assignments, method calls, and control flow all determine the final value. Pay attention to scope, type coercion, and execution order in Core Java & OOP.",
+    "corrected": false
+  },
+  {
+    "id": "q0621",
+    "topic": "Core Java & OOP",
+    "question": "Which of these keywords cannot be used for a class which has been declared final?",
+    "options": [
+      "A. abstract",
+      "B. extends",
+      "C. abstract and extends",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 2,
+    "explanation": "\"abstract and extends\" is correct. The distractors (\"abstract\" and \"extends\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"abstract and extends\" in Core Java & OOP distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0622",
+    "topic": "Core Java & OOP",
+    "question": "Predict the output:\n\nsos('1' + new Integer(2) + 3);",
+    "options": [
+      "A. 6",
+      "B. 123",
+      "C. 33",
+      "D. Compilation fails"
+    ],
+    "answer_index": 1,
+    "explanation": "The output is \"123\". Trace through the execution step by step: variable assignments, method calls, and control flow all determine the final value. Pay attention to scope, type coercion, and execution order in Core Java & OOP.",
+    "corrected": false
+  },
+  {
+    "id": "q0623",
+    "topic": "Core Java & OOP",
+    "question": "Observe the code and predict the output:\n\nint a[] = new int[]{1, 2, 6, 4, 5};  \nint b[] = new int[5];  \nb[2] = a[2];  \na[2] = 10;  \nSystem.out.println(b[2]);",
+    "options": [
+      "A. 10",
+      "B. 6",
+      "C. 2",
+      "D. Compilation fails"
+    ],
+    "answer_index": 1,
+    "explanation": "The output is \"6\". Trace through the execution step by step: variable assignments, method calls, and control flow all determine the final value. Pay attention to scope, type coercion, and execution order in Core Java & OOP.",
+    "corrected": false
+  },
+  {
+    "id": "q0624",
+    "topic": "Core Java & OOP",
+    "question": "What is the output of this program?\n\nVector obj = new Vector(4, 2);  \nobj.addElement(new Integer(3));  \nobj.addElement(new Integer(2));  \nobj.addElement(new Integer(5));  \nobj.removeAll(obj);  \nSystem.out.println(obj.isEmpty());",
+    "options": [
+      "A. 0",
+      "B. 1",
+      "C. true",
+      "D. false"
+    ],
+    "answer_index": 2,
+    "explanation": "The answer is \"true\". This is the standard definition or correct identification for the concept described. Review the Core Java & OOP documentation to understand how \"true\" fits into the broader context.",
+    "corrected": false
+  },
+  {
+    "id": "q0625",
+    "topic": "Core Java & OOP",
+    "question": "What is the output?\n\nTreeMap example",
+    "options": [
+      "A. [A, B, C]",
+      "B. [1, 2, 3]",
+      "C. {A=1, B=2, C=3}",
+      "D. [A=1, B=2, C=3]"
+    ],
+    "answer_index": 3,
+    "explanation": "The answer is \"[A=1, B=2, C=3]\". This is the standard definition or correct identification for the concept described. Review the Core Java & OOP documentation to understand how \"[A=1, B=2, C=3]\" fits into the broader context.",
+    "corrected": false
+  },
+  {
+    "id": "q0626",
+    "topic": "Core Java & OOP",
+    "question": "What is the output?\n\nBitSet example with clear(2)",
+    "options": [
+      "A. {0, 1, 3, 4}",
+      "B. {0, 1, 2, 4}",
+      "C. {0, 1, 2, 3, 4}",
+      "D. {0, 0, 0, 3, 4}"
+    ],
+    "answer_index": 0,
+    "explanation": "The answer is \"{0, 1, 3, 4}\". This is the standard definition or correct identification for the concept described. Review the Core Java & OOP documentation to understand how \"{0, 1, 3, 4}\" fits into the broader context.",
+    "corrected": false
+  },
+  {
+    "id": "q0627",
+    "topic": "Core Java & OOP",
+    "question": "What is the output?\n\nArray example with Arrays.fill",
+    "options": [
+      "A. 12885",
+      "B. 12845",
+      "C. 58881",
+      "D. 54881"
+    ],
+    "answer_index": 2,
+    "explanation": "The answer is \"58881\". This is the standard definition or correct identification for the concept described. Review the Core Java & OOP documentation to understand how \"58881\" fits into the broader context.",
+    "corrected": false
+  },
+  {
+    "id": "q0628",
+    "topic": "Core Java & OOP",
+    "question": "What is the output of the following program?\n\nLinkedList, shuffle example",
+    "options": [
+      "A. 2 8 5 1",
+      "B. 1 5 8 2",
+      "C. 1 2 5 8",
+      "D. Any random order"
+    ],
+    "answer_index": 3,
+    "explanation": "The answer is \"Any random order\". This is the standard definition or correct identification for the concept described. Review the Core Java & OOP documentation to understand how \"Any random order\" fits into the broader context.",
+    "corrected": false
+  },
+  {
+    "id": "q0629",
+    "topic": "Core Java & OOP",
+    "question": "What is the output?\n\nLinkedList, sort example",
+    "options": [
+      "A. 2 8 5 1",
+      "B. 1 5 8 2",
+      "C. 1 2 5 8",
+      "D. 2 1 8 5"
+    ],
+    "answer_index": 2,
+    "explanation": "The answer is \"1 2 5 8\". This is the standard definition or correct identification for the concept described. Review the Core Java & OOP documentation to understand how \"1 2 5 8\" fits into the broader context.",
+    "corrected": false
+  },
+  {
+    "id": "q0630",
+    "topic": "Core Java & OOP",
+    "question": "What is the output?\n\nGeneric stack example with Strings and Integers",
+    "options": [
+      "A. Error // error because gs String and gs Integer use same variable name",
+      "B. Hello",
+      "C. 36",
+      "D. Hello 36"
+    ],
+    "answer_index": 3,
+    "explanation": "The answer is \"Hello 36\". This is the standard definition or correct identification for the concept described. Review the Core Java & OOP documentation to understand how \"Hello 36\" fits into the broader context.",
+    "corrected": false
+  },
+  {
+    "id": "q0631",
+    "topic": "Core Java & OOP",
+    "question": "What is the output?\n\nclass output {  \n    public static void main(String args[]) {  \n        StringBuffer c = new StringBuffer(\"Hello\");  \n        StringBuffer c1 = new StringBuffer(\" World\");  \n        c.append(c1);  \n        System.out.println(c);  \n    }  \n}",
+    "options": [
+      "A. Hello",
+      "B. World",
+      "C. HelloWorld",
+      "D. Hello World"
+    ],
+    "answer_index": 3,
+    "explanation": "The answer is \"Hello World\". This is the standard definition or correct identification for the concept described. Review the Core Java & OOP documentation to understand how \"Hello World\" fits into the broader context.",
+    "corrected": false
+  },
+  {
+    "id": "q0632",
+    "topic": "Core Java & OOP",
+    "question": "What is the output?\n\nclass exception_handling {  \n    public static void main(String args[]) {  \n        try {  \n            System.out.print(\"Hello\" + \" \" + 1 / 0);  \n        }  \n        catch(ArithmeticException e) {  \n            System.out.print(\"World\");  \n        }  \n    }  \n}",
+    "options": [
+      "A. Hello",
+      "B. World",
+      "C. HelloWorld",
+      "D. Hello World"
+    ],
+    "answer_index": 1,
+    "explanation": "The answer is \"World\". This is the standard definition or correct identification for the concept described. Review the Core Java & OOP documentation to understand how \"World\" fits into the broader context.",
+    "corrected": false
+  },
+  {
+    "id": "q0633",
+    "topic": "Core Java & OOP",
+    "question": "What is the output?\n\nclass output {  \n    public static void main(String args[]) {  \n        char c[] = {'a', '1', 'b', ' ', 'A', '0'};  \n        for (int i = 0; i < 5; ++i) {  \n            if (Character.isDigit(c[i]))  \n                System.out.println(c[i] + \" is a digit\");  \n            if (Character.isWhitespace(c[i]))  \n                System.out.println(c[i] + \" is a Whitespace char\");  \n            if (Character.isUpperCase(c[i]))  \n                System.out.println(c[i] + \" is an Upper case Letter\");  \n            if (Character.isLowerCase(c[i]))  \n                System.out.println(c[i] + \" is a lower case Letter\");  \n            i = i + 3;  \n        }  \n    }  \n}",
+    "options": [
+      "A. a is a lower case Letter, is White space character",
+      "B. b is a lower case Letter, is White space character",
+      "C. a is a lower case Letter, A is an Upper case Letter",
+      "D. a is a lower case Letter, 0 is a digit"
+    ],
+    "answer_index": 2,
+    "explanation": "The code produces 'a is a lower case Letter, A is an Upper case Letter' based on Java execution semantics.",
+    "corrected": false
+  },
+  {
+    "id": "q0634",
+    "topic": "Core Java & OOP",
+    "question": "What is the output?\n\nimport java.io.*;  \nclass filesinputoutput {  \n    public static void main(String args[]) throws IOException {  \n        InputStream obj = new FileInputStream(\"inputoutput.java\");  \n        System.out.print(obj.available());  \n    }  \n}",
+    "options": [
+      "A. true",
+      "B. false",
+      "C. prints number of bytes in file",
+      "D. prints number of characters in the file"
+    ],
+    "answer_index": 2,
+    "explanation": "Java 8 Streams provide a declarative, pipeline-style API for processing collections. Operations are either intermediate (filter, map, sorted — lazy) or terminal (collect, forEach, reduce — trigger execution). Parallel streams split work across threads using the fork/join framework.",
+    "corrected": false
+  },
+  {
+    "id": "q0635",
+    "topic": "Core Java & OOP",
+    "question": "Observe the code and predict output with ByteArrayOutputStream",
+    "options": [
+      "A. abc",
+      "B. ABC",
+      "C. ABC abc",
+      "D. Compilation fails"
+    ],
+    "answer_index": 1,
+    "explanation": "Java 8 Streams provide a declarative, pipeline-style API for processing collections. Operations are either intermediate (filter, map, sorted — lazy) or terminal (collect, forEach, reduce — trigger execution). Parallel streams split work across threads using the fork/join framework.",
+    "corrected": false
+  },
+  {
+    "id": "q0636",
+    "topic": "Core Java & OOP",
+    "question": "Which of these methods are used to read in from file?",
+    "options": [
+      "A. get()",
+      "B. read()",
+      "C. scan()",
+      "D. readFileInput()"
+    ],
+    "answer_index": 1,
+    "explanation": "\"read()\" is correct. The distractors (\"get()\" and \"scan()\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"read()\" in Core Java & OOP distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0637",
+    "topic": "Core Java & OOP",
+    "question": "What is the output of the code?\n\nStringBuffer s1 = new StringBuffer(\"Hello\");\nStringBuffer s2 = s1.reverse();\nSystem.out.println(s2);",
+    "options": [
+      "A. Hello",
+      "B. olleH",
+      "C. HELLO",
+      "D. Compilation fails"
+    ],
+    "answer_index": 1,
+    "explanation": "The answer is \"olleH\". This is the standard definition or correct identification for the concept described. Review the Core Java & OOP documentation to understand how \"olleH\" fits into the broader context.",
+    "corrected": false
+  },
+  {
+    "id": "q0638",
+    "topic": "JavaScript",
+    "question": "Which pattern is used in the following code?\n\nList iteration example using Iterator",
+    "options": [
+      "A. Observer",
+      "B. Singleton",
+      "C. Iterator",
+      "D. Factory"
+    ],
+    "answer_index": 2,
+    "explanation": "\"Iterator\" is correct. The distractors (\"Observer\" and \"Singleton\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"Iterator\" in JavaScript distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0639",
+    "topic": "JavaScript",
+    "question": "java.util.Enumeration is an example of which pattern?",
+    "options": [
+      "A. Observer",
+      "B. Singleton",
+      "C. Iterator",
+      "D. Factory"
+    ],
+    "answer_index": 2,
+    "explanation": "The correct answer is \"Iterator\". The other options (\"Observer\", \"Singleton\") do not accurately represent the concept described. This is a standard principle in JavaScript — recognising \"Iterator\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q0640",
+    "topic": "Core Java & OOP",
+    "question": "Predict the output of the code with exception handling:\n\nint a = 5; int b = 0; int c = a / b;",
+    "options": [
+      "A. World",
+      "B. hello"
+    ],
+    "answer_index": 1,
+    "explanation": "The output is \"hello\". Trace through the execution step by step: variable assignments, method calls, and control flow all determine the final value. Pay attention to scope, type coercion, and execution order in Core Java & OOP.",
+    "corrected": false
+  },
+  {
+    "id": "q0641",
+    "topic": "Java Concurrency",
+    "question": "Which two of the following methods are defined in class Thread?",
+    "options": [
+      "A. start()",
+      "B. wait()",
+      "C. notify()",
+      "D. run()"
+    ],
+    "answer_index": 0,
+    "explanation": "\"start()\" is correct. The distractors (\"wait()\" and \"notify()\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"start()\" in Java Concurrency distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0642",
+    "topic": "Java Concurrency",
+    "question": "Assume the following method is properly synchronized and called from a thread A on an object B: wait(2000); When will thread A become a candidate to get another turn at the CPU?",
+    "options": [
+      "A. After thread A is notified, or after two seconds.",
+      "B. After the lock on B is released, or after two seconds.",
+      "C. Two seconds after thread A is notified.",
+      "D. Two seconds after lock B is released."
+    ],
+    "answer_index": 0,
+    "explanation": "The synchronized keyword in Java provides mutual exclusion — only one thread can execute a synchronized block/method on the same monitor (object) at a time. It also establishes a happens-before relationship, ensuring visibility of writes across threads.",
+    "corrected": false
+  },
+  {
+    "id": "q0643",
+    "topic": "Core Java & OOP",
+    "question": "The code snippet below is an example of which of the following?\n\nLong myLong = 21L;",
+    "options": [
+      "A. Auto boxing",
+      "B. Auto unboxing",
+      "C. Auto casting",
+      "D. Auto instancing"
+    ],
+    "answer_index": 0,
+    "explanation": "The output is \"Auto boxing\". Trace through the execution step by step: variable assignments, method calls, and control flow all determine the final value. Pay attention to scope, type coercion, and execution order in Core Java & OOP.",
+    "corrected": false
+  },
+  {
+    "id": "q0644",
+    "topic": "TypeScript",
+    "question": "What is the result?\n\ninterface TestA { String toString(); } \nAnonymous class printing toString()",
+    "options": [
+      "A. test",
+      "B. null",
+      "C. An exception is thrown at runtime",
+      "D. Compilation fails because of an error in line 1",
+      "E. Compilation fails because of an error in line 4",
+      "F. Compilation fails because of an error in line 5"
+    ],
+    "answer_index": 0,
+    "explanation": "The answer is \"test\". This is the standard definition or correct identification for the concept described. Review the TypeScript documentation to understand how \"test\" fits into the broader context.",
+    "corrected": false
+  },
+  {
+    "id": "q0645",
+    "topic": "Core Java & OOP",
+    "question": "What is the output?\n\nclass Output {  \n    public static void main(String args[]) {  \n        Object obj = new Object();  \n        System.out.print(obj.getClass());  \n    }  \n}",
+    "options": [
+      "A. Object",
+      "B. class Object",
+      "C. class java.lang.Object",
+      "D. java.lang.Object"
+    ],
+    "answer_index": 2,
+    "explanation": "The answer is \"class java.lang.Object\". This is the standard definition or correct identification for the concept described. Review the Core Java & OOP documentation to understand how \"class java.lang.Object\" fits into the broader context.",
+    "corrected": false
+  },
+  {
+    "id": "q0646",
+    "topic": "Core Java & OOP",
+    "question": "What is the output?\n\nclass A {  \n    int i;  \n    int j;  \n    A() {  \n        i = 1;  \n        j = 2;  \n    }  \n}  \n\nclass Output {  \n    public static void main(String args[]) {  \n        A obj1 = new A();  \n        System.out.println(obj1.toString());  \n    }  \n}",
+    "options": [
+      "A. A",
+      "B. 1 2",
+      "C. String associated with obj1, e.g., A@5e265ba4",
+      "D. Compilation fails"
+    ],
+    "answer_index": 2,
+    "explanation": "The code produces 'String associated with obj1, e.g., A@5e265ba4' based on Java execution semantics.",
+    "corrected": false
+  },
+  {
+    "id": "q0647",
+    "topic": "Core Java & OOP",
+    "question": "Output of divide method with try-catch-finally when exception occurs",
+    "options": [
+      "A. Only Exception is printed",
+      "B. Only finally is printed",
+      "C. Both Exception and finally are printed if exception occurs",
+      "D. Compilation fails"
+    ],
+    "answer_index": 2,
+    "explanation": "The output is \"Both Exception and finally are printed if exception occurs\". Trace through the execution step by step: variable assignments, method calls, and control flow all determine the final value. Pay attention to scope, type coercion, and execution order in Core Java & OOP.",
+    "corrected": false
+  },
+  {
+    "id": "q0648",
+    "topic": "Core Java & OOP",
+    "question": "Insert the appropriate code:\n\npublic class Sprite {  \n    public int fubar(Foo foo) {  \n        return foo.bar();  \n    }  \n    public void testFoo() {  \n        fubar(  \n            // insert code here  \n        );  \n    }  \n}",
+    "options": [
+      "A. new Foo()",
+      "B. new Foo() { public int bar() { return 1; } }",
+      "C. new Foo(1)",
+      "D. Foo.bar()"
+    ],
+    "answer_index": 1,
+    "explanation": "The correct answer is \"new Foo() { public int bar() { return 1; } }\". The other options (\"new Foo()\", \"new Foo(1)\") do not accurately represent the concept described. This is a standard principle in Core Java & OOP — recognising \"new Foo() { public int bar() { return 1; } }\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q0649",
+    "topic": "Core Java & OOP",
+    "question": "What is the output of the following code?\n\nclass Main {  \n    String getValue(String word) {  \n        System.out.println(word);  \n        if (word.length() == 1) {  \n            return \"\";  \n        } else {  \n            return getValue(word.substring(0, word.length() - 1)) + word.charAt(word.length() - 1);  \n        }  \n    }  \n    public static void main(String[] args) {  \n        Main obj = new Main();  \n        System.out.println(obj.getValue(\"DEMOS\"));  \n    }  \n}",
+    "options": [
+      "A. D",
+      "B. DEMOS",
+      "C. EMOS",
+      "D. Empty String"
+    ],
+    "answer_index": 2,
+    "explanation": "The answer is \"EMOS\". This is the standard definition or correct identification for the concept described. Review the Core Java & OOP documentation to understand how \"EMOS\" fits into the broader context.",
+    "corrected": false
+  },
+  {
+    "id": "q0650",
+    "topic": "Core Java & OOP",
+    "question": "What sort of compilation error you will get? How to fix the compilation error?\n\nabstract class xyz {  \n    abstract abc(int a, int b) { }  \n}",
+    "options": [
+      "A. Missing return type",
+      "B. Method cannot have a body",
+      "C. Syntax error",
+      "D. Give return type void. and remove empty parenthesis."
+    ],
+    "answer_index": 3,
+    "explanation": "\"Give return type void. and remove empty parenthesis.\" is correct. The distractors (\"Missing return type\" and \"Method cannot have a body\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"Give return type void. and remove empty parenthesis.\" in Core Java & OOP distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0651",
+    "topic": "TypeScript",
+    "question": "Will this code compile?\n\ninterface ATOB {  \n    String s = \"yo\";  \n    public void meth();  \n}  \ninterface BTOC { }  \ninterface C extends ATOB, BTOC {  \n    public void meth();  \n    public void meth(int x);  \n}",
+    "options": [
+      "A. Yes, this code will compile without any error",
+      "B. No, compilation fails due to multiple inheritance",
+      "C. No, compilation fails because of variable s",
+      "D. No, compilation fails because of method overloading"
+    ],
+    "answer_index": 0,
+    "explanation": "The correct answer is \"Yes, this code will compile without any error\". The other options (\"No, compilation fails due to multiple inheritance\", \"No, compilation fails because of variable s\") do not accurately represent the concept described. This is a standard principle in TypeScript — recognising \"Yes, this code will compile without any error\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q0652",
+    "topic": "TypeScript",
+    "question": "How can I inherit both the interface and abstract class?\n\ninterface Data {  \n    public void load();  \n}  \nabstract class Info {  \n    public abstract void load();  \n}",
+    "options": [
+      "A. class Xyz extends Info implements Data { void load() { } }",
+      "B. class Xyz implements Data, Info { void load() { } }",
+      "C. class Xyz extends Info, Data { void load() { } }",
+      "D. Not possible in Java"
+    ],
+    "answer_index": 0,
+    "explanation": "\"class Xyz extends Info implements Data { void load() { } }\" is correct. The distractors (\"class Xyz implements Data, Info { void load() { } }\" and \"class Xyz extends Info, Data { void load() { } }\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"class Xyz extends Info implements Data { void load() { } }\" in TypeScript distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0653",
+    "topic": "Core Java & OOP",
+    "question": "Will this code compile?\n\nclass ATOB {  \n    static public String str = \"abc\";  \n}  \nclass BTOC extends ATOB {  \n    static public String str = \"bcr\";  \n}  \nclass Main {  \n    public static void main(String[] args) {  \n        BTOC obj = new BTOC();  \n        System.out.println(obj.str);  \n    }  \n}",
+    "options": [
+      "A. Yes, will compile fine and print \"abc\"",
+      "B. Yes. will compile fine, but str is being overwritten in B class.",
+      "C. No, compilation fails",
+      "D. Runtime exception"
+    ],
+    "answer_index": 1,
+    "explanation": "The output is \"Yes. will compile fine, but str is being overwritten in B class.\". Trace execution step by step: follow variable assignments, control flow, and implicit conversions. Common wrong answers (\"Yes, will compile fine and print \"abc\"\", \"No, compilation fails\") usually arise from scope confusion, precedence errors, or off-by-one mistakes.",
+    "corrected": false
+  },
+  {
+    "id": "q0654",
+    "topic": "Java Concurrency",
+    "question": "Which of these handles the exception when no catch is used?",
+    "options": [
+      "A. Default handler",
+      "B. Finally",
+      "C. Throw handler",
+      "D. Java run time system"
+    ],
+    "answer_index": 0,
+    "explanation": "If no catch block is present, Java's default handler handles the uncaught exception (prints stack trace and terminates).",
+    "corrected": false
+  },
+  {
+    "id": "q0655",
+    "topic": "Core Java & OOP",
+    "question": "What is the output of the code?\n\nclass Main {  \n    static boolean foo(char c) {  \n        System.out.print(c);  \n        return true;  \n    }  \n    public static void main(String[] args) {  \n        int i = 0;  \n        for(foo('A'); foo('B') && (i < 2); foo('C')) {  \n            i++;  \n            foo('D');  \n        }  \n    }  \n}",
+    "options": [
+      "A. ABCD",
+      "B. ABDCBDCB",
+      "C. ABABAB",
+      "D. ADBCC"
+    ],
+    "answer_index": 1,
+    "explanation": "The answer is \"ABDCBDCB\". This is the standard definition or correct identification for the concept described. Review the Core Java & OOP documentation to understand how \"ABDCBDCB\" fits into the broader context.",
+    "corrected": false
+  },
+  {
+    "id": "q0656",
+    "topic": "Core Java & OOP",
+    "question": "What is the OUTPUT of the code with TreeSet?\n\nal.add(\"7\"); // line 5",
+    "options": [
+      "A. 7 9",
+      "B. 9 7",
+      "C. error: incompatible types: String cannot be converted to Integer (line 5)",
+      "D. Runtime Exception"
+    ],
+    "answer_index": 2,
+    "explanation": "The code produces 'error: incompatible types: String cannot be converted to Integer (line 5)' based on Java execution semantics.",
+    "corrected": false
+  },
+  {
+    "id": "q0657",
+    "topic": "JavaScript",
+    "question": "Which implementation of Set would you choose if you want the iterator of Set to give objects in the order they were inserted?",
+    "options": [
+      "A. LinkedHashSet",
+      "B. TreeSet",
+      "C. HashSet"
+    ],
+    "answer_index": 0,
+    "explanation": "\"LinkedHashSet\" is correct. The distractors (\"TreeSet\" and \"HashSet\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"LinkedHashSet\" in JavaScript distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0658",
+    "topic": "Core Java & OOP",
+    "question": "What is the output of the HashMap code?",
+    "options": [
+      "A. 100 John 101 Paul 102 George 103 Ringo",
+      "B. 100 John 101 Paul 102 George",
+      "C. 103 Ringo 102 George 101 Paul 100 John",
+      "D. Compilation error"
+    ],
+    "answer_index": 0,
+    "explanation": "The answer is \"100 John 101 Paul 102 George 103 Ringo\". This is the standard definition or correct identification for the concept described. Review the Core Java & OOP documentation to understand how \"100 John 101 Paul 102 George 103 Ringo\" fits into the broader context.",
+    "corrected": false
+  },
+  {
+    "id": "q0659",
+    "topic": "Core Java & OOP",
+    "question": "What is the output after sorting and reversing ArrayList?",
+    "options": [
+      "A. [1, 2, 3, 5]",
+      "B. [2, 1, 3, 5]",
+      "C. [2, 5, 3, 1]",
+      "D. [5, 3, 2, 1]",
+      "E. [1, 3, 5, 2]",
+      "F. Compilation fails",
+      "6. An exception is thrown at runtime"
+    ],
+    "answer_index": 2,
+    "explanation": "The answer is \"[2, 5, 3, 1]\". This is the standard definition or correct identification for the concept described. Review the Core Java & OOP documentation to understand how \"[2, 5, 3, 1]\" fits into the broader context.",
+    "corrected": false
+  },
+  {
+    "id": "q0660",
+    "topic": "Core Java & OOP",
+    "question": "Which Man class properly represents the relationship \"Man has a best friend who is a Dog\"?",
+    "options": [
+      "A. class Man extends Dog { }",
+      "B. class Man implements Dog { }",
+      "C. class Man { private BestFriend dog; }",
+      "D. class Man { private Dog bestFriend; }",
+      "E. class Man { private Dog<bestFriend>; }",
+      "F. class Man { private BestFriend<dog>; }"
+    ],
+    "answer_index": 3,
+    "explanation": "HAS-A relationship is modeled by composition: a Dog field inside Man. 'class Man { private Dog bestFriend; }'",
+    "corrected": false
+  },
+  {
+    "id": "q0661",
+    "topic": "Core Java & OOP",
+    "question": "What is the output?\n\nAlpha a = new Beta(); Beta b = (Beta)a; a.foo(); b.foo();",
+    "options": [
+      "A. Afoo Afoo",
+      "B. Afoo Bfoo",
+      "C. Bfoo Afoo",
+      "D. Bfoo Bfoo",
+      "E. Compilation fails"
+    ],
+    "answer_index": 3,
+    "explanation": "The answer is \"Bfoo Bfoo\". This is the standard definition or correct identification for the concept described. Review the Core Java & OOP documentation to understand how \"Bfoo Bfoo\" fits into the broader context.",
+    "corrected": false
+  },
+  {
+    "id": "q0662",
+    "topic": "Core Java & OOP",
+    "question": "Which code fragment, inserted at line 23, allows the code to compile?\n\nDateFormat df; Date date = new Date(); String s = df.format(date);",
+    "options": [
+      "A. df = new DateFormat();",
+      "B. df = Date.getFormat();",
+      "C. df = date.getFormat();",
+      "D. df = DateFormat.getFormat();",
+      "E. df = DateFormat.getInstance();"
+    ],
+    "answer_index": 4,
+    "explanation": "\"df = DateFormat.getInstance();\" is correct. The distractors (\"df = new DateFormat();\" and \"df = Date.getFormat();\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"df = DateFormat.getInstance();\" in Core Java & OOP distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0663",
+    "topic": "Core Java & OOP",
+    "question": "Output?\n\npublic class Base {  \n    public static final String FOO = \"foo\";  \n    public static void main(String[] args) {  \n        Base b = new Base();  \n        Sub s = new Sub();  \n        System.out.print(Base.FOO);  \n        System.out.print(Sub.FOO);  \n        System.out.print(b.FOO);  \n        System.out.print(s.FOO);  \n        System.out.print(((Base)s).FOO);  \n    }  \n}  \n\nclass Sub extends Base {  \n    public static final String FOO = \"bar\";  \n}",
+    "options": [
+      "A. foofoofoofoofoo",
+      "B. foobarfoobarbar",
+      "C. foobarfoofoofoo",
+      "D. foobarfoobarfoo",
+      "E. barbarbarbarbar",
+      "F. foofoofoobarbar",
+      "6. foofoofoobarfoo"
+    ],
+    "answer_index": 3,
+    "explanation": "The output is \"foobarfoobarfoo\". Trace through the execution step by step: variable assignments, method calls, and control flow all determine the final value. Pay attention to scope, type coercion, and execution order in Core Java & OOP.",
+    "corrected": false
+  },
+  {
+    "id": "q0664",
+    "topic": "Core Java & OOP",
+    "question": "A company has a business application that provides reports. Adding support for new printers requires changes in all reports. Which two design concepts most likely explain this situation?",
+    "options": [
+      "A. Inheritance",
+      "B. Low cohesion",
+      "C. Tight coupling",
+      "D. High cohesion",
+      "E. Loose coupling",
+      "F. Object immutability"
+    ],
+    "answer_index": 1,
+    "explanation": "The output is \"Low cohesion\". Trace execution step by step: follow variable assignments, control flow, and implicit conversions. Common wrong answers (\"Inheritance\", \"Tight coupling\") usually arise from scope confusion, precedence errors, or off-by-one mistakes.",
+    "corrected": false
+  },
+  {
+    "id": "q0665",
+    "topic": "Core Java & OOP",
+    "question": "Reducing number of methods in a utility class API without losing functionality promotes which OO principles?",
+    "options": [
+      "A. Looser coupling",
+      "B. Tighter coupling",
+      "C. Lower cohesion",
+      "D. Higher cohesion",
+      "E. Weaker encapsulation",
+      "F. Stronger encapsulation"
+    ],
+    "answer_index": 0,
+    "explanation": "The correct answer is \"Looser coupling\". The other options (\"Tighter coupling\", \"Lower cohesion\") do not accurately represent the concept described. This is a standard principle in Core Java & OOP — recognising \"Looser coupling\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q0666",
+    "topic": "Core Java & OOP",
+    "question": "The current design allows other classes to access methods that should be internal. What design issue is this?",
+    "options": [
+      "A. Tight coupling",
+      "B. Low cohesion",
+      "C. High cohesion",
+      "D. Loose coupling",
+      "E. Weak encapsulation",
+      "F. Strong encapsulation"
+    ],
+    "answer_index": 4,
+    "explanation": "The correct answer is \"Weak encapsulation\". The other options (\"Tight coupling\", \"Low cohesion\") do not accurately represent the concept described. This is a standard principle in Core Java & OOP — recognising \"Weak encapsulation\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q0667",
+    "topic": "Core Java & OOP",
+    "question": "Output?\n\npublic class TestString1 {  \n    public static void main(String[] args) {  \n        String str = \"420\";  \n        str += 42;  \n        System.out.print(str);  \n    }  \n}",
+    "options": [
+      "A. 42",
+      "B. 420",
+      "C. 462",
+      "D. 42042",
+      "E. Compilation fails",
+      "F. An exception is thrown at runtime"
+    ],
+    "answer_index": 3,
+    "explanation": "The output is \"42042\". Trace through the execution step by step: variable assignments, method calls, and control flow all determine the final value. Pay attention to scope, type coercion, and execution order in Core Java & OOP.",
+    "corrected": false
+  },
+  {
+    "id": "q0668",
+    "topic": "TypeScript",
+    "question": "Which three are valid modifiers on this line?\n\npublic interface Status {  \n    /* insert code here */ int MY_VALUE = 10;  \n}",
+    "options": [
+      "A. final",
+      "B. static",
+      "C. native",
+      "D. public",
+      "E. private",
+      "F. abstract",
+      "6. protected"
+    ],
+    "answer_index": 0,
+    "explanation": "\"final\" is correct. The distractors (\"static\" and \"native\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"final\" in TypeScript distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0669",
+    "topic": "Core Java & OOP",
+    "question": "Algorithm requires a List supporting efficient add(0, object) but no quick random access. Which implementation supports this?",
+    "options": [
+      "A. java.util.Queue",
+      "B. java.util.ArrayList",
+      "C. java.util.LinearList",
+      "D. java.util.LinkedList"
+    ],
+    "answer_index": 3,
+    "explanation": "The correct answer is \"java.util.LinkedList\". The other options (\"java.util.Queue\", \"java.util.ArrayList\") do not accurately represent the concept described. This is a standard principle in Core Java & OOP — recognising \"java.util.LinkedList\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q0670",
+    "topic": "TypeScript",
+    "question": "Which three are true?\n\ninterface Jumper { public void jump(); }  \nclass Animal {}  \nclass Dog extends Animal { Tail tail; }  \nclass Beagle extends Dog implements Jumper { public void jump() {} }  \nclass Cat implements Jumper { public void jump() {} }",
+    "options": [
+      "A. Cat is-a Animal",
+      "B. Cat is-a Jumper",
+      "C. Dog is-a Animal",
+      "D. Dog is-a Jumper",
+      "E. Cat has-a Animal",
+      "F. Beagle has-a Tail",
+      "6. Beagle is-a Jumper"
+    ],
+    "answer_index": 1,
+    "explanation": "\"Cat is-a Jumper\" is correct. The distractors (\"Cat is-a Animal\" and \"Dog is-a Animal\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"Cat is-a Jumper\" in TypeScript distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0671",
+    "topic": "TypeScript",
+    "question": "Which class correctly uses Data interface and Info abstract class?\n\ninterface Data { public void load(); }  \nabstract class Info { public abstract void load(); }",
+    "options": [
+      "A. public class Employee extends Info implements Data { public void load() { /* do something */ } }",
+      "B. public class Employee implements Info extends Data { public void load() { /* do something */ } }",
+      "C. public class Employee extends Info implements Data { public void load() { } public void Info.load() { } }",
+      "D. public class Employee implements Info extends Data { public void Data.load() { } public void load() { } }",
+      "E. public class Employee implements Info extends Data { public void load() { } public void Info.load() { } }",
+      "F. public class Employee extends Info implements Data { public void Data.load() { } public void Info.load() { } }"
+    ],
+    "answer_index": 0,
+    "explanation": "'public class Employee extends Info implements Data { public void load() { /* do something */ } }' is correct.",
+    "corrected": false
+  },
+  {
+    "id": "q0672",
+    "topic": "Core Java & OOP",
+    "question": "Output?\n\nclass TestA {  public void start() { System.out.println(\"TestA\"); } }  \nclass TestB extends TestA {  public void start() { System.out.println(\"TestB\"); }  \n    public static void main(String[] args) {  ((TestA)new TestB()).start(); } }",
+    "options": [
+      "A. TestA",
+      "B. TestB",
+      "C. Compilation fails",
+      "D. An exception is thrown at runtime"
+    ],
+    "answer_index": 1,
+    "explanation": "The output is \"TestB\". Trace through the execution step by step: variable assignments, method calls, and control flow all determine the final value. Pay attention to scope, type coercion, and execution order in Core Java & OOP.",
+    "corrected": false
+  },
+  {
+    "id": "q0673",
+    "topic": "Core Java & OOP",
+    "question": "Output?\n\nimport java.io.*;  \nclass files {  \n    public static void main(String args[]) {  \n        File obj = new File(\"/java/system\");  \n        System.out.print(obj.getName());  \n    }  \n}",
+    "options": [
+      "A. java",
+      "B. system",
+      "C. java/system",
+      "D. /java/system"
+    ],
+    "answer_index": 1,
+    "explanation": "The output is \"system\". Trace through the execution step by step: variable assignments, method calls, and control flow all determine the final value. Pay attention to scope, type coercion, and execution order in Core Java & OOP.",
+    "corrected": false
+  },
+  {
+    "id": "q0674",
+    "topic": "Core Java & OOP",
+    "question": "Output?\n\nimport java.io.*;  \nclass files {  \n    public static void main(String args[]) {  \n        File obj = new File(\"/java/system\");  \n        System.out.print(obj.getAbsolutePath());  \n    }  \n}",
+    "options": [
+      "A. java",
+      "B. system",
+      "C. java/system",
+      "D. /java/system"
+    ],
+    "answer_index": 3,
+    "explanation": "The output is \"/java/system\". Trace through the execution step by step: variable assignments, method calls, and control flow all determine the final value. Pay attention to scope, type coercion, and execution order in Core Java & OOP.",
+    "corrected": false
+  },
+  {
+    "id": "q0675",
+    "topic": "Core Java & OOP",
+    "question": "Output?\n\nimport java.lang.*;  \nclass exception_handling {  \n    public static void main(String args[]) {  \n        try {  \n            int a = args.length;  \n            int b = 10 / a;  \n            System.out.print(a);  \n            try {  \n                if (a == 1)  a = a / a - a;  \n                if (a == 2) { int[] c = {1}; c[8] = 9; }  \n            }  \n            catch(ArrayIndexOutOfBoundsException e) { System.out.println(\"TypeA\"); }  \n        }  \n        catch (ArithmeticException e) { System.out.println(\"TypeB\"); }  \n    }  \n}",
+    "options": [
+      "A. TypeA",
+      "B. TypeB",
+      "C. 0TypeA"
+    ],
+    "answer_index": 1,
+    "explanation": "The output is \"TypeB\". Trace through the execution step by step: variable assignments, method calls, and control flow all determine the final value. Pay attention to scope, type coercion, and execution order in Core Java & OOP.",
+    "corrected": false
+  },
+  {
+    "id": "q0676",
+    "topic": "DevOps & CI/CD",
+    "question": "You have just executed \"docker swarm leave\" on a node. What command can be run on the same node to confirm it has left the cluster?",
+    "options": [
+      "A. docker node ls",
+      "B. docker system info",
+      "C. docker swarm status",
+      "D. docker node inspect"
+    ],
+    "answer_index": 1,
+    "explanation": "Docker packages applications and their dependencies into portable containers that run identically across environments. A Dockerfile defines the image; docker-compose orchestrates multiple containers. Containers share the host OS kernel, making them lighter than VMs.",
+    "corrected": false
+  },
+  {
+    "id": "q0677",
+    "topic": "DevOps & CI/CD",
+    "question": "The server is running low on disk space. What command can be used to check disk usage of images, containers, and volumes?",
+    "options": [
+      "A. docker system df",
+      "B. docker disk usage",
+      "C. docker container df",
+      "D. docker image usage"
+    ],
+    "answer_index": 0,
+    "explanation": "Docker packages applications and their dependencies into portable containers that run identically across environments. A Dockerfile defines the image; docker-compose orchestrates multiple containers. Containers share the host OS kernel, making them lighter than VMs.",
+    "corrected": false
+  },
+  {
+    "id": "q0678",
+    "topic": "DevOps & CI/CD",
+    "question": "Which Dockerfile instruction initializes a new build stage and sets the base image?",
+    "options": [
+      "A. RUN",
+      "B. FROM",
+      "C. CMD",
+      "D. ENTRYPOINT"
+    ],
+    "answer_index": 1,
+    "explanation": "Docker packages applications and their dependencies into portable containers that run identically across environments. A Dockerfile defines the image; docker-compose orchestrates multiple containers. Containers share the host OS kernel, making them lighter than VMs.",
+    "corrected": false
+  },
+  {
+    "id": "q0679",
+    "topic": "DevOps & CI/CD",
+    "question": "Which command automatically creates a volume when a container is started?",
+    "options": [
+      "A. docker volume create nginx-test",
+      "B. docker container run --name nginx-test --volume /app nginx",
+      "C. docker volume attach nginx-test",
+      "D. docker run --storage nginx"
+    ],
+    "answer_index": 1,
+    "explanation": "Docker packages applications and their dependencies into portable containers that run identically across environments. A Dockerfile defines the image; docker-compose orchestrates multiple containers. Containers share the host OS kernel, making them lighter than VMs.",
+    "corrected": false
+  },
+  {
+    "id": "q0680",
+    "topic": "DevOps & CI/CD",
+    "question": "What is the Docker command to add or update a published port?",
+    "options": [
+      "A. docker service port-update",
+      "B. docker service expose",
+      "C. docker service update --publish-add",
+      "D. docker service publish"
+    ],
+    "answer_index": 2,
+    "explanation": "Docker packages applications and their dependencies into portable containers that run identically across environments. A Dockerfile defines the image; docker-compose orchestrates multiple containers. Containers share the host OS kernel, making them lighter than VMs.",
+    "corrected": false
+  },
+  {
+    "id": "q0681",
+    "topic": "Core Java & OOP",
+    "question": "What service mode is used to deploy a single task of a service to each node?",
+    "options": [
+      "A. Replicated",
+      "B. Global",
+      "C. Cluster",
+      "D. Distributed"
+    ],
+    "answer_index": 1,
+    "explanation": "\"Global\" is correct. The distractors (\"Replicated\" and \"Cluster\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"Global\" in Core Java & OOP distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0682",
+    "topic": "Core Java & OOP",
+    "question": "Which description best fits a DaemonSet?",
+    "options": [
+      "A. A controller that manages deployments",
+      "B. A way to run a copy of a pod on all or some nodes",
+      "C. A service that balances traffic between pods",
+      "D. A pod that runs only once"
+    ],
+    "answer_index": 1,
+    "explanation": "\"A way to run a copy of a pod on all or some nodes\" is correct. The distractors (\"A controller that manages deployments\" and \"A service that balances traffic between pods\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"A way to run a copy of a pod on all or some nodes\" in Core Java & OOP distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0683",
+    "topic": "DevOps & CI/CD",
+    "question": "Docker command to connect a running container to an existing user-defined bridge network?",
+    "options": [
+      "A. docker network attach",
+      "B. docker network connect",
+      "C. docker container network",
+      "D. docker network add"
+    ],
+    "answer_index": 1,
+    "explanation": "Docker packages applications and their dependencies into portable containers that run identically across environments. A Dockerfile defines the image; docker-compose orchestrates multiple containers. Containers share the host OS kernel, making them lighter than VMs.",
+    "corrected": false
+  },
+  {
+    "id": "q0684",
+    "topic": "DevOps & CI/CD",
+    "question": "Docker command to display detailed information on one or more networks?",
+    "options": [
+      "A. docker network inspect",
+      "B. docker network info",
+      "C. docker inspect network",
+      "D. docker network show"
+    ],
+    "answer_index": 0,
+    "explanation": "Docker packages applications and their dependencies into portable containers that run identically across environments. A Dockerfile defines the image; docker-compose orchestrates multiple containers. Containers share the host OS kernel, making them lighter than VMs.",
+    "corrected": false
+  },
+  {
+    "id": "q0685",
+    "topic": "DevOps & CI/CD",
+    "question": "In Kubernetes, a node is:",
+    "options": [
+      "A. A container registry",
+      "B. A worker machine",
+      "C. A cluster service",
+      "D. A control plane component"
+    ],
+    "answer_index": 1,
+    "explanation": "Kubernetes (K8s) is a container orchestration platform. A cluster has a control plane (scheduler, API server) and worker nodes that run Pods (one or more containers). Services expose Pods; Deployments manage replicas and rolling updates.",
+    "corrected": false
+  },
+  {
+    "id": "q0686",
+    "topic": "DevOps & CI/CD",
+    "question": "What is the default format of docker inspect output?",
+    "options": [
+      "A. XML",
+      "B. YAML",
+      "C. JSON",
+      "D. TXT"
+    ],
+    "answer_index": 2,
+    "explanation": "Docker packages applications and their dependencies into portable containers that run identically across environments. A Dockerfile defines the image; docker-compose orchestrates multiple containers. Containers share the host OS kernel, making them lighter than VMs.",
+    "corrected": false
+  },
+  {
+    "id": "q0687",
+    "topic": "DevOps & CI/CD",
+    "question": "What is a label in Kubernetes?",
+    "options": [
+      "A. A security rule for pods",
+      "B. A way to group related things using key/value pairs",
+      "C. A network configuration",
+      "D. A container runtime setting"
+    ],
+    "answer_index": 1,
+    "explanation": "Kubernetes (K8s) is a container orchestration platform. A cluster has a control plane (scheduler, API server) and worker nodes that run Pods (one or more containers). Services expose Pods; Deployments manage replicas and rolling updates.",
+    "corrected": false
+  },
+  {
+    "id": "q0688",
+    "topic": "DevOps & CI/CD",
+    "question": "Docker command to find the current logging driver for a running container?",
+    "options": [
+      "A. docker logs",
+      "B. docker inspect",
+      "C. docker info",
+      "D. docker container info"
+    ],
+    "answer_index": 1,
+    "explanation": "Docker packages applications and their dependencies into portable containers that run identically across environments. A Dockerfile defines the image; docker-compose orchestrates multiple containers. Containers share the host OS kernel, making them lighter than VMs.",
+    "corrected": false
+  },
+  {
+    "id": "q0689",
+    "topic": "DevOps & CI/CD",
+    "question": "Docker command to see the storage driver Docker is currently using?",
+    "options": [
+      "A. docker storage",
+      "B. docker inspect",
+      "C. docker system df",
+      "D. docker info"
+    ],
+    "answer_index": 3,
+    "explanation": "Docker packages applications and their dependencies into portable containers that run identically across environments. A Dockerfile defines the image; docker-compose orchestrates multiple containers. Containers share the host OS kernel, making them lighter than VMs.",
+    "corrected": false
+  },
+  {
+    "id": "q0690",
+    "topic": "DevOps & CI/CD",
+    "question": "What does docker image prune do?",
+    "options": [
+      "A. Removes all images",
+      "B. Removes unused images",
+      "C. Removes running containers",
+      "D. Removes unused volumes"
+    ],
+    "answer_index": 1,
+    "explanation": "Docker packages applications and their dependencies into portable containers that run identically across environments. A Dockerfile defines the image; docker-compose orchestrates multiple containers. Containers share the host OS kernel, making them lighter than VMs.",
+    "corrected": false
+  },
+  {
+    "id": "q0691",
+    "topic": "Core Java & OOP",
+    "question": "What manages assigning nodes to pods depending on resource availability?",
+    "options": [
+      "A. Controller Manager",
+      "B. Scheduler",
+      "C. API Server",
+      "D. Kubelet"
+    ],
+    "answer_index": 1,
+    "explanation": "\"Scheduler\" is correct. The distractors (\"Controller Manager\" and \"API Server\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"Scheduler\" in Core Java & OOP distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0692",
+    "topic": "DevOps & CI/CD",
+    "question": "What can you deploy on Kubernetes?",
+    "options": [
+      "A. Virtual Machines",
+      "B. Containers",
+      "C. Operating Systems",
+      "D. Drivers"
+    ],
+    "answer_index": 1,
+    "explanation": "Kubernetes (K8s) is a container orchestration platform. A cluster has a control plane (scheduler, API server) and worker nodes that run Pods (one or more containers). Services expose Pods; Deployments manage replicas and rolling updates.",
+    "corrected": false
+  },
+  {
+    "id": "q0693",
+    "topic": "DevOps & CI/CD",
+    "question": "Which command is used to create a service in Kubernetes?",
+    "options": [
+      "A. kubectl service create",
+      "B. kubectl expose",
+      "C. kubectl create service",
+      "D. kubectl deploy service"
+    ],
+    "answer_index": 1,
+    "explanation": "Kubernetes (K8s) is a container orchestration platform. A cluster has a control plane (scheduler, API server) and worker nodes that run Pods (one or more containers). Services expose Pods; Deployments manage replicas and rolling updates.",
+    "corrected": false
+  },
+  {
+    "id": "q0694",
+    "topic": "DevOps & CI/CD",
+    "question": "Which command is used to create a service?",
+    "options": [
+      "A. kubectl service create",
+      "B. kubectl expose",
+      "C. kubectl create service",
+      "D. kubectl deploy service"
+    ],
+    "answer_index": 1,
+    "explanation": "\"kubectl expose\" is correct. The distractors (\"kubectl service create\" and \"kubectl create service\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"kubectl expose\" in DevOps & CI/CD distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0695",
+    "topic": "Core Java & OOP",
+    "question": "What is the function of a node?",
+    "options": [
+      "A. To manage the control plane",
+      "B. To run pods according to master components",
+      "C. To store container images",
+      "D. To configure network policies"
+    ],
+    "answer_index": 1,
+    "explanation": "The answer is \"To run pods according to master components\". This is the standard definition or correct identification for the concept described. Review the Core Java & OOP documentation to understand how \"To run pods according to master components\" fits into the broader context.",
+    "corrected": false
+  },
+  {
+    "id": "q0696",
+    "topic": "DevOps & CI/CD",
+    "question": "OpenShift is based on which container orchestration platform?",
+    "options": [
+      "A. Docker Swarm",
+      "B. Kubernetes",
+      "C. Mesos",
+      "D. Nomad"
+    ],
+    "answer_index": 1,
+    "explanation": "Kubernetes (K8s) is a container orchestration platform. A cluster has a control plane (scheduler, API server) and worker nodes that run Pods (one or more containers). Services expose Pods; Deployments manage replicas and rolling updates.",
+    "corrected": false
+  },
+  {
+    "id": "q0697",
+    "topic": "DevOps & CI/CD",
+    "question": "What is a Pod?",
+    "options": [
+      "A. A single container instance",
+      "B. A group of one or more application containers with shared volumes and IP address",
+      "C. A Kubernetes service object",
+      "D. A container image repository"
+    ],
+    "answer_index": 1,
+    "explanation": "The answer is \"A group of one or more application containers with shared volumes and IP address\". This is the standard definition or correct identification for the concept described. Review the DevOps & CI/CD documentation to understand how \"A group of one or more application containers with shared volumes and IP address\" fits into the broader context.",
+    "corrected": false
+  },
+  {
+    "id": "q0698",
+    "topic": "MongoDB",
+    "question": "A ______ ensures that all nodes run a copy of a pod.",
+    "options": [
+      "A. ReplicaSet",
+      "B. Deployment",
+      "C. DaemonSet",
+      "D. StatefulSet"
+    ],
+    "answer_index": 2,
+    "explanation": "The correct answer is \"DaemonSet\". The other options (\"ReplicaSet\", \"Deployment\") do not accurately represent the concept described. This is a standard principle in MongoDB — recognising \"DaemonSet\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q0699",
+    "topic": "DevOps & CI/CD",
+    "question": "What is a Kubernetes volume?",
+    "options": [
+      "A. A storage driver for Docker",
+      "B. A directory for data accessible to containers in a pod",
+      "C. A network configuration for pods",
+      "D. A backup container"
+    ],
+    "answer_index": 1,
+    "explanation": "Kubernetes (K8s) is a container orchestration platform. A cluster has a control plane (scheduler, API server) and worker nodes that run Pods (one or more containers). Services expose Pods; Deployments manage replicas and rolling updates.",
+    "corrected": false
+  },
+  {
+    "id": "q0700",
+    "topic": "DevOps & CI/CD",
+    "question": "Which command removes the cluster-admin role from a user?",
+    "options": [
+      "A. oc adm policy remove-role-from-user",
+      "B. oc adm policy remove-cluster-role-from-user",
+      "C. kubectl remove cluster-role",
+      "D. kubectl delete cluster-admin"
+    ],
+    "answer_index": 1,
+    "explanation": "\"oc adm policy remove-cluster-role-from-user\" is correct. The distractors (\"oc adm policy remove-role-from-user\" and \"kubectl remove cluster-role\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"oc adm policy remove-cluster-role-from-user\" in DevOps & CI/CD distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0701",
+    "topic": "DevOps & CI/CD",
+    "question": "What is a kubelet?",
+    "options": [
+      "A. A Kubernetes scheduler component",
+      "B. A node agent that manages pods and their containers",
+      "C. A container runtime engine",
+      "D. A Kubernetes network plugin"
+    ],
+    "answer_index": 1,
+    "explanation": "The answer is \"A node agent that manages pods and their containers\". This is the standard definition or correct identification for the concept described. Review the DevOps & CI/CD documentation to understand how \"A node agent that manages pods and their containers\" fits into the broader context.",
+    "corrected": false
+  },
+  {
+    "id": "q0702",
+    "topic": "Core Java & OOP",
+    "question": "What is the intended use of etcd?",
+    "options": [
+      "A. To run container workloads",
+      "B. To store all cluster data and maintain cluster state",
+      "C. To manage container networking",
+      "D. To schedule pods on nodes"
+    ],
+    "answer_index": 1,
+    "explanation": "The answer is \"To store all cluster data and maintain cluster state\". This is the standard definition or correct identification for the concept described. Review the Core Java & OOP documentation to understand how \"To store all cluster data and maintain cluster state\" fits into the broader context.",
+    "corrected": false
+  },
+  {
+    "id": "q0703",
+    "topic": "DevOps & CI/CD",
+    "question": "Docker command to increase the number of replicas?",
+    "options": [
+      "A. docker service scale",
+      "B. docker service update",
+      "C. docker container scale",
+      "D. docker scale service"
+    ],
+    "answer_index": 0,
+    "explanation": "Docker packages applications and their dependencies into portable containers that run identically across environments. A Dockerfile defines the image; docker-compose orchestrates multiple containers. Containers share the host OS kernel, making them lighter than VMs.",
+    "corrected": false
+  },
+  {
+    "id": "q0704",
+    "topic": "DevOps & CI/CD",
+    "question": "Docker command to display layers of a Docker image?",
+    "options": [
+      "A. docker image layers",
+      "B. docker inspect image",
+      "C. docker history",
+      "D. docker image show"
+    ],
+    "answer_index": 2,
+    "explanation": "Docker packages applications and their dependencies into portable containers that run identically across environments. A Dockerfile defines the image; docker-compose orchestrates multiple containers. Containers share the host OS kernel, making them lighter than VMs.",
+    "corrected": false
+  },
+  {
+    "id": "q0705",
+    "topic": "DevOps & CI/CD",
+    "question": "What is the result of \"kubectl exec -ti my-pod-name bash\"?",
+    "options": [
+      "A. Restarts the pod",
+      "B. Opens a console on the first container inside the pod",
+      "C. Deletes the pod",
+      "D. Shows pod logs"
+    ],
+    "answer_index": 1,
+    "explanation": "The answer is \"Opens a console on the first container inside the pod\". This is the standard definition or correct identification for the concept described. Review the DevOps & CI/CD documentation to understand how \"Opens a console on the first container inside the pod\" fits into the broader context.",
+    "corrected": false
+  },
+  {
+    "id": "q0706",
+    "topic": "DevOps & CI/CD",
+    "question": "Which Docker commands can be used to find all port mappings?",
+    "options": [
+      "A. docker inspect, docker ps, docker port",
+      "B. docker network inspect, docker ps",
+      "C. docker ports, docker inspect",
+      "D. docker container ports, docker list"
+    ],
+    "answer_index": 0,
+    "explanation": "Docker packages applications and their dependencies into portable containers that run identically across environments. A Dockerfile defines the image; docker-compose orchestrates multiple containers. Containers share the host OS kernel, making them lighter than VMs.",
+    "corrected": false
+  },
+  {
+    "id": "q0707",
+    "topic": "DevOps & CI/CD",
+    "question": "What does Dockerfile LABEL do?",
+    "options": [
+      "A. Adds metadata to an image",
+      "B. Creates a new container",
+      "C. Defines container entrypoint",
+      "D. Specifies exposed ports"
+    ],
+    "answer_index": 0,
+    "explanation": "Docker packages applications and their dependencies into portable containers that run identically across environments. A Dockerfile defines the image; docker-compose orchestrates multiple containers. Containers share the host OS kernel, making them lighter than VMs.",
+    "corrected": false
+  },
+  {
+    "id": "q0708",
+    "topic": "DevOps & CI/CD",
+    "question": "At its core Kubernetes is a platform for:",
+    "options": [
+      "A. Running and scheduling container applications on a cluster",
+      "B. Managing virtual machines",
+      "C. Building Docker images",
+      "D. Storing container registries"
+    ],
+    "answer_index": 0,
+    "explanation": "Kubernetes (K8s) is a container orchestration platform. A cluster has a control plane (scheduler, API server) and worker nodes that run Pods (one or more containers). Services expose Pods; Deployments manage replicas and rolling updates.",
+    "corrected": false
+  },
+  {
+    "id": "q0709",
+    "topic": "DevOps & CI/CD",
+    "question": "Which command shows volumes for a specific container?",
+    "options": [
+      "A. docker volume list",
+      "B. docker inspect",
+      "C. docker container volume",
+      "D. docker volume inspect"
+    ],
+    "answer_index": 1,
+    "explanation": "Docker packages applications and their dependencies into portable containers that run identically across environments. A Dockerfile defines the image; docker-compose orchestrates multiple containers. Containers share the host OS kernel, making them lighter than VMs.",
+    "corrected": false
+  },
+  {
+    "id": "q0710",
+    "topic": "DevOps & CI/CD",
+    "question": "Docker command to update an existing service?",
+    "options": [
+      "A. docker service update",
+      "B. docker update service",
+      "C. docker service modify",
+      "D. docker container update"
+    ],
+    "answer_index": 0,
+    "explanation": "Docker packages applications and their dependencies into portable containers that run identically across environments. A Dockerfile defines the image; docker-compose orchestrates multiple containers. Containers share the host OS kernel, making them lighter than VMs.",
+    "corrected": false
+  },
+  {
+    "id": "q0711",
+    "topic": "DevOps & CI/CD",
+    "question": "Docker command to update an existing service?",
+    "options": [
+      "A. docker service update",
+      "B. docker service create",
+      "C. docker update service",
+      "D. docker service modify"
+    ],
+    "answer_index": 0,
+    "explanation": "Docker packages applications and their dependencies into portable containers that run identically across environments. A Dockerfile defines the image; docker-compose orchestrates multiple containers. Containers share the host OS kernel, making them lighter than VMs.",
+    "corrected": false
+  },
+  {
+    "id": "q0712",
+    "topic": "DevOps & CI/CD",
+    "question": "What runs on each node to ensure containers are running in a pod?",
+    "options": [
+      "A. kube-proxy",
+      "B. kubelet",
+      "C. etcd",
+      "D. kubectl"
+    ],
+    "answer_index": 1,
+    "explanation": "\"kubelet\" is correct. The distractors (\"kube-proxy\" and \"etcd\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"kubelet\" in DevOps & CI/CD distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0713",
+    "topic": "DevOps & CI/CD",
+    "question": "What does Dockerfile EXPOSE do?",
+    "options": [
+      "A. Opens the port on host automatically",
+      "B. Publishes container port to internet",
+      "C. Informs Docker that the container listens on the specified port",
+      "D. Creates a new network port"
+    ],
+    "answer_index": 2,
+    "explanation": "Docker packages applications and their dependencies into portable containers that run identically across environments. A Dockerfile defines the image; docker-compose orchestrates multiple containers. Containers share the host OS kernel, making them lighter than VMs.",
+    "corrected": false
+  },
+  {
+    "id": "q0714",
+    "topic": "DevOps & CI/CD",
+    "question": "What is true about using -P option in Docker?",
+    "options": [
+      "A. Binds container port to fixed host port",
+      "B. Docker binds each exposed container port to a random host port",
+      "C. Disables exposed ports",
+      "D. Publishes only port 80"
+    ],
+    "answer_index": 1,
+    "explanation": "Docker packages applications and their dependencies into portable containers that run identically across environments. A Dockerfile defines the image; docker-compose orchestrates multiple containers. Containers share the host OS kernel, making them lighter than VMs.",
+    "corrected": false
+  },
+  {
+    "id": "q0715",
+    "topic": "DevOps & CI/CD",
+    "question": "Difference between ADD and COPY in Dockerfile?",
+    "options": [
+      "A. ADD supports remote URL handling, COPY does not",
+      "B. COPY supports remote URL handling, ADD does not",
+      "C. Both are exactly the same",
+      "D. COPY automatically extracts files"
+    ],
+    "answer_index": 0,
+    "explanation": "Docker packages applications and their dependencies into portable containers that run identically across environments. A Dockerfile defines the image; docker-compose orchestrates multiple containers. Containers share the host OS kernel, making them lighter than VMs.",
+    "corrected": false
+  },
+  {
+    "id": "q0716",
+    "topic": "HTML & CSS",
+    "question": "What is a cluster?",
+    "options": [
+      "A. A single container system",
+      "B. A single system made up of several other resources",
+      "C. A network port collection",
+      "D. A container image repository"
+    ],
+    "answer_index": 1,
+    "explanation": "The answer is \"A single system made up of several other resources\". This is the standard definition or correct identification for the concept described. Review the HTML & CSS documentation to understand how \"A single system made up of several other resources\" fits into the broader context.",
+    "corrected": false
+  },
+  {
+    "id": "q0717",
+    "topic": "DevOps & CI/CD",
+    "question": "Command to display Docker configuration on host?",
+    "options": [
+      "A. docker config",
+      "B. docker host info",
+      "C. docker info",
+      "D. docker status"
+    ],
+    "answer_index": 2,
+    "explanation": "Docker packages applications and their dependencies into portable containers that run identically across environments. A Dockerfile defines the image; docker-compose orchestrates multiple containers. Containers share the host OS kernel, making them lighter than VMs.",
+    "corrected": false
+  },
+  {
+    "id": "q0718",
+    "topic": "DevOps & CI/CD",
+    "question": "Function of a node in Kubernetes?",
+    "options": [
+      "A. To store container images",
+      "B. To run pods according to master components",
+      "C. To manage user authentication",
+      "D. To store cluster configuration"
+    ],
+    "answer_index": 1,
+    "explanation": "Kubernetes (K8s) is a container orchestration platform. A cluster has a control plane (scheduler, API server) and worker nodes that run Pods (one or more containers). Services expose Pods; Deployments manage replicas and rolling updates.",
+    "corrected": false
+  },
+  {
+    "id": "q0719",
+    "topic": "DevOps & CI/CD",
+    "question": "Which command provides users edit access to developers group?",
+    "options": [
+      "A. oc adm policy add-role-to-group edit developers -n develop",
+      "B. oc adm grant edit developers",
+      "C. oc role add developers edit",
+      "D. kubectl role add developers"
+    ],
+    "answer_index": 0,
+    "explanation": "\"oc adm policy add-role-to-group edit developers -n develop\" is correct. The distractors (\"oc adm grant edit developers\" and \"oc role add developers edit\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"oc adm policy add-role-to-group edit developers -n develop\" in DevOps & CI/CD distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0720",
+    "topic": "Core Java & OOP",
+    "question": "Default port to access WebSphere Application Server console?",
+    "options": [
+      "A. 8080",
+      "B. 7001",
+      "C. 9080",
+      "D. 9443"
+    ],
+    "answer_index": 2,
+    "explanation": "The correct answer is \"9080\". The other options (\"8080\", \"7001\") do not accurately represent the concept described. This is a standard principle in Core Java & OOP — recognising \"9080\" in context is key to answering related exam questions.",
+    "corrected": false
+  }
+]

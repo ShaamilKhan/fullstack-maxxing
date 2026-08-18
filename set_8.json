@@ -1,0 +1,1685 @@
+[
+  {
+    "id": "q0841",
+    "topic": "Spring Core",
+    "question": "Which of the following statement is false?",
+    "options": [
+      "A. The Core package is the most fundamental part of the framework and provides the IoC and Dependency Injection feature.",
+      "B. The DAO package provides a JDBC-abstraction layer that removes the need to do tedious JDBC coding and parsing of database-vendor specific error code.",
+      "C. The ORM package provides integration layers for popular object-relational mapping APIs, including JPA, JDO, Hibernate, iBatis.",
+      "D. AOP takes out the direct dependency of crosscutting tasks from classes.",
+      "E. Spring's Web package provides basic web-oriented integration features such as multipart file upload functionality.",
+      "F. Spring's MVC package provides a Model-View-Controller implementation for web applications.",
+      "6. None of these"
+    ],
+    "answer_index": 6,
+    "explanation": "\"6. None of these\" is the odd one out in this context. The other options (\"The Core package is the most fundamental part of the framework and provides the IoC and Dependency Injection feature.\" and \"The DAO package provides a JDBC-abstraction layer that removes the need to do tedious JDBC coding and parsing of database-vendor specific error code.\") all correctly describe or belong to the stated category. Knowing what is NOT part of a concept is as important as knowing what is.",
+    "corrected": false
+  },
+  {
+    "id": "q0842",
+    "topic": "Spring Core",
+    "question": "Which of the following is actual representation of the Spring IoC container?",
+    "options": [
+      "A. Application Context",
+      "B. Xml Bean Factory",
+      "C. Bean Factory",
+      "D. Web Application Context"
+    ],
+    "answer_index": 2,
+    "explanation": "\"Bean Factory\" is correct. The distractors (\"Application Context\" and \"Xml Bean Factory\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"Bean Factory\" in Spring Core distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0843",
+    "topic": "Spring Core",
+    "question": "A bean is simply an object that is instantiated, assembled and otherwise managed by a Spring IoC container.",
+    "options": [
+      "A. true",
+      "B. false"
+    ],
+    "answer_index": 0,
+    "explanation": "This statement is TRUE. A bean is simply an object that is instantiated, assembled and otherwise managed by a Spring IoC container is correct behaviour in Spring Core. Understanding when this holds (and its exceptions) is essential for assessments.",
+    "corrected": false
+  },
+  {
+    "id": "q0844",
+    "topic": "Core Java & OOP",
+    "question": "How does the container load configuration metadata from external resources such as the local file system or Java CLASSPATH?",
+    "options": [
+      "A. Application Context constructor",
+      "B. Init()",
+      "C. Context Constructor",
+      "D. XmlClassPath Constructor"
+    ],
+    "answer_index": 0,
+    "explanation": "\"Application Context constructor\" is correct. The distractors (\"Init()\" and \"Context Constructor\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"Application Context constructor\" in Core Java & OOP distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0845",
+    "topic": "Core Java & OOP",
+    "question": "Which of the following is the correct way to load bean definitions from another file?",
+    "options": [
+      "A. <bean id=\"bean1\" class=\"...\" import=\"something.xml\"/>",
+      "B. <resources name=\"something.xml\" import=\"true\"/>",
+      "C. <import resource=\"something.xml\"/>",
+      "D. All of the above"
+    ],
+    "answer_index": 2,
+    "explanation": "<import resource=\"something.xml\"/> is the correct answer. Review the question topic (Java OOP) for deeper context.",
+    "corrected": false
+  },
+  {
+    "id": "q0846",
+    "topic": "Core Java & OOP",
+    "question": "What is the correct way to write constructor injection for the given TestBean class?",
+    "options": [
+      "A. Using constructor-arg with type attributes",
+      "B. Using constructor-arg with index attributes",
+      "C. Using constructor-arg with reversed index values",
+      "D. Using constructor-arg with type attributes in different order",
+      "E. All of the above"
+    ],
+    "answer_index": 4,
+    "explanation": "The answer is \"All of the above\". This is the standard definition or correct identification for the concept described. Review the Core Java & OOP documentation to understand how \"All of the above\" fits into the broader context.",
+    "corrected": false
+  },
+  {
+    "id": "q0847",
+    "topic": "SQL & JDBC",
+    "question": "Which of the following are correct statements?",
+    "options": [
+      "A. Form Controllers handle form interaction",
+      "B. Multipart resolver handles file uploads",
+      "C. Dynamic binding of data to domain model",
+      "D. Interaction with Velocity, JSP, Thymeleaf, PDF, Excel",
+      "E. Sending email and remote accessing via SOAP or Burlap"
+    ],
+    "answer_index": 0,
+    "explanation": "Form Controllers handle form interaction is the correct answer. Review the question topic (Java OOP) for deeper context.",
+    "corrected": false
+  },
+  {
+    "id": "q0848",
+    "topic": "Core Java & OOP",
+    "question": "What do you mean by 'bean'?",
+    "options": [
+      "A. component",
+      "B. object",
+      "C. class",
+      "D. container",
+      "E. xml file"
+    ],
+    "answer_index": 0,
+    "explanation": "\"component\" is correct. The distractors (\"object\" and \"class\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"component\" in Core Java & OOP distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0849",
+    "topic": "Spring Core",
+    "question": "What responsibilities are included for BeanFactory?",
+    "options": [
+      "A. Instantiating or sourcing application objects",
+      "B. Configuring such objects",
+      "C. Assembling the dependencies between these objects",
+      "D. Manage lifecycle of Spring"
+    ],
+    "answer_index": 0,
+    "explanation": "\"Instantiating or sourcing application objects\" is correct. The distractors (\"Configuring such objects\" and \"Assembling the dependencies between these objects\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"Instantiating or sourcing application objects\" in Spring Core distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0850",
+    "topic": "Spring Core",
+    "question": "What are the responsibilities included for XmlBeanFactory?",
+    "options": [
+      "A. Allows you to express the objects that compose your application",
+      "B. Resolves inter-dependencies between such objects using XML",
+      "C. Uses XML configuration metadata to create a fully configured system",
+      "D. None of the above"
+    ],
+    "answer_index": 0,
+    "explanation": "The answer is \"Allows you to express the objects that compose your application\". This is the standard definition or correct identification for the concept described. Review the Spring Core documentation to understand how \"Allows you to express the objects that compose your application\" fits into the broader context.",
+    "corrected": false
+  },
+  {
+    "id": "q0851",
+    "topic": "Core Java & OOP",
+    "question": "What are the correct ways to instantiate a bean?",
+    "options": [
+      "A. Using default (empty) constructor",
+      "B. Instantiation using a static factory method",
+      "C. Instantiation using an instance factory method",
+      "D. Using the container",
+      "E. All these above are true"
+    ],
+    "answer_index": 4,
+    "explanation": "The answer is \"All these above are true\". This is the standard definition or correct identification for the concept described. Review the Core Java & OOP documentation to understand how \"All these above are true\" fits into the broader context.",
+    "corrected": false
+  },
+  {
+    "id": "q0852",
+    "topic": "Spring Core",
+    "question": "Which statements are true about DI (Dependency Injection)?",
+    "options": [
+      "A. DI says that no need create your objects but describe how they should be created.",
+      "B. We should not directly connect your components and services together in code but describe which services are needed by which components in a configuration file.",
+      "C. Inversion of control relies on dependency injection.",
+      "D. We should not directly connect your components and services together in code but describe which services are needed by which components in a configuration file."
+    ],
+    "answer_index": 0,
+    "explanation": "Dependency Injection (DI) is a design pattern where a class receives its dependencies from outside rather than creating them. This decouples components, making them easier to test and swap. Spring, Angular, and NestJS all use DI containers to manage object lifecycles.",
+    "corrected": false
+  },
+  {
+    "id": "q0853",
+    "topic": "Core Java & OOP",
+    "question": "Which statements are true about IOC (Inversion of Control)?",
+    "options": [
+      "A. Decoupling of the execution of a certain task from implementation.",
+      "B. Each module can focus on what it is designed for.",
+      "C. Replacing modules should not affect other modules.",
+      "D. Modules should observe about what other systems do",
+      "E. All the above"
+    ],
+    "answer_index": 0,
+    "explanation": "\"Decoupling of the execution of a certain task from implementation.\" is correct. The distractors (\"Each module can focus on what it is designed for.\" and \"Replacing modules should not affect other modules.\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"Decoupling of the execution of a certain task from implementation.\" in Core Java & OOP distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0854",
+    "topic": "Core Java & OOP",
+    "question": "What do you mean by inner bean?",
+    "options": [
+      "A. A <bean/> element inside the <bean/> elements is used to define an inner bean.",
+      "B. A <bean/> element inside the <property/> elements is used to define an inner bean.",
+      "C. A <bean/> element inside the <constructor-arg/> elements is used to define an inner bean.",
+      "D. A <bean/> element inside the property or <constructor-arg/> elements is used to define an inner bean."
+    ],
+    "answer_index": 3,
+    "explanation": "'A <bean/> element inside the property or <constructor-arg/> elements is used to define an inner bean.' is correct.",
+    "corrected": false
+  },
+  {
+    "id": "q0855",
+    "topic": "TypeScript",
+    "question": "Which of the following are basic techniques to implement inversion of control?",
+    "options": [
+      "A. Using a factory pattern",
+      "B. Using a service locator pattern",
+      "C. Constructor injection",
+      "D. Setter injection",
+      "E. Interface injection",
+      "F. All the above"
+    ],
+    "answer_index": 5,
+    "explanation": "\"All the above\" is correct. The distractors (\"Using a factory pattern\" and \"Using a service locator pattern\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"All the above\" in TypeScript distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0856",
+    "topic": "Spring Core",
+    "question": "Which of the following statements are false about Constructor-based DI?",
+    "options": [
+      "A. Constructor-based DI is effected by invoking a constructor with a number of arguments, each representing a dependency.",
+      "B. We can also use @Autowired annotation on constructor for constructor based autowiring.",
+      "C. Constructor-based DI is accomplished when the container invokes a class constructor with a number of arguments.",
+      "D. Constructor-based DI is effected by invoking Setter Injection each representing a dependency."
+    ],
+    "answer_index": 3,
+    "explanation": "Constructor-based DI is effected by invoking Setter Injection each representing a dependency. is the correct answer. Review the question topic (Java OOP) for deeper context.",
+    "corrected": false
+  },
+  {
+    "id": "q0857",
+    "topic": "Core Java & OOP",
+    "question": "What are the correct ways to define constructor injection?",
+    "options": [
+      "A. Using <constructor-arg> with <value> element",
+      "B. Using <constructor-arg> with value attribute",
+      "C. Using self-closing <constructor-arg value=\"...\"/>",
+      "D. All of the above"
+    ],
+    "answer_index": 3,
+    "explanation": "The answer is \"All of the above\". This is the standard definition or correct identification for the concept described. Review the Core Java & OOP documentation to understand how \"All of the above\" fits into the broader context.",
+    "corrected": false
+  },
+  {
+    "id": "q0858",
+    "topic": "Spring Core",
+    "question": "Spring Web MVC (and in Spring in general) follows the \"Open for extension, closed for modification\" principle.",
+    "options": [
+      "A. true",
+      "B. false"
+    ],
+    "answer_index": 0,
+    "explanation": "This statement is TRUE. Spring Web MVC (and in Spring in general) follows the \"Open for extension, closed for modification\" principle is correct behaviour in Spring Core. Understanding when this holds (and its exceptions) is essential for assessments.",
+    "corrected": false
+  },
+  {
+    "id": "q0859",
+    "topic": "Spring Core",
+    "question": "Which of the following is not a special bean in WebApplicationContext?",
+    "options": [
+      "A. Locale resolver",
+      "B. Theme resolver",
+      "C. Multipart file",
+      "D. Resolver",
+      "E. Handler exception resolver",
+      "F. Handler mappings",
+      "6. None of the above"
+    ],
+    "answer_index": 3,
+    "explanation": "\"Resolver\" is the odd one out in this context. The other options (\"Locale resolver\" and \"Theme resolver\") all correctly describe or belong to the stated category. Knowing what is NOT part of a concept is as important as knowing what is.",
+    "corrected": false
+  },
+  {
+    "id": "q0860",
+    "topic": "Spring Core",
+    "question": "How does the Spring DispatcherServlet support returning the last modification-date as specified by the Servlet API?",
+    "options": [
+      "A. By implementing the LastModified interface",
+      "B. By implementing the LastSessionModified interface",
+      "C. By implementing the LastDateModified interface",
+      "D. By implementing the LastModifiedDate interface"
+    ],
+    "answer_index": 0,
+    "explanation": "\"By implementing the LastModified interface\" is correct. The distractors (\"By implementing the LastSessionModified interface\" and \"By implementing the LastDateModified interface\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"By implementing the LastModified interface\" in Spring Core distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0861",
+    "topic": "Spring Core",
+    "question": "WebApplicationContext has more scopes like request, session, globalSession compared to standard ApplicationContext.",
+    "options": [
+      "A. true",
+      "B. false"
+    ],
+    "answer_index": 0,
+    "explanation": "This statement is TRUE. WebApplicationContext has more scopes like request, session, globalSession compared to standard ApplicationContext is correct behaviour in Spring Core. Understanding when this holds (and its exceptions) is essential for assessments.",
+    "corrected": false
+  },
+  {
+    "id": "q0862",
+    "topic": "Spring Core",
+    "question": "All Spring's various controllers inherit from AbstractController.",
+    "options": [
+      "A. true",
+      "B. false"
+    ],
+    "answer_index": 0,
+    "explanation": "This statement is TRUE. All Spring's various controllers inherit from AbstractController is correct behaviour in Spring Core. Understanding when this holds (and its exceptions) is essential for assessments.",
+    "corrected": false
+  },
+  {
+    "id": "q0863",
+    "topic": "Core Java & OOP",
+    "question": "You can write your own controller by using handleRequestInternal(HttpServletRequest, HttpServletResponse) method from AbstractController and returning a ModelAndView object.",
+    "options": [
+      "A. true",
+      "B. false"
+    ],
+    "answer_index": 0,
+    "explanation": "This statement is TRUE. You can write your own controller by using handleRequestInternal(HttpServletRequest, HttpServletResponse) method from AbstractController and returning a ModelAndView object is correct behaviour in Core Java & OOP. Understanding when this holds (and its exceptions) is essential for assessments.",
+    "corrected": false
+  },
+  {
+    "id": "q0864",
+    "topic": "HTML & CSS",
+    "question": "Which of the following controller inspects the URL and retrieves the filename of the file request and uses that as a view name? For example, the filename of http://www.springframework.org/welcome.html request is welcome.",
+    "options": [
+      "A. UrlFilenameViewController",
+      "B. MultiActionController",
+      "C. CommandController",
+      "D. AbstractController"
+    ],
+    "answer_index": 0,
+    "explanation": "UrlFilenameViewController is the correct answer. Review the question topic (HTML/CSS) for deeper context.",
+    "corrected": false
+  },
+  {
+    "id": "q0865",
+    "topic": "Spring Core",
+    "question": "Which statements are true about WebApplicationContext?",
+    "options": [
+      "A. The WebApplicationContext is an extension of the plain ApplicationContext.",
+      "B. The WebApplicationContext is bound in the ServletContext and can be accessed using RequestContextUtils.",
+      "C. WebApplicationContext differs from a normal ApplicationContext in that it is capable of resolving themes.",
+      "D. We can get WebApplicationContext reference by using ApplicationContext.",
+      "E. All the above"
+    ],
+    "answer_index": 0,
+    "explanation": "\"The WebApplicationContext is an extension of the plain ApplicationContext.\" is correct. The distractors (\"The WebApplicationContext is bound in the ServletContext and can be accessed using RequestContextUtils.\" and \"WebApplicationContext differs from a normal ApplicationContext in that it is capable of resolving themes.\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"The WebApplicationContext is an extension of the plain ApplicationContext.\" in Spring Core distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0866",
+    "topic": "Core Java & OOP",
+    "question": "Which of the following controller combines multiple request-handling methods into one controller?",
+    "options": [
+      "A. UrlFilenameViewController",
+      "B. MultiActionController",
+      "C. CommandController",
+      "D. MultiRequestController"
+    ],
+    "answer_index": 1,
+    "explanation": "MultiActionController is the correct answer. Review the question topic (Java OOP) for deeper context.",
+    "corrected": false
+  },
+  {
+    "id": "q0867",
+    "topic": "Core Java & OOP",
+    "question": "https://localhost:8080/testing.view will result in the method testing(HttpServletRequest, HttpServletResponse) being invoked. Which is the correct view resolver for this?",
+    "options": [
+      "A. ParameterMethodName Resolver",
+      "B. Properties MethodName Resolver",
+      "C. InternalViewResolver",
+      "D. InternalPathMethodName Resolver"
+    ],
+    "answer_index": 3,
+    "explanation": "The output is \"InternalPathMethodName Resolver\". Trace through the execution step by step: variable assignments, method calls, and control flow all determine the final value. Pay attention to scope, type coercion, and execution order in Core Java & OOP.",
+    "corrected": false
+  },
+  {
+    "id": "q0868",
+    "topic": "HTML & CSS",
+    "question": "'/index/welcome.html=dolt' and a request to /index/welcome.html comes in, the dolt(HttpServletRequest, HttpServletResponse) method will be invoked. Which is the correct view resolver for this?",
+    "options": [
+      "A. InternalPathMethodName Resolver",
+      "B. ParameterMethodName Resolver",
+      "C. Properties MethodName Resolver"
+    ],
+    "answer_index": 1,
+    "explanation": "The correct answer is \"ParameterMethodName Resolver\". The other options (\"InternalPathMethodName Resolver\", \"Properties MethodName Resolver\") do not accurately represent the concept described. This is a standard principle in HTML & CSS — recognising \"ParameterMethodName Resolver\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q0869",
+    "topic": "Core Java & OOP",
+    "question": "Which of the following controller provides a way to interact with data objects and dynamically bind parameters from the HttpServletRequest to the data object specified?",
+    "options": [
+      "A. MultiActionController",
+      "B. AbstractController",
+      "C. FormActionController",
+      "D. CommandController"
+    ],
+    "answer_index": 3,
+    "explanation": "\"CommandController\" is correct. The distractors (\"MultiActionController\" and \"AbstractController\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"CommandController\" in Core Java & OOP distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0870",
+    "topic": "Core Java & OOP",
+    "question": "Which of the following is not a view resolver?",
+    "options": [
+      "A. BeanNameViewResolver",
+      "B. VelocityViewResolver",
+      "C. JasperReportsViewResolver",
+      "D. UrlBasedViewResolver",
+      "E. ResourceBundleViewResolver",
+      "F. None of the above"
+    ],
+    "answer_index": 2,
+    "explanation": "JasperReportsViewResolver is the correct answer. Review the question topic (Java OOP) for deeper context.",
+    "corrected": false
+  },
+  {
+    "id": "q0871",
+    "topic": "Core Java & OOP",
+    "question": "The string \"api/route\" in Express is an example of a...",
+    "options": [
+      "A. Middleware B .Route",
+      "B. Error Handler"
+    ],
+    "answer_index": 1,
+    "explanation": "The correct answer is \"Error Handler\". The other options (\"Middleware B .Route\") do not accurately represent the concept described. This is a standard principle in Core Java & OOP — recognising \"Error Handler\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q0872",
+    "topic": "JavaScript",
+    "question": "Which of the following is not a method of a dispatcher?",
+    "options": [
+      "A. register",
+      "B. vector",
+      "C. dispatch"
+    ],
+    "answer_index": 1,
+    "explanation": "\"vector\" is the odd one out in this context. The other options (\"register\" and \"dispatch\") all correctly describe or belong to the stated category. Knowing what is NOT part of a concept is as important as knowing what is.",
+    "corrected": false
+  },
+  {
+    "id": "q0873",
+    "topic": "React",
+    "question": "React's abstraction of the document object model is often called...",
+    "options": [
+      "A. Virtual DOM",
+      "B. Meta DOM",
+      "C. Virtualized Model"
+    ],
+    "answer_index": 0,
+    "explanation": "React maintains a Virtual DOM — a lightweight JavaScript copy of the real DOM. On each state change, React diffs the new Virtual DOM against the previous one (reconciliation) and applies only the minimal set of real DOM updates, making UI updates efficient.",
+    "corrected": false
+  },
+  {
+    "id": "q0874",
+    "topic": "JavaScript",
+    "question": "True or false : The only thing that can change the data inside a store is the store itself.",
+    "options": [
+      "A. false",
+      "B. true",
+      "C. src",
+      "D. task",
+      "E. dest"
+    ],
+    "answer_index": 1,
+    "explanation": "This statement is false. True or false : The only thing that can change the data inside a store is the store itself does not accurately describe the behaviour. The correct understanding is that true — review the JavaScript specification for details.",
+    "corrected": false
+  },
+  {
+    "id": "q0875",
+    "topic": "TypeScript",
+    "question": "How do you automatically generate fields in a TypeScript class?",
+    "options": [
+      "A. Add the public keyword to a constructor parameter",
+      "B. None of these",
+      "C. Use the auto keyword",
+      "D. TypeScript doesn't support automatically generated fields Copilot The correct answer is D. TypeScript doesn't support automatically generated fields. Unlike some other languages, TypeScript does not provide built-in automatic field generation based on constructor parameters or any other keywords. Developers need to explicitly define class properties and their initialization within the class body."
+    ],
+    "answer_index": 0,
+    "explanation": "Add the public keyword to a constructor parameter is the correct answer. Review the question topic (JavaScript) for deeper context.",
+    "corrected": false
+  },
+  {
+    "id": "q0876",
+    "topic": "JavaScript",
+    "question": "To change the datatype from one type to another,we require",
+    "options": [
+      "A. TypeOperator",
+      "B. TypeAssertion",
+      "C. InferredTyping"
+    ],
+    "answer_index": 1,
+    "explanation": "The correct answer is \"TypeAssertion\". The other options (\"TypeOperator\", \"InferredTyping\") do not accurately represent the concept described. This is a standard principle in JavaScript — recognising \"TypeAssertion\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q0877",
+    "topic": "TypeScript",
+    "question": "For a variable,Without Specifying any data type is",
+    "options": [
+      "A. InferredTyping",
+      "B. TypeOperator",
+      "C. TypeAssertion",
+      "D. ts abc.ts",
+      "E. t abc.ts",
+      "F. tsc abc.ts",
+      "6. tst abc.ts"
+    ],
+    "answer_index": 0,
+    "explanation": "The correct answer is \"InferredTyping\". The other options (\"TypeOperator\", \"TypeAssertion\") do not accurately represent the concept described. This is a standard principle in TypeScript — recognising \"InferredTyping\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q0878",
+    "topic": "JavaScript",
+    "question": "What will be output of : var a:string=47; console.log(\"Value of a=\"+a);",
+    "options": [
+      "A. Value of a=47",
+      "B. Value of a=0",
+      "C. Value of a=",
+      "D. None of the above C"
+    ],
+    "answer_index": 0,
+    "explanation": "The output is \"Value of a=47\". Trace through the execution step by step: variable assignments, method calls, and control flow all determine the final value. Pay attention to scope, type coercion, and execution order in JavaScript.",
+    "corrected": false
+  },
+  {
+    "id": "q0879",
+    "topic": "React",
+    "question": "When is it recommended to pass this.setState a function instead of an object",
+    "options": [
+      "A. When the new state should completely replace the old state .",
+      "B. When the new state does not depend on the old state.",
+      "C. When the new state depends on the old state. When using this.setState in React, there are scenarios where passing a function instead of an object is recommended. Let's explore the options:",
+      "D. When the new state should completely replace the old state: In this case, you can directly use an object to update the state. For example: JavaScript this.setState({ quantity: 2 }); AI-generated code. Review and use carefully. More info on FAQ. This approach is straightforward and readable.",
+      "E. When the new state does not depend on the old state: If the updated state doesn't rely on the previous state or any other external factors, using an object is sufficient.",
+      "F. When the new state depends on the old state: Here's where passing a function becomes useful. When the updated state relies on the current state (or props), using a function ensures safety and prevents race conditions. For instance: JavaScript this.setState((prevState) => ({ counter: prevState.counter + 1 })); AI-generated code. Review and use carefully. More info on FAQ. In this example, we access the previous state (prevState) to calculate the next state. In summary: Use an object when the state update is straightforward. Use a function when the update depends on the previous state or props1234. Therefore, the correct answer is C. When the new state depends on the old state. 😊 --------------------------------------------------------------------------"
+    ],
+    "answer_index": 0,
+    "explanation": "When the new state should completely replace the old state . is the correct answer. Review the question topic (Concurrency) for deeper context.",
+    "corrected": false
+  },
+  {
+    "id": "q0880",
+    "topic": "TypeScript",
+    "question": "How would you define a string type variable with the value bar in TypeScript?",
+    "options": [
+      "A. let string: foo = 'bar';",
+      "B. let foo:string = 'bar';",
+      "C. let string foo = 'bar';",
+      "D. let foo (string) = 'bar'; Copilot The correct way to define a string type variable with the value \"bar\" in TypeScript is:",
+      "E. let foo: string = 'bar'; In TypeScript, you declare a variable by specifying its name, followed by a colon and the data type. In this case, we use string as the data type for the variable foo, and then assign the value 'bar' to it. 😊 ------------------------------------------------------------------------"
+    ],
+    "answer_index": 0,
+    "explanation": "let string: foo = 'bar'; is the correct answer. Review the question topic (JavaScript) for deeper context.",
+    "corrected": false
+  },
+  {
+    "id": "q0881",
+    "topic": "MongoDB",
+    "question": "What theorem or principal MongoDB follows?",
+    "options": [
+      "A. APAC",
+      "B. Always-Sync",
+      "C. ASCII",
+      "D. CAP"
+    ],
+    "answer_index": 3,
+    "explanation": "\"CAP\" is correct. The distractors (\"APAC\" and \"Always-Sync\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"CAP\" in MongoDB distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0882",
+    "topic": "MongoDB",
+    "question": "Upon running the following command, what all the fields will be returned in the output? db.collection.find( { qty: { $gt: 6 } }, { name: 1, _id: 0 } )",
+    "options": [
+      "A. _id",
+      "B. name",
+      "C. _id, name",
+      "D. name1, _id0"
+    ],
+    "answer_index": 1,
+    "explanation": "The output is \"name\". Trace through the execution step by step: variable assignments, method calls, and control flow all determine the final value. Pay attention to scope, type coercion, and execution order in MongoDB.",
+    "corrected": false
+  },
+  {
+    "id": "q0883",
+    "topic": "Core Java & OOP",
+    "question": "EventEmitter class's simple interface, which basically encompass two methods . . . . . . . . . can therefore be used to trigger custom events and listen to events as well, both synchronously or asynchronously.",
+    "options": [
+      "A. exit()",
+      "B. superscript()",
+      "C. subscribe()",
+      "D. emit()"
+    ],
+    "answer_index": 2,
+    "explanation": "The correct answer is \"subscribe()\". The other options (\"exit()\", \"superscript()\") do not accurately represent the concept described. This is a standard principle in Core Java & OOP — recognising \"subscribe()\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q0884",
+    "topic": "JavaScript",
+    "question": "If you chain multiple pipes together, they are executed . . . . .",
+    "options": [
+      "A. in parallel",
+      "B. LIFO order",
+      "C. in the order in which you specify them",
+      "D. none of above"
+    ],
+    "answer_index": 2,
+    "explanation": "The correct answer is \"in the order in which you specify them\". The other options (\"in parallel\", \"LIFO order\") do not accurately represent the concept described. This is a standard principle in JavaScript — recognising \"in the order in which you specify them\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q0885",
+    "topic": "React",
+    "question": "Annotation added as an input parameter to the handler method.",
+    "options": [
+      "A. @PathVariable",
+      "B. @Path",
+      "C. @PathLocale",
+      "D. None of the mentioned",
+      "E. guid",
+      "F. Browserify",
+      "6. React",
+      "7. jQuery"
+    ],
+    "answer_index": 0,
+    "explanation": "Java annotations are declared with @interface. Elements inside look like method declarations but have no body; default values are set with default keyword. All annotations implicitly extend java.lang.annotation.Annotation and cannot have an explicit extends clause.",
+    "corrected": false
+  },
+  {
+    "id": "q0886",
+    "topic": "React",
+    "question": "Which of the following API is a MUST for every React Component ?",
+    "options": [
+      "A. getInitialState.",
+      "B. render",
+      "C. renderComponent."
+    ],
+    "answer_index": 2,
+    "explanation": "\"renderComponent.\" is correct. The distractors (\"getInitialState.\" and \"render\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"renderComponent.\" in React distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0887",
+    "topic": "HTML & CSS",
+    "question": "You indicate a class selector with",
+    "options": [
+      "A. the hash (#) symboL",
+      "B. the dot (.)",
+      "C. the tag"
+    ],
+    "answer_index": 1,
+    "explanation": "The correct answer is \"the dot (.)\". The other options (\"the hash (#) symboL\", \"the tag\") do not accurately represent the concept described. This is a standard principle in HTML & CSS — recognising \"the dot (.)\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q0888",
+    "topic": "Core Java & OOP",
+    "question": "The four kinds of class members are______",
+    "options": [
+      "A. Instance methods, Instance fields, Static method, Dynamic method",
+      "B. Instance fields,Instance methods, Class fields, class methods",
+      "C. Instance fields, non-Instance fields, Dynamic methods, Global methods",
+      "D. Global methods, Local methods, Dynamic methods, Static methods"
+    ],
+    "answer_index": 1,
+    "explanation": "The correct answer is \"Instance fields,Instance methods, Class fields, class methods\". The other options (\"Instance methods, Instance fields, Static method, Dynamic method\", \"Instance fields, non-Instance fields, Dynamic methods, Global methods\") do not accurately represent the concept described. This is a standard principle in Core Java & OOP — recognising \"Instance fields,Instance methods, Class fields, class methods\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q0889",
+    "topic": "Spring Core",
+    "question": "Which Annotation is used to refer to Pointcuts.",
+    "options": [
+      "A. @PointCut.",
+      "B. @PointCutExecution.",
+      "C. @PointCutBefore. ANS :- A"
+    ],
+    "answer_index": 0,
+    "explanation": "Java annotations are declared with @interface. Elements inside look like method declarations but have no body; default values are set with default keyword. All annotations implicitly extend java.lang.annotation.Annotation and cannot have an explicit extends clause.",
+    "corrected": false
+  },
+  {
+    "id": "q0890",
+    "topic": "DevOps & CI/CD",
+    "question": "Which of the following statements is true about microservices architecture ? i. Microservices applications are required to be deployed on the same physical host. ii. Microservices architecture supports high availability of individual microservices. iii. Microservices cannot be used if a company is embracing DevOps. iv. Microservices are designed using a bounded context that can communicate with other bounded contexts.",
+    "options": [
+      "A. Only i",
+      "B. Only ii",
+      "C. Only ii and iv",
+      "D. All of the above. Ans -> D"
+    ],
+    "answer_index": 0,
+    "explanation": "Microservices decompose an application into small, independently deployable services each owning its own data and communicating via APIs. They can run on any hosts — deploying all on the same host defeats isolation benefits. Each service aligns with a bounded context from Domain-Driven Design.",
+    "corrected": false
+  },
+  {
+    "id": "q0891",
+    "topic": "React",
+    "question": "What are the limitations of React? React is only for view layer of the app so we still need the help of other technologies to get a complete tooling set for development. React uses inline templating and JSX. This can seem awkward to some developers. The library of React is too large. All of the above",
+    "options": [
+      "A. Clock",
+      "B. Current Time",
+      "C. Date Time",
+      "D. Time v Explanation: The class introduced in Java 8 to get the current milliseconds is:"
+    ],
+    "answer_index": 3,
+    "explanation": "'Time v Explanation: The class introduced in Java 8 to get the current milliseconds is:' is correct.",
+    "corrected": false
+  },
+  {
+    "id": "q0892",
+    "topic": "MongoDB",
+    "question": "What theorem or principal MongoDB follows? (like this but question diff)",
+    "options": [
+      "A. APAC",
+      "B. Always-Sync",
+      "C. ASCII",
+      "D. CAP (correct)"
+    ],
+    "answer_index": 0,
+    "explanation": "\"APAC\" is correct. The distractors (\"Always-Sync\" and \"ASCII\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"APAC\" in MongoDB distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0893",
+    "topic": "Core Java & OOP",
+    "question": "Which class indicates a dropdown menu?",
+    "options": [
+      "A. .dropdown-list",
+      "B. .select",
+      "C. .dropdown (correct)"
+    ],
+    "answer_index": 0,
+    "explanation": "\".dropdown-list\" is correct. The distractors (\".select\" and \".dropdown (correct)\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \".dropdown-list\" in Core Java & OOP distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0894",
+    "topic": "TypeScript",
+    "question": "How can we render JSX in the browser ? i. Using Babel ii. Using Typescript. iii. Using Flux. iv. Using Redux.",
+    "options": [
+      "A. Only i and ii",
+      "B. Only iv",
+      "C. Only i,ii and iv",
+      "D. Only iii and iv."
+    ],
+    "answer_index": 0,
+    "explanation": "JSX is a syntax extension that lets you write HTML-like markup inside JavaScript. Babel transpiles JSX to React.createElement() calls. JSX is not valid JavaScript — it requires a compilation step — but significantly improves readability of component templates.",
+    "corrected": false
+  },
+  {
+    "id": "q0895",
+    "topic": "Spring Core",
+    "question": "Which one is NOT a spring data MongoDB annotation ?",
+    "options": [
+      "A. @Document",
+      "B. @Field",
+      "C. @Entity",
+      "D. @Query. ANS :  @Entity"
+    ],
+    "answer_index": 0,
+    "explanation": "Java annotations are declared with @interface. Elements inside look like method declarations but have no body; default values are set with default keyword. All annotations implicitly extend java.lang.annotation.Annotation and cannot have an explicit extends clause.",
+    "corrected": false
+  },
+  {
+    "id": "q0896",
+    "topic": "JavaScript",
+    "question": "Which of the following is NOT a valid keyword in JavaScript? Options:",
+    "options": [
+      "A. use strict",
+      "B. debugger",
+      "C. with",
+      "D. if"
+    ],
+    "answer_index": 0,
+    "explanation": "\"use strict\" is the odd one out in this context. The other options (\"debugger\" and \"with\") all correctly describe or belong to the stated category. Knowing what is NOT part of a concept is as important as knowing what is.",
+    "corrected": false
+  },
+  {
+    "id": "q0897",
+    "topic": "DevOps & CI/CD",
+    "question": "Can a single Docker image be used to create only one container? Options:",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 1,
+    "explanation": "Docker packages applications and their dependencies into portable containers that run identically across environments. A Dockerfile defines the image; docker-compose orchestrates multiple containers. Containers share the host OS kernel, making them lighter than VMs.",
+    "corrected": false
+  },
+  {
+    "id": "q0898",
+    "topic": "DevOps & CI/CD",
+    "question": "A Docker container contains all the application files but does not include the instructions required to run the application. Options:",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 1,
+    "explanation": "Docker packages applications and their dependencies into portable containers that run identically across environments. A Dockerfile defines the image; docker-compose orchestrates multiple containers. Containers share the host OS kernel, making them lighter than VMs.",
+    "corrected": false
+  },
+  {
+    "id": "q0899",
+    "topic": "React",
+    "question": "Which of the below methods are NOT a part of React Component's lifecycle ?",
+    "options": [
+      "A. Initial Rendering.",
+      "B. Render / Re-Render.",
+      "C. unMounting.",
+      "D. Remote URL calls.  (correct)"
+    ],
+    "answer_index": 0,
+    "explanation": "Initial Rendering. is the correct answer. Review the question topic (JavaScript) for deeper context.",
+    "corrected": false
+  },
+  {
+    "id": "q0900",
+    "topic": "HTML & CSS",
+    "question": "Syntax for large buttons in Bootstrap?",
+    "options": [
+      "A. .large",
+      "B. .button-large Bt"
+    ],
+    "answer_index": 0,
+    "explanation": "The correct answer is \".large\". The other options (\".button-large Bt\") do not accurately represent the concept described. This is a standard principle in HTML & CSS — recognising \".large\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q0901",
+    "topic": "HTML & CSS",
+    "question": "Which of the following CSS Property controls how an element is positioned?",
+    "options": [
+      "A. position",
+      "B. set",
+      "C. static"
+    ],
+    "answer_index": 0,
+    "explanation": "The CSS 'position' property controls element positioning (static, relative, absolute, fixed, sticky).",
+    "corrected": false
+  },
+  {
+    "id": "q0902",
+    "topic": "MongoDB",
+    "question": "Which of the following rules allows users to import style rules from other style sheets?",
+    "options": [
+      "A. @media",
+      "B. @important",
+      "C. @import .container question mongodb remove() qn which relationship is used in mongodb to connect document - 1:1 embedded document"
+    ],
+    "answer_index": 2,
+    "explanation": "\"@import .container question mongodb remove() qn which relationship is used in mongodb to connect document - 1:1 embedded document\" is correct. The distractors (\"@media\" and \"@important\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"@import .container question mongodb remove() qn which relationship is used in mongodb to connect document - 1:1 embedded document\" in MongoDB distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0903",
+    "topic": "React",
+    "question": "What is React in MVC ?",
+    "options": [
+      "A. Controller",
+      "B. Middleware",
+      "C. Model",
+      "D. Router ANS :- None of these. Updated ans is Controller. Option A"
+    ],
+    "answer_index": 0,
+    "explanation": "React is typically described as the 'View' layer in MVC — it handles rendering UI from state/props but does not manage business logic or data models. Redux or Context API fills the Model/Controller roles. Note: the question's options do not include 'View', which is a flaw in the question.",
+    "corrected": false
+  },
+  {
+    "id": "q0904",
+    "topic": "Core Java & OOP",
+    "question": "Which of the following are array methods",
+    "options": [
+      "A. Unshift()",
+      "B. Sort()",
+      "C. Pop()",
+      "D. All the above"
+    ],
+    "answer_index": 0,
+    "explanation": "\"Unshift()\" is correct. The distractors (\"Sort()\" and \"Pop()\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"Unshift()\" in Core Java & OOP distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0905",
+    "topic": "React",
+    "question": "Which of the following is not a callback method of React ?",
+    "options": [
+      "A. render()",
+      "B. componentDidMount()",
+      "C. componentFailedToMount()",
+      "D. componentWillunMount()"
+    ],
+    "answer_index": 2,
+    "explanation": "componentFailedToMount() is the correct answer. Review the question topic (JavaScript) for deeper context.",
+    "corrected": false
+  },
+  {
+    "id": "q0906",
+    "topic": "Core Java & OOP",
+    "question": "Which of the following statements are true about Java ? i. A finally block is executed, only after the catch block is executed. ii. A finally block is executed whether an exception is thrown or not. iii. A finally block is NOT Mandatory. iv. A finally block is executed, only if an exception occurs.",
+    "options": [
+      "A. i",
+      "B. iv",
+      "C. i and iv",
+      "D. ii and iii ANs :- D"
+    ],
+    "answer_index": 0,
+    "explanation": "\"i\" is the odd one out in this context. The other options (\"iv\" and \"i and iv\") all correctly describe or belong to the stated category. Knowing what is NOT part of a concept is as important as knowing what is.",
+    "corrected": false
+  },
+  {
+    "id": "q0907",
+    "topic": "Core Java & OOP",
+    "question": "Which Java Class has natural sorting implemented ?",
+    "options": [
+      "A. LinkedHashSet.",
+      "B. TreeSet",
+      "C. HashSet ANS :- B -> TreeSet"
+    ],
+    "answer_index": 0,
+    "explanation": "\"LinkedHashSet.\" is correct. The distractors (\"TreeSet\" and \"HashSet ANS :- B -> TreeSet\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"LinkedHashSet.\" in Core Java & OOP distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0908",
+    "topic": "JavaScript",
+    "question": "Which of the following methods CANNOT be used to add array elements in Javascript ?",
+    "options": [
+      "A. push()",
+      "B. splice()",
+      "C. shift()",
+      "D. All can be used."
+    ],
+    "answer_index": 3,
+    "explanation": "\"All can be used.\" is correct. The distractors (\"push()\" and \"splice()\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"All can be used.\" in JavaScript distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0909",
+    "topic": "Core Java & OOP",
+    "question": "Core Java cOverloaded methods What is the replacement for PermGen space in java8?",
+    "options": [
+      "A. FixedGen",
+      "B. Metaspace",
+      "C. MetaGenspace What is the return type of Java Lambda expressions? aVoid b Lambda c Function d Regex"
+    ],
+    "answer_index": 0,
+    "explanation": "Java 8 replaced PermGen (Permanent Generation) with Metaspace, which resides in native memory rather than the JVM heap. Unlike PermGen, Metaspace grows dynamically by default, eliminating OutOfMemoryError: PermGen space errors. You can still cap it with -XX:MaxMetaspaceSize.",
+    "corrected": false
+  },
+  {
+    "id": "q0910",
+    "topic": "Core Java & OOP",
+    "question": "Pick the correct Java method reference usages.",
+    "options": [
+      "A. object::instanceMethod",
+      "B. Class::staticMethod",
+      "C. Class::new",
+      "D. All of the above",
+      "E. Simple Abstract Markup",
+      "F. Simple Active Markup",
+      "6. Single Ambivalue Method",
+      "7. Single Abstract Method",
+      "8. TSF",
+      "9. T",
+      "10. F",
+      "11. FST"
+    ],
+    "answer_index": 3,
+    "explanation": "Java method references are shorthand for lambdas that call a single method. The four forms are: instance::method (particular object), Class::staticMethod (static), Class::instanceMethod (arbitrary instance), and Class::new (constructor). All require a matching functional interface.",
+    "corrected": false
+  },
+  {
+    "id": "q0911",
+    "topic": "Core Java & OOP",
+    "question": "Pick the correct Java Stream API's?",
+    "options": [
+      "A. Stream.allMatch",
+      "B. Stream.noneMatch",
+      "C. Stream.anyMatch",
+      "D. All the above",
+      "E. Void",
+      "F. Lambda",
+      "6. Function",
+      "7. Regex",
+      "8. TRUE",
+      "9. FALSE"
+    ],
+    "answer_index": 3,
+    "explanation": "Java 8 Streams provide a declarative, pipeline-style API for processing collections. Operations are either intermediate (filter, map, sorted — lazy) or terminal (collect, forEach, reduce — trigger execution). Parallel streams split work across threads using the fork/join framework.",
+    "corrected": false
+  },
+  {
+    "id": "q0912",
+    "topic": "React",
+    "question": "How does React handle the Web Accessibility Initiative - Accessible Rich Internet Applications (WAI-ARIA) standard ?",
+    "options": [
+      "A. aria -* HTML attributes are fully supported in JSX where most DOM properties and attributes in React are camelCased , these attributes should be lowercase.",
+      "B. React processes aria - * attributes separately and updates the DOM for accessibility if the user requires it.",
+      "C. aria-* attributes should be converted to camelCase like other attributes; For example: className, onChange and so on.",
+      "D. React is yet to support the WAI-ARIA standard."
+    ],
+    "answer_index": 3,
+    "explanation": "\"React is yet to support the WAI-ARIA standard.\" is correct. The distractors (\"aria -* HTML attributes are fully supported in JSX where most DOM properties and attributes in React are camelCased , these attributes should be lowercase.\" and \"React processes aria - * attributes separately and updates the DOM for accessibility if the user requires it.\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"React is yet to support the WAI-ARIA standard.\" in React distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0913",
+    "topic": "MongoDB",
+    "question": "Sharding a MongoDB database across many server instances can be achieved with ____",
+    "options": [
+      "A. LAN",
+      "B. SAN.",
+      "C. MAN ANS : LAN A"
+    ],
+    "answer_index": 0,
+    "explanation": "The correct answer is \"LAN\". The other options (\"SAN.\", \"MAN ANS : LAN A\") do not accurately represent the concept described. This is a standard principle in MongoDB — recognising \"LAN\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q0914",
+    "topic": "Core Java & OOP",
+    "question": "Which of the following is the immutable Java List static factory method ?",
+    "options": [
+      "A. List.of",
+      "B. List.immutable.",
+      "C. List.create ANS : - A"
+    ],
+    "answer_index": 0,
+    "explanation": "List.of() (Java 9+) returns an immutable list — add/set/remove throw UnsupportedOperationException. It rejects null elements (unlike Arrays.asList). Use List.copyOf() to make an immutable copy of an existing collection.",
+    "corrected": false
+  },
+  {
+    "id": "q0915",
+    "topic": "React",
+    "question": "What is React in MVC ?",
+    "options": [
+      "A. Controller",
+      "B. Middleware",
+      "C. Model",
+      "D. Router"
+    ],
+    "answer_index": 0,
+    "explanation": "React is typically described as the 'View' layer in MVC — it handles rendering UI from state/props but does not manage business logic or data models. Redux or Context API fills the Model/Controller roles. Note: the question's options do not include 'View', which is a flaw in the question.",
+    "corrected": false
+  },
+  {
+    "id": "q0916",
+    "topic": "Spring Core",
+    "question": "Which Annotation is used to refer to Pointcuts",
+    "options": [
+      "A. @PointCut.",
+      "B. @PointCutExecution.",
+      "C. @PointCutBefore. ANS :- A"
+    ],
+    "answer_index": 0,
+    "explanation": "Java annotations are declared with @interface. Elements inside look like method declarations but have no body; default values are set with default keyword. All annotations implicitly extend java.lang.annotation.Annotation and cannot have an explicit extends clause.",
+    "corrected": false
+  },
+  {
+    "id": "q0917",
+    "topic": "TypeScript",
+    "question": "What is the return type of Java lambda expressions? void Lambda Function Regex",
+    "options": [
+      "A. <map>",
+      "B. <area>",
+      "C. <img>",
+      "D. <figure>"
+    ],
+    "answer_index": 2,
+    "explanation": "A Functional Interface in Java has exactly one abstract method (SAM — Single Abstract Method). It can have any number of default or static methods. The @FunctionalInterface annotation is optional but enforces the constraint at compile time and enables lambda expressions.",
+    "corrected": false
+  },
+  {
+    "id": "q0918",
+    "topic": "Spring Core",
+    "question": "Spring Web MVC (and in Spring in general) is the \"Open for extension, closed for modification\" principle.The reason that this principle is being mentioned here is because a number of methods in the core classes in Spring Web MVC are marked final.",
+    "options": [
+      "A. true",
+      "B. false Answer: True"
+    ],
+    "answer_index": 0,
+    "explanation": "This statement is TRUE. Spring Web MVC (and in Spring in general) is the \"Open for extension, closed for modification\" principle.The reason that this principle is being mentioned here is because a number of methods in the core classes in Spring Web MVC are marked final is correct behaviour in Spring Core. Understanding when this holds (and its exceptions) is essential for assessments.",
+    "corrected": false
+  },
+  {
+    "id": "q0919",
+    "topic": "TypeScript",
+    "question": "Which of the following will correctly import the items exported by this export statement? export { GetUser as GetLibraryUser, GetBook as GetLibraryBook }; import TypeScript from './library'; import namespace from './library'; import { GetLibraryUser, GetLibraryBook } from './library'; import { GetUser, GetBook } from './library'; import all from './library';",
+    "options": [
+      "A. in oreder to specifying them",
+      "B. LIFO",
+      "C. LRU",
+      "D. MRU ANS :- in oreder to specifying them  Java Functional Interface can be defined as_____. a Simple Abstract Markup b Simple Active Markup c Single Ambivalue Method d Single Abstract Method"
+    ],
+    "answer_index": 2,
+    "explanation": "\"LRU\" is correct. The distractors (\"in oreder to specifying them\" and \"LIFO\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"LRU\" in TypeScript distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0920",
+    "topic": "TypeScript",
+    "question": "Which are the different Data Types supported by Typescript?",
+    "options": [
+      "A. Boolean var bValue: boolean = false",
+      "B. Number var age: number = 16",
+      "C. String var name: string = \"jon\"",
+      "D. All of the above mentioned"
+    ],
+    "answer_index": 3,
+    "explanation": "\"All of the above mentioned\" is correct. The distractors (\"Boolean var bValue: boolean = false\" and \"Number var age: number = 16\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"All of the above mentioned\" in TypeScript distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0921",
+    "topic": "JavaScript",
+    "question": "For a variable,Without Specifying any datatype is",
+    "options": [
+      "A. InferredTyping",
+      "B. TypeOperator",
+      "C. TypeAssertion"
+    ],
+    "answer_index": 0,
+    "explanation": "The correct answer is \"InferredTyping\". The other options (\"TypeOperator\", \"TypeAssertion\") do not accurately represent the concept described. This is a standard principle in JavaScript — recognising \"InferredTyping\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q0922",
+    "topic": "JavaScript",
+    "question": "What will be output of : var a:string=47;       console.log(\"Value of a=\"+a);",
+    "options": [
+      "A. Value of a=47",
+      "B. Value of a=0",
+      "C. Value of a=",
+      "D. None of the above"
+    ],
+    "answer_index": 3,
+    "explanation": "The output is \"None of the above\". Trace through the execution step by step: variable assignments, method calls, and control flow all determine the final value. Pay attention to scope, type coercion, and execution order in JavaScript.",
+    "corrected": false
+  },
+  {
+    "id": "q0923",
+    "topic": "JavaScript",
+    "question": "Which of the following Arrowfunctions are true",
+    "options": [
+      "A. var reflect = value => value;",
+      "B. var sum = (num1, num2) => num1 + num2;",
+      "C. var getName = () => \"Nicholas\";",
+      "D. var sum = (num1, num2) => { return num1 + num2; }; E.All ============================================"
+    ],
+    "answer_index": 0,
+    "explanation": "var reflect = value => value; is the correct answer. Review the question topic (JavaScript) for deeper context.",
+    "corrected": false
+  },
+  {
+    "id": "q0924",
+    "topic": "TypeScript",
+    "question": "Select user defined datatypes in typescript",
+    "options": [
+      "A. arrays",
+      "B. String",
+      "C. Boolean",
+      "D. Void"
+    ],
+    "answer_index": 0,
+    "explanation": "\"arrays\" is correct. The distractors (\"String\" and \"Boolean\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"arrays\" in TypeScript distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0925",
+    "topic": "TypeScript",
+    "question": "Which of the following are true",
+    "options": [
+      "A. we can use printf in ts(typescript)",
+      "B. we can use console.log in ts(typescript)"
+    ],
+    "answer_index": 1,
+    "explanation": "we can use console.log in ts(typescript) is the correct answer. Review the question topic (JavaScript) for deeper context.",
+    "corrected": false
+  },
+  {
+    "id": "q0926",
+    "topic": "JavaScript",
+    "question": "Which of the following are true",
+    "options": [
+      "A. var a=new String(hii)",
+      "B. var b=new array[1]",
+      "C. var a:String=hii;",
+      "D. All the above"
+    ],
+    "answer_index": 1,
+    "explanation": "var b=new array[1] is the correct answer. Review the question topic (JavaScript) for deeper context.",
+    "corrected": false
+  },
+  {
+    "id": "q0927",
+    "topic": "TypeScript",
+    "question": "List some features of Typescript?",
+    "options": [
+      "A. Typescript can be compiled to all major versions of Javascript(ES3,ES5,ES6,ES7)",
+      "B. Typescript can be used for cross -browser development and is an open source project",
+      "C. Typescript is a superset of JavaScript that provides typed nature to your code",
+      "D. All of the above"
+    ],
+    "answer_index": 3,
+    "explanation": "The correct answer is \"All of the above\". The other options (\"Typescript can be compiled to all major versions of Javascript(ES3,ES5,ES6,ES7)\", \"Typescript can be used for cross -browser development and is an open source project\") do not accurately represent the concept described. This is a standard principle in TypeScript — recognising \"All of the above\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q0928",
+    "topic": "TypeScript",
+    "question": "How to import all package? Answer : import java.* Which of the following is correct about junit? Answer: -   It is an open source framework. - It provides Annotation to identify the test methods. - It provides Assertions for testing Expected results Pattern which follows sequential order? Answer : Iterator class Animal { public String noise() { return \"peep\"; } } class Dog extends Animal { public String noice() { return \"bark\"; } } class cat extends Animal { public String noise() { return \"meow\"; } } }..... Animal animal = new Dog(); Cat cat= (Cat)animal; SOP(cat.noise()); Answer : Exception is thrown at the Runtime class output { public static void main(String args[]){ String buffer s1 = new StringBuffer(\"Hello world\") s1.insert(6,\"Good\"); SOP(s1); } } Answer: Hello Goodworld SOP (‘1'+new integer (2) +3);",
+    "options": [
+      "A. After thread A is notified, or after two seconds.",
+      "B. After the lock on B is released, or after two seconds.",
+      "C. Two seconds after thread A is notified.",
+      "D. Two seconds after lock B is released. Invoked only once? Answer : @BeforeClass Invoked before each test? Answer : @Before Invoked after each test? Answer : @After Only once invoked finishing all tests? Answer : @AfterClass What will be proper order of session? Answer :  loading, instantiation, init, service, destroy Proper order of access modifier Answer : private default protected public If the options will be like New class foo{print(.........)}, Answer:  new foo(){print(............)} Insert(6, \"Good\") Answer : Hello Good Word Class{ PSVM String str = new String( \".....\"); } Do{ str = \"Hello Stop World \"; SOP(str); } While(str!=Strong); { ....... } Answer : Hello Stop World The code snippet below is an example of which of the following? Long myLong = 21l; A Autoboxing B Autounboxing C Autocasting D Autoinstancing",
+      "E. test",
+      "F. null",
+      "6. An exception is thrown at runtime.",
+      "7. Compilation fails because of an error in line 1. E. Compilation fails because of an error in line 4. F. Compilation fails because of an error in line 5."
+    ],
+    "answer_index": 0,
+    "explanation": "After thread A is notified, or after two seconds. is the correct answer. Review the question topic (Concurrency) for deeper context.",
+    "corrected": false
+  },
+  {
+    "id": "q0929",
+    "topic": "Core Java & OOP",
+    "question": "return 2; } } Answer:  return 2; If eliminate 16,17,18 return 2 If eliminate 25 26 27 return 1 Which of these handles the exception when no catch is used? Default handler Finally Throw handler Java run time system class exception_handling { public static void main(String args[]) { try { int a, b; b = 0; a = 5 / b; System.out.print(\"A\"); } catch(ArithmeticException e) { System.out.print(\"B\"); } finally { System.out.print(\"C\"); } } }",
+    "options": [
+      "A. A",
+      "B. B",
+      "C. AC",
+      "D. BC"
+    ],
+    "answer_index": 1,
+    "explanation": "The output is \"B\". Trace execution step by step: follow variable assignments, control flow, and implicit conversions. Common wrong answers (\"A\", \"AC\") usually arise from scope confusion, precedence errors, or off-by-one mistakes.",
+    "corrected": false
+  },
+  {
+    "id": "q0930",
+    "topic": "SQL & JDBC",
+    "question": "The JDBC-ODBC Bridge supports multiple concurrent open statements per connection?",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "explanation": "This statement is TRUE. The JDBC-ODBC Bridge supports multiple concurrent open statements per connection is correct behaviour in SQL & JDBC. Understanding when this holds (and its exceptions) is essential for assessments.",
+    "corrected": false
+  },
+  {
+    "id": "q0931",
+    "topic": "Git & Version Control",
+    "question": "Which of the following allows non repeatable read in JDBC Connection?",
+    "options": [
+      "A. TRANSACTION_READ_UNCOMMITTED",
+      "B. TRANSACTION_READ_COMMITTED",
+      "C. TRANSACTION_SERIALIZABLE",
+      "D. TRANSACTION_REPEATABLE_READ"
+    ],
+    "answer_index": 0,
+    "explanation": "TRANSACTION_READ_UNCOMMITTED is the correct answer. Review the question topic (Java OOP) for deeper context.",
+    "corrected": false
+  },
+  {
+    "id": "q0932",
+    "topic": "SQL & JDBC",
+    "question": "Which of the following statements is false as far as different type of statements is concern in JDBC?",
+    "options": [
+      "A. Regular Statement",
+      "B. Prepared Statement",
+      "C. Callable Statement",
+      "D. Interim Statement"
+    ],
+    "answer_index": 0,
+    "explanation": "Regular Statement is the correct answer. Review the question topic (Concurrency) for deeper context.",
+    "corrected": false
+  },
+  {
+    "id": "q0933",
+    "topic": "SQL & JDBC",
+    "question": "Which of the following methods are needed for loading a database driver in JDBC?",
+    "options": [
+      "A. registerDriver() method",
+      "B. Class.forName()",
+      "C. Both A and B",
+      "D. getConnection()"
+    ],
+    "answer_index": 0,
+    "explanation": "registerDriver() method is the correct answer. Review the question topic (Java OOP) for deeper context.",
+    "corrected": false
+  },
+  {
+    "id": "q0934",
+    "topic": "Core Java & OOP",
+    "question": "Which of the following is false as far as type 4 driver is concern?",
+    "options": [
+      "A. Type 4 driver is \"native protocol, pure java\" driver",
+      "B. Type 4 drivers are 100% Java compatible",
+      "C. Type 4 drivers uses Socket class to connect to the database",
+      "D. Type 4 drivers can not be used with Netscape"
+    ],
+    "answer_index": 0,
+    "explanation": "Type 4 driver is \"native protocol, pure java\" driver is the correct answer. Review the question topic (Java OOP) for deeper context.",
+    "corrected": false
+  },
+  {
+    "id": "q0935",
+    "topic": "Java Concurrency",
+    "question": "To execute a stored procedure \"totalStock\" in a database server, which of the following code snippet is used?",
+    "options": [
+      "A. Statement stmt = connection.createStatement();stmt.execute(\"totalStock()\");",
+      "B. CallableStatement clbstmnt = con.prepareCall(\"{call totalStock}\");cs.executeQuery();",
+      "C. StoreProcedureStatement stmt=connection.createStoreProcedure(\"totalStock()\");spstmt.executeQuery();",
+      "D. PrepareStatement pstmt = connection.prepareStatement(\"totalStock()\");pstmt.execute();"
+    ],
+    "answer_index": 0,
+    "explanation": "Statement stmt = connection.createStatement();stmt.execute(\"totalStock()\"); is the correct answer. Review the question topic (Concurrency) for deeper context.",
+    "corrected": false
+  },
+  {
+    "id": "q0936",
+    "topic": "SQL & JDBC",
+    "question": "Which driver is efficient and always preferable for using JDBC applications?",
+    "options": [
+      "A. Type - 4",
+      "B. Type - 1",
+      "C. Type - 3",
+      "D. Type - 2"
+    ],
+    "answer_index": 0,
+    "explanation": "\"Type - 4\" is correct. The distractors (\"Type - 1\" and \"Type - 3\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"Type - 4\" in SQL & JDBC distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0937",
+    "topic": "SQL & JDBC",
+    "question": "JDBC facilitates to store the java objects by using which of the methods of PreparedStatement setObject () 2. setBlob() 3. setClob()",
+    "options": [
+      "A. 1, 2",
+      "B. 1,2,3",
+      "C. 1,3",
+      "D. 2,3"
+    ],
+    "answer_index": 0,
+    "explanation": "The correct answer is \"1, 2\". The other options (\"1,2,3\", \"1,3\") do not accurately represent the concept described. This is a standard principle in SQL & JDBC — recognising \"1, 2\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q0938",
+    "topic": "SQL & JDBC",
+    "question": "Which statement is static and synchronized in JDBC API?",
+    "options": [
+      "A. executeQuery()",
+      "B. executeUpdate()",
+      "C. getConnection()",
+      "D. prepareCall()"
+    ],
+    "answer_index": 0,
+    "explanation": "The synchronized keyword in Java provides mutual exclusion — only one thread can execute a synchronized block/method on the same monitor (object) at a time. It also establishes a happens-before relationship, ensuring visibility of writes across threads.",
+    "corrected": false
+  },
+  {
+    "id": "q0939",
+    "topic": "SQL & JDBC",
+    "question": "The JDBC-ODBC bridge is",
+    "options": [
+      "A. Three tiered",
+      "B. Multithreaded",
+      "C. Best for any platform",
+      "D. All of the above"
+    ],
+    "answer_index": 0,
+    "explanation": "The correct answer is \"Three tiered\". The other options (\"Multithreaded\", \"Best for any platform\") do not accurately represent the concept described. This is a standard principle in SQL & JDBC — recognising \"Three tiered\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q0940",
+    "topic": "Core Java & OOP",
+    "question": "All raw data types (including binary documents or images) should be read and uploaded to the database as an array of",
+    "options": [
+      "A. byte",
+      "B. int",
+      "C. boolean",
+      "D. char"
+    ],
+    "answer_index": 0,
+    "explanation": "The correct answer is \"byte\". The other options (\"int\", \"boolean\") do not accurately represent the concept described. This is a standard principle in Core Java & OOP — recognising \"byte\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q0941",
+    "topic": "SQL & JDBC",
+    "question": "The class java.sql.Timestamp has its super class as",
+    "options": [
+      "A. java.sql.Time",
+      "B. java.util.Date",
+      "C. java.util.Time",
+      "D. None of the above"
+    ],
+    "answer_index": 0,
+    "explanation": "The correct answer is \"java.sql.Time\". The other options (\"java.util.Date\", \"java.util.Time\") do not accurately represent the concept described. This is a standard principle in SQL & JDBC — recognising \"java.sql.Time\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q0942",
+    "topic": "SQL & JDBC",
+    "question": "BLOB, CLOB, ARRAY and REF type columns can be updated in",
+    "options": [
+      "A. JDBC 1.0",
+      "B. JDBC 4.0",
+      "C. JDBC 2.0",
+      "D. JDBC 3.0"
+    ],
+    "answer_index": 0,
+    "explanation": "The correct answer is \"JDBC 1.0\". The other options (\"JDBC 4.0\", \"JDBC 2.0\") do not accurately represent the concept described. This is a standard principle in SQL & JDBC — recognising \"JDBC 1.0\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q0943",
+    "topic": "Core Java & OOP",
+    "question": "Which of the following methods finds the maximum number of connections that a specific driver can obtain?",
+    "options": [
+      "A. Database.getMaxConnections",
+      "B. Connection.getMaxConnections",
+      "C. DatabaseMetaData.getMaxConnections",
+      "D. ResultSetMetaData.getMaxConnections"
+    ],
+    "answer_index": 0,
+    "explanation": "Database.getMaxConnections is the correct answer. Review the question topic (Java OOP) for deeper context.",
+    "corrected": false
+  },
+  {
+    "id": "q0944",
+    "topic": "SQL & JDBC",
+    "question": "Are prepared statements actually compiled?",
+    "options": [
+      "A. Yes, they compiled",
+      "B. No, they are bound by the JDBC driver"
+    ],
+    "answer_index": 0,
+    "explanation": "The correct answer is \"Yes, they compiled\". The other options (\"No, they are bound by the JDBC driver\") do not accurately represent the concept described. This is a standard principle in SQL & JDBC — recognising \"Yes, they compiled\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q0945",
+    "topic": "SQL & JDBC",
+    "question": "When the message \"No Suitable Driver\" occurs?",
+    "options": [
+      "A. When the driver is not registered by Class.forname() method",
+      "B. When the user name, password and the database does not match",
+      "C. When the JDBC database URL passed is not constructed properly",
+      "D. When the type 4 driver is used"
+    ],
+    "answer_index": 0,
+    "explanation": "When the driver is not registered by Class.forname() method is the correct answer. Review the question topic (Java OOP) for deeper context.",
+    "corrected": false
+  },
+  {
+    "id": "q0946",
+    "topic": "SQL & JDBC",
+    "question": "Which driver is called as thin-driver in JDBC?",
+    "options": [
+      "A. Type-4 driver",
+      "B. Type-1 driver",
+      "C. Type-3 driver",
+      "D. Type-2 driver"
+    ],
+    "answer_index": 0,
+    "explanation": "\"Type-4 driver\" is correct. The distractors (\"Type-1 driver\" and \"Type-3 driver\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"Type-4 driver\" in SQL & JDBC distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0947",
+    "topic": "SQL & JDBC",
+    "question": "How many transaction isolation levels are defined in java.sql.Connection interface?",
+    "options": [
+      "A. 4",
+      "B. 3",
+      "C. 5",
+      "D. 2"
+    ],
+    "answer_index": 0,
+    "explanation": "\"4\" is correct. The distractors (\"3\" and \"5\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"4\" in SQL & JDBC distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0948",
+    "topic": "SQL & JDBC",
+    "question": "Which method is used to perform DML statements in JDBC?",
+    "options": [
+      "A. execute()",
+      "B. executeQuery()",
+      "C. executeUpdate()",
+      "D. executeResult()"
+    ],
+    "answer_index": 0,
+    "explanation": "\"execute()\" is correct. The distractors (\"executeQuery()\" and \"executeUpdate()\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"execute()\" in SQL & JDBC distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0949",
+    "topic": "SQL & JDBC",
+    "question": "What is the disadvantage of Type-4 Native-Protocol Driver?",
+    "options": [
+      "A. At client side, a separate driver is needed for each database.",
+      "B. Type-4 driver is entirely written in Java",
+      "C. The driver converts JDBC calls into vendor-specific database protocol",
+      "D. It does not support to read MySQL data."
+    ],
+    "answer_index": 0,
+    "explanation": "At client side, a separate driver is needed for each database. is the correct answer. Review the question topic (Java OOP) for deeper context.",
+    "corrected": false
+  },
+  {
+    "id": "q0950",
+    "topic": "Core Java & OOP",
+    "question": "System.out.println(a); 15. } 16. } What is the result?",
+    "options": [
+      "A. [1, 2, 3, 5]",
+      "B. [2, 1, 3, 5]",
+      "C. [2, 5, 3, 1]",
+      "D. [5, 3, 2, 1] E. [1, 3, 5, 2] F. Compilation fails. G. An exception is thrown at runtime."
+    ],
+    "answer_index": 2,
+    "explanation": "The output is \"[2, 5, 3, 1]\". Trace through the execution step by step: variable assignments, method calls, and control flow all determine the final value. Pay attention to scope, type coercion, and execution order in Core Java & OOP.",
+    "corrected": false
+  },
+  {
+    "id": "q0951",
+    "topic": "Core Java & OOP",
+    "question": "class BabyRaccoon extends Mammal { } Which four statements are true? (Choose four.)",
+    "options": [
+      "A. Raccoon is-a Mammal.",
+      "B. Raccoon has-a Mammal.",
+      "C. BabyRaccoon is-a Mammal.",
+      "D. BabyRaccoon is-a Raccoon. E. BabyRaccoon has-a Mammal. F. BabyRaccoon is-a BabyRaccoon."
+    ],
+    "answer_index": 0,
+    "explanation": "The correct answer is \"Raccoon is-a Mammal.\". The other options (\"Raccoon has-a Mammal.\", \"BabyRaccoon is-a Mammal.\") do not accurately represent the concept described. This is a standard principle in Core Java & OOP — recognising \"Raccoon is-a Mammal.\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q0952",
+    "topic": "Core Java & OOP",
+    "question": "Which Man class properly represents the relationship \"Man has a best friend who is a Dog\"?",
+    "options": [
+      "A. class Man extends Dog { }",
+      "B. class Man implements Dog { }",
+      "C. class Man { private BestFriend dog; }",
+      "D. class Man { private Dog bestFriend; } E. class Man { private Dog<bestFriend>; } F. class Man { private BestFriend<dog>; }"
+    ],
+    "answer_index": 3,
+    "explanation": "HAS-A relationship is modeled by composition: a Dog field inside Man. 'class Man { private Dog bestFriend; }'",
+    "corrected": false
+  },
+  {
+    "id": "q0953",
+    "topic": "Core Java & OOP",
+    "question": "b.foo(); 21. } 22. } What is the result?",
+    "options": [
+      "A. Afoo Afoo",
+      "B. Afoo Bfoo",
+      "C. Bfoo Afoo",
+      "D. Bfoo Bfoo E. Compilation fails. F. An exception is thrown at runtime."
+    ],
+    "answer_index": 3,
+    "explanation": "The output is \"Bfoo Bfoo E. Compilation fails. F. An exception is thrown at runtime.\". Trace through the execution step by step: variable assignments, method calls, and control flow all determine the final value. Pay attention to scope, type coercion, and execution order in Core Java & OOP.",
+    "corrected": false
+  },
+  {
+    "id": "q0954",
+    "topic": "Core Java & OOP",
+    "question": "String s = df.format(date); Which code fragment, inserted at line 23, allows the code to compile?",
+    "options": [
+      "A. df = new DateFormat();",
+      "B. df = Date.getFormat();",
+      "C. df = date.getFormat();",
+      "D. df = DateFormat.getFormat(); E. df = DateFormat.getInstance(); Answer: E"
+    ],
+    "answer_index": 0,
+    "explanation": "df = new DateFormat(); is the correct answer. Review the question topic (Java OOP) for deeper context.",
+    "corrected": false
+  },
+  {
+    "id": "q0955",
+    "topic": "Core Java & OOP",
+    "question": "class Sub extends Base {public static final String FOO=\"bar\";} What is the result?",
+    "options": [
+      "A. foofoofoofoofoo",
+      "B. foobarfoobarbar",
+      "C. foobarfoofoofoo",
+      "D. foobarfoobarfoo E. barbarbarbarbar F. foofoofoobarbar G. foofoofoobarfoo"
+    ],
+    "answer_index": 3,
+    "explanation": "The output is \"foobarfoobarfoo E. barbarbarbarbar F. foofoofoobarbar G. foofoofoobarfoo\". Trace through the execution step by step: variable assignments, method calls, and control flow all determine the final value. Pay attention to scope, type coercion, and execution order in Core Java & OOP.",
+    "corrected": false
+  },
+  {
+    "id": "q0956",
+    "topic": "Core Java & OOP",
+    "question": "A company has a business application that provides its users with many different reports: receivables reports, payables reports, revenue projects, and so on. The company has just purchased some new, state-of-the-art, wireless printers, and a programmer has been assigned the task of enhancing all of the reports to use not only the company's old printers, but the new wireless printers as well. When the programmer starts looking into the application, the programmer discovers that because of the design of the application, it is necessary to make changes to each report to support the new printers. Which two design concepts most likely explain this situation? (Choose two.)",
+    "options": [
+      "A. Inheritance",
+      "B. Low cohesion",
+      "C. Tight coupling",
+      "D. High cohesion E. Loose coupling F. Object immutability"
+    ],
+    "answer_index": 1,
+    "explanation": "\"Low cohesion\" is the odd one out in this context. The other options (\"Inheritance\" and \"Tight coupling\") all correctly describe or belong to the stated category. Knowing what is NOT part of a concept is as important as knowing what is.",
+    "corrected": false
+  },
+  {
+    "id": "q0957",
+    "topic": "Core Java & OOP",
+    "question": "A team of programmers is reviewing a proposed API for a new utility class. After some discussion, they realize that they can reduce the number of methods in the API without losing any functionality. If they implement the new design, which two OO principles will they be promoting?",
+    "options": [
+      "A. Looser coupling",
+      "B. Tighter coupling",
+      "C. Lower cohesion",
+      "D. Higher cohesion E. Weaker encapsulation F. Stronger encapsulation"
+    ],
+    "answer_index": 0,
+    "explanation": "The correct answer is \"Looser coupling\". The other options (\"Tighter coupling\", \"Lower cohesion\") do not accurately represent the concept described. This is a standard principle in Core Java & OOP — recognising \"Looser coupling\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q0958",
+    "topic": "Core Java & OOP",
+    "question": "A team of programmers is involved in reviewing a proposed design for a new utility class. After some discussion, they realize that the current design allows other classes to access methods in the utility class that should be accessible only to methods within the utility class itself. What design issue has the team discovered?",
+    "options": [
+      "A. Tight coupling",
+      "B. Low cohesion",
+      "C. High cohesion",
+      "D. Loose coupling E. Weak encapsulation F. Strong encapsulation Answer: E"
+    ],
+    "answer_index": 0,
+    "explanation": "The correct answer is \"Tight coupling\". The other options (\"Low cohesion\", \"High cohesion\") do not accurately represent the concept described. This is a standard principle in Core Java & OOP — recognising \"Tight coupling\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q0959",
+    "topic": "Core Java & OOP",
+    "question": "System.out.print(str); 6. } 7. } What is the output?",
+    "options": [
+      "A. 42",
+      "B. 420",
+      "C. 462",
+      "D. 42042 E. Compilation fails. F. An exception is thrown at runtime."
+    ],
+    "answer_index": 3,
+    "explanation": "The code produces '42042 E. Compilation fails. F. An exception is thrown at runtime.' based on Java execution semantics.",
+    "corrected": false
+  },
+  {
+    "id": "q0960",
+    "topic": "TypeScript",
+    "question": "public interface Status { 12. /* insert code here */ int MY_VALUE = 10; 13. } Which three are valid on line 12? (Choose three.)",
+    "options": [
+      "A. final",
+      "B. static",
+      "C. native",
+      "D. public E. private F. abstract G. protected"
+    ],
+    "answer_index": 0,
+    "explanation": "The correct answer is \"final\". The other options (\"static\", \"native\") do not accurately represent the concept described. This is a standard principle in TypeScript — recognising \"final\" in context is key to answering related exam questions.",
+    "corrected": false
+  }
+]

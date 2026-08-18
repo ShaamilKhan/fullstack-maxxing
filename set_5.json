@@ -1,0 +1,1656 @@
+[
+  {
+    "id": "q0481",
+    "topic": "DevOps & CI/CD",
+    "question": "State whether the statement is true or false. Adopting Agile is necessary prior to embracing DevOps practices.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 1,
+    "explanation": "\"False\" is the odd one out in this context. The other options (\"True\") all correctly describe or belong to the stated category. Knowing what is NOT part of a concept is as important as knowing what is.",
+    "corrected": false
+  },
+  {
+    "id": "q0482",
+    "topic": "DevOps & CI/CD",
+    "question": "What is continuous testing?",
+    "options": [
+      "A. Testing continuously for 24 hours",
+      "B. Manually testing each build, end-to-end",
+      "C. Automated testing",
+      "D. Automated testing on each continuous deployment"
+    ],
+    "answer_index": 3,
+    "explanation": "Continuous testing runs automated tests on every build/commit in the CI pipeline. It provides immediate feedback on regressions, enabling faster delivery. It differs from manual testing (slow, inconsistent) and is a core DevOps practice.",
+    "corrected": false
+  },
+  {
+    "id": "q0483",
+    "topic": "DevOps & CI/CD",
+    "question": "Adopting DevOps requires planning that spans which of the following? Select all that apply.",
+    "options": [
+      "A. People",
+      "B. Efforts",
+      "C. Process",
+      "D. Tools/Technology"
+    ],
+    "answer_index": 0,
+    "explanation": "Node.js uses require() for CommonJS module imports (const fs = require('fs')). In the browser, require() doesn't exist natively — Browserify or Webpack polyfills it by bundling modules. ES Modules (import/export) are the modern standard for both Node.js and browsers.",
+    "corrected": false
+  },
+  {
+    "id": "q0484",
+    "topic": "DevOps & CI/CD",
+    "question": "Which DevOps principle focuses on product and service thinking?",
+    "options": [
+      "A. Customer-centric action",
+      "B. Continuous improvement",
+      "C. Create with the end in mind",
+      "D. Automate everything you can"
+    ],
+    "answer_index": 2,
+    "explanation": "\"Create with the end in mind\" is correct. The distractors (\"Customer-centric action\" and \"Continuous improvement\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"Create with the end in mind\" in DevOps & CI/CD distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0485",
+    "topic": "DevOps & CI/CD",
+    "question": "In order to minimize risks to the business within DevOps, what is the main goal of version control?",
+    "options": [
+      "A. Ensure the ability to alert when configuration changes from the desired state.",
+      "B. Ensure the ability to re-create the previous state of the test environment.",
+      "C. Ensure the ability to re-create the production environment and build processes.",
+      "D. Ensure the ability to share the source code between different developers teams."
+    ],
+    "answer_index": 1,
+    "explanation": "The correct answer is \"Ensure the ability to re-create the previous state of the test environment.\". The other options (\"Ensure the ability to alert when configuration changes from the desired state.\", \"Ensure the ability to re-create the production environment and build processes.\") do not accurately represent the concept described. This is a standard principle in DevOps & CI/CD — recognising \"Ensure the ability to re-create the previous state of the test environment.\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q0486",
+    "topic": "DevOps & CI/CD",
+    "question": "What is a continuous build? Select all that apply.",
+    "options": [
+      "A. A build that runs non-stop, over and over again.",
+      "B. A build that has not failed in 10 continuous attempts.",
+      "C. A build that is executed every hour/day by a continuous integration server.",
+      "D. A build that is executed on every commit by a continuous integration server."
+    ],
+    "answer_index": 2,
+    "explanation": "The answer is \"A build that is executed every hour/day by a continuous integration server.\". This is the standard definition or correct identification for the concept described. Review the DevOps & CI/CD documentation to understand how \"A build that is executed every hour/day by a continuous integration server.\" fits into the broader context.",
+    "corrected": false
+  },
+  {
+    "id": "q0487",
+    "topic": "DevOps & CI/CD",
+    "question": "DevOps is primarily about:",
+    "options": [
+      "A. Tools and their usage",
+      "B. Processes and adherence",
+      "C. Governance and audit processes",
+      "D. Tools, processes, and culture"
+    ],
+    "answer_index": 3,
+    "explanation": "The correct answer is \"Tools, processes, and culture\". The other options (\"Tools and their usage\", \"Processes and adherence\") do not accurately represent the concept described. This is a standard principle in DevOps & CI/CD — recognising \"Tools, processes, and culture\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q0488",
+    "topic": "DevOps & CI/CD",
+    "question": "Which statement best describes the relationship between DevOps and Continuous Delivery?",
+    "options": [
+      "A. DevOps and Continuous Delivery are the same thing.",
+      "B. DevOps and Continuous Delivery share a background in Agile methods and LEAN thinking.",
+      "C. DevOps and Continuous Delivery share common processes.",
+      "D. DevOps and Continuous Delivery are not related and are mutually exclusive."
+    ],
+    "answer_index": 1,
+    "explanation": "\"DevOps and Continuous Delivery share a background in Agile methods and LEAN thinking.\" is correct. The distractors (\"DevOps and Continuous Delivery are the same thing.\" and \"DevOps and Continuous Delivery share common processes.\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"DevOps and Continuous Delivery share a background in Agile methods and LEAN thinking.\" in DevOps & CI/CD distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0489",
+    "topic": "DevOps & CI/CD",
+    "question": "How does a DevOps organization act in principle when it comes to financing its work?",
+    "options": [
+      "A. It finances special projects to serve its clients.",
+      "B. It finances products and services to serve its clients.",
+      "C. It finances teams in matrix organizations and these teams are responsible for handling their own budgets.",
+      "D. It finances development and operations teams separately, so they take care of their own business."
+    ],
+    "answer_index": 1,
+    "explanation": "\"It finances products and services to serve its clients.\" is correct. The distractors (\"It finances special projects to serve its clients.\" and \"It finances teams in matrix organizations and these teams are responsible for handling their own budgets.\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"It finances products and services to serve its clients.\" in DevOps & CI/CD distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0490",
+    "topic": "Core Java & OOP",
+    "question": "POM in Maven stands for ________.",
+    "options": [
+      "A. Project Object Model",
+      "B. Process Object Model",
+      "C. Project Object Method",
+      "D. All of the above"
+    ],
+    "answer_index": 0,
+    "explanation": "The correct answer is \"Project Object Model\". The other options (\"Process Object Model\", \"Project Object Method\") do not accurately represent the concept described. This is a standard principle in Core Java & OOP — recognising \"Project Object Model\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q0491",
+    "topic": "DevOps & CI/CD",
+    "question": "What is a widely used reusable asset to reinforce information security of deliverables from your DevOps team?",
+    "options": [
+      "A. Data storage systems",
+      "B. Handling the logging of sensitive client information",
+      "C. Data transfer between clients and software",
+      "D. All of the above"
+    ],
+    "answer_index": 3,
+    "explanation": "The answer is \"All of the above\". This is the standard definition or correct identification for the concept described. Review the DevOps & CI/CD documentation to understand how \"All of the above\" fits into the broader context.",
+    "corrected": false
+  },
+  {
+    "id": "q0492",
+    "topic": "DevOps & CI/CD",
+    "question": "DevOps is NOT a set of ______ steps.",
+    "options": [
+      "A. Development",
+      "B. Fixed",
+      "C. Testing",
+      "D. Design"
+    ],
+    "answer_index": 1,
+    "explanation": "\"Fixed\" is the odd one out in this context. The other options (\"Development\" and \"Testing\") all correctly describe or belong to the stated category. Knowing what is NOT part of a concept is as important as knowing what is.",
+    "corrected": false
+  },
+  {
+    "id": "q0493",
+    "topic": "HTML & CSS",
+    "question": "What is the sequence in which Maven looks for the resources?",
+    "options": [
+      "A. Local -> Remote -> Maven Central",
+      "B. Remote -> Maven Central -> Local",
+      "C. Remote -> Local -> Maven Central",
+      "D. Maven Central -> Local -> Remote"
+    ],
+    "answer_index": 0,
+    "explanation": "The answer is \"Local -> Remote -> Maven Central\". This is the standard definition or correct identification for the concept described. Review the HTML & CSS documentation to understand how \"Local -> Remote -> Maven Central\" fits into the broader context.",
+    "corrected": false
+  },
+  {
+    "id": "q0494",
+    "topic": "Core Java & OOP",
+    "question": "Why is it recommended that production and development environments should be similar?",
+    "options": [
+      "A. It is easier to manage for the ops team.",
+      "B. It improves the accuracy of testing, eases the task of deployment of software, and reduces chances of major problems when deploying software into production.",
+      "C. People can fix defects directly in the production environment.",
+      "D. Development environments are cheaper, hence it makes sense to make the production environment similar (and cheaper) to the development environments."
+    ],
+    "answer_index": 1,
+    "explanation": "'It improves the accuracy of testing, eases the task of deployment of software, and reduces chances of major problems when deploying software into production.' is correct.",
+    "corrected": false
+  },
+  {
+    "id": "q0495",
+    "topic": "DevOps & CI/CD",
+    "question": "DevOps can be implemented in any _________.",
+    "options": [
+      "A. Process",
+      "B. Environment",
+      "C. Defects",
+      "D. None of the above"
+    ],
+    "answer_index": 1,
+    "explanation": "The correct answer is \"Environment\". The other options (\"Process\", \"Defects\") do not accurately represent the concept described. This is a standard principle in DevOps & CI/CD — recognising \"Environment\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q0496",
+    "topic": "DevOps & CI/CD",
+    "question": "What is continuous deployment? Select all that apply.",
+    "options": [
+      "A. Deployment on every code push/commit",
+      "B. Deployment every hour/day",
+      "C. Local deployment on the developer's laptop",
+      "D. Deployment on IBM Cloud"
+    ],
+    "answer_index": 0,
+    "explanation": "The answer is \"Deployment on every code push/commit\". This is the standard definition or correct identification for the concept described. Review the DevOps & CI/CD documentation to understand how \"Deployment on every code push/commit\" fits into the broader context.",
+    "corrected": false
+  },
+  {
+    "id": "q0497",
+    "topic": "DevOps & CI/CD",
+    "question": "In DevOps, one of the significant ROI areas is:",
+    "options": [
+      "A. Zero defects",
+      "B. Faster time to value",
+      "C. Less feedback",
+      "D. Less customer experience"
+    ],
+    "answer_index": 1,
+    "explanation": "The correct answer is \"Faster time to value\". The other options (\"Zero defects\", \"Less feedback\") do not accurately represent the concept described. This is a standard principle in DevOps & CI/CD — recognising \"Faster time to value\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q0498",
+    "topic": "Git & Version Control",
+    "question": "How do you remove local (untracked) files and directories from the current Git working tree?",
+    "options": [
+      "A. Only i (git clean -f)",
+      "B. Only ii and iii",
+      "C. Only i and iv",
+      "D. All of the above"
+    ],
+    "answer_index": 0,
+    "explanation": "\"Only i (git clean -f)\" is correct. The distractors (\"Only ii and iii\" and \"Only i and iv\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"Only i (git clean -f)\" in Git & Version Control distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0499",
+    "topic": "HTML & CSS",
+    "question": "Which event occurs when the user clicks on the HTML element?",
+    "options": [
+      "A. onmouseover",
+      "B. onchange",
+      "C. onmouseclick",
+      "D. onclick"
+    ],
+    "answer_index": 3,
+    "explanation": "\"onclick\" is correct. The distractors (\"onmouseover\" and \"onchange\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"onclick\" in HTML & CSS distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0500",
+    "topic": "HTML & CSS",
+    "question": "The correct HTML tag to left align the content inside a table cell is:",
+    "options": [
+      "A. <td align=\"left\">",
+      "B. <td align=\"right\">",
+      "C. <td leftAlign>",
+      "D. <table align=\"left\">"
+    ],
+    "answer_index": 0,
+    "explanation": "The correct answer is \"<td align=\"left\">\". The other options (\"<td align=\"right\">\", \"<td leftAlign>\") do not accurately represent the concept described. This is a standard principle in HTML & CSS — recognising \"<td align=\"left\">\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q0501",
+    "topic": "Core Java & OOP",
+    "question": "What is the output of the Java Code Snippet using StringJoiner with delimiter '-' and prefix '(' and suffix ')' after adding A, B, C?",
+    "options": [
+      "A. (A-B-C)",
+      "B. (A)-(B)-(C)",
+      "C. (-A-)(-B-)(-C-)"
+    ],
+    "answer_index": 0,
+    "explanation": "The answer is \"(A-B-C)\". This is the standard definition or correct identification for the concept described. Review the Core Java & OOP documentation to understand how \"(A-B-C)\" fits into the broader context.",
+    "corrected": false
+  },
+  {
+    "id": "q0502",
+    "topic": "Core Java & OOP",
+    "question": "What are the Different Modes of Autowiring?",
+    "options": [
+      "A. byName, byType, constructor, autodetect",
+      "B. byName, byType, constructor, autocorrect",
+      "C. byName, byContent, constructor, autodetect",
+      "D. byName, byContent, setter, autodetect"
+    ],
+    "answer_index": 0,
+    "explanation": "The answer is \"byName, byType, constructor, autodetect\". This is the standard definition or correct identification for the concept described. Review the Core Java & OOP documentation to understand how \"byName, byType, constructor, autodetect\" fits into the broader context.",
+    "corrected": false
+  },
+  {
+    "id": "q0503",
+    "topic": "Core Java & OOP",
+    "question": "Which of the below API Calls provides you the security information?",
+    "options": [
+      "A. Only HttpServletRequest.isUserInRole()",
+      "B. Only HttpServletRequest.getUserPrincipal()",
+      "C. Both HttpServletRequest.isUserInRole() and HttpServletRequest.getUserPrincipal()"
+    ],
+    "answer_index": 2,
+    "explanation": "\"Both HttpServletRequest.isUserInRole() and HttpServletRequest.getUserPrincipal()\" is correct. The distractors (\"Only HttpServletRequest.isUserInRole()\" and \"Only HttpServletRequest.getUserPrincipal()\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"Both HttpServletRequest.isUserInRole() and HttpServletRequest.getUserPrincipal()\" in Core Java & OOP distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0504",
+    "topic": "Spring Core",
+    "question": "What does it mean by publishing a REST service in Spring?",
+    "options": [
+      "A. Publishing an application's data as JSON over a REST service",
+      "B. Publishing an application's data as XML over a REST service",
+      "C. Sharing Database within two microservices using Spring Data Access Object (DAO)",
+      "D. All of the above"
+    ],
+    "answer_index": 0,
+    "explanation": "The answer is \"Publishing an application's data as JSON over a REST service\". This is the standard definition or correct identification for the concept described. Review the Spring Core documentation to understand how \"Publishing an application's data as JSON over a REST service\" fits into the broader context.",
+    "corrected": false
+  },
+  {
+    "id": "q0505",
+    "topic": "Core Java & OOP",
+    "question": "In your Data Access Object (DAO) method, you neither need to surround your code with a try/catch block nor declare throwing an exception in the method signature.",
+    "options": [
+      "A. TRUE",
+      "B. FALSE"
+    ],
+    "answer_index": 1,
+    "explanation": "This statement is FALSE. In your Data Access Object (DAO) method, you neither need to surround your code with a try/catch block nor declare throwing an exception in the method signature does not accurately describe the behaviour in Core Java & OOP. Make sure you understand the correct behaviour to avoid this common misconception.",
+    "corrected": false
+  },
+  {
+    "id": "q0506",
+    "topic": "Core Java & OOP",
+    "question": "Which annotation is used as a substitute for the initialization method?",
+    "options": [
+      "A. @PostConstruct",
+      "B. @PreDestroy",
+      "C. @PreConstruct"
+    ],
+    "answer_index": 0,
+    "explanation": "Java annotations are declared with @interface. Elements inside look like method declarations but have no body; default values are set with default keyword. All annotations implicitly extend java.lang.annotation.Annotation and cannot have an explicit extends clause.",
+    "corrected": false
+  },
+  {
+    "id": "q0507",
+    "topic": "Core Java & OOP",
+    "question": "A logger location where logging information is sent is called:",
+    "options": [
+      "A. appender",
+      "B. logger",
+      "C. component"
+    ],
+    "answer_index": 0,
+    "explanation": "In logging frameworks (Log4j, Logback), an Appender is the destination where log records are written — console, file, database, remote server, etc. A Logger generates log events; a Layout/Encoder formats them; an Appender outputs them.",
+    "corrected": false
+  },
+  {
+    "id": "q0508",
+    "topic": "MongoDB",
+    "question": "Sharding a MongoDB database across many server instances can be achieved with:",
+    "options": [
+      "A. LAN",
+      "B. SAN",
+      "C. MAN"
+    ],
+    "answer_index": 0,
+    "explanation": "The correct answer is \"LAN\". The other options (\"SAN\", \"MAN\") do not accurately represent the concept described. This is a standard principle in MongoDB — recognising \"LAN\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q0509",
+    "topic": "MongoDB",
+    "question": "In MongoDB, which operation often uses an index and has better performance than those that do not use an index?",
+    "options": [
+      "A. SELECT",
+      "B. UPDATE",
+      "C. DELETE",
+      "D. SORT"
+    ],
+    "answer_index": 3,
+    "explanation": "\"SORT\" is the odd one out in this context. The other options (\"SELECT\" and \"UPDATE\") all correctly describe or belong to the stated category. Knowing what is NOT part of a concept is as important as knowing what is.",
+    "corrected": false
+  },
+  {
+    "id": "q0510",
+    "topic": "MongoDB",
+    "question": "What type of management does 'Capped Collections' provide for inserted documents in MongoDB?",
+    "options": [
+      "A. FIFO",
+      "B. LIFO",
+      "C. LRU",
+      "D. MRU"
+    ],
+    "answer_index": 0,
+    "explanation": "In MongoDB, a document is equivalent to a row in a relational table. Documents are stored in BSON (Binary JSON) format and can contain nested documents and arrays, enabling rich hierarchical data without JOIN operations.",
+    "corrected": false
+  },
+  {
+    "id": "q0511",
+    "topic": "MongoDB",
+    "question": "In MongoDB, which of the following methods return one document?",
+    "options": [
+      "A. findOne()",
+      "B. findOne1()",
+      "C. selectOne()"
+    ],
+    "answer_index": 0,
+    "explanation": "The correct answer is \"findOne()\". The other options (\"findOne1()\", \"selectOne()\") do not accurately represent the concept described. This is a standard principle in MongoDB — recognising \"findOne()\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q0512",
+    "topic": "React",
+    "question": "Redux is an exclusive feature of the React store?",
+    "options": [
+      "A. TRUE",
+      "B. FALSE"
+    ],
+    "answer_index": 1,
+    "explanation": "This statement is FALSE. Redux is an exclusive feature of the React store does not accurately describe the behaviour in React. Make sure you understand the correct behaviour to avoid this common misconception.",
+    "corrected": false
+  },
+  {
+    "id": "q0513",
+    "topic": "JavaScript",
+    "question": "Identify the correct ES6 statement.",
+    "options": [
+      "A. Only i and ii",
+      "B. Only iv",
+      "C. Only i, ii and iv",
+      "D. Only ii and iv"
+    ],
+    "answer_index": 3,
+    "explanation": "\"Only ii and iv\" is correct. The distractors (\"Only i and ii\" and \"Only iv\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"Only ii and iv\" in JavaScript distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0514",
+    "topic": "React",
+    "question": "Which of the below methods are NOT a part of React Component's lifecycle?",
+    "options": [
+      "A. Initial Rendering",
+      "B. Render / Re-Render",
+      "C. unMounting",
+      "D. Remote URL calls"
+    ],
+    "answer_index": 3,
+    "explanation": "\"Remote URL calls\" is the odd one out in this context. The other options (\"Initial Rendering\" and \"Render / Re-Render\") all correctly describe or belong to the stated category. Knowing what is NOT part of a concept is as important as knowing what is.",
+    "corrected": false
+  },
+  {
+    "id": "q0515",
+    "topic": "React",
+    "question": "Which of the following is not a callback method of React?",
+    "options": [
+      "A. render()",
+      "B. componentDidMount()",
+      "C. componentFailedToMount()",
+      "D. componentWillUnmount()"
+    ],
+    "answer_index": 2,
+    "explanation": "componentFailedToMount() is the correct answer. Review the question topic (JavaScript) for deeper context.",
+    "corrected": false
+  },
+  {
+    "id": "q0516",
+    "topic": "TypeScript",
+    "question": "How can we render JSX in the browser?",
+    "options": [
+      "A. Only Using Babel and Using Typescript",
+      "B. Only Using Redux",
+      "C. Using Babel, Typescript and Redux",
+      "D. Only Using Flux and Redux"
+    ],
+    "answer_index": 0,
+    "explanation": "JSX is a syntax extension that lets you write HTML-like markup inside JavaScript. Babel transpiles JSX to React.createElement() calls. JSX is not valid JavaScript — it requires a compilation step — but significantly improves readability of component templates.",
+    "corrected": false
+  },
+  {
+    "id": "q0517",
+    "topic": "Core Java & OOP",
+    "question": "Which of the following statements are true about Java?",
+    "options": [
+      "A. Only i",
+      "B. Only iv",
+      "C. i and iv",
+      "D. ii and iii"
+    ],
+    "answer_index": 3,
+    "explanation": "\"ii and iii\" is correct. The distractors (\"Only i\" and \"Only iv\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"ii and iii\" in Core Java & OOP distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0518",
+    "topic": "Core Java & OOP",
+    "question": "Which Java Class has natural sorting implemented?",
+    "options": [
+      "A. LinkedHashSet",
+      "B. TreeSet",
+      "C. HashSet"
+    ],
+    "answer_index": 1,
+    "explanation": "\"TreeSet\" is correct. The distractors (\"LinkedHashSet\" and \"HashSet\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"TreeSet\" in Core Java & OOP distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0519",
+    "topic": "Core Java & OOP",
+    "question": "Is the following a valid Java code snippet using Optional.of and isPresent()?",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "explanation": "Optional<T> is a container that may or may not hold a non-null value, replacing null checks. Use .isPresent()/.isEmpty() to check, .get() to retrieve (throws if empty), or .orElse()/.map() for safer access. It was introduced in Java 8 to reduce NullPointerExceptions.",
+    "corrected": false
+  },
+  {
+    "id": "q0520",
+    "topic": "Core Java & OOP",
+    "question": "Service discovery tools help by reducing the problem of how processes and services in a cluster can find and talk to one another.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "explanation": "Service discovery lets services in a distributed system find each other dynamically without hard-coded addresses. Tools like Consul, Eureka, and etcd maintain a registry of healthy service instances. This solves the problem of services scaling up/down with changing IPs.",
+    "corrected": false
+  },
+  {
+    "id": "q0521",
+    "topic": "Core Java & OOP",
+    "question": "In Java Optional.ofNullable() method, it returns a non-empty Optional if the given object has a value, otherwise it returns an empty Optional.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "explanation": "Optional<T> is a container that may or may not hold a non-null value, replacing null checks. Use .isPresent()/.isEmpty() to check, .get() to retrieve (throws if empty), or .orElse()/.map() for safer access. It was introduced in Java 8 to reduce NullPointerExceptions.",
+    "corrected": false
+  },
+  {
+    "id": "q0522",
+    "topic": "Core Java & OOP",
+    "question": "Which of the following types of Java methods cannot be type parameterized?",
+    "options": [
+      "A. FINAL methods",
+      "B. Overriding methods",
+      "C. Overloading methods"
+    ],
+    "answer_index": 1,
+    "explanation": "\"Overriding methods\" is correct. The distractors (\"FINAL methods\" and \"Overloading methods\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"Overriding methods\" in Core Java & OOP distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0523",
+    "topic": "Core Java & OOP",
+    "question": "Which of the following statements is true about microservices architecture?",
+    "options": [
+      "A. Only i",
+      "B. Only ii",
+      "C. Only ii and iv",
+      "D. All of the above"
+    ],
+    "answer_index": 3,
+    "explanation": "Microservices decompose an application into small, independently deployable services each owning its own data and communicating via APIs. They can run on any hosts — deploying all on the same host defeats isolation benefits. Each service aligns with a bounded context from Domain-Driven Design.",
+    "corrected": false
+  },
+  {
+    "id": "q0524",
+    "topic": "Core Java & OOP",
+    "question": "Load Balancing improves the distribution of workloads across multiple computing resources.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "explanation": "Load balancing distributes incoming requests across multiple servers so no single server becomes a bottleneck. It improves availability (if one server fails, others serve traffic) and scalability. Common algorithms: round-robin, least-connections, IP hash.",
+    "corrected": false
+  },
+  {
+    "id": "q0525",
+    "topic": "DevOps & CI/CD",
+    "question": "What are the core operations of DevOps with applications development and infrastructure?",
+    "options": [
+      "A. Provisioning, Configuration and Orchestration",
+      "B. Code Building, Coverage and Unit Testing",
+      "C. Packaging and Deployment",
+      "D. All of the above"
+    ],
+    "answer_index": 3,
+    "explanation": "The answer is \"All of the above\". This is the standard definition or correct identification for the concept described. Review the DevOps & CI/CD documentation to understand how \"All of the above\" fits into the broader context.",
+    "corrected": false
+  },
+  {
+    "id": "q0526",
+    "topic": "Git & Version Control",
+    "question": "After you initialize a new GIT repository and create a file named git-quiz.html, which of the following commands will NOT work if issued?",
+    "options": [
+      "A. git add git-quiz.html",
+      "B. git status",
+      "C. git add",
+      "D. git commit -m \"git quiz web file added\""
+    ],
+    "answer_index": 3,
+    "explanation": "git commit -m \"git quiz web file added\" is the correct answer. Review the question topic (HTML/CSS) for deeper context.",
+    "corrected": false
+  },
+  {
+    "id": "q0527",
+    "topic": "HTML & CSS",
+    "question": "Which Bootstrap class adds zebra-stripes to a table?",
+    "options": [
+      "A. table-bordered",
+      "B. table-zebra",
+      "C. table-striped",
+      "D. even and odd"
+    ],
+    "answer_index": 2,
+    "explanation": "\"table-striped\" is correct. The distractors (\"table-bordered\" and \"table-zebra\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"table-striped\" in HTML & CSS distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0528",
+    "topic": "JavaScript",
+    "question": "Which JavaScript method is like the mathematical 'for all' quantifier?",
+    "options": [
+      "A. every()",
+      "B. some()",
+      "C. all()",
+      "D. forall()"
+    ],
+    "answer_index": 0,
+    "explanation": "\"every()\" is correct. The distractors (\"some()\" and \"all()\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"every()\" in JavaScript distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0529",
+    "topic": "JavaScript",
+    "question": "Which of the following methods CANNOT be used to add array elements in JavaScript?",
+    "options": [
+      "A. push()",
+      "B. splice()",
+      "C. shift()",
+      "D. All can be used."
+    ],
+    "answer_index": 3,
+    "explanation": "\"All can be used.\" is correct. The distractors (\"push()\" and \"splice()\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"All can be used.\" in JavaScript distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0530",
+    "topic": "JavaScript",
+    "question": "In JavaScript, which is a comma separated list of colon separated name value pairs enclosed within curly braces?",
+    "options": [
+      "A. An object prototype",
+      "B. A map object",
+      "C. A class",
+      "D. An object literal"
+    ],
+    "answer_index": 3,
+    "explanation": "List.of() (Java 9+) returns an immutable list — add/set/remove throw UnsupportedOperationException. It rejects null elements (unlike Arrays.asList). Use List.copyOf() to make an immutable copy of an existing collection.",
+    "corrected": false
+  },
+  {
+    "id": "q0531",
+    "topic": "JavaScript",
+    "question": "In JavaScript, what is observed in the statement if (!a[i]) continue?",
+    "options": [
+      "A. i and ii only",
+      "B. ii and iii only",
+      "C. i and iii only",
+      "D. i, ii and iii"
+    ],
+    "answer_index": 3,
+    "explanation": "The correct answer is \"i, ii and iii\". The other options (\"i and ii only\", \"ii and iii only\") do not accurately represent the concept described. This is a standard principle in JavaScript — recognising \"i, ii and iii\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q0532",
+    "topic": "HTML & CSS",
+    "question": "Which method is the ultimate element selection method in client-side JavaScript?",
+    "options": [
+      "A. querySelectAll()",
+      "B. querySelector()",
+      "C. querySelect()",
+      "D. querySelectorAll()"
+    ],
+    "answer_index": 3,
+    "explanation": "\"querySelectorAll()\" is correct. The distractors (\"querySelectAll()\" and \"querySelector()\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"querySelectorAll()\" in HTML & CSS distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0533",
+    "topic": "HTML & CSS",
+    "question": "Which tag is used to define a clickable image map in HTML5?",
+    "options": [
+      "A. <map>",
+      "B. <area>",
+      "C. <img>",
+      "D. <figure>"
+    ],
+    "answer_index": 0,
+    "explanation": "\"<map>\" is correct. The distractors (\"<area>\" and \"<img>\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"<map>\" in HTML & CSS distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0534",
+    "topic": "HTML & CSS",
+    "question": "What is the effect of display: flex; justify-content: space-between;?",
+    "options": [
+      "A. Aligns children vertically with equal spacing",
+      "B. Aligns children horizontally with space between them",
+      "C. Centers children horizontally",
+      "D. Stacks children in a column"
+    ],
+    "answer_index": 1,
+    "explanation": "The answer is \"Aligns children horizontally with space between them\". This is the standard definition or correct identification for the concept described. Review the HTML & CSS documentation to understand how \"Aligns children horizontally with space between them\" fits into the broader context.",
+    "corrected": false
+  },
+  {
+    "id": "q0535",
+    "topic": "Core Java & OOP",
+    "question": "What is the output?\nconsole.log(5 + \"5\");",
+    "options": [
+      "A. 10",
+      "B. \"55\"",
+      "C. 25",
+      "D. Error"
+    ],
+    "answer_index": 1,
+    "explanation": "The answer is \"\"55\"\". This is the standard definition or correct identification for the concept described. Review the Core Java & OOP documentation to understand how \"\"55\"\" fits into the broader context.",
+    "corrected": false
+  },
+  {
+    "id": "q0536",
+    "topic": "JavaScript",
+    "question": "Which method is used to add an event listener?",
+    "options": [
+      "A. addEvent()",
+      "B. attachEvent()",
+      "C. addEventListener()",
+      "D. onEvent()"
+    ],
+    "answer_index": 2,
+    "explanation": "\"addEventListener()\" is correct. The distractors (\"addEvent()\" and \"attachEvent()\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"addEventListener()\" in JavaScript distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0537",
+    "topic": "HTML & CSS",
+    "question": "Which property keeps a background image fixed while scrolling?",
+    "options": [
+      "A. background-repeat: no-repeat",
+      "B. background-attachment: fixed",
+      "C. background-position: center",
+      "D. background-size: cover"
+    ],
+    "answer_index": 1,
+    "explanation": "\"background-attachment: fixed\" is correct. The distractors (\"background-repeat: no-repeat\" and \"background-position: center\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"background-attachment: fixed\" in HTML & CSS distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0538",
+    "topic": "React",
+    "question": "What is the purpose of the useState hook?",
+    "options": [
+      "A. Fetch data from API",
+      "B. Manage state in functional components",
+      "C. Handle side effects",
+      "D. Create context"
+    ],
+    "answer_index": 1,
+    "explanation": "useState is a React Hook that adds state to functional components. It returns a [value, setter] pair — e.g., const [count, setCount] = useState(0). Calling the setter triggers a re-render with the new state value.",
+    "corrected": false
+  },
+  {
+    "id": "q0539",
+    "topic": "Core Java & OOP",
+    "question": "What does this render?\nreturn <h1>{undefined}</h1>;",
+    "options": [
+      "A. Nothing (empty string)",
+      "B. \"undefined\"",
+      "C. Error",
+      "D. null"
+    ],
+    "answer_index": 0,
+    "explanation": "The answer is \"Nothing (empty string)\". This is the standard definition or correct identification for the concept described. Review the Core Java & OOP documentation to understand how \"Nothing (empty string)\" fits into the broader context.",
+    "corrected": false
+  },
+  {
+    "id": "q0540",
+    "topic": "React",
+    "question": "Which hook performs side effects?",
+    "options": [
+      "A. useEffect",
+      "B. useReducer",
+      "C. useContext",
+      "D. useCallback"
+    ],
+    "answer_index": 0,
+    "explanation": "useEffect runs side effects (data fetching, subscriptions, DOM manipulation) after render. The dependency array controls when it re-runs: empty [] = run once on mount; [dep] = run when dep changes; no array = run after every render.",
+    "corrected": false
+  },
+  {
+    "id": "q0541",
+    "topic": "React",
+    "question": "How do you pass data from parent to child?",
+    "options": [
+      "A. Using state",
+      "B. Using props",
+      "C. Using context",
+      "D. Using hooks"
+    ],
+    "answer_index": 1,
+    "explanation": "\"Using props\" is correct. The distractors (\"Using state\" and \"Using context\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"Using props\" in React distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0542",
+    "topic": "React",
+    "question": "Correct way to update state?\nconst [user, setUser] = useState({ name:\"John\", age:30 });",
+    "options": [
+      "A. setUser({ name:\"Jane\" })",
+      "B. setUser({ ...user, name:\"Jane\" })",
+      "C. user.name=\"Jane\"",
+      "D. setUser(user.name=\"Jane\")"
+    ],
+    "answer_index": 1,
+    "explanation": "useState is a React Hook that adds state to functional components. It returns a [value, setter] pair — e.g., const [count, setCount] = useState(0). Calling the setter triggers a re-render with the new state value.",
+    "corrected": false
+  },
+  {
+    "id": "q0543",
+    "topic": "Core Java & OOP",
+    "question": "Purpose of key prop in a list?",
+    "options": [
+      "A. Styling",
+      "B. Identifying unique elements for efficient rendering",
+      "C. Handling events",
+      "D. Managing state"
+    ],
+    "answer_index": 1,
+    "explanation": "The correct answer is \"Identifying unique elements for efficient rendering\". The other options (\"Styling\", \"Handling events\") do not accurately represent the concept described. This is a standard principle in Core Java & OOP — recognising \"Identifying unique elements for efficient rendering\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q0544",
+    "topic": "React",
+    "question": "Lifecycle method replaced by useEffect?",
+    "options": [
+      "A. componentDidMount",
+      "B. render",
+      "C. constructor",
+      "D. setState"
+    ],
+    "answer_index": 0,
+    "explanation": "useEffect runs side effects (data fetching, subscriptions, DOM manipulation) after render. The dependency array controls when it re-runs: empty [] = run once on mount; [dep] = run when dep changes; no array = run after every render.",
+    "corrected": false
+  },
+  {
+    "id": "q0545",
+    "topic": "React",
+    "question": "What does JSX stand for?",
+    "options": [
+      "A. JavaScript XML",
+      "B. JavaScript Extension",
+      "C. JSON XML",
+      "D. Java Syntax"
+    ],
+    "answer_index": 0,
+    "explanation": "JSX is a syntax extension that lets you write HTML-like markup inside JavaScript. Babel transpiles JSX to React.createElement() calls. JSX is not valid JavaScript — it requires a compilation step — but significantly improves readability of component templates.",
+    "corrected": false
+  },
+  {
+    "id": "q0546",
+    "topic": "React",
+    "question": "How to create a ref in functional component?",
+    "options": [
+      "A. const ref = useRef();",
+      "B. const ref = createRef();",
+      "C. const ref = useState();",
+      "D. const ref = useEffect();"
+    ],
+    "answer_index": 0,
+    "explanation": "\"const ref = useRef();\" is correct. The distractors (\"const ref = createRef();\" and \"const ref = useState();\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"const ref = useRef();\" in React distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0547",
+    "topic": "React",
+    "question": "If count = 0, output?\nuseEffect(() => {\nsetCount(count + 1);\n}, []);",
+    "options": [
+      "A. 0",
+      "B. 1",
+      "C. 2",
+      "D. Infinite loop"
+    ],
+    "answer_index": 1,
+    "explanation": "useEffect runs side effects (data fetching, subscriptions, DOM manipulation) after render. The dependency array controls when it re-runs: empty [] = run once on mount; [dep] = run when dep changes; no array = run after every render.",
+    "corrected": false
+  },
+  {
+    "id": "q0548",
+    "topic": "MongoDB",
+    "question": "Primary key in MongoDB document?",
+    "options": [
+      "A. _id",
+      "B. id",
+      "C. key",
+      "D. index"
+    ],
+    "answer_index": 0,
+    "explanation": "The correct answer is \"_id\". The other options (\"id\", \"key\") do not accurately represent the concept described. This is a standard principle in MongoDB — recognising \"_id\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q0549",
+    "topic": "MongoDB",
+    "question": "Find users where age > 25?",
+    "options": [
+      "A. db.users.find({ age: { $gt: 25 } })",
+      "B. db.users.find({ age: { $gte: 25 } })",
+      "C. db.users.find({ age: { $lt: 25 } })",
+      "D. db.users.find({ age: 25 })"
+    ],
+    "answer_index": 0,
+    "explanation": "The correct answer is \"db.users.find({ age: { $gt: 25 } })\". The other options (\"db.users.find({ age: { $gte: 25 } })\", \"db.users.find({ age: { $lt: 25 } })\") do not accurately represent the concept described. This is a standard principle in MongoDB — recognising \"db.users.find({ age: { $gt: 25 } })\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q0550",
+    "topic": "HTML & CSS",
+    "question": "What does $push do?",
+    "options": [
+      "A. Replace field",
+      "B. Add element to an array",
+      "C. Remove element",
+      "D. Update field"
+    ],
+    "answer_index": 1,
+    "explanation": "The answer is \"Add element to an array\". This is the standard definition or correct identification for the concept described. Review the HTML & CSS documentation to understand how \"Add element to an array\" fits into the broader context.",
+    "corrected": false
+  },
+  {
+    "id": "q0551",
+    "topic": "Core Java & OOP",
+    "question": "Which index improves query performance?",
+    "options": [
+      "A. Compound index",
+      "B. Text index",
+      "C. Unique index",
+      "D. All of the above"
+    ],
+    "answer_index": 3,
+    "explanation": "\"All of the above\" is correct. The distractors (\"Compound index\" and \"Text index\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"All of the above\" in Core Java & OOP distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0552",
+    "topic": "Spring Core",
+    "question": "How to inject service?",
+    "options": [
+      "A. Using @Inject",
+      "B. In constructor",
+      "C. Using @Service",
+      "D. In template"
+    ],
+    "answer_index": 1,
+    "explanation": "\"In constructor\" is correct. The distractors (\"Using @Inject\" and \"Using @Service\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"In constructor\" in Spring Core distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0553",
+    "topic": "Spring Core",
+    "question": "What does FormBuilder simplify?",
+    "options": [
+      "A. HTTP requests",
+      "B. Reactive forms creation",
+      "C. Template rendering",
+      "D. Dependency injection"
+    ],
+    "answer_index": 1,
+    "explanation": "The answer is \"Reactive forms creation\". This is the standard definition or correct identification for the concept described. Review the Spring Core documentation to understand how \"Reactive forms creation\" fits into the broader context.",
+    "corrected": false
+  },
+  {
+    "id": "q0554",
+    "topic": "Core Java & OOP",
+    "question": "Output?\nint x = 5;\nSystem.out.println(x++ + ++x);",
+    "options": [
+      "A. 10",
+      "B. 11",
+      "C. 12",
+      "D. 13"
+    ],
+    "answer_index": 2,
+    "explanation": "The output is \"12\". Trace through the execution step by step: variable assignments, method calls, and control flow all determine the final value. Pay attention to scope, type coercion, and execution order in Core Java & OOP.",
+    "corrected": false
+  },
+  {
+    "id": "q0555",
+    "topic": "Core Java & OOP",
+    "question": "String s1=\"Hello\";\nString s2=new String(\"Hello\");\nSystem.out.println(s1==s2);",
+    "options": [
+      "A. true",
+      "B. false",
+      "C. Error",
+      "D. null"
+    ],
+    "answer_index": 1,
+    "explanation": "The output is \"false\". Trace execution step by step: follow variable assignments, control flow, and implicit conversions. Common wrong answers (\"true\", \"Error\") usually arise from scope confusion, precedence errors, or off-by-one mistakes.",
+    "corrected": false
+  },
+  {
+    "id": "q0556",
+    "topic": "Core Java & OOP",
+    "question": "List<Integer> list=new ArrayList<>();\nlist.add(1);\nlist.add(2);\nlist.remove(Integer.valueOf(1));\nSystem.out.println(list);",
+    "options": [
+      "A. [1,2]",
+      "B. [2]",
+      "C. []",
+      "D. Error"
+    ],
+    "answer_index": 1,
+    "explanation": "The output is \"[2]\". Trace execution step by step: follow variable assignments, control flow, and implicit conversions. Common wrong answers (\"[1,2]\", \"[]\") usually arise from scope confusion, precedence errors, or off-by-one mistakes.",
+    "corrected": false
+  },
+  {
+    "id": "q0557",
+    "topic": "Core Java & OOP",
+    "question": "static int x=10;\nTest t=new Test();\nt.x=20;\nSystem.out.println(Test.x);",
+    "options": [
+      "A. 10",
+      "B. 20",
+      "C. 30",
+      "D. Error"
+    ],
+    "answer_index": 1,
+    "explanation": "The output is \"20\". Trace execution step by step: follow variable assignments, control flow, and implicit conversions. Common wrong answers (\"10\", \"30\") usually arise from scope confusion, precedence errors, or off-by-one mistakes.",
+    "corrected": false
+  },
+  {
+    "id": "q0558",
+    "topic": "Core Java & OOP",
+    "question": "int[] arr={1,2};\nSystem.out.println(arr[2]); with try-catch.",
+    "options": [
+      "A. 1",
+      "B. 2",
+      "C. Error",
+      "D. null"
+    ],
+    "answer_index": 2,
+    "explanation": "The output is \"Error\". Trace execution step by step: follow variable assignments, control flow, and implicit conversions. Common wrong answers (\"1\", \"2\") usually arise from scope confusion, precedence errors, or off-by-one mistakes.",
+    "corrected": false
+  },
+  {
+    "id": "q0559",
+    "topic": "Core Java & OOP",
+    "question": "Java: What is the purpose of the final keyword?",
+    "options": [
+      "A. Prevents method overriding",
+      "B. Allows dynamic binding",
+      "C. Enables garbage collection",
+      "D. Permits multiple inheritance"
+    ],
+    "answer_index": 0,
+    "explanation": "The correct answer is \"Prevents method overriding\". The other options (\"Allows dynamic binding\", \"Enables garbage collection\") do not accurately represent the concept described. This is a standard principle in Core Java & OOP — recognising \"Prevents method overriding\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q0560",
+    "topic": "Java Concurrency",
+    "question": "Java: Which collection is synchronized by default?",
+    "options": [
+      "A. ArrayList",
+      "B. HashMap",
+      "C. Vector",
+      "D. LinkedList"
+    ],
+    "answer_index": 2,
+    "explanation": "The synchronized keyword in Java provides mutual exclusion — only one thread can execute a synchronized block/method on the same monitor (object) at a time. It also establishes a happens-before relationship, ensuring visibility of writes across threads.",
+    "corrected": false
+  },
+  {
+    "id": "q0561",
+    "topic": "TypeScript",
+    "question": "Java: What is the default access modifier for class members?",
+    "options": [
+      "A. public",
+      "B. private",
+      "C. protected",
+      "D. package-private"
+    ],
+    "answer_index": 3,
+    "explanation": "The correct answer is \"package-private\". The other options (\"public\", \"private\") do not accurately represent the concept described. This is a standard principle in TypeScript — recognising \"package-private\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q0562",
+    "topic": "Core Java & OOP",
+    "question": "Java: What does the transient keyword do?",
+    "options": [
+      "A. Prevents serialization",
+      "B. Enables multithreading",
+      "C. Marks a variable as static",
+      "D. Allows method overriding"
+    ],
+    "answer_index": 0,
+    "explanation": "The correct answer is \"Prevents serialization\". The other options (\"Enables multithreading\", \"Marks a variable as static\") do not accurately represent the concept described. This is a standard principle in Core Java & OOP — recognising \"Prevents serialization\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q0563",
+    "topic": "TypeScript",
+    "question": "Java: Which interface is used for sorting objects?",
+    "options": [
+      "A. Comparable",
+      "B. Comparator",
+      "C. Serializable",
+      "D. Cloneable"
+    ],
+    "answer_index": 0,
+    "explanation": "Comparable defines a natural ordering via compareTo() — the class itself implements the interface. Comparator defines an external ordering via compare() — useful for multiple orderings or ordering classes you don't own. Collections.sort() uses Comparable; the overload with Comparator uses the comparator.",
+    "corrected": false
+  },
+  {
+    "id": "q0564",
+    "topic": "TypeScript",
+    "question": "TypeScript: What is the purpose of interface in TypeScript?",
+    "options": [
+      "A. Define class behavior",
+      "B. Specify object structure",
+      "C. Create modules",
+      "D. Handle exceptions"
+    ],
+    "answer_index": 1,
+    "explanation": "The correct answer is \"Specify object structure\". The other options (\"Define class behavior\", \"Create modules\") do not accurately represent the concept described. This is a standard principle in TypeScript — recognising \"Specify object structure\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q0565",
+    "topic": "TypeScript",
+    "question": "TypeScript: What is the type of let x: any;?",
+    "options": [
+      "A. number",
+      "B. string",
+      "C. any",
+      "D. void"
+    ],
+    "answer_index": 2,
+    "explanation": "The correct answer is \"any\". The other options (\"number\", \"string\") do not accurately represent the concept described. This is a standard principle in TypeScript — recognising \"any\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q0566",
+    "topic": "TypeScript",
+    "question": "TypeScript: What does this code do?\nfunction greet(name: string): string {\nreturn `Hello, ${name}`;\n}",
+    "options": [
+      "A. Throws a type error",
+      "B. Returns a string",
+      "C. Returns void",
+      "D. Returns any"
+    ],
+    "answer_index": 1,
+    "explanation": "The correct answer is \"Returns a string\". The other options (\"Throws a type error\", \"Returns void\") do not accurately represent the concept described. This is a standard principle in TypeScript — recognising \"Returns a string\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q0567",
+    "topic": "TypeScript",
+    "question": "TypeScript: Which keyword extends a class?",
+    "options": [
+      "A. implements",
+      "B. extends",
+      "C. super",
+      "D. interface"
+    ],
+    "answer_index": 1,
+    "explanation": "The correct answer is \"extends\". The other options (\"implements\", \"super\") do not accurately represent the concept described. This is a standard principle in TypeScript — recognising \"extends\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q0568",
+    "topic": "TypeScript",
+    "question": "TypeScript: How do you define an optional property?",
+    "options": [
+      "A. name: string?",
+      "B. name?: string",
+      "C. name: string | null",
+      "D. name: string = null"
+    ],
+    "answer_index": 1,
+    "explanation": "Optional<T> is a container that may or may not hold a non-null value, replacing null checks. Use .isPresent()/.isEmpty() to check, .get() to retrieve (throws if empty), or .orElse()/.map() for safer access. It was introduced in Java 8 to reduce NullPointerExceptions.",
+    "corrected": false
+  },
+  {
+    "id": "q0569",
+    "topic": "Spring Boot",
+    "question": "Spring Boot: Which dependency enables REST APIs?",
+    "options": [
+      "A. spring-boot-starter-web",
+      "B. spring-boot-starter-data-jpa",
+      "C. spring-boot-starter-security",
+      "D. spring-boot-starter-test"
+    ],
+    "answer_index": 0,
+    "explanation": "REST (Representational State Transfer) APIs use HTTP methods (GET, POST, PUT, DELETE) to operate on resources identified by URLs. REST is stateless — each request contains all information needed. Responses typically use JSON or XML.",
+    "corrected": false
+  },
+  {
+    "id": "q0570",
+    "topic": "Spring Core",
+    "question": "Spring: What is Dependency Injection?",
+    "options": [
+      "A. Creating objects manually",
+      "B. Injecting dependencies into objects",
+      "C. Managing database connections",
+      "D. Handling HTTP requests"
+    ],
+    "answer_index": 1,
+    "explanation": "Dependency Injection (DI) is a design pattern where a class receives its dependencies from outside rather than creating them. This decouples components, making them easier to test and swap. Spring, Angular, and NestJS all use DI containers to manage object lifecycles.",
+    "corrected": false
+  },
+  {
+    "id": "q0571",
+    "topic": "Spring Core",
+    "question": "Spring: Which annotation maps HTTP GET requests?",
+    "options": [
+      "A. @PostMapping",
+      "B. @GetMapping",
+      "C. @RequestMapping",
+      "D. @PutMapping"
+    ],
+    "answer_index": 1,
+    "explanation": "Java annotations are declared with @interface. Elements inside look like method declarations but have no body; default values are set with default keyword. All annotations implicitly extend java.lang.annotation.Annotation and cannot have an explicit extends clause.",
+    "corrected": false
+  },
+  {
+    "id": "q0572",
+    "topic": "Spring Boot",
+    "question": "Spring Boot: What is the default embedded server?",
+    "options": [
+      "A. Jetty",
+      "B. Tomcat",
+      "C. Undertow",
+      "D. Netty"
+    ],
+    "answer_index": 1,
+    "explanation": "The correct answer is \"Tomcat\". The other options (\"Jetty\", \"Undertow\") do not accurately represent the concept described. This is a standard principle in Spring Boot — recognising \"Tomcat\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q0573",
+    "topic": "Spring Core",
+    "question": "Spring: What does @Transactional do?",
+    "options": [
+      "A. Manages database transactions",
+      "B. Configures REST endpoints",
+      "C. Injects dependencies",
+      "D. Scans components"
+    ],
+    "answer_index": 0,
+    "explanation": "@Transactional demarcates a method or class as transactional. Spring wraps it in a proxy that begins a transaction before the method and commits (or rolls back on RuntimeException) after. It only works on Spring-managed beans called from outside the bean.",
+    "corrected": false
+  },
+  {
+    "id": "q0574",
+    "topic": "Spring Boot",
+    "question": "Spring Boot: How do you connect to MongoDB?",
+    "options": [
+      "A. spring-boot-starter-data-mongodb",
+      "B. spring-boot-starter-data-jpa",
+      "C. spring-boot-starter-web",
+      "D. spring-boot-starter-security"
+    ],
+    "answer_index": 0,
+    "explanation": "The correct answer is \"spring-boot-starter-data-mongodb\". The other options (\"spring-boot-starter-data-jpa\", \"spring-boot-starter-web\") do not accurately represent the concept described. This is a standard principle in Spring Boot — recognising \"spring-boot-starter-data-mongodb\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q0575",
+    "topic": "DevOps & CI/CD",
+    "question": "DevOps: What is the purpose of Docker?",
+    "options": [
+      "A. Code compilation",
+      "B. Containerization",
+      "C. Version control",
+      "D. Load balancing"
+    ],
+    "answer_index": 1,
+    "explanation": "Docker packages applications and their dependencies into portable containers that run identically across environments. A Dockerfile defines the image; docker-compose orchestrates multiple containers. Containers share the host OS kernel, making them lighter than VMs.",
+    "corrected": false
+  },
+  {
+    "id": "q0576",
+    "topic": "DevOps & CI/CD",
+    "question": "DevOps: Which command builds a Docker image?",
+    "options": [
+      "A. docker run",
+      "B. docker build",
+      "C. docker push",
+      "D. docker pull"
+    ],
+    "answer_index": 1,
+    "explanation": "Docker packages applications and their dependencies into portable containers that run identically across environments. A Dockerfile defines the image; docker-compose orchestrates multiple containers. Containers share the host OS kernel, making them lighter than VMs.",
+    "corrected": false
+  },
+  {
+    "id": "q0577",
+    "topic": "DevOps & CI/CD",
+    "question": "DevOps: What is CI/CD?",
+    "options": [
+      "A. Continuous Integration / Continuous Deployment",
+      "B. Code Inspection / Code Delivery",
+      "C. Continuous Improvement / Continuous Development",
+      "D. Code Integration / Code Deployment"
+    ],
+    "answer_index": 0,
+    "explanation": "The correct answer is \"Continuous Integration / Continuous Deployment\". The other options (\"Code Inspection / Code Delivery\", \"Continuous Improvement / Continuous Development\") do not accurately represent the concept described. This is a standard principle in DevOps & CI/CD — recognising \"Continuous Integration / Continuous Deployment\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q0578",
+    "topic": "DevOps & CI/CD",
+    "question": "DevOps: Which tool manages container orchestration?",
+    "options": [
+      "A. Jenkins",
+      "B. Kubernetes",
+      "C. Git",
+      "D. Ansible"
+    ],
+    "answer_index": 1,
+    "explanation": "Kubernetes (K8s) is a container orchestration platform. A cluster has a control plane (scheduler, API server) and worker nodes that run Pods (one or more containers). Services expose Pods; Deployments manage replicas and rolling updates.",
+    "corrected": false
+  },
+  {
+    "id": "q0579",
+    "topic": "DevOps & CI/CD",
+    "question": "DevOps: What does nginx -g \"daemon off;\" do in a Docker container?",
+    "options": [
+      "A. Runs NGINX in the background",
+      "B. Runs NGINX in the foreground",
+      "C. Stops NGINX",
+      "D. Restarts NGINX"
+    ],
+    "answer_index": 1,
+    "explanation": "Docker packages applications and their dependencies into portable containers that run identically across environments. A Dockerfile defines the image; docker-compose orchestrates multiple containers. Containers share the host OS kernel, making them lighter than VMs.",
+    "corrected": false
+  },
+  {
+    "id": "q0580",
+    "topic": "DevOps & CI/CD",
+    "question": "DevOps: Which file defines a Jenkins pipeline?",
+    "options": [
+      "A. Dockerfile",
+      "B. Jenkinsfile",
+      "C. pom.xml",
+      "D. build.gradle"
+    ],
+    "answer_index": 1,
+    "explanation": "Jenkins is an open-source automation server for CI/CD pipelines. It integrates with Git to trigger builds on every commit, runs tests, and can deploy to environments. Pipelines are defined in a Jenkinsfile using declarative or scripted syntax.",
+    "corrected": false
+  },
+  {
+    "id": "q0581",
+    "topic": "DevOps & CI/CD",
+    "question": "DevOps: What is Infrastructure as Code?",
+    "options": [
+      "A. Manual server setup",
+      "B. Defining infrastructure using scripts",
+      "C. Database management",
+      "D. Application deployment"
+    ],
+    "answer_index": 1,
+    "explanation": "The correct answer is \"Defining infrastructure using scripts\". The other options (\"Manual server setup\", \"Database management\") do not accurately represent the concept described. This is a standard principle in DevOps & CI/CD — recognising \"Defining infrastructure using scripts\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q0582",
+    "topic": "DevOps & CI/CD",
+    "question": "DevOps: Which AWS service manages containerized apps?",
+    "options": [
+      "A. EC2",
+      "B. ECS",
+      "C. S3",
+      "D. RDS"
+    ],
+    "answer_index": 1,
+    "explanation": "The correct answer is \"ECS\". The other options (\"EC2\", \"S3\") do not accurately represent the concept described. This is a standard principle in DevOps & CI/CD — recognising \"ECS\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q0583",
+    "topic": "Core Java & OOP",
+    "question": "Microservices: What is a key benefit of microservices architecture?",
+    "options": [
+      "A. Monolithic codebase",
+      "B. Independent scalability",
+      "C. Tight coupling",
+      "D. Single database"
+    ],
+    "answer_index": 1,
+    "explanation": "Microservices decompose an application into small, independently deployable services each owning its own data and communicating via APIs. They can run on any hosts — deploying all on the same host defeats isolation benefits. Each service aligns with a bounded context from Domain-Driven Design.",
+    "corrected": false
+  },
+  {
+    "id": "q0584",
+    "topic": "Core Java & OOP",
+    "question": "Microservices: Which pattern ensures loose coupling in microservices?",
+    "options": [
+      "A. Circuit Breaker",
+      "B. Service Registry",
+      "C. Event-Driven",
+      "D. Monolith"
+    ],
+    "answer_index": 2,
+    "explanation": "Microservices decompose an application into small, independently deployable services each owning its own data and communicating via APIs. They can run on any hosts — deploying all on the same host defeats isolation benefits. Each service aligns with a bounded context from Domain-Driven Design.",
+    "corrected": false
+  },
+  {
+    "id": "q0585",
+    "topic": "TypeScript",
+    "question": "Which is the correct Java code snippet to be used to create a Functional Interface?",
+    "options": [
+      "A. interface MyFunctionalInterface implements Functional {",
+      "B. @FunctionalInterface interface MyFunctionalInterface {",
+      "C. @Functional interface MyFunctionalInterface {"
+    ],
+    "answer_index": 1,
+    "explanation": "A Functional Interface in Java has exactly one abstract method (SAM — Single Abstract Method). It can have any number of default or static methods. The @FunctionalInterface annotation is optional but enforces the constraint at compile time and enables lambda expressions.",
+    "corrected": false
+  },
+  {
+    "id": "q0586",
+    "topic": "JavaScript",
+    "question": "Which one will allow traversing a Java collection in each direction?",
+    "options": [
+      "A. ListIterator",
+      "B. Iterator",
+      "C. MapIterator",
+      "D. SetIterator"
+    ],
+    "answer_index": 0,
+    "explanation": "\"ListIterator\" is correct. The distractors (\"Iterator\" and \"MapIterator\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"ListIterator\" in JavaScript distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0587",
+    "topic": "SQL & JDBC",
+    "question": "In Java, which method is used to inform the observer of the change in observed object?",
+    "options": [
+      "A. Check",
+      "B. Update",
+      "C. Inform",
+      "D. notify"
+    ],
+    "answer_index": 1,
+    "explanation": "The correct answer is \"Update\". The other options (\"Check\", \"Inform\") do not accurately represent the concept described. This is a standard principle in SQL & JDBC — recognising \"Update\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q0588",
+    "topic": "Core Java & OOP",
+    "question": "In Java, it is NOT possible to override default serialization.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 1,
+    "explanation": "\"False\" is the odd one out in this context. The other options (\"True\") all correctly describe or belong to the stated category. Knowing what is NOT part of a concept is as important as knowing what is.",
+    "corrected": false
+  },
+  {
+    "id": "q0589",
+    "topic": "Core Java & OOP",
+    "question": "Pick the class that is NOT part of Java collection framework.",
+    "options": [
+      "A. Map",
+      "B. List",
+      "C. Queue",
+      "D. Struct"
+    ],
+    "answer_index": 3,
+    "explanation": "\"Struct\" is the odd one out in this context. The other options (\"Map\" and \"List\") all correctly describe or belong to the stated category. Knowing what is NOT part of a concept is as important as knowing what is.",
+    "corrected": false
+  },
+  {
+    "id": "q0590",
+    "topic": "Core Java & OOP",
+    "question": "Identify the parts of lambda expression in Java.",
+    "options": [
+      "A. Name",
+      "B. Parameter list",
+      "C. Body",
+      "D. Return Type"
+    ],
+    "answer_index": 1,
+    "explanation": "Java 8 lambda expressions implement the single abstract method of a Functional Interface. A lambda like (x) -> x * 2 can be assigned to any compatible SAM interface such as Function<Integer,Integer>. Lambdas enable cleaner, more concise code for callbacks and stream operations.",
+    "corrected": false
+  },
+  {
+    "id": "q0591",
+    "topic": "TypeScript",
+    "question": "Java Functional Interface can be defined as _____.",
+    "options": [
+      "A. Simple Abstract Markup",
+      "B. Simple Active Markup",
+      "C. Single Ambivalue Method",
+      "D. Single Abstract Method"
+    ],
+    "answer_index": 3,
+    "explanation": "A Functional Interface in Java has exactly one abstract method (SAM — Single Abstract Method). It can have any number of default or static methods. The @FunctionalInterface annotation is optional but enforces the constraint at compile time and enables lambda expressions.",
+    "corrected": false
+  },
+  {
+    "id": "q0592",
+    "topic": "Java Concurrency",
+    "question": "Which is the correct API to manage reactive streams in Java?",
+    "options": [
+      "A. java.util.concurrent.Flow",
+      "B. java.util.concurrent.Flow.Publisher",
+      "C. java.util.concurrent.Flow.Processor",
+      "D. All of the above"
+    ],
+    "answer_index": 3,
+    "explanation": "Java 8 Streams provide a declarative, pipeline-style API for processing collections. Operations are either intermediate (filter, map, sorted — lazy) or terminal (collect, forEach, reduce — trigger execution). Parallel streams split work across threads using the fork/join framework.",
+    "corrected": false
+  },
+  {
+    "id": "q0593",
+    "topic": "Core Java & OOP",
+    "question": "In Java, which of the following data structure classes CANNOT be type parameterized?",
+    "options": [
+      "A. List",
+      "B. Set",
+      "C. Array",
+      "D. Map"
+    ],
+    "answer_index": 2,
+    "explanation": "The correct answer is \"Array\". The other options (\"List\", \"Set\") do not accurately represent the concept described. This is a standard principle in Core Java & OOP — recognising \"Array\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q0594",
+    "topic": "Core Java & OOP",
+    "question": "Which of these OOPS concept is enabled by method overriding in Java?",
+    "options": [
+      "A. Polymorphism",
+      "B. Abstraction",
+      "C. Inheritance",
+      "D. Encapsulation"
+    ],
+    "answer_index": 0,
+    "explanation": "\"Polymorphism\" is correct. The distractors (\"Abstraction\" and \"Inheritance\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"Polymorphism\" in Core Java & OOP distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0595",
+    "topic": "Core Java & OOP",
+    "question": "What is the output of the following Java code snippet?\n\nclass First {\n    public First() {\n        System.out.println(\"F\");\n    }\n}\n\nclass Second extends First {\n    public Second() {\n        System.out.println(\"S\");\n    }\n}\n\nclass Third extends Second {\n    public Third() {\n        System.out.println(\"T\");\n    }\n}\n\npublic class TestClass {\n    public static void main(String[] args) {\n        Third c = new Third();\n    }\n}",
+    "options": [
+      "A. TSF",
+      "B. T",
+      "C. F",
+      "D. FST"
+    ],
+    "answer_index": 3,
+    "explanation": "The answer is \"FST\". This is the standard definition or correct identification for the concept described. Review the Core Java & OOP documentation to understand how \"FST\" fits into the broader context.",
+    "corrected": false
+  },
+  {
+    "id": "q0596",
+    "topic": "Core Java & OOP",
+    "question": "How does one assign system property values to variable using Java class fields?",
+    "options": [
+      "A. @Autowire(\"${aProperty}\") private String aSysProp;",
+      "B. @Environment(\"${aProperty}\") private String aSysProp;",
+      "C. @Property(\"${aProperty}\") private String aSysProp;",
+      "D. @Value(\"${aProperty}\") private String aSysProp;"
+    ],
+    "answer_index": 3,
+    "explanation": "\"@Value(\"${aProperty}\") private String aSysProp;\" is correct. The distractors (\"@Autowire(\"${aProperty}\") private String aSysProp;\" and \"@Environment(\"${aProperty}\") private String aSysProp;\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"@Value(\"${aProperty}\") private String aSysProp;\" in Core Java & OOP distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0597",
+    "topic": "Core Java & OOP",
+    "question": "Which of the following types of Java methods CANNOT be Type parameterized?",
+    "options": [
+      "A. Final methods",
+      "B. Overriding methods",
+      "C. Overloaded methods"
+    ],
+    "answer_index": 1,
+    "explanation": "\"Overriding methods\" is correct. The distractors (\"Final methods\" and \"Overloaded methods\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"Overriding methods\" in Core Java & OOP distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0598",
+    "topic": "Core Java & OOP",
+    "question": "Pick the correct Java Stream API's?",
+    "options": [
+      "A. Stream.allMatch",
+      "B. Stream.noneMatch",
+      "C. Stream.anyMatch",
+      "D. All the above"
+    ],
+    "answer_index": 3,
+    "explanation": "Java 8 Streams provide a declarative, pipeline-style API for processing collections. Operations are either intermediate (filter, map, sorted — lazy) or terminal (collect, forEach, reduce — trigger execution). Parallel streams split work across threads using the fork/join framework.",
+    "corrected": false
+  },
+  {
+    "id": "q0599",
+    "topic": "Java Concurrency",
+    "question": "Which class is introduced in Java 8 to get the current milliseconds?",
+    "options": [
+      "A. Clock",
+      "B. Current Time",
+      "C. Date Time",
+      "D. Time"
+    ],
+    "answer_index": 0,
+    "explanation": "java.time.Clock was introduced in Java 8 and can be used to get the current time/millis in a testable way.",
+    "corrected": false
+  },
+  {
+    "id": "q0600",
+    "topic": "Java Concurrency",
+    "question": "In Java, which of these class types supports sequential and parallel processing of data?",
+    "options": [
+      "A. Queue",
+      "B. Lambda",
+      "C. ExecutorService",
+      "D. Streams"
+    ],
+    "answer_index": 3,
+    "explanation": "Java 8 Streams provide a declarative, pipeline-style API for processing collections. Operations are either intermediate (filter, map, sorted — lazy) or terminal (collect, forEach, reduce — trigger execution). Parallel streams split work across threads using the fork/join framework.",
+    "corrected": false
+  }
+]

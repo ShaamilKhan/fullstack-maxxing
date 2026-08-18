@@ -1,0 +1,1564 @@
+[
+  {
+    "id": "q1201",
+    "topic": "Core Java & OOP",
+    "question": "A team of programmers is reviewing a proposed API for a new utility class. After some discussion, they realize that they can reduce the number of methods in the API without losing any functionality. If they implement the new design, which two OO principles will they be promoting? Options:",
+    "options": [
+      "A. Looser coupling",
+      "B. Tighter coupling",
+      "C. Lower cohesion",
+      "D. Higher cohesion e) Weaker encapsulation f) Stronger encapsulation"
+    ],
+    "answer_index": 0,
+    "explanation": "The correct answer is \"Looser coupling\". The other options (\"Tighter coupling\", \"Lower cohesion\") do not accurately represent the concept described. This is a standard principle in Core Java & OOP — recognising \"Looser coupling\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q1202",
+    "topic": "Core Java & OOP",
+    "question": "A team of programmers is involved in reviewing a proposed design for a new utility class. After some discussion, they realize that the current design allows other classes to access methods in the utility class that should be accessible only to methods within the utility class itself. What design issue has the team discovered? Options:",
+    "options": [
+      "A. Tight coupling",
+      "B. Low cohesion",
+      "C. High cohesion",
+      "D. Loose coupling e) Weak encapsulation f) Strong encapsulation Answer: e) Weak encapsulation"
+    ],
+    "answer_index": 0,
+    "explanation": "The correct answer is \"Tight coupling\". The other options (\"Low cohesion\", \"High cohesion\") do not accurately represent the concept described. This is a standard principle in Core Java & OOP — recognising \"Tight coupling\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q1203",
+    "topic": "Core Java & OOP",
+    "question": "Output? public class TestString1 { public static void main(String[] args) { String str = \"420\"; str += 42; System.out.print(str); } } Options:",
+    "options": [
+      "A. 42",
+      "B. 420",
+      "C. 462",
+      "D. 42042 e) Compilation fails f) An exception is thrown at runtime"
+    ],
+    "answer_index": 3,
+    "explanation": "The output is \"42042 e) Compilation fails f) An exception is thrown at runtime\". Trace through the execution step by step: variable assignments, method calls, and control flow all determine the final value. Pay attention to scope, type coercion, and execution order in Core Java & OOP.",
+    "corrected": false
+  },
+  {
+    "id": "q1204",
+    "topic": "TypeScript",
+    "question": "Which three are valid on line? public interface Status { /* insert code here */ int MY_VALUE = 10; } Options:",
+    "options": [
+      "A. final",
+      "B. static",
+      "C. native",
+      "D. public e) private f) abstract g) protected"
+    ],
+    "answer_index": 0,
+    "explanation": "\"final\" is correct. The distractors (\"static\" and \"native\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"final\" in TypeScript distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q1205",
+    "topic": "Core Java & OOP",
+    "question": "A programmer has an algorithm that requires a java.util.List that provides an efficient implementation of add(0, object), but does NOT need to support quick random access. What supports these requirements? Options:",
+    "options": [
+      "A. java.util.Queue",
+      "B. java.util.ArrayList",
+      "C. java.util.LinearList",
+      "D. java.util.LinkedList"
+    ],
+    "answer_index": 3,
+    "explanation": "\"java.util.LinkedList\" is the exception — it does not belong to or correctly describe the stated concept. The other options (\"java.util.Queue\", \"java.util.ArrayList\") are all valid in this context. NOT/EXCEPT questions test precision; read every option carefully.",
+    "corrected": false
+  },
+  {
+    "id": "q1206",
+    "topic": "TypeScript",
+    "question": "Which three are true? (Choose Three) interface Jumper { public void jump(); } class Animal {} class Dog extends Animal { Tail tail; } class Beagle extends Dog implements Jumper { public void jump() {} } class Cat implements Jumper { public void jump() {} } Options:",
+    "options": [
+      "A. Cat is-a Animal",
+      "B. Cat is-a Jumper",
+      "C. Dog is-a Animal",
+      "D. Dog is-a Jumper e) Cat has-a Animal f) Beagle has-a Tail g) Beagle is-a Jumper"
+    ],
+    "answer_index": 1,
+    "explanation": "\"Cat is-a Jumper\" is correct. The distractors (\"Cat is-a Animal\" and \"Dog is-a Animal\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"Cat is-a Jumper\" in TypeScript distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q1207",
+    "topic": "TypeScript",
+    "question": "Which class correctly uses the Data interface and Info abstract class? interface Data { public void load(); } abstract class Info { public abstract void load(); } Options:",
+    "options": [
+      "A. public class Employee extends Info implements Data { public void load() { /* do something */ } }",
+      "B. public class Employee implements Info extends Data { public void load() { /* do something */ } }",
+      "C. public class Employee extends Info implements Data { public void load() { /* do something */ } public void Info.load() { /* do something */ } }",
+      "D. public class Employee implements Info extends Data { public void Data.load() { /* do something */ } public void load() { /* do something */ } } e) public class Employee implements Info extends Data { public void load() { /* do something */ } public void Info.load() { /* do something */ } } f) public class Employee extends Info implements Data { public void Data.load() { /* do something */ } public void Info.load() { /* do something */ } }"
+    ],
+    "answer_index": 0,
+    "explanation": "'public class Employee extends Info implements Data { public void load() { /* do something */ } }' is correct.",
+    "corrected": false
+  },
+  {
+    "id": "q1208",
+    "topic": "Core Java & OOP",
+    "question": "Output? class TestA { public void start() { System.out.println(\"TestA\"); } } class TestB extends TestA { public void start() { System.out.println(\"TestB\"); } public static void main(String[] args) { ((TestA)new TestB()).start(); } } Options:",
+    "options": [
+      "A. TestA",
+      "B. TestB",
+      "C. Compilation fails",
+      "D. An exception is thrown at runtime"
+    ],
+    "answer_index": 1,
+    "explanation": "The output is \"TestB\". Trace through the execution step by step: variable assignments, method calls, and control flow all determine the final value. Pay attention to scope, type coercion, and execution order in Core Java & OOP.",
+    "corrected": false
+  },
+  {
+    "id": "q1209",
+    "topic": "Core Java & OOP",
+    "question": "Output? import java.io.*; class files { public static void main(String args[]) { File obj = new File(\"/java/system\"); System.out.print(obj.getName()); } } Options:",
+    "options": [
+      "A. java",
+      "B. system",
+      "C. java/system",
+      "D. /java/system"
+    ],
+    "answer_index": 1,
+    "explanation": "The output is \"system\". Trace through the execution step by step: variable assignments, method calls, and control flow all determine the final value. Pay attention to scope, type coercion, and execution order in Core Java & OOP.",
+    "corrected": false
+  },
+  {
+    "id": "q1210",
+    "topic": "Core Java & OOP",
+    "question": "Output? import java.io.*; class files { public static void main(String args[]) { File obj = new File(\"/java/system\"); System.out.print(obj.getAbsolutePath()); } } Note: file is made in C drive. Options:",
+    "options": [
+      "A. java",
+      "B. system",
+      "C. java/system",
+      "D. /java/system"
+    ],
+    "answer_index": 3,
+    "explanation": "The output is \"/java/system\". Trace through the execution step by step: variable assignments, method calls, and control flow all determine the final value. Pay attention to scope, type coercion, and execution order in Core Java & OOP.",
+    "corrected": false
+  },
+  {
+    "id": "q1211",
+    "topic": "Core Java & OOP",
+    "question": "Output? import java.lang.*; class exception_handling { public static void main(String args[]) { try { int a = args.length; int b = 10 / a; System.out.print(a); try { if (a == 1) a = a / a - a; if (a == 2) { int[] c = {1}; c[8] = 9; } } catch(ArrayIndexOutOfBoundsException e) { System.out.println(\"TypeA\"); } } catch (ArithmeticException e) { System.out.println(\"TypeB\"); } } } Options:",
+    "options": [
+      "A. TypeA",
+      "B. TypeB",
+      "C. 0TypeA"
+    ],
+    "answer_index": 1,
+    "explanation": "The output is \"TypeB\". Trace through the execution step by step: variable assignments, method calls, and control flow all determine the final value. Pay attention to scope, type coercion, and execution order in Core Java & OOP.",
+    "corrected": false
+  },
+  {
+    "id": "q1212",
+    "topic": "Spring Core",
+    "question": "Which method is used to gracefully shutdown all the bean processes after closing the spring container?",
+    "options": [
+      "A. shutdownHook",
+      "B. destory method",
+      "C. none of the mentioned",
+      "D. all of the mentioned"
+    ],
+    "answer_index": 0,
+    "explanation": "\"shutdownHook\" is correct. The distractors (\"destory method\" and \"none of the mentioned\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"shutdownHook\" in Spring Core distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q1213",
+    "topic": "SQL & JDBC",
+    "question": "Declaring bean form object properties can be done using:-",
+    "options": [
+      "A. PropertyPathFactoryBean",
+      "B. util:constant",
+      "C. None of the mentioned",
+      "D. All of the mentioned Answer: PropertyPathFactoryBean"
+    ],
+    "answer_index": 0,
+    "explanation": "PropertyPathFactoryBean is the correct answer. Review the question topic (Java OOP) for deeper context.",
+    "corrected": false
+  },
+  {
+    "id": "q1214",
+    "topic": "TypeScript",
+    "question": "What are the ways to create custom Property Editors?",
+    "options": [
+      "A. implement PropertyEditor interface",
+      "B. extend PropertyEditorSupport Class",
+      "C. none of the mentioned",
+      "D. all of the mentioned",
+      "E. extend PropertyEditorSupport Class"
+    ],
+    "answer_index": 0,
+    "explanation": "The answer is \"implement PropertyEditor interface\". This is the standard definition or correct identification for the concept described. Review the TypeScript documentation to understand how \"implement PropertyEditor interface\" fits into the broader context.",
+    "corrected": false
+  },
+  {
+    "id": "q1215",
+    "topic": "Spring Core",
+    "question": "Which of the among is not a special bean in WebApplicationContext?",
+    "options": [
+      "A. Locale resolver",
+      "B. Theme resolver",
+      "C. multipart file",
+      "D. resolver e.Handler exception resolver f.Handler mappings g. Non of the above -Ans Answer: Non of the above"
+    ],
+    "answer_index": 0,
+    "explanation": "\"Locale resolver\" is the odd one out in this context. The other options (\"Theme resolver\" and \"multipart file\") all correctly describe or belong to the stated category. Knowing what is NOT part of a concept is as important as knowing what is.",
+    "corrected": false
+  },
+  {
+    "id": "q1216",
+    "topic": "Spring Core",
+    "question": "How the Spring DispatcherServlet supports for returning the last-modification-date, as specified by the Servlet API ?",
+    "options": [
+      "A. By implementing the LastModified interface",
+      "B. By implementing the LastSessionModified interface",
+      "C. By implementing the LastDateModified interface",
+      "D. By implementing the LastModifiedDate interface"
+    ],
+    "answer_index": 0,
+    "explanation": "\"By implementing the LastModified interface\" is correct. The distractors (\"By implementing the LastSessionModified interface\" and \"By implementing the LastDateModified interface\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"By implementing the LastModified interface\" in Spring Core distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q1217",
+    "topic": "Core Java & OOP",
+    "question": "Which advice is executed only when joint point returns or throws an exception?",
+    "options": [
+      "A. @Before",
+      "B. @After",
+      "C. @AfterReturning",
+      "D. @AfterThrowing Answer: @AfterReturning"
+    ],
+    "answer_index": 0,
+    "explanation": "\"@Before\" is correct. The distractors (\"@After\" and \"@AfterReturning\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"@Before\" in Core Java & OOP distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q1218",
+    "topic": "Core Java & OOP",
+    "question": "Special compiler used during weaving",
+    "options": [
+      "A. jvm B. gcc",
+      "B. ajc",
+      "C. none of the mentioned"
+    ],
+    "answer_index": 0,
+    "explanation": "The correct answer is \"jvm B. gcc\". The other options (\"ajc\", \"none of the mentioned\") do not accurately represent the concept described. This is a standard principle in Core Java & OOP — recognising \"jvm B. gcc\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q1219",
+    "topic": "Spring Core",
+    "question": "How to inject Spring bean into domain objcts",
+    "options": [
+      "A. AOP",
+      "B. XML C. AspectJ",
+      "C. Java Based Answer: java Based"
+    ],
+    "answer_index": 0,
+    "explanation": "\"AOP\" is correct. The distractors (\"XML C. AspectJ\" and \"Java Based Answer: java Based\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"AOP\" in Spring Core distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q1220",
+    "topic": "JavaScript",
+    "question": "Method used to process bean before initialization callback",
+    "options": [
+      "A. scope",
+      "B. postProcessAfterInitialization()",
+      "C. postProcessBeforeInitialization()",
+      "D. itís own constructor Answer: postProcessBeforeInitialization()"
+    ],
+    "answer_index": 0,
+    "explanation": "The correct answer is \"scope\". The other options (\"postProcessAfterInitialization()\", \"postProcessBeforeInitialization()\") do not accurately represent the concept described. This is a standard principle in JavaScript — recognising \"scope\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q1221",
+    "topic": "Core Java & OOP",
+    "question": "Which attribute is used to set the scope of the bean?",
+    "options": [
+      "A. setScope",
+      "B. scope",
+      "C. getScope",
+      "D. none of the mentioned Answer: Scope"
+    ],
+    "answer_index": 0,
+    "explanation": "\"setScope\" is correct. The distractors (\"scope\" and \"getScope\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"setScope\" in Core Java & OOP distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q1222",
+    "topic": "Core Java & OOP",
+    "question": "Which tag is also allowed by static field?",
+    "options": [
+      "A. util:constant",
+      "B. list",
+      "C. set",
+      "D. constructor-args Answer: util:constant"
+    ],
+    "answer_index": 0,
+    "explanation": "\"util:constant\" is correct. The distractors (\"list\" and \"set\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"util:constant\" in Core Java & OOP distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q1223",
+    "topic": "Core Java & OOP",
+    "question": "Element used to specify access attributes for beanís methods.",
+    "options": [
+      "A. security:protect",
+      "B. security:intercept",
+      "C. security:intercept-security",
+      "D. none of the mentioned"
+    ],
+    "answer_index": 0,
+    "explanation": "The correct answer is \"security:protect\". The other options (\"security:intercept\", \"security:intercept-security\") do not accurately represent the concept described. This is a standard principle in Core Java & OOP — recognising \"security:protect\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q1224",
+    "topic": "Spring Core",
+    "question": "Stated related to Spring Web flows",
+    "options": [
+      "A. view",
+      "B. action",
+      "C. decision",
+      "D. all of the mentioned"
+    ],
+    "answer_index": 3,
+    "explanation": "The correct answer is \"all of the mentioned\". The other options (\"view\", \"action\") do not accurately represent the concept described. This is a standard principle in Spring Core — recognising \"all of the mentioned\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q1225",
+    "topic": "Core Java & OOP",
+    "question": "Annotation used to indicate a field has to have a minimum of 2 characters.",
+    "options": [
+      "A. @NotNull",
+      "B. @Size",
+      "C. @MaxSize",
+      "D. @size Answer: @Size"
+    ],
+    "answer_index": 0,
+    "explanation": "Java annotations are declared with @interface. Elements inside look like method declarations but have no body; default values are set with default keyword. All annotations implicitly extend java.lang.annotation.Annotation and cannot have an explicit extends clause.",
+    "corrected": false
+  },
+  {
+    "id": "q1226",
+    "topic": "Core Java & OOP",
+    "question": "By default, XmlViewResolver loads view beans from /WEB-INF/views.xml which is final.",
+    "options": [
+      "A. True",
+      "B. False ans: False"
+    ],
+    "answer_index": 0,
+    "explanation": "This statement is TRUE. By default, XmlViewResolver loads view beans from /WEB-INF/views.xml which is final is correct behaviour in Core Java & OOP. Understanding when this holds (and its exceptions) is essential for assessments.",
+    "corrected": false
+  },
+  {
+    "id": "q1227",
+    "topic": "Core Java & OOP",
+    "question": "Views that canít be resolved byInternalResourceViewResolver.",
+    "options": [
+      "A. redirect",
+      "B. redirect:prefix",
+      "C. redirect:suffix",
+      "D. all of the mentioned ans: redirect"
+    ],
+    "answer_index": 0,
+    "explanation": "The correct answer is \"redirect\". The other options (\"redirect:prefix\", \"redirect:suffix\") do not accurately represent the concept described. This is a standard principle in Core Java & OOP — recognising \"redirect\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q1228",
+    "topic": "Core Java & OOP",
+    "question": "SpEL statements are recognizable.",
+    "options": [
+      "A. True",
+      "B. False Answer: True"
+    ],
+    "answer_index": 0,
+    "explanation": "This statement is TRUE. SpEL statements are recognizable is correct behaviour in Core Java & OOP. Understanding when this holds (and its exceptions) is essential for assessments.",
+    "corrected": false
+  },
+  {
+    "id": "q1229",
+    "topic": "Spring Core",
+    "question": "To publish a REST service with Spring.",
+    "options": [
+      "A. publishing an applications data as a REST service",
+      "B. accessing data from third-party REST services",
+      "C. none of the mentioned",
+      "D. all of the mentioned"
+    ],
+    "answer_index": 0,
+    "explanation": "The correct answer is \"publishing an applications data as a REST service\". The other options (\"accessing data from third-party REST services\", \"none of the mentioned\") do not accurately represent the concept described. This is a standard principle in Spring Core — recognising \"publishing an applications data as a REST service\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q1230",
+    "topic": "Core Java & OOP",
+    "question": "Annotation which allows the Jaxb2Marshaller marshaller to detect a classís (i.e., objectís) fields.",
+    "options": [
+      "A. @XmlRootElement",
+      "B. @XmlRoot",
+      "C. @NotNull",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 0,
+    "explanation": "Java annotations are declared with @interface. Elements inside look like method declarations but have no body; default values are set with default keyword. All annotations implicitly extend java.lang.annotation.Annotation and cannot have an explicit extends clause.",
+    "corrected": false
+  },
+  {
+    "id": "q1231",
+    "topic": "Spring Core",
+    "question": "Select methodís signatures that match with the following pointcut: execution(* com.test.service..*.*(*))",
+    "options": [
+      "A. void com.test.service.MyServiceImpl#transfert(Money amount)",
+      "B. void com.test.service.account.MyServiceImpl#transfert(Money amount)",
+      "C. void com.test.service.MyServiceImpl#transfert(Account account, Money amount)",
+      "D. void com.test.service.account.MyServiceImpl#transfert(Account account, Money amount) e. None of the above"
+    ],
+    "answer_index": 0,
+    "explanation": "\"void com.test.service.MyServiceImpl#transfert(Money amount)\" is correct. The distractors (\"void com.test.service.account.MyServiceImpl#transfert(Money amount)\" and \"void com.test.service.MyServiceImpl#transfert(Account account, Money amount)\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"void com.test.service.MyServiceImpl#transfert(Money amount)\" in Spring Core distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q1232",
+    "topic": "Core Java & OOP",
+    "question": "To load root application context at the start up.",
+    "options": [
+      "A. ContextListener",
+      "B. ContextLoader",
+      "C. ContextLoaderListener",
+      "D. ContextEventListener"
+    ],
+    "answer_index": 2,
+    "explanation": "The correct answer is \"ContextLoaderListener\". The other options (\"ContextListener\", \"ContextLoader\") do not accurately represent the concept described. This is a standard principle in Core Java & OOP — recognising \"ContextLoaderListener\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q1233",
+    "topic": "Spring Core",
+    "question": "ActionSupport class provides a method to access springís application context.",
+    "options": [
+      "A. getWebApplicationContext()",
+      "B. getWebApplication()",
+      "C. getApplicationContext()",
+      "D. contextEventListener()"
+    ],
+    "answer_index": 0,
+    "explanation": "The correct answer is \"getWebApplicationContext()\". The other options (\"getWebApplication()\", \"getApplicationContext()\") do not accurately represent the concept described. This is a standard principle in Spring Core — recognising \"getWebApplicationContext()\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q1234",
+    "topic": "Core Java & OOP",
+    "question": "XML element to specify the property values for scripting bean",
+    "options": [
+      "A. lang:property",
+      "B. bean:property",
+      "C. script:property",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 0,
+    "explanation": "The correct answer is \"lang:property\". The other options (\"bean:property\", \"script:property\") do not accurately represent the concept described. This is a standard principle in Core Java & OOP — recognising \"lang:property\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q1235",
+    "topic": "Core Java & OOP",
+    "question": "Annotation used to declare an introduction",
+    "options": [
+      "A. Before",
+      "B. After",
+      "C. @DeclareParents",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 2,
+    "explanation": "Java annotations are declared with @interface. Elements inside look like method declarations but have no body; default values are set with default keyword. All annotations implicitly extend java.lang.annotation.Annotation and cannot have an explicit extends clause.",
+    "corrected": false
+  },
+  {
+    "id": "q1236",
+    "topic": "Core Java & OOP",
+    "question": "DAO methods require access to the session factory, which can be injected:-",
+    "options": [
+      "A. a setter method",
+      "B. constructor argument",
+      "C. none of the mentioned",
+      "D. all of the mentioned"
+    ],
+    "answer_index": 3,
+    "explanation": "The correct answer is \"all of the mentioned\". The other options (\"a setter method\", \"constructor argument\") do not accurately represent the concept described. This is a standard principle in Core Java & OOP — recognising \"all of the mentioned\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q1237",
+    "topic": "Core Java & OOP",
+    "question": "What are the different types of AutoProxying?",
+    "options": [
+      "A. BeanNameAutoProxyCreator",
+      "B. DefaultAdvisorAutoProxyCreator",
+      "C. Metadata autoproxying",
+      "D. All of the above e. none of the above Answer: //d. All of the above"
+    ],
+    "answer_index": 0,
+    "explanation": "BeanNameAutoProxyCreator is the correct answer. Review the question topic (Java OOP) for deeper context.",
+    "corrected": false
+  },
+  {
+    "id": "q1238",
+    "topic": "Spring Core",
+    "question": "What are the various editors used in spring work?",
+    "options": [
+      "A. PropertyEditor ,URLEditor",
+      "B. ClassEditor, CustomDateEditor, StringTrimmerEditor",
+      "C. FileEditor, LocaleEditor, StringArrayPropertyEditor",
+      "D. All of the above"
+    ],
+    "answer_index": 3,
+    "explanation": "The answer is \"All of the above\". This is the standard definition or correct identification for the concept described. Review the Spring Core documentation to understand how \"All of the above\" fits into the broader context.",
+    "corrected": false
+  },
+  {
+    "id": "q1239",
+    "topic": "Spring Core",
+    "question": "1. How to use <ref> in spring framework?",
+    "options": [
+      "A. <ref> is used with bean id.",
+      "B. <ref> is used with string values."
+    ],
+    "answer_index": 0,
+    "explanation": "The correct answer is \"<ref> is used with bean id.\". The other options (\"<ref> is used with string values.\") do not accurately represent the concept described. This is a standard principle in Spring Core — recognising \"<ref> is used with bean id.\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q1240",
+    "topic": "Spring Core",
+    "question": "How to define Inner bean in spring?",
+    "options": [
+      "A. Use <property/> only",
+      "B. Use <property/> or <constructor-arg/>."
+    ],
+    "answer_index": 1,
+    "explanation": "\"Use <property/> or <constructor-arg/>.\" is correct. The distractors (\"Use <property/> only\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"Use <property/> or <constructor-arg/>.\" in Spring Core distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q1241",
+    "topic": "Spring Core",
+    "question": "By default a bean is eagerly initialized in spring?",
+    "options": [
+      "A. True",
+      "B. False Answer: True"
+    ],
+    "answer_index": 0,
+    "explanation": "This statement is TRUE. By default a bean is eagerly initialized in spring is correct behaviour in Spring Core. Understanding when this holds (and its exceptions) is essential for assessments.",
+    "corrected": false
+  },
+  {
+    "id": "q1242",
+    "topic": "Core Java & OOP",
+    "question": "By default a bean is not autowired?",
+    "options": [
+      "A. True",
+      "B. False Answer: False"
+    ],
+    "answer_index": 0,
+    "explanation": "\"True\" is the odd one out in this context. The other options (\"False Answer: False\") all correctly describe or belong to the stated category. Knowing what is NOT part of a concept is as important as knowing what is.",
+    "corrected": false
+  },
+  {
+    "id": "q1243",
+    "topic": "Spring Core",
+    "question": "Can the class which spring container makes subclass be final?",
+    "options": [
+      "A. No",
+      "B. Yes Answer: No"
+    ],
+    "answer_index": 0,
+    "explanation": "The correct answer is \"No\". The other options (\"Yes Answer: No\") do not accurately represent the concept described. This is a standard principle in Spring Core — recognising \"No\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q1244",
+    "topic": "Spring Core",
+    "question": "Thread scope bean has been introduced in spring from the version",
+    "options": [
+      "A. Spring 2.5",
+      "B. Spring 3.0"
+    ],
+    "answer_index": 1,
+    "explanation": "The correct answer is \"Spring 3.0\". The other options (\"Spring 2.5\") do not accurately represent the concept described. This is a standard principle in Spring Core — recognising \"Spring 3.0\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q1245",
+    "topic": "Spring Core",
+    "question": "InitializingBean and DisposableBean is used to customize the nature of bean in spring.",
+    "options": [
+      "A. Yes",
+      "B. No Answer: Yes"
+    ],
+    "answer_index": 0,
+    "explanation": "The correct answer is \"Yes\". The other options (\"No Answer: Yes\") do not accurately represent the concept described. This is a standard principle in Spring Core — recognising \"Yes\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q1246",
+    "topic": "DevOps & CI/CD",
+    "question": "How to reload my changes on Spring Boot without having to restart server?",
+    "options": [
+      "A. <dependency> <groupId>org.springframework.boot</groupId> <artifactId>spring-boot-devtools</artifactId> <optional>true</optional> </dependency>",
+      "B. <dependency> <groupId>org.springframework.boot</groupId> <artifactId>spring-boot-test</artifactId> <optional>true</optional> </dependency>",
+      "C. <dependency> <groupId>org.springframework.boot</groupId> <artifactId>spring-boot-web</artifactId> <optional>true</optional> </dependency>",
+      "D. <dependency> <groupId>org.springframework.boot</groupId> <artifactId>spring-boot-jasper</artifactId> <optional>true</optional> </dependency>"
+    ],
+    "answer_index": 0,
+    "explanation": "'<dependency> <groupId>org.springframework.boot</groupId> <artifactId>spring-boot-devtools</artifactId> <optional>true</optional> </dependency>' is correct.",
+    "corrected": false
+  },
+  {
+    "id": "q1247",
+    "topic": "Spring Core",
+    "question": "How Spring Batch works?",
+    "options": [
+      "A. step, ItemReader, ItemProcessor, ItemStreamWriter",
+      "B. step, ItemProcessor, ItemStreamWriter",
+      "C. step, ItemReader, ItemStreamWriter"
+    ],
+    "answer_index": 0,
+    "explanation": "Java 8 Streams provide a declarative, pipeline-style API for processing collections. Operations are either intermediate (filter, map, sorted — lazy) or terminal (collect, forEach, reduce — trigger execution). Parallel streams split work across threads using the fork/join framework.",
+    "corrected": false
+  },
+  {
+    "id": "q1248",
+    "topic": "Core Java & OOP",
+    "question": "class output { public static void main(String args[]) { StringBuffer s1 = new StringBuffer(\" Hello World\"); s1.insert(6 , \"Good \"); System.out.println(s1); } }",
+    "options": [
+      "A. HelloGoodWorld",
+      "B. HellGoodoWorld",
+      "C. HellGood oWorld",
+      "D. Hello Good World"
+    ],
+    "answer_index": 3,
+    "explanation": "The output is \"Hello Good World\". Trace through the execution step by step: variable assignments, method calls, and control flow all determine the final value. Pay attention to scope, type coercion, and execution order in Core Java & OOP.",
+    "corrected": false
+  },
+  {
+    "id": "q1249",
+    "topic": "Core Java & OOP",
+    "question": "Which of these keywords cannot be used for a cl ass which has been declared final?",
+    "options": [
+      "A. abstract",
+      "B. extends",
+      "C. abstract and extends",
+      "D. None of the mentioned View Answer"
+    ],
+    "answer_index": 0,
+    "explanation": "\"abstract\" is correct. The distractors (\"extends\" and \"abstract and extends\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"abstract\" in Core Java & OOP distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q1250",
+    "topic": "Core Java & OOP",
+    "question": "The sendError method defined in the HttpServlet class is equivalent to invoking the setStatus method with th e following parameter. Select the one correct answer. 4.",
+    "options": [
+      "A. SC_OK",
+      "B. SC_MOVED_TEMPORARILY",
+      "C. SC_NOT_FOUND Ans) C",
+      "D. SC_INTERNAL_SERVER_ERROR E. ESC_BAD_REQUEST"
+    ],
+    "answer_index": 0,
+    "explanation": "The correct answer is \"SC_OK\". The other options (\"SC_MOVED_TEMPORARILY\", \"SC_NOT_FOUND Ans) C\") do not accurately represent the concept described. This is a standard principle in Core Java & OOP — recognising \"SC_OK\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q1251",
+    "topic": "Core Java & OOP",
+    "question": "The sendRedirect method defined The sendRedirect method defined in the HttpServlet class is equivalent to invoking the setStatus method with th e following parameter and a Location header in the URL. Select the one correct answer.",
+    "options": [
+      "A. SC_OK",
+      "B. SC_MOVED_TEMPORARILY Ans) B",
+      "C. SC_NOT_FOUND",
+      "D. SC_INTERNAL_SERVER_ERROR E. ESC_BAD_REQUEST"
+    ],
+    "answer_index": 0,
+    "explanation": "The correct answer is \"SC_OK\". The other options (\"SC_MOVED_TEMPORARILY Ans) B\", \"SC_NOT_FOUND\") do not accurately represent the concept described. This is a standard principle in Core Java & OOP — recognising \"SC_OK\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q1252",
+    "topic": "Core Java & OOP",
+    "question": "A team of programmers is involved in reviewing a proposed design for a new utility class. After some discussion, they realize that the curre nt design allows other classes to access methods in the utility class that should be access ible only to methods within the utility class itse lf. What design issue has the team discovered?",
+    "options": [
+      "A. Tight coupling",
+      "B. Low cohesion",
+      "C. High cohesion",
+      "D. Loose coupling E. Weak encapsulation F. Strong encapsulation Answer: E"
+    ],
+    "answer_index": 0,
+    "explanation": "The correct answer is \"Tight coupling\". The other options (\"Low cohesion\", \"High cohesion\") do not accurately represent the concept described. This is a standard principle in Core Java & OOP — recognising \"Tight coupling\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q1253",
+    "topic": "Core Java & OOP",
+    "question": "What is the output of this program? import java.util.*; public class genericstack <E> { Stack <E> stk = new Stack <E>(); public void push(E obj) { stk.push(obj); } public E pop() { E obj = stk.pop(); return obj; } } class Output { public static void main(String args[]) { genericstack <String> gs = new gene ricstack<String>(); gs.push(\"Hello\"); System.out.print(gs.pop() + \" \"); genericstack <Integer> gs = new gen ericstack<Integer>(); gs.push(36); System.out.println(gs.pop()); } }",
+    "options": [
+      "A. Error",
+      "B. Hello",
+      "C. 36",
+      "D. Hello 36"
+    ],
+    "answer_index": 3,
+    "explanation": "The answer is \"Hello 36\". This is the standard definition or correct identification for the concept described. Review the Core Java & OOP documentation to understand how \"Hello 36\" fits into the broader context.",
+    "corrected": false
+  },
+  {
+    "id": "q1254",
+    "topic": "Core Java & OOP",
+    "question": "class output { { public static void main(String args[]) StringBuffer c = new StringBuffer( \"Hello\"); StringBuffer c1 = new StringBuffer (\" World\");",
+    "options": [
+      "A. append(c1); System.out.println(c); } }",
+      "B. Hello",
+      "C. World",
+      "D. Helloworld",
+      "E. Hello World Ans-d."
+    ],
+    "answer_index": 0,
+    "explanation": "append(c1); System.out.println(c); } } is the correct answer. Review the question topic (Java OOP) for deeper context.",
+    "corrected": false
+  },
+  {
+    "id": "q1255",
+    "topic": "Core Java & OOP",
+    "question": "class output { { public static void main(String args[]) StringBuffer s1 = new StringBuffer(\" Hello\"); s1.setCharAt(1,'x'); System.out.println(s1); } }",
+    "options": [
+      "A. xello",
+      "B. xxxxx",
+      "C. Hxllo",
+      "D. Hexlo View Answer"
+    ],
+    "answer_index": 2,
+    "explanation": "The output is \"Hxllo\". Trace through the execution step by step: variable assignments, method calls, and control flow all determine the final value. Pay attention to scope, type coercion, and execution order in Core Java & OOP.",
+    "corrected": false
+  },
+  {
+    "id": "q1256",
+    "topic": "Core Java & OOP",
+    "question": "class output { { public static void main(String args[]) String s1 = \"one\"; String s2 = s1 + \" two\"; System.out.println(s2); } }",
+    "options": [
+      "A. one",
+      "B. two",
+      "C. one two",
+      "D. compilation error View Answer"
+    ],
+    "answer_index": 2,
+    "explanation": "The output is \"one two\". Trace through the execution step by step: variable assignments, method calls, and control flow all determine the final value. Pay attention to scope, type coercion, and execution order in Core Java & OOP.",
+    "corrected": false
+  },
+  {
+    "id": "q1257",
+    "topic": "Core Java & OOP",
+    "question": "class output { { public static void main(String args[]) char c[]={'a', '1', 'b' ,' ' ,'A' , '0'}; for (int i = 0; i < 5; ++i) { if(Character.isDigit(c[i])) System.out.println(c[i]+ \" is a digit\"); if(Character.isWhitespace(c[ i])) \" is a Whitespace character\"); System.out.println(c[i]+ if(Character.isUpperCase(c[i ])) System.out.println(c[i]+ \" is an Upper case Letter\"); if(Character.isLowerCase(c[i ])) System.out.println(c[i]+ \" is a lower case Letter\"); i=i+3; } } }",
+    "options": [
+      "A. a is a lower case Letter is White space character",
+      "B. b is a lower case Letter is White space character",
+      "C. a is a lower case Letter A is a upper case Letter",
+      "D. a is a lower case Letter"
+    ],
+    "answer_index": 0,
+    "explanation": "a is a lower case Letter is White space character is the correct answer. Review the question topic (Java OOP) for deeper context.",
+    "corrected": false
+  },
+  {
+    "id": "q1258",
+    "topic": "Core Java & OOP",
+    "question": "import java.io.*; class filesinputoutput { public static void main(String args[]) InputStream obj = new FileInputStre am(\"inputoutput.java\"); System.out.print(obj.available()); } } Note: inputoutput.java is stored in the disk.",
+    "options": [
+      "A. true",
+      "B. false",
+      "C. prints number of bytes in file",
+      "D. prints number of characters in the file View Answer"
+    ],
+    "answer_index": 2,
+    "explanation": "Java 8 Streams provide a declarative, pipeline-style API for processing collections. Operations are either intermediate (filter, map, sorted — lazy) or terminal (collect, forEach, reduce — trigger execution). Parallel streams split work across threads using the fork/join framework.",
+    "corrected": false
+  },
+  {
+    "id": "q1259",
+    "topic": "Core Java & OOP",
+    "question": "import java.io.*; public class filesinputoutput { public static void main(String[] args) { String obj = \"abc\"; byte b[] = obj.getBytes(); ByteArrayInputStream obj1 = new Byte ArrayInputStream(b); for (int i = 0; i < 2; ++ i) { int c; while((c = obj1.read()) != -1) { if(i == 0) { System.out.print(Charact er.toUpperCase((char)c)); obj2.write(1); } } System.out.print(obj2); } } }",
+    "options": [
+      "A. AaBaCa",
+      "B. ABCaaa",
+      "C. AaaBaaCaa",
+      "D. AaBaaCaaa"
+    ],
+    "answer_index": 3,
+    "explanation": "Java 8 Streams provide a declarative, pipeline-style API for processing collections. Operations are either intermediate (filter, map, sorted — lazy) or terminal (collect, forEach, reduce — trigger execution). Parallel streams split work across threads using the fork/join framework.",
+    "corrected": false
+  },
+  {
+    "id": "q1260",
+    "topic": "Git & Version Control",
+    "question": "Which of the following allows non repeatable re ad in JDBC Connection?",
+    "options": [
+      "A. TRANSACTION_READ_UNCOMMITTED",
+      "B. TRANSACTION_READ_COMMITTED",
+      "C. TRANSACTION_SERIALIZABLE",
+      "D. TRANSACTION_REPEATABLE_READ Ans. D"
+    ],
+    "answer_index": 0,
+    "explanation": "TRANSACTION_READ_UNCOMMITTED is the correct answer. Review the question topic (Java OOP) for deeper context.",
+    "corrected": false
+  },
+  {
+    "id": "q1261",
+    "topic": "Core Java & OOP",
+    "question": "package pkg; class output { public static void main(String args[]) { StringBuffer s1 = new StringBuffer( \"Hello\"); s1.setCharAt(1, x); System.out.println(s1); } }",
+    "options": [
+      "A. xello",
+      "B. xxxxx",
+      "C. Hxllo",
+      "D. Hexlo"
+    ],
+    "answer_index": 2,
+    "explanation": "The output is \"Hxllo\". Trace through the execution step by step: variable assignments, method calls, and control flow all determine the final value. Pay attention to scope, type coercion, and execution order in Core Java & OOP.",
+    "corrected": false
+  },
+  {
+    "id": "q1262",
+    "topic": "Core Java & OOP",
+    "question": "Which of these is not a valid value for dispatc her element of filtermapping. Select the one correct answer.",
+    "options": [
+      "A. FORWARD",
+      "B. RESPONSE Ans) B",
+      "C. INCLUDE",
+      "D. ERROR"
+    ],
+    "answer_index": 0,
+    "explanation": "\"FORWARD\" is the odd one out in this context. The other options (\"RESPONSE Ans) B\" and \"INCLUDE\") all correctly describe or belong to the stated category. Knowing what is NOT part of a concept is as important as knowing what is.",
+    "corrected": false
+  },
+  {
+    "id": "q1263",
+    "topic": "DevOps & CI/CD",
+    "question": "Name the location of compiled class files withi n a war file? Select the one correct answer. 19.",
+    "options": [
+      "A. /META-INF/classes",
+      "B. /classes",
+      "C. /WEB-INF/classes",
+      "D. /root/classes Answers- web inf Docker, Kubernetes"
+    ],
+    "answer_index": 0,
+    "explanation": "The correct answer is \"/META-INF/classes\". The other options (\"/classes\", \"/WEB-INF/classes\") do not accurately represent the concept described. This is a standard principle in DevOps & CI/CD — recognising \"/META-INF/classes\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q1264",
+    "topic": "Core Java & OOP",
+    "question": "What is the output of the following? greet = function(...months){ months.forEach(month => console.log('Month: ' + month));}greet([ 'Jan', 'Feb']);",
+    "options": [
+      "A. Jan Feb",
+      "B. ReferenceError",
+      "C. Month: Jan,Feb",
+      "D. Month: Jan E. Month: Feb"
+    ],
+    "answer_index": 2,
+    "explanation": "The answer is \"Month: Jan,Feb\". This is the standard definition or correct identification for the concept described. Review the Core Java & OOP documentation to understand how \"Month: Jan,Feb\" fits into the broader context.",
+    "corrected": false
+  },
+  {
+    "id": "q1265",
+    "topic": "Core Java & OOP",
+    "question": "What is the output of the following? function display(num1, num2) { console.log(num1, num2);}let nums = \"12345\";display(...nums);",
+    "options": [
+      "A. 1 2",
+      "B. 21",
+      "C. 12345",
+      "D. 45"
+    ],
+    "answer_index": 0,
+    "explanation": "The answer is \"1 2\". This is the standard definition or correct identification for the concept described. Review the Core Java & OOP documentation to understand how \"1 2\" fits into the broader context.",
+    "corrected": false
+  },
+  {
+    "id": "q1266",
+    "topic": "Core Java & OOP",
+    "question": "True or false : The only thing that can change the data inside a store is the store itself.",
+    "options": [
+      "A. false",
+      "B. true"
+    ],
+    "answer_index": 1,
+    "explanation": "This statement is false. True or false : The only thing that can change the data inside a store is the store itself does not accurately describe the behaviour. The correct understanding is that true — review the Core Java & OOP specification for details.",
+    "corrected": false
+  },
+  {
+    "id": "q1267",
+    "topic": "Core Java & OOP",
+    "question": "Event Emitter class's simple interface, which basically encompass two methods . . . . . . . . . can therefore be used to trigger custom events and listen to events as well, both synchronously or asynchronously.",
+    "options": [
+      "A. exit()",
+      "B. superscript()",
+      "C. subscribe()",
+      "D. emit()"
+    ],
+    "answer_index": 2,
+    "explanation": "The correct answer is \"subscribe()\". The other options (\"exit()\", \"superscript()\") do not accurately represent the concept described. This is a standard principle in Core Java & OOP — recognising \"subscribe()\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q1268",
+    "topic": "DevOps & CI/CD",
+    "question": "Which of the following statements is true about microservices architecture ? i. Microservices applications are required to be deployed on the same physical host. ii. Microservices architecture supports high availability of individual microservices. iii. Microservices cannot be used if a company is embracing DevOps. iv. Microservices are designed using a bounded context that can communicate with other bounded contexts.",
+    "options": [
+      "A. Only i",
+      "B. Only ii C. Only ii and iv",
+      "C. All of the above. Ans -> D"
+    ],
+    "answer_index": 0,
+    "explanation": "Microservices decompose an application into small, independently deployable services each owning its own data and communicating via APIs. They can run on any hosts — deploying all on the same host defeats isolation benefits. Each service aligns with a bounded context from Domain-Driven Design.",
+    "corrected": false
+  },
+  {
+    "id": "q1269",
+    "topic": "Java Concurrency",
+    "question": "Let has block scope?",
+    "options": [
+      "A. True",
+      "B. False Ans:- True"
+    ],
+    "answer_index": 0,
+    "explanation": "let has block scope — the variable exists only within the enclosing {} block (if/for/function). var has function scope and is hoisted. const also has block scope but additionally prevents reassignment of the binding.",
+    "corrected": false
+  },
+  {
+    "id": "q1270",
+    "topic": "JavaScript",
+    "question": "The __ Javascript method is like the mathematical \"for all\" quantifier",
+    "options": [
+      "A. every()",
+      "B. some()",
+      "C. all()",
+      "D. forall() Ans. every()"
+    ],
+    "answer_index": 0,
+    "explanation": "The correct answer is \"every()\". The other options (\"some()\", \"all()\") do not accurately represent the concept described. This is a standard principle in JavaScript — recognising \"every()\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q1271",
+    "topic": "MongoDB",
+    "question": "In MongoDB, which of the following methods return one document?",
+    "options": [
+      "A. findOne()",
+      "B. findOne1()",
+      "C. selectOne() Ans. opn A"
+    ],
+    "answer_index": 0,
+    "explanation": "The correct answer is \"findOne()\". The other options (\"findOne1()\", \"selectOne() Ans. opn A\") do not accurately represent the concept described. This is a standard principle in MongoDB — recognising \"findOne()\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q1272",
+    "topic": "JavaScript",
+    "question": "Which of the following media queries would apply to a tablet reporting a screen width of 768px?",
+    "options": [
+      "A. @media only screen and (min-width: 1140px){}",
+      "B. @media only screen and (min-width: 641px){}",
+      "C. @media only screen and (max-width: 1140px){} ANS :- B"
+    ],
+    "answer_index": 1,
+    "explanation": "\"@media only screen and (min-width: 641px){}\" is correct. The distractors (\"@media only screen and (min-width: 1140px){}\" and \"@media only screen and (max-width: 1140px){} ANS :- B\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"@media only screen and (min-width: 641px){}\" in JavaScript distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q1273",
+    "topic": "SQL & JDBC",
+    "question": "The __ attribute of a React form is called when the main action button inside the form is pressed.",
+    "options": [
+      "A. onSubmit",
+      "B. onChange",
+      "C. onComplete"
+    ],
+    "answer_index": 0,
+    "explanation": "The onSubmit handler on a React <form> fires when the form is submitted via button click or Enter key. It receives the SyntheticEvent, which must call event.preventDefault() to stop the browser's default form submission (page reload).",
+    "corrected": false
+  },
+  {
+    "id": "q1274",
+    "topic": "TypeScript",
+    "question": "TypeScript: What does this code do? function greet(name: string): string { return `Hello, ${name}`; }",
+    "options": [
+      "A. Throws a type error",
+      "B. Returns a string",
+      "C. Returns void",
+      "D. Returns any"
+    ],
+    "answer_index": 1,
+    "explanation": "The correct answer is \"Returns a string\". The other options (\"Throws a type error\", \"Returns void\") do not accurately represent the concept described. This is a standard principle in TypeScript — recognising \"Returns a string\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q1275",
+    "topic": "JavaScript",
+    "question": "What is Babel?",
+    "options": [
+      "A. A transpiler",
+      "B. A compiler",
+      "C. An interpreter",
+      "D. Both Compiler and transpiler"
+    ],
+    "answer_index": 3,
+    "explanation": "Babel is a JavaScript transpiler that converts modern ES6+ (and beyond) code into ES5-compatible JavaScript. It is configured via .babelrc or babel.config.js and uses plugins/presets. @babel/preset-env targets specific browser versions automatically.",
+    "corrected": false
+  },
+  {
+    "id": "q1276",
+    "topic": "React",
+    "question": "In which directory React Components are saved?",
+    "options": [
+      "A. Inside js/components/",
+      "B. Inside external/components/",
+      "C. Inside vendor/components/",
+      "D. Inside vendor/"
+    ],
+    "answer_index": 0,
+    "explanation": "The correct answer is \"Inside js/components/\". The other options (\"Inside external/components/\", \"Inside vendor/components/\") do not accurately represent the concept described. This is a standard principle in React — recognising \"Inside js/components/\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q1277",
+    "topic": "React",
+    "question": "What is a react.js in MVC?",
+    "options": [
+      "A. Middleware",
+      "B. Controller",
+      "C. Model",
+      "D. Router"
+    ],
+    "answer_index": 1,
+    "explanation": "React is typically described as the 'View' layer in MVC — it handles rendering UI from state/props but does not manage business logic or data models. Redux or Context API fills the Model/Controller roles. Note: the question's options do not include 'View', which is a flaw in the question.",
+    "corrected": false
+  },
+  {
+    "id": "q1278",
+    "topic": "MongoDB",
+    "question": "Point out the correct statement.",
+    "options": [
+      "A. MongoDB is classified as a NoSQL database",
+      "B. MongoDB favours XML format more than JSON",
+      "C. MongoDB is column oriented database store",
+      "D. All of the mentioned"
+    ],
+    "answer_index": 0,
+    "explanation": "The correct answer is \"MongoDB is classified as a NoSQL database\". The other options (\"MongoDB favours XML format more than JSON\", \"MongoDB is column oriented database store\") do not accurately represent the concept described. This is a standard principle in MongoDB — recognising \"MongoDB is classified as a NoSQL database\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q1279",
+    "topic": "JavaScript",
+    "question": "A linkage of series of prototype objects is called as ________",
+    "options": [
+      "A. prototype stack",
+      "B. prototype chain",
+      "C. prototype class",
+      "D. prototypes View Answer"
+    ],
+    "answer_index": 1,
+    "explanation": "The correct answer is \"prototype chain\". The other options (\"prototype stack\", \"prototype class\") do not accurately represent the concept described. This is a standard principle in JavaScript — recognising \"prototype chain\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q1280",
+    "topic": "Spring Core",
+    "question": "Element used to restrict access to a particular URL.",
+    "options": [
+      "A. restrict-url",
+      "B. intercept-url",
+      "C. intercept-restrict",
+      "D. none of the mentioned View Answer"
+    ],
+    "answer_index": 1,
+    "explanation": "In Spring Security XML config, <intercept-url> maps URL patterns to required roles. The order matters — Spring Security evaluates rules top-to-bottom and applies the first match. Prefer hasRole() or hasAuthority() expressions over the older IS_AUTHENTICATED_ANONYMOUSLY.",
+    "corrected": false
+  },
+  {
+    "id": "q1281",
+    "topic": "MongoDB",
+    "question": "Point out the correct statement.",
+    "options": [
+      "A. Documents can contain many different key-value pairs, or key-array pairs, or even nested documents",
+      "B. MongoDB has official drivers for a variety of popular programming languages and development environments",
+      "C. When compared to relational databases, NoSQL databases are more scalable and provide superior performance",
+      "D. All of the mentioned View Answer"
+    ],
+    "answer_index": 3,
+    "explanation": "The correct answer is \"All of the mentioned View Answer\". The other options (\"Documents can contain many different key-value pairs, or key-array pairs, or even nested documents\", \"MongoDB has official drivers for a variety of popular programming languages and development environments\") do not accurately represent the concept described. This is a standard principle in MongoDB — recognising \"All of the mentioned View Answer\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q1282",
+    "topic": "MongoDB",
+    "question": "NoSQL databases is used mainly for handling large volumes of ______________ data.",
+    "options": [
+      "A. unstructured",
+      "B. structured",
+      "C. semi-structured",
+      "D. all of the mentioned View Answer"
+    ],
+    "answer_index": 0,
+    "explanation": "The correct answer is \"unstructured\". The other options (\"structured\", \"semi-structured\") do not accurately represent the concept described. This is a standard principle in MongoDB — recognising \"unstructured\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q1283",
+    "topic": "Spring Core",
+    "question": "What are the advices in Aop?",
+    "options": [
+      "A. After",
+      "B. before",
+      "C. AfterReturning",
+      "D. ALL of the above"
+    ],
+    "answer_index": 3,
+    "explanation": "The answer is \"ALL of the above\". This is the standard definition or correct identification for the concept described. Review the Spring Core documentation to understand how \"ALL of the above\" fits into the broader context.",
+    "corrected": false
+  },
+  {
+    "id": "q1284",
+    "topic": "HTML & CSS",
+    "question": "Syntax for Checkbox in HTML",
+    "options": [
+      "A. <Check> B)<box> C)<checkbox",
+      "B. <input type= \"checkbox\">"
+    ],
+    "answer_index": 3,
+    "explanation": "This is a foundational concept in HTML & CSS. Review the relevant documentation to understand the correct answer.",
+    "corrected": false
+  },
+  {
+    "id": "q1285",
+    "topic": "HTML & CSS",
+    "question": "Syntax for large buttons in Bootstrap?",
+    "options": [
+      "A. .large",
+      "B. .button-large"
+    ],
+    "answer_index": 2,
+    "explanation": "This is a foundational concept in HTML & CSS. Review the relevant documentation to understand the correct answer.",
+    "corrected": false
+  },
+  {
+    "id": "q1286",
+    "topic": "HTML & CSS",
+    "question": "Changing Text size in CSS?",
+    "options": [
+      "A. .btn-lg",
+      "B. btn-large",
+      "C. font-size B)font-style C)text-style D)text-format"
+    ],
+    "answer_index": 0,
+    "explanation": "The correct answer is \".btn-lg\". The other options (\"btn-large\", \"font-size B)font-style C)text-style D)text-format\") do not accurately represent the concept described. This is a standard principle in HTML & CSS — recognising \".btn-lg\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q1287",
+    "topic": "MongoDB",
+    "question": "__________ is a part of the standard MongoDB distribution and provides a full JavaScript environment.",
+    "options": [
+      "A. mongod",
+      "B. mongodb",
+      "C. mongo"
+    ],
+    "answer_index": 2,
+    "explanation": "The correct answer is \"mongo\". The other options (\"mongod\", \"mongodb\") do not accurately represent the concept described. This is a standard principle in MongoDB — recognising \"mongo\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q1288",
+    "topic": "MongoDB",
+    "question": "When you query a collection, MongoDB returns a ________ object that contains the results of the query.",
+    "options": [
+      "A. row",
+      "B. cursor",
+      "C. columns",
+      "D. none of the mentioned"
+    ],
+    "answer_index": 1,
+    "explanation": "The output is \"cursor\". Trace through the execution step by step: variable assignments, method calls, and control flow all determine the final value. Pay attention to scope, type coercion, and execution order in MongoDB.",
+    "corrected": false
+  },
+  {
+    "id": "q1289",
+    "topic": "React",
+    "question": "React is _________",
+    "options": [
+      "A. View",
+      "B. Model",
+      "C. Controller"
+    ],
+    "answer_index": 2,
+    "explanation": "The correct answer is \"Controller\". The other options (\"View\", \"Model\") do not accurately represent the concept described. This is a standard principle in React — recognising \"Controller\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q1290",
+    "topic": "JavaScript",
+    "question": "What is the default port for webpack dev server?",
+    "options": [
+      "A. 3000",
+      "B. 8080",
+      "C. 3306",
+      "D. 8809"
+    ],
+    "answer_index": 0,
+    "explanation": "Webpack is a module bundler that takes JavaScript modules (and assets) with their dependencies and outputs optimised bundle files. It supports loaders (for CSS, images, TypeScript) and plugins. Code splitting, tree shaking, and hot module replacement are key features.",
+    "corrected": false
+  },
+  {
+    "id": "q1291",
+    "topic": "MongoDB",
+    "question": "The mongodb is written in ________ language",
+    "options": [
+      "A. C++",
+      "B. Javascript",
+      "C. C",
+      "D. All of the above"
+    ],
+    "answer_index": 0,
+    "explanation": "The correct answer is \"C++\". The other options (\"Javascript\", \"C\") do not accurately represent the concept described. This is a standard principle in MongoDB — recognising \"C++\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q1292",
+    "topic": "Core Java & OOP",
+    "question": "Which of the following cannot be initialised parameterized?",
+    "options": [
+      "A. List",
+      "B. Set",
+      "C. Array",
+      "D. Map"
+    ],
+    "answer_index": 0,
+    "explanation": "\"List\" is correct. The distractors (\"Set\" and \"Array\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"List\" in Core Java & OOP distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q1293",
+    "topic": "React",
+    "question": "React.js Covers only the view layer of the app.",
+    "options": [
+      "A. True",
+      "B. False 25. <canvas> is used for? Ans:- to draw graphics"
+    ],
+    "answer_index": 0,
+    "explanation": "This statement is TRUE. React.js Covers only the view layer of the app is correct behaviour in React. Understanding when this holds (and its exceptions) is essential for assessments.",
+    "corrected": false
+  },
+  {
+    "id": "q1294",
+    "topic": "JavaScript",
+    "question": "An object's ............................. is a reference to another object from which properties are inherited.",
+    "options": [
+      "A. Characteristics",
+      "B. Prototype",
+      "C. Class",
+      "D. Extensible flag"
+    ],
+    "answer_index": 1,
+    "explanation": "The correct answer is \"Prototype\". The other options (\"Characteristics\", \"Class\") do not accurately represent the concept described. This is a standard principle in JavaScript — recognising \"Prototype\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q1295",
+    "topic": "Core Java & OOP",
+    "question": "allows the same event handler function to be registered more than once. When an event of the specified type occurs, the registered function will be invoked as many times as it was registered.",
+    "options": [
+      "A. addEvent()",
+      "B. addMultipltEvent()",
+      "C. attachEvent()",
+      "D. reattachEvent()"
+    ],
+    "answer_index": 2,
+    "explanation": "The correct answer is \"attachEvent()\". The other options (\"addEvent()\", \"addMultipltEvent()\") do not accurately represent the concept described. This is a standard principle in Core Java & OOP — recognising \"attachEvent()\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q1296",
+    "topic": "JavaScript",
+    "question": "The constructor prototype refers to the correct prototype for .............................. but does not usually do so for objects created with Object.Create( ).",
+    "options": [
+      "A. object prototype",
+      "B. object literal",
+      "C. object class",
+      "D. associative arrays"
+    ],
+    "answer_index": 1,
+    "explanation": "\"object literal\" is the odd one out in this context. The other options (\"object prototype\" and \"object class\") all correctly describe or belong to the stated category. Knowing what is NOT part of a concept is as important as knowing what is.",
+    "corrected": false
+  },
+  {
+    "id": "q1297",
+    "topic": "Core Java & OOP",
+    "question": "Which routing guard is used to check whether routing can take place or not",
+    "options": [
+      "A. CanActivate",
+      "B. Resolve",
+      "C. CanLoad",
+      "D. CanDeactive"
+    ],
+    "answer_index": 0,
+    "explanation": "\"CanActivate\" is the odd one out in this context. The other options (\"Resolve\" and \"CanLoad\") all correctly describe or belong to the stated category. Knowing what is NOT part of a concept is as important as knowing what is.",
+    "corrected": false
+  },
+  {
+    "id": "q1298",
+    "topic": "Angular",
+    "question": "When you apply ‘pipe', it changes the value of the underlying component's member variable as well.",
+    "options": [
+      "A. True",
+      "B. False ans: False"
+    ],
+    "answer_index": 0,
+    "explanation": "This statement is TRUE. When you apply ‘pipe', it changes the value of the underlying component's member variable as well is correct behaviour in Angular. Understanding when this holds (and its exceptions) is essential for assessments.",
+    "corrected": false
+  },
+  {
+    "id": "q1299",
+    "topic": "Core Java & OOP",
+    "question": "Service discovery tools help by reducing the problem of how processes and services in a cluster can find and talk to one another.",
+    "options": [
+      "A. True",
+      "B. False ANS :- A -> True CORE JAVA -------------------------"
+    ],
+    "answer_index": 0,
+    "explanation": "Service discovery lets services in a distributed system find each other dynamically without hard-coded addresses. Tools like Consul, Eureka, and etcd maintain a registry of healthy service instances. This solves the problem of services scaling up/down with changing IPs.",
+    "corrected": false
+  },
+  {
+    "id": "q1300",
+    "topic": "JavaScript",
+    "question": "what is babel?",
+    "options": [
+      "A. compiler",
+      "B. interpreter",
+      "C. both"
+    ],
+    "answer_index": 0,
+    "explanation": "Babel is a JavaScript transpiler that converts modern ES6+ (and beyond) code into ES5-compatible JavaScript. It is configured via .babelrc or babel.config.js and uses plugins/presets. @babel/preset-env targets specific browser versions automatically.",
+    "corrected": false
+  },
+  {
+    "id": "q1301",
+    "topic": "HTML & CSS",
+    "question": "which is not js keyword?",
+    "options": [
+      "A. if",
+      "B. with",
+      "C. use strict HTML,CSS&Bootstrap --------------------"
+    ],
+    "answer_index": 0,
+    "explanation": "\"if\" is the odd one out in this context. The other options (\"with\" and \"use strict HTML,CSS&Bootstrap --------------------\") all correctly describe or belong to the stated category. Knowing what is NOT part of a concept is as important as knowing what is.",
+    "corrected": false
+  },
+  {
+    "id": "q1302",
+    "topic": "Core Java & OOP",
+    "question": "Service discovery tools help by reducing the problem of how processes and services in a cluster can find and talk to one another.",
+    "options": [
+      "A. True",
+      "B. False ANS :- A-> True"
+    ],
+    "answer_index": 0,
+    "explanation": "Service discovery lets services in a distributed system find each other dynamically without hard-coded addresses. Tools like Consul, Eureka, and etcd maintain a registry of healthy service instances. This solves the problem of services scaling up/down with changing IPs.",
+    "corrected": false
+  },
+  {
+    "id": "q1303",
+    "topic": "MongoDB",
+    "question": "Service discovery tools help by reducing the problem of how processes and services in a cluster can find and talk to one another.",
+    "options": [
+      "A. True",
+      "B. False ANS :- A -> True MongoDb ----------"
+    ],
+    "answer_index": 0,
+    "explanation": "Service discovery lets services in a distributed system find each other dynamically without hard-coded addresses. Tools like Consul, Eureka, and etcd maintain a registry of healthy service instances. This solves the problem of services scaling up/down with changing IPs.",
+    "corrected": false
+  },
+  {
+    "id": "q1304",
+    "topic": "Spring Boot",
+    "question": "You have a number of external properties that you want to use in your application. How can you configure your Spring Boot application to source them from a file? Add your .properties files to src/main/resources, where Spring Boot loads them automatically.",
+    "options": [
+      "A. Place the .properties file in the src/main/resources directory. In the code, load it with java.util.Properties.",
+      "B. Place the properties in my.properties and add the annotation @PropertySource(\"my.properties\") to the Spring Boot application main class.",
+      "C. Create a properties file named application.properties in the src/main/resources of your project. Correct"
+    ],
+    "answer_index": 0,
+    "explanation": "Place the .properties file in the src/main/resources directory. In the code, load it with java.util.Properties. is the correct answer. Review the question topic (Java OOP) for deeper context.",
+    "corrected": false
+  },
+  {
+    "id": "q1305",
+    "topic": "Spring Core",
+    "question": "The following method only queries or retrieves data from the data source: @Transactionalpublic Customer retreiveCustomer(String customerId) { ... } It does not perform any write operations. What optimizations can you make so the provider can process the query more efficiently?",
+    "options": [
+      "A. Add the readOnly option to the @Transactional annotation. This provides a hint to the provider to optimize the transaction for read-only operations. correct",
+      "B. Add the timeout option to the @Transactional annotation. This limits the time the transaction can run.",
+      "C. Add the readOnly option to the @Transactional annotation. This prevents any write operations in the transaction.",
+      "D. Set the appropriate transactionManager option in the @Transactional annotation. This allows you to customize the underlying provider."
+    ],
+    "answer_index": 0,
+    "explanation": "Add the readOnly option to the @Transactional annotation. This provides a hint to the provider to optimize the transaction for read-only operations. correct is the correct answer. Review the question topic (Java OOP) for deeper context.",
+    "corrected": false
+  },
+  {
+    "id": "q1306",
+    "topic": "Spring Boot",
+    "question": "How do you configure a Spring Boot application to run as a command-line application?",
+    "options": [
+      "A. Implement CommandLineRunner and publish it to the application context. correct",
+      "B. Call SpringApplication#setHeadless(true).",
+      "C. Annotate a configuration class with @CommandLineApplication.",
+      "D. Use SpringConsoleApplication.run instead of SpringApplication.run"
+    ],
+    "answer_index": 0,
+    "explanation": "Implement CommandLineRunner and publish it to the application context. correct is the correct answer. Review the question topic (Java OOP) for deeper context.",
+    "corrected": false
+  },
+  {
+    "id": "q1307",
+    "topic": "DevOps & CI/CD",
+    "question": "How would you configure the default configuration and dependencies that a Spring Boot application requires in Maven?",
+    "options": [
+      "A. In the Project Object Model (POM) file, add the following parent configuration: <parent> <groupId>org.springframework.boot</groupId> <artifactId>spring-boot-starter-parent</artifactId> <version>X.Y.Z</version> </parent> correct",
+      "B. In the Project Object Model (POM) file, add the following parent configuration: <parent> <groupId>org.springframework.boot</groupId> <artifactId>spring-boot-dependencies</artifactId> <version>X.Y.Z</version> <relativePath>../../spring-boot-dependencies</relativePath></parent>",
+      "C. In the Project Object Model (POM) file, add the following dependency starter project: <dependencies> <dependency> <groupId>org.springframework.boot</groupId> <artifactId>spring-boot-starter-parent</artifactId> </dependency> </dependencies>",
+      "D. In the Project Object Model (POM) file, add the following dependency starter project: <dependencies> <dependency> <groupId>org.springframework.boot</groupId> <artifactId>spring-boot-starter</artifactId> </dependency> </dependencies>"
+    ],
+    "answer_index": 0,
+    "explanation": "In the Project Object Model (POM) file, add the following parent configuration: <parent> <groupId>org.springframework.boot</groupId> <artifactId>spring-boot-starter-parent</artifactId> <version>X.Y.Z</version> </parent> correct is the correct answer. Review the question topic (Java OOP) for deeper context.",
+    "corrected": false
+  },
+  {
+    "id": "q1308",
+    "topic": "Spring Core",
+    "question": "Which Spring class can you configure to function as a special environment with custom set properties for testing purposes?",
+    "options": [
+      "A. ConfigurableEnvironment",
+      "B. PropertySource",
+      "C. TestEnv",
+      "D. MockEnvironment Correct"
+    ],
+    "answer_index": 0,
+    "explanation": "ConfigurableEnvironment is the correct answer. Review the question topic (Java OOP) for deeper context.",
+    "corrected": false
+  },
+  {
+    "id": "q1309",
+    "topic": "Core Java & OOP",
+    "question": "You write a test class. The test class should only run when the operating system is Apple macOS. Which built-in annotation could you add on top of the class to achieve this?",
+    "options": [
+      "A. @SpringJUnitWebConfig(system = \"mac\")",
+      "B. @EnabledOnMac",
+      "C. @EnabledIf(\"#{systemProperties['os.name'].toLowerCase().contains('mac')}\") correct",
+      "D. @DetectOS(category = \"mac\")"
+    ],
+    "answer_index": 0,
+    "explanation": "@SpringJUnitWebConfig(system = \"mac\") is the correct answer. Review the question topic (Java OOP) for deeper context.",
+    "corrected": false
+  },
+  {
+    "id": "q1310",
+    "topic": "DevOps & CI/CD",
+    "question": "You want to package your application into a native image. You correctly configure Maven and Docker. What command do you need to build the image?",
+    "options": [
+      "A. mvn compile",
+      "B. mvn -Pnative spring-boot:build-image correct",
+      "C. mvn spring-boot:build-native-image",
+      "D. mvn package"
+    ],
+    "answer_index": 0,
+    "explanation": "Docker packages applications and their dependencies into portable containers that run identically across environments. A Dockerfile defines the image; docker-compose orchestrates multiple containers. Containers share the host OS kernel, making them lighter than VMs.",
+    "corrected": false
+  },
+  {
+    "id": "q1311",
+    "topic": "Spring Core",
+    "question": "How would you change the following code snippets so the list of names in the model contains four items? @Controller public class NameController { @ModelAttribute(\"names\") public List <String> getNames() { List <String> names = new ArrayList<>(); names.add(\"User1\"); names.add(\"User2\"); names.add(\"User3\"); return names; } @GetMapping(\"/names\") public String allNames(@ModelAttribute(\"list\") List <String> list, Model model) { // Add another name list.add(\"User4\"); return \"names\"; } }",
+    "options": [
+      "A. Change the signature of getNames to: public List <String> getNames(Model model)",
+      "B. Change the signature of getNames to: public List <String> getNames(Model model, @ModelAttribute(\"names\") List <String> names)",
+      "C. Change the signature of allNames to: public String allNames(Model model, @ModelAttribute(\"names\") List <String> names)",
+      "D. Change the signature of allNames to: public String allNames(@ModelAttribute(\"names\") List <String> names, Model model) Correct"
+    ],
+    "answer_index": 0,
+    "explanation": "Change the signature of getNames to: public List <String> getNames(Model model) is the correct answer. Review the question topic (Java OOP) for deeper context.",
+    "corrected": false
+  },
+  {
+    "id": "q1312",
+    "topic": "Spring Core",
+    "question": "The ExceptionHandler that should pick up ArithmeticException is not working. The only problem is in the following code snippet. What is the explanation for this? A. @ExceptionHandler(ArithmeticException.class) @ResponseBody Map<String, Object> handleException(Exception e, HttpServletRequest request) { // implementation omitted }",
+    "options": [
+      "A. The method must have the name of the specific exception, so you must rename it handleArithmeticException.",
+      "B. Spring cannot find the view associated with this method because it is not specified in the annotation.",
+      "C. The return type is incorrect. It can only return views and strings.",
+      "D. The annotation should be @ExceptionHandler(exceptions={ArithmeticException.class})."
+    ],
+    "answer_index": 0,
+    "explanation": "The method must have the name of the specific exception, so you must rename it handleArithmeticException. is the correct answer. Review the question topic (Java OOP) for deeper context.",
+    "corrected": false
+  },
+  {
+    "id": "q1313",
+    "topic": "Spring Core",
+    "question": "Which statement about the TestTransaction class is true?",
+    "options": [
+      "A. The static methods on the TestTransaction class interact with the current transaction of the test method. Correct",
+      "B. TestTransaction only works on classes that you annotate with the @EnableTestTransaction and @Transactional annotations.",
+      "C. You must write your custom class to implement the abstract TestTransaction class to interact with the transaction of the test method.",
+      "D. You must autowire TestTransaction, then call the instance method to interact with the transactions of the entire test class."
+    ],
+    "answer_index": 0,
+    "explanation": "The static methods on the TestTransaction class interact with the current transaction of the test method. Correct is the correct answer. Review the question topic (Java OOP) for deeper context.",
+    "corrected": false
+  },
+  {
+    "id": "q1314",
+    "topic": "Spring Boot",
+    "question": "You configure your Maven-based Spring Boot application to be packaged as a jar. How would you create the jar from the command line?",
+    "options": [
+      "A. mvn install followed by jar cvf build/classes",
+      "B. mvn spring-boot:jar",
+      "C. mvn package Correct",
+      "D. mvn compile"
+    ],
+    "answer_index": 0,
+    "explanation": "mvn install followed by jar cvf build/classes is the correct answer. Review the question topic (Java OOP) for deeper context.",
+    "corrected": false
+  },
+  {
+    "id": "q1315",
+    "topic": "Git & Version Control",
+    "question": "What is the default behavior of Spring's TestContext for handling database persistence?",
+    "options": [
+      "A. The framework creates a transaction for every test and does an automatic rollback. The database is the same as before the test. correct",
+      "B. TestContext configures a new database for every test that runs. The database persistence of the test does not influence the next test.",
+      "C. The framework stores the changes in the test database that is being configured by default. This influences the tests to follow. If you do not want this, you can apply @NoCommit.",
+      "D. You can mark tests with @Transactional, specifying to rollback for a certain custom exception. You will throw the exception at the end of the test to rollback."
+    ],
+    "answer_index": 0,
+    "explanation": "The framework creates a transaction for every test and does an automatic rollback. The database is the same as before the test. correct is the correct answer. Review the question topic (Java OOP) for deeper context.",
+    "corrected": false
+  }
+]

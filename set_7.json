@@ -1,0 +1,1666 @@
+[
+  {
+    "id": "q0721",
+    "topic": "Core Java & OOP",
+    "question": "What is proxy service used for?",
+    "options": [
+      "A. To store containers",
+      "B. To act as an intermediary between endpoint servers",
+      "C. To manage images",
+      "D. To deploy pods"
+    ],
+    "answer_index": 1,
+    "explanation": "The answer is \"To act as an intermediary between endpoint servers\". This is the standard definition or correct identification for the concept described. Review the Core Java & OOP documentation to understand how \"To act as an intermediary between endpoint servers\" fits into the broader context.",
+    "corrected": false
+  },
+  {
+    "id": "q0722",
+    "topic": "DevOps & CI/CD",
+    "question": "Which servers run Kubernetes control components in OpenShift?",
+    "options": [
+      "A. Workers",
+      "B. Masters",
+      "C. Nodes",
+      "D. Agents"
+    ],
+    "answer_index": 1,
+    "explanation": "Kubernetes (K8s) is a container orchestration platform. A cluster has a control plane (scheduler, API server) and worker nodes that run Pods (one or more containers). Services expose Pods; Deployments manage replicas and rolling updates.",
+    "corrected": false
+  },
+  {
+    "id": "q0723",
+    "topic": "Core Java & OOP",
+    "question": "Which resource sets default request/limit for containers?",
+    "options": [
+      "A. ResourceQuota",
+      "B. LimitRange",
+      "C. PodLimit",
+      "D. ContainerPolicy"
+    ],
+    "answer_index": 1,
+    "explanation": "\"LimitRange\" is correct. The distractors (\"ResourceQuota\" and \"PodLimit\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"LimitRange\" in Core Java & OOP distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0724",
+    "topic": "DevOps & CI/CD",
+    "question": "Docker command to create a bridge network?",
+    "options": [
+      "A. docker network create",
+      "B. docker create network",
+      "C. docker bridge create",
+      "D. docker network add"
+    ],
+    "answer_index": 0,
+    "explanation": "Docker packages applications and their dependencies into portable containers that run identically across environments. A Dockerfile defines the image; docker-compose orchestrates multiple containers. Containers share the host OS kernel, making them lighter than VMs.",
+    "corrected": false
+  },
+  {
+    "id": "q0725",
+    "topic": "MongoDB",
+    "question": "Purpose of ReplicaSet?",
+    "options": [
+      "A. To delete pods",
+      "B. To duplicate pods",
+      "C. To build images",
+      "D. To create networks"
+    ],
+    "answer_index": 1,
+    "explanation": "The correct answer is \"To duplicate pods\". The other options (\"To delete pods\", \"To build images\") do not accurately represent the concept described. This is a standard principle in MongoDB — recognising \"To duplicate pods\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q0726",
+    "topic": "DevOps & CI/CD",
+    "question": "Which is NOT a valid way to tag a Docker image?",
+    "options": [
+      "A. Tag by repository name",
+      "B. Tag by version",
+      "C. Tag by image ID",
+      "D. Tag using latest"
+    ],
+    "answer_index": 2,
+    "explanation": "Docker packages applications and their dependencies into portable containers that run identically across environments. A Dockerfile defines the image; docker-compose orchestrates multiple containers. Containers share the host OS kernel, making them lighter than VMs.",
+    "corrected": false
+  },
+  {
+    "id": "q0727",
+    "topic": "DevOps & CI/CD",
+    "question": "Mission of control plane in Kubernetes?",
+    "options": [
+      "A. Regulate communication between Kubernetes clusters",
+      "B. Run application containers",
+      "C. Store container images",
+      "D. Monitor host hardware"
+    ],
+    "answer_index": 0,
+    "explanation": "Kubernetes (K8s) is a container orchestration platform. A cluster has a control plane (scheduler, API server) and worker nodes that run Pods (one or more containers). Services expose Pods; Deployments manage replicas and rolling updates.",
+    "corrected": false
+  },
+  {
+    "id": "q0728",
+    "topic": "Core Java & OOP",
+    "question": "Service mode used to deploy a single task to each node?",
+    "options": [
+      "A. Replicated",
+      "B. Global",
+      "C. Node",
+      "D. Distributed"
+    ],
+    "answer_index": 1,
+    "explanation": "The correct answer is \"Global\". The other options (\"Replicated\", \"Node\") do not accurately represent the concept described. This is a standard principle in Core Java & OOP — recognising \"Global\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q0729",
+    "topic": "Git & Version Control",
+    "question": "After you initialize a new Git repository and create a file named git-quiz.html, which command will NOT work if issued?",
+    "options": [
+      "A. git add git-quiz.html",
+      "B. git status",
+      "C. git add .",
+      "D. git commit -m \"git quiz web file added\""
+    ],
+    "answer_index": 3,
+    "explanation": "git commit creates a snapshot of staged changes. You must first stage files with git add; running git commit without staged files does nothing (or errors with some options). git commit -m allows an inline message.",
+    "corrected": false
+  },
+  {
+    "id": "q0730",
+    "topic": "Core Java & OOP",
+    "question": "Which of the following are the benefits of using Gradle over Maven?",
+    "options": [
+      "A. Gradle supports more languages than Maven",
+      "B. Gradle incorporates Maven features as well as additional functionality",
+      "C. Gradle builds are successful more often than Maven builds",
+      "D. A Gradle build is 1000 times faster than a Maven build"
+    ],
+    "answer_index": 0,
+    "explanation": "Gradle supports more languages than Maven is the correct answer. Review the question topic (Java OOP) for deeper context.",
+    "corrected": false
+  },
+  {
+    "id": "q0731",
+    "topic": "DevOps & CI/CD",
+    "question": "Adopting Agile is necessary prior to embracing DevOps practices.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 1,
+    "explanation": "This statement is FALSE. Adopting Agile is necessary prior to embracing DevOps practices does not accurately describe the behaviour in DevOps & CI/CD. Make sure you understand the correct behaviour to avoid this common misconception.",
+    "corrected": false
+  },
+  {
+    "id": "q0732",
+    "topic": "DevOps & CI/CD",
+    "question": "Adopting DevOps requires planning that spans which of the following?",
+    "options": [
+      "A. People",
+      "B. Efforts",
+      "C. Process",
+      "D. Tools/Technology"
+    ],
+    "answer_index": 0,
+    "explanation": "Node.js uses require() for CommonJS module imports (const fs = require('fs')). In the browser, require() doesn't exist natively — Browserify or Webpack polyfills it by bundling modules. ES Modules (import/export) are the modern standard for both Node.js and browsers.",
+    "corrected": false
+  },
+  {
+    "id": "q0733",
+    "topic": "DevOps & CI/CD",
+    "question": "Shift-left concept refers to moving everything to the earlier phase in the ______ cycle.",
+    "options": [
+      "A. Requirement",
+      "B. Development",
+      "C. Design",
+      "D. Testing"
+    ],
+    "answer_index": 1,
+    "explanation": "Shift-left moves testing and quality activities earlier in the development lifecycle — rather than testing only at the end, developers test during design and coding. This finds bugs sooner when they are cheaper to fix.",
+    "corrected": false
+  },
+  {
+    "id": "q0734",
+    "topic": "DevOps & CI/CD",
+    "question": "In DevOps, what is the main goal of version control?",
+    "options": [
+      "A. Ensure the ability to alert when configuration changes from the desired state",
+      "B. Ensure the ability to re-create the previous state of the test environment",
+      "C. Ensure the ability to re-create the production environment and build processes",
+      "D. Ensure the ability to share the source code between different developer teams"
+    ],
+    "answer_index": 1,
+    "explanation": "The correct answer is \"Ensure the ability to re-create the previous state of the test environment\". The other options (\"Ensure the ability to alert when configuration changes from the desired state\", \"Ensure the ability to re-create the production environment and build processes\") do not accurately represent the concept described. This is a standard principle in DevOps & CI/CD — recognising \"Ensure the ability to re-create the previous state of the test environment\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q0735",
+    "topic": "Git & Version Control",
+    "question": "What is a continuous build?",
+    "options": [
+      "A. A build that runs non-stop over and over again",
+      "B. A build that has not failed in 10 continuous attempts",
+      "C. A build executed every hour/day by a CI server",
+      "D. A build executed on every commit by a CI server"
+    ],
+    "answer_index": 2,
+    "explanation": "The answer is \"A build executed every hour/day by a CI server\". This is the standard definition or correct identification for the concept described. Review the Git & Version Control documentation to understand how \"A build executed every hour/day by a CI server\" fits into the broader context.",
+    "corrected": false
+  },
+  {
+    "id": "q0736",
+    "topic": "DevOps & CI/CD",
+    "question": "Which statement best describes the relationship between DevOps and Continuous Delivery?",
+    "options": [
+      "A. DevOps and Continuous Delivery are the same thing",
+      "B. DevOps and Continuous Delivery share a background in Agile methods and LEAN thinking",
+      "C. DevOps and Continuous Delivery share common processes",
+      "D. DevOps and Continuous Delivery are mutually exclusive"
+    ],
+    "answer_index": 1,
+    "explanation": "\"DevOps and Continuous Delivery share a background in Agile methods and LEAN thinking\" is correct. The distractors (\"DevOps and Continuous Delivery are the same thing\" and \"DevOps and Continuous Delivery share common processes\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"DevOps and Continuous Delivery share a background in Agile methods and LEAN thinking\" in DevOps & CI/CD distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0737",
+    "topic": "DevOps & CI/CD",
+    "question": "How does a DevOps organization act when financing its work?",
+    "options": [
+      "A. It finances special projects to serve its clients",
+      "B. It finances products and services to serve its clients",
+      "C. It finances teams in matrix organizations",
+      "D. It finances development and operations teams separately"
+    ],
+    "answer_index": 1,
+    "explanation": "\"It finances products and services to serve its clients\" is correct. The distractors (\"It finances special projects to serve its clients\" and \"It finances teams in matrix organizations\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"It finances products and services to serve its clients\" in DevOps & CI/CD distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0738",
+    "topic": "DevOps & CI/CD",
+    "question": "In Kubernetes, a node is:",
+    "options": [
+      "A. A worker machine",
+      "B. A tool for starting a Kubernetes cluster on a local machine",
+      "C. A machine that coordinates scheduling and management of containers",
+      "D. A virtual machine"
+    ],
+    "answer_index": 0,
+    "explanation": "Kubernetes (K8s) is a container orchestration platform. A cluster has a control plane (scheduler, API server) and worker nodes that run Pods (one or more containers). Services expose Pods; Deployments manage replicas and rolling updates.",
+    "corrected": false
+  },
+  {
+    "id": "q0739",
+    "topic": "Core Java & OOP",
+    "question": "POM in Maven stands for:",
+    "options": [
+      "A. Project Object Model",
+      "B. Process Object Model",
+      "C. Project Object Method",
+      "D. All of the above"
+    ],
+    "answer_index": 0,
+    "explanation": "The correct answer is \"Project Object Model\". The other options (\"Process Object Model\", \"Project Object Method\") do not accurately represent the concept described. This is a standard principle in Core Java & OOP — recognising \"Project Object Model\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q0740",
+    "topic": "DevOps & CI/CD",
+    "question": "What is a widely used reusable asset to reinforce information security of DevOps deliverables?",
+    "options": [
+      "A. Data storage systems",
+      "B. Handling logging of sensitive client information",
+      "C. Data transfer between clients and software",
+      "D. All of the above"
+    ],
+    "answer_index": 3,
+    "explanation": "The answer is \"All of the above\". This is the standard definition or correct identification for the concept described. Review the DevOps & CI/CD documentation to understand how \"All of the above\" fits into the broader context.",
+    "corrected": false
+  },
+  {
+    "id": "q0741",
+    "topic": "HTML & CSS",
+    "question": "What is the sequence in which Maven looks for resources?",
+    "options": [
+      "A. Local → Remote → Maven Central",
+      "B. Remote → Maven Central → Local",
+      "C. Remote → Local → Maven Central",
+      "D. Maven Central → Local → Remote"
+    ],
+    "answer_index": 0,
+    "explanation": "The answer is \"Local → Remote → Maven Central\". This is the standard definition or correct identification for the concept described. Review the HTML & CSS documentation to understand how \"Local → Remote → Maven Central\" fits into the broader context.",
+    "corrected": false
+  },
+  {
+    "id": "q0742",
+    "topic": "Core Java & OOP",
+    "question": "Why should production and development environments be similar?",
+    "options": [
+      "A. It is easier for the ops team",
+      "B. It improves testing accuracy and reduces deployment problems",
+      "C. People can fix defects directly in production",
+      "D. Development environments are cheaper"
+    ],
+    "answer_index": 1,
+    "explanation": "The correct answer is \"It improves testing accuracy and reduces deployment problems\". The other options (\"It is easier for the ops team\", \"People can fix defects directly in production\") do not accurately represent the concept described. This is a standard principle in Core Java & OOP — recognising \"It improves testing accuracy and reduces deployment problems\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q0743",
+    "topic": "DevOps & CI/CD",
+    "question": "DevOps can be implemented in any ______.",
+    "options": [
+      "A. Process",
+      "B. Environment",
+      "C. Defects",
+      "D. None of the above"
+    ],
+    "answer_index": 1,
+    "explanation": "The correct answer is \"Environment\". The other options (\"Process\", \"Defects\") do not accurately represent the concept described. This is a standard principle in DevOps & CI/CD — recognising \"Environment\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q0744",
+    "topic": "DevOps & CI/CD",
+    "question": "What is continuous deployment?",
+    "options": [
+      "A. Deployment on every code push/commit",
+      "B. Deployment every hour/day",
+      "C. Local deployment on developer laptop",
+      "D. Deployment on IBM Cloud"
+    ],
+    "answer_index": 0,
+    "explanation": "The answer is \"Deployment on every code push/commit\". This is the standard definition or correct identification for the concept described. Review the DevOps & CI/CD documentation to understand how \"Deployment on every code push/commit\" fits into the broader context.",
+    "corrected": false
+  },
+  {
+    "id": "q0745",
+    "topic": "DevOps & CI/CD",
+    "question": "In DevOps, one significant ROI area is:",
+    "options": [
+      "A. Zero defects",
+      "B. Faster time to value",
+      "C. Less feedback",
+      "D. Less customer experience"
+    ],
+    "answer_index": 1,
+    "explanation": "The correct answer is \"Faster time to value\". The other options (\"Zero defects\", \"Less feedback\") do not accurately represent the concept described. This is a standard principle in DevOps & CI/CD — recognising \"Faster time to value\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q0746",
+    "topic": "Git & Version Control",
+    "question": "How do you remove local untracked files and directories from the Git working tree?",
+    "options": [
+      "A. git clean -f",
+      "B. git delete -f",
+      "C. git remove -f -d",
+      "D. git add --all"
+    ],
+    "answer_index": 0,
+    "explanation": "\"git clean -f\" is correct. The distractors (\"git delete -f\" and \"git remove -f -d\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"git clean -f\" in Git & Version Control distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0747",
+    "topic": "Spring Core",
+    "question": "Spring-WS provides various abstract endpoint classes for you to process the request.",
+    "options": [
+      "A. org.springframework.ws.server.endpoint",
+      "B. org.springframework.ws.server",
+      "C. org.springframework.*",
+      "D. none of the mentioned"
+    ],
+    "answer_index": 0,
+    "explanation": "The correct answer is \"org.springframework.ws.server.endpoint\". The other options (\"org.springframework.ws.server\", \"org.springframework.*\") do not accurately represent the concept described. This is a standard principle in Spring Core — recognising \"org.springframework.ws.server.endpoint\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q0748",
+    "topic": "Spring Core",
+    "question": "Which method is used to gracefully shutdown all the bean processes after closing the spring container?",
+    "options": [
+      "A. shutdownHook",
+      "B. destroy method",
+      "C. none of the mentioned",
+      "D. all of the mentioned"
+    ],
+    "answer_index": 0,
+    "explanation": "\"shutdownHook\" is correct. The distractors (\"destroy method\" and \"none of the mentioned\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"shutdownHook\" in Spring Core distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0749",
+    "topic": "JavaScript",
+    "question": "Which one is the default scope of the beans?",
+    "options": [
+      "A. Prototype",
+      "B. Session",
+      "C. Request",
+      "D. Singleton"
+    ],
+    "answer_index": 3,
+    "explanation": "\"Singleton\" is correct. The distractors (\"Prototype\" and \"Session\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"Singleton\" in JavaScript distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0750",
+    "topic": "Core Java & OOP",
+    "question": "Declaring bean from object properties can be done using:",
+    "options": [
+      "A. PropertyPathFactoryBean",
+      "B. util:constant",
+      "C. None of the mentioned",
+      "D. All of the mentioned"
+    ],
+    "answer_index": 0,
+    "explanation": "The correct answer is \"PropertyPathFactoryBean\". The other options (\"util:constant\", \"None of the mentioned\") do not accurately represent the concept described. This is a standard principle in Core Java & OOP — recognising \"PropertyPathFactoryBean\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q0751",
+    "topic": "TypeScript",
+    "question": "What are the ways to create custom Property Editors?",
+    "options": [
+      "A. implement PropertyEditor interface",
+      "B. extend PropertyEditorSupport Class",
+      "C. none of the mentioned",
+      "D. all of the mentioned"
+    ],
+    "answer_index": 3,
+    "explanation": "The answer is \"all of the mentioned\". This is the standard definition or correct identification for the concept described. Review the TypeScript documentation to understand how \"all of the mentioned\" fits into the broader context.",
+    "corrected": false
+  },
+  {
+    "id": "q0752",
+    "topic": "Spring Core",
+    "question": "Spring Web MVC follows the 'Open for extension, closed for modification' principle. Many methods in core classes are marked final.",
+    "options": [
+      "A. true",
+      "B. false"
+    ],
+    "answer_index": 0,
+    "explanation": "This statement is TRUE. Spring Web MVC follows the 'Open for extension, closed for modification' principle. Many methods in core classes are marked final is correct behaviour in Spring Core. Understanding when this holds (and its exceptions) is essential for assessments.",
+    "corrected": false
+  },
+  {
+    "id": "q0753",
+    "topic": "Spring Core",
+    "question": "Which of the among is not a special bean in WebApplicationContext?",
+    "options": [
+      "A. Locale resolver",
+      "B. Theme resolver",
+      "C. multipart file",
+      "D. resolver",
+      "E. Handler exception resolver",
+      "F. Handler mappings",
+      "6. None of the above"
+    ],
+    "answer_index": 6,
+    "explanation": "\"6. None of the above\" is the odd one out in this context. The other options (\"Locale resolver\" and \"Theme resolver\") all correctly describe or belong to the stated category. Knowing what is NOT part of a concept is as important as knowing what is.",
+    "corrected": false
+  },
+  {
+    "id": "q0754",
+    "topic": "Spring Core",
+    "question": "How does the Spring DispatcherServlet support returning the last modification date as specified by the Servlet API?",
+    "options": [
+      "A. By implementing the LastModified interface",
+      "B. By implementing the LastSessionModified interface",
+      "C. By implementing the LastDateModified interface",
+      "D. By implementing the LastModifiedDate interface"
+    ],
+    "answer_index": 0,
+    "explanation": "\"By implementing the LastModified interface\" is correct. The distractors (\"By implementing the LastSessionModified interface\" and \"By implementing the LastDateModified interface\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"By implementing the LastModified interface\" in Spring Core distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0755",
+    "topic": "Spring Core",
+    "question": "@RequestMapping annotation is used to map an HTTP request method (GET or POST) to a specific controller class or method.",
+    "options": [
+      "A. false",
+      "B. true"
+    ],
+    "answer_index": 1,
+    "explanation": "Java annotations are declared with @interface. Elements inside look like method declarations but have no body; default values are set with default keyword. All annotations implicitly extend java.lang.annotation.Annotation and cannot have an explicit extends clause.",
+    "corrected": false
+  },
+  {
+    "id": "q0756",
+    "topic": "Spring Boot",
+    "question": "Which exception class is related to all exceptions thrown in Spring applications?",
+    "options": [
+      "A. DataAccessException",
+      "B. ArrayIndexOutOfBound",
+      "C. NullPointerException",
+      "D. SpringException",
+      "E. None of these"
+    ],
+    "answer_index": 0,
+    "explanation": "\"DataAccessException\" is correct. The distractors (\"ArrayIndexOutOfBound\" and \"NullPointerException\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"DataAccessException\" in Spring Boot distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0757",
+    "topic": "Spring Core",
+    "question": "Which of the following is true for Controllers in Spring?",
+    "options": [
+      "A. An abstract class",
+      "B. An interface",
+      "C. Concrete class",
+      "D. Final class",
+      "E. None of these"
+    ],
+    "answer_index": 1,
+    "explanation": "\"An interface\" is correct. The distractors (\"An abstract class\" and \"Concrete class\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"An interface\" in Spring Core distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0758",
+    "topic": "Spring Core",
+    "question": "Annotations work as metadata for classes and Spring uses annotations as an alternative to XML for declarative configuration.",
+    "options": [
+      "A. false",
+      "B. true"
+    ],
+    "answer_index": 1,
+    "explanation": "Java annotations are declared with @interface. Elements inside look like method declarations but have no body; default values are set with default keyword. All annotations implicitly extend java.lang.annotation.Annotation and cannot have an explicit extends clause.",
+    "corrected": false
+  },
+  {
+    "id": "q0759",
+    "topic": "Core Java & OOP",
+    "question": "Which of the following specify the points where weaving can be applied?",
+    "options": [
+      "A. Compile Time , Classload Time , load time",
+      "B. Compile Time , Classload Time , Runtime",
+      "C. Compile Time and Runtime",
+      "D. Compile Time and Classload Time",
+      "E. None of these"
+    ],
+    "answer_index": 1,
+    "explanation": "Compile Time , Classload Time , Runtime is the correct answer. Review the question topic (Java OOP) for deeper context.",
+    "corrected": false
+  },
+  {
+    "id": "q0760",
+    "topic": "Spring Core",
+    "question": "In which layer is the @Controller annotation used?",
+    "options": [
+      "A. Business layer",
+      "B. Service layer",
+      "C. Presentation layer",
+      "D. Session layer",
+      "E. None of these"
+    ],
+    "answer_index": 2,
+    "explanation": "Java annotations are declared with @interface. Elements inside look like method declarations but have no body; default values are set with default keyword. All annotations implicitly extend java.lang.annotation.Annotation and cannot have an explicit extends clause.",
+    "corrected": false
+  },
+  {
+    "id": "q0761",
+    "topic": "Spring Core",
+    "question": "Which of the following is NOT a valid difference between @Inject and @Autowired annotations?",
+    "options": [
+      "A. @Inject is part of Java EE CDI while @Autowired is from Spring",
+      "B. @Autowired is a legacy annotation whereas @Inject is its latest version",
+      "C. There is no difference and both can be used interchangeably",
+      "D. None of these"
+    ],
+    "answer_index": 1,
+    "explanation": "@Autowired is a legacy annotation whereas @Inject is its latest version is the correct answer. Review the question topic (Java OOP) for deeper context.",
+    "corrected": false
+  },
+  {
+    "id": "q0762",
+    "topic": "Core Java & OOP",
+    "question": "Which of the following correctly mentions the Autowire types?",
+    "options": [
+      "A. None of these",
+      "B. byName , byMethod , constructor and autodetect",
+      "C. byName , byType , destructor and autodetect",
+      "D. byName , byType , constructor and autodetect",
+      "E. byName , byType , constructor and autocorrect"
+    ],
+    "answer_index": 3,
+    "explanation": "byName , byType , constructor and autodetect is the correct answer. Review the question topic (Java OOP) for deeper context.",
+    "corrected": false
+  },
+  {
+    "id": "q0763",
+    "topic": "Core Java & OOP",
+    "question": "Which advice is executed only when joint point returns or throws an exception?",
+    "options": [
+      "A. @Before",
+      "B. @After",
+      "C. @AfterReturning",
+      "D. @AfterThrowing"
+    ],
+    "answer_index": 2,
+    "explanation": "\"@AfterReturning\" is correct. The distractors (\"@Before\" and \"@After\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"@AfterReturning\" in Core Java & OOP distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0764",
+    "topic": "Core Java & OOP",
+    "question": "Special compiler used during weaving.",
+    "options": [
+      "A. jvm",
+      "B. gcc",
+      "C. ajc",
+      "D. none of the mentioned"
+    ],
+    "answer_index": 2,
+    "explanation": "The correct answer is \"ajc\". The other options (\"jvm\", \"gcc\") do not accurately represent the concept described. This is a standard principle in Core Java & OOP — recognising \"ajc\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q0765",
+    "topic": "Spring Core",
+    "question": "How to inject Spring bean into domain objects?",
+    "options": [
+      "A. AOP",
+      "B. XML",
+      "C. AspectJ",
+      "D. Java Based"
+    ],
+    "answer_index": 3,
+    "explanation": "\"Java Based\" is correct. The distractors (\"AOP\" and \"XML\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"Java Based\" in Spring Core distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0766",
+    "topic": "JavaScript",
+    "question": "Method used to process bean before initialization callback.",
+    "options": [
+      "A. scope",
+      "B. postProcessAfterInitialization()",
+      "C. postProcessBeforeInitialization()",
+      "D. its own constructor"
+    ],
+    "answer_index": 2,
+    "explanation": "The correct answer is \"postProcessBeforeInitialization()\". The other options (\"scope\", \"postProcessAfterInitialization()\") do not accurately represent the concept described. This is a standard principle in JavaScript — recognising \"postProcessBeforeInitialization()\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q0767",
+    "topic": "Core Java & OOP",
+    "question": "Which attribute is used to set the scope of the bean?",
+    "options": [
+      "A. setScope",
+      "B. scope",
+      "C. getScope",
+      "D. none of the mentioned"
+    ],
+    "answer_index": 1,
+    "explanation": "\"scope\" is correct. The distractors (\"setScope\" and \"getScope\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"scope\" in Core Java & OOP distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0768",
+    "topic": "Core Java & OOP",
+    "question": "Which attribute is used to specify classname of the bean?",
+    "options": [
+      "A. name",
+      "B. id",
+      "C. class",
+      "D. constructor-args"
+    ],
+    "answer_index": 2,
+    "explanation": "\"class\" is correct. The distractors (\"name\" and \"id\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"class\" in Core Java & OOP distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0769",
+    "topic": "Core Java & OOP",
+    "question": "Which tag is allowed for static field?",
+    "options": [
+      "A. util:constant",
+      "B. list",
+      "C. set",
+      "D. constructor-args"
+    ],
+    "answer_index": 0,
+    "explanation": "\"util:constant\" is correct. The distractors (\"list\" and \"set\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"util:constant\" in Core Java & OOP distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0770",
+    "topic": "Core Java & OOP",
+    "question": "Element used to specify access attributes for bean methods.",
+    "options": [
+      "A. security:protect",
+      "B. security:intercept",
+      "C. security:intercept-security",
+      "D. none of the mentioned"
+    ],
+    "answer_index": 0,
+    "explanation": "The correct answer is \"security:protect\". The other options (\"security:intercept\", \"security:intercept-security\") do not accurately represent the concept described. This is a standard principle in Core Java & OOP — recognising \"security:protect\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q0771",
+    "topic": "Spring Core",
+    "question": "States related to Spring Web flows.",
+    "options": [
+      "A. view",
+      "B. action",
+      "C. decision",
+      "D. all of the mentioned"
+    ],
+    "answer_index": 3,
+    "explanation": "The correct answer is \"all of the mentioned\". The other options (\"view\", \"action\") do not accurately represent the concept described. This is a standard principle in Spring Core — recognising \"all of the mentioned\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q0772",
+    "topic": "Spring Core",
+    "question": "To enable Spring security for web flows.",
+    "options": [
+      "A. SecurityFlowExecutionListener",
+      "B. SecurityFlowExecution",
+      "C. FlowSecurity",
+      "D. SecurityFlowListener"
+    ],
+    "answer_index": 0,
+    "explanation": "The correct answer is \"SecurityFlowExecutionListener\". The other options (\"SecurityFlowExecution\", \"FlowSecurity\") do not accurately represent the concept described. This is a standard principle in Spring Core — recognising \"SecurityFlowExecutionListener\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q0773",
+    "topic": "Spring Core",
+    "question": "How could you externalize constants from a Spring configuration file or annotation into a .properties file?",
+    "options": [
+      "A. By using the <context:property-placeholder /> tag",
+      "B. By using the <util:constant /> tag",
+      "C. By declaring the ConstantPlaceholderConfigurer bean post processor",
+      "D. By using the c: namespace"
+    ],
+    "answer_index": 0,
+    "explanation": "Java annotations are declared with @interface. Elements inside look like method declarations but have no body; default values are set with default keyword. All annotations implicitly extend java.lang.annotation.Annotation and cannot have an explicit extends clause.",
+    "corrected": false
+  },
+  {
+    "id": "q0774",
+    "topic": "Core Java & OOP",
+    "question": "Annotation used to indicate a field has to have a minimum of 2 characters.",
+    "options": [
+      "A. @NotNull",
+      "B. @Size",
+      "C. @MaxSize",
+      "D. @size"
+    ],
+    "answer_index": 1,
+    "explanation": "Java annotations are declared with @interface. Elements inside look like method declarations but have no body; default values are set with default keyword. All annotations implicitly extend java.lang.annotation.Annotation and cannot have an explicit extends clause.",
+    "corrected": false
+  },
+  {
+    "id": "q0775",
+    "topic": "Spring Core",
+    "question": "Spring MVC supports generating Excel files using which of the following libraries.",
+    "options": [
+      "A. Apache POI library",
+      "B. JExcelAPI library",
+      "C. All of the mentioned",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 2,
+    "explanation": "All of the mentioned is the correct answer. Review the question topic (Java OOP) for deeper context.",
+    "corrected": false
+  },
+  {
+    "id": "q0776",
+    "topic": "Core Java & OOP",
+    "question": "By default, XmlViewResolver loads view beans from /WEB-INF/views.xml.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 1,
+    "explanation": "This statement is FALSE. By default, XmlViewResolver loads view beans from /WEB-INF/views.xml does not accurately describe the behaviour in Core Java & OOP. Make sure you understand the correct behaviour to avoid this common misconception.",
+    "corrected": false
+  },
+  {
+    "id": "q0777",
+    "topic": "Core Java & OOP",
+    "question": "Views that can't be resolved by InternalResourceViewResolver.",
+    "options": [
+      "A. redirect",
+      "B. redirect:prefix",
+      "C. redirect:suffix",
+      "D. all of the mentioned"
+    ],
+    "answer_index": 0,
+    "explanation": "The correct answer is \"redirect\". The other options (\"redirect:prefix\", \"redirect:suffix\") do not accurately represent the concept described. This is a standard principle in Core Java & OOP — recognising \"redirect\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q0778",
+    "topic": "Spring Core",
+    "question": "To publish a REST service with Spring.",
+    "options": [
+      "A. publishing an application's data as a REST service",
+      "B. accessing data from third-party REST services",
+      "C. none of the mentioned",
+      "D. all of the mentioned"
+    ],
+    "answer_index": 0,
+    "explanation": "The correct answer is \"publishing an application's data as a REST service\". The other options (\"accessing data from third-party REST services\", \"none of the mentioned\") do not accurately represent the concept described. This is a standard principle in Spring Core — recognising \"publishing an application's data as a REST service\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q0779",
+    "topic": "Core Java & OOP",
+    "question": "Annotation added as an input parameter to the handler method.",
+    "options": [
+      "A. @PathVariable",
+      "B. @Path",
+      "C. @PathLocale",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 0,
+    "explanation": "Java annotations are declared with @interface. Elements inside look like method declarations but have no body; default values are set with default keyword. All annotations implicitly extend java.lang.annotation.Annotation and cannot have an explicit extends clause.",
+    "corrected": false
+  },
+  {
+    "id": "q0780",
+    "topic": "Core Java & OOP",
+    "question": "General-purpose class that allows a response to be rendered using a marshaller.",
+    "options": [
+      "A. MarshallingView",
+      "B. Marshalling",
+      "C. View",
+      "D. All of the mentioned"
+    ],
+    "answer_index": 0,
+    "explanation": "The correct answer is \"MarshallingView\". The other options (\"Marshalling\", \"View\") do not accurately represent the concept described. This is a standard principle in Core Java & OOP — recognising \"MarshallingView\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q0781",
+    "topic": "Core Java & OOP",
+    "question": "Annotation which allows the Jaxb2Marshaller to detect a class's fields.",
+    "options": [
+      "A. @XmlRootElement",
+      "B. @XmlRoot",
+      "C. @NotNull",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 0,
+    "explanation": "Java annotations are declared with @interface. Elements inside look like method declarations but have no body; default values are set with default keyword. All annotations implicitly extend java.lang.annotation.Annotation and cannot have an explicit extends clause.",
+    "corrected": false
+  },
+  {
+    "id": "q0782",
+    "topic": "Spring Core",
+    "question": "Considering classes AccountServiceImpl and ClientServiceImpl. What is the result of the pointcut expression execution(* *..AccountServiceImpl.update(..)) && execution(* *..ClientServiceImpl.update(..))?",
+    "options": [
+      "A. No joint point is defined",
+      "B. Matches public update methods of both classes",
+      "C. Matches any update methods of both classes",
+      "D. Matches update methods with one or more arguments"
+    ],
+    "answer_index": 0,
+    "explanation": "The output is \"No joint point is defined\". Trace through the execution step by step: variable assignments, method calls, and control flow all determine the final value. Pay attention to scope, type coercion, and execution order in Spring Core.",
+    "corrected": false
+  },
+  {
+    "id": "q0783",
+    "topic": "Spring Core",
+    "question": "Select the right statement about referring a Spring configuration file in the package com.example.myapp.",
+    "options": [
+      "A. all of the above",
+      "B. The classpath prefix could be omitted",
+      "C. Package name using dot is not well formatted",
+      "D. The slash before package name could be omitted"
+    ],
+    "answer_index": 0,
+    "explanation": "\"all of the above\" is correct. The distractors (\"The classpath prefix could be omitted\" and \"Package name using dot is not well formatted\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"all of the above\" in Spring Core distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0784",
+    "topic": "Core Java & OOP",
+    "question": "What is the name of the bean defined in the following configuration class?",
+    "options": [
+      "A. clientRepository",
+      "B. JpaClientRepository",
+      "C. jpaClientRepository",
+      "D. Two beans are defined: a data source and a repository"
+    ],
+    "answer_index": 0,
+    "explanation": "The answer is \"clientRepository\". This is the standard definition or correct identification for the concept described. Review the Core Java & OOP documentation to understand how \"clientRepository\" fits into the broader context.",
+    "corrected": false
+  },
+  {
+    "id": "q0785",
+    "topic": "Spring Core",
+    "question": "Select method signatures that match with the pointcut execution(* com.test.service..*.*(*))",
+    "options": [
+      "A. void com.test.service.MyServiceImpl#transfert(Money amount)",
+      "B. void com.test.service.account.MyServiceImpl#transfert(Money amount)",
+      "C. void com.test.service.MyServiceImpl#transfert(Account account, Money amount)",
+      "D. void com.test.service.account.MyServiceImpl#transfert(Account account, Money amount)",
+      "E. None of the above"
+    ],
+    "answer_index": 0,
+    "explanation": "\"void com.test.service.MyServiceImpl#transfert(Money amount)\" is correct. The distractors (\"void com.test.service.account.MyServiceImpl#transfert(Money amount)\" and \"void com.test.service.MyServiceImpl#transfert(Account account, Money amount)\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"void com.test.service.MyServiceImpl#transfert(Money amount)\" in Spring Core distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0786",
+    "topic": "Spring Core",
+    "question": "Given the Spring configuration <bean class=\"com.spring.service.BankServiceImpl\" p:bankName=\"NationalBank\">, which statement is correct?",
+    "options": [
+      "A. The p namespace has to be declared",
+      "B. NationalBank is a scalar value",
+      "C. Bean id is bankServiceImpl",
+      "D. The BankServiceImpl references a NationalBank bean"
+    ],
+    "answer_index": 0,
+    "explanation": "The correct answer is \"The p namespace has to be declared\". The other options (\"NationalBank is a scalar value\", \"Bean id is bankServiceImpl\") do not accurately represent the concept described. This is a standard principle in Spring Core — recognising \"The p namespace has to be declared\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q0787",
+    "topic": "Core Java & OOP",
+    "question": "To load root application context at the startup.",
+    "options": [
+      "A. ContextListener",
+      "B. ContextLoader",
+      "C. ContextLoaderListener",
+      "D. ContextEventListener"
+    ],
+    "answer_index": 2,
+    "explanation": "The correct answer is \"ContextLoaderListener\". The other options (\"ContextListener\", \"ContextLoader\") do not accurately represent the concept described. This is a standard principle in Core Java & OOP — recognising \"ContextLoaderListener\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q0788",
+    "topic": "Spring Core",
+    "question": "ActionSupport class provides a method to access Spring's application context.",
+    "options": [
+      "A. getWebApplicationContext()",
+      "B. getWebApplication()",
+      "C. getApplicationContext()",
+      "D. contextEventListener()"
+    ],
+    "answer_index": 0,
+    "explanation": "The correct answer is \"getWebApplicationContext()\". The other options (\"getWebApplication()\", \"getApplicationContext()\") do not accurately represent the concept described. This is a standard principle in Spring Core — recognising \"getWebApplicationContext()\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q0789",
+    "topic": "Core Java & OOP",
+    "question": "XML element to specify property values for scripting bean.",
+    "options": [
+      "A. lang:property",
+      "B. bean:property",
+      "C. script:property",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 0,
+    "explanation": "The correct answer is \"lang:property\". The other options (\"bean:property\", \"script:property\") do not accurately represent the concept described. This is a standard principle in Core Java & OOP — recognising \"lang:property\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q0790",
+    "topic": "Spring Core",
+    "question": "Annotation used to declare an introduction in Spring AOP.",
+    "options": [
+      "A. Before",
+      "B. After",
+      "C. @DeclareParents",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 2,
+    "explanation": "Java annotations are declared with @interface. Elements inside look like method declarations but have no body; default values are set with default keyword. All annotations implicitly extend java.lang.annotation.Annotation and cannot have an explicit extends clause.",
+    "corrected": false
+  },
+  {
+    "id": "q0791",
+    "topic": "Spring Core",
+    "question": "Is the following pointcut expression correct? execution(* ArithmeticCalculator.*(..))",
+    "options": [
+      "A. Yes",
+      "B. No",
+      "C. If every target class is in same package",
+      "D. Depends where target class is located"
+    ],
+    "answer_index": 2,
+    "explanation": "The correct answer is \"If every target class is in same package\". The other options (\"Yes\", \"No\") do not accurately represent the concept described. This is a standard principle in Spring Core — recognising \"If every target class is in same package\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q0792",
+    "topic": "Core Java & OOP",
+    "question": "DAO methods require access to the session factory, which can be injected by:",
+    "options": [
+      "A. a setter method",
+      "B. constructor argument",
+      "C. none of the mentioned",
+      "D. all of the mentioned"
+    ],
+    "answer_index": 3,
+    "explanation": "The correct answer is \"all of the mentioned\". The other options (\"a setter method\", \"constructor argument\") do not accurately represent the concept described. This is a standard principle in Core Java & OOP — recognising \"all of the mentioned\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q0793",
+    "topic": "Spring Boot",
+    "question": "Which Java Collection types can be injected in a Spring application?",
+    "options": [
+      "A. None of these",
+      "B. Using list, set, map or collection tag",
+      "C. Using list, set, props or collection tag",
+      "D. Using list, set, map or props tag",
+      "E. Using list, collection, map or props tag"
+    ],
+    "answer_index": 3,
+    "explanation": "\"Using list, set, map or props tag\" is correct. The distractors (\"None of these\" and \"Using list, set, map or collection tag\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"Using list, set, map or props tag\" in Spring Boot distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0794",
+    "topic": "Core Java & OOP",
+    "question": "What are the different types of AutoProxying?",
+    "options": [
+      "A. BeanNameAutoProxyCreator",
+      "B. DefaultAdvisorAutoProxyCreator",
+      "C. Metadata autoproxying",
+      "D. All of the above",
+      "E. none of the above"
+    ],
+    "answer_index": 3,
+    "explanation": "The answer is \"All of the above\". This is the standard definition or correct identification for the concept described. Review the Core Java & OOP documentation to understand how \"All of the above\" fits into the broader context.",
+    "corrected": false
+  },
+  {
+    "id": "q0795",
+    "topic": "Spring Core",
+    "question": "What are the various editors used in Spring?",
+    "options": [
+      "A. PropertyEditor , URLEditor",
+      "B. ClassEditor, CustomDateEditor, StringTrimmerEditor",
+      "C. FileEditor, LocaleEditor, StringArrayPropertyEditor",
+      "D. All of the above"
+    ],
+    "answer_index": 3,
+    "explanation": "The answer is \"All of the above\". This is the standard definition or correct identification for the concept described. Review the Spring Core documentation to understand how \"All of the above\" fits into the broader context.",
+    "corrected": false
+  },
+  {
+    "id": "q0796",
+    "topic": "Spring Core",
+    "question": "How to use <ref> in Spring framework?",
+    "options": [
+      "A. <ref> is used with bean id",
+      "B. <ref> is used with string values"
+    ],
+    "answer_index": 0,
+    "explanation": "\"<ref> is used with bean id\" is correct. The distractors (\"<ref> is used with string values\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"<ref> is used with bean id\" in Spring Core distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0797",
+    "topic": "Spring Core",
+    "question": "How to define Inner bean in Spring?",
+    "options": [
+      "A. Use <property/> only",
+      "B. Use <property/> or <constructor-arg/>"
+    ],
+    "answer_index": 1,
+    "explanation": "\"Use <property/> or <constructor-arg/>\" is correct. The distractors (\"Use <property/> only\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"Use <property/> or <constructor-arg/>\" in Spring Core distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0798",
+    "topic": "Spring Core",
+    "question": "Which property is replaced by c-namespace in Spring?",
+    "options": [
+      "A. <property/>",
+      "B. <constructor-arg>"
+    ],
+    "answer_index": 1,
+    "explanation": "\"<constructor-arg>\" is correct. The distractors (\"<property/>\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"<constructor-arg>\" in Spring Core distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0799",
+    "topic": "Spring Core",
+    "question": "By default a bean is eagerly initialized in Spring.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "explanation": "This statement is TRUE. By default a bean is eagerly initialized in Spring is correct behaviour in Spring Core. Understanding when this holds (and its exceptions) is essential for assessments.",
+    "corrected": false
+  },
+  {
+    "id": "q0800",
+    "topic": "Core Java & OOP",
+    "question": "By default a bean is not autowired.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 1,
+    "explanation": "\"False\" is the odd one out in this context. The other options (\"True\") all correctly describe or belong to the stated category. Knowing what is NOT part of a concept is as important as knowing what is.",
+    "corrected": false
+  },
+  {
+    "id": "q0801",
+    "topic": "Spring Core",
+    "question": "Thread scope bean has been introduced in Spring from the version:",
+    "options": [
+      "A. Spring 2.5",
+      "B. Spring 3.0"
+    ],
+    "answer_index": 1,
+    "explanation": "The correct answer is \"Spring 3.0\". The other options (\"Spring 2.5\") do not accurately represent the concept described. This is a standard principle in Spring Core — recognising \"Spring 3.0\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q0802",
+    "topic": "Spring Core",
+    "question": "InitializingBean and DisposableBean are used to customize the nature of bean in Spring.",
+    "options": [
+      "A. Yes",
+      "B. No"
+    ],
+    "answer_index": 0,
+    "explanation": "The correct answer is \"Yes\". The other options (\"No\") do not accurately represent the concept described. This is a standard principle in Spring Core — recognising \"Yes\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q0803",
+    "topic": "Spring Core",
+    "question": "How to shutdown the Spring IoC container gracefully in non-web applications?",
+    "options": [
+      "A. Using shutdownNow()",
+      "B. registerShutdownHook()"
+    ],
+    "answer_index": 1,
+    "explanation": "\"registerShutdownHook()\" is correct. The distractors (\"Using shutdownNow()\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"registerShutdownHook()\" in Spring Core distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0804",
+    "topic": "Spring Core",
+    "question": "Which of the following is correct about dependency injection?",
+    "options": [
+      "A. It helps in decoupling application objects from each other",
+      "B. It helps in deciding the dependencies of objects",
+      "C. It stores object states in database",
+      "D. It stores object states in file system"
+    ],
+    "answer_index": 0,
+    "explanation": "It helps in decoupling application objects from each other is the correct answer. Review the question topic (Java OOP) for deeper context.",
+    "corrected": false
+  },
+  {
+    "id": "q0805",
+    "topic": "Spring Boot",
+    "question": "How to reload changes on Spring Boot without restarting the server?",
+    "options": [
+      "A. spring-boot-devtools dependency",
+      "B. spring-boot-test dependency",
+      "C. spring-boot-web dependency",
+      "D. spring-boot-jasper dependency"
+    ],
+    "answer_index": 0,
+    "explanation": "\"spring-boot-devtools dependency\" is correct. The distractors (\"spring-boot-test dependency\" and \"spring-boot-web dependency\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"spring-boot-devtools dependency\" in Spring Boot distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0806",
+    "topic": "Spring Core",
+    "question": "How does Spring Batch work?",
+    "options": [
+      "A. step, ItemReader, ItemProcessor, ItemStreamWriter",
+      "B. step, ItemProcessor, ItemStreamWriter",
+      "C. step, ItemReader, ItemStreamWriter"
+    ],
+    "answer_index": 0,
+    "explanation": "Java 8 Streams provide a declarative, pipeline-style API for processing collections. Operations are either intermediate (filter, map, sorted — lazy) or terminal (collect, forEach, reduce — trigger execution). Parallel streams split work across threads using the fork/join framework.",
+    "corrected": false
+  },
+  {
+    "id": "q0807",
+    "topic": "Spring Core",
+    "question": "LoggerInterceptor implementing HandlerInterceptor overrides which methods?",
+    "options": [
+      "A. preHandlerBean(), postHandlerBean(), afterCompletion()",
+      "B. PreProcessHandler(), PostProcessHandler(), afterCompletion()",
+      "C. PreHandler(), PostHandler(), afterCompletion()",
+      "D. none"
+    ],
+    "answer_index": 2,
+    "explanation": "The correct answer is \"PreHandler(), PostHandler(), afterCompletion()\". The other options (\"preHandlerBean(), postHandlerBean(), afterCompletion()\", \"PreProcessHandler(), PostProcessHandler(), afterCompletion()\") do not accurately represent the concept described. This is a standard principle in Spring Core — recognising \"PreHandler(), PostHandler(), afterCompletion()\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q0808",
+    "topic": "Core Java & OOP",
+    "question": "Which annotation represents an advice to be executed after the method execution only if method exits by throwing an exception?",
+    "options": [
+      "A. @Before",
+      "B. @After",
+      "C. @Around",
+      "D. @AfterThrowing"
+    ],
+    "answer_index": 3,
+    "explanation": "Java annotations are declared with @interface. Elements inside look like method declarations but have no body; default values are set with default keyword. All annotations implicitly extend java.lang.annotation.Annotation and cannot have an explicit extends clause.",
+    "corrected": false
+  },
+  {
+    "id": "q0809",
+    "topic": "Core Java & OOP",
+    "question": "What attribute is added in the bean.xml to reduce or eliminate the need of <property> and <constructor-arg>?",
+    "options": [
+      "A. Autodiscovery",
+      "B. Autowire",
+      "C. Scope",
+      "D. Auto-detect"
+    ],
+    "answer_index": 1,
+    "explanation": "\"Autowire\" is correct. The distractors (\"Autodiscovery\" and \"Scope\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"Autowire\" in Core Java & OOP distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0810",
+    "topic": "TypeScript",
+    "question": "Which of the following examples summarizes Program to an interface rather than an implementation?",
+    "options": [
+      "A. Map m = new HashMap();",
+      "B. ArrayList list = new ArrayList();",
+      "C. ArrayList<Integer> = new ArrayList<Integer>();",
+      "D. String s = \"HelloWorld\";"
+    ],
+    "answer_index": 2,
+    "explanation": "ArrayList<Integer> = new ArrayList<Integer>(); is the correct answer. Review the question topic (Java OOP) for deeper context.",
+    "corrected": false
+  },
+  {
+    "id": "q0811",
+    "topic": "Spring Core",
+    "question": "If any of the beans implements the BeanPostProcessor interface, Spring will call which of these methods?",
+    "options": [
+      "A. processBeforeInitialization()",
+      "B. BeanPostProcessor()",
+      "C. postProcessInterface()",
+      "D. postProcessBeforeInitialization()"
+    ],
+    "answer_index": 3,
+    "explanation": "The correct answer is \"postProcessBeforeInitialization()\". The other options (\"processBeforeInitialization()\", \"BeanPostProcessor()\") do not accurately represent the concept described. This is a standard principle in Spring Core — recognising \"postProcessBeforeInitialization()\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q0812",
+    "topic": "Spring Core",
+    "question": "Which Collections elements does Spring support?",
+    "options": [
+      "A. List, hashmap, arraylist, and set",
+      "B. List, props, hashmaps, and arraylist",
+      "C. List, set, map, and props",
+      "D. Hashmaps, arraylist, list, and treemap"
+    ],
+    "answer_index": 2,
+    "explanation": "\"List, set, map, and props\" is correct. The distractors (\"List, hashmap, arraylist, and set\" and \"List, props, hashmaps, and arraylist\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"List, set, map, and props\" in Spring Core distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0813",
+    "topic": "Spring Boot",
+    "question": "What will be the result if you use Web-aware Spring Application Context scopes in a regular Spring IoC container?",
+    "options": [
+      "A. It will return nothing.",
+      "B. It will return a NullPointer Exception",
+      "C. It will return a IllegalStateException",
+      "D. It will work correctly."
+    ],
+    "answer_index": 0,
+    "explanation": "The output is \"It will return nothing.\". Trace through the execution step by step: variable assignments, method calls, and control flow all determine the final value. Pay attention to scope, type coercion, and execution order in Spring Boot.",
+    "corrected": false
+  },
+  {
+    "id": "q0814",
+    "topic": "Spring Boot",
+    "question": "Which Bean scopes are valid only in the context of a web-aware Spring Application Context?",
+    "options": [
+      "A. Singleton and Prototype",
+      "B. Session, Global Session, and Request",
+      "C. Singleton, Prototype, Request, and Session",
+      "D. Session, Singleton, and Global Session"
+    ],
+    "answer_index": 1,
+    "explanation": "\"Session, Global Session, and Request\" is correct. The distractors (\"Singleton and Prototype\" and \"Singleton, Prototype, Request, and Session\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"Session, Global Session, and Request\" in Spring Boot distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0815",
+    "topic": "Spring Core",
+    "question": "To use java.util.List, what is the Spring Collections element that you need?",
+    "options": [
+      "A. <list>",
+      "B. <List>",
+      "C. <lists>",
+      "D. util:list"
+    ],
+    "answer_index": 0,
+    "explanation": "The correct answer is \"<list>\". The other options (\"<List>\", \"<lists>\") do not accurately represent the concept described. This is a standard principle in Spring Core — recognising \"<list>\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q0816",
+    "topic": "HTML & CSS",
+    "question": "Which of the below are benefits of using DI?",
+    "options": [
+      "A. Tight coupling",
+      "B. Loose coupling",
+      "C. Easy testing",
+      "D. Removing run time error"
+    ],
+    "answer_index": 1,
+    "explanation": "\"Loose coupling\" is correct. The distractors (\"Tight coupling\" and \"Easy testing\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"Loose coupling\" in HTML & CSS distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0817",
+    "topic": "Spring Core",
+    "question": "What is the difference between ClassPathXMLApplicationContext and FilePathXMLApplicationContext?",
+    "options": [
+      "A. First one reads from application class path and second one reads from absolute file path.",
+      "B. First one reads from application class path and second one reads from relative file path.",
+      "C. First one reads from relative application class path and second one reads from absolute file path.",
+      "D. None of the above."
+    ],
+    "answer_index": 2,
+    "explanation": "'First one reads from relative application class path and second one reads from absolute file path.' is correct.",
+    "corrected": false
+  },
+  {
+    "id": "q0818",
+    "topic": "Core Java & OOP",
+    "question": "The Dependency Look up is a methodology where we get the resource after demand. Types of Dependency Look up include:",
+    "options": [
+      "A. Factory Method",
+      "B. JNDI Method",
+      "C. Key Word Method",
+      "D. All of the above"
+    ],
+    "answer_index": 3,
+    "explanation": "The correct answer is \"All of the above\". The other options (\"Factory Method\", \"JNDI Method\") do not accurately represent the concept described. This is a standard principle in Core Java & OOP — recognising \"All of the above\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q0819",
+    "topic": "Core Java & OOP",
+    "question": "Which of the following declarations of inner Beans are correct?",
+    "options": [
+      "A. A and B",
+      "B. B and C",
+      "C. B and D",
+      "D. A and D"
+    ],
+    "answer_index": 3,
+    "explanation": "\"A and D\" is correct. The distractors (\"A and B\" and \"B and C\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"A and D\" in Core Java & OOP distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0820",
+    "topic": "Spring Core",
+    "question": "When do you use Dependency Injection?",
+    "options": [
+      "A. DI is very useful for decoupling your system.",
+      "B. DI is most useful when you are aiming for code reuse.",
+      "C. DI helps in designing tightly coupled code.",
+      "D. DI does NOT help in unit testing the code."
+    ],
+    "answer_index": 0,
+    "explanation": "Dependency Injection (DI) is a design pattern where a class receives its dependencies from outside rather than creating them. This decouples components, making them easier to test and swap. Spring, Angular, and NestJS all use DI containers to manage object lifecycles.",
+    "corrected": false
+  },
+  {
+    "id": "q0821",
+    "topic": "Spring Core",
+    "question": "Which is the main component in Spring Web MVC?",
+    "options": [
+      "A. Faces Servlet",
+      "B. Action Servlet",
+      "C. View Renderer Servlet",
+      "D. Dispatcher Servlet"
+    ],
+    "answer_index": 3,
+    "explanation": "\"Dispatcher Servlet\" is correct. The distractors (\"Faces Servlet\" and \"Action Servlet\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"Dispatcher Servlet\" in Spring Core distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0822",
+    "topic": "Core Java & OOP",
+    "question": "What annotation wiring element is added to scan packages to find and register beans within the Application Context?",
+    "options": [
+      "A. <context:annotation-config/>",
+      "B. <context:annotation-scan/>",
+      "C. <context:component-config/>",
+      "D. <context:component-scan>"
+    ],
+    "answer_index": 3,
+    "explanation": "Java annotations are declared with @interface. Elements inside look like method declarations but have no body; default values are set with default keyword. All annotations implicitly extend java.lang.annotation.Annotation and cannot have an explicit extends clause.",
+    "corrected": false
+  },
+  {
+    "id": "q0823",
+    "topic": "Spring Core",
+    "question": "Spring handles object creation in order to be non-invasive. Can you identify which definition creates a spring-managed object?",
+    "options": [
+      "A. String myObj;",
+      "B. @Autowired private String myObj;",
+      "C. private String myObj = new String(\"spring\");",
+      "D. @Spring String myObj=null;"
+    ],
+    "answer_index": 2,
+    "explanation": "The correct answer is \"private String myObj = new String(\"spring\");\". The other options (\"String myObj;\", \"@Autowired private String myObj;\") do not accurately represent the concept described. This is a standard principle in Spring Core — recognising \"private String myObj = new String(\"spring\");\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q0824",
+    "topic": "Spring Core",
+    "question": "How many types of autowiring modes are supported in Spring?",
+    "options": [
+      "A. Three",
+      "B. Five",
+      "C. Six",
+      "D. Four"
+    ],
+    "answer_index": 1,
+    "explanation": "\"Five\" is correct. The distractors (\"Three\" and \"Six\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"Five\" in Spring Core distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0825",
+    "topic": "Spring Core",
+    "question": "The use of Autodiscovery and Autowire will reduce the amount of _________.",
+    "options": [
+      "A. Java code generated",
+      "B. Methods generated",
+      "C. XML Spring configurations",
+      "D. <bean> elements"
+    ],
+    "answer_index": 3,
+    "explanation": "The correct answer is \"<bean> elements\". The other options (\"Java code generated\", \"Methods generated\") do not accurately represent the concept described. This is a standard principle in Spring Core — recognising \"<bean> elements\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q0826",
+    "topic": "Spring Core",
+    "question": "Dependency Injection (DI) or Inversion of Control (IOC) is based on which Hollywood principle?",
+    "options": [
+      "A. Do not call us. We will call you.",
+      "B. Understand the problem first.",
+      "C. The customer is always right.",
+      "D. What you see is what you get."
+    ],
+    "answer_index": 0,
+    "explanation": "Dependency Injection (DI) is a design pattern where a class receives its dependencies from outside rather than creating them. This decouples components, making them easier to test and swap. Spring, Angular, and NestJS all use DI containers to manage object lifecycles.",
+    "corrected": false
+  },
+  {
+    "id": "q0827",
+    "topic": "Spring Core",
+    "question": "From where does the Spring container get its instructions?",
+    "options": [
+      "A. Properties File",
+      "B. Spring JARS",
+      "C. XML File",
+      "D. Annotations"
+    ],
+    "answer_index": 2,
+    "explanation": "The correct answer is \"XML File\". The other options (\"Properties File\", \"Spring JARS\") do not accurately represent the concept described. This is a standard principle in Spring Core — recognising \"XML File\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q0828",
+    "topic": "JavaScript",
+    "question": "The use of the prototype scope is recommended for ______ type of beans.",
+    "options": [
+      "A. Stateless",
+      "B. Stateful",
+      "C. Restless",
+      "D. Restful"
+    ],
+    "answer_index": 1,
+    "explanation": "The correct answer is \"Stateful\". The other options (\"Stateless\", \"Restless\") do not accurately represent the concept described. This is a standard principle in JavaScript — recognising \"Stateful\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q0829",
+    "topic": "Spring Boot",
+    "question": "Which is the alternative to create, load, and manage beans in a Spring Application?",
+    "options": [
+      "A. Application Factory",
+      "B. Context Factory",
+      "C. Bean Factory",
+      "D. Spring Bean Factory"
+    ],
+    "answer_index": 2,
+    "explanation": "\"Bean Factory\" is correct. The distractors (\"Application Factory\" and \"Context Factory\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"Bean Factory\" in Spring Boot distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0830",
+    "topic": "Spring Core",
+    "question": "Java-based configuration allows bean definition and Spring configuration to move out of ________.",
+    "options": [
+      "A. XML files",
+      "B. Java code",
+      "C. Property files",
+      "D. All of the above"
+    ],
+    "answer_index": 0,
+    "explanation": "The correct answer is \"XML files\". The other options (\"Java code\", \"Property files\") do not accurately represent the concept described. This is a standard principle in Spring Core — recognising \"XML files\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q0831",
+    "topic": "SQL & JDBC",
+    "question": "Which one of these statements about XML declaration of transaction manager bean is NOT true?",
+    "options": [
+      "A. The tx namespace provides JTA transaction manager declaration shortcut syntax.",
+      "B. The Id of the bean has to be transactionManager.",
+      "C. Depending on the application persistence technology, the HibernateTransactionManager or the DataSourceTransactionManager could be used as bean class.",
+      "D. A default transaction timeout could be given."
+    ],
+    "answer_index": 1,
+    "explanation": "\"The Id of the bean has to be transactionManager.\" is the odd one out in this context. The other options (\"The tx namespace provides JTA transaction manager declaration shortcut syntax.\" and \"Depending on the application persistence technology, the HibernateTransactionManager or the DataSourceTransactionManager could be used as bean class.\") all correctly describe or belong to the stated category. Knowing what is NOT part of a concept is as important as knowing what is.",
+    "corrected": false
+  },
+  {
+    "id": "q0832",
+    "topic": "Core Java & OOP",
+    "question": "Which one of the following is one of the challenges of Traditional Transaction Management?",
+    "options": [
+      "A. Transaction Management at Database Connection Level",
+      "B. Programmatic Management of Transactions",
+      "C. Error-Prone Connection Management",
+      "D. All of the above"
+    ],
+    "answer_index": 3,
+    "explanation": "\"All of the above\" is correct. The distractors (\"Transaction Management at Database Connection Level\" and \"Programmatic Management of Transactions\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"All of the above\" in Core Java & OOP distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0833",
+    "topic": "SQL & JDBC",
+    "question": "What does the JDBC Template use to connect to the database?",
+    "options": [
+      "A. A simple java bean with connection properties",
+      "B. A data source bean configuration",
+      "C. An XML with DB connection parameters",
+      "D. A JDBC connection object"
+    ],
+    "answer_index": 1,
+    "explanation": "The answer is \"A data source bean configuration\". This is the standard definition or correct identification for the concept described. Review the SQL & JDBC documentation to understand how \"A data source bean configuration\" fits into the broader context.",
+    "corrected": false
+  },
+  {
+    "id": "q0834",
+    "topic": "Core Java & OOP",
+    "question": "What is the use of Autodiscovery?",
+    "options": [
+      "A. Eliminate the use of the <property> element",
+      "B. Reduce the use of the <constructor-arg> element",
+      "C. Eliminate the use of the <props> element",
+      "D. Reduce the use of the <bean> element"
+    ],
+    "answer_index": 3,
+    "explanation": "The answer is \"Reduce the use of the <bean> element\". This is the standard definition or correct identification for the concept described. Review the Core Java & OOP documentation to understand how \"Reduce the use of the <bean> element\" fits into the broader context.",
+    "corrected": false
+  },
+  {
+    "id": "q0835",
+    "topic": "Spring Core",
+    "question": "Which of the following attributes are valid in a Spring bean definition?",
+    "options": [
+      "A. ID",
+      "B. Map",
+      "C. Set",
+      "D. Class"
+    ],
+    "answer_index": 0,
+    "explanation": "\"ID\" is correct. The distractors (\"Map\" and \"Set\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"ID\" in Spring Core distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0836",
+    "topic": "Spring Core",
+    "question": "What Spring Collection can be used to inject a collection of name-value pairs, where name and value can be of any type?",
+    "options": [
+      "A. <set>",
+      "B. <list>",
+      "C. <map>",
+      "D. <props>"
+    ],
+    "answer_index": 2,
+    "explanation": "\"<map>\" is correct. The distractors (\"<set>\" and \"<list>\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"<map>\" in Spring Core distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0837",
+    "topic": "Core Java & OOP",
+    "question": "Which attributes are applicable for an inner bean?",
+    "options": [
+      "A. Context, Parent",
+      "B. Id, Class",
+      "C. Class, Inner",
+      "D. Interface, Id"
+    ],
+    "answer_index": 2,
+    "explanation": "\"Class, Inner\" is correct. The distractors (\"Context, Parent\" and \"Id, Class\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"Class, Inner\" in Core Java & OOP distinguishes this from similar-sounding options.",
+    "corrected": false
+  },
+  {
+    "id": "q0838",
+    "topic": "Core Java & OOP",
+    "question": "To use bean definition template, you should add what attribute in the bean?",
+    "options": [
+      "A. abstract=\"true\"",
+      "B. interface=\"true\"",
+      "C. class=\"com.example.helloworld\"",
+      "D. public=\"true\""
+    ],
+    "answer_index": 0,
+    "explanation": "The correct answer is \"abstract=\"true\"\". The other options (\"interface=\"true\"\", \"class=\"com.example.helloworld\"\") do not accurately represent the concept described. This is a standard principle in Core Java & OOP — recognising \"abstract=\"true\"\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q0839",
+    "topic": "Core Java & OOP",
+    "question": "A collection value of the type java.util.Properties is defined by what element?",
+    "options": [
+      "A. <props>",
+      "B. <prop>",
+      "C. <properties>",
+      "D. <property>"
+    ],
+    "answer_index": 0,
+    "explanation": "The correct answer is \"<props>\". The other options (\"<prop>\", \"<properties>\") do not accurately represent the concept described. This is a standard principle in Core Java & OOP — recognising \"<props>\" in context is key to answering related exam questions.",
+    "corrected": false
+  },
+  {
+    "id": "q0840",
+    "topic": "Spring Core",
+    "question": "Which of the following tasks are performed by a JDBCTemplate?",
+    "options": [
+      "A. Execute SQL query",
+      "B. Execute Update statements",
+      "C. Execute a Java program",
+      "D. Execute stored procedure calls"
+    ],
+    "answer_index": 0,
+    "explanation": "JdbcTemplate wraps JDBC boilerplate — opening connections, handling exceptions, closing resources — so you only write the SQL and row-mapping logic. It works with any JDBC-compatible relational database (MySQL, PostgreSQL, Oracle). NoSQL databases do not use JDBC.",
+    "corrected": false
+  }
+]
