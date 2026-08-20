@@ -42,6 +42,12 @@ const App = (() => {
   let sliderLock     = false;
   let sliderState    = {};  // key -> percent
 
+  // Timer state
+  let timerEnabled  = false;
+  let timerTotal    = 0;   // total seconds for current session
+  let timerLeft     = 0;
+  let timerInterval = null;
+
   // ── Persistence ───────────────────────────────────────────
   const LS_KEY = 'devquiz_stats_v2';
 
@@ -196,43 +202,292 @@ const App = (() => {
     allQuestions = sets.flat();
     const corrected = allQuestions.filter(q => q.corrected).length;
     document.getElementById('stat-corrected').textContent = corrected;
+
+    // Blurb is derived from the data so it can't drift out of date.
+    const verified = allQuestions.filter(
+      q => q.trust === 'baseline' || q.trust === 'legit-source').length;
+    const topics = new Set(allQuestions.map(q => q.topic).filter(Boolean)).size;
+    document.getElementById('stat-topics').textContent = topics;
+    const blurb = document.getElementById('landing-blurb');
+    if (blurb) {
+      blurb.textContent =
+        `${allQuestions.length.toLocaleString()} questions across ${topics} topics — ` +
+        `${verified.toLocaleString()} traced to verified sources, ` +
+        `${(allQuestions.length - verified).toLocaleString()} of unverified origin.`;
+    }
   }
 
   // ── Set Grid ──────────────────────────────────────────────
+  const TRUST_META = {
+    'baseline':          { label: 'Verified sources', color: '#34d399', bg: 'rgba(16,185,129,.13)',  bd: 'rgba(16,185,129,.35)',  bar: '#059669,#34d399' },
+    'legit-source':      { label: 'Verified sources', color: '#34d399', bg: 'rgba(16,185,129,.13)',  bd: 'rgba(16,185,129,.35)',  bar: '#059669,#34d399' },
+    'unverified-source': { label: 'Unverified origin', color: '#fbbf24', bg: 'rgba(251,191,36,.13)', bd: 'rgba(251,191,36,.35)', bar: '#d97706,#fbbf24' },
+  };
+
   function buildSetGrid() {
     const grid = document.getElementById('set-grid');
-    grid.innerHTML = manifest.map((m, i) => {
-      const start = i * 120 + 1;
-      const end   = i * 120 + m.count;
-      return `
+    let running = 0;
+    let lastTrust = null;
+    const parts = [];
+
+    manifest.forEach((m, i) => {
+      const start = running + 1;
+      const end   = running + m.count;
+      running = end;
+
+      const t  = TRUST_META[m.trust] || null;
+      // Divider when the trust tier changes, so the boundary is obvious
+      if (t && m.trust !== lastTrust) {
+        const isFirst = lastTrust === null;
+        parts.push(`
+          <div style="grid-column:1/-1;display:flex;align-items:center;gap:10px;
+                      margin:${isFirst ? '0' : '18px'} 0 2px">
+            <span style="font-size:.72rem;font-weight:800;letter-spacing:.07em;
+                         text-transform:uppercase;color:${t.color}">${t.label}</span>
+            <span style="flex:1;height:1px;background:${t.bd}"></span>
+          </div>`);
+        lastTrust = m.trust;
+      }
+
+      const bar   = t ? t.bar : '#7c3aed,#a78bfa';
+      const badge = t
+        ? `<span style="background:${t.bg};border:1px solid ${t.bd};color:${t.color};
+                        padding:2px 8px;border-radius:20px;font-size:.64rem;font-weight:700;
+                        text-transform:uppercase;letter-spacing:.04em">${t.label}</span>`
+        : '';
+
+      parts.push(`
       <div class="card card-hover" style="padding:20px;cursor:pointer;position:relative;overflow:hidden"
            onclick="App.startExamSet(${i})">
-        <div style="position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,#7c3aed,#a78bfa)"></div>
-        <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:12px">
+        <div style="position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,${bar})"></div>
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:8px">
           <span style="font-size:1.25rem;font-weight:800;color:#fff">${m.name}</span>
           <span style="background:rgba(139,92,246,.15);border:1px solid rgba(139,92,246,.3);color:#a78bfa;
                        padding:3px 10px;border-radius:20px;font-size:.72rem;font-weight:700">
             ${m.count} Qs
           </span>
         </div>
+        <div style="margin-bottom:10px">${badge}</div>
         <p style="font-size:.78rem;color:var(--muted);margin-bottom:14px">Q${start}–Q${end}</p>
         <div style="font-size:.82rem;color:#a78bfa;font-weight:600;display:flex;align-items:center;gap:5px">
           Start <span>→</span>
         </div>
-      </div>`;
-    }).join('');
+      </div>`);
+    });
+
+    grid.innerHTML = parts.join('');
   }
 
   // ── Mode tabs ─────────────────────────────────────────────
   function showMode(m) {
     mode = m;
-    document.getElementById('panel-exam').style.display     = m === 'exam'     ? 'block' : 'none';
-    document.getElementById('panel-practice').style.display = m === 'practice' ? 'block' : 'none';
+    ['exam', 'practice', 'quarantine'].forEach(k => {
+      const panel = document.getElementById('panel-' + k);
+      const tab   = document.getElementById('tab-' + k);
+      if (panel) panel.style.display = (m === k) ? 'block' : 'none';
+      if (tab)   tab.className = 'tab-btn ' + (m === k ? 'active' : 'inactive');
+    });
+    if (m === 'quarantine') loadQuarantine();
+  }
 
-    const examTab  = document.getElementById('tab-exam');
-    const pracTab  = document.getElementById('tab-practice');
-    examTab.className  = 'tab-btn ' + (m === 'exam'     ? 'active' : 'inactive');
-    pracTab.className  = 'tab-btn ' + (m === 'practice' ? 'active' : 'inactive');
+  // ── Quarantine ────────────────────────────────────────────
+  let quarantineQs = null;
+  let quarView     = 'all';
+
+  // A quarantined question is "verified" when its source was confirmed in the
+  // user's own material (baseline or legit-source); "unverified" means it traced
+  // only to the anonymous IBM dump, or to nothing at all.
+  const isVerifiedQ = q => q.trust === 'baseline' || q.trust === 'legit-source';
+
+  function quarPool(kind) {
+    if (!quarantineQs) return [];
+    if (kind === 'verified')   return quarantineQs.filter(isVerifiedQ);
+    if (kind === 'unverified') return quarantineQs.filter(q => !isVerifiedQ(q));
+    return quarantineQs;
+  }
+
+  async function loadQuarantine() {
+    if (quarantineQs) return;
+    const listEl = document.getElementById('quar-list');
+    listEl.innerHTML = `<p style="color:var(--muted);font-size:.86rem">Loading…</p>`;
+    try {
+      const r = await fetch('quarantine.json');
+      if (!r.ok) throw new Error('not found');
+      quarantineQs = await r.json();
+    } catch (e) {
+      quarantineQs = [];
+      listEl.innerHTML = `<p style="color:var(--muted);font-size:.86rem">
+        No quarantine.json yet — run the repair pipeline to generate it.</p>`;
+      return;
+    }
+    const nVer = quarPool('verified').length;
+    const nUnv = quarPool('unverified').length;
+    document.getElementById('quar-verified-n').textContent   = nVer;
+    document.getElementById('quar-unverified-n').textContent = nUnv;
+    document.getElementById('quar-n-all').textContent        = `(${quarantineQs.length})`;
+    document.getElementById('quar-view-verified').textContent   = `Verified (${nVer})`;
+    document.getElementById('quar-view-unverified').textContent = `Unverified (${nUnv})`;
+    renderQuarantineList();
+  }
+
+  function setQuarantineView(v) {
+    quarView = v;
+    ['all', 'verified', 'unverified'].forEach(k => {
+      const b = document.getElementById('quar-view-' + k);
+      if (b) b.className = 'tab-btn ' + (k === v ? 'active' : 'inactive');
+    });
+    renderQuarantineList();
+  }
+
+  function renderQuarantineList() {
+    if (!quarantineQs) return;
+    const listEl = document.getElementById('quar-list');
+    const term = (document.getElementById('quar-filter').value || '').toLowerCase().trim();
+    const base = quarPool(quarView);
+    const rows = term
+      ? base.filter(q =>
+          (q.question || '').toLowerCase().includes(term) ||
+          (q.topic || '').toLowerCase().includes(term))
+      : base;
+
+    if (!rows.length) {
+      listEl.innerHTML = `<p style="color:var(--muted);font-size:.86rem">No matches.</p>`;
+      return;
+    }
+
+    listEl.innerHTML = '';
+    rows.slice(0, 300).forEach(q => {
+      const card = document.createElement('div');
+      card.className = 'card';
+      card.style.cssText = 'padding:16px 18px;margin-bottom:10px';
+
+      const head = document.createElement('div');
+      head.style.cssText = 'display:flex;justify-content:space-between;gap:10px;margin-bottom:8px;flex-wrap:wrap';
+      const topic = document.createElement('span');
+      topic.style.cssText = 'font-size:.7rem;font-weight:700;color:#a78bfa;text-transform:uppercase;letter-spacing:.05em';
+      topic.textContent = q.topic || 'General';
+      const badges = document.createElement('span');
+      badges.style.cssText = 'display:flex;gap:6px;flex-wrap:wrap';
+
+      // Source trust
+      const ver = isVerifiedQ(q);
+      const tb = document.createElement('span');
+      tb.style.cssText = `font-size:.64rem;font-weight:700;padding:2px 8px;border-radius:20px;
+        background:${ver ? 'rgba(16,185,129,.14)' : 'rgba(251,191,36,.14)'};
+        border:1px solid ${ver ? 'rgba(16,185,129,.4)' : 'rgba(251,191,36,.4)'};
+        color:${ver ? '#34d399' : '#fbbf24'}`;
+      tb.textContent = ver ? '✓ VERIFIED' : '⚠ UNVERIFIED';
+      badges.appendChild(tb);
+
+      // Damage type
+      const isMis = (q.quarantine_reason || '').startsWith('MISMATCHED');
+      const badge = document.createElement('span');
+      badge.style.cssText = `font-size:.64rem;font-weight:700;padding:2px 8px;border-radius:20px;
+        background:${isMis ? 'rgba(248,113,113,.15)' : 'rgba(139,92,246,.15)'};
+        border:1px solid ${isMis ? 'rgba(248,113,113,.4)' : 'rgba(139,92,246,.4)'};
+        color:${isMis ? '#f87171' : '#a78bfa'}`;
+      badge.textContent = isMis ? 'WRONG OPTIONS' : 'MISSING CONTENT';
+      badges.appendChild(badge);
+
+      head.appendChild(topic); head.appendChild(badges);
+      card.appendChild(head);
+
+      const stem = document.createElement('div');
+      stem.style.cssText = 'font-size:.9rem;font-weight:600;margin-bottom:8px;line-height:1.5;white-space:pre-wrap';
+      stem.textContent = (q.question || '').replace(/\[\/?CODE\]/g, '').trim();
+      card.appendChild(stem);
+
+      // Options render neutral — the answer stays hidden until revealed.
+      const rows = (q.options || []).map((o, i) => {
+        const row = document.createElement('div');
+        row.style.cssText = 'font-size:.82rem;padding:3px 0;color:var(--muted);font-weight:400';
+        row.textContent = '    ' + o;
+        card.appendChild(row);
+        return row;
+      });
+
+      // Per-card reveal — each card holds its own state.
+      const revealWrap = document.createElement('div');
+      revealWrap.style.cssText = 'margin-top:12px';
+      const revealBtn = document.createElement('button');
+      revealBtn.type = 'button';
+      revealBtn.style.cssText =
+        'background:rgba(16,185,129,.12);border:1px solid rgba(16,185,129,.38);color:#34d399;' +
+        'padding:6px 14px;border-radius:8px;font-size:.75rem;font-weight:700;cursor:pointer;' +
+        'font-family:inherit;transition:background .18s ease';
+      revealBtn.textContent = '👁 Reveal answer';
+      revealBtn.onmouseover = () => revealBtn.style.background = 'rgba(16,185,129,.24)';
+      revealBtn.onmouseout  = () => revealBtn.style.background = 'rgba(16,185,129,.12)';
+
+      const answerBox = document.createElement('div');
+      answerBox.style.display = 'none';
+      answerBox.style.cssText += 'margin-top:10px';
+
+      let revealed = false;
+      revealBtn.addEventListener('click', () => {
+        revealed = !revealed;
+        if (revealed) {
+          const ai = q.answer_index;
+          rows.forEach((row, i) => {
+            const ok = i === ai;
+            row.style.color      = ok ? '#34d399' : 'var(--muted)';
+            row.style.fontWeight = ok ? '700' : '400';
+            row.textContent = (ok ? '✓ ' : '    ') + (q.options[i] || '');
+          });
+          answerBox.innerHTML = '';
+          if (q.explanation) {
+            const exp = document.createElement('div');
+            exp.style.cssText = 'font-size:.78rem;color:var(--text);line-height:1.55;' +
+              'background:var(--surface2);border:1px solid var(--border);border-radius:8px;padding:10px 12px';
+            exp.textContent = q.explanation;
+            answerBox.appendChild(exp);
+          }
+          answerBox.style.display = 'block';
+          revealBtn.textContent = '🙈 Hide answer';
+        } else {
+          rows.forEach((row, i) => {
+            row.style.color      = 'var(--muted)';
+            row.style.fontWeight = '400';
+            row.textContent = '    ' + (q.options[i] || '');
+          });
+          answerBox.style.display = 'none';
+          revealBtn.textContent = '👁 Reveal answer';
+        }
+      });
+
+      revealWrap.appendChild(revealBtn);
+      card.appendChild(revealWrap);
+      card.appendChild(answerBox);
+
+      if (q.quarantine_reason) {
+        const why = document.createElement('div');
+        why.style.cssText = 'margin-top:10px;font-size:.75rem;color:#fbbf24;font-style:italic';
+        why.textContent = '⚠ ' + q.quarantine_reason;
+        card.appendChild(why);
+      }
+      listEl.appendChild(card);
+    });
+
+    if (rows.length > 300) {
+      const more = document.createElement('p');
+      more.style.cssText = 'color:var(--muted);font-size:.8rem;margin-top:10px';
+      more.textContent = `Showing first 300 of ${rows.length}. Use the filter to narrow.`;
+      listEl.appendChild(more);
+    }
+  }
+
+  async function startQuarantineQuiz(kind) {
+    await loadQuarantine();
+    const pool = quarPool(kind || 'all');
+    if (!pool.length) {
+      alert('No quarantined questions in that pool.');
+      return;
+    }
+    const label = kind === 'verified'   ? 'Quarantine · Verified'
+                : kind === 'unverified' ? 'Quarantine · Unverified'
+                : 'Quarantine';
+    sessionSetInfo = { file: 'quarantine.json', name: label, mode: 'practice' };
+    beginQuiz(shuffle(pool.slice()), 'practice', label);
   }
 
   // ── Practice Setup ────────────────────────────────────────
@@ -393,8 +648,67 @@ const App = (() => {
       return;
     }
 
+    timerEnabled = document.getElementById('timer-enable').checked;
+    timerTotal   = timerEnabled
+      ? Math.max(1, parseInt(document.getElementById('timer-minutes').value) || 30) * 60
+      : 0;
+
     sessionSetInfo = { name: 'Practice Session', file: null, mode: 'practice', sliderState: {...sliderState}, totalQ, srcVal };
     beginQuiz(shuffle(selected), 'practice', 'Practice Session');
+  }
+
+  // ── Timer ─────────────────────────────────────────────────
+  function toggleTimerConfig() {
+    const enabled = document.getElementById('timer-enable').checked;
+    document.getElementById('timer-config').style.display = enabled ? 'block' : 'none';
+  }
+
+  function startTimer(totalSeconds) {
+    clearInterval(timerInterval);
+    timerTotal = totalSeconds;
+    timerLeft  = totalSeconds;
+    updateTimerDisplay();
+    timerInterval = setInterval(() => {
+      timerLeft--;
+      if (timerLeft < 0) timerLeft = 0;
+      updateTimerDisplay();
+      if (timerLeft === 0) {
+        clearInterval(timerInterval);
+        timerInterval = null;
+        showSummary();
+      }
+    }, 1000);
+  }
+
+  function stopTimer() {
+    clearInterval(timerInterval);
+    timerInterval = null;
+    const el = document.getElementById('quiz-timer');
+    if (el) el.style.display = 'none';
+  }
+
+  function updateTimerDisplay() {
+    const el = document.getElementById('quiz-timer');
+    if (!el) return;
+    const mins = Math.floor(Math.max(0, timerLeft) / 60);
+    const secs = Math.max(0, timerLeft) % 60;
+    el.textContent = `⏱ ${String(mins).padStart(2,'0')}:${String(secs).padStart(2,'0')}`;
+    el.style.display = 'block';
+
+    const pct = timerTotal > 0 ? timerLeft / timerTotal : 1;
+    if (pct > 0.25) {
+      el.style.color        = '#34d399';
+      el.style.background   = 'rgba(52,211,153,.1)';
+      el.style.borderColor  = 'rgba(52,211,153,.3)';
+    } else if (pct > 0.1) {
+      el.style.color        = '#fbbf24';
+      el.style.background   = 'rgba(251,191,36,.1)';
+      el.style.borderColor  = 'rgba(251,191,36,.3)';
+    } else {
+      el.style.color        = '#f43f5e';
+      el.style.background   = 'rgba(244,63,94,.1)';
+      el.style.borderColor  = 'rgba(244,63,94,.35)';
+    }
   }
 
   // ── Core Quiz ─────────────────────────────────────────────
@@ -406,6 +720,11 @@ const App = (() => {
     mode       = quizMode;
     topicStats = {};
     TOPICS.forEach(t => { topicStats[t.key] = { correct: 0, total: 0 }; });
+
+    stopTimer();
+    if (timerEnabled && timerTotal > 0) {
+      startTimer(timerTotal);
+    }
 
     const badge = document.getElementById('quiz-mode-badge');
     if (quizMode === 'practice') {
@@ -433,13 +752,51 @@ const App = (() => {
     document.getElementById('quiz-score').textContent      = score;
     document.getElementById('quiz-answered').textContent   = answered;
 
-    // Topic badge
+    // Topic badge (+ synthesized marker so authored content is never disguised)
     const tb = document.getElementById('q-topic-badge');
-    tb.textContent  = q.topic || 'General';
+    const synthTag = q.synthesized ? '  ✎ authored'
+                   : q.options_synthesized ? '  ✎ options authored' : '';
+    tb.textContent  = (q.topic || 'General') + synthTag;
+    tb.title = q.synthesized
+      ? 'This question was written to replace one whose source content was lost.'
+      : q.options_synthesized
+        ? 'Question is from your material; the wrong options were authored.' : '';
     tb.style.cssText = `background:${tm.bg};border:1px solid ${tm.border};color:${tm.color};padding:3px 10px;border-radius:20px;font-size:.72rem;font-weight:700`;
 
-    // Question text
-    document.getElementById('question-text').textContent = q.question;
+    // Question text — render [CODE]...[/CODE] blocks as styled <pre>
+    const qtEl = document.getElementById('question-text');
+    qtEl.innerHTML = '';
+    const qText = q.question || '';
+    const codeBlockRx = /\[CODE\]([\s\S]*?)\[\/CODE\]/g;
+    if (codeBlockRx.test(qText)) {
+      codeBlockRx.lastIndex = 0;
+      let last = 0, match;
+      while ((match = codeBlockRx.exec(qText)) !== null) {
+        const before = qText.slice(last, match.index).trim();
+        if (before) {
+          const p = document.createElement('p');
+          p.style.cssText = 'margin:0 0 10px 0';
+          p.textContent = before;
+          qtEl.appendChild(p);
+        }
+        const pre = document.createElement('pre');
+        pre.style.cssText = 'background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:8px;padding:14px 16px;font-size:.78rem;overflow-x:auto;white-space:pre;margin:0 0 8px 0;line-height:1.6;font-family:"Fira Code","Cascadia Code",Consolas,monospace';
+        const code = document.createElement('code');
+        code.textContent = match[1].trim();
+        pre.appendChild(code);
+        qtEl.appendChild(pre);
+        last = match.index + match[0].length;
+      }
+      const after = qText.slice(last).trim();
+      if (after) {
+        const p = document.createElement('p');
+        p.style.cssText = 'margin:8px 0 0 0';
+        p.textContent = after;
+        qtEl.appendChild(p);
+      }
+    } else {
+      qtEl.textContent = qText;
+    }
 
     // Options — parse letter prefix
     const container = document.getElementById('options-container');
@@ -454,10 +811,16 @@ const App = (() => {
       const letter = match ? match[1].toUpperCase() : String.fromCharCode(65 + i);
       const text   = match ? match[2] : opt;
 
-      btn.innerHTML = `
-        <span class="opt-letter">${letter}</span>
-        <span style="flex:1">${text}</span>
-      `;
+      const letterSpan = document.createElement('span');
+      letterSpan.className = 'opt-letter';
+      letterSpan.textContent = letter;
+
+      const textSpan = document.createElement('span');
+      textSpan.style.flex = '1';
+      textSpan.textContent = text;
+
+      btn.appendChild(letterSpan);
+      btn.appendChild(textSpan);
       btn.addEventListener('click', () => selectAnswer(i));
       container.appendChild(btn);
     });
@@ -652,15 +1015,50 @@ const App = (() => {
   // ── Navigation & Modal ────────────────────────────────────
   function confirmExit() { document.getElementById('exit-modal').style.display = 'flex'; }
   function cancelExit()  { document.getElementById('exit-modal').style.display = 'none'; }
-  function forceExit()   { document.getElementById('exit-modal').style.display = 'none'; goHome(); }
-  function goHome()      { showScreen('landing'); showMode('exam'); renderWeakBanner(); }
+  function forceExit()   { document.getElementById('exit-modal').style.display = 'none'; stopTimer(); goHome(); }
+  function goHome()      { stopTimer(); showScreen('landing'); showMode('exam'); renderWeakBanner(); }
+
+  // Screen switching + browser history.
+  // The app is a single page, so without pushState the Back button leaves the
+  // site entirely (landing on whatever preceded it — often a 404). Each non-landing
+  // screen pushes an entry; popstate then walks back to landing in-app.
+  let suppressHistory = false;
 
   function showScreen(name) {
     ['landing','quiz','summary'].forEach(s =>
       document.getElementById('screen-' + s).classList.toggle('active', s === name)
     );
     window.scrollTo(0, 0);
+
+    if (suppressHistory) return;
+    const hash = name === 'landing' ? '#' : '#' + name;
+    if (name === 'landing') {
+      // Collapse back to the base entry rather than stacking more.
+      history.replaceState({ screen: 'landing' }, '', hash);
+    } else if (!history.state || history.state.screen !== name) {
+      history.pushState({ screen: name }, '', hash);
+    }
   }
+
+  // Back/forward: render the target screen without touching history again.
+  window.addEventListener('popstate', e => {
+    const target = (e.state && e.state.screen) || 'landing';
+    suppressHistory = true;
+    try {
+      if (target === 'landing') {
+        stopTimer();
+        const modal = document.getElementById('exit-modal');
+        if (modal) modal.style.display = 'none';
+        showScreen('landing');
+        showMode('exam');
+        renderWeakBanner();
+      } else {
+        showScreen(target);
+      }
+    } finally {
+      suppressHistory = false;
+    }
+  });
 
   // ── Utils ─────────────────────────────────────────────────
   function shuffle(arr) {
@@ -673,7 +1071,12 @@ const App = (() => {
   }
 
   // ── Init ──────────────────────────────────────────────────
-  window.addEventListener('DOMContentLoaded', init);
+  window.addEventListener('DOMContentLoaded', () => {
+    // Seed a landing entry so the first Back press has somewhere in-app to go,
+    // and never restore straight into a stale #quiz on reload.
+    history.replaceState({ screen: 'landing' }, '', '#');
+    init();
+  });
 
   return {
     showMode, startExamSet, startPractice,
@@ -681,5 +1084,7 @@ const App = (() => {
     nextQuestion, retrySet, goHome,
     confirmExit, cancelExit, forceExit,
     drillWeakSpots, resetStats,
+    toggleTimerConfig,
+    startQuarantineQuiz, renderQuarantineList, setQuarantineView,
   };
 })();

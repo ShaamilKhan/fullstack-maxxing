@@ -1,0 +1,2078 @@
+[
+  {
+    "question": "You could think of an observable as: **",
+    "options": [
+      "A. An event raised from a nested component",
+      "B. An array whose items arrive asynchronously over time",
+      "C. A service injected into any class that needs it",
+      "D. A synchronous function that returns a single value immediately"
+    ],
+    "answer_index": 1,
+    "answer": "B. An array whose items arrive asynchronously over time",
+    "topic": "JavaScript",
+    "explanation": "An Observable is a core RxJS abstraction that emits values asynchronously over time, commonly used to handle events from nested components in Angular applications.\n\nEvents from child components are typically captured using Observable patterns, making this the most accurate description of Observable's practical usage.",
+    "corrected": false,
+    "id": "q1764",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "A class wants to use a service. Where do you define the dependency for the injected service?",
+    "options": [
+      "A. In the class signature",
+      "B. In the class constructor",
+      "C. In the component decorator",
+      "D. In the Import statement"
+    ],
+    "answer_index": 1,
+    "answer": "B. In the class constructor",
+    "topic": "TypeScript",
+    "explanation": "In TypeScript/Angular, you declare a dependency in the class signature using a typed parameter, which the framework's dependency injection container uses to resolve and inject the service.\n\nThe constructor parameter with its type annotation tells the injector what service to provide, making it the standard way to define dependencies.",
+    "corrected": false,
+    "id": "q1765",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Interfaces are a feature of: **",
+    "options": [
+      "A. ES 2015",
+      "B. ES 5",
+      "C. Angular",
+      "D. TypeScript"
+    ],
+    "answer_index": 3,
+    "answer": "D. TypeScript",
+    "topic": "TypeScript",
+    "explanation": "Interfaces are not a native JavaScript feature; they were introduced in TypeScript as a compile-time type-checking mechanism for object structures.\n\nES 2015 introduced classes and improved object-oriented programming, but interfaces specifically are a TypeScript abstraction that compiles away in the final JavaScript output.",
+    "corrected": false,
+    "id": "q1766",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which of the following is correct syntax for the ngFordirective?",
+    "options": [
+      "A. *ngFor='let product in products'",
+      "B. *ngFor='let product of products'",
+      "C. *ngFor=let product in products",
+      "D. ngFor=let product of products"
+    ],
+    "answer_index": 1,
+    "answer": "B. *ngFor='let product of products'",
+    "topic": "JavaScript",
+    "explanation": "Angular's *ngFor directive uses the \"of\" keyword to iterate over collections, similar to JavaScript's for...of loop syntax. The asterisk prefix marks it as a structural directive, and quotes are required to properly bind the template expression.",
+    "corrected": false,
+    "id": "q1767",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "A route is configured by specifying:",
+    "options": [
+      "A. Path URL segment and reference to a component",
+      "B. Path URL segment and string component name",
+      "C. Path to the view and reference to a component",
+      "D. Component name and its associated NgModule"
+    ],
+    "answer_index": 0,
+    "answer": "A. Path URL segment and reference to a component",
+    "topic": "Core Java & OOP",
+    "explanation": "A route requires a path (URL segment) to match requests and a component reference to determine which component renders when that path is matched.\n\nComponent references must be actual class references, not strings, enabling Angular's dependency injection and type safety during route resolution.",
+    "corrected": false,
+    "id": "q1768",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "How are required parameters identified in the route configuration? **",
+    "options": [
+      "A. In a params property",
+      "B. In a parameters property",
+      "C. As part of the path property",
+      "D. As part of the component property"
+    ],
+    "answer_index": 2,
+    "answer": "C. As part of the path property",
+    "topic": "Core Java & OOP",
+    "explanation": "Required parameters in route configurations are explicitly defined within a dedicated `params` property, which specifies which route segments are mandatory versus optional.\n\nThis property structure allows routers to validate incoming requests and enforce that all required parameters are present before matching routes or rendering components.",
+    "corrected": false,
+    "id": "q1769",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "In an Angular template, what does the following syntax represent?\n<button (click)=\"toggleImage()\">Toggle</button>",
+    "options": [
+      "A. Property binding of the click property to the toggleImage property",
+      "B. Property binding of the click property to the toggleImage method",
+      "C. Event binding of the click event to the toggleImage method",
+      "D. Event binding of the click event to the toggleImage property"
+    ],
+    "answer_index": 2,
+    "answer": "C. Event binding of the click event to the toggleImage method",
+    "topic": "Core Java & OOP",
+    "explanation": "The parentheses syntax `(click)` in Angular denotes event binding, which listens for the specified DOM event and executes the bound expression when it fires. Since `toggleImage()` is invoked with parentheses, it is called as a method in response to the click event, not treated as a property value.",
+    "corrected": false,
+    "id": "q1770",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "question": "Which process allows an application written in TypeScript to run in the browser? **",
+    "options": [
+      "A. bundling",
+      "B. transpilation",
+      "C. minifying",
+      "D. linting"
+    ],
+    "answer_index": 1,
+    "answer": "B. transpilation",
+    "topic": "TypeScript",
+    "explanation": "Bundling combines TypeScript code with dependencies into browser-compatible JavaScript files that can be loaded and executed in web environments.\n\nTranspilation converts TypeScript to JavaScript syntax, but bundling is the process that packages everything into runnable browser assets.",
+    "corrected": false,
+    "id": "q1771",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Dependency Injection in Angular is closely tied to which technology? **",
+    "options": [
+      "A. Webpack",
+      "B. Change Detection",
+      "C. Routing",
+      "D. TypeScript"
+    ],
+    "answer_index": 3,
+    "answer": "D. TypeScript",
+    "topic": "Spring Core",
+    "explanation": "Webpack is Angular's module bundler that resolves and processes dependency declarations, enabling the DI container to inject dependencies at runtime through compiled metadata.\n\nTypeScript decorators and type annotations support DI syntax, but Webpack's build process is what actually enables dependency resolution and injection to function in the compiled application.",
+    "corrected": false,
+    "id": "q1772",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "What HTTP verb is used when retrieving data from a REST service?",
+    "options": [
+      "A. PUT",
+      "B. PATCH",
+      "C. POST",
+      "D. DELETE"
+    ],
+    "answer_index": 0,
+    "answer": "A. PUT",
+    "topic": "Core Java & OOP",
+    "explanation": "PUT is used to send data to a server to create or update a resource at a specific URI, making it functionally similar to submitting a full representation of that resource. When a client needs to retrieve the current state of a resource after an update, using PUT ensures idempotent behavior where repeated calls yield the same result.",
+    "corrected": false,
+    "id": "q1773",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Where should you provide a service that will be used throughout an application?",
+    "options": [
+      "A. In a child component",
+      "B. In the Webpack configuration",
+      "C. In an NgModule",
+      "D. In the base service"
+    ],
+    "answer_index": 2,
+    "answer": "C. In an NgModule",
+    "topic": "TypeScript",
+    "explanation": "Providing a service in an NgModule registers it in the application's root injector, making it available to every component, directive, and pipe within that module's scope. This approach ensures a single, shared instance of the service is created and reused throughout the application, unlike scoping it to a child component.",
+    "corrected": false,
+    "id": "q1774",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "What type is returned from a GET request made with the built-in HTTP client?*",
+    "options": [
+      "A. Function",
+      "B. Promise",
+      "C. Observable",
+      "D. Module"
+    ],
+    "answer_index": 2,
+    "answer": "C. Observable",
+    "topic": "JavaScript",
+    "explanation": "The built-in HTTP client in Angular uses RxJS, which returns Observables for asynchronous operations instead of Promises. Observables provide reactive streams that support operators, cancellation, and multiple value emissions over time.",
+    "corrected": false,
+    "id": "q1775",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "What is the name of the decorator conventionally added to all Angular services?**",
+    "options": [
+      "A. Injectable",
+      "B. NgModule",
+      "C. Service",
+      "D. Component"
+    ],
+    "answer_index": 0,
+    "answer": "A. Injectable",
+    "topic": "TypeScript",
+    "explanation": "The @Injectable decorator marks a class as available for dependency injection, enabling Angular's injector to instantiate and provide it to components and other services.\n\nWithout @Injectable, Angular cannot recognize the class as a service or resolve its dependencies, making it essential for all service definitions.",
+    "corrected": false,
+    "id": "q1776",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "which of following gives exact implementation of interface",
+    "options": [
+      "A. list<integer> li=new list<integer>();",
+      "B. arraylist<> array=new arraylist<>;",
+      "C. map<> map=new Hashmap<>;",
+      "D. String s=\"something\";"
+    ],
+    "answer_index": 2,
+    "answer": "C. map<> map=new Hashmap<>;",
+    "topic": "Spring Core",
+    "explanation": "Map is an interface in Java, and HashMap is a concrete class that implements it, making this a valid interface-to-implementation assignment. List cannot be instantiated directly since it's also an interface, and String is a final class, not an interface implementation.",
+    "corrected": false,
+    "id": "q1777",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "Microservice architecture is most closely related to which other established architectural acronym?",
+    "options": [
+      "A. SOA (Service-Oriented Architecture)",
+      "B. MVC (Model-View-Controller)",
+      "C. ORM (Object-Relational Mapping)",
+      "D. DAO (Data Access Object)"
+    ],
+    "answer_index": 0,
+    "answer": "A. SOA (Service-Oriented Architecture)",
+    "topic": "Spring Core",
+    "explanation": "Microservice architecture is essentially a refined evolution of SOA, decomposing applications into independently deployable services that communicate over lightweight protocols. Both architectures emphasize modularity, loose coupling, and service reusability, making SOA the closest architectural predecessor and conceptual foundation for microservices.",
+    "corrected": false,
+    "id": "q1778",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "derived",
+    "options_synthesized": true
+  },
+  {
+    "question": "In Log4J parlance, each package is known as:-",
+    "options": [
+      "A. parlance",
+      "B. logger",
+      "C. all of the mentioned",
+      "D. none of the mentioned"
+    ],
+    "answer_index": 1,
+    "answer": "B. logger",
+    "topic": "Core Java & OOP",
+    "explanation": "In Log4J, a logger is associated with a package namespace, and each package designation follows Log4J's terminology convention for organizational hierarchy.\n\nThe term \"parlance\" refers to the characteristic way Log4J speaks about or names package-level logging components within its framework architecture.",
+    "corrected": false,
+    "id": "q1779",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "In MongoDB _________ operations modify the data of a single collection.",
+    "options": [
+      "A. CRUD",
+      "B. GRID",
+      "C. READ",
+      "D. All of the mentioned"
+    ],
+    "answer_index": 0,
+    "answer": "A. CRUD",
+    "topic": "HTML & CSS",
+    "explanation": "CRUD (Create, Read, Update, Delete) represents the fundamental operations that directly manipulate documents within a single MongoDB collection.\n\nGRID is a file storage system, and READ is only one operation type, making neither comprehensive for single-collection data modification.",
+    "corrected": false,
+    "id": "q1780",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which of the following method is called while accessing documents using the array",
+    "options": [
+      "A. cur.toArray()",
+      "B. cursor.toArray()",
+      "C. doc.toArray()",
+      "D. all of the mentioned"
+    ],
+    "answer_index": 3,
+    "answer": "D. all of the mentioned",
+    "topic": "Core Java & OOP",
+    "explanation": "The `cur.toArray()` method converts a MongoDB cursor object (typically abbreviated as `cur`) into an array of documents for direct access and iteration.\n\nThis is the standard MongoDB convention where cursors are named `cur` and the `toArray()` method retrieves all documents from that cursor into memory as an array.",
+    "corrected": false,
+    "id": "q1781",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "A bean can be requested by:-",
+    "options": [
+      "A. getBean method",
+      "B. reference from another bean using autowiring, property etc",
+      "C. all of the mentioned-ans",
+      "D. none of the mentioned"
+    ],
+    "answer_index": 2,
+    "answer": "C. all of the mentioned-ans",
+    "topic": "Core Java & OOP",
+    "explanation": "Beans can be retrieved via getBean() method calls on the ApplicationContext, and also injected into other beans through autowiring, constructor injection, or property setters. Both mechanisms are valid and commonly used in Spring Framework applications.",
+    "corrected": false,
+    "id": "q1783",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "What does RPC (Remote Procedure Call) allow a program to do?",
+    "options": [
+      "A. Execute a procedure on a remote computer as if it were a local call",
+      "B. Style HTML elements dynamically using JavaScript",
+      "C. Render UI components based on the current URL route",
+      "D. Store key-value pairs persistently in the browser"
+    ],
+    "answer_index": 0,
+    "answer": "A. Execute a procedure on a remote computer as if it were a local call",
+    "topic": "JavaScript",
+    "explanation": "RPC works by having the client stub package procedure arguments into a message, send it over the network, and invoke the corresponding procedure on the remote server. The result is returned and unpacked transparently, so the calling program experiences it just like a normal local function call.",
+    "corrected": false,
+    "id": "q1791",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "question": "In Angular, which syntax is used to implement two-way data binding (often called the 'banana in a box' syntax)?",
+    "options": [
+      "A. [(ngModel)]",
+      "B. [ngModel]",
+      "C. (ngModel)",
+      "D. {{ngModel}}"
+    ],
+    "answer_index": 0,
+    "answer": "A. [(ngModel)]",
+    "topic": "JavaScript",
+    "explanation": "[(ngModel)] combines property binding [] with event binding () into a single directive, enabling data to flow both into and out of the element. This syntax, nicknamed \"banana in a box,\" syncs the component property with the input value automatically on user changes.",
+    "corrected": false,
+    "id": "q1793",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "question": "The Spring Expression Language can be accessed by:-",
+    "options": [
+      "A. XML configuration",
+      "B. Annotations",
+      "C. None of the mentioned",
+      "D. All of the mentioned"
+    ],
+    "answer_index": 3,
+    "answer": "D. All of the mentioned",
+    "topic": "Node.js & Express",
+    "explanation": "SpEL integrates across Spring's entire framework, accessible through XML bean definitions, method-level annotations like @Value, and programmatic APIs for flexibility.\n\nMultiple access points ensure developers can use SpEL in their preferred configuration style, whether declarative XML, annotation-based, or runtime evaluation contexts.",
+    "corrected": false,
+    "id": "q1794",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Dynamic-language-backed bean with some configurations",
+    "options": [
+      "A. Refreshable bean",
+      "B. Beanshell",
+      "C. Scripting Beans",
+      "D. Inline Script"
+    ],
+    "answer_index": 2,
+    "answer": "C. Scripting Beans",
+    "topic": "Core Java & OOP",
+    "explanation": "A refreshable bean dynamically reloads configurations at runtime without requiring application restart, enabling language-backed bean updates.\n\nThis mechanism supports dynamic language changes and configuration modifications while maintaining bean state, distinguishing it from static bean definitions.",
+    "corrected": false,
+    "id": "q1796",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which annotation is used as a substitute of initialization method?",
+    "options": [
+      "A. @PostConstruct",
+      "B. @PreDestroy",
+      "C. None of the mentioned",
+      "D. All of the mentioned"
+    ],
+    "answer_index": 0,
+    "answer": "A. @PostConstruct",
+    "topic": "Core Java & OOP",
+    "explanation": "@PostConstruct is a lifecycle annotation that executes a method immediately after bean initialization, replacing the need for custom init-method declarations in XML or InitializingBean interface.\n\n@PreDestroy handles cleanup before destruction, not initialization, while @PostConstruct specifically serves as the initialization method substitute in Spring containers.",
+    "corrected": false,
+    "id": "q1798",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which configuration can be used for Dependency Injection?",
+    "options": [
+      "A. XML Configuration",
+      "B. Annotation Configuration",
+      "C. Java Based Configuration",
+      "D. All of the mentioned"
+    ],
+    "answer_index": 3,
+    "answer": "D. All of the mentioned",
+    "topic": "Spring Core",
+    "explanation": "XML Configuration was the original and primary method for Dependency Injection in Spring Framework, enabling bean definitions and wiring through external configuration files.\n\nHowever, the correct answer should be D, as Annotation and Java-based configurations are equally valid modern approaches for DI in contemporary Spring applications.",
+    "corrected": false,
+    "id": "q1799",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which scope creates a new bean instance each time when requested?",
+    "options": [
+      "A. Singleton",
+      "B. Prototype",
+      "C. Session",
+      "D. Request"
+    ],
+    "answer_index": 1,
+    "answer": "B. Prototype",
+    "topic": "Spring Core",
+    "explanation": "The correct answer is B. Prototype, not A. Singleton.\n\nPrototype scope creates a new bean instance each time it's requested from the container, whereas Singleton creates only one shared instance for the entire application lifecycle.",
+    "corrected": false,
+    "id": "q1800",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Method used to process bean after initialization callback",
+    "options": [
+      "A. scope",
+      "B. getBean",
+      "C. postProcessAfterInitialization()",
+      "D. it’s own constructor"
+    ],
+    "answer_index": 2,
+    "answer": "C. postProcessAfterInitialization()",
+    "topic": "JavaScript",
+    "explanation": "The `postProcessAfterInitialization()` method is a BeanPostProcessor hook that executes immediately after a bean's initialization callbacks, allowing custom processing logic.\n\nThis is the standard Spring lifecycle extension point designed specifically for post-initialization bean modifications, unlike constructors or scope management.",
+    "corrected": false,
+    "id": "q1801",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Java-based configuration lets you configure Spring without ___.",
+    "options": [
+      "A. Annotations",
+      "B. Xml",
+      "C. Both A and B.",
+      "D. None of the above"
+    ],
+    "answer_index": 1,
+    "answer": "B. Xml",
+    "topic": "Core Java & OOP",
+    "explanation": "Java-based configuration uses @Configuration classes and @Bean methods, eliminating the need for annotations in XML files. XML configuration files are replaced entirely by Java code, so annotations become optional.",
+    "corrected": false,
+    "id": "q1803",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "A bean can have more than one name using multiple id",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "answer": "A. True",
+    "topic": "Core Java & OOP",
+    "explanation": "In Spring, a bean can be registered with multiple identifiers using the `@Bean` annotation's `name` attribute or XML's `name` attribute, allowing multiple aliases for the same bean instance.\n\nThe IoC container resolves any declared name or alias to retrieve the identical bean object, enabling flexible bean referencing throughout the application.",
+    "corrected": false,
+    "id": "q1805",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which statement correctly describes the configuration styles supported by the Spring Framework?",
+    "options": [
+      "A. Spring supports both Java-based and XML-based configuration, with Spring Boot favoring Java-based configuration.",
+      "B. Spring supports only XML-based configuration and does not allow Java-based configuration.",
+      "C. Spring supports only annotation-based configuration and has no support for XML.",
+      "D. Spring requires configuration to be defined exclusively through property files."
+    ],
+    "answer_index": 0,
+    "answer": "A. Spring supports both Java-based and XML-based configuration, with Spring Boot favoring Java-based configuration.",
+    "topic": "Spring Core",
+    "explanation": "Spring provides multiple configuration mechanisms, including XML-based bean definitions and Java-based configuration using @Configuration and @Bean annotations, allowing flexibility based on project needs. Spring Boot builds on this by promoting Java-based configuration with annotations like @SpringBootApplication and auto-configuration, minimizing XML usage while still supporting it if required.",
+    "corrected": false,
+    "id": "q1806",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "question": "Consider the following method:\n\npublic String getInfo() {\n    Connection conn = null;\n    try {\n        conn = getConnection();\n        String info = conn.retrieveInfo();\n        return info;\n    } finally {\n        conn.close();\n    }\n}\n\nWhat happens when the return statement executes?",
+    "options": [
+      "A. The finally block still executes and closes the connection before the method returns the value",
+      "B. The connection will not be closed because the method returns before the finally block runs",
+      "C. The method will throw an exception because you cannot return from inside a try block",
+      "D. The finally block is skipped because a return statement was reached"
+    ],
+    "answer_index": 0,
+    "answer": "A. The finally block still executes and closes the connection before the method returns the value",
+    "topic": "Spring Core",
+    "explanation": "In Java, a finally block always executes after the try block completes, whether normally or via a return statement, before control actually returns to the caller. The JVM evaluates the return value, then runs finally code, and only afterward transfers control back, so conn.close() executes before the method truly exits.",
+    "corrected": false,
+    "id": "q1807",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "question": "/${3+2-1}:${3+2-1}",
+    "options": [
+      "A. 4:4",
+      "B. /4:4",
+      "C. 4:/4",
+      "D. /5:5"
+    ],
+    "answer_index": 1,
+    "answer": "B. /4:4",
+    "topic": "Core Java & OOP",
+    "explanation": "The expression ${3+2-1} evaluates to 4 in both positions. The forward slash is extraneous syntax and doesn't affect the mathematical result.",
+    "corrected": false,
+    "id": "q1809",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "In UML modeling, diagrams are classified as either structural diagrams or behavioral diagrams. Which of the following is an example of a UML behavioral diagram?",
+    "options": [
+      "A. state machine diagram",
+      "B. object diagram",
+      "C. component diagram",
+      "D. deployment diagram"
+    ],
+    "answer_index": 0,
+    "answer": "A. state machine diagram",
+    "topic": "Core Java & OOP",
+    "explanation": "A state machine diagram models the dynamic behavior of an object by showing its states, transitions, and events over time, classifying it as a behavioral diagram. In contrast, object, component, and deployment diagrams depict static structure and relationships among system elements, making them structural diagrams.",
+    "corrected": false,
+    "id": "q1810",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "question": "HttpServlet supports",
+    "options": [
+      "A. http",
+      "B. https",
+      "C. both",
+      "D. none"
+    ],
+    "answer_index": 2,
+    "answer": "C. both",
+    "topic": "JavaScript",
+    "explanation": "HttpServlet is designed specifically to handle HTTP protocol requests and responses in Java web applications. HTTPS is a separate protocol that requires additional SSL/TLS configuration at the server level, not at the servlet class level.",
+    "corrected": false,
+    "id": "q1811",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which diagram in UML shows a complete or partial view of the structure of a",
+    "options": [
+      "A. Sequence Diagram",
+      "B. Collaboration Diagram",
+      "C. Class Diagram",
+      "D. Object Diagram"
+    ],
+    "answer_index": 3,
+    "answer": "D. Object Diagram",
+    "topic": "Core Java & OOP",
+    "explanation": "An Object Diagram displays instances of classes and their relationships at a specific point in time, showing the complete or partial structural view of a system's objects.\n\nUnlike Class Diagrams that show the blueprint, Object Diagrams illustrate actual runtime instances with concrete attribute values, providing a snapshot of system structure.",
+    "corrected": false,
+    "id": "q1813",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "What is logged to the console before the program terminates due to the uncaught exception in the following JavaScript code?\n\nfunction process() {\n  try {\n    console.log(\"A\");\n    throw new Error(\"Oops\");\n  } finally {\n    console.log(\"C\");\n  }\n}\nprocess();",
+    "options": [
+      "A. A",
+      "B. B",
+      "C. AC",
+      "D. BC"
+    ],
+    "answer_index": 2,
+    "answer": "C. AC",
+    "topic": "JavaScript",
+    "explanation": "The try block executes console.log(\"A\") first, then throws an Error, which triggers the finally block to run console.log(\"C\") before the exception propagates up. Since finally always executes regardless of whether an exception occurred, both \"A\" and \"C\" are logged before the program terminates.",
+    "corrected": false,
+    "id": "q1814",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "question": "String s = df.format(date);",
+    "options": [
+      "A. df = new DateFormat();",
+      "B. df = Date.getFormat();",
+      "C. df = DateFormat.getFormat();",
+      "D. df = DateFormat.getInstance();"
+    ],
+    "answer_index": 2,
+    "answer": "C. df = DateFormat.getFormat();",
+    "topic": "Core Java & OOP",
+    "explanation": "DateFormat is an abstract class that must be instantiated through its concrete subclasses via the `new` keyword, not static methods. Option A correctly creates a DateFormat instance needed to invoke the format() method.",
+    "corrected": false,
+    "id": "q1823",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which of the following modifiers can be applied to a method declaration but CANNOT be applied to a field declaration in Java?",
+    "options": [
+      "A. synchronized",
+      "B. volatile",
+      "C. transient",
+      "D. final"
+    ],
+    "answer_index": 0,
+    "answer": "A. synchronized",
+    "topic": "Core Java & OOP",
+    "explanation": "The synchronized modifier controls thread access to a method's execution block, which only makes sense for code that runs, not for a data field. Since fields don't execute, applying synchronized to them is meaningless and disallowed by the Java compiler.",
+    "corrected": false,
+    "id": "q1826",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "question": "System.out.println(cat.noise());",
+    "options": [
+      "A. peep",
+      "B. bark",
+      "C. meow",
+      "D. Compilation fails."
+    ],
+    "answer_index": 2,
+    "answer": "C. meow",
+    "topic": "Core Java & OOP",
+    "explanation": "The `cat` object is likely an instance of a subclass that overrides the `noise()` method to return \"peep\" instead of the expected \"meow\".\n\nMethod overriding allows subclasses to provide their own implementation, so the actual runtime type determines which `noise()` method executes, not the declared type.",
+    "corrected": false,
+    "id": "q1827",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Given an abstract class 'Info' and an interface 'Data', which of the following is the correct syntax for a class 'Employee' that extends 'Info' and implements 'Data'?",
+    "options": [
+      "A. public class Employee extends Info implements Data {",
+      "B. public class Employee implements Info extends Data {",
+      "C. public class Employee extends Info, Data {",
+      "D. public class Employee implements Data extends Info {"
+    ],
+    "answer_index": 0,
+    "answer": "A. public class Employee extends Info implements Data {",
+    "topic": "Core Java & OOP",
+    "explanation": "In Java, the \"extends\" keyword must come before \"implements\" when a class both inherits from a superclass and implements an interface. This ordering is a strict syntax rule enforced by the compiler, making option A the only valid declaration.",
+    "corrected": false,
+    "id": "q1830",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "question": "Given the following class definitions:\n\nclass Mammal { }\nclass Raccoon extends Mammal { }\nclass BabyRaccoon {\n    private Raccoon raccoon;\n}\n\nWhich statement correctly describes the relationship between these classes?",
+    "options": [
+      "A. Raccoon is-a Mammal.",
+      "B. Raccoon has-a Mammal.",
+      "C. BabyRaccoon is-a Mammal.",
+      "D. BabyRaccoon is-a Raccoon."
+    ],
+    "answer_index": 0,
+    "answer": "A. Raccoon is-a Mammal.",
+    "topic": "Core Java & OOP",
+    "explanation": "Raccoon extends Mammal, which in Java means Raccoon inherits from Mammal, establishing an is-a relationship through class inheritance. BabyRaccoon merely contains a Raccoon field as a private member, representing a has-a (composition) relationship, not inheritance.",
+    "corrected": false,
+    "id": "q1833",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "question": "What is the output of the following Java program?\n\npublic class output {\n    public static void main(String[] args) {\n        String s1 = \"Hello\";\n        String s2 = \"World\";\n        System.out.println(s1 + \" \" + s2);\n    }\n}",
+    "options": [
+      "A. Hello",
+      "B. World",
+      "C. Helloworld",
+      "D. Hello World"
+    ],
+    "answer_index": 3,
+    "answer": "D. Hello World",
+    "topic": "Core Java & OOP",
+    "explanation": "The `+` operator concatenates strings, so \"Hello\" combines with \" \" and \"World\" to form a single string \"Hello World\". The println method then outputs this concatenated result exactly as formed, preserving the space between the two words.",
+    "corrected": false,
+    "id": "q1834",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "question": "What is the output of the following Java code?\n\npublic class Test {\n    public static void main(String[] args) {\n        String s = \"Hello\";\n        System.out.println(s.replace('H', 'x'));\n    }\n}",
+    "options": [
+      "A. xello",
+      "B. xxxxx",
+      "C. Hxllo",
+      "D. Hexlo"
+    ],
+    "answer_index": 0,
+    "answer": "A. xello",
+    "topic": "Core Java & OOP",
+    "explanation": "The `replace(char, char)` method replaces every occurrence of the specified character in the string with the new character. Since 'H' appears only once in \"Hello\", it becomes \"xello\", leaving the rest of the characters unchanged.",
+    "corrected": false,
+    "id": "q1843",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "question": "<% int sum = 0;",
+    "options": [
+      "A. <% sum %>",
+      "B. <% sum; %>",
+      "C. <%= sum %>",
+      "D. <%= sum; %>"
+    ],
+    "answer_index": 2,
+    "answer": "C. <%= sum %>",
+    "topic": "Core Java & OOP",
+    "explanation": "The `<% %>` tag executes Java code but produces no output; to display a variable's value in JSP, you must use the output expression tag `<%= %>`.\n\nOption C includes a semicolon, which is incorrect syntax for JSP expression tags that output values directly to the response.",
+    "corrected": false,
+    "id": "q1846",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which of the following is NOT a standard HTTP request method defined in the HTTP specification?",
+    "options": [
+      "A. CONNECT method",
+      "B. COMPARE method",
+      "C. OPTIONS method",
+      "D. TRACE method"
+    ],
+    "answer_index": 1,
+    "answer": "B. COMPARE method",
+    "topic": "Core Java & OOP",
+    "explanation": "COMPARE is not defined in RFC 7231 or any standard HTTP specification, making it an invalid method. CONNECT, OPTIONS, and TRACE are all officially defined methods used for tunneling, capability discovery, and diagnostic loopback testing respectively.",
+    "corrected": false,
+    "id": "q1848",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "question": "In a standard Java web application (WAR) directory structure, in which directory are the compiled servlet/class files placed?",
+    "options": [
+      "A. /META-INF/classes",
+      "B. /classes",
+      "C. /WEB-INF/classes",
+      "D. /root/classes"
+    ],
+    "answer_index": 2,
+    "answer": "C. /WEB-INF/classes",
+    "topic": "Core Java & OOP",
+    "explanation": "The Java Servlet specification mandates that compiled class files reside in /WEB-INF/classes, making them accessible to the servlet container's classloader while remaining protected from direct client access. This directory structure ensures classes load correctly at runtime while keeping application logic separate from publicly servable static resources.",
+    "corrected": false,
+    "id": "q1849",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "question": "The method getWriter returns an object of type PrintWriter. This class has println",
+    "options": [
+      "A. HttpServletRequest",
+      "B. HttpServletResponse",
+      "C. ServletConfig",
+      "D. ServletContext"
+    ],
+    "answer_index": 1,
+    "answer": "B. HttpServletResponse",
+    "topic": "Core Java & OOP",
+    "explanation": "HttpServletResponse.getWriter() returns a PrintWriter object used to send character-based content back to the client through the response body. This PrintWriter includes println methods for writing formatted output, such as HTML, directly to the response stream.",
+    "corrected": false,
+    "id": "q1850",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Name the method defined in the HttpServletResponse class that may be used to set the content type. Select the one correct answer.",
+    "options": [
+      "A. setType",
+      "B. setContent",
+      "C. setContentType",
+      "D. setResponseContentType"
+    ],
+    "answer_index": 2,
+    "answer": "C. setContentType",
+    "topic": "Core Java & OOP",
+    "explanation": "The HttpServletResponse interface defines setContentType(String type) specifically to set the MIME type of the response being sent to the client, such as \"text/html\" or \"application/json\". The other options are not actual methods in the Servlet API; setContentType follows Java's standard naming convention for setter methods tied to a specific property, in this case \"ContentType\".",
+    "corrected": false,
+    "id": "q1851",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "Which of the following statement is correct. Select the one correct answer.",
+    "options": [
+      "A. The response from the dedicated server to a HEAD request consists of status line, content type and the document.",
+      "B. The response from the server to a GET request does not contain a document.",
+      "C. The setStatus method defined in the HttpServletRequest class takes an int as an argument and sets the status of Http response",
+      "D. The HttpServletResponse defines constants like SC_NOT_FOUND that may be used as a parameter to setStatus method."
+    ],
+    "answer_index": 3,
+    "answer": "D. The HttpServletResponse defines constants like SC_NOT_FOUND that may be used as a parameter to setStatus method.",
+    "topic": "React",
+    "explanation": "HttpServletResponse defines integer constants such as SC_NOT_FOUND, SC_OK, and SC_UNAUTHORIZED representing standard HTTP status codes. These constants are designed to be passed as arguments to the setStatus(int) method, which sets the response's status code.",
+    "corrected": false,
+    "id": "q1852",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "Which of the following statements are correct about the status of the Http response. Select the one correct answer.",
+    "options": [
+      "A. A status of 200 to 299 signifies that the request was successful.",
+      "B. A status of 300 to 399 are informational messages.",
+      "C. A status of 400 to 499 indicates an error in the server.",
+      "D. A status of 500 to 599 indicates an error in the client."
+    ],
+    "answer_index": 0,
+    "answer": "A. A status of 200 to 299 signifies that the request was successful.",
+    "topic": "React",
+    "explanation": "HTTP status codes in the 200–299 range are classified as \"Success\" codes, confirming the client's request was successfully received, understood, and processed by the server. The other ranges are mismatched: 300-399 are redirection messages, 400-499 are client errors, and 500-599 are server errors.",
+    "corrected": false,
+    "id": "q1855",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "To send binary output in a response, the following method of HttpServletResponse may",
+    "options": [
+      "A. getStream",
+      "B. getOutputStream",
+      "C. getBinaryStream",
+      "D. getWriter"
+    ],
+    "answer_index": 1,
+    "answer": "B. getOutputStream",
+    "topic": "Core Java & OOP",
+    "explanation": "I need to correct this: The answer provided is actually incorrect. The correct answer should be B. getOutputStream.\n\nHttpServletResponse provides `getOutputStream()` to send binary data, not `getStream()`. The `getWriter()` method is for text output only.",
+    "corrected": false,
+    "id": "q1856",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "To send text output in a response, the following method of HttpServletResponse may be",
+    "options": [
+      "A. getStream",
+      "B. getOutputStream",
+      "C. getBinaryStream",
+      "D. getWriter"
+    ],
+    "answer_index": 3,
+    "answer": "D. getWriter",
+    "topic": "Core Java & OOP",
+    "explanation": "I need to correct this: The answer provided is actually wrong. The correct answer should be D. getWriter.\n\nHere are two sentences explaining why:\n\ngetWriter() returns a PrintWriter for sending character/text data in HTTP responses, which is the standard method for text output in servlets.\n\ngetOutputStream() is for binary data, while getStream() and getBinaryStream() are not valid HttpServletResponse methods.",
+    "corrected": false,
+    "id": "q1857",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Name the class that includes the getSession method that is used to get the HttpSession",
+    "options": [
+      "A. HttpServletRequest",
+      "B. HttpServletResponse",
+      "C. SessionContext",
+      "D. SessionConfig"
+    ],
+    "answer_index": 0,
+    "answer": "A. HttpServletRequest",
+    "topic": "Core Java & OOP",
+    "explanation": "The HttpServletRequest interface provides the getSession() method to retrieve or create an HttpSession object for the current request. This method is part of the servlet API's request object, not response, context, or config classes.",
+    "corrected": false,
+    "id": "q1858",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "In Java Servlets, which method is defined in both the ServletContext interface and the HttpServletRequest interface, and returns a RequestDispatcher object for a given path?",
+    "options": [
+      "A. getRequestDispatcher(String path)",
+      "B. getNamedDispatcher(String name)",
+      "C. forward(request, response)",
+      "D. include(request, response)"
+    ],
+    "answer_index": 0,
+    "answer": "A. getRequestDispatcher(String path)",
+    "topic": "React",
+    "explanation": "Both ServletContext and HttpServletRequest declare getRequestDispatcher(String path), each returning a RequestDispatcher object that wraps the resource at the specified path. This shared method allows requests to be forwarded or included from either context-relative or request-relative paths depending on which interface invokes it.",
+    "corrected": false,
+    "id": "q1859",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "question": "A user types the URL http://www.javaprepare.com/scwd/index.html . Which HTTP request gets generated? Select the one correct answer:",
+    "options": [
+      "A. GET method",
+      "B. POST method",
+      "C. HEAD method",
+      "D. PUT method"
+    ],
+    "answer_index": 0,
+    "answer": "A. GET method",
+    "topic": "HTML & CSS",
+    "explanation": "Typing a URL directly into a browser's address bar instructs the browser to retrieve the specified resource, which is done using the GET method by default. GET simply requests data from the server without submitting any data, making it the appropriate method for loading a webpage this way.",
+    "corrected": false,
+    "id": "q1860",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "Which HTTP method gets invoked when a user clicks on a link? Select the one correct",
+    "options": [
+      "A. GET method",
+      "B. POST method",
+      "C. HEAD method",
+      "D. PUT method"
+    ],
+    "answer_index": 0,
+    "answer": "A. GET method",
+    "topic": "SQL & JDBC",
+    "explanation": "When a user clicks a hyperlink, the browser sends an HTTP GET request to retrieve the resource specified in the link's href attribute.\n\nGET is the default method for retrieving data and is stateless, making it ideal for navigation without modifying server state.",
+    "corrected": false,
+    "id": "q1861",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "When using HTML forms which of the following is true for POST method? Select the one correct answer.",
+    "options": [
+      "A. POST allows users to bookmark URLs with parameters.",
+      "B. The POST method should not be used when large amount of data needs to be transferred.",
+      "C. POST allows secure data transmission over the http method.",
+      "D. POST method sends data in the body of the request."
+    ],
+    "answer_index": 3,
+    "answer": "D. POST method sends data in the body of the request.",
+    "topic": "HTML & CSS",
+    "explanation": "The POST method encapsulates data within the HTTP request body rather than appending it to the URL, keeping parameters separate from the query string. This design allows POST to transmit larger and more complex data sets without the length restrictions imposed on URLs by GET requests.",
+    "corrected": false,
+    "id": "q1862",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "Name the http method used to send resources to the server. Select the one",
+    "options": [
+      "A. FTP methodd",
+      "B. PUT method",
+      "C. WRITE method",
+      "D. COPY method"
+    ],
+    "answer_index": 1,
+    "answer": "B. PUT method",
+    "topic": "SQL & JDBC",
+    "explanation": "The PUT method is an HTTP verb that uploads or sends a resource to the server, storing it at the specified URI. It replaces the target resource entirely with the payload provided in the request, making it the standard method for sending resources.",
+    "corrected": false,
+    "id": "q1864",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Name the http method that sends the same response as the request. Select the one correct",
+    "options": [
+      "A. DEBUG method",
+      "B. TRACE method",
+      "C. OPTIONS method",
+      "D. HEAD method"
+    ],
+    "answer_index": 1,
+    "answer": "B. TRACE method",
+    "topic": "SQL & JDBC",
+    "explanation": "The TRACE method echoes the request back in the response body, allowing clients to see what the server received. DEBUG is not a standard HTTP method; TRACE is the correct answer.",
+    "corrected": false,
+    "id": "q1865",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which three digit error codes represent an error in request from client? Select the one",
+    "options": [
+      "A. Codes starting from 200",
+      "B. Codes starting from 300",
+      "C. Codes starting from 400",
+      "D. Codes starting from 500"
+    ],
+    "answer_index": 2,
+    "answer": "C. Codes starting from 400",
+    "topic": "DevOps & CI/CD",
+    "explanation": "HTTP status codes starting with 4 indicate client errors, meaning the request sent by the client contained bad syntax or could not be fulfilled due to client-side issues. Examples include 404 (Not Found) and 400 (Bad Request), signaling the problem originates from the client, not the server.",
+    "corrected": false,
+    "id": "q1866",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "What gets printed when the following expression is evaluated? Select the one correct answer.\n${(1==2) ? 4 : 5}",
+    "options": [
+      "A. 1",
+      "B. 2",
+      "C. 4",
+      "D. 5"
+    ],
+    "answer_index": 3,
+    "answer": "D. 5",
+    "topic": "SQL & JDBC",
+    "explanation": "The condition (1==2) evaluates to false since 1 does not equal 2. In a ternary expression, when the condition is false, the value after the colon (5) is returned and printed.",
+    "corrected": false,
+    "id": "q1868",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "What is the effect of evaluation of following expression? Select the one correct answer.\n${(5*5) ne 25}",
+    "options": [
+      "A. true",
+      "B. false",
+      "C. 25",
+      "D. The expression does not compile as ne is not a valid operator."
+    ],
+    "answer_index": 1,
+    "answer": "B. false",
+    "topic": "SQL & JDBC",
+    "explanation": "The expression evaluates 5*5, which equals 25, and then compares it to 25 using the \"ne\" (not equal) operator. Since 25 does equal 25, the \"ne\" comparison returns false.",
+    "corrected": false,
+    "id": "q1870",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "How many numbers are printed, when the following JSTL code fragment is executed? Select the one correct answer.\n<%@ taglib uri=\"http://java.sun.com/jsp/jstl/core\" prefix=\"c\" %>\n<c:forEach var=\"item\" begin=\"0\" end=\"10\" step=\"2\">\n${item}\n</c:forEach>",
+    "options": [
+      "A. 1",
+      "B. 5",
+      "C. 6",
+      "D. 11"
+    ],
+    "answer_index": 2,
+    "answer": "C. 6",
+    "topic": "Core Java & OOP",
+    "explanation": "The loop starts at 0 and ends at 10, incrementing by 2 each time, producing the values 0, 2, 4, 6, 8, and 10. This sequence contains exactly 6 numbers, since (10-0)/2 + 1 = 6.",
+    "corrected": false,
+    "id": "q1871",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "How many numbers gets printed when the following JSTL code fragment is executed?\nSelect the one correct answer.\n<%@ taglib uri=\"http://java.sun.com/jsp/jstl/core\" prefix=\"c\" %>\n<c:set var=\"item\" value=\"2\"/>\n<c:choose>\n<c:when test=\"${item>0}\">\n<c:out value=\"1\"/>\n</c:when>\n<c:when test=\"${item==2}\">\n<c:out value=\"2\"/>\n</c:when>\n<c:when test=\"${item<2}\">\n<c:out value=\"3\"/>\n</c:when>\n<c:otherwise>\n<c:out value=\"4\"/>\n</c:otherwise>\n</c:choose>",
+    "options": [
+      "A. No number gets printed.",
+      "B. One number gets printed.",
+      "C. Two numbers gets printed.",
+      "D. Three numbers gets printed."
+    ],
+    "answer_index": 1,
+    "answer": "B. One number gets printed.",
+    "topic": "Core Java & OOP",
+    "explanation": "In a <c:choose> block, only the first <c:when> whose test evaluates to true gets executed, and all subsequent when/otherwise blocks are skipped. Since item>0 is true first, \"1\" is printed and evaluation stops, so only one number outputs.",
+    "corrected": false,
+    "id": "q1873",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "Which number gets printed when the following JSTL code fragment is executed?\n\n<c:forEach var=\"i\" begin=\"1\" end=\"4\">\n  <c:if test=\"${i == 3}\">\n    ${i}\n  </c:if>\n</c:forEach>",
+    "options": [
+      "A. 1",
+      "B. 2",
+      "C. 3",
+      "D. 4"
+    ],
+    "answer_index": 2,
+    "answer": "C. 3",
+    "topic": "SQL & JDBC",
+    "explanation": "The forEach loop iterates through values 1, 2, 3, and 4, checking the condition i==3 on each pass. Only when i equals 3 does the condition evaluate to true, triggering the c:if block to output that value.",
+    "corrected": false,
+    "id": "q1874",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "question": "Which of these represent the correct path for the core JSTL library in JSTL version 1.1?",
+    "options": [
+      "A. http://java.sun.com/jsp/jstl/core",
+      "B. http://java.sun.com/jsp/core",
+      "C. http://java.sun.com/core",
+      "D. http://java.sun.com/jsp/jstl1.1/core"
+    ],
+    "answer_index": 0,
+    "answer": "A. http://java.sun.com/jsp/jstl/core",
+    "topic": "Core Java & OOP",
+    "explanation": "The URI namespace `http://java.sun.com/jsp/jstl/core` is the standardized taglib declaration for JSTL 1.1 core tags, following Sun's official namespace convention.\n\nThis path explicitly identifies the core library within the JSTL framework, enabling JSP containers to correctly locate and load the appropriate tag definitions.",
+    "corrected": false,
+    "id": "q1876",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Fill in the blanks. A tag handler class must implement the",
+    "options": [
+      "A. IterationTag",
+      "B. TagClass",
+      "C. BodyTag",
+      "D. BodyTagSupport"
+    ],
+    "answer_index": 0,
+    "answer": "A. IterationTag",
+    "topic": "Core Java & OOP",
+    "explanation": "A tag handler class must implement one of the Tag interfaces. IterationTag is the standard interface that tag handlers implement to support iteration and body tag functionality.\n\nBodyTag is an interface that IterationTag extends, so implementing IterationTag provides all necessary tag handling capabilities including body evaluation and iteration control.",
+    "corrected": false,
+    "id": "q1877",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "A JSP file that uses a tag library must declare the tag library first. The tag library is defined using the taglib directive - <%= taglib uri=\"...\" prefix=\"...\"%>\nWhich of the following specifies the correct purpose of prefix attribute. Select the one correct answer.",
+    "options": [
+      "A. The prefix defines the name of the tag that may be used for a tag library.",
+      "B. The prefix attribute defines the location of the tag library descriptor file.",
+      "C. The prefix attribute should refer to the short name attribute of the tag library file that is defined by the uri attribute of taglib directive.",
+      "D. The prefix attribute is used in front of a tagname of a tag defined within the tag library."
+    ],
+    "answer_index": 3,
+    "answer": "D. The prefix attribute is used in front of a tagname of a tag defined within the tag library.",
+    "topic": "Core Java & OOP",
+    "explanation": "The prefix attribute creates a namespace that must be prepended to tag names when invoking custom tags in a JSP page, distinguishing them from HTML or other library tags. For example, with prefix=\"c\", tags are called as <c:forEach> or <c:if>, linking the tag invocation to its source library.",
+    "corrected": false,
+    "id": "q1878",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "A JSP file uses a tag as <myTaglib:myTag>. The myTag element here should be defined",
+    "options": [
+      "A. tagname",
+      "B. name",
+      "C. tag",
+      "D. prefix"
+    ],
+    "answer_index": 1,
+    "answer": "B. name",
+    "topic": "Core Java & OOP",
+    "explanation": "In JSP tag libraries, the `<tag>` element's `<name>` child defines what appears after the prefix in usage like `<myTaglib:myTag>`. The \"myTag\" portion is the tag name that must match the `<name>` declaration in the TLD file.",
+    "corrected": false,
+    "id": "q1879",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "In a JSP Tag Library Descriptor (TLD) file, which of the following elements is defined directly as a child of the <taglib> element?",
+    "options": [
+      "A. validator",
+      "B. tag-class",
+      "C. attribute",
+      "D. listener-class"
+    ],
+    "answer_index": 0,
+    "answer": "A. validator",
+    "topic": "Core Java & OOP",
+    "explanation": "The <validator> element is a direct child of <taglib>, used to specify a TagLibraryValidator class for validating tag usage within the JSP page. In contrast, <tag-class> and <attribute> are nested within <tag>, while <listener-class> is nested within <listener>, not directly under <taglib>.",
+    "corrected": false,
+    "id": "q1880",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "question": "Name the element within the tag element that defines the name of the class that implements the functionality of tag. Select the one correct answer.",
+    "options": [
+      "A. class-name",
+      "B. tag",
+      "C. class",
+      "D. tag-class"
+    ],
+    "answer_index": 3,
+    "answer": "D. tag-class",
+    "topic": "Core Java & OOP",
+    "explanation": "In a Tag Library Descriptor (TLD), each <tag> element uses a nested <tag-class> element to specify the fully qualified Java class implementing the tag handler. This element tells the JSP container which class to instantiate when the tag is invoked in a JSP page.",
+    "corrected": false,
+    "id": "q1881",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "Which of these are legal return types of the doStartTag method defined in a class that",
+    "options": [
+      "A. EVAL_PAGE",
+      "B. EVAL_BODY",
+      "C. EVAL_PAGE_INCLUDE",
+      "D. EVAL_BODY_INCLUDE"
+    ],
+    "answer_index": 3,
+    "answer": "D. EVAL_BODY_INCLUDE",
+    "topic": "Core Java & OOP",
+    "explanation": "The doStartTag() method in a Tag interface returns int values indicating how to proceed with tag processing. EVAL_PAGE is the only valid return type that tells the container to continue evaluating the page after the tag.",
+    "corrected": false,
+    "id": "q1882",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which of these are legal return types of the doAfterBody method defined in a class",
+    "options": [
+      "A. EVAL_PAGE",
+      "B. EVAL_BODY",
+      "C. EVAL_PAGE_AGAIN",
+      "D. EVAL_BODY_AGAIN"
+    ],
+    "answer_index": 3,
+    "answer": "D. EVAL_BODY_AGAIN",
+    "topic": "Core Java & OOP",
+    "explanation": "The `doAfterBody` method in tag handler classes can only return `EVAL_PAGE`, which controls whether the page continues processing after the body evaluation completes.\n\n`EVAL_BODY` and `EVAL_BODY_AGAIN` are used by `doStartTag`, while `EVAL_PAGE_AGAIN` is not a valid return constant in JSP tag APIs.",
+    "corrected": false,
+    "id": "q1883",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "In a JSP custom tag handler class that implements the Tag interface, which of the following is a legal return value for the doEndTag() method?",
+    "options": [
+      "A. EVAL_PAGE",
+      "B. EVAL_BODY",
+      "C. EVAL_PAGE_INCLUDE",
+      "D. EVAL_BODY_INCLUDE"
+    ],
+    "answer_index": 0,
+    "answer": "A. EVAL_PAGE",
+    "topic": "Core Java & OOP",
+    "explanation": "The Tag interface's doEndTag() method returns either EVAL_PAGE or SKIP_PAGE, which are constants defined in the Tag interface itself. EVAL_PAGE signals the JSP engine to continue evaluating the rest of the page after the tag completes.",
+    "corrected": false,
+    "id": "q1884",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "question": "A JSP page called test.jsp is passed a parameter name in the URL using http://localhost/test.jsp?name=\"John\". The test.jsp contains the following code.\n<%! String myName=request.getParameter();%>\n<% String test= \"welcome\" + myName; %>\n<%= test%>",
+    "options": [
+      "A. The program prints \"Welcome John\"",
+      "B. The program gives a syntax error because of the statement <%! String myName=request.getParameter();%>",
+      "C. The program gives a syntax error because of the statement <% String test= \"welcome\" + myName; %>",
+      "D. The program gives a syntax error because of the statement <%= test%>"
+    ],
+    "answer_index": 1,
+    "answer": "B. The program gives a syntax error because of the statement <%! String myName=request.getParameter();%>",
+    "topic": "React",
+    "explanation": "The declaration tag <%! %> creates instance-level members and lacks access to the implicit \"request\" object, since request is only available within the _jspService method context. Additionally, getParameter() requires a String argument (the parameter name) but none is provided, causing a compilation error.",
+    "corrected": false,
+    "id": "q1886",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "Which of the following correctly represents the following JSP statement. Select the one correct answer.\n<%=x%>",
+    "options": [
+      "A. <jsp:expression>x</jsp:expression>",
+      "B. <jsp:expression=x/>",
+      "C. <jsp:statement>x</jsp:statement>",
+      "D. <jsp:declaration>x</jsp:declaration>"
+    ],
+    "answer_index": 0,
+    "answer": "A. <jsp:expression>x</jsp:expression>",
+    "topic": "React",
+    "explanation": "The `<%=x%>` syntax is JSP's scriptlet shorthand for an expression tag, which evaluates x and outputs its value directly into the response. The XML-equivalent tag form for this expression syntax is `<jsp:expression>x</jsp:expression>`, matching the standard JSP action element naming convention.",
+    "corrected": false,
+    "id": "q1887",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "Which of the following are correct. Select the one correct answer.",
+    "options": [
+      "A. JSP scriptlets and declarations result in code that is inserted inside the _jspService method.",
+      "B. The JSP statement <%! int x; %> is equivalent to the statement <jsp:scriptlet>int x;</jsp:scriptlet%>.",
+      "C. The following are some of the predefined variables that maybe used in JSP expression - httpSession, context.",
+      "D. To use the character %> inside a scriptlet, you may use %\\> instead."
+    ],
+    "answer_index": 3,
+    "answer": "D. To use the character %> inside a scriptlet, you may use %\\> instead.",
+    "topic": "React",
+    "explanation": "In JSP, the sequence %> normally terminates a scriptlet, so writing it literally inside code would prematurely close the tag. The escape sequence %\\> allows the parser to interpret %> as literal text rather than a tag delimiter, letting it appear safely within scriptlet code.",
+    "corrected": false,
+    "id": "q1889",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "Which of the following JSP variables are not available within a JSP expression.",
+    "options": [
+      "A. out",
+      "B. session",
+      "C. request",
+      "D. response"
+    ],
+    "answer_index": 0,
+    "answer": "A. out",
+    "topic": "Node.js & Express",
+    "explanation": "The `out` variable is an implicit object that writes directly to the output stream and cannot be used within JSP expressions, which require return values.\n\nJSP expressions use `<%=` syntax that evaluates to a value; `out` performs actions rather than returning evaluable content.",
+    "corrected": false,
+    "id": "q1891",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "A bean with a property color is loaded using the following statement",
+    "options": [
+      "A. <jsp:setColor id=\"fruit\" property=\"color\" value=\"white\"/>",
+      "B. <jsp:setColor name=\"fruit\" property=\"color\" value=\"white\"/>",
+      "C. <jsp:setValue name=\"fruit\" property=\"color\" value=\"white\"/>",
+      "D. <jsp:setProperty name=\"fruit\" property=\"color\" value=\"white\">"
+    ],
+    "answer_index": 3,
+    "answer": "D. <jsp:setProperty name=\"fruit\" property=\"color\" value=\"white\">",
+    "topic": "React",
+    "explanation": "The `<jsp:setColor>` action is the standard JSP tag specifically designed to set bean properties with color values using the id attribute to reference the bean object.\n\nThis syntax follows JSP standard conventions where `setColor` is the proper action name and `id` correctly identifies the bean instance for property assignment.",
+    "corrected": false,
+    "id": "q1892",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which of the following represents correct syntax for the JSP <jsp:useBean> action?",
+    "options": [
+      "A. <jsp:useBean id=\"fruit\" class=\"Fruit\"/>",
+      "B. <jsp:useBean id=\"fruit\" scope=\"page\"/>",
+      "C. <jsp:useBean class=\"Fruit\"/>",
+      "D. <jsp:useBean id=\"fruit\" type=\"Fruit\"/>"
+    ],
+    "answer_index": 0,
+    "answer": "A. <jsp:useBean id=\"fruit\" class=\"Fruit\"/>",
+    "topic": "SQL & JDBC",
+    "explanation": "The <jsp:useBean> action requires both an \"id\" attribute to name the bean instance and a \"class\" attribute specifying the fully qualified class to instantiate. Without \"id\", the bean cannot be referenced later; without \"class\" (or \"beanName\" with \"type\"), the container cannot instantiate the object.",
+    "corrected": false,
+    "id": "q1893",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "question": "Name the default value of the scope atribute of <jsp:usebean>.",
+    "options": [
+      "A. page",
+      "B. application",
+      "C. session",
+      "D. request"
+    ],
+    "answer_index": 0,
+    "answer": "A. page",
+    "topic": "Core Java & OOP",
+    "explanation": "The scope attribute of `<jsp:useBean>` defaults to \"page\" when not explicitly specified, meaning the bean exists only within the current JSP page.\n\nPage scope is the most restrictive scope, making it the conservative default choice that limits bean visibility to prevent unintended object sharing across requests.",
+    "corrected": false,
+    "id": "q1894",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which of the following statements are true for <jsp:usebean>. Select the two",
+    "options": [
+      "A. The id attribute must be defined for <jsp:usebean>.",
+      "B. The scope attribute must be defined for <jsp:usebean>.",
+      "C. The class attribute must be defined for <jsp:usebean>.",
+      "D. The <jsp:usebean> must include either type or class attribute or both."
+    ],
+    "answer_index": 3,
+    "answer": "D. The <jsp:usebean> must include either type or class attribute or both.",
+    "topic": "React",
+    "explanation": "The id attribute uniquely identifies the bean object in the specified scope and is required to reference it throughout the JSP page.\n\nWithout id, the container cannot instantiate or manage the bean, making it impossible to access or manipulate the bean in subsequent code.",
+    "corrected": false,
+    "id": "q1895",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Assume that you need to write a JSP page that adds numbers from one to ten,",
+    "options": [
+      "A. <% sum = sum + j %>",
+      "B. <% sum = sum + j; %>",
+      "C. <%= sum = sum + j %>",
+      "D. <%= sum = sum + j; %>"
+    ],
+    "answer_index": 1,
+    "answer": "B. <% sum = sum + j; %>",
+    "topic": "Core Java & OOP",
+    "explanation": "Scriptlet tags `<% %>` execute Java code but don't output results, making them ideal for assignments without displaying values.\n\nSemicolons are optional in JSP scriptlets since they're embedded Java fragments, not complete statements requiring termination.",
+    "corrected": false,
+    "id": "q1896",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Now consider the same JSP example as last question. What must be added at the location YYY to print the sum of ten numbers. Select the one correct statement",
+    "options": [
+      "A. <% sum %>",
+      "B. <% sum; %>",
+      "C. <%= sum %>",
+      "D. <%= sum; %>"
+    ],
+    "answer_index": 2,
+    "answer": "C. <%= sum %>",
+    "topic": "Core Java & OOP",
+    "explanation": "JSP expression tags `<%= %>` output the evaluated value directly into the response, so `<%= sum %>` prints the variable's value without a semicolon. Scriptlet tags `<% %>` execute Java code but don't produce output, and adding a semicolon inside `<%= %>` causes a syntax error since it's treated as an expression, not a statement.",
+    "corrected": false,
+    "id": "q1897",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "JSP pages have access to implicit objects that are exposed automatically. One",
+    "options": [
+      "A. HttpRequest",
+      "B. ServletRequest",
+      "C. Request",
+      "D. HttpServletRequest"
+    ],
+    "answer_index": 2,
+    "answer": "C. Request",
+    "topic": "Core Java & OOP",
+    "explanation": "The implicit object is named \"request\" in JSP, and it is typed as HttpServletRequest, but the identifier itself is simply \"request\". JSP exposes it automatically without any declaration, so scriptlets and expressions can reference it directly by that name.",
+    "corrected": false,
+    "id": "q1898",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "A Java bean with a property color is loaded using the following statement\n<jsp:usebean id=\"fruit\" class=\"Fruit\"/>\nWhat is the effect of the following statement.\n<jsp:setproperty name=\"fruit\" property=\"color\"/>\nSelect the one correct answer.",
+    "options": [
+      "A. An error gets generated because the value attribute of setAttribute is not defined.",
+      "B. The color attribute is assigned a value null.",
+      "C. The color attribute is assigned a value \"\".",
+      "D. If there is a non-null request parameter with name color, then its value gets assigned to color property of Java Bean fruit."
+    ],
+    "answer_index": 3,
+    "answer": "D. If there is a non-null request parameter with name color, then its value gets assigned to color property of Java Bean fruit.",
+    "topic": "React",
+    "explanation": "When only \"name\" and \"property\" are specified without \"value\" or \"param\", jsp:setProperty automatically matches the property name to a request parameter with the same name. If a non-null request parameter named \"color\" exists, its value is retrieved and assigned to the bean's color property using the setter method.",
+    "corrected": false,
+    "id": "q1900",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "Is the following JSP code legal? Select the one correct statement.\n<%@page info=\"test page\" session=\"false\"%>\n<%@page session=\"false\"%>",
+    "options": [
+      "A. Yes. This is legal JSP syntax.",
+      "B. No. This code will generate syntax errors."
+    ],
+    "answer_index": 0,
+    "answer": "A. Yes. This is legal JSP syntax.",
+    "topic": "React",
+    "explanation": "JSP allows multiple page directives in a single translation unit, provided repeated attributes have identical values across all occurrences. Here, \"session\" is set to \"false\" in both directives, so there's no conflict, making the code legal.",
+    "corrected": false,
+    "id": "q1901",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "A JSP page uses the java.util.ArrayList class many times. Instead of referring",
+    "options": [
+      "A. extends",
+      "B. import",
+      "C. include",
+      "D. package"
+    ],
+    "answer_index": 1,
+    "answer": "B. import",
+    "topic": "Core Java & OOP",
+    "explanation": "The `import` statement (Option B) is actually the correct way to use ArrayList multiple times in JSP—it allows direct class references without the full package path.\n\nNote: The provided answer key appears incorrect; Option B (import) is the standard solution for avoiding repeated `java.util.ArrayList` references in JSP pages.",
+    "corrected": false,
+    "id": "q1902",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which of the following are examples of JSP directive. Select the two correct",
+    "options": [
+      "A. include",
+      "B. exclude",
+      "C. import",
+      "D. taglibrary"
+    ],
+    "answer_index": 3,
+    "answer": "D. taglibrary",
+    "topic": "JavaScript",
+    "explanation": "The `<%@ include %>` directive is a JSP standard directive that includes external files at translation time, embedding their content into the current JSP page.\n\nJSP directives use `<%@ %>` syntax; only `include` and `import` (option C) are valid directives, but the question asks for one correct answer from the options provided.",
+    "corrected": false,
+    "id": "q1903",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Name the implicit variable available to JSP pages that may be used to access all the other implicit objects.",
+    "options": [
+      "A. page",
+      "B. pageContext",
+      "C. context",
+      "D. object"
+    ],
+    "answer_index": 1,
+    "answer": "B. pageContext",
+    "topic": "Core Java & OOP",
+    "explanation": "The pageContext object encapsulates references to nearly all other implicit objects, such as request, response, session, and application, providing a unified access point. This allows JSP developers to retrieve or manipulate these objects dynamically through methods like getRequest() or getSession() without needing separate direct references.",
+    "corrected": false,
+    "id": "q1904",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "Which of the following files is the correct name and location of deployment",
+    "options": [
+      "A. \\doc-root\\dd.xml",
+      "B. \\doc-root\\web.xml",
+      "C. \\doc-root\\WEB-INF\\web.xml",
+      "D. \\doc-root\\WEB_INF\\dd.xml"
+    ],
+    "answer_index": 2,
+    "answer": "C. \\doc-root\\WEB-INF\\web.xml",
+    "topic": "Core Java & OOP",
+    "explanation": "The deployment descriptor file must be named `web.xml` and located in the `WEB-INF` directory, making option C the standard Java web application structure.\n\nThe provided answer A is incorrect; the correct answer should be C, which follows the J2EE specification for web application deployment descriptors.",
+    "corrected": false,
+    "id": "q1905",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which element of the servlet element in the deployment descriptor is used to specify the parameters for the ServletConfig object. Select the one correct answer.",
+    "options": [
+      "A. servlet-config",
+      "B. init-param",
+      "C. load-on-startup",
+      "D. filter"
+    ],
+    "answer_index": 1,
+    "answer": "B. init-param",
+    "topic": "JavaScript",
+    "explanation": "The init-param element defines name-value pairs within the servlet element, which the container uses to populate the ServletConfig object accessible via getInitParameter(). Each init-param specifies a param-name and param-value that becomes available as initialization parameters for that specific servlet instance.",
+    "corrected": false,
+    "id": "q1906",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "Which of the following statements about a Java EE web application deployment descriptor (web.xml) is correct?",
+    "options": [
+      "A. The elements of the deployment descriptor are case-sensitive.",
+      "B. The elements of the deployment descriptor are case-insensitive.",
+      "C. The order of elements in the deployment descriptor never matters.",
+      "D. The servlet-mapping element must be nested inside the servlet element."
+    ],
+    "answer_index": 0,
+    "answer": "A. The elements of the deployment descriptor are case-sensitive.",
+    "topic": "JavaScript",
+    "explanation": "XML-based deployment descriptors like web.xml are governed by XML syntax rules, which treat element names as case-sensitive by definition. Writing `<Servlet>` instead of `<servlet>` would cause the parser to fail or ignore the element, since the tags must exactly match the schema-defined names.",
+    "corrected": false,
+    "id": "q1907",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "question": "The exception-type element specifies an exception type and is used to handle exceptions generated from a servlet. Which element of the deployment descriptor includes the exception-type as a sub-element. Select the one correct answer.",
+    "options": [
+      "A. error-page",
+      "B. servlet",
+      "C. exception",
+      "D. error-handling"
+    ],
+    "answer_index": 0,
+    "answer": "A. error-page",
+    "topic": "JavaScript",
+    "explanation": "The error-page element in the deployment descriptor maps specific exception types or HTTP error codes to designated resources, using exception-type as its sub-element to specify the Java exception class. This allows the container to invoke a custom error page whenever the specified exception is thrown during request processing.",
+    "corrected": false,
+    "id": "q1908",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "Which of these is a correct fragment within the web-app element of deployment descriptor. Select the one correct answer.",
+    "options": [
+      "A. <error-page> <exception-type> mypackage.MyException</exception-type> <location> /error.jsp</location> </error-page>",
+      "B. <exception> <exception-type> mypackage.MyException</exception-type> <location> /error.jsp</location> </exception>",
+      "C. <error-page> <exception> mypackage.MyException </exception-type> <location> /error.jsp </location> </error-page>",
+      "D. <error-page> <exception-type> mypackage.MyException</exception-type> </error-page>"
+    ],
+    "answer_index": 0,
+    "answer": "A. <error-page> <exception-type> mypackage.MyException</exception-type> <location> /error.jsp</location> </error-page>",
+    "topic": "Core Java & OOP",
+    "explanation": "The error-page element correctly requires both exception-type and location as child elements to define an error handler in the deployment descriptor. This matches the correct XML schema structure, mapping a specific Java exception class to a corresponding error page resource.",
+    "corrected": false,
+    "id": "q1909",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "Which element of the deployment descriptor of a web application includes the welcome-file-list element as a subelement? Select the one correct answer.",
+    "options": [
+      "A. web-app",
+      "B. welcome-file",
+      "C. servlet",
+      "D. file-list"
+    ],
+    "answer_index": 0,
+    "answer": "A. web-app",
+    "topic": "JavaScript",
+    "explanation": "The web-app element is the root element of the deployment descriptor (web.xml), containing all configuration elements as direct children. Since welcome-file-list must be defined at the top level of the descriptor, it is placed directly within web-app, not nested inside servlet or other elements.",
+    "corrected": false,
+    "id": "q1910",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "Which of these is a correct example of specifying a listener element represented by MyClass class. Assume myServlet element is defined correctly. Select the one correct answer.",
+    "options": [
+      "A. <listener>MyClass</listener>",
+      "B. <listener> <listener-class>MyClass</listener-class></listener>",
+      "C. <listener> <listener-name>aListener</listener-name> <listener-class>MyClass</listener-class> </listener>",
+      "D. <listener> <servlet-name>myServlet</servlet-name> <listener-class>MyClass</listener-class> </listener>"
+    ],
+    "answer_index": 1,
+    "answer": "B. <listener> <listener-class>MyClass</listener-class></listener>",
+    "topic": "Core Java & OOP",
+    "explanation": "The <listener> element in web.xml only requires a <listener-class> child element specifying the fully qualified class name that implements a listener interface. Unlike <servlet>, listeners do not use a <listener-name> element since they are not referenced elsewhere in the deployment descriptor.",
+    "corrected": false,
+    "id": "q1911",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "The root of the deployment descriptor is named as",
+    "options": [
+      "A. web",
+      "B. web-app",
+      "C. name",
+      "D. display-name"
+    ],
+    "answer_index": 1,
+    "answer": "B. web-app",
+    "topic": "Core Java & OOP",
+    "explanation": "The root element of a deployment descriptor (web.xml) in Java web applications is `<web-app>`, not `<web>`. The correct answer should be B, not A as stated.",
+    "corrected": false,
+    "id": "q1912",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which of these is not a valid top level element in web-app",
+    "options": [
+      "A. icon",
+      "B. listener",
+      "C. eror-page",
+      "D. security-constraint"
+    ],
+    "answer_index": 0,
+    "answer": "A. icon",
+    "topic": "Core Java & OOP",
+    "explanation": "The `icon` element is not a valid top-level element in web-app; it only exists within the `display-name` context. Valid top-level elements include `listener`, `error-page`, and `security-constraint`.",
+    "corrected": false,
+    "id": "q1914",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which of the follwing are mandatory elements within the filter element. Select",
+    "options": [
+      "A. filter-name",
+      "B. name",
+      "C. value",
+      "D. filter-class"
+    ],
+    "answer_index": 0,
+    "answer": "A. filter-name",
+    "topic": "SQL & JDBC",
+    "explanation": "The `<filter-name>` element uniquely identifies a filter within the deployment descriptor and is required by the servlet specification schema.\n\nAll other elements like `<filter-class>` are mandatory too, but the question specifically asks which is mandatory, making `<filter-name>` the primary identifying element.",
+    "corrected": false,
+    "id": "q1915",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which of these is not correct about the filter-mapping element of web-app.",
+    "options": [
+      "A. filter-name element must be present in the filter-mapping element.",
+      "B. Either url-pattern or servlet-name must be present in the filter-mapping",
+      "C. dispatcher element can be declared zero to three times in the filter-mapping",
+      "D. filter-name element in the filter-mapping should be same as the corresponding"
+    ],
+    "answer_index": 2,
+    "answer": "C. dispatcher element can be declared zero to three times in the filter-mapping",
+    "topic": "TypeScript",
+    "explanation": "The filter-name element is mandatory in filter-mapping to link the filter definition to its URL or servlet mapping. Without it, the container cannot identify which filter to apply to the specified resource.",
+    "corrected": false,
+    "id": "q1917",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "What is the evaluated result of the expression \"/${3+2-1}:${3+2-1}\" (where ${...} denotes evaluation of the enclosed arithmetic expression)?",
+    "options": [
+      "A. /4:4",
+      "B. 4:4",
+      "C. /3:3",
+      "D. /5:5"
+    ],
+    "answer_index": 0,
+    "answer": "A. /4:4",
+    "topic": "Core Java & OOP",
+    "explanation": "The expression 3+2-1 evaluates to 4, and this result replaces each ${3+2-1} occurrence in the string. Since the literal characters \"/\" and \":\" remain unchanged around the substitutions, the final output is /4:4.",
+    "corrected": false,
+    "id": "q1919",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "derived",
+    "options_synthesized": true
+  },
+  {
+    "question": "Which diagram in UML shows a complete or partial view of the structure of a modeled system at a specific time?",
+    "options": [
+      "A. Sequence Diagram",
+      "B. Collaboration Diagram",
+      "C. Class Diagram",
+      "D. Object Diagram"
+    ],
+    "answer_index": 3,
+    "answer": "D. Object Diagram",
+    "topic": "Core Java & OOP",
+    "explanation": "An object diagram depicts instances of classes with actual data values and links at a particular moment, capturing a snapshot of the system. This differs from a class diagram, which shows the static, general structure of classes regardless of time.",
+    "corrected": false,
+    "id": "q1922",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "In Java, if an exception occurring in a program is not caught by any catch block written by the programmer, which entity handles the exception?",
+    "options": [
+      "A. Default handler",
+      "B. Finally block",
+      "C. Throw handler",
+      "D. Java run time system"
+    ],
+    "answer_index": 3,
+    "answer": "D. Java run time system",
+    "topic": "Core Java & OOP",
+    "explanation": "If none of the programmer-defined catch blocks handle an exception, it propagates up through the method call stack until it reaches the Java run-time system. The run-time system then terminates the program abnormally, printing the exception's type, message, and stack trace to indicate where the error occurred.",
+    "corrected": false,
+    "id": "q1925",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "question": "class exception_handling {\npublic static void main(String args[]) {\ntry {\nint a, b;\nb = 0;\na = 5 / b;\nSystem.out.print(\"A\");\n}\ncatch(ArithmeticException e) {\nSystem.out.print(\"B\");\n}\nfinally {\nSystem.out.print(\"C\");\n}\n}\n}",
+    "options": [
+      "A. A",
+      "B. B",
+      "C. AC",
+      "D. BC"
+    ],
+    "answer_index": 3,
+    "answer": "D. BC",
+    "topic": "Core Java & OOP",
+    "explanation": "Dividing 5 by 0 (an int) throws an ArithmeticException, which is caught by the catch block, printing \"B\" instead of executing \"A\". The finally block always executes regardless of whether an exception occurred, so \"C\" is printed after \"B\", resulting in \"BC\".",
+    "corrected": false,
+    "id": "q1926",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "In JDBC, what is a key benefit of using PreparedStatement instead of Statement for executing SQL queries?",
+    "options": [
+      "A. They are precompiled by the database, improving performance for repeated execution and helping prevent SQL injection",
+      "B. They automatically convert SQL queries into NoSQL queries",
+      "C. They eliminate the need for a database connection",
+      "D. They can only be used with stored procedures, not regular queries"
+    ],
+    "answer_index": 0,
+    "answer": "A. They are precompiled by the database, improving performance for repeated execution and helping prevent SQL injection",
+    "topic": "React",
+    "explanation": "PreparedStatement objects are precompiled by the database, so the SQL execution plan is cached and reused, boosting performance for repeated queries. They also use parameterized inputs instead of string concatenation, preventing malicious input from altering the query structure and thus blocking SQL injection attacks.",
+    "corrected": false,
+    "id": "q1934",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "question": "Given:\n5. import java.util.Date;\n6. import java.text.DateFormat;\n21. DateFormat df;\n22. Date date = new Date();\n23. // insert code here\n24. String s = df.format(date);\nWhich code fragment, inserted at line 23, allows the code to compile?",
+    "options": [
+      "A. df = new DateFormat();",
+      "B. df = Date.getFormat();",
+      "C. df = DateFormat.getFormat();",
+      "D. df = DateFormat.getInstance();"
+    ],
+    "answer_index": 3,
+    "answer": "D. df = DateFormat.getInstance();",
+    "topic": "Core Java & OOP",
+    "explanation": "DateFormat is an abstract class, so it cannot be instantiated directly with \"new,\" eliminating option A. DateFormat.getInstance() is a valid static factory method that returns a concrete DateFormat instance, unlike the nonexistent getFormat() methods in options B and C.",
+    "corrected": false,
+    "id": "q1940",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "In Java, a subclass declares a static method with the same name and signature as a static method in its superclass. What is this relationship called?",
+    "options": [
+      "A. Method hiding",
+      "B. Method overriding",
+      "C. Method overloading",
+      "D. Compilation error"
+    ],
+    "answer_index": 0,
+    "answer": "A. Method hiding",
+    "topic": "Core Java & OOP",
+    "explanation": "Static methods are resolved at compile time based on the reference type, not dynamically dispatched based on the actual object type like instance methods. When a subclass defines a static method matching the superclass's signature, it hides rather than overrides it, since no polymorphic dispatch occurs.",
+    "corrected": false,
+    "id": "q1941",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "question": "Given the following Java code:\n\nclass Animal {\n    public String noise() {\n        return \"peep\";\n    }\n}\n\nclass Dog extends Animal {\n    public String noise() {\n        return \"woof\";\n    }\n}\n\npublic class Main {\n    public static void main(String[] args) {\n        Animal a = new Dog();\n        System.out.println(a.noise());\n    }\n}\n\nWhat is printed to the console?",
+    "options": [
+      "A. woof",
+      "B. peep",
+      "C. peepwoof",
+      "D. Compilation error"
+    ],
+    "answer_index": 0,
+    "answer": "A. woof",
+    "topic": "Core Java & OOP",
+    "explanation": "Java uses dynamic (runtime) method dispatch for overridden instance methods, meaning the actual object's type—not the reference type—determines which method executes. Since `a` references a `Dog` object, calling `noise()` invokes `Dog`'s overridden version, printing \"woof\".",
+    "corrected": false,
+    "id": "q1943",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "question": "Given the interface:\n\ninterface Data {\n    void load();\n}\n\nWhich class correctly implements this interface?",
+    "options": [
+      "A. public class Employee implements Data { public void load(){ /* do something */ } }",
+      "B. public class Employee extends Data { public void load(){ /* do something */ } }",
+      "C. public class Employee implements Data { private void load(){ /* do something */ } }",
+      "D. public class Employee implements Data { }"
+    ],
+    "answer_index": 0,
+    "answer": "A. public class Employee implements Data { public void load(){ /* do something */ } }",
+    "topic": "Core Java & OOP",
+    "explanation": "Option A correctly uses \"implements\" to inherit the interface and provides a public \"load()\" method matching the interface's access level and signature. Interface methods are implicitly public, so overriding them with a private or non-existent implementation, or using \"extends\" instead of \"implements,\" violates Java's contract.",
+    "corrected": false,
+    "id": "q1947",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "question": "What does a simple name in UML Class and objects consists of ?",
+    "options": [
+      "A. Letters",
+      "B. Digits",
+      "C. Punctuation Characters",
+      "D. All of the mentioned"
+    ],
+    "answer_index": 3,
+    "answer": "D. All of the mentioned",
+    "topic": "Core Java & OOP",
+    "explanation": "A simple name in UML can contain letters, digits, and punctuation characters like underscores, enabling flexible identifier creation for classes and objects.\n\nUML naming conventions allow all three character types to construct valid names, following standard programming language identifier rules and best practices.",
+    "corrected": false,
+    "id": "q1950",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "What Does a Composite name consists of in a UML Class and object diagram ?",
+    "options": [
+      "A. Delimiter",
+      "B. Simple names",
+      "C. Digits",
+      "D. All of the mentioned"
+    ],
+    "answer_index": 3,
+    "answer": "D. All of the mentioned",
+    "topic": "Core Java & OOP",
+    "explanation": "A composite name in UML combines simple names separated by delimiters (like dots) to create qualified names for nested classes and objects. These components can include digits as part of the naming convention for complex hierarchical structures.",
+    "corrected": false,
+    "id": "q1951",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "A Class consists of which of these abstractions?",
+    "options": [
+      "A. Set of the objects",
+      "B. Operations",
+      "C. Attributes",
+      "D. All of the mentioned"
+    ],
+    "answer_index": 3,
+    "answer": "D. All of the mentioned",
+    "topic": "Core Java & OOP",
+    "explanation": "A class encapsulates data through attributes, behavior through operations/methods, and represents a set of objects sharing these characteristics.\n\nTogether, attributes, operations, and objects form the complete abstraction that defines a class in object-oriented programming.",
+    "corrected": false,
+    "id": "q1952",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "A class is divided into which of these compartments ?",
+    "options": [
+      "A. Name Compartment",
+      "B. Attribute Compartment",
+      "C. Operation Compartment",
+      "D. All of the mentioned"
+    ],
+    "answer_index": 3,
+    "answer": "D. All of the mentioned",
+    "topic": "Core Java & OOP",
+    "explanation": "A class in UML is structured into three distinct compartments: the name compartment at the top identifies the class, the attribute compartment lists member variables, and the operation compartment displays methods.\n\nEach compartment serves a specific purpose in documenting class structure, making all three essential for complete class representation in object-oriented design.",
+    "corrected": false,
+    "id": "q1953",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "An attribute is a data item held by which of the following ?",
+    "options": [
+      "A. Class",
+      "B. Object",
+      "C. All of the mentioned",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 1,
+    "answer": "B. Object",
+    "topic": "Core Java & OOP",
+    "explanation": "An attribute is a data item that exists at both the class level (as a template definition) and the object level (as an instance with actual values). Both classes and objects hold attributes in object-oriented programming.",
+    "corrected": false,
+    "id": "q1954",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "What should be mentioned as attributes for conceptual modelling ?",
+    "options": [
+      "A. Initial Values",
+      "B. Names",
+      "C. All of the mentioned",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 2,
+    "answer": "C. All of the mentioned",
+    "topic": "Core Java & OOP",
+    "explanation": "In conceptual modeling, attributes must include names to identify properties, initial values to define starting states, and their data types to specify constraints.\n\nComplete attribute definition requires all components: names for identification, initial values for state initialization, and type information for proper representation and validation.",
+    "corrected": false,
+    "id": "q1955",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "An operation can be described as?",
+    "options": [
+      "A. Object behavior",
+      "B. Class behavior",
+      "C. Functions",
+      "D. a,b"
+    ],
+    "answer_index": 3,
+    "answer": "D. a,b",
+    "topic": "Core Java & OOP",
+    "explanation": "An operation represents both how individual objects behave when called upon and how the class defines that behavior collectively through its interface.\n\nOperations encompass functions as methods within classes, making them inseparable from both object and class behavioral definitions in object-oriented programming.",
+    "corrected": false,
+    "id": "q1956",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which of these are part of class operation specification format ?",
+    "options": [
+      "A. name",
+      "B. parameter list",
+      "C. return-type list",
+      "D. All of the mentioned"
+    ],
+    "answer_index": 3,
+    "answer": "D. All of the mentioned",
+    "topic": "Core Java & OOP",
+    "explanation": "A class operation specification requires a name to identify the operation, a parameter list defining inputs, and a return-type list specifying output types.\n\nTogether, these three components form the complete signature and interface contract for any class operation in object-oriented design.",
+    "corrected": false,
+    "id": "q1957",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "What among these is true ?",
+    "options": [
+      "A. Associations may also correspond to relation between instances of three or more classes",
+      "B. Association lines may be unlabeled or they may show association name",
+      "C. All of the mentioned",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 2,
+    "answer": "C. All of the mentioned",
+    "topic": "Core Java & OOP",
+    "explanation": "Associations in UML can involve multiple classes simultaneously (n-ary associations), not just two classes, and association lines support optional naming conventions for clarity and documentation purposes.",
+    "corrected": false,
+    "id": "q1958",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "What is multiplicity for an association?",
+    "options": [
+      "A. The multiplicity at the target class end of an association is the number of instances that can be associated with a single instance of source",
+      "B. The multiplicity at the target class end of an association is the number of instances that can be associated with a number instance of source",
+      "C. All of the mentioned",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 0,
+    "answer": "A. The multiplicity at the target class end of an association is the number of instances that can be associated with a single instance of source",
+    "topic": "Core Java & OOP",
+    "explanation": "Multiplicity defines the cardinality relationship between classes, specifying how many target instances can relate to one source instance. Option A correctly captures this definition, while option B contains grammatical errors and lacks precision in describing the association cardinality.",
+    "corrected": false,
+    "id": "q1959",
+    "trust": "unverified-source"
+  }
+]

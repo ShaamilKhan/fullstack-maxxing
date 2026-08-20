@@ -1,0 +1,1963 @@
+[
+  {
+    "question": "Which of the following is a NoSQL Database Type?",
+    "options": [
+      "A. SQL",
+      "B. Document databases",
+      "C. JSON",
+      "D. All of the mentioned"
+    ],
+    "answer_index": 1,
+    "answer": "B. Document databases",
+    "topic": "MongoDB",
+    "explanation": "Document databases like MongoDB store data in flexible, schema-less formats, making them a core NoSQL database type that handles unstructured data efficiently.\n\nSQL is relational and not NoSQL; JSON is a data format, not a database type itself.",
+    "corrected": false,
+    "id": "q2262",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which of the following is a wide-column store?",
+    "options": [
+      "A. Cassandra",
+      "B. Riak",
+      "C. MongoDB",
+      "D. Redis"
+    ],
+    "answer_index": 0,
+    "answer": "A. Cassandra",
+    "topic": "MongoDB",
+    "explanation": "Cassandra is a wide-column store that organizes data into column families with flexible schemas, allowing rows to contain varying columns dynamically.\n\nOther options are key-value stores: Riak and Redis store simple key-value pairs, while MongoDB is a document database storing JSON-like documents.",
+    "corrected": false,
+    "id": "q2263",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Point out the wrong statement.",
+    "options": [
+      "A. Non Relational databases require that schemas be defined before you can add data",
+      "B. NoSQL databases are built to allow the insertion of data without a predefined schema",
+      "C. NewSQL databases are built to allow the insertion of data without a predefined",
+      "D. All of the mentioned"
+    ],
+    "answer_index": 0,
+    "answer": "A. Non Relational databases require that schemas be defined before you can add data",
+    "topic": "React",
+    "explanation": "Non-relational (NoSQL) databases are schema-flexible, allowing data insertion without predefined schemas, unlike traditional relational databases.\n\nRelational databases require schemas first; non-relational databases don't, making statement A factually incorrect about how non-relational systems operate.",
+    "corrected": false,
+    "id": "q2264",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Most NoSQL databases support automatic __________ meaning that you get high availability and disaster recovery.",
+    "options": [
+      "A. processing",
+      "B. scalability",
+      "C. replication",
+      "D. all of the mentioned"
+    ],
+    "answer_index": 2,
+    "answer": "C. replication",
+    "topic": "MongoDB",
+    "explanation": "Automatic replication copies data across multiple nodes or servers, ensuring that if one node fails, others still hold accessible copies. This redundancy directly enables high availability and disaster recovery, since data remains accessible even during hardware failures or outages.",
+    "corrected": false,
+    "id": "q2265",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "Which of the following are the simplest NoSQL databases?",
+    "options": [
+      "A. Key-value",
+      "B. Wide-column",
+      "C. Document",
+      "D. All of the mentioned"
+    ],
+    "answer_index": 0,
+    "answer": "A. Key-value",
+    "topic": "MongoDB",
+    "explanation": "Key-value databases store data as simple key-value pairs with minimal structure, requiring no schema or complex queries, making them the most basic NoSQL type.\n\nOther NoSQL types like document and wide-column databases add organizational complexity through nested structures, collections, and column families respectively.",
+    "corrected": false,
+    "id": "q2266",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "________ stores are used to store information about networks, such as social",
+    "options": [
+      "A. Key-value",
+      "B. Wide-column",
+      "C. Document",
+      "D. Graph"
+    ],
+    "answer_index": 3,
+    "answer": "D. Graph",
+    "topic": "Core Java & OOP",
+    "explanation": "Graph databases excel at storing and querying interconnected data like social networks through nodes and edges representing entities and relationships.\n\nThey efficiently handle complex relationship traversals and pattern matching operations that would be computationally expensive in other database types.",
+    "corrected": false,
+    "id": "q2267",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "_______ filters the document stream to allow only matching documents to pass",
+    "options": [
+      "A. $regex",
+      "B. $reg",
+      "C. $match",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 2,
+    "answer": "C. $match",
+    "topic": "MongoDB",
+    "explanation": "$match is a MongoDB aggregation pipeline stage that filters documents based on specified conditions, allowing only those meeting the criteria to proceed downstream.\n\nIt functions similarly to the find() method's query filter, enabling selection of documents before applying other pipeline operations like grouping or sorting.",
+    "corrected": false,
+    "id": "q2268",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which of the following can be used to implement field level redaction?",
+    "options": [
+      "A. $skip",
+      "B. $limit",
+      "C. $match",
+      "D. $redact"
+    ],
+    "answer_index": 3,
+    "answer": "D. $redact",
+    "topic": "MongoDB",
+    "explanation": "The $redact operator evaluates document fields against a condition and either includes, excludes, or recurses through nested documents based on access levels.\n\nIt's specifically designed for field-level security by selectively exposing or hiding data within documents during aggregation pipeline processing.",
+    "corrected": false,
+    "id": "q2269",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "_______ reorders the document stream by a specified sort key.",
+    "options": [
+      "A. $skip",
+      "B. $limit",
+      "C. $sort",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 2,
+    "answer": "C. $sort",
+    "topic": "Core Java & OOP",
+    "explanation": "The $sort stage arranges documents in ascending or descending order based on specified fields. It processes the document stream before limiting or skipping, enabling ordered output in aggregation pipelines.",
+    "corrected": false,
+    "id": "q2270",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "________ deconstructs an array field from the input documents to output a document",
+    "options": [
+      "A. $unwindelem",
+      "B. $unwind",
+      "C. $unwin",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 1,
+    "answer": "B. $unwind",
+    "topic": "Core Java & OOP",
+    "explanation": "The $unwind operator in MongoDB's aggregation pipeline takes an array field and outputs one separate document for each element in that array. This deconstruction allows subsequent pipeline stages to process each array element individually rather than as a single array value.",
+    "corrected": false,
+    "id": "q2271",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which of the following operator is related to geography of data?",
+    "options": [
+      "A. $geoSpatial",
+      "B. $geoNear",
+      "C. $geoRear",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 1,
+    "answer": "B. $geoNear",
+    "topic": "Core Java & OOP",
+    "explanation": "The $geoNear operator queries documents based on proximity to geographic coordinates, returning results ordered by distance. It's MongoDB's primary geospatial query operator for location-based searches near specified points.",
+    "corrected": false,
+    "id": "q2272",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "By default GridFS limits chunk size to ______ k.",
+    "options": [
+      "A. 225",
+      "B. 255",
+      "C. 256",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 2,
+    "answer": "C. 256",
+    "topic": "HTML & CSS",
+    "explanation": "GridFS uses 255KB as the default chunk size to balance storage efficiency and performance while staying within MongoDB's 16MB document size limit.\n\nThis 255KB value allows multiple chunks per file while maintaining optimal retrieval speed and minimizing overhead from excessive fragmentation.",
+    "corrected": false,
+    "id": "q2273",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "When you query a GridFS store for a file, the _______ will reassemble the chunks as",
+    "options": [
+      "A. client",
+      "B. Server",
+      "C. Agent",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 0,
+    "answer": "A. client",
+    "topic": "HTML & CSS",
+    "explanation": "The client retrieves individual chunks from GridFS and possesses the necessary logic to reassemble them into the original file in correct sequence.\n\nGridFS is designed as a client-side operation where the driver handles chunk ordering and concatenation before presenting the complete file to the application.",
+    "corrected": false,
+    "id": "q2274",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "MongoDB represents queries as ___________ objects.",
+    "options": [
+      "A. BSON",
+      "B. JSON",
+      "C. GSON",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 0,
+    "answer": "A. BSON",
+    "topic": "MongoDB",
+    "explanation": "MongoDB stores and transmits all data, including queries, in BSON (Binary JSON) format, which is a binary-encoded serialization of JSON-like documents.\n\nBSON provides efficient storage, faster processing, and supports additional data types beyond standard JSON that MongoDB queries require.",
+    "corrected": false,
+    "id": "q2275",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Each document in the __________ collection represents a distinct chunk of a file as",
+    "options": [
+      "A. chunks",
+      "B. files",
+      "C. bson",
+      "D. none of the mentioned"
+    ],
+    "answer_index": 0,
+    "answer": "A. chunks",
+    "topic": "MongoDB",
+    "explanation": "In MongoDB's GridFS, the chunks collection stores file data divided into smaller segments, with each document representing one distinct chunk of a file.\n\nEach chunk document contains the file ID, sequence number, and binary data, enabling efficient storage and retrieval of large files exceeding BSON's 16MB document size limit.",
+    "corrected": false,
+    "id": "q2276",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "GridFS uses a _________ index on the chunks collection for the files_id and n fields.",
+    "options": [
+      "A. unique",
+      "B. single",
+      "C. non unique",
+      "D. none of the mentioned"
+    ],
+    "answer_index": 0,
+    "answer": "A. unique",
+    "topic": "HTML & CSS",
+    "explanation": "GridFS creates a unique index on the chunks collection's (files_id, n) compound key to ensure each chunk has a distinct sequence number per file, preventing duplicate chunks.\n\nThis uniqueness enforces data integrity by guaranteeing that every file's chunks are stored exactly once in sequential order without gaps or duplicates.",
+    "corrected": false,
+    "id": "q2277",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "The ___ field contains the sequence number of the chunk.",
+    "options": [
+      "A. x",
+      "B. array",
+      "C. field",
+      "D. n"
+    ],
+    "answer_index": 3,
+    "answer": "D. n",
+    "topic": "Core Java & OOP",
+    "explanation": "The `n` field is a standard naming convention in networking protocols and data structures that explicitly denotes sequence or chunk numbering. This field tracks the ordinal position of each chunk in a sequence for reassembly or processing purposes.",
+    "corrected": false,
+    "id": "q2278",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "The GridFS index allows efficient retrieval of __________ using the files_id and n values.",
+    "options": [
+      "A. chunks",
+      "B. files",
+      "C. bson",
+      "D. none of the mentioned"
+    ],
+    "answer_index": 0,
+    "answer": "A. chunks",
+    "topic": "HTML & CSS",
+    "explanation": "GridFS stores large files as chunks, with each chunk indexed by files_id and n (chunk number) for efficient retrieval and reassembly.\n\nThe index enables the system to quickly locate specific chunks belonging to a file without scanning entire collections.",
+    "corrected": false,
+    "id": "q2279",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "A ____________ data modelwith embedded data combines all related data for a",
+    "options": [
+      "A. normalized",
+      "B. denormalized",
+      "C. non relational",
+      "D. relational"
+    ],
+    "answer_index": 1,
+    "answer": "B. denormalized",
+    "topic": "Core Java & OOP",
+    "explanation": "A denormalized data model combines related data into single documents or records to reduce joins and improve query performance. This embedding approach sacrifices normalization principles to optimize read operations and data locality.",
+    "corrected": false,
+    "id": "q2280",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "For the __________ storage engine, if the document size exceeds the allocated space for that document, MongoDB relocates the document on disk.",
+    "options": [
+      "A. MMAPv1",
+      "B. MMAPv2",
+      "C. MMAPv3",
+      "D. MMAPv4"
+    ],
+    "answer_index": 0,
+    "answer": "A. MMAPv1",
+    "topic": "Core Java & OOP",
+    "explanation": "MMAPv1 preallocates a fixed-size record for each document, and when an update causes the document to grow beyond that allocated space, it must be moved to a new location with more room. This behavior is specific to MMAPv1's storage design; MongoDB's other engine, WiredTiger, does not work this way, and \"MMAPv2/v3/v4\" are not actual MongoDB storage engines.",
+    "corrected": false,
+    "id": "q2281",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "With MongoDB 3.0.0, the default use of the Power of _________ Allocations minimizes",
+    "options": [
+      "A. 2 Sized",
+      "B. 3 Sized",
+      "C. 4 Sized",
+      "D. 5 Sized"
+    ],
+    "answer_index": 0,
+    "answer": "A. 2 Sized",
+    "topic": "MongoDB",
+    "explanation": "MongoDB 3.0.0 uses power-of-2 sized allocations for documents to reduce fragmentation and wasted space. This allocation strategy aligns document sizes to powers of 2, optimizing storage efficiency and minimizing padding overhead.",
+    "corrected": false,
+    "id": "q2282",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "___________ strategy is used to explicitly avoid document growth.",
+    "options": [
+      "A. deallocation",
+      "B. allocation",
+      "C. pre-allocation",
+      "D. none of the mentioned"
+    ],
+    "answer_index": 2,
+    "answer": "C. pre-allocation",
+    "topic": "Core Java & OOP",
+    "explanation": "Pre-allocation reserves memory space upfront before documents grow, preventing dynamic resizing and fragmentation that occurs with gradual allocation.\n\nThis strategy avoids the performance overhead and unpredictable delays associated with reallocating memory as documents expand during runtime.",
+    "corrected": false,
+    "id": "q2283",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Each index in MongoDB requires at least _________ of data space.",
+    "options": [
+      "A. 8KB",
+      "B. 28KB",
+      "C. 68KB",
+      "D. 108KB"
+    ],
+    "answer_index": 0,
+    "answer": "A. 8KB",
+    "topic": "MongoDB",
+    "explanation": "MongoDB allocates a minimum of 8KB for each index to store index metadata and initial btree structures efficiently.\n\nThis 8KB minimum overhead ensures indexes have sufficient space for root nodes and basic operations regardless of collection size.",
+    "corrected": false,
+    "id": "q2284",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "mongo looks for a database server listening on port 27017 on the ________ interface.",
+    "options": [
+      "A. web",
+      "B. localhost",
+      "C. web host",
+      "D. all of the mentioned"
+    ],
+    "answer_index": 1,
+    "answer": "B. localhost",
+    "topic": "Core Java & OOP",
+    "explanation": "MongoDB's default connection string connects to `localhost:27017`, which is the loopback interface on the same machine where the client runs.\n\nThe localhost interface (127.0.0.1) enables local connections without requiring network accessibility, making it the secure default for development environments.",
+    "corrected": false,
+    "id": "q2285",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "After starting the mongo shell, your session will use the ________ databaseby default.",
+    "options": [
+      "A. mongo",
+      "B. master",
+      "C. test",
+      "D. primary"
+    ],
+    "answer_index": 2,
+    "answer": "C. test",
+    "topic": "Core Java & OOP",
+    "explanation": "When you launch the MongoDB shell without specifying a database, it automatically connects to the default \"test\" database for user operations and queries.\n\nThe \"test\" database is MongoDB's designated default workspace, providing a sandbox environment for developers to practice commands before using production databases.",
+    "corrected": false,
+    "id": "q2286",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "___________ command display the list of databases.",
+    "options": [
+      "A. show db",
+      "B. show dbs",
+      "C. show data",
+      "D. display dbs"
+    ],
+    "answer_index": 1,
+    "answer": "B. show dbs",
+    "topic": "Core Java & OOP",
+    "explanation": "The `show dbs` command is the correct MongoDB syntax for listing all available databases in the current connection. \"dbs\" is the abbreviated plural form that MongoDB's shell recognizes for this operation.",
+    "corrected": false,
+    "id": "q2287",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which of the following operation is used toswitch to new database mydb?",
+    "options": [
+      "A. use dbs",
+      "B. use db",
+      "C. use mydb",
+      "D. use mydbs"
+    ],
+    "answer_index": 2,
+    "answer": "C. use mydb",
+    "topic": "Core Java & OOP",
+    "explanation": "The `use` command in MongoDB/SQL is followed by the exact database name you want to switch to. Since the target database is named \"mydb\", the correct syntax is `use mydb`.",
+    "corrected": false,
+    "id": "q2288",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which of the following also returns a list of databases?",
+    "options": [
+      "A. show databases",
+      "B. show database",
+      "C. display dbs",
+      "D. all of the mentioned"
+    ],
+    "answer_index": 0,
+    "answer": "A. show databases",
+    "topic": "Core Java & OOP",
+    "explanation": "The `SHOW DATABASES` command is the standard SQL syntax supported by most database management systems to list all available databases in a server.\n\nOptions B, C, and D use incorrect or non-standard syntax that database engines do not recognize or support.",
+    "corrected": false,
+    "id": "q2289",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Command to check existence of collection is _____________",
+    "options": [
+      "A. show collection",
+      "B. show collections",
+      "C. show collect",
+      "D. none of the mentioned"
+    ],
+    "answer_index": 1,
+    "answer": "B. show collections",
+    "topic": "MongoDB",
+    "explanation": "The command `show collections` is the correct MongoDB syntax to display all existing collections in the current database. Other options contain incorrect spelling or syntax that MongoDB does not recognize.",
+    "corrected": false,
+    "id": "q2290",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which of the following method is used to query documents in collections?",
+    "options": [
+      "A. find",
+      "B. move",
+      "C. shell",
+      "D. replace"
+    ],
+    "answer_index": 0,
+    "answer": "A. find",
+    "topic": "MongoDB",
+    "explanation": "The `find()` method is the standard MongoDB operation for querying and retrieving documents from collections based on specified criteria.\n\nOther options serve different purposes: `move` isn't a valid method, `shell` is an interface tool, and `replace` modifies existing documents rather than querying them.",
+    "corrected": false,
+    "id": "q2291",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "A query may include a ___________ that specifies the fields from the matching",
+    "options": [
+      "A. selection",
+      "B. projection",
+      "C. union",
+      "D. none of the mentioned"
+    ],
+    "answer_index": 1,
+    "answer": "B. projection",
+    "topic": "Core Java & OOP",
+    "explanation": "A projection specifies which fields or columns to retrieve from matching records, filtering the output to only necessary attributes rather than returning entire rows.\n\nIn database queries, projection is the operation that selects specific columns from a result set, distinct from selection which filters rows based on conditions.",
+    "corrected": false,
+    "id": "q2292",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "MongoDB stores all documents in _____________",
+    "options": [
+      "A. tables",
+      "B. collections",
+      "C. rows",
+      "D. all of the mentioned"
+    ],
+    "answer_index": 1,
+    "answer": "B. collections",
+    "topic": "MongoDB",
+    "explanation": "MongoDB is a NoSQL document database that organizes data into collections rather than relational tables, each containing multiple JSON-like documents.\n\nCollections are the MongoDB equivalent of tables, serving as containers for related documents that share similar structure and purpose.",
+    "corrected": false,
+    "id": "q2293",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which of the following operation adds a new document to the users collection?",
+    "options": [
+      "A. add",
+      "B. insert",
+      "C. truncate",
+      "D. drop"
+    ],
+    "answer_index": 1,
+    "answer": "B. insert",
+    "topic": "MongoDB",
+    "explanation": "The `insert` operation adds new documents to a collection in databases like MongoDB. The `add` method is specific to certain libraries, while `truncate` and `drop` remove data rather than adding it.",
+    "corrected": false,
+    "id": "q2294",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which of the following preference determines how the client direct read operations to the set?",
+    "options": [
+      "A. read",
+      "B. write",
+      "C. update",
+      "D. delete"
+    ],
+    "answer_index": 0,
+    "answer": "A. read",
+    "topic": "SQL & JDBC",
+    "explanation": "The read preference setting specifically controls how a client routes read operations to members of a replica set, such as the primary or secondaries. Write, update, and delete are unrelated since they pertain to modifying data, not directing queries for retrieval.",
+    "corrected": false,
+    "id": "q2295",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "Applications can also control the behavior of write operations using _______ concern.",
+    "options": [
+      "A. read",
+      "B. write",
+      "C. truncate",
+      "D. all of the mentioned"
+    ],
+    "answer_index": 1,
+    "answer": "B. write",
+    "topic": "Core Java & OOP",
+    "explanation": "Write concern controls how MongoDB acknowledges write operations, determining durability levels and replication requirements before returning success to the application.\n\nIt allows applications to specify whether writes should be acknowledged by a single server, multiple replicas, or persisted to disk before confirmation.",
+    "corrected": false,
+    "id": "q2296",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "MongoDB process collection of documents using _________ operations.",
+    "options": [
+      "A. Hbase",
+      "B. Hive",
+      "C. Map-reduce",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 2,
+    "answer": "C. Map-reduce",
+    "topic": "MongoDB",
+    "explanation": "MongoDB uses map-reduce operations to process large collections of documents across distributed systems, allowing data aggregation and transformation at scale.\n\nMap-reduce breaks down complex queries into map and reduce functions, enabling parallel processing of document batches for efficient data analysis.",
+    "corrected": false,
+    "id": "q2297",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which of the following method returns true if the cursor has documents?",
+    "options": [
+      "A. hasMethod()",
+      "B. hasNext()",
+      "C. hasDoc()",
+      "D. all of the mentioned"
+    ],
+    "answer_index": 1,
+    "answer": "B. hasNext()",
+    "topic": "Core Java & OOP",
+    "explanation": "The `hasNext()` method is the standard cursor method that checks if additional documents exist in the result set. It returns true when the cursor can iterate to the next document, false when all documents have been consumed.",
+    "corrected": false,
+    "id": "q2298",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "____________ method renders the document in a JSON-like format.",
+    "options": [
+      "A. displayjson",
+      "B. print",
+      "C. printjson",
+      "D. printdoc"
+    ],
+    "answer_index": 2,
+    "answer": "C. printjson",
+    "topic": "Core Java & OOP",
+    "explanation": "The `printjson()` method is a MongoDB shell utility that formats and displays documents in a readable JSON structure. It's specifically designed for JSON output, distinguishing it from generic print methods.",
+    "corrected": false,
+    "id": "q2299",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "The mongo shell and the drivers provide several cursor methods that call on the cursor returned by the _______ method to modify its behavior.",
+    "options": [
+      "A. cursor()",
+      "B. find()",
+      "C. findc()",
+      "D. none of the mentioned"
+    ],
+    "answer_index": 1,
+    "answer": "B. find()",
+    "topic": "Core Java & OOP",
+    "explanation": "The find() method returns a cursor object representing the query results without immediately executing or returning the actual documents. This cursor object can then be chained with additional methods like sort(), limit(), or skip() to modify its behavior before iteration.",
+    "corrected": false,
+    "id": "q2300",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "Which of the following method corresponds to Order by clause in SQL?",
+    "options": [
+      "A. sort()",
+      "B. order()",
+      "C. orderby()",
+      "D. all of the mentioned"
+    ],
+    "answer_index": 0,
+    "answer": "A. sort()",
+    "topic": "SQL & JDBC",
+    "explanation": "The `sort()` method in LINQ orders query results by specified criteria, directly mapping to SQL's ORDER BY clause functionality.\n\nLINQ uses `sort()` and `OrderBy()` (case-sensitive) for sorting; however, `sort()` is the primary collection method that corresponds to ORDER BY operations.",
+    "corrected": false,
+    "id": "q2301",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "The __________ method limits the number of documents in the result set.",
+    "options": [
+      "A. limit()",
+      "B. limitOf()",
+      "C. limitBy()",
+      "D. none of the mentioned"
+    ],
+    "answer_index": 0,
+    "answer": "A. limit()",
+    "topic": "Core Java & OOP",
+    "explanation": "The `limit()` method is a standard database query function that restricts the number of returned documents from a query result set. Other options like `limitOf()` and `limitBy()` are non-existent methods in common database frameworks like MongoDB or SQL.",
+    "corrected": false,
+    "id": "q2302",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which of the following line skips the first 5 documents in the bios collection and returns all remaining documents?",
+    "options": [
+      "A. db.bios.find().limit( 5 )",
+      "B. db.bios.find().skip( 1 )",
+      "C. db.bios.find().skip( 5 )",
+      "D. db.bios.find().sort( 5 )"
+    ],
+    "answer_index": 2,
+    "answer": "C. db.bios.find().skip( 5 )",
+    "topic": "MongoDB",
+    "explanation": "The skip() method in MongoDB tells the query to omit a specified number of documents from the beginning of the result set before returning results. Passing 5 to skip() therefore bypasses the first 5 documents and returns all remaining ones.",
+    "corrected": false,
+    "id": "q2303",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "Spring’s transaction support offers a set of technology-independent facilities,",
+    "options": [
+      "A. org.springframework.transaction.PlatformTransactionManager",
+      "B. org.springframework.transaction.support.TransactionTemplate",
+      "C. all of the mentioned",
+      "D. none of the mentioned"
+    ],
+    "answer_index": 2,
+    "answer": "C. all of the mentioned",
+    "topic": "Core Java & OOP",
+    "explanation": "Both PlatformTransactionManager and TransactionTemplate are core abstractions that provide technology-independent transaction management across different persistence frameworks.\n\nTogether they form Spring's complete transaction support infrastructure, allowing developers to switch between JPA, Hibernate, JDBC, and other technologies without changing transaction handling code.",
+    "corrected": false,
+    "id": "q2304",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "The PlatformTransactionManager interface provides methods for working with",
+    "options": [
+      "A. getTransaction(TransactionDefinition definition)",
+      "B. commit(TransactionStatus status)",
+      "C. rollback(TransactionStatus status)",
+      "D. all of the mentioned"
+    ],
+    "answer_index": 3,
+    "answer": "D. all of the mentioned",
+    "topic": "TypeScript",
+    "explanation": "The PlatformTransactionManager interface is Spring's abstraction for transaction management, requiring implementations to provide all three methods for complete transaction lifecycle control.\n\nThese methods handle transaction creation, successful completion, and failure scenarios respectively, making them all essential for any transaction manager implementation.",
+    "corrected": false,
+    "id": "q2305",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Spring has several built-in implementations of PlatformTransactionManager interface",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "answer": "A. True",
+    "topic": "TypeScript",
+    "explanation": "Spring provides multiple PlatformTransactionManager implementations for different persistence technologies like DataSourceTransactionManager, HibernateTransactionManager, and JpaTransactionManager.\n\nEach implementation handles transaction management specific to its underlying data access framework, allowing developers to choose the appropriate one based on their application's persistence layer.",
+    "corrected": false,
+    "id": "q2306",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Method that allows you to start a new transaction (or obtain the currently active",
+    "options": [
+      "A. getTransaction()",
+      "B. commit()",
+      "C. rollback()",
+      "D. all of the mentioned"
+    ],
+    "answer_index": 0,
+    "answer": "A. getTransaction()",
+    "topic": "Core Java & OOP",
+    "explanation": "The `getTransaction()` method retrieves or initiates a transaction object, enabling control over transaction lifecycle and operations.\n\n`commit()` and `rollback()` finalize transactions but don't start or obtain active ones; they're completion operations, not initiation methods.",
+    "corrected": false,
+    "id": "q2307",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "You just have to encapsulate your code block in a callback class that implements the TransactionCallback interface and pass it to the TransactionTemplate execute method for execution. In this way, you don’t need to repeat the boilerplate transaction management code for this block.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "answer": "A. True",
+    "topic": "JavaScript",
+    "explanation": "TransactionTemplate applies the template design pattern, handling transaction begin, commit, and rollback internally while delegating only the business logic to the callback's doInTransaction method. This eliminates repetitive try-catch-finally blocks for transaction demarcation across multiple methods, centralizing that logic in the template itself.",
+    "corrected": false,
+    "id": "q2309",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "Spring (since version 2.0) offers a transaction advice that can be easily configured via",
+    "options": [
+      "A. rx:advice",
+      "B. bx:advice",
+      "C. tx:advice",
+      "D. none of the mentioned"
+    ],
+    "answer_index": 2,
+    "answer": "C. tx:advice",
+    "topic": "Core Java & OOP",
+    "explanation": "Spring's `tx:advice` element is part of the transaction management namespace and specifically handles declarative transaction configuration through XML. The \"tx\" prefix stands for \"transaction,\" making it the standard Spring mechanism for applying transactional behavior to methods.",
+    "corrected": false,
+    "id": "q2310",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "You can omit the transaction-manager attribute in the element if your transaction manager has the name transactionManager.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "answer": "A. True",
+    "topic": "Core Java & OOP",
+    "explanation": "Spring's default value for the transaction-manager attribute on elements like `<tx:annotation-driven>` is \"transactionManager\". This means Spring automatically looks for a bean with that exact id or name, so explicit configuration is unnecessary when using the default name.",
+    "corrected": false,
+    "id": "q2311",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "There is no need to write try/catch block or exception in method signature.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 1,
+    "answer": "B. False",
+    "topic": "Spring Core",
+    "explanation": "Checked exceptions in Java must either be caught in a try/catch block or declared in the method signature using the throws keyword. Failing to handle them either way results in a compilation error, making exception handling mandatory for such cases.",
+    "corrected": false,
+    "id": "q2312",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "Spring HibernateTemplate can simplify your DAO implementation by managing sessions and transactions for you.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "answer": "A. True",
+    "topic": "Spring Core",
+    "explanation": "HibernateTemplate handles session creation, opening, closing, and exception translation internally, freeing developers from writing boilerplate session-management code. It also integrates with Spring's transaction management, ensuring proper commit or rollback behavior without explicit coding in the DAO layer.",
+    "corrected": false,
+    "id": "q2313",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "An alternative to Spring HibernateTemplate is:-",
+    "options": [
+      "A. HibernateContext",
+      "B. Hibernate contextual sessions",
+      "C. All of the mentioned",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 1,
+    "answer": "B. Hibernate contextual sessions",
+    "topic": "Spring Core",
+    "explanation": "HibernateTemplate is a Spring wrapper that handles session management and exception translation. Hibernate contextual sessions provide native session management through ThreadLocal, offering a cleaner alternative without Spring dependency.",
+    "corrected": false,
+    "id": "q2314",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Sessionfactory can manage contextual sessions for you and allows you to retrieve",
+    "options": [
+      "A. getSession() method",
+      "B. getCurrent() method",
+      "C. getCurrentSession() method",
+      "D. none of the mentioned"
+    ],
+    "answer_index": 2,
+    "answer": "C. getCurrentSession() method",
+    "topic": "Core Java & OOP",
+    "explanation": "SessionFactory's getCurrentSession() method retrieves the current session bound to the thread-local context, managing its lifecycle automatically without manual closure.\n\nThis method enables contextual session management by maintaining session association with the current thread, simplifying transaction handling and resource management.",
+    "corrected": false,
+    "id": "q2315",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "DAO methods must be made transactional.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 1,
+    "answer": "B. False",
+    "topic": "Core Java & OOP",
+    "explanation": "DAO methods should be transactional to ensure data consistency and atomicity. Transactions maintain ACID properties, preventing partial updates and data corruption during database operations.",
+    "corrected": false,
+    "id": "q2316",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Annotation to find a transaction and then fail, complaining that no Hibernate session",
+    "options": [
+      "A. @Transaction",
+      "B. @Transactional",
+      "C. @Transactions",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 1,
+    "answer": "B. @Transactional",
+    "topic": "Spring Core",
+    "explanation": "@Transactional manages Hibernate session lifecycle automatically, ensuring a session exists for lazy-loaded entity access within transaction scope. Without it, accessing unmapped associations outside session context throws \"no session\" errors.",
+    "corrected": false,
+    "id": "q2317",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "HibernateTemplate will translate the native Hibernate exceptions into exceptions in Spring DataAccessException hierarchy.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "answer": "A. True",
+    "topic": "Spring Core",
+    "explanation": "HibernateTemplate wraps Hibernate operations and catches HibernateException instances thrown internally, converting them via SessionFactoryUtils.convertHibernateAccessException() into corresponding DataAccessException subclasses. This allows application code to handle persistence errors generically without depending on Hibernate-specific exception types, supporting Spring's ORM abstraction goals.",
+    "corrected": false,
+    "id": "q2319",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "Annotation for Hibernate exceptions to be translated into Spring DataAccessException",
+    "options": [
+      "A. @Translation",
+      "B. @Repo",
+      "C. @Repository",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 2,
+    "answer": "C. @Repository",
+    "topic": "Spring Core",
+    "explanation": "The @Repository annotation enables Spring's exception translation mechanism, automatically converting Hibernate exceptions into Spring's uniform DataAccessException hierarchy. This provides consistent exception handling across the data access layer regardless of the underlying persistence technology.",
+    "corrected": false,
+    "id": "q2320",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Instance to translate the native Hibernate exceptions into data access exceptions in",
+    "options": [
+      "A. PersistenceExceptionPostProcessor",
+      "B. PersistenceExceptionTranslation",
+      "C. PersistenceException",
+      "D. PersistenceExceptionTranslationPostProcessor"
+    ],
+    "answer_index": 3,
+    "answer": "D. PersistenceExceptionTranslationPostProcessor",
+    "topic": "Spring Core",
+    "explanation": "PersistenceExceptionTranslationPostProcessor is a Spring bean post-processor that intercepts Hibernate exceptions and converts them into Spring's DataAccessException hierarchy for consistent error handling.\n\nIt automatically translates vendor-specific persistence exceptions into platform-agnostic Spring exceptions, enabling uniform exception handling across different ORM frameworks.",
+    "corrected": false,
+    "id": "q2321",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "You can assign a component name in this annotation and have the session factory autowired by the Spring IoC container with @Autowired.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "answer": "A. True",
+    "topic": "Core Java & OOP",
+    "explanation": "Annotating a class with a component name (e.g., using @Component or @Repository) registers it as a Spring-managed bean within the application context. Once registered, its SessionFactory dependency can be injected automatically by declaring @Autowired on the corresponding field or setter.",
+    "corrected": false,
+    "id": "q2322",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "Spring provides to simplify your DAO implementation by managing entitymanagers",
+    "options": [
+      "A. HibernateTemplate",
+      "B. JpaTemplate",
+      "C. SpringTemplate",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 1,
+    "answer": "B. JpaTemplate",
+    "topic": "Spring Core",
+    "explanation": "JpaTemplate is a Spring utility class that handles EntityManager lifecycle management, transaction handling, and exception translation for JPA-based DAOs.\n\nIt eliminates boilerplate code by wrapping common JPA operations and automatically managing resource cleanup and persistence context scope.",
+    "corrected": false,
+    "id": "q2323",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Annotation used for entity manager injection in EJB components.",
+    "options": [
+      "A. @PersistenceContext",
+      "B. @Persistence",
+      "C. @PersistenceCon",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 0,
+    "answer": "A. @PersistenceContext",
+    "topic": "Core Java & OOP",
+    "explanation": "@PersistenceContext is the standard JPA annotation that injects an EntityManager instance into EJB components, managing its lifecycle and transaction scope automatically.\n\nThe other options are either non-existent (@Persistence, @PersistenceCon) or incorrect, making @PersistenceContext the only valid JPA annotation for EntityManager injection.",
+    "corrected": false,
+    "id": "q2324",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "To use the context injection approach, you can declare an entity manager field in your DAO and annotate it with the @PersistenceContext annotation.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "answer": "A. True",
+    "topic": "Core Java & OOP",
+    "explanation": "The @PersistenceContext annotation enables container-managed dependency injection, allowing the container to automatically inject a valid EntityManager instance into the annotated field. This eliminates manual lookup or instantiation, letting the DAO directly use the injected entity manager for persistence operations.",
+    "corrected": false,
+    "id": "q2325",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "JpaTemplate will translate the native JPA exceptions into exceptions in Spring DataAccessException hierarchy.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "answer": "A. True",
+    "topic": "Core Java & OOP",
+    "explanation": "JpaTemplate wraps calls to the underlying JPA persistence provider and catches any PersistenceException thrown, converting it into Spring's corresponding DataAccessException subclass via the JpaDialect's translation logic. This allows applications to remain decoupled from provider-specific exception types and rely on Spring's unified, unchecked exception hierarchy for consistent error handling across different persistence technologies.",
+    "corrected": false,
+    "id": "q2326",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "When an HTML form is submitted using the GET method, how does the browser construct the resulting request URL?",
+    "options": [
+      "A. starts with http:// and ends with ?",
+      "B. starts with http:// and ends with &",
+      "C. no certain URL is specified",
+      "D. depends upon the platform used"
+    ],
+    "answer_index": 0,
+    "answer": "A. starts with http:// and ends with ?",
+    "topic": "Core Java & OOP",
+    "explanation": "When a form uses the GET method, the browser takes the action URL and appends a question mark before adding the form data as a query string. This URL naturally begins with the scheme \"http://\" and the question mark marks the boundary between the resource path and the encoded name-value pairs.",
+    "corrected": false,
+    "id": "q2327",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "question": "Spring supports a series of mechanisms to generate a REST service payload.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "answer": "A. True",
+    "topic": "Core Java & OOP",
+    "explanation": "Spring provides multiple mechanisms like `@RestController`, `HttpMessageConverter`, and content negotiation to serialize objects into various REST payload formats (JSON, XML, etc.).\n\nThese built-in serialization features allow developers to easily generate and customize REST service responses without manual payload construction.",
+    "corrected": false,
+    "id": "q2328",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Marshalling is the process of transforming an in-memory representation of an object into a data format.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "answer": "A. True",
+    "topic": "Core Java & OOP",
+    "explanation": "Marshalling converts an object's in-memory state into a serialized format, such as bytes or text, suitable for storage or transmission. This process enables data to be reconstructed later through unmarshalling, preserving the object's structure and values across different systems or contexts.",
+    "corrected": false,
+    "id": "q2329",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "In the case of classesToBeBound, the classes assigned to this property, indicate the class (i.e., object) structure that is to be transformed into XML.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "answer": "A. True",
+    "topic": "Core Java & OOP",
+    "explanation": "In JAXB's Jakarta XML Binding configuration, the classesToBeBound property specifies exactly which Java classes the marshaller should recognize and convert into their corresponding XML representations. These classes define the object graph structure, including fields and nested elements, that JAXB uses to generate valid XML output during marshalling operations.",
+    "corrected": false,
+    "id": "q2330",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "XML tag which represents information related to a REST service request.",
+    "options": [
+      "A. Result",
+      "B. Title",
+      "C. None of the mentioned",
+      "D. All of the mentioned"
+    ],
+    "answer_index": 2,
+    "answer": "C. None of the mentioned",
+    "topic": "Core Java & OOP",
+    "explanation": "All XML tags can represent REST service request information depending on context and schema design. Result, Title, and other custom tags serve as metadata containers for structuring request-related data flexibly.",
+    "corrected": false,
+    "id": "q2332",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which logging framework is commonly used by the Spring Framework to perform its logging operations?",
+    "options": [
+      "A. Log4J",
+      "B. LogingJ",
+      "C. JLog",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 0,
+    "answer": "A. Log4J",
+    "topic": "Core Java & OOP",
+    "explanation": "Spring Framework has historically relied on Log4J as its primary logging implementation, integrating it through Jakarta Commons Logging (JCL) abstraction layer. This allowed Spring applications to leverage Log4J's configurable log levels, appenders, and output formatting while maintaining flexibility to swap logging backends if needed.",
+    "corrected": false,
+    "id": "q2333",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "question": "Log4J configuration parameters are specified inside:-",
+    "options": [
+      "A. Config.groovy",
+      "B. Conf.groovy",
+      "C. Log.groovy",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 0,
+    "answer": "A. Config.groovy",
+    "topic": "Core Java & OOP",
+    "explanation": "In Grails applications, Log4J configuration parameters are defined in the Config.groovy file under the log4j closure, which is the standard location for all application configuration settings.\n\nThe Config.groovy file serves as the primary configuration repository for Grails framework settings, including logging levels, appenders, and logger definitions for Log4J integration.",
+    "corrected": false,
+    "id": "q2334",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Grails application logging can be configured using:-",
+    "options": [
+      "A. creating custom appenders",
+      "B. logging levels",
+      "C. console output",
+      "D. all of the mentioned"
+    ],
+    "answer_index": 3,
+    "answer": "D. all of the mentioned",
+    "topic": "Core Java & OOP",
+    "explanation": "Grails uses Log4j configuration that supports creating custom appenders, setting logging levels, and directing output to console, file, or other destinations simultaneously.\n\nAll three methods work together in Grails' logging framework to provide comprehensive control over log behavior and output routing.",
+    "corrected": false,
+    "id": "q2335",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Any logging operation occurring at any of the cited packages will be logged.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "answer": "A. True",
+    "topic": "Core Java & OOP",
+    "explanation": "When a logger is configured for a package, it captures all logging calls originating from that package and its subpackages due to logger hierarchy inheritance.\n\nConfiguring logging at the package level enables all nested classes and modules within that package to emit logs through the inherited logger configuration.",
+    "corrected": false,
+    "id": "q2336",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Log4J also has the following logging level:-",
+    "options": [
+      "A. fatal",
+      "B. error",
+      "C. warning",
+      "D. all of the mentioned"
+    ],
+    "answer_index": 3,
+    "answer": "D. all of the mentioned",
+    "topic": "Core Java & OOP",
+    "explanation": "Log4J supports multiple logging levels including FATAL, ERROR, and WARNING, along with DEBUG, INFO, and TRACE for comprehensive log filtering.\n\nAll options represent valid Log4J logging levels that control which messages are recorded based on severity, making \"all of the mentioned\" the correct answer.",
+    "corrected": false,
+    "id": "q2337",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "By default, all logging messageare sent to the stacktrace.groovy file.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 1,
+    "answer": "B. False",
+    "topic": "Core Java & OOP",
+    "explanation": "This statement is incorrect. The correct answer should be B. False.\n\nCorrection (2 sentences):\n\nBy default, Groovy logging messages are sent to stdout/stderr or configured appenders, not a specific \"stacktrace.groovy\" file. No standard Groovy logging framework automatically routes all messages to such a file without explicit configuration.",
+    "corrected": false,
+    "id": "q2338",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "To offer versatile logging functionality:-",
+    "options": [
+      "A. loggers",
+      "B. appenders",
+      "C. all of the mentioned",
+      "D. none of the mentioned"
+    ],
+    "answer_index": 2,
+    "answer": "C. all of the mentioned",
+    "topic": "Core Java & OOP",
+    "explanation": "Both loggers and appenders work together to provide versatile logging: loggers capture messages while appenders direct them to various destinations like files, consoles, or databases.\n\nNeither component alone offers complete functionality; they require each other to enable flexible, multi-destination logging configurations.",
+    "corrected": false,
+    "id": "q2339",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "A location where logging information is sent.",
+    "options": [
+      "A. appender",
+      "B. logger",
+      "C. all of the mentioned",
+      "D. none of the mentioned"
+    ],
+    "answer_index": 0,
+    "answer": "A. appender",
+    "topic": "Core Java & OOP",
+    "explanation": "An appender is the component in logging frameworks that actually delivers log messages to their destinations, such as files, consoles, or databases.\n\nLoggers generate log events but don't determine where they go; appenders handle the routing and output of logging information to specific locations.",
+    "corrected": false,
+    "id": "q2340",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "A location where logging information is generated.",
+    "options": [
+      "A. appender",
+      "B. logger",
+      "C. all of the mentioned",
+      "D. none of the mentioned"
+    ],
+    "answer_index": 1,
+    "answer": "B. logger",
+    "topic": "Core Java & OOP",
+    "explanation": "A logger is the component that generates and captures logging information at its source in an application. Appenders are downstream components that receive already-generated log messages and output them to destinations.",
+    "corrected": false,
+    "id": "q2341",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "The default Log4J logger can be customized in a Grails application.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "answer": "A. True",
+    "topic": "Core Java & OOP",
+    "explanation": "Log4J configuration in Grails is customizable via `grails-app/conf/log4j.groovy` or `log4j2.xml`, allowing developers to modify loggers, appenders, and log levels.\n\nGrails provides a DSL for Log4J configuration that integrates seamlessly with the framework's dependency injection and environment-specific settings.",
+    "corrected": false,
+    "id": "q2342",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "An appender that logs to a JDBC connection.",
+    "options": [
+      "A. jdbc",
+      "B. console",
+      "C. file",
+      "D. rollingFile"
+    ],
+    "answer_index": 0,
+    "answer": "A. jdbc",
+    "topic": "SQL & JDBC",
+    "explanation": "A JDBC appender is specifically designed to log messages directly to a database via JDBC connections. Console, file, and rollingFile appenders write to different destinations like stdout or filesystem storage.",
+    "corrected": false,
+    "id": "q2343",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Command for running tests in Grails.",
+    "options": [
+      "A. grails test-app",
+      "B. grails test",
+      "C. grails test-app domain class",
+      "D. none of the mentioned"
+    ],
+    "answer_index": 0,
+    "answer": "A. grails test-app",
+    "topic": "Core Java & OOP",
+    "explanation": "The `grails test-app` command is the standard Grails CLI command that executes the entire test suite, including unit and integration tests.\n\nOther variations like `grails test` are not valid Grails commands, while `grails test-app domain class` is incorrect syntax for running tests.",
+    "corrected": false,
+    "id": "q2344",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Unit tests are designed to validate the logic contained in a single domain class.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "answer": "A. True",
+    "topic": "Core Java & OOP",
+    "explanation": "Unit tests isolate and verify individual methods or functions within a single class, ensuring their logic works correctly in controlled conditions. They form the foundation of testing by catching bugs at the smallest, most manageable code level before integration occurs.",
+    "corrected": false,
+    "id": "q2345",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Method creates a mock object from a domain class.",
+    "options": [
+      "A. mockForConstraintsTests",
+      "B. mockForConstraints",
+      "C. all of the mentioned",
+      "D. none of the mentioned"
+    ],
+    "answer_index": 0,
+    "answer": "A. mockForConstraintsTests",
+    "topic": "TypeScript",
+    "explanation": "`mockForConstraintsTests` is a Grails testing method that creates mock domain objects specifically for validating constraints without database interaction.\n\nIt enables unit testing of domain class validation rules by providing a lightweight mock instance with constraint checking capabilities.",
+    "corrected": false,
+    "id": "q2346",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "What happens if you call deleteRow() on a ResultSet object?",
+    "options": [
+      "A. The row you are positioned on is deleted from the ResultSet, but not from the database.",
+      "B. The row you are positioned on is deleted from the ResultSet and from the database",
+      "C. The result depends on whether the property synchronizeWithDataSource is set to true or false",
+      "D. You will get a compile error: the method does not exist because you cannot delete rows from a ResultSet"
+    ],
+    "answer_index": 1,
+    "answer": "B. The row you are positioned on is deleted from the ResultSet and from the database",
+    "topic": "React",
+    "explanation": "The deleteRow() method deletes the current row from both the underlying database table and the ResultSet, provided the ResultSet is updatable. This requires the ResultSet to be created with CONCUR_UPDATABLE concurrency and the row must not have pending updates before deletion.",
+    "corrected": false,
+    "id": "q2354",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "Goals are the________ of/to achievement/s.",
+    "options": [
+      "A. stepping-stones",
+      "B. bridging gaps",
+      "C. Rewards",
+      "D. end-results"
+    ],
+    "answer_index": 0,
+    "answer": "A. stepping-stones",
+    "topic": "JavaScript",
+    "explanation": "Goals function as stepping-stones because each one provides a concrete step that leads progressively toward larger achievements. The phrase \"stepping-stones to achievement\" is the standard collocation, unlike \"bridging gaps\" or \"rewards,\" which don't fit grammatically or logically here.",
+    "corrected": false,
+    "id": "q2356",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source",
+    "options_synthesized": true
+  },
+  {
+    "question": "The Bootstrap grid system works across multiple devices.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "answer": "A. True",
+    "topic": "JavaScript",
+    "explanation": "Bootstrap's grid system uses responsive breakpoints (xs, sm, md, lg, xl) that adapt layout based on screen width. This allows the same HTML structure to render appropriately on phones, tablets, and desktops without separate codebases.",
+    "corrected": false,
+    "id": "q2357",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "dependency for the injected service?",
+    "options": [
+      "A. In the class signature",
+      "B. In the class constructor",
+      "C. In the component decorator",
+      "D. In the Import statement"
+    ],
+    "answer_index": 1,
+    "answer": "B. In the class constructor",
+    "topic": "TypeScript",
+    "explanation": "In Angular, dependencies are declared as typed parameters in the class constructor signature, enabling the injector to identify and resolve them automatically through type information.\n\nThe decorator and import statements support the injection mechanism but don't declare the actual dependency; only the constructor signature specifies what needs to be injected.",
+    "corrected": false,
+    "id": "q2358",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which of the following is the correct syntax for using the *ngFor directive in Angular to iterate over an array called 'products'?",
+    "options": [
+      "A. *ngFor=\"let product in products\"",
+      "B. *ngFor=\"let product of products\"",
+      "C. *ngFor=\"product of products\"",
+      "D. ngFor=\"let product of products\""
+    ],
+    "answer_index": 1,
+    "answer": "B. *ngFor=\"let product of products\"",
+    "topic": "JavaScript",
+    "explanation": "The *ngFor directive requires the \"of\" keyword to iterate over arrays, following the syntax \"let item of collection\". The asterisk prefix is mandatory since *ngFor is a structural directive that modifies the DOM structure.",
+    "corrected": false,
+    "id": "q2360",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "question": "In an Angular route configuration object, where are dynamic route parameters (e.g., an ':id' placeholder) specified?",
+    "options": [
+      "A. In a params property",
+      "B. In a parameters property",
+      "C. As part of the path property",
+      "D. As part of the component property"
+    ],
+    "answer_index": 2,
+    "answer": "C. As part of the path property",
+    "topic": "Core Java & OOP",
+    "explanation": "Angular routes define dynamic segments directly within the path string using a colon prefix, such as 'users/:id', where the framework parses the segment as a parameter placeholder. This path string is then matched against the URL, and Angular's router extracts the actual value for :id from the corresponding URL segment at runtime.",
+    "corrected": false,
+    "id": "q2361",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "question": "<button (click)='toggleImage()'/>",
+    "options": [
+      "A. Property binding of the click property to the toggleImage property",
+      "B. Property binding of the click property to the toggleImage method",
+      "C. Event binding of the click event to the toggleImage method",
+      "D. Event binding of the click event to the toggleImage property"
+    ],
+    "answer_index": 2,
+    "answer": "C. Event binding of the click event to the toggleImage method",
+    "topic": "Core Java & OOP",
+    "explanation": "The parentheses `()` denote event binding syntax in Angular, not property binding which uses square brackets `[]`. The `click` is an event, and `toggleImage()` is a method being invoked, making this event binding to a method.",
+    "corrected": false,
+    "id": "q2362",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which of the following is a typed superset of JavaScript that compiles to plain JavaScript?",
+    "options": [
+      "A. Webpack",
+      "B. Change Detection",
+      "C. Routing",
+      "D. TypeScript"
+    ],
+    "answer_index": 3,
+    "answer": "D. TypeScript",
+    "topic": "TypeScript",
+    "explanation": "TypeScript adds static typing, interfaces, and other features on top of JavaScript syntax, making it a \"typed superset\" of the language. Its compiler (tsc) transpiles TypeScript code into plain JavaScript that browsers and Node.js can execute directly.",
+    "corrected": false,
+    "id": "q2364",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "question": "Q 10. What do directives do?",
+    "options": [
+      "A. Provide different views based on the URL",
+      "B. Format display of data",
+      "C. Group visual display with functionality",
+      "D. Add new capabilities to HTML elements"
+    ],
+    "answer_index": 3,
+    "answer": "D. Add new capabilities to HTML elements",
+    "topic": "HTML & CSS",
+    "explanation": "Directives extend HTML's vocabulary by attaching custom behavior, attributes, or DOM manipulation logic to standard or custom elements. This allows developers to encapsulate reusable functionality, such as event handling or conditional rendering, directly onto elements without writing repetitive imperative code.",
+    "corrected": false,
+    "id": "q2365",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "In a REST service, which HTTP method is used to completely replace an existing resource with a new representation?",
+    "options": [
+      "A. PUT",
+      "B. PATCH",
+      "C. POST",
+      "D. DELETE"
+    ],
+    "answer_index": 0,
+    "answer": "A. PUT",
+    "topic": "Core Java & OOP",
+    "explanation": "PUT replaces an entire resource at a specific URI with the new representation provided in the request body. It is idempotent, meaning multiple identical requests produce the same result, unlike PATCH, which only applies partial updates.",
+    "corrected": false,
+    "id": "q2366",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "question": "In Angular, where should a service be registered to ensure a single, shared instance of it is used throughout an entire application?",
+    "options": [
+      "A. In a child component",
+      "B. In the Webpack configuration",
+      "C. In an NgModule",
+      "D. In the base service"
+    ],
+    "answer_index": 2,
+    "answer": "C. In an NgModule",
+    "topic": "TypeScript",
+    "explanation": "Registering a service in an NgModule (or using providedIn: 'root') creates a single instance in the application's root injector, which is then shared by all components and services that inject it. This ensures consistent state and behavior across the entire application, avoiding the creation of multiple separate instances.",
+    "corrected": false,
+    "id": "q2367",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "question": "In Angular, what type does the built-in HttpClient return when making HTTP requests?",
+    "options": [
+      "A. Function",
+      "B. Promise",
+      "C. Observable",
+      "D. Module"
+    ],
+    "answer_index": 2,
+    "answer": "C. Observable",
+    "topic": "JavaScript",
+    "explanation": "Angular's HttpClient methods (get, post, put, delete, etc.) return RxJS Observables, enabling operators like map, filter, and retry for handling asynchronous data streams. Observables also support cancellation via unsubscribe and can emit multiple values over time, unlike Promises which resolve only once.",
+    "corrected": false,
+    "id": "q2368",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "question": "create a new service?",
+    "options": [
+      "A. ng serve",
+      "B. npm service",
+      "C. ng generate",
+      "D. npm start"
+    ],
+    "answer_index": 2,
+    "answer": "C. ng generate",
+    "topic": "Node.js & Express",
+    "explanation": "The `ng serve` command builds and serves an Angular application locally with hot module reloading for development purposes.\n\n`ng generate` creates new components/services, `npm start` runs custom scripts, and `npm service` doesn't exist as a standard command.",
+    "corrected": false,
+    "id": "q2369",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "You also have to include suitable load-time weaver’s configuration",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "answer": "A. True",
+    "topic": "Core Java & OOP",
+    "explanation": "Load-time weaving requires explicit configuration to instrument classes during JVM startup, enabling aspect-oriented programming frameworks like Spring to apply cross-cutting concerns.\n\nWithout proper weaver configuration, the runtime environment cannot intercept and modify bytecode, preventing aspects from being woven into target classes at class-loading time.",
+    "corrected": false,
+    "id": "q2370",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which method is used to register BeanPostProcessor?",
+    "options": [
+      "A. addBeanPostProcessors",
+      "B. registerBeanPostProcessors",
+      "C. addBeanProcessors",
+      "D. none of the mentioned"
+    ],
+    "answer_index": 1,
+    "answer": "B. registerBeanPostProcessors",
+    "topic": "Core Java & OOP",
+    "explanation": "BeanPostProcessor instances are registered in Spring through the `addBeanPostProcessors` method, which is part of the ConfigurableListableBeanFactory interface for managing post-processors.\n\nThis method allows programmatic registration of custom bean post-processors that intercept bean creation and initialization lifecycle events during the Spring container startup process.",
+    "corrected": false,
+    "id": "q2372",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which Interface for bean Post Processor is used to distinguish between checked beans",
+    "options": [
+      "A. StorageConfig",
+      "B. Marker",
+      "C. None of the mentioned",
+      "D. All of the mentioned"
+    ],
+    "answer_index": 1,
+    "answer": "B. Marker",
+    "topic": "TypeScript",
+    "explanation": "The Marker interface contains no methods; it simply tags a bean class so Spring can identify it during BeanPostProcessor checks. This allows the container to distinguish already-processed or specially-treated beans from ordinary ones without adding behavioral contracts.",
+    "corrected": false,
+    "id": "q2373",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "In Spring, which interface allows custom logic to be executed before and after bean initialization via its two callback methods, postProcessBeforeInitialization() and postProcessAfterInitialization()?",
+    "options": [
+      "A. BeanPostProcessor",
+      "B. BeanFactoryPostProcessor",
+      "C. InitializingBean",
+      "D. ApplicationListener"
+    ],
+    "answer_index": 0,
+    "answer": "A. BeanPostProcessor",
+    "topic": "Core Java & OOP",
+    "explanation": "BeanPostProcessor defines postProcessBeforeInitialization() and postProcessAfterInitialization(), which Spring invokes around each bean's initialization step, allowing custom logic like proxying or property modification. The other options serve different purposes: BeanFactoryPostProcessor modifies bean definitions before instantiation, InitializingBean provides a single init callback, and ApplicationListener handles application events.",
+    "corrected": false,
+    "id": "q2374",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "question": "PathCheckingBeanPostProcessor will not work properly in case",
+    "options": [
+      "A. XML Configuration",
+      "B. Java based Configuration",
+      "C. JSR Annotation",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 0,
+    "answer": "A. XML Configuration",
+    "topic": "Core Java & OOP",
+    "explanation": "PathCheckingBeanPostProcessor requires classpath scanning to detect beans, which annotation-based and Java config support natively. XML configuration lacks automatic component detection capabilities.",
+    "corrected": false,
+    "id": "q2375",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which bean factory post processor externalizes part of the bean",
+    "options": [
+      "A. PropertyPlaceholderConfigurer",
+      "B. PropertyPlaceholderRegister",
+      "C. PropertyGetPath",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 0,
+    "answer": "A. PropertyPlaceholderConfigurer",
+    "topic": "Core Java & OOP",
+    "explanation": "PropertyPlaceholderConfigurer is a BeanFactoryPostProcessor that replaces ${...} placeholders in bean property values with externalized properties from configuration files.\n\nIt enables externalization of configuration by reading properties from external sources like .properties files, allowing beans to reference external values without hardcoding them.",
+    "corrected": false,
+    "id": "q2376",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which interface defines methods for resolving text messages",
+    "options": [
+      "A. MessageSource",
+      "B. ApplicationListener",
+      "C. ApplicationContextListener",
+      "D. TextEvent"
+    ],
+    "answer_index": 0,
+    "answer": "A. MessageSource",
+    "topic": "Spring Core",
+    "explanation": "MessageSource is Spring's interface that provides methods like getMessage() to resolve text messages from property files, supporting internationalization and message lookup.\n\nApplicationListener, ApplicationContextListener, and TextEvent are unrelated interfaces that handle events or context lifecycle, not message resolution functionality.",
+    "corrected": false,
+    "id": "q2377",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which interface is used to listen to certain events",
+    "options": [
+      "A. ApplicationListener",
+      "B. ContextListener",
+      "C. EventListener",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 0,
+    "answer": "A. ApplicationListener",
+    "topic": "TypeScript",
+    "explanation": "ApplicationListener is a Spring framework interface that allows beans to listen to and respond to application events published by the ApplicationContext.\n\nIt implements the EventListener marker interface and provides the onApplicationEvent() method to handle specific application events during the application lifecycle.",
+    "corrected": false,
+    "id": "q2378",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which method is used to publish your own custom event",
+    "options": [
+      "A. contextPublish",
+      "B. publishEvent",
+      "C. applicationEventPublish",
+      "D. addEvent"
+    ],
+    "answer_index": 1,
+    "answer": "B. publishEvent",
+    "topic": "Core Java & OOP",
+    "explanation": "The `contextPublish` method is the standard API for publishing custom events in application frameworks, allowing developers to trigger and broadcast events across components.\n\nThis method integrates with the context system to ensure proper event propagation and listener notification throughout the application lifecycle.",
+    "corrected": false,
+    "id": "q2379",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which of the following is a well known recognized event",
+    "options": [
+      "A. ContextCloasedEvemt",
+      "B. ContextRefreshedEvent",
+      "C. RequestHandledEvent",
+      "D. All of the mentioned"
+    ],
+    "answer_index": 3,
+    "answer": "D. All of the mentioned",
+    "topic": "Core Java & OOP",
+    "explanation": "ContextClosedEvent is fired when the Spring ApplicationContext is closed, making it a fundamental lifecycle event that developers commonly use for cleanup operations.\n\nThe other options contain typos or are less commonly recognized in Spring Framework documentation compared to this well-established context lifecycle event.",
+    "corrected": false,
+    "id": "q2380",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which event is provoked when web request comes into action",
+    "options": [
+      "A. ContextClosedEvent",
+      "B. ContextStoppedEvent",
+      "C. SessionEvent",
+      "D. RequestHandledEvent"
+    ],
+    "answer_index": 3,
+    "answer": "D. RequestHandledEvent",
+    "topic": "Core Java & OOP",
+    "explanation": "The RequestHandledEvent is fired by Spring whenever an HTTP request is successfully processed and completed by the application.\n\nThis event is specifically designed to handle web request lifecycle events, making it the appropriate choice for request-based actions.",
+    "corrected": false,
+    "id": "q2381",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "The element ___________ simply groups items within an enclosed dd tag, though it may associate",
+    "options": [
+      "A. object",
+      "B. figure",
+      "C. embed",
+      "D. none of the mentioned"
+    ],
+    "answer_index": 1,
+    "answer": "B. figure",
+    "topic": "Core Java & OOP",
+    "explanation": "The `<object>` element serves as a container for external resources like images, audio, or embedded content, grouping them within its structure. It can associate parameters and fallback content while maintaining semantic relationship between the object and its properties.",
+    "corrected": false,
+    "id": "q2382",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which of the following element is used for highlighting content similarly to how a highlighter pen",
+    "options": [
+      "A. em",
+      "B. strong",
+      "C. mark",
+      "D. none of the mentioned"
+    ],
+    "answer_index": 2,
+    "answer": "C. mark",
+    "topic": "Core Java & OOP",
+    "explanation": "The `<mark>` element is specifically designed to highlight text with a yellow background, mimicking a physical highlighter pen's visual effect.\n\nThe `<em>` and `<strong>` tags emphasize text through italics and bold styling respectively, not highlighting functionality.",
+    "corrected": false,
+    "id": "q2383",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "In HTML Audio/Video DOM, __________ returns a TimeRanges object representing the buffered",
+    "options": [
+      "A. preload",
+      "B. networkState",
+      "C. buffered",
+      "D. controller"
+    ],
+    "answer_index": 2,
+    "answer": "C. buffered",
+    "topic": "React",
+    "explanation": "The `buffered` property returns a TimeRanges object representing buffered portions of media. The correct answer provided (preload) is actually incorrect; `buffered` is the accurate property.",
+    "corrected": false,
+    "id": "q2385",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "The ____________ method must fill all the subpaths of the current path, using fillStyle, and using the non-zero winding number rule.",
+    "options": [
+      "A. fill()",
+      "B. stroke()",
+      "C. clip()",
+      "D. none of the mentioned"
+    ],
+    "answer_index": 0,
+    "answer": "A. fill()",
+    "topic": "Core Java & OOP",
+    "explanation": "The fill() method paints the interior of all subpaths in the current path object using the current fillStyle, applying the non-zero winding number rule to determine insideness. This differs from stroke(), which outlines paths, and clip(), which restricts future drawing to the path region rather than filling it.",
+    "corrected": false,
+    "id": "q2386",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "Scripting languages supported by Spring?",
+    "options": [
+      "A. JRuby",
+      "B. Groovy",
+      "C. BeanShell",
+      "D. All of the mentioned"
+    ],
+    "answer_index": 3,
+    "answer": "D. All of the mentioned",
+    "topic": "Core Java & OOP",
+    "explanation": "Spring Framework supports multiple scripting languages including JRuby, Groovy, and BeanShell through its scripting support infrastructure for dynamic bean definitions and expressions.\n\nThe correct answer is D (All of the mentioned) because Spring integrates with all three languages, not just JRuby alone.",
+    "corrected": false,
+    "id": "q2388",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Scripting language based on Ruby",
+    "options": [
+      "A. JRuby",
+      "B. Groovy",
+      "C. BeanShell",
+      "D. All of the mentioned"
+    ],
+    "answer_index": 0,
+    "answer": "A. JRuby",
+    "topic": "Core Java & OOP",
+    "explanation": "JRuby is a Java implementation of Ruby that runs on the JVM, making it a scripting language directly based on Ruby's syntax and semantics. Groovy and BeanShell are independent JVM languages not based on Ruby.",
+    "corrected": false,
+    "id": "q2389",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Dynamic Language for java platform to cope up with other",
+    "options": [
+      "A. JRuby",
+      "B. Groovy",
+      "C. BeanShell",
+      "D. All of the mentioned"
+    ],
+    "answer_index": 3,
+    "answer": "D. All of the mentioned",
+    "topic": "Core Java & OOP",
+    "explanation": "JRuby is a Java implementation of Ruby that runs on the JVM, providing dynamic language capabilities while maintaining full Java interoperability and library access.\n\nWhile Groovy and BeanShell exist, JRuby is the most mature and widely adopted dynamic language for the Java platform offering comprehensive Ruby feature parity.",
+    "corrected": false,
+    "id": "q2390",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Lightweight java scripting language executing java fragments",
+    "options": [
+      "A. JRuby",
+      "B. Groovy",
+      "C. BeanShell",
+      "D. All of the mentioned"
+    ],
+    "answer_index": 2,
+    "answer": "C. BeanShell",
+    "topic": "Core Java & OOP",
+    "explanation": "JRuby is a Java implementation of Ruby that executes Ruby code on the JVM while seamlessly integrating Java libraries and fragments into scripts.\n\nBeanShell and Groovy are Java-based scripting languages, but JRuby specifically excels at lightweight execution of Java code fragments within Ruby syntax.",
+    "corrected": false,
+    "id": "q2391",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "In Ruby instance variable begins with",
+    "options": [
+      "A. #",
+      "B. *",
+      "C. @",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 2,
+    "answer": "C. @",
+    "topic": "Core Java & OOP",
+    "explanation": "In Ruby, instance variables are prefixed with the @ symbol, distinguishing them from local variables and class variables (which use @@). This naming convention allows the interpreter to identify variables that belong to a specific object instance and persist across method calls within that object.",
+    "corrected": false,
+    "id": "q2392",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "XML Element to declare a bean implemented by JRuby",
+    "options": [
+      "A. lang:jruby",
+      "B. aop:jruby",
+      "C. beanscript:jruby",
+      "D. script:jruby"
+    ],
+    "answer_index": 0,
+    "answer": "A. lang:jruby",
+    "topic": "Spring Core",
+    "explanation": "The `lang:jruby` namespace element is the standard Spring Framework XML declaration for defining beans implemented in JRuby language.\n\nOther prefixes (aop, beanscript, script) are either incorrect namespaces or don't correspond to Spring's JRuby bean declaration syntax.",
+    "corrected": false,
+    "id": "q2393",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "XML Element to declare a bean implemented by Groovy",
+    "options": [
+      "A. lang:groovy",
+      "B. lang:jruby",
+      "C. beanscript:jruby",
+      "D. script:jruby"
+    ],
+    "answer_index": 0,
+    "answer": "A. lang:groovy",
+    "topic": "Core Java & OOP",
+    "explanation": "The `lang:groovy` namespace prefix in Spring XML configuration specifically designates beans implemented using Groovy language scripting within the Spring framework.\n\nOther options use incorrect namespace prefixes (`beanscript`, `script`) or target different languages (`jruby`), which don't match Spring's standard Groovy bean declaration syntax.",
+    "corrected": false,
+    "id": "q2394",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Script’s location is specified by attribute",
+    "options": [
+      "A. script-source",
+      "B. xml-source",
+      "C. script-annotation",
+      "D. none of the mentioned"
+    ],
+    "answer_index": 3,
+    "answer": "D. none of the mentioned",
+    "topic": "Core Java & OOP",
+    "explanation": "The `script-source` attribute explicitly defines where a script resource is located, allowing the system to retrieve and execute code from specified sources.\n\nThis attribute is the standard mechanism in XML/markup configurations for declaring external script file paths and URLs.",
+    "corrected": false,
+    "id": "q2395",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Interface used to create additional features in groovy based beans",
+    "options": [
+      "A. GroovyObjectCustomizer",
+      "B. GroovyBeanCustomizer",
+      "C. GroovyCustomizer",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 1,
+    "answer": "B. GroovyBeanCustomizer",
+    "topic": "TypeScript",
+    "explanation": "GroovyObjectCustomizer is the Spring interface that allows you to customize Groovy bean instances by adding dynamic features and modifying bean behavior post-instantiation.\n\nThis interface provides a customize() method that receives the Groovy object, enabling developers to add methods, properties, or other dynamic enhancements to beans.",
+    "corrected": false,
+    "id": "q2396",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Attribute which specifies all the interfaces",
+    "options": [
+      "A. script-interfaces",
+      "B. lang:bsh",
+      "C. lang:script",
+      "D. script:bsh"
+    ],
+    "answer_index": 0,
+    "answer": "A. script-interfaces",
+    "topic": "Core Java & OOP",
+    "explanation": "The `script-interfaces` attribute is the standard XML/configuration element that declares all interfaces a script component will implement or provide.\n\nThis naming convention follows the pattern of specifying collection-level interface declarations in service component architecture and scripting frameworks.",
+    "corrected": false,
+    "id": "q2397",
+    "trust": "unverified-source"
+  }
+]

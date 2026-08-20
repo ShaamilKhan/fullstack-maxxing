@@ -1,0 +1,584 @@
+[
+  {
+    "question": "Class-based proxies are best way to advise scripted beans",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 1,
+    "answer": "B. False",
+    "topic": "Core Java & OOP",
+    "explanation": "Class-based proxies use CGLIB to create subclasses of target beans, enabling advice on scripted beans without requiring interface implementation or bytecode manipulation at runtime.\n\nThey're superior for scripted beans because they work with concrete classes directly, avoiding the interface requirement that JDK dynamic proxies demand.",
+    "corrected": false,
+    "id": "q2398",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "In Java, which language element allows you to control the visibility (scope) of a class, method, or variable?",
+    "options": [
+      "A. Access modifier (public, private, protected, or default)",
+      "B. Import statement",
+      "C. Package declaration",
+      "D. Constructor"
+    ],
+    "answer_index": 0,
+    "answer": "A. Access modifier (public, private, protected, or default)",
+    "topic": "Core Java & OOP",
+    "explanation": "Access modifiers directly determine which classes, packages, or subclasses can access a given class, method, or variable, defining its scope explicitly. Public, private, protected, and default each specify distinct visibility levels, unlike imports, packages, or constructors, which serve organizational or instantiation purposes instead.",
+    "corrected": false,
+    "id": "q2399",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "question": "BeanShell Library dependencies",
+    "options": [
+      "A. bsh-2.0b4.jar",
+      "B. cglib-nodep-2.1_3.jar",
+      "C. all of the mentioned",
+      "D. none of the mentioned"
+    ],
+    "answer_index": 2,
+    "answer": "C. all of the mentioned",
+    "topic": "Core Java & OOP",
+    "explanation": "BeanShell is a lightweight Java scripting language whose core functionality is provided by the bsh-2.0b4.jar library file. CGLIB is an unrelated bytecode generation library used for proxies, not a BeanShell dependency.",
+    "corrected": false,
+    "id": "q2400",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "A TransactionTemplate can accept a transaction callback object that",
+    "options": [
+      "A. TransactionCallback",
+      "B. TransactionCallbackWithoutResult class",
+      "C. All of the mentioned",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 2,
+    "answer": "C. All of the mentioned",
+    "topic": "Spring Core",
+    "explanation": "TransactionTemplate's execute() method accepts TransactionCallback interface, which provides flexibility for callbacks that return values or void results through its implementations.\n\nTransactionCallbackWithoutResult is actually a convenience abstract class that implements TransactionCallback, so it's a specific type rather than an alternative option.",
+    "corrected": false,
+    "id": "q2401",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Select method's signature that match with the following pointcut:\nexecution(* com.test.service..*.*(*))",
+    "options": [
+      "A. void com.test.service.MyServiceImpl#transfert(Money amount)",
+      "B. void com.test.service.MyServiceImpl#transfert(Account account, Money amount)",
+      "C. void com.test.service.account.MyServiceImpl#transfert(account account, Money amount)",
+      "D. none"
+    ],
+    "answer_index": 0,
+    "answer": "A. void com.test.service.MyServiceImpl#transfert(Money amount)",
+    "topic": "Spring Core",
+    "explanation": "The pointcut `com.test.service...(*)` requires the method to be in `com.test.service` or any sub-package, with exactly one parameter. Option A matches since `MyServiceImpl` is directly in `com.test.service` and `transfert` takes exactly one argument.",
+    "corrected": false,
+    "id": "q2402",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "Using the Spring AOP framework, what are the joinpoints methods of the following pointcut expression?\nexecution(public **(..))",
+    "options": [
+      "A. The execution of all public method",
+      "B. The execution of all public method returning a value",
+      "C. The execution of all public method having atleast one parameter",
+      "D. The execution of all public method in class belonging to the default package"
+    ],
+    "answer_index": 0,
+    "answer": "A. The execution of all public method",
+    "topic": "Spring Core",
+    "explanation": "The pattern `execution(public (..))` uses `` as the return type wildcard, matching any return type including void, and `(..)` matches any number of parameters. Therefore this pointcut captures every public method execution regardless of return type, parameters, or class location.",
+    "corrected": false,
+    "id": "q2403",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "Using the Spring AOP framework, what is the visibility of the methods by the following joinpoint?\n@Pointcut(\"expression(**(..))\")\nprivate void nyOperation(){};",
+    "options": [
+      "A. All methods, whereas there visiblity",
+      "B. All methods, except private method",
+      "C. Protected and public methods",
+      "D. Public methods"
+    ],
+    "answer_index": 3,
+    "answer": "D. Public methods",
+    "topic": "Spring Core",
+    "explanation": "Spring AOP is proxy-based, relying on either JDK dynamic proxies or CGLIB, which can only intercept method calls made through the proxy object externally. Because of this proxy mechanism, only public methods can be advised, as protected, private, and package-private methods aren't accessible through the proxy interface.",
+    "corrected": false,
+    "id": "q2404",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "Which of the following features was introduced in ECMAScript 6 (ES6)?",
+    "options": [
+      "A. Arrow functions",
+      "B. Middleware",
+      "C. Error Handler",
+      "D. Prototype chaining"
+    ],
+    "answer_index": 0,
+    "answer": "A. Arrow functions",
+    "topic": "JavaScript",
+    "explanation": "Arrow functions were introduced in ES6 (ECMAScript 2015) as a concise syntax for writing functions using the => notation. They also provide lexical scoping of the `this` keyword, distinguishing them from traditional function expressions and making them a key ES6 feature.",
+    "corrected": false,
+    "id": "q2431",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "question": "Spring provides more than one way to integrate with Hibernate for DAO implementations. Which of the following are valid approaches supported by Spring for Hibernate integration?",
+    "options": [
+      "A. Inversion of Control with a Hibernate Template and Callback.",
+      "B. Extending HibernateDaoSupport and applying an AOP interceptor.",
+      "C. Both of the above.",
+      "D. None of the above."
+    ],
+    "answer_index": 2,
+    "answer": "C. Both of the above.",
+    "topic": "Spring Core",
+    "explanation": "Spring supports the IoC-based HibernateTemplate/HibernateCallback pattern, which manages sessions and translates exceptions while letting DAO code focus on Hibernate operations. It also supports extending HibernateDaoSupport, optionally combined with AOP interceptors, to inject SessionFactory access and provide declarative transaction management.",
+    "corrected": false,
+    "id": "q2437",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "question": "Observe the code:",
+    "options": [
+      "A. new MyRunnable().start()",
+      "B. new Thread(new MyRunnable()).run()",
+      "C. new Thread(new MyRunnable()).start()",
+      "D. MyRunnable.startThread()"
+    ],
+    "answer_index": 2,
+    "answer": "C. new Thread(new MyRunnable()).start()",
+    "topic": "Java Concurrency",
+    "explanation": "Option C is correct because `start()` creates a new thread that executes `run()` asynchronously, while `run()` executes synchronously on the current thread.\n\nMyRunnable lacks a `startThread()` method, and `start()` on Runnable objects doesn't exist—threads must wrap the Runnable.",
+    "corrected": false,
+    "id": "q2455",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Consider the following class hierarchy:\n\nclass Mammal { }\nclass Raccoon extends Mammal { }\nclass BabyRaccoon extends Raccoon { }\n\nWhich of the following statements about this hierarchy is FALSE?",
+    "options": [
+      "A. Raccoon is-a Mammal.",
+      "B. Raccoon has-a Mammal.",
+      "C. BabyRaccoon is-a Mammal.",
+      "D. BabyRaccoon is-a Raccoon."
+    ],
+    "answer_index": 1,
+    "answer": "B. Raccoon has-a Mammal.",
+    "topic": "Core Java & OOP",
+    "explanation": "Inheritance establishes an \"is-a\" relationship, meaning Raccoon extends Mammal and therefore is a specialized type of Mammal, not a container holding one. \"Has-a\" describes composition, where a class contains an instance of another as a field or member, which is not the case here since Raccoon inherits Mammal's traits directly.",
+    "corrected": false,
+    "id": "q2456",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "question": "Predict the output:\n\npublic class Test {\n    public static void main(String[] args) {\n        int a = 1, b = 2, c = 3;\n        System.out.println(a + b + c);\n    }\n}",
+    "options": [
+      "A. 6",
+      "B. 123",
+      "C. 33",
+      "D. Compilation fails"
+    ],
+    "answer_index": 0,
+    "answer": "A. 6",
+    "topic": "Core Java & OOP",
+    "explanation": "Since a, b, and c are all int variables with values 1, 2, and 3, the expression a + b + c performs arithmetic addition, not string concatenation. This evaluates to 1 + 2 + 3 = 6, which println then prints as an integer.",
+    "corrected": false,
+    "id": "q2459",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "question": "What is the output of the following code?\n\nList<Integer> list = new ArrayList<>(Arrays.asList(1, 2, 3, 5));\nCollections.sort(list, Collections.reverseOrder());\nSystem.out.println(list);",
+    "options": [
+      "A. [1, 2, 3, 5]",
+      "B. [2, 1, 3, 5]",
+      "C. [2, 5, 3, 1]",
+      "D. [5, 3, 2, 1]"
+    ],
+    "answer_index": 3,
+    "answer": "D. [5, 3, 2, 1]",
+    "topic": "Core Java & OOP",
+    "explanation": "Collections.reverseOrder() returns a Comparator that sorts elements in descending order, from highest to lowest value. Applying it to [1, 2, 3, 5] rearranges the list to [5, 3, 2, 1], matching option D.",
+    "corrected": false,
+    "id": "q2461",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "question": "What is the output of the following code?\n\npublic class Test {\n    static int x;\n    public static void main(String[] args) {\n        System.out.println(x);\n    }\n}",
+    "options": [
+      "A. 0",
+      "B. 0.0",
+      "C. Compilation fails",
+      "D. Throws exception"
+    ],
+    "answer_index": 0,
+    "answer": "A. 0",
+    "topic": "Core Java & OOP",
+    "explanation": "Static fields in Java are automatically initialized to default values, and for the int type, that default value is 0. Since x is declared as a class-level static int without explicit initialization, it holds 0 when printed.",
+    "corrected": false,
+    "id": "q2463",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "question": "What is the result of executing the following code?\n\n1: public class Test {\n2:     public static void main(String[] args) {\n3:         String s = \"te\" + \"st\";\n4:         System.out.println(s);\n5:     }\n6: }",
+    "options": [
+      "A. test",
+      "B. null",
+      "C. An exception is thrown at runtime",
+      "D. Compilation fails because of an error in line 1"
+    ],
+    "answer_index": 0,
+    "answer": "A. test",
+    "topic": "Core Java & OOP",
+    "explanation": "String literals \"te\" and \"st\" are compile-time constants, so the compiler performs constant folding and concatenates them into \"test\" directly. Thus s is assigned \"test\", and println outputs \"test\" with no runtime computation needed.",
+    "corrected": false,
+    "id": "q2467",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "question": "Given an abstract class 'abstract class Foo { public abstract int bar(); }', which of the following correctly creates an anonymous subclass instance that implements the abstract method bar() to return 1?",
+    "options": [
+      "A. new Foo()",
+      "B. new Foo() { public int bar() { return 1; } }",
+      "C. new Foo(1)",
+      "D. Foo.bar()"
+    ],
+    "answer_index": 1,
+    "answer": "B. new Foo() { public int bar() { return 1; } }",
+    "topic": "SQL & JDBC",
+    "explanation": "Option B correctly uses anonymous class syntax, providing a class body that implements the abstract method bar() immediately after instantiation. This satisfies Java's requirement that abstract classes cannot be instantiated directly without supplying concrete implementations for all abstract methods.",
+    "corrected": false,
+    "id": "q2468",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "question": "Will the following code compile?\n\ninterface A {\n    default void show() {\n        System.out.println(\"A\");\n    }\n}\n\ninterface B {\n    default void show() {\n        System.out.println(\"B\");\n    }\n}\n\nclass C implements A, B {\n}\n\npublic class Main {\n    public static void main(String[] args) {\n        C c = new C();\n        c.show();\n    }\n}",
+    "options": [
+      "A. Yes, this code will compile without any error",
+      "B. No, compilation fails due to multiple inheritance",
+      "C. No, compilation fails because of variable s",
+      "D. No, compilation fails because of method overloading"
+    ],
+    "answer_index": 1,
+    "answer": "B. No, compilation fails due to multiple inheritance",
+    "topic": "Core Java & OOP",
+    "explanation": "Class C inherits two conflicting default implementations of show() from interfaces A and B, creating an ambiguity the compiler cannot resolve automatically. Java requires C to explicitly override show() and specify which interface's method to call (e.g., A.super.show()) to resolve this diamond inheritance conflict.",
+    "corrected": false,
+    "id": "q2471",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "question": "What does the following Java code print?\n\npublic class Test {\n    static String s;\n    public static void main(String[] args) {\n        System.out.println(s);\n    }\n}",
+    "options": [
+      "A. null",
+      "B. Nothing (empty string)",
+      "C. undefined",
+      "D. Compile-time error"
+    ],
+    "answer_index": 0,
+    "answer": "A. null",
+    "topic": "Core Java & OOP",
+    "explanation": "Static fields are automatically initialized to default values when a class is loaded, and for reference types like String, that default value is null. Since `s` is never explicitly assigned, `System.out.println(s)` prints the string representation of null, which is \"null\".",
+    "corrected": false,
+    "id": "q2493",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "question": "Correct way to update state?",
+    "options": [
+      "A. setUser({ name:\"Jane\" })",
+      "B. setUser({ ...user, name:\"Jane\" })",
+      "C. user.name=\"Jane\"",
+      "D. setUser(user.name=\"Jane\")"
+    ],
+    "answer_index": 1,
+    "answer": "B. setUser({ ...user, name:\"Jane\" })",
+    "topic": "React",
+    "explanation": "Option B uses the spread operator to preserve existing properties while updating only the name field, preventing data loss from partial state updates.\n\nDirect mutation (C) bypasses React's state management and won't trigger re-renders, while (A) overwrites all properties and (D) has invalid syntax.",
+    "corrected": false,
+    "id": "q2494",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "What is the output of the following Java code when count = 0?\n\nint count = 0;\ndo {\n    System.out.println(count);\n    count++;\n} while (count < 0);",
+    "options": [
+      "A. 0",
+      "B. 1",
+      "C. 2",
+      "D. Infinite loop"
+    ],
+    "answer_index": 0,
+    "answer": "A. 0",
+    "topic": "Core Java & OOP",
+    "explanation": "A do-while loop always executes its body at least once before checking the condition, so 0 is printed first. After count becomes 1, the condition count < 0 is false, so the loop terminates.",
+    "corrected": false,
+    "id": "q2495",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "question": "Purpose of *ngFor?",
+    "options": [
+      "A. Conditional display",
+      "B. Iterate list",
+      "C. Data binding",
+      "D. Form submission"
+    ],
+    "answer_index": 1,
+    "answer": "B. Iterate list",
+    "topic": "Core Java & OOP",
+    "explanation": "*ngFor is Angular's structural directive specifically designed to loop through arrays and render template elements for each item in a collection.\n\nIt dynamically creates DOM elements by iterating over data lists, making it essential for displaying repeated content like tables, lists, and grids.",
+    "corrected": false,
+    "id": "q2496",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "What is the output of the following code?\n\nString s1 = \"Hello\";\nString s2 = \"Hello\";\nSystem.out.println(s1 == s2);",
+    "options": [
+      "A. true",
+      "B. false",
+      "C. Error",
+      "D. null"
+    ],
+    "answer_index": 0,
+    "answer": "A. true",
+    "topic": "Core Java & OOP",
+    "explanation": "Java string literals are stored in the string pool, and identical literals reference the same object in memory. Since s1 and s2 both point to the same pooled \"Hello\" object, the == operator returns true.",
+    "corrected": false,
+    "id": "q2498",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "question": "static int x=10;",
+    "options": [
+      "A. 10",
+      "B. 20",
+      "C. 30",
+      "D. Error"
+    ],
+    "answer_index": 0,
+    "answer": "A. 10",
+    "topic": "Core Java & OOP",
+    "explanation": "The default value for uninitialized static variables is 0, not the assigned value. Static variables are initialized to 0 first, then the assignment occurs.\n\nWait, this contradicts the code shown. If `static int x=10;` is declared, x should equal 10, making option A correct, not B.",
+    "corrected": false,
+    "id": "q2500",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "What is the output of the following code?\n\nint[] arr = {1, 2};\nSystem.out.println(arr.length);",
+    "options": [
+      "A. 1",
+      "B. 2",
+      "C. Error",
+      "D. null"
+    ],
+    "answer_index": 1,
+    "answer": "B. 2",
+    "topic": "Core Java & OOP",
+    "explanation": "The array `arr` is initialized with two elements, 1 and 2, giving it a size of 2. The `length` property of an array returns the total number of elements it contains, so `arr.length` evaluates to 2.",
+    "corrected": false,
+    "id": "q2501",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "question": "In portlets, there are URLs:-",
+    "options": [
+      "A. render",
+      "B. action",
+      "C. all of the mentioned",
+      "D. none of the mentioned"
+    ],
+    "answer_index": 2,
+    "answer": "C. all of the mentioned",
+    "topic": "Core Java & OOP",
+    "explanation": "Portlets use both render URLs to display content and action URLs to process user interactions, making both essential URL types for complete portlet functionality.\n\nThese URL categories encompass all methods through which portlets handle navigation and state changes in portal environments.",
+    "corrected": false,
+    "id": "q2521",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which Spring OXM class is used as the Marshaller for JAXB 1.0?",
+    "options": [
+      "A. org.springframework.oxm.jaxb.Jaxb1Marshaller",
+      "B. org.springframework.oxm.jaxb.Jaxb2Marshaller",
+      "C. org.springframework.oxm.castor.CastorMarshaller",
+      "D. org.springframework.oxm.xmlbeans.XmlBeansMarshaller"
+    ],
+    "answer_index": 0,
+    "answer": "A. org.springframework.oxm.jaxb.Jaxb1Marshaller",
+    "topic": "Core Java & OOP",
+    "explanation": "Jaxb1Marshaller is the Spring OXM class specifically designed to wrap the JAXB 1.0 API, using javax.xml.bind.Marshaller and Unmarshaller from that version. It handles JAXB 1.0's ObjectFactory-based binding mechanism, distinguishing it from Jaxb2Marshaller which targets JAXB 2.0's annotation-based approach.",
+    "corrected": false,
+    "id": "q2534",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "derived",
+    "options_synthesized": true
+  },
+  {
+    "question": "Marshaller for JAXB 2.0:-",
+    "options": [
+      "A. org.springframework.oxm.jaxb.Jaxb1Marshaller",
+      "B. org.springframework.oxm.jaxb.Jaxb2Marshaller",
+      "C. org.springframework.oxm.castor.CastorMarshall",
+      "D. org.springframework.oxm.xmlbe"
+    ],
+    "answer_index": 1,
+    "answer": "B. org.springframework.oxm.jaxb.Jaxb2Marshaller",
+    "topic": "Core Java & OOP",
+    "explanation": "The class name explicitly indicates JAXB 2.0 support through \"Jaxb2Marshaller\" suffix, designed specifically for JAXB 2.0 API marshalling operations.\n\nOption A targets JAXB 1.0, while C and D are for different XML frameworks (Castor and XmlBeans), not JAXB.",
+    "corrected": false,
+    "id": "q2535",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Marshaller for Castor:-",
+    "options": [
+      "A. org.springframework.oxm.jaxb.Jaxb1Marshaller",
+      "B. org.springframework.oxm.jaxb.Jaxb2Marshaller",
+      "C. org.springframework.oxm.castor.CastorMarshall",
+      "D. org.springframework.oxm.xmlbe"
+    ],
+    "answer_index": 2,
+    "answer": "C. org.springframework.oxm.castor.CastorMarshall",
+    "topic": "Core Java & OOP",
+    "explanation": "Spring OXM provides CastorMarshaller specifically for Castor XML binding framework integration and object-to-XML conversion.\n\nOther options handle different marshalling technologies: JAXB1/2 for JAXB, and XmlBeansMarshaller for Apache XMLBeans respectively.",
+    "corrected": false,
+    "id": "q2536",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which Spring OXM class is used as the Marshaller for XMLBeans?",
+    "options": [
+      "A. org.springframework.oxm.jaxb.Jaxb1Marshaller",
+      "B. org.springframework.oxm.jaxb.Jaxb2Marshaller",
+      "C. org.springframework.oxm.castor.CastorMarshaller",
+      "D. org.springframework.oxm.xmlbeans.XmlBeansMarshaller"
+    ],
+    "answer_index": 3,
+    "answer": "D. org.springframework.oxm.xmlbeans.XmlBeansMarshaller",
+    "topic": "Core Java & OOP",
+    "explanation": "The org.springframework.oxm.xmlbeans.XmlBeansMarshaller class is specifically designed within Spring's OXM module to handle marshalling and unmarshalling for the XMLBeans framework. It implements the Marshaller and Unmarshaller interfaces using XMLBeans-specific APIs, unlike the JAXB or Castor classes which target different XML binding technologies.",
+    "corrected": false,
+    "id": "q2537",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "derived",
+    "options_synthesized": true
+  },
+  {
+    "question": "Marshaller for JiBX:-",
+    "options": [
+      "A. org.springframework.oxm.jaxb.Jaxb1Marshaller",
+      "B. org.springframework.oxm.jaxb.Jaxb2Marshaller",
+      "C. org.springframework.oxm.castor.CastorMarshall",
+      "D. org.springframework.oxm.jibx.JibxMarshaller"
+    ],
+    "answer_index": 3,
+    "answer": "D. org.springframework.oxm.jibx.JibxMarshaller",
+    "topic": "Core Java & OOP",
+    "explanation": "JiBX is a specific XML binding framework, and Spring OXM provides dedicated marshaller classes for each supported framework. The JibxMarshaller class in the org.springframework.oxm.jibx package is the correct Spring OXM marshaller for JiBX binding.",
+    "corrected": false,
+    "id": "q2538",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Marshaller for XStream:-",
+    "options": [
+      "A. org.springframework.oxm.jaxb.Jaxb1Marshaller",
+      "B. org.springframework.oxm.jaxb.Jaxb2Marshaller",
+      "C. org.springframework.oxm.xstream.XStreamMarshaller",
+      "D. org.springframework.oxm.jibx.JibxMarshaller"
+    ],
+    "answer_index": 2,
+    "answer": "C. org.springframework.oxm.xstream.XStreamMarshaller",
+    "topic": "Core Java & OOP",
+    "explanation": "XStream is a serialization library for converting objects to/from XML, and Spring OXM provides a dedicated marshaller interface for it: XStreamMarshaller.\n\nThe other options are marshallers for JAXB (A, B) and JiBX (D), which are different XML binding frameworks, not XStream.",
+    "corrected": false,
+    "id": "q2539",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which MongoDB method is used to retrieve a single document from a collection?",
+    "options": [
+      "A. findOne()",
+      "B. findOne1()",
+      "C. selectOne()",
+      "D. find()"
+    ],
+    "answer_index": 0,
+    "answer": "A. findOne()",
+    "topic": "MongoDB",
+    "explanation": "findOne() queries a collection and returns a single document matching the specified criteria, or null if no match is found. Unlike find(), which returns a cursor for multiple documents, findOne() directly returns one document object.",
+    "corrected": false,
+    "id": "q2543",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  }
+]

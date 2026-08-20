@@ -1,0 +1,404 @@
+[
+  {
+    "id": "q0112",
+    "topic": "Java OOP",
+    "question": "What is the output format of the Java code snippet shown?",
+    "options": [
+      "A. (A-B-C)",
+      "B. (A)-(B)-(C)",
+      "C. (-A-)(-B-)(-C-)",
+      "D. (ABC)"
+    ],
+    "answer_index": 0,
+    "explanation": "The code produces '(A-B-C)' based on Java execution semantics.",
+    "corrected": false,
+    "answer": "A. (A-B-C)",
+    "quarantine_reason": "MALFORMED: References a Java code snippet that is not included in stem.",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0619",
+    "topic": "Java OOP",
+    "question": "Observe the code and predict the output:\n\nByteArrayInputStream reading example",
+    "options": [
+      "A. abc",
+      "B. ABC",
+      "C. Abc",
+      "D. Compilation fails"
+    ],
+    "answer_index": 1,
+    "explanation": "# Explanation\n\nThe `ByteArrayInputStream` reads bytes from the array `{65, 66, 67}`, which correspond to ASCII values for 'A', 'B', and 'C' respectively. When these bytes are converted to characters (typically via `toUpperCase()` or similar operation in the code), they produce the uppercase string \"ABC\".",
+    "corrected": false,
+    "answer": "B. ABC",
+    "quarantine_reason": "MALFORMED: Question stem lacks actual code snippet, just a description",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0635",
+    "topic": "Java OOP",
+    "question": "Observe the code and predict output with ByteArrayOutputStream",
+    "options": [
+      "A. abc",
+      "B. ABC",
+      "C. ABC abc",
+      "D. Compilation fails"
+    ],
+    "answer_index": 1,
+    "explanation": "# Explanation\n\nThe `ByteArrayOutputStream.toString()` method converts the buffer contents to a String using the default charset. Since only \"ABC\" was written to the stream (the second `write()` call with \"abc\" overwrites or follows depending on implementation, but typically `toString()` returns only what was explicitly written first or the final state), the output is \"ABC\". If both strings were present, the stream would contain \"ABCabc\", but the correct answer indicates only \"ABC\" was output, suggesting either only \"ABC\" was written or `toString()` captures the uppercase portion written to the ByteArrayOutputStream.",
+    "corrected": false,
+    "answer": "B. ABC",
+    "quarantine_reason": "MALFORMED: Actual code snippet missing; question references code not shown",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0846",
+    "topic": "Java OOP",
+    "question": "What is the correct way to write constructor injection for the given TestBean class?",
+    "options": [
+      "A. Using constructor-arg with type attributes",
+      "B. Using constructor-arg with index attributes",
+      "C. Using constructor-arg with reversed index values",
+      "D. Using constructor-arg with type attributes in different order"
+    ],
+    "answer_index": 0,
+    "explanation": "# Explanation\n\nUsing constructor-arg with type attributes is the most explicit and reliable method because it disambiguates which constructor parameter each argument maps to, especially when the constructor has multiple parameters of different types. This approach prevents index-related errors and remains maintainable even if constructor parameter order changes in future refactoring, unlike index-based approaches which are fragile.",
+    "corrected": false,
+    "answer": "A. Using constructor-arg with type attributes",
+    "quarantine_reason": "MALFORMED: TestBean class not shown; options lack concrete code to evaluate",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0955",
+    "topic": "Java OOP",
+    "question": "What is the result?\n[CODE]\nclass Sub extends Base {\n    public static final String FOO = \"bar\";\n}\n[/CODE]",
+    "options": [
+      "A. foofoofoofoofoo",
+      "B. foobarfoobarbar",
+      "C. foobarfoofoofoo",
+      "D. foobarfoobarfoo"
+    ],
+    "answer_index": 3,
+    "explanation": "'foobarfoobarfoo E. barbarbarbarbar F. foofoofoobarbar G. foofoofoobarfoo' is correct.",
+    "corrected": false,
+    "answer": "D. foobarfoobarfoo",
+    "quarantine_reason": "MALFORMED: Base class and main method missing, code truncated to verify",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0970",
+    "topic": "Java OOP",
+    "question": "What is the output of the following code?\n[CODE]\nclass exception_handling {\n    public static void main(String args[]) {\n        try {\n            int a = args.length;\n            int b = 10 / a;\n            System.out.print(a);\n            try {\n                if (a == 1)\n                    a = a / a - a;\n                if (a == 2) {\n                    int c = {1};\n                    c[8] = 9;\n                }\n            } catch (ArrayIndexOutOfBoundException e) {\n                System.out.println(\"TypeA\");\n            } catch (ArithmeticException e) {\n                System.out.println(\"TypeB\");\n            }\n        }\n    }\n}\n[/CODE]",
+    "options": [
+      "A. TypeA",
+      "B. TypeB",
+      "C. 0TypeA Important link: http://javabysri.blogspot.in/2012/06/jdbc-objective-questions.html",
+      "D. 0TypeB"
+    ],
+    "answer_index": 2,
+    "explanation": "# Explanation\n\nWhen no command-line arguments are passed, `args.length` equals 0, making `a = 0`. The division `10 / 0` would throw an `ArithmeticException`, but this occurs in the outer try block before the inner try-catch executes. However, the inner try block executes with `a = 0`, and since neither `if` condition is true, the code reaches `int c = {1}; c[8] = 9;`, which throws an `ArrayIndexOutOfBoundException` that is caught and prints \"TypeA\".",
+    "corrected": false,
+    "answer": "C. 0TypeA Important link: http://javabysri.blogspot.in/2012/06/jdbc-objective-questions.html",
+    "quarantine_reason": "MALFORMED: Option C contains stray URL text; code has syntax errors, unrepairable garbling.",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0994",
+    "topic": "Java OOP",
+    "question": "What is the output of the following code?\n[CODE]\nimport java.io.*;\n\npublic class filesinputoutput {\n    public static void main(String[] args) {\n        String obj = \"abc\";\n        byte b[] = obj.getBytes();\n        ByteArrayInputStream obj1 = new ByteArrayInputStream(b);\n        for (int i = 0; i < 2; ++i) {\n            int c;\n            while ((c = obj1.read()) != -1) {\n                if (i == 0) {\n                    System.out.print(Character.toUpperCase((char) c));\n                    obj2.write(1);\n                }\n            }\n            System.out.print(obj2);\n        }\n    }\n}\n[/CODE]",
+    "options": [
+      "A. AaBaCa",
+      "B. ABCaaa",
+      "C. AaaBaaCaa",
+      "D. AaBaaCaaa"
+    ],
+    "answer_index": 3,
+    "explanation": "# Explanation\n\nThe code converts \"abc\" to uppercase (ABC) in the first iteration (i=0), then reads the stream again in the second iteration (i=1) printing lowercase \"abc\" since the stream isn't reset. However, `obj2` is undefined causing a compilation error—this question contains a bug. Assuming `obj2` is a ByteArrayOutputStream that accumulates writes, the output would be \"ABC\" + \"abc\" + \"abc\" = \"ABCabcabc\", but the given answer \"AaBaaCaaa\" suggests the intended logic alternates characters or the stream behaves differently than standard implementation, making this question problematic.",
+    "corrected": false,
+    "answer": "D. AaBaaCaaa",
+    "quarantine_reason": "MALFORMED: Code references undeclared variable obj2; won't compile, no valid output.",
+    "trust": "baseline"
+  },
+  {
+    "id": "q1258",
+    "topic": "Java OOP",
+    "question": "Note: inputoutput.java is stored in the disk.\n[CODE]\nimport java.io.*;\n\nclass filesinputoutput {\n    public static void main(String args[])\n    InputStream obj = new FileInputStre am(\"inputoutput.java\");\n    System.out.print(obj.available());\n    }\n}\n[/CODE]",
+    "options": [
+      "A. true",
+      "B. false",
+      "C. prints number of bytes in file",
+      "D. prints number of characters in the file"
+    ],
+    "answer_index": 2,
+    "explanation": "'prints number of bytes in file' is correct.",
+    "corrected": false,
+    "answer": "C. prints number of bytes in file",
+    "quarantine_reason": "MALFORMED: Code has garbled syntax: split class name, missing brace after main().",
+    "trust": "baseline"
+  },
+  {
+    "id": "q1259",
+    "topic": "Java OOP",
+    "question": "\n[CODE]\nimport java.io.*;\n\npublic class filesinputoutput {\n    public static void main(String[] args) {\n        String obj = \"abc\";\n        byte b[] = obj.getBytes();\n        ByteArrayInputStream obj1 = new ByteArrayInputStream(b);\n        for (int i = 0; i < 2; ++i) {\n            int c;\n            while ((c = obj1.read()) != -1) {\n                if (i == 0) {\n                    System.out.print(Character.toUpperCase((char) c));\n                    obj2.write(1);\n                }\n            }\n            System.out.print(obj2);\n        }\n    }\n}\n[/CODE]",
+    "options": [
+      "A. AaBaCa",
+      "B. ABCaaa",
+      "C. AaaBaaCaa",
+      "D. AaBaaCaaa"
+    ],
+    "answer_index": 3,
+    "explanation": "The loop runs twice: first iteration (i=0) reads and prints uppercase letters while writing to obj2, second iteration (i=1) prints obj2's accumulated content each read cycle, causing exponential repetition.\n\nByteArrayInputStream doesn't reset between loop iterations, so the second iteration prints the growing obj2 buffer repeatedly as each read completes, resulting in \"ABC\" then \"aaa\", \"aaa\", \"aaa\".",
+    "corrected": false,
+    "answer": "D. AaBaaCaaa",
+    "quarantine_reason": "MALFORMED: Code references undeclared variable obj2, won't compile.",
+    "trust": "baseline"
+  },
+  {
+    "question": "</dependency>",
+    "options": [
+      "B. advertisement"
+    ],
+    "answer_index": 0,
+    "answer": "B. advertisement",
+    "topic": "Core Java & OOP",
+    "explanation": "# Explanation\n\nThe dependency tag closing indicates a grammatical relationship has ended. \"Advertisement\" functions as a noun that completes the semantic dependency initiated by the opening tag.\n\nThe closing tag resolves the syntactic structure by marking where the dependent element terminates, which aligns with how \"advertisement\" concludes the phrase or clause requiring dependency annotation.",
+    "corrected": false,
+    "id": "q1481",
+    "quarantine_reason": "MALFORMED: Stem is just a stray XML tag, no actual question text; only one option given",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "As per Spring 3.O doc's has _____ controllers are in Spring MVC",
+    "options": [
+      "A. 2",
+      "B. 10",
+      "C. 4",
+      "D. 20"
+    ],
+    "answer_index": 0,
+    "answer": "A. 2",
+    "topic": "Spring Core",
+    "explanation": "Spring MVC has two main controller types: annotation-based controllers using @Controller and handler-mapping-based controllers using specific interfaces like Controller.\n\nIn Spring 3.0 documentation, these represent the primary architectural approaches for building web controllers in the framework's MVC pattern.",
+    "corrected": false,
+    "id": "q1672",
+    "quarantine_reason": "MALFORMED: Question stem is garbled and grammatically incoherent, meaning unclear",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "import java.io.*;",
+    "options": [
+      "A. true",
+      "B. false",
+      "C. prints number of bytes in file",
+      "D. prints number of characters in the file"
+    ],
+    "answer_index": 2,
+    "answer": "C. prints number of bytes in file",
+    "topic": "Core Java & OOP",
+    "explanation": "The `java.io.*` package provides stream classes that read data as bytes from files. `FileInputStream` and related byte streams count file contents in bytes, not characters.",
+    "corrected": false,
+    "id": "q1831",
+    "quarantine_reason": "MALFORMED: Stem is only an import statement, no actual question content provided",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "JSP pages have access to implicit objects that are exposed automatically. Name",
+    "options": [
+      "A. session",
+      "B. application",
+      "C. httpSession",
+      "D. httpsession"
+    ],
+    "answer_index": 0,
+    "answer": "A. session",
+    "topic": "Core Java & OOP",
+    "explanation": "The `session` object is an implicit JSP object that automatically represents the HttpSession instance for the current user request. `httpSession` and `httpsession` are not valid implicit object names in JSP.",
+    "corrected": false,
+    "id": "q1899",
+    "quarantine_reason": "MALFORMED: Stem truncated ('Name'); options have near-duplicate case variants.",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "l.add(2) Answer: Bridge",
+    "options": [
+      "A. http SOP(“finally”)",
+      "B. https }",
+      "C. both }",
+      "D. none Output :"
+    ],
+    "answer_index": 0,
+    "answer": "A. http SOP(“finally”)",
+    "topic": "Core Java & OOP",
+    "explanation": "I cannot provide a valid explanation for this answer because the question and answer pair appear to be nonsensical or corrupted. There is no logical connection between \"l.add(2)\" returning \"Bridge\" and the HTTP/security options provided.",
+    "corrected": false,
+    "id": "q1920",
+    "quarantine_reason": "MALFORMED: Stem and options are garbled, unrelated fragments with no coherent question.",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Testing Amit Gupta and Ravi",
+    "options": [
+      "A. Amit Gupta False",
+      "C. Amit Gupta False(Expected name",
+      "C. Ravi True(Expected name",
+      "D. Amit Gupta True"
+    ],
+    "answer_index": 0,
+    "answer": "A. Amit Gupta False",
+    "topic": "Core Java & OOP",
+    "explanation": "The test result shows Amit Gupta returned a False value, indicating the validation or assertion failed for this test case. Option A correctly identifies both the name and the actual outcome of the test execution.",
+    "corrected": false,
+    "id": "q1924",
+    "quarantine_reason": "MALFORMED: Stem and options are garbled test data, not a real question",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "\n[CODE]\n}\npublic static void main(String[] args) {\n[/CODE]",
+    "options": [
+      "A. [1, 2, 3, 5] 18. Beta b = (Beta)a;",
+      "B. [2, 1, 3, 5] 19. a.foo();",
+      "C. [2, 5, 3, 1] 20. b.foo();",
+      "D. [5, 3, 2, 1] 21. }"
+    ],
+    "answer_index": 2,
+    "answer": "C. [2, 5, 3, 1] 20. b.foo();",
+    "topic": "Core Java & OOP",
+    "explanation": "The `Alpha` reference is cast to `Beta`, invoking `Beta`'s overridden `foo()` method which executes its specific logic path producing output `[2, 5, 3, 1]`.\n\nRuntime polymorphism determines method execution based on actual object type (`Beta`), not declared type (`Alpha`), so `Beta.foo()` runs instead of `Alpha.foo()`.",
+    "corrected": false,
+    "id": "q1938",
+    "quarantine_reason": "MALFORMED: Options contain unrelated code lines/numbers, not answer choices matching stem",
+    "trust": "legit-source"
+  },
+  {
+    "question": "class BabyRaccoon extends Mammal D. Bfoo Bfoo",
+    "options": [
+      "F. An exception is thrown at runtime. 189 A company has a business application"
+    ],
+    "answer_index": 0,
+    "answer": "F. An exception is thrown at runtime. 189 A company has a business application",
+    "topic": "Core Java & OOP",
+    "explanation": "# Explanation\n\nThe class `BabyRaccoon` cannot extend `Mammal` if `Mammal` is not accessible or doesn't exist, causing a compilation error that manifests as a runtime exception.\n\nWithout seeing the full code context, calling undefined methods or accessing inaccessible classes triggers runtime exceptions during execution.",
+    "corrected": false,
+    "id": "q1939",
+    "quarantine_reason": "MALFORMED: Stem and option text are garbled/truncated fragments merged with unrelated content",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "} Which three are valid on line 32. System.out.println(cat.noise());",
+    "options": [
+      "B. bark",
+      "C. meow",
+      "D. Compilation fails. 200. Given:",
+      "E. An exception is thrown at runtime. 10. interface Jumper { public void jump();"
+    ],
+    "answer_index": 0,
+    "answer": "B. bark",
+    "topic": "TypeScript",
+    "explanation": "The cat object is instantiated from a class implementing Jumper, which only defines bark() behavior, not meow(). Therefore, only bark() is a valid method call on line 32.",
+    "corrected": false,
+    "id": "q1944",
+    "quarantine_reason": "MALFORMED: Options garbled with unrelated code fragments, missing option A, truncated content",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "vspace, title, and width------123",
+    "options": [
+      "A. pageContext",
+      "B. pageConfig",
+      "C. config",
+      "D. context"
+    ],
+    "answer_index": 2,
+    "answer": "C. config",
+    "topic": "Core Java & OOP",
+    "explanation": "The `config` object in JSP provides access to ServletConfig, which contains initialization parameters like `vspace`, `title`, and `width` set in the deployment descriptor.\n\nThese parameters are page-specific configuration settings accessed through the implicit `config` object, not the broader `pageContext`, `pageConfig`, or `context` objects.",
+    "corrected": false,
+    "id": "q1949",
+    "quarantine_reason": "MALFORMED: Stem is garbled/truncated, missing actual question context and meaning.",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which of the following represents a correct syntax for usebean. Select the two correct",
+    "options": [
+      "A. <jsp:usebean id=\"fruit scope =\"page\"/>",
+      "B. <jsp:usebean id=\"fruit type =\"String\"/>",
+      "C. <jsp:usebean id=\"fruit type =\"String\" beanName=\"Fruit\"/>",
+      "D. <jsp:usebean id=\"fruit class=\"Fruit\" beanName=\"Fruit\"/>"
+    ],
+    "answer_index": 0,
+    "answer": "A. <jsp:usebean id=\"fruit scope =\"page\"/>",
+    "topic": "SQL & JDBC",
+    "explanation": "The `useBean` tag requires an `id` attribute and at least one of `class` or `beanName` to instantiate a bean; option A includes `id` and `scope`, which are valid attributes.\n\nOption A's syntax is correct because `scope=\"page\"` is a legitimate attribute that specifies where the bean object will be stored in the JSP page context.",
+    "corrected": false,
+    "id": "q1968",
+    "quarantine_reason": "MALFORMED: Options garbled with broken syntax; question requires two answers but only one given.",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "JSP pages have access to implicit objects that are exposed automatically. Name the",
+    "options": [
+      "A. session",
+      "B. application",
+      "C. httpSession",
+      "D. httpsession"
+    ],
+    "answer_index": 0,
+    "answer": "A. session",
+    "topic": "Core Java & OOP",
+    "explanation": "The `session` implicit object is automatically available in JSP pages to store user-specific data across multiple requests within a single user session.\n\n`httpSession` and `httpsession` are not standard JSP implicit objects; only `session` is the correct predefined variable name.",
+    "corrected": false,
+    "id": "q1973",
+    "quarantine_reason": "MALFORMED: Stem truncated ('Name the'); options include near-duplicate garbled entries.",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "/contextroot/classes",
+    "options": [
+      "A. 1",
+      "B. 2",
+      "C. 3",
+      "D. 4"
+    ],
+    "answer_index": 0,
+    "answer": "A. 1",
+    "topic": "JavaScript",
+    "explanation": "The path `/contextroot/classes` contains exactly one forward slash separator, creating a single directory level beneath the root context.\n\nIn URL/path terminology, this structure represents one subdirectory segment, making the depth count equal to 1.",
+    "corrected": false,
+    "id": "q2082",
+    "quarantine_reason": "MALFORMED: Stem is just a path fragment, lacks an actual question",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "A. ES 2015",
+    "options": [
+      "A. ES 2015",
+      "B. ES 5",
+      "C. Angular",
+      "D. TypeScript"
+    ],
+    "answer_index": 0,
+    "answer": "A. ES 2015",
+    "topic": "TypeScript",
+    "explanation": "ES 2015 introduced classes, arrow functions, and modules, establishing the modern JavaScript standard that became foundational for web development frameworks.\n\nIt represented a major specification update after ES5's long gap, providing the syntax and features that Angular and TypeScript build upon.",
+    "corrected": false,
+    "id": "q2359",
+    "quarantine_reason": "MALFORMED: Question stem is missing; only an answer choice appears as stem.",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Observe the following code:",
+    "options": [
+      "A. abc",
+      "B. ABC",
+      "C. Abc",
+      "D. Compilation fails"
+    ],
+    "answer_index": 1,
+    "answer": "B. ABC",
+    "topic": "Core Java & OOP",
+    "explanation": "# Explanation\n\nThe `toUpperCase()` method converts all characters in a string to uppercase letters, transforming \"abc\" into \"ABC\".\n\nJava's String class provides this built-in method that returns a new String object with all lowercase letters converted to their uppercase equivalents.",
+    "corrected": false,
+    "id": "q2457",
+    "quarantine_reason": "MALFORMED: Question stem missing actual code snippet, cannot verify answer",
+    "trust": "unverified-source"
+  }
+]

@@ -1,57 +1,116 @@
 [
   {
-    "name": "Set 1",
     "file": "set_1.json",
-    "count": 120
+    "name": "Set 1",
+    "count": 120,
+    "trust": "baseline"
   },
   {
-    "name": "Set 2",
     "file": "set_2.json",
-    "count": 120
+    "name": "Set 2",
+    "count": 120,
+    "trust": "baseline"
   },
   {
-    "name": "Set 3",
     "file": "set_3.json",
-    "count": 120
+    "name": "Set 3",
+    "count": 120,
+    "trust": "baseline"
   },
   {
-    "name": "Set 4",
     "file": "set_4.json",
-    "count": 120
+    "name": "Set 4",
+    "count": 120,
+    "trust": "baseline"
   },
   {
-    "name": "Set 5",
     "file": "set_5.json",
-    "count": 120
+    "name": "Set 5",
+    "count": 120,
+    "trust": "baseline"
   },
   {
-    "name": "Set 6",
     "file": "set_6.json",
-    "count": 120
+    "name": "Set 6",
+    "count": 120,
+    "trust": "baseline"
   },
   {
-    "name": "Set 7",
     "file": "set_7.json",
-    "count": 120
+    "name": "Set 7",
+    "count": 120,
+    "trust": "baseline"
   },
   {
-    "name": "Set 8",
     "file": "set_8.json",
-    "count": 120
+    "name": "Set 8",
+    "count": 120,
+    "trust": "baseline"
   },
   {
-    "name": "Set 9",
     "file": "set_9.json",
-    "count": 120
+    "name": "Set 9",
+    "count": 78,
+    "trust": "baseline"
   },
   {
-    "name": "Set 10",
     "file": "set_10.json",
-    "count": 120
+    "name": "Set 10",
+    "count": 120,
+    "trust": "legit-source"
   },
   {
-    "name": "Set 11",
     "file": "set_11.json",
-    "count": 115
+    "name": "Set 11",
+    "count": 92,
+    "trust": "legit-source"
+  },
+  {
+    "file": "set_12.json",
+    "name": "Set 12",
+    "count": 120,
+    "trust": "unverified-source"
+  },
+  {
+    "file": "set_13.json",
+    "name": "Set 13",
+    "count": 120,
+    "trust": "unverified-source"
+  },
+  {
+    "file": "set_14.json",
+    "name": "Set 14",
+    "count": 120,
+    "trust": "unverified-source"
+  },
+  {
+    "file": "set_15.json",
+    "name": "Set 15",
+    "count": 120,
+    "trust": "unverified-source"
+  },
+  {
+    "file": "set_16.json",
+    "name": "Set 16",
+    "count": 120,
+    "trust": "unverified-source"
+  },
+  {
+    "file": "set_17.json",
+    "name": "Set 17",
+    "count": 120,
+    "trust": "unverified-source"
+  },
+  {
+    "file": "set_18.json",
+    "name": "Set 18",
+    "count": 120,
+    "trust": "unverified-source"
+  },
+  {
+    "file": "set_19.json",
+    "name": "Set 19",
+    "count": 32,
+    "trust": "unverified-source"
   }
 ]

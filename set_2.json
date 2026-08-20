@@ -1,189 +1,7 @@
 [
   {
-    "id": "q0121",
-    "topic": "Spring Core",
-    "question": "Which is the correct Spring transaction annotation?",
-    "options": [
-      "A. transaction",
-      "B. transactions",
-      "C. transactional",
-      "D. @Transactional"
-    ],
-    "answer_index": 0,
-    "explanation": "Java annotations are declared with @interface. Elements inside look like method declarations but have no body; default values are set with default keyword. All annotations implicitly extend java.lang.annotation.Annotation and cannot have an explicit extends clause.",
-    "corrected": false
-  },
-  {
-    "id": "q0122",
-    "topic": "Core Java & OOP",
-    "question": "Which annotation ensures a field has a minimum number of characters?",
-    "options": [
-      "A. @NotNull",
-      "B. @Size",
-      "C. @MaxSize",
-      "D. @size"
-    ],
-    "answer_index": 1,
-    "explanation": "Java annotations are declared with @interface. Elements inside look like method declarations but have no body; default values are set with default keyword. All annotations implicitly extend java.lang.annotation.Annotation and cannot have an explicit extends clause.",
-    "corrected": false
-  },
-  {
-    "id": "q0123",
-    "topic": "Core Java & OOP",
-    "question": "Which views cannot be resolved by InternalResourceViewResolver?",
-    "options": [
-      "A. redirect",
-      "B. redirect:prefix",
-      "C. redirect:suffix",
-      "D. all of the mentioned"
-    ],
-    "answer_index": 0,
-    "explanation": "\"redirect\" is correct. The distractors (\"redirect:prefix\" and \"redirect:suffix\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"redirect\" in Core Java & OOP distinguishes this from similar-sounding options.",
-    "corrected": false
-  },
-  {
-    "id": "q0124",
-    "topic": "Spring Core",
-    "question": "Which is an alternative way to resolve locales in Spring?",
-    "options": [
-      "A. AcceptHeaderLocale",
-      "B. AcceptHeader",
-      "C. AcceptHeaderLocaleResolver",
-      "D. SessionLocaleResolver"
-    ],
-    "answer_index": 3,
-    "explanation": "\"SessionLocaleResolver\" is correct. The distractors (\"AcceptHeaderLocale\" and \"AcceptHeader\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"SessionLocaleResolver\" in Spring Core distinguishes this from similar-sounding options.",
-    "corrected": false
-  },
-  {
-    "id": "q0125",
-    "topic": "Spring Core",
-    "question": "Which class renders responses using a marshaller in Spring?",
-    "options": [
-      "A. MarshallingView",
-      "B. Marshaling",
-      "C. View",
-      "D. All of the mentioned"
-    ],
-    "answer_index": 0,
-    "explanation": "\"MarshallingView\" is correct. The distractors (\"Marshaling\" and \"View\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"MarshallingView\" in Spring Core distinguishes this from similar-sounding options.",
-    "corrected": false
-  },
-  {
-    "id": "q0126",
-    "topic": "Spring Core",
-    "question": "Which Spring class is used to call stored procedures?",
-    "options": [
-      "A. SPHelper",
-      "B. JdbcTemplateCall",
-      "C. JdbcTemplate",
-      "D. SimpleJdbcCall"
-    ],
-    "answer_index": 3,
-    "explanation": "\"SimpleJdbcCall\" is correct. The distractors (\"SPHelper\" and \"JdbcTemplateCall\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"SimpleJdbcCall\" in Spring Core distinguishes this from similar-sounding options.",
-    "corrected": false
-  },
-  {
-    "id": "q0127",
-    "topic": "Spring Core",
-    "question": "How can shutdown of IoC containers be handled in Spring?",
-    "options": [
-      "A. shutdownHook()",
-      "B. shutdownHandler()",
-      "C. registerHook()",
-      "D. registerShutdownHook()"
-    ],
-    "answer_index": 3,
-    "explanation": "\"registerShutdownHook()\" is correct. The distractors (\"shutdownHook()\" and \"shutdownHandler()\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"registerShutdownHook()\" in Spring Core distinguishes this from similar-sounding options.",
-    "corrected": false
-  },
-  {
-    "id": "q0128",
-    "topic": "Core Java & OOP",
-    "question": "Views that cannot be resolved by InternalResourceViewResolver.",
-    "options": [
-      "A. redirect",
-      "B. redirect:prefix",
-      "C. redirect:suffix",
-      "D. all of the mentioned"
-    ],
-    "answer_index": 0,
-    "explanation": "The correct answer is \"redirect\". The other options (\"redirect:prefix\", \"redirect:suffix\") do not accurately represent the concept described. This is a standard principle in Core Java & OOP — recognising \"redirect\" in context is key to answering related exam questions.",
-    "corrected": false
-  },
-  {
-    "id": "q0129",
-    "topic": "Spring Core",
-    "question": "Alternative way to resolve locales in Spring?",
-    "options": [
-      "A. AcceptHeaderLocale",
-      "B. AcceptHeader",
-      "C. AcceptHeaderLocaleResolver",
-      "D. SessionLocaleResolver"
-    ],
-    "answer_index": 3,
-    "explanation": "The correct answer is \"SessionLocaleResolver\". The other options (\"AcceptHeaderLocale\", \"AcceptHeader\") do not accurately represent the concept described. This is a standard principle in Spring Core — recognising \"SessionLocaleResolver\" in context is key to answering related exam questions.",
-    "corrected": false
-  },
-  {
-    "id": "q0130",
-    "topic": "Core Java & OOP",
-    "question": "General-purpose class that allows a response to be rendered using a marshaller.",
-    "options": [
-      "A. MarshallingView",
-      "B. Marshaling",
-      "C. View",
-      "D. All of the mentioned"
-    ],
-    "answer_index": 0,
-    "explanation": "The correct answer is \"MarshallingView\". The other options (\"Marshaling\", \"View\") do not accurately represent the concept described. This is a standard principle in Core Java & OOP — recognising \"MarshallingView\" in context is key to answering related exam questions.",
-    "corrected": false
-  },
-  {
-    "id": "q0131",
-    "topic": "Spring Core",
-    "question": "Which of the following classes can be used to call Stored Procedures in Spring?",
-    "options": [
-      "A. SPHelper",
-      "B. JdbcTemplateCall",
-      "C. JdbcTemplate",
-      "D. SimpleJdbcCall"
-    ],
-    "answer_index": 3,
-    "explanation": "\"SimpleJdbcCall\" is correct. The distractors (\"SPHelper\" and \"JdbcTemplateCall\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"SimpleJdbcCall\" in Spring Core distinguishes this from similar-sounding options.",
-    "corrected": false
-  },
-  {
-    "id": "q0132",
-    "topic": "Spring Core",
-    "question": "How to handle shutdown of IoC containers in Spring?",
-    "options": [
-      "A. Using shutdownHook()",
-      "B. Using shutdownHandler()",
-      "C. Using registerHook()",
-      "D. Using registerShutdownHook()"
-    ],
-    "answer_index": 3,
-    "explanation": "\"Using registerShutdownHook()\" is correct. The distractors (\"Using shutdownHook()\" and \"Using shutdownHandler()\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"Using registerShutdownHook()\" in Spring Core distinguishes this from similar-sounding options.",
-    "corrected": false
-  },
-  {
-    "id": "q0133",
-    "topic": "HTML & CSS",
-    "question": "Whenever you are assigning two classes to a tag, you must separate them with a",
-    "options": [
-      "A. Space",
-      "B. Comma",
-      "C. Dash",
-      "D. Semicolon"
-    ],
-    "answer_index": 0,
-    "explanation": "The correct answer is \"Space\". The other options (\"Comma\", \"Dash\") do not accurately represent the concept described. This is a standard principle in HTML & CSS — recognising \"Space\" in context is key to answering related exam questions.",
-    "corrected": false
-  },
-  {
     "id": "q0134",
-    "topic": "SQL & JDBC",
+    "topic": "HTML/CSS",
     "question": "The main purpose of the placeholder attribute in input controls is:",
     "options": [
       "A. Allow the end-user to remember the location in form",
@@ -193,11 +11,13 @@
     ],
     "answer_index": 3,
     "explanation": "The placeholder attribute displays watermark/hint text inside a form field before the user enters a value.",
-    "corrected": false
+    "corrected": false,
+    "answer": "D. Display \"watermark\" data to assist the end-user",
+    "trust": "baseline"
   },
   {
     "id": "q0135",
-    "topic": "HTML & CSS",
+    "topic": "Java OOP",
     "question": "Which of the following values are accepted by the float property?",
     "options": [
       "A. left",
@@ -206,12 +26,14 @@
       "D. all of the above"
     ],
     "answer_index": 3,
-    "explanation": "float removes an element from normal flow and positions it to the left or right, allowing inline content to wrap around it. Floated elements must be cleared (clear:both) to prevent parent collapse. Modern layouts prefer Flexbox or Grid over float.",
-    "corrected": false
+    "explanation": "The CSS float property accepts left, right, none, and inherit as values.",
+    "corrected": false,
+    "answer": "D. all of the above",
+    "trust": "baseline"
   },
   {
     "id": "q0136",
-    "topic": "HTML & CSS",
+    "topic": "HTML/CSS",
     "question": "Which of the following CSS property controls how an element is positioned?",
     "options": [
       "A. position",
@@ -221,11 +43,13 @@
     ],
     "answer_index": 0,
     "explanation": "The CSS 'position' property controls element positioning (static, relative, absolute, fixed, sticky).",
-    "corrected": false
+    "corrected": false,
+    "answer": "A. position",
+    "trust": "baseline"
   },
   {
     "id": "q0137",
-    "topic": "HTML & CSS",
+    "topic": "HTML/CSS",
     "question": "If you are designing a column to occupy 3 of the 12 columns in your desktop design, what is the width in CSS?",
     "options": [
       "A. Width:25%",
@@ -234,12 +58,14 @@
       "D. Width:30%"
     ],
     "answer_index": 0,
-    "explanation": "The correct answer is \"Width:25%\". The other options (\"Width:33.3333%\", \"Width:21%\") do not accurately represent the concept described. This is a standard principle in HTML & CSS — recognising \"Width:25%\" in context is key to answering related exam questions.",
-    "corrected": false
+    "explanation": "3/12 = 25%. A 3-column span in a 12-column grid is 25% width.",
+    "corrected": false,
+    "answer": "A. Width:25%",
+    "trust": "baseline"
   },
   {
     "id": "q0138",
-    "topic": "HTML & CSS",
+    "topic": "HTML/CSS",
     "question": "In what direction does float work? img { float: right; }",
     "options": [
       "A. left",
@@ -248,12 +74,14 @@
       "D. right"
     ],
     "answer_index": 3,
-    "explanation": "float removes an element from normal flow and positions it to the left or right, allowing inline content to wrap around it. Floated elements must be cleared (clear:both) to prevent parent collapse. Modern layouts prefer Flexbox or Grid over float.",
-    "corrected": false
+    "explanation": "The CSS declaration float: right explicitly sets the float property's value to \"right,\" which pushes the image element to the right side of its containing block. Text and inline content then wrap around the floated image on its left side, confirming the float direction matches the specified value.",
+    "corrected": false,
+    "answer": "D. right",
+    "trust": "baseline"
   },
   {
     "id": "q0139",
-    "topic": "HTML & CSS",
+    "topic": "HTML/CSS",
     "question": "Which of the following CSS property sets the stacking order of positioned elements?",
     "options": [
       "A. x-index",
@@ -263,11 +91,13 @@
     ],
     "answer_index": 2,
     "explanation": "The z-index property sets the stacking order of positioned elements (elements with position other than static).",
-    "corrected": false
+    "corrected": false,
+    "answer": "C. z-index",
+    "trust": "baseline"
   },
   {
     "id": "q0140",
-    "topic": "HTML & CSS",
+    "topic": "HTML/CSS",
     "question": "You indicate a class selector with",
     "options": [
       "A. the hash (#) symbol",
@@ -276,26 +106,14 @@
       "D. the asterisk (*)"
     ],
     "answer_index": 1,
-    "explanation": "The correct answer is \"the dot (.)\". The other options (\"the hash (#) symbol\", \"the tag name\") do not accurately represent the concept described. This is a standard principle in HTML & CSS — recognising \"the dot (.)\" in context is key to answering related exam questions.",
-    "corrected": false
-  },
-  {
-    "id": "q0141",
-    "topic": "JavaScript",
-    "question": "Which of the following media queries would apply to a tablet reporting a screen width of 768px?",
-    "options": [
-      "A. @media only screen and (min-width: 1140px){}",
-      "B. @media only screen and (min-width: 641px){}",
-      "C. @media only screen and (max-width: 1140px){}",
-      "D. @media only screen and (max-width: 500px){}"
-    ],
-    "answer_index": 1,
-    "explanation": "\"@media only screen and (min-width: 641px){}\" is correct. The distractors (\"@media only screen and (min-width: 1140px){}\" and \"@media only screen and (max-width: 1140px){}\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"@media only screen and (min-width: 641px){}\" in JavaScript distinguishes this from similar-sounding options.",
-    "corrected": false
+    "explanation": "In CSS, a class selector is indicated with a dot (.) preceding the class name.",
+    "corrected": false,
+    "answer": "B. the dot (.)",
+    "trust": "baseline"
   },
   {
     "id": "q0142",
-    "topic": "HTML & CSS",
+    "topic": "HTML/CSS",
     "question": "To get the first or nth child you use",
     "options": [
       "A. the nested selector",
@@ -304,12 +122,14 @@
       "D. an attribute selector"
     ],
     "answer_index": 1,
-    "explanation": "The correct answer is \"a pseudo-class\". The other options (\"the nested selector\", \"a media query\") do not accurately represent the concept described. This is a standard principle in HTML & CSS — recognising \"a pseudo-class\" in context is key to answering related exam questions.",
-    "corrected": false
+    "explanation": ":first-child, :nth-child() etc. are CSS pseudo-classes used to select elements based on position.",
+    "corrected": false,
+    "answer": "B. a pseudo-class",
+    "trust": "baseline"
   },
   {
     "id": "q0143",
-    "topic": "HTML & CSS",
+    "topic": "HTML/CSS",
     "question": "Which of the following rules allows users to import style rules from other style sheets?",
     "options": [
       "A. @media",
@@ -318,12 +138,14 @@
       "D. @style"
     ],
     "answer_index": 2,
-    "explanation": "\"@import\" is correct. The distractors (\"@media\" and \"@important\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"@import\" in HTML & CSS distinguishes this from similar-sounding options.",
-    "corrected": false
+    "explanation": "The @import rule lets a CSS file pull in and apply rules defined in another external style sheet, promoting modularity and reuse. It must appear at the top of the style sheet, before any other rules except @charset, to function correctly.",
+    "corrected": false,
+    "answer": "C. @import",
+    "trust": "baseline"
   },
   {
     "id": "q0144",
-    "topic": "HTML & CSS",
+    "topic": "HTML/CSS",
     "question": "If a <p> is the child of a <div> which is the child of a <section>, does the style in the section affect the p tag?",
     "options": [
       "A. Yes, inheritance accumulates",
@@ -332,12 +154,14 @@
       "D. Only inline styles are inherited"
     ],
     "answer_index": 0,
-    "explanation": "The correct answer is \"Yes, inheritance accumulates\". The other options (\"No, only the immediate parent's style is inherited\", \"No, styles never inherit\") do not accurately represent the concept described. This is a standard principle in HTML & CSS — recognising \"Yes, inheritance accumulates\" in context is key to answering related exam questions.",
-    "corrected": false
+    "explanation": "CSS inheritance works down the entire DOM tree, so inheritable properties set on the section pass to the div and then to the p. Each descendant inherits computed values from its parent, creating a cumulative chain from section to div to p.",
+    "corrected": false,
+    "answer": "A. Yes, inheritance accumulates",
+    "trust": "baseline"
   },
   {
     "id": "q0145",
-    "topic": "HTML & CSS",
+    "topic": "HTML/CSS",
     "question": "Which HTML tag allows styling from an external .css file?",
     "options": [
       "A. link",
@@ -346,12 +170,14 @@
       "D. script"
     ],
     "answer_index": 0,
-    "explanation": "\"link\" is correct. The distractors (\"css\" and \"style\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"link\" in HTML & CSS distinguishes this from similar-sounding options.",
-    "corrected": false
+    "explanation": "The <link> tag with rel=\"stylesheet\" links an external CSS file.",
+    "corrected": false,
+    "answer": "A. link",
+    "trust": "baseline"
   },
   {
     "id": "q0146",
-    "topic": "JavaScript",
+    "topic": "Java OOP",
     "question": "What is the catch method for a promise?",
     "options": [
       "A. To compose two promises",
@@ -360,8 +186,10 @@
       "D. There is no catch method on a promise"
     ],
     "answer_index": 2,
-    "explanation": "A Promise represents the eventual completion or failure of an async operation. It has three states: pending, fulfilled (resolved), or rejected. Once settled, the state is immutable — you cannot re-resolve or re-reject it. Use .then() for success and .catch() for errors.",
-    "corrected": false
+    "explanation": "The .catch() method registers a handler for a rejected (failed) promise only.",
+    "corrected": false,
+    "answer": "C. To listen only for a rejected promise",
+    "trust": "baseline"
   },
   {
     "id": "q0147",
@@ -375,7 +203,9 @@
     ],
     "answer_index": 2,
     "explanation": "await unwraps a Promise and returns its resolved value, suspending the async function until the promise settles.",
-    "corrected": false
+    "corrected": false,
+    "answer": "C. A value is returned from a function instead of a promise",
+    "trust": "baseline"
   },
   {
     "id": "q0148",
@@ -388,12 +218,14 @@
       "D. Undefined"
     ],
     "answer_index": 2,
-    "explanation": "A Promise represents the eventual completion or failure of an async operation. It has three states: pending, fulfilled (resolved), or rejected. Once settled, the state is immutable — you cannot re-resolve or re-reject it. Use .then() for success and .catch() for errors.",
-    "corrected": false
+    "explanation": "An async function always returns a Promise, even if the return value is a plain value.",
+    "corrected": false,
+    "answer": "C. A promise",
+    "trust": "baseline"
   },
   {
     "id": "q0149",
-    "topic": "Spring Core",
+    "topic": "Java OOP",
     "question": "What is dependency injection?",
     "options": [
       "A. A coding technique in which all dependencies are defined with import statements",
@@ -403,11 +235,13 @@
     ],
     "answer_index": 2,
     "explanation": "'A coding pattern in which a class receives the instances of objects it needs from an external source' is correct.",
-    "corrected": false
+    "corrected": false,
+    "answer": "C. A coding pattern in which a class receives the instances of objects it needs from an external source",
+    "trust": "baseline"
   },
   {
     "id": "q0150",
-    "topic": "Node.js & Express",
+    "topic": "Java OOP",
     "question": "Which is the proper syntax to make sessionTemplate available by name from a JavaScript module?",
     "options": [
       "A. export function sessionTemplate(sessions) {...}",
@@ -416,8 +250,10 @@
       "D. require function sessionTemplate(sessions) {...}"
     ],
     "answer_index": 0,
-    "explanation": "\"export function sessionTemplate(sessions) {...}\" is correct. The distractors (\"export default function sessionTemplate(sessions) {...}\" and \"module.exports = function sessionTemplate(sessions) {...}\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"export function sessionTemplate(sessions) {...}\" in Node.js & Express distinguishes this from similar-sounding options.",
-    "corrected": false
+    "explanation": "'export function sessionTemplate(sessions) {...}' is correct.",
+    "corrected": false,
+    "answer": "A. export function sessionTemplate(sessions) {...}",
+    "trust": "baseline"
   },
   {
     "id": "q0151",
@@ -431,108 +267,27 @@
     ],
     "answer_index": 0,
     "explanation": "A callback is a function passed as an argument to another function, called when that async or event-driven operation completes.",
-    "corrected": false
+    "corrected": false,
+    "answer": "A. A function that is called when a parallel operation is done",
+    "trust": "baseline"
   },
   {
     "id": "q0152",
-    "topic": "JavaScript",
+    "topic": "Java OOP",
     "question": "There is no catch method on a promise.",
     "options": [
       "A. true",
       "B. false"
     ],
     "answer_index": 1,
-    "explanation": "A Promise represents the eventual completion or failure of an async operation. It has three states: pending, fulfilled (resolved), or rejected. Once settled, the state is immutable — you cannot re-resolve or re-reject it. Use .then() for success and .catch() for errors.",
-    "corrected": false
-  },
-  {
-    "id": "q0153",
-    "topic": "JavaScript",
-    "question": "What is blog.name? var blog = { name: 'Ski Utah' }; var updatedBlog = blog; updatedBlog.name = 'Rocky Mountain Skiing';",
-    "options": [
-      "A. Ski Utah",
-      "B. undefined",
-      "C. blog",
-      "D. Rocky Mountain Skiing"
-    ],
-    "answer_index": 3,
-    "explanation": "The answer is \"Rocky Mountain Skiing\". This is the standard definition or correct identification for the concept described. Review the JavaScript documentation to understand how \"Rocky Mountain Skiing\" fits into the broader context.",
-    "corrected": false
-  },
-  {
-    "id": "q0154",
-    "topic": "Core Java & OOP",
-    "question": "What is the output of the following? greet = function(...months){ months.forEach(month => console.log('Month: ' + month)); } greet(['Jan', 'Feb']);",
-    "options": [
-      "A. Jan Feb",
-      "B. ReferenceError",
-      "C. Month: Jan,Feb",
-      "D. Month: Jan",
-      "E. Month: Feb"
-    ],
-    "answer_index": 2,
-    "explanation": "The answer is \"Month: Jan,Feb\". This is the standard definition or correct identification for the concept described. Review the Core Java & OOP documentation to understand how \"Month: Jan,Feb\" fits into the broader context.",
-    "corrected": false
-  },
-  {
-    "id": "q0155",
-    "topic": "JavaScript",
-    "question": "What is the relationship between JavaScript and ECMAScript?",
-    "options": [
-      "A. ECMAScript is a standard that JavaScript implements.",
-      "B. They are different terms for the same thing.",
-      "C. JavaScript is a standard that ECMAScript implements.",
-      "D. JavaScript is an old term for what is now called ECMAScript."
-    ],
-    "answer_index": 0,
-    "explanation": "ECMAScript is the specification/standard; JavaScript is the most popular implementation of that standard.",
-    "corrected": false
-  },
-  {
-    "id": "q0156",
-    "topic": "Core Java & OOP",
-    "question": "What will show in the console when this code runs? var value = \"no value\"; console.log(!!value);",
-    "options": [
-      "A. false",
-      "B. (an empty string)",
-      "C. true",
-      "D. no value"
-    ],
-    "answer_index": 2,
-    "explanation": "The output is \"true\". Trace execution step by step: follow variable assignments, control flow, and implicit conversions. Common wrong answers (\"false\", \"(an empty string)\") usually arise from scope confusion, precedence errors, or off-by-one mistakes.",
-    "corrected": false
-  },
-  {
-    "id": "q0157",
-    "topic": "Core Java & OOP",
-    "question": "What is the output of the following? function display(num1, num2) { console.log(num1, num2); } let nums = \"12345\"; display(...nums);",
-    "options": [
-      "A. 1 2",
-      "B. 21",
-      "C. 12345",
-      "D. 45"
-    ],
-    "answer_index": 0,
-    "explanation": "The answer is \"1 2\". This is the standard definition or correct identification for the concept described. Review the Core Java & OOP documentation to understand how \"1 2\" fits into the broader context.",
-    "corrected": false
-  },
-  {
-    "id": "q0158",
-    "topic": "Java Concurrency",
-    "question": "What is the console output of the following code block? function printName() { name = \"Mary\"; name = \"John\"; console.log(name); }",
-    "options": [
-      "A. Empty",
-      "B. None",
-      "C. John",
-      "D. Mary"
-    ],
-    "answer_index": 2,
-    "explanation": "The answer is \"John\". This is the standard definition or correct identification for the concept described. Review the Java Concurrency documentation to understand how \"John\" fits into the broader context.",
-    "corrected": false
+    "explanation": "Promises do have a `.catch()` method, which is used to handle rejected promises or errors thrown during the promise chain. Internally, `.catch(fn)` is just syntactic sugar for `.then(null, fn)`, making it a valid part of the Promise prototype.",
+    "corrected": false,
+    "answer": "B. false",
+    "trust": "baseline"
   },
   {
     "id": "q0159",
-    "topic": "HTML & CSS",
+    "topic": "HTML/CSS",
     "question": "Where is the correct place to insert a JavaScript?",
     "options": [
       "A. The <head> section",
@@ -541,8 +296,10 @@
       "D. The <footer> section"
     ],
     "answer_index": 1,
-    "explanation": "The correct answer is \"Both the <head> section and the <body> section are correct.\". The other options (\"The <head> section\", \"The <body> section\") do not accurately represent the concept described. This is a standard principle in HTML & CSS — recognising \"Both the <head> section and the <body> section are correct.\" in context is key to answering related exam questions.",
-    "corrected": false
+    "explanation": "'Both the <head> section and the <body> section are correct.' is correct.",
+    "corrected": false,
+    "answer": "B. Both the <head> section and the <body> section are correct.",
+    "trust": "baseline"
   },
   {
     "id": "q0160",
@@ -555,12 +312,14 @@
       "D. function(numbers[]) { }"
     ],
     "answer_index": 2,
-    "explanation": "\"function(...numbers) { }\" is correct. The distractors (\"function([]numbers) { }\" and \"function(*numbers) { }\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"function(...numbers) { }\" in JavaScript distinguishes this from similar-sounding options.",
-    "corrected": false
+    "explanation": "The rest/spread syntax `...numbers` collects any number of remaining arguments into a single array parameter within the function definition. This allows callers to pass a variable number of arguments, which JavaScript automatically packages into an iterable array for use inside the function body.",
+    "corrected": false,
+    "answer": "C. function(...numbers) { }",
+    "trust": "baseline"
   },
   {
     "id": "q0161",
-    "topic": "Core Java & OOP",
+    "topic": "Java OOP",
     "question": "What statement will load a module from a script named employee.js?",
     "options": [
       "A. reference \"employee\";",
@@ -569,12 +328,14 @@
       "D. reference \"employee.js\";"
     ],
     "answer_index": 2,
-    "explanation": "\"import \"employee.js\";\" is correct. The distractors (\"reference \"employee\";\" and \"import \"employee\";\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"import \"employee.js\";\" in Core Java & OOP distinguishes this from similar-sounding options.",
-    "corrected": false
+    "explanation": "The `import` statement is the JavaScript syntax used to load modules, and it requires the exact filename including the extension to locate the file correctly. Since the script is named employee.js, the import path must include \".js\" to reference it accurately, making `import \"employee.js\";` the correct syntax.",
+    "corrected": false,
+    "answer": "C. import \"employee.js\";",
+    "trust": "baseline"
   },
   {
     "id": "q0162",
-    "topic": "JavaScript",
+    "topic": "Concurrency",
     "question": "Which flags are required to run nodes with ES6?",
     "options": [
       "A. harmony and strict-mode",
@@ -583,12 +344,14 @@
       "D. harmony and experimental"
     ],
     "answer_index": 3,
-    "explanation": "\"harmony and experimental\" is correct. The distractors (\"harmony and strict-mode\" and \"experimental and strict-mode\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"harmony and experimental\" in JavaScript distinguishes this from similar-sounding options.",
-    "corrected": false
+    "explanation": "Early Node.js versions supported ES6 features only behind experimental V8 implementations, requiring the --harmony flag to enable these proposed language features. The --experimental flag was additionally needed to activate experimental JavaScript runtime capabilities not yet stabilized in the engine.",
+    "corrected": false,
+    "answer": "D. harmony and experimental",
+    "trust": "baseline"
   },
   {
     "id": "q0163",
-    "topic": "Core Java & OOP",
+    "topic": "Java OOP",
     "question": "What contextual keyword is used in a class definition to identify a function containing initialization logic for an object?",
     "options": [
       "A. ctor",
@@ -597,12 +360,14 @@
       "D. class"
     ],
     "answer_index": 2,
-    "explanation": "\"constructor\" is correct. The distractors (\"ctor\" and \"new\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"constructor\" in Core Java & OOP distinguishes this from similar-sounding options.",
-    "corrected": false
+    "explanation": "The keyword \"constructor\" defines a special method inside a class that runs automatically when a new instance is created, handling property initialization and setup. This naming convention is used across languages like JavaScript, C++, and Java to clearly identify the initialization function, distinguishing it from other class methods.",
+    "corrected": false,
+    "answer": "C. constructor",
+    "trust": "baseline"
   },
   {
     "id": "q0164",
-    "topic": "Core Java & OOP",
+    "topic": "Java OOP",
     "question": "What syntax will create the array [1, 2, 3, 4, 5, 6]?",
     "options": [
       "A. [1, 2, [3, 4]..., 5, 6];",
@@ -611,8 +376,10 @@
       "D. [1, 2, {3, 4}, 5, 6];"
     ],
     "answer_index": 1,
-    "explanation": "\"[1, 2, ...[3, 4], 5, 6];\" is correct. The distractors (\"[1, 2, [3, 4]..., 5, 6];\" and \"[1, 2, [3, 4], 5, 6];\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"[1, 2, ...[3, 4], 5, 6];\" in Core Java & OOP distinguishes this from similar-sounding options.",
-    "corrected": false
+    "explanation": "The spread operator (...) expands the elements of the array [3, 4] into individual elements within the new array literal. This results in [3, 4] being unpacked as 3 and 4, producing the flat array [1, 2, 3, 4, 5, 6].",
+    "corrected": false,
+    "answer": "B. [1, 2, ...[3, 4], 5, 6];",
+    "trust": "baseline"
   },
   {
     "id": "q0165",
@@ -625,8 +392,10 @@
       "D. *"
     ],
     "answer_index": 3,
-    "explanation": "\"*\" is correct. The distractors (\"&\" and \"@\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"*\" in JavaScript distinguishes this from similar-sounding options.",
-    "corrected": false
+    "explanation": "Generator functions are declared with function* — the asterisk (*) identifies them.",
+    "corrected": false,
+    "answer": "D. *",
+    "trust": "baseline"
   },
   {
     "id": "q0166",
@@ -639,8 +408,10 @@
       "D. Ignore the module."
     ],
     "answer_index": 2,
-    "explanation": "\"Look for a plugin with the name of the file extension to load the file.\" is the odd one out in this context. The other options (\"Raise an error when loading the module.\" and \"Attempt to load the module as if it were a JavaScript file.\") all correctly describe or belong to the stated category. Knowing what is NOT part of a concept is as important as knowing what is.",
-    "corrected": false
+    "explanation": "'Look for a plugin with the name of the file extension to load the file.' is correct.",
+    "corrected": false,
+    "answer": "C. Look for a plugin with the name of the file extension to load the file.",
+    "trust": "baseline"
   },
   {
     "id": "q0167",
@@ -653,68 +424,14 @@
       "D. Experimental"
     ],
     "answer_index": 0,
-    "explanation": "Babel is a JavaScript transpiler that converts modern ES6+ (and beyond) code into ES5-compatible JavaScript. It is configured via .babelrc or babel.config.js and uses plugins/presets. @babel/preset-env targets specific browser versions automatically.",
-    "corrected": false
-  },
-  {
-    "id": "q0168",
-    "topic": "Core Java & OOP",
-    "question": "The string \"api/route\" in Express is an example of a...",
-    "options": [
-      "A. Middleware",
-      "B. Route",
-      "C. Error Handler",
-      "D. Template"
-    ],
-    "answer_index": 1,
-    "explanation": "The correct answer is \"Route\". The other options (\"Middleware\", \"Error Handler\") do not accurately represent the concept described. This is a standard principle in Core Java & OOP — recognising \"Route\" in context is key to answering related exam questions.",
-    "corrected": false
-  },
-  {
-    "id": "q0169",
-    "topic": "React",
-    "question": "Which library allows the use of the \"require\" keyword in front-end code?",
-    "options": [
-      "A. guid",
-      "B. Browserify",
-      "C. React",
-      "D. jQuery"
-    ],
-    "answer_index": 1,
-    "explanation": "Browserify allows Node.js-style require() calls in browser-side code by bundling all CommonJS modules into a single file. It resolves the require() dependency graph and outputs a browser-compatible bundle. It was a predecessor to Webpack.",
-    "corrected": false
-  },
-  {
-    "id": "q0170",
-    "topic": "SQL & JDBC",
-    "question": "The ______ attribute of a React form is called when the main action button inside the form is pressed.",
-    "options": [
-      "A. onSubmit",
-      "B. onChange",
-      "C. onComplete",
-      "D. onClick"
-    ],
-    "answer_index": 0,
-    "explanation": "The onSubmit handler on a React <form> fires when the form is submitted via button click or Enter key. It receives the SyntheticEvent, which must call event.preventDefault() to stop the browser's default form submission (page reload).",
-    "corrected": false
-  },
-  {
-    "id": "q0171",
-    "topic": "React",
-    "question": "Which of the following are automation tools?",
-    "options": [
-      "A. Gulp",
-      "B. JSX",
-      "C. Express",
-      "D. React"
-    ],
-    "answer_index": 0,
-    "explanation": "Gulp is a JavaScript task runner that automates repetitive build tasks like minification, compilation, linting, and live reloading. Tasks are defined in code (gulpfile.js) using gulp.src(), pipe(), and gulp.dest(). It uses Node.js streams for fast file processing.",
-    "corrected": false
+    "explanation": "Babel is a toolchain that transforms ECMAScript 2015+ code into a backwards-compatible version of JavaScript for older browsers or environments. It works by parsing source code, transforming it via plugins, and generating equivalent output, which is the defining behavior of a compiler.",
+    "corrected": false,
+    "answer": "A. JavaScript compiler",
+    "trust": "baseline"
   },
   {
     "id": "q0172",
-    "topic": "Core Java & OOP",
+    "topic": "Java OOP",
     "question": "Which of the following is not a method of a dispatcher?",
     "options": [
       "A. register",
@@ -723,66 +440,28 @@
       "D. unregister"
     ],
     "answer_index": 1,
-    "explanation": "\"vector\" is the odd one out in this context. The other options (\"register\" and \"dispatch\") all correctly describe or belong to the stated category. Knowing what is NOT part of a concept is as important as knowing what is.",
-    "corrected": false
-  },
-  {
-    "id": "q0173",
-    "topic": "React",
-    "question": "What React function is used to define a new element tag?",
-    "options": [
-      "A. renderComponent",
-      "B. createClass",
-      "C. setInnerHTML",
-      "D. createElement"
-    ],
-    "answer_index": 1,
-    "explanation": "\"createClass\" is correct. The distractors (\"renderComponent\" and \"setInnerHTML\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"createClass\" in React distinguishes this from similar-sounding options.",
-    "corrected": false
+    "explanation": "A dispatcher typically exposes methods to register, unregister, and dispatch events or handlers to manage subscriptions and event routing. \"Vector\" is not a standard dispatcher method since it refers to a data structure or mathematical concept, not an action related to event handling or registration.",
+    "corrected": false,
+    "answer": "B. vector",
+    "trust": "baseline"
   },
   {
     "id": "q0174",
-    "topic": "Core Java & OOP",
+    "topic": "Java OOP",
     "question": "Isomorphic means to focus exclusively on an app's back-end.",
     "options": [
       "A. True",
       "B. False"
     ],
     "answer_index": 1,
-    "explanation": "This statement is FALSE. Isomorphic means to focus exclusively on an app's back-end does not accurately describe the behaviour in Core Java & OOP. Make sure you understand the correct behaviour to avoid this common misconception.",
-    "corrected": false
-  },
-  {
-    "id": "q0175",
-    "topic": "React",
-    "question": "React's abstraction of the document object model is often called...",
-    "options": [
-      "A. Virtual DOM",
-      "B. Meta DOM",
-      "C. Virtualized Model",
-      "D. Shadow DOM"
-    ],
-    "answer_index": 0,
-    "explanation": "React maintains a Virtual DOM — a lightweight JavaScript copy of the real DOM. On each state change, React diffs the new Virtual DOM against the previous one (reconciliation) and applies only the minimal set of real DOM updates, making UI updates efficient.",
-    "corrected": false
-  },
-  {
-    "id": "q0176",
-    "topic": "JavaScript",
-    "question": "The Gulp task which takes a stream and outputs a file is...",
-    "options": [
-      "A. src",
-      "B. task",
-      "C. dest",
-      "D. watch"
-    ],
-    "answer_index": 2,
-    "explanation": "Java 8 Streams provide a declarative, pipeline-style API for processing collections. Operations are either intermediate (filter, map, sorted — lazy) or terminal (collect, forEach, reduce — trigger execution). Parallel streams split work across threads using the fork/join framework.",
-    "corrected": false
+    "explanation": "Isomorphic refers to code or apps that can run in both environments, typically JavaScript shared between client and server. It does not mean focusing solely on the back-end; it emphasizes shared logic across front-end and back-end.",
+    "corrected": false,
+    "answer": "B. False",
+    "trust": "baseline"
   },
   {
     "id": "q0177",
-    "topic": "React",
+    "topic": "JavaScript",
     "question": "Routing can be added to a React application by",
     "options": [
       "A. adding an HTML5 or hash fragment based routing library",
@@ -791,12 +470,14 @@
       "D. using the React.route function"
     ],
     "answer_index": 0,
-    "explanation": "The correct answer is \"adding an HTML5 or hash fragment based routing library\". The other options (\"rendering the application on the server using react-page\", \"handling the window.onLocationChanged event\") do not accurately represent the concept described. This is a standard principle in React — recognising \"adding an HTML5 or hash fragment based routing library\" in context is key to answering related exam questions.",
-    "corrected": false
+    "explanation": "'adding an HTML5 or hash fragment based routing library' is correct.",
+    "corrected": false,
+    "answer": "A. adding an HTML5 or hash fragment based routing library",
+    "trust": "baseline"
   },
   {
     "id": "q0178",
-    "topic": "React",
+    "topic": "Java OOP",
     "question": "An advantage of React is",
     "options": [
       "A. jQuery syntax",
@@ -805,12 +486,14 @@
       "D. easy integration with other JavaScript libraries"
     ],
     "answer_index": 2,
-    "explanation": "The correct answer is \"speed\". The other options (\"jQuery syntax\", \"static type checking\") do not accurately represent the concept described. This is a standard principle in React — recognising \"speed\" in context is key to answering related exam questions.",
-    "corrected": false
+    "explanation": "React uses a virtual DOM to compute minimal changes needed for updates, then batches and applies them efficiently to the real DOM. This diffing algorithm avoids costly full re-renders, making UI updates significantly faster than direct DOM manipulation.",
+    "corrected": false,
+    "answer": "C. speed",
+    "trust": "baseline"
   },
   {
     "id": "q0179",
-    "topic": "React",
+    "topic": "Java OOP",
     "question": "The JSX pre-processor is packaged as a",
     "options": [
       "A. dynamic link library",
@@ -819,12 +502,14 @@
       "D. npm module"
     ],
     "answer_index": 3,
-    "explanation": "JSX is a syntax extension that lets you write HTML-like markup inside JavaScript. Babel transpiles JSX to React.createElement() calls. JSX is not valid JavaScript — it requires a compilation step — but significantly improves readability of component templates.",
-    "corrected": false
+    "explanation": "JSX is a JavaScript syntax extension used primarily in React applications, and its compiler/transformer (like Babel) is distributed through npm, the Node.js package manager. Since JSX preprocessing tools are written in JavaScript and integrate with Node-based build pipelines, npm module is the natural packaging format rather than DLLs, Gems, or Nuget packages, which belong to other language ecosystems.",
+    "corrected": false,
+    "answer": "D. npm module",
+    "trust": "baseline"
   },
   {
     "id": "q0180",
-    "topic": "React",
+    "topic": "JavaScript",
     "question": "The just-in-time JSX transformer is good for",
     "options": [
       "A. integrating with JavaScript tools",
@@ -833,12 +518,14 @@
       "D. performance"
     ],
     "answer_index": 1,
-    "explanation": "JSX is a syntax extension that lets you write HTML-like markup inside JavaScript. Babel transpiles JSX to React.createElement() calls. JSX is not valid JavaScript — it requires a compilation step — but significantly improves readability of component templates.",
-    "corrected": false
+    "explanation": "The just-in-time JSX transformer compiles JSX directly in the browser at runtime, eliminating the need for a separate build step during development. This makes it easy to quickly prototype and test code by simply including a script tag, streamlining the development workflow.",
+    "corrected": false,
+    "answer": "B. simple development workflow",
+    "trust": "baseline"
   },
   {
     "id": "q0181",
-    "topic": "React",
+    "topic": "JavaScript",
     "question": "The function that creates React components is",
     "options": [
       "A. React.component.extend",
@@ -847,12 +534,14 @@
       "D. React.createClass"
     ],
     "answer_index": 3,
-    "explanation": "The correct answer is \"React.createClass\". The other options (\"React.component.extend\", \"React.createComponent\") do not accurately represent the concept described. This is a standard principle in React — recognising \"React.createClass\" in context is key to answering related exam questions.",
-    "corrected": false
+    "explanation": "React.createClass was the original API for defining component classes in React before ES6 classes and hooks became standard. It returns a component class with built-in methods like render, handling prop defaults, and mixins, distinguishing it from rendering or extending methods.",
+    "corrected": false,
+    "answer": "D. React.createClass",
+    "trust": "baseline"
   },
   {
     "id": "q0182",
-    "topic": "React",
+    "topic": "JavaScript",
     "question": "How does React Router make URL params accessible to components?",
     "options": [
       "A. parseUrlParams",
@@ -861,12 +550,14 @@
       "D. Props"
     ],
     "answer_index": 3,
-    "explanation": "\"Props\" is correct. The distractors (\"parseUrlParams\" and \"State\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"Props\" in React distinguishes this from similar-sounding options.",
-    "corrected": false
+    "explanation": "React Router injects route information, including URL parameters, into a component through its props object, typically accessible via match.params or useParams(). This allows components to read dynamic segments of the URL directly without needing separate parsing utilities or state management.",
+    "corrected": false,
+    "answer": "D. Props",
+    "trust": "baseline"
   },
   {
     "id": "q0183",
-    "topic": "HTML & CSS",
+    "topic": "HTML/CSS",
     "question": "Why is the Link component useful?",
     "options": [
       "A. It allows you to hyperlink to routes by name",
@@ -875,12 +566,14 @@
       "D. It provides faster navigation than hyperlinks"
     ],
     "answer_index": 0,
-    "explanation": "The correct answer is \"It allows you to hyperlink to routes by name\". The other options (\"It enhances page load performance\", \"It removes invalid characters from the URL\") do not accurately represent the concept described. This is a standard principle in HTML & CSS — recognising \"It allows you to hyperlink to routes by name\" in context is key to answering related exam questions.",
-    "corrected": false
+    "explanation": "The Link component lets you reference routes by their defined name instead of hardcoding URL paths, making navigation more maintainable. If a route's URL changes, you only update the route definition, and all Link references still work correctly.",
+    "corrected": false,
+    "answer": "A. It allows you to hyperlink to routes by name",
+    "trust": "baseline"
   },
   {
     "id": "q0184",
-    "topic": "React",
+    "topic": "JavaScript",
     "question": "How do Flux stores find out about Flux actions?",
     "options": [
       "A. They query the server via AJAX",
@@ -889,12 +582,14 @@
       "D. They call action creators directly"
     ],
     "answer_index": 2,
-    "explanation": "\"They register a callback with the dispatcher.\" is correct. The distractors (\"They query the server via AJAX\" and \"They poll HTML5 localstorage\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"They register a callback with the dispatcher.\" in React distinguishes this from similar-sounding options.",
-    "corrected": false
+    "explanation": "In Flux, every store registers a callback function with the central dispatcher when it is created. When an action is dispatched, the dispatcher invokes all registered callbacks, allowing stores to inspect the action and update their internal state accordingly.",
+    "corrected": false,
+    "answer": "C. They register a callback with the dispatcher.",
+    "trust": "baseline"
   },
   {
     "id": "q0185",
-    "topic": "React",
+    "topic": "JavaScript",
     "question": "Where should mutable data for React components be stored?",
     "options": [
       "A. props",
@@ -903,12 +598,14 @@
       "D. React.cookie"
     ],
     "answer_index": 2,
-    "explanation": "The correct answer is \"state\". The other options (\"props\", \"reactData\") do not accurately represent the concept described. This is a standard principle in React — recognising \"state\" in context is key to answering related exam questions.",
-    "corrected": false
+    "explanation": "State is designed to hold data that can change over a component's lifecycle, and updating it via setState triggers re-renders to reflect those changes. Props, by contrast, are read-only inputs passed from parent components and should never be mutated directly.",
+    "corrected": false,
+    "answer": "C. state",
+    "trust": "baseline"
   },
   {
     "id": "q0186",
-    "topic": "React",
+    "topic": "JavaScript",
     "question": "What mechanism is recommended for passing data down to child components in React?",
     "options": [
       "A. props",
@@ -917,12 +614,14 @@
       "D. state"
     ],
     "answer_index": 0,
-    "explanation": "\"props\" is correct. The distractors (\"sendChildData\" and \"getDefaultProps\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"props\" in React distinguishes this from similar-sounding options.",
-    "corrected": false
+    "explanation": "Props are read-only attributes passed from parent to child components, allowing data to flow down the component tree in a unidirectional manner. This makes props the standard mechanism for configuring child components, unlike state which is managed internally by each component itself.",
+    "corrected": false,
+    "answer": "A. props",
+    "trust": "baseline"
   },
   {
     "id": "q0187",
-    "topic": "React",
+    "topic": "JavaScript",
     "question": "What is JSX?",
     "options": [
       "A. A language that looks like JavaScript that compiles to HTML.",
@@ -931,12 +630,14 @@
       "D. A language that looks like HTML that compiles down to JavaScript."
     ],
     "answer_index": 3,
-    "explanation": "JSX is a syntax extension that lets you write HTML-like markup inside JavaScript. Babel transpiles JSX to React.createElement() calls. JSX is not valid JavaScript — it requires a compilation step — but significantly improves readability of component templates.",
-    "corrected": false
+    "explanation": "'A language that looks like HTML that compiles down to JavaScript.' is correct.",
+    "corrected": false,
+    "answer": "D. A language that looks like HTML that compiles down to JavaScript.",
+    "trust": "baseline"
   },
   {
     "id": "q0188",
-    "topic": "React",
+    "topic": "JavaScript",
     "question": "What function should all your JSX be placed in?",
     "options": [
       "A. render",
@@ -945,54 +646,14 @@
       "D. emit"
     ],
     "answer_index": 0,
-    "explanation": "JSX is a syntax extension that lets you write HTML-like markup inside JavaScript. Babel transpiles JSX to React.createElement() calls. JSX is not valid JavaScript — it requires a compilation step — but significantly improves readability of component templates.",
-    "corrected": false
-  },
-  {
-    "id": "q0189",
-    "topic": "React",
-    "question": "What does the \"webpack\" command do?",
-    "options": [
-      "A. Runs React Local Development Server.",
-      "B. Transpiles all the Javascript down into one file.",
-      "C. Both A and B.",
-      "D. Starts Node server only."
-    ],
-    "answer_index": 2,
-    "explanation": "Webpack is a module bundler that takes JavaScript modules (and assets) with their dependencies and outputs optimised bundle files. It supports loaders (for CSS, images, TypeScript) and plugins. Code splitting, tree shaking, and hot module replacement are key features.",
-    "corrected": false
-  },
-  {
-    "id": "q0190",
-    "topic": "React",
-    "question": "Which of the following API is a MUST for every React Component?",
-    "options": [
-      "A. getInitialState",
-      "B. render",
-      "C. renderComponent",
-      "D. componentDidMount"
-    ],
-    "answer_index": 2,
-    "explanation": "\"renderComponent\" is correct. The distractors (\"getInitialState\" and \"render\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"renderComponent\" in React distinguishes this from similar-sounding options.",
-    "corrected": false
-  },
-  {
-    "id": "q0191",
-    "topic": "React",
-    "question": "What are the advantages of React?",
-    "options": [
-      "A. React can be used on client as well as server side.",
-      "B. Using React increases readability and makes maintainability easier.",
-      "C. React can be used with any other framework as it is just a View Layer.",
-      "D. All of the above."
-    ],
-    "answer_index": 3,
-    "explanation": "The answer is \"All of the above.\". This is the standard definition or correct identification for the concept described. Review the React documentation to understand how \"All of the above.\" fits into the broader context.",
-    "corrected": false
+    "explanation": "In React class components, the render method is responsible for describing what the UI should look like, and it must return JSX. React calls this method automatically to generate and update the virtual DOM based on the JSX returned.",
+    "corrected": false,
+    "answer": "A. render",
+    "trust": "baseline"
   },
   {
     "id": "q0192",
-    "topic": "React",
+    "topic": "JavaScript",
     "question": "How does React handle the Web Accessibility Initiative (WAI-ARIA) standard?",
     "options": [
       "A. aria-* HTML attributes are fully supported in JSX and should be lowercase.",
@@ -1000,41 +661,33 @@
       "C. aria-* attributes should be converted to camelCase.",
       "D. React is yet to support the WAI-ARIA standard."
     ],
-    "answer_index": 3,
-    "explanation": "\"React is yet to support the WAI-ARIA standard.\" is correct. The distractors (\"aria-* HTML attributes are fully supported in JSX and should be lowercase.\" and \"React processes aria-* attributes separately.\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"React is yet to support the WAI-ARIA standard.\" in React distinguishes this from similar-sounding options.",
-    "corrected": false
-  },
-  {
-    "id": "q0193",
-    "topic": "TypeScript",
-    "question": "What is React?",
-    "options": [
-      "A. Just a server-side framework",
-      "B. Just a user-interface framework",
-      "C. Both a server-side framework as well as a user-interface framework",
-      "D. A database management system"
-    ],
-    "answer_index": 2,
-    "explanation": "The answer is \"Both a server-side framework as well as a user-interface framework\". This is the standard definition or correct identification for the concept described. Review the TypeScript documentation to understand how \"Both a server-side framework as well as a user-interface framework\" fits into the broader context.",
-    "corrected": false
+    "answer_index": 0,
+    "explanation": "'React is yet to support the WAI-ARIA standard.' is correct.",
+    "corrected": false,
+    "answer": "A. aria-* HTML attributes are fully supported in JSX and should be lowercase.",
+    "trust": "baseline"
   },
   {
     "id": "q0194",
-    "topic": "React",
-    "question": "What are the limitations of React?",
+    "topic": "JavaScript",
+    "question": "What are the limitations of ReactJS?\n1. React is only for view layer of the app so we still need the help of other technologies to get a complete tooling set for development\n2. React is using inline templating and JSX. This can seem awkward to some developers\n3. The library of react is too large\n4. All of these",
     "options": [
-      "A. React is only for the view layer of the app.",
-      "B. React uses inline templating and JSX.",
-      "C. The library of React is too large.",
-      "D. All of the above"
+      "A. React is only for view layer of the app so we still need the help of other technologies to get a complete tooling set for development",
+      "B. React is using inline templating and JSX. This can seem awkward to some developers",
+      "C. The library of react is too large",
+      "D. All of these"
     ],
     "answer_index": 3,
-    "explanation": "The answer is \"All of the above\". This is the standard definition or correct identification for the concept described. Review the React documentation to understand how \"All of the above\" fits into the broader context.",
-    "corrected": false
+    "explanation": "React's limitations include being a view-only library requiring additional tools for routing and state management, plus its JSX syntax that mixes markup with logic in an unconventional way. While \"library too large\" is debatable phrasing, the intended answer groups these commonly cited drawbacks together as the comprehensive limitation set.",
+    "corrected": false,
+    "answer": "D. All of these",
+    "trust": "baseline",
+    "recovered": true,
+    "repair_origin": "source"
   },
   {
     "id": "q0195",
-    "topic": "React",
+    "topic": "JavaScript",
     "question": "How can you access the state of a component from inside of a member function in React?",
     "options": [
       "A. this.getState()",
@@ -1043,24 +696,28 @@
       "D. this.values"
     ],
     "answer_index": 2,
-    "explanation": "React component state is accessed via this.state inside class component methods. There is no this.getState() method — that would be Redux's store.getState(). State is updated asynchronously via this.setState(), which triggers a re-render.",
-    "corrected": false
+    "explanation": "In React class components, each instance has a `state` property that holds the component's local data, accessible via `this.state`. Member functions can read this property directly using `this.state.propertyName` to retrieve current values without needing special getter methods.",
+    "corrected": false,
+    "answer": "C. this.state",
+    "trust": "baseline"
   },
   {
     "id": "q0196",
-    "topic": "React",
+    "topic": "JavaScript",
     "question": "You can also use an ES6 class to define a component in React.",
     "options": [
       "A. True",
       "B. False"
     ],
     "answer_index": 0,
-    "explanation": "This statement is TRUE. You can also use an ES6 class to define a component in React is correct behaviour in React. Understanding when this holds (and its exceptions) is essential for assessments.",
-    "corrected": false
+    "explanation": "React supports defining components as ES6 classes that extend React.Component, providing lifecycle methods and a render method to return JSX. These class components were the standard way to create stateful components before React Hooks introduced similar capabilities to function components.",
+    "corrected": false,
+    "answer": "A. True",
+    "trust": "baseline"
   },
   {
     "id": "q0197",
-    "topic": "React",
+    "topic": "JavaScript",
     "question": "Which of the following API is a MUST for every React component?",
     "options": [
       "A. getInitialState",
@@ -1069,12 +726,14 @@
       "D. componentWillMount"
     ],
     "answer_index": 1,
-    "explanation": "\"render\" is correct. The distractors (\"getInitialState\" and \"renderComponent\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"render\" in React distinguishes this from similar-sounding options.",
-    "corrected": false
+    "explanation": "Every React component must implement a render method because it defines the UI output by returning JSX or elements to be displayed. The other options, like getInitialState and componentWillMount, are optional lifecycle methods, while renderComponent isn't a valid API.",
+    "corrected": false,
+    "answer": "B. render",
+    "trust": "baseline"
   },
   {
     "id": "q0198",
-    "topic": "React",
+    "topic": "JavaScript",
     "question": "At the highest level, React components have lifecycle events that fall into _______.",
     "options": [
       "A. Initialization",
@@ -1083,12 +742,14 @@
       "D. All of the above"
     ],
     "answer_index": 3,
-    "explanation": "The correct answer is \"All of the above\". The other options (\"Initialization\", \"State/Property updates\") do not accurately represent the concept described. This is a standard principle in React — recognising \"All of the above\" in context is key to answering related exam questions.",
-    "corrected": false
+    "explanation": "React components go through three main lifecycle phases: mounting (initialization), updating (state/property changes), and unmounting (destruction). Each phase has corresponding lifecycle methods like componentDidMount, componentDidUpdate, and componentWillUnmount that handle these distinct stages.",
+    "corrected": false,
+    "answer": "D. All of the above",
+    "trust": "baseline"
   },
   {
     "id": "q0199",
-    "topic": "React",
+    "topic": "JavaScript",
     "question": "What are the advantages of React?",
     "options": [
       "A. React can be used on client as well as server side.",
@@ -1097,69 +758,60 @@
       "D. All of the above"
     ],
     "answer_index": 3,
-    "explanation": "The answer is \"All of the above\". This is the standard definition or correct identification for the concept described. Review the React documentation to understand how \"All of the above\" fits into the broader context.",
-    "corrected": false
-  },
-  {
-    "id": "q0200",
-    "topic": "React",
-    "question": "What does the \"webpack\" command do?",
-    "options": [
-      "A. Transpiles all the Javascript down into one file",
-      "B. Runs react local development server",
-      "C. Both A and B",
-      "D. Only bundles CSS"
-    ],
-    "answer_index": 2,
-    "explanation": "Webpack is a module bundler that takes JavaScript modules (and assets) with their dependencies and outputs optimised bundle files. It supports loaders (for CSS, images, TypeScript) and plugins. Code splitting, tree shaking, and hot module replacement are key features.",
-    "corrected": false
+    "explanation": "React supports server-side rendering via Node.js and client-side rendering in browsers, making it versatile across environments. Its component-based architecture improves readability and maintainability, while its focus solely on the view layer allows integration with other frameworks like Angular or Backbone.",
+    "corrected": false,
+    "answer": "D. All of the above",
+    "trust": "baseline"
   },
   {
     "id": "q0201",
-    "topic": "TypeScript",
+    "topic": "Java OOP",
     "question": "Which features does TypeScript support natively?",
     "options": [
       "A. Support for standard JavaScript code",
       "B. Classes and modules",
       "C. Static typing",
-      "D. Interfaces",
-      "E. Constructors",
-      "F. All of the above"
+      "D. Interfaces"
     ],
-    "answer_index": 5,
-    "explanation": "\"All of the above\" is correct. The distractors (\"Support for standard JavaScript code\" and \"Classes and modules\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"All of the above\" in TypeScript distinguishes this from similar-sounding options.",
-    "corrected": false
+    "answer_index": 0,
+    "explanation": "TypeScript is a superset of JavaScript, meaning any valid JavaScript code compiles and runs correctly as TypeScript without modification. This native compatibility ensures seamless integration with existing JavaScript codebases, libraries, and tooling, distinguishing it from features like static typing that require additional syntax.",
+    "corrected": false,
+    "answer": "A. Support for standard JavaScript code",
+    "trust": "baseline"
   },
   {
     "id": "q0202",
-    "topic": "TypeScript",
+    "topic": "Java OOP",
     "question": "Which of the following is not a type keyword in TypeScript?",
     "options": [
       "A. float",
       "B. bool",
       "C. all are valid types in TypeScript",
-      "D. number",
-      "E. string"
+      "D. number"
     ],
     "answer_index": 0,
-    "explanation": "float and bool are NOT valid TypeScript type keywords. TypeScript's primitive types are: string, number, boolean (not 'bool'), null, undefined, any, never, void, symbol, object, and bigint. All numeric values (integers and decimals) use the single 'number' type.",
-    "corrected": false
+    "explanation": "TypeScript uses \"number\" as its single numeric type for both integers and floating-point values, so there is no separate \"float\" keyword. Similarly, \"bool\" is not valid syntax; TypeScript uses \"boolean\" instead, making \"float\" the correct non-existent type.",
+    "corrected": false,
+    "answer": "A. float",
+    "trust": "baseline"
   },
   {
     "id": "q0203",
-    "topic": "TypeScript",
+    "topic": "JavaScript",
     "question": "Interfaces defined in TypeScript are included in the JavaScript that is generated?",
     "options": [
       "A. True",
       "B. False"
     ],
     "answer_index": 1,
-    "explanation": "TypeScript is a statically typed superset of JavaScript — all valid JavaScript is valid TypeScript. The TypeScript compiler (tsc) transpiles .ts files to plain JavaScript. Type annotations, interfaces, and generics exist only at compile time and are erased in the output.",
-    "corrected": false
+    "explanation": "Interfaces exist only for compile-time type checking and are erased by the TypeScript compiler during transpilation. Since JavaScript lacks native support for interfaces, no corresponding runtime code is generated in the output.",
+    "corrected": false,
+    "answer": "B. False",
+    "trust": "baseline"
   },
   {
     "id": "q0204",
-    "topic": "TypeScript",
+    "topic": "Java OOP",
     "question": "How do you extend an interface in TypeScript?",
     "options": [
       "A. interface ITruckOptions extends IAutoOptions",
@@ -1168,12 +820,14 @@
       "D. interface ITruckOptions implements IAutoOptions"
     ],
     "answer_index": 0,
-    "explanation": "\"interface ITruckOptions extends IAutoOptions\" is correct. The distractors (\"interface ITruckOptions => IAutoOptions\" and \"interface ITruckOptions : IAutoOptions\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"interface ITruckOptions extends IAutoOptions\" in TypeScript distinguishes this from similar-sounding options.",
-    "corrected": false
+    "explanation": "In TypeScript, interfaces use the `extends` keyword to inherit members from another interface, similar to class inheritance in object-oriented languages. This allows `ITruckOptions` to include all properties and methods defined in `IAutoOptions` while adding its own additional members.",
+    "corrected": false,
+    "answer": "A. interface ITruckOptions extends IAutoOptions",
+    "trust": "baseline"
   },
   {
     "id": "q0205",
-    "topic": "TypeScript",
+    "topic": "Java OOP",
     "question": "Benefits offered by TypeScript include:",
     "options": [
       "A. Code encapsulation",
@@ -1182,12 +836,14 @@
       "D. Strongly-typed code"
     ],
     "answer_index": 1,
-    "explanation": "The correct answer is \"All of these\". The other options (\"Code encapsulation\", \"More maintainable code\") do not accurately represent the concept described. This is a standard principle in TypeScript — recognising \"All of these\" in context is key to answering related exam questions.",
-    "corrected": false
+    "explanation": "TypeScript enforces strong typing, catching errors at compile time while enabling classes and interfaces that support proper code encapsulation. These features combined with static type checking make codebases easier to refactor, debug, and maintain over time.",
+    "corrected": false,
+    "answer": "B. All of these",
+    "trust": "baseline"
   },
   {
     "id": "q0206",
-    "topic": "TypeScript",
+    "topic": "Java OOP",
     "question": "How do you automatically generate fields in a TypeScript class?",
     "options": [
       "A. Add the public keyword to a constructor parameter",
@@ -1196,27 +852,30 @@
       "D. TypeScript doesn't support automatically generated fields"
     ],
     "answer_index": 0,
-    "explanation": "\"Add the public keyword to a constructor parameter\" is correct. The distractors (\"None of these\" and \"Use the auto keyword\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"Add the public keyword to a constructor parameter\" in TypeScript distinguishes this from similar-sounding options.",
-    "corrected": false
+    "explanation": "'Add the public keyword to a constructor parameter' is correct.",
+    "corrected": false,
+    "answer": "A. Add the public keyword to a constructor parameter",
+    "trust": "baseline"
   },
   {
     "id": "q0207",
-    "topic": "TypeScript",
+    "topic": "JavaScript",
     "question": "Which TypeScript function will accept 2 parameters that must be numbers and return their product?",
     "options": [
       "A. var func = (x: number, y: number) => x * y;",
       "B. var func = (x, y) => x * y;",
       "C. None of these",
-      "D. var func = function(x, y) => x * y;",
-      "E. All of these"
+      "D. var func = function(x, y) => x * y;"
     ],
     "answer_index": 0,
-    "explanation": "\"var func = (x: number, y: number) => x * y;\" is correct. The distractors (\"var func = (x, y) => x * y;\" and \"None of these\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"var func = (x: number, y: number) => x * y;\" in TypeScript distinguishes this from similar-sounding options.",
-    "corrected": false
+    "explanation": "Option A explicitly types both parameters as `number`, ensuring TypeScript enforces numeric input and rejects other types at compile time. The arrow function body `x * y` correctly multiplies the two arguments and returns their product without a `return` keyword.",
+    "corrected": false,
+    "answer": "A. var func = (x: number, y: number) => x * y;",
+    "trust": "baseline"
   },
   {
     "id": "q0208",
-    "topic": "TypeScript",
+    "topic": "Java OOP",
     "question": "Which statement will allow your code to reference an internal module in a file named shapes.ts using TypeScript?",
     "options": [
       "A. /// <reference=\"shapes.ts\" />",
@@ -1224,13 +883,15 @@
       "C. import \"shapes\"",
       "D. /// shapes.ts"
     ],
-    "answer_index": 2,
-    "explanation": "\"import \"shapes\"\" is correct. The distractors (\"/// <reference=\"shapes.ts\" />\" and \"/// <reference path=\"shapes.ts\" />\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"import \"shapes\"\" in TypeScript distinguishes this from similar-sounding options.",
-    "corrected": false
+    "answer_index": 1,
+    "explanation": "The triple-slash directive `/// <reference path=\"shapes.ts\" />` is the correct TypeScript syntax that tells the compiler to include another file's declarations for internal module referencing. This directive must use the \"path\" attribute specifically, as shown in option B, to properly resolve the file location.",
+    "corrected": false,
+    "answer": "B. /// <reference path=\"shapes.ts\" />",
+    "trust": "baseline"
   },
   {
     "id": "q0209",
-    "topic": "TypeScript",
+    "topic": "Java OOP",
     "question": "Which TypeScript statement will import an external module in a file named viewmodels.ts that is in the same folder as your code?",
     "options": [
       "A. import vm = module(viewmodels);",
@@ -1239,126 +900,106 @@
       "D. import vm = module('viewmodels');"
     ],
     "answer_index": 3,
-    "explanation": "\"import vm = module('viewmodels');\" is correct. The distractors (\"import vm = module(viewmodels);\" and \"import vm = module('../viewmodels');\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"import vm = module('viewmodels');\" in TypeScript distinguishes this from similar-sounding options.",
-    "corrected": false
+    "explanation": "Option D correctly uses TypeScript's older module import syntax with a quoted string literal referencing the module name, which is required for external module paths. Since viewmodels.ts is in the same folder, no relative path prefix like \"../\" is needed, making 'viewmodels' the correct module identifier.",
+    "corrected": false,
+    "answer": "D. import vm = module('viewmodels');",
+    "trust": "baseline"
   },
   {
     "id": "q0210",
-    "topic": "TypeScript",
+    "topic": "JavaScript",
     "question": "Which TypeScript compiler parameter will emit JavaScript that is AMD compliant?",
     "options": [
       "A. --AMD",
       "B. --module AMD",
-      "C. Neither of these"
+      "C. Neither of these",
+      "D. --target AMD"
     ],
     "answer_index": 1,
-    "explanation": "TypeScript is a statically typed superset of JavaScript — all valid JavaScript is valid TypeScript. The TypeScript compiler (tsc) transpiles .ts files to plain JavaScript. Type annotations, interfaces, and generics exist only at compile time and are erased in the output.",
-    "corrected": false
+    "explanation": "The TypeScript compiler uses the --module flag to specify the module system for emitted JavaScript, and AMD is a valid value for this flag. Passing --module AMD instructs tsc to generate define() wrapped output compatible with AMD loaders like RequireJS.",
+    "corrected": false,
+    "answer": "B. --module AMD",
+    "trust": "baseline"
   },
   {
     "id": "q0211",
-    "topic": "TypeScript",
+    "topic": "Java OOP",
     "question": "What keyword is used to apply all of the properties on one interface to another interface?",
     "options": [
       "A. implements",
       "B. extends",
       "C. class",
-      "D. furthers",
-      "E. references"
+      "D. furthers"
     ],
     "answer_index": 1,
-    "explanation": "\"extends\" is correct. The distractors (\"implements\" and \"class\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"extends\" in TypeScript distinguishes this from similar-sounding options.",
-    "corrected": false
-  },
-  {
-    "id": "q0212",
-    "topic": "TypeScript",
-    "question": "What value will be output at the end of the following code block? enum Color { Red = 5, Green = 10, Blue = 15 }; console.log(Color.Green);",
-    "options": [
-      "A. 2",
-      "B. Color.Green",
-      "C. 1",
-      "D. Green",
-      "E. 10"
-    ],
-    "answer_index": 4,
-    "explanation": "The output is \"10\". Trace through the execution step by step: variable assignments, method calls, and control flow all determine the final value. Pay attention to scope, type coercion, and execution order in TypeScript.",
-    "corrected": false
+    "explanation": "The `extends` keyword allows one interface to inherit all the property and method signatures defined in another interface, creating a hierarchical relationship. This differs from `implements`, which is used when a class provides concrete implementations for an interface's members rather than one interface inheriting from another.",
+    "corrected": false,
+    "answer": "B. extends",
+    "trust": "baseline"
   },
   {
     "id": "q0213",
-    "topic": "Core Java & OOP",
+    "topic": "Java OOP",
     "question": "Which of the following best defines a \"class\"?",
     "options": [
       "A. Objects with no implementation details",
       "B. Object with no properties or methods",
       "C. JSON objects with methods",
-      "D. Collection of private, reusable functions",
-      "E. Template for creating objects"
+      "D. Collection of private, reusable functions"
     ],
-    "answer_index": 4,
-    "explanation": "Template for creating objects is the correct answer. Review the question topic (Java OOP) for deeper context.",
-    "corrected": false
+    "answer_index": 2,
+    "explanation": "'Template for creating objects' is the correct answer per language specification.",
+    "corrected": false,
+    "answer": "C. JSON objects with methods",
+    "trust": "baseline"
   },
   {
     "id": "q0214",
-    "topic": "TypeScript",
+    "topic": "Java OOP",
     "question": "What term describes the concept of treating an object as if it were a particular type, even if it weren't declared as that type?",
     "options": [
       "A. Extension Typing",
       "B. Duck Typing",
       "C. Interface Typing",
-      "D. Generic Typing",
-      "E. Ruby Typing"
+      "D. Generic Typing"
     ],
     "answer_index": 1,
-    "explanation": "\"Duck Typing\" is correct. The distractors (\"Extension Typing\" and \"Interface Typing\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"Duck Typing\" in TypeScript distinguishes this from similar-sounding options.",
-    "corrected": false
-  },
-  {
-    "id": "q0215",
-    "topic": "TypeScript",
-    "question": "What access modifier limits the accessibility of a class member to its own class and subclasses?",
-    "options": [
-      "A. export",
-      "B. internal",
-      "C. protected",
-      "D. private",
-      "E. sensitive"
-    ],
-    "answer_index": 2,
-    "explanation": "\"protected\" is correct. The distractors (\"export\" and \"internal\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"protected\" in TypeScript distinguishes this from similar-sounding options.",
-    "corrected": false
+    "explanation": "Duck typing determines an object's suitability for use based on the presence of specific methods or properties, rather than its actual declared type or class. This allows code to treat any object as a given type as long as it implements the required behavior, following the principle \"if it walks like a duck and quacks like a duck, it's a duck.\"",
+    "corrected": false,
+    "answer": "B. Duck Typing",
+    "trust": "baseline"
   },
   {
     "id": "q0216",
-    "topic": "TypeScript",
+    "topic": "Java OOP",
     "question": "What is the primary difference between a generic class and a non-generic class?",
     "options": [
       "A. Generic classes do not accept constructor parameters.",
       "B. Generic classes are always declared abstract.",
       "C. Generic classes may not implement interfaces.",
-      "D. Generic classes accept a type parameter.",
-      "E. Generic classes must inherit from a base class."
+      "D. Generic classes accept a type parameter."
     ],
     "answer_index": 3,
-    "explanation": "The answer is \"Generic classes accept a type parameter.\". This is the standard definition or correct identification for the concept described. Review the TypeScript documentation to understand how \"Generic classes accept a type parameter.\" fits into the broader context.",
-    "corrected": false
+    "explanation": "Generic classes are defined with one or more type parameters (e.g., class Box<T>) that act as placeholders for actual types specified at instantiation. This allows the same class to operate on different data types while maintaining compile-time type safety, unlike non-generic classes with fixed types.",
+    "corrected": false,
+    "answer": "D. Generic classes accept a type parameter.",
+    "trust": "baseline"
   },
   {
     "id": "q0217",
-    "topic": "TypeScript",
+    "topic": "JavaScript",
     "question": "Which TypeScript compiler option lets you specify the location of the tsconfig.json file to be used for the compilation?",
     "options": [
       "A. --project",
       "B. --json",
       "C. --outDir",
-      "D. --input",
-      "E. --source"
+      "D. --input"
     ],
     "answer_index": 0,
-    "explanation": "tsconfig.json is the TypeScript project configuration file. It controls compiler options (target ES version, strict mode, module system), file inclusion/exclusion, and path aliases. Running tsc with no arguments uses tsconfig.json from the current directory.",
-    "corrected": false
+    "explanation": "The --project flag (or -p) lets you specify a path to a tsconfig.json file.",
+    "corrected": false,
+    "answer": "A. --project",
+    "trust": "baseline"
   },
   {
     "id": "q0218",
@@ -1368,45 +1009,33 @@
       "A. <>",
       "B. >>>",
       "C. !!",
-      "D. ...",
-      "E. ||"
+      "D. ..."
     ],
     "answer_index": 3,
-    "explanation": "The rest parameter syntax (...name) collects all remaining function arguments into a real Array. It must be the last parameter. Unlike the arguments object, rest parameters are a true Array with all Array methods available.",
-    "corrected": true
+    "explanation": "The rest parameter syntax ...params collects remaining arguments into an array.",
+    "corrected": true,
+    "answer": "D. ...",
+    "trust": "baseline"
   },
   {
     "id": "q0219",
-    "topic": "TypeScript",
+    "topic": "Java OOP",
     "question": "Which of the following will correctly import the items exported by this export statement? export { GetUser as GetLibraryUser, GetBook as GetLibraryBook };",
     "options": [
       "A. import TypeScript from './library';",
       "B. import namespace from './library';",
       "C. import { GetLibraryUser, GetLibraryBook } from './library';",
-      "D. import { GetUser, GetBook } from './library';",
-      "E. import all from './library';"
+      "D. import { GetUser, GetBook } from './library';"
     ],
     "answer_index": 2,
-    "explanation": "import { GetLibraryUser, GetLibraryBook } from './library'; is the correct answer. Review the question topic (Java OOP) for deeper context.",
-    "corrected": false
-  },
-  {
-    "id": "q0220",
-    "topic": "TypeScript",
-    "question": "Which are the different Data Types supported by TypeScript?",
-    "options": [
-      "A. Boolean",
-      "B. Number",
-      "C. String",
-      "D. All of the above mentioned"
-    ],
-    "answer_index": 3,
-    "explanation": "\"All of the above mentioned\" is correct. The distractors (\"Boolean\" and \"Number\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"All of the above mentioned\" in TypeScript distinguishes this from similar-sounding options.",
-    "corrected": false
+    "explanation": "'import { GetLibraryUser, GetLibraryBook } from './library';' is the correct answer per language specification.",
+    "corrected": false,
+    "answer": "C. import { GetLibraryUser, GetLibraryBook } from './library';",
+    "trust": "baseline"
   },
   {
     "id": "q0221",
-    "topic": "TypeScript",
+    "topic": "Java OOP",
     "question": "What are the variable scopes available in TypeScript?",
     "options": [
       "A. Global Scope",
@@ -1415,12 +1044,14 @@
       "D. All of the above"
     ],
     "answer_index": 3,
-    "explanation": "The answer is \"All of the above\". This is the standard definition or correct identification for the concept described. Review the TypeScript documentation to understand how \"All of the above\" fits into the broader context.",
-    "corrected": false
+    "explanation": "TypeScript supports global scope, where variables are accessible throughout the entire program, and class scope, where variables (properties) are accessible within a class using this. It also supports local scope, where variables declared with let or const inside functions or blocks are only accessible within that specific function or block.",
+    "corrected": false,
+    "answer": "D. All of the above",
+    "trust": "baseline"
   },
   {
     "id": "q0222",
-    "topic": "TypeScript",
+    "topic": "JavaScript",
     "question": "Which object oriented terms are supported by TypeScript?",
     "options": [
       "A. Modules",
@@ -1429,24 +1060,28 @@
       "D. All of these"
     ],
     "answer_index": 3,
-    "explanation": "\"All of these\" is correct. The distractors (\"Modules\" and \"Classes\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"All of these\" in TypeScript distinguishes this from similar-sounding options.",
-    "corrected": false
+    "explanation": "TypeScript extends JavaScript by adding classes, which support properties, methods, constructors, and inheritance to enable object-oriented programming patterns. It also introduces interfaces for defining contracts that classes must implement, and modules for organizing and encapsulating code into reusable, namespaced units.",
+    "corrected": false,
+    "answer": "D. All of these",
+    "trust": "baseline"
   },
   {
     "id": "q0223",
-    "topic": "TypeScript",
+    "topic": "JavaScript",
     "question": "In TypeScript, it calls JavaScript internally and then performs validations.",
     "options": [
       "A. True",
       "B. False"
     ],
     "answer_index": 0,
-    "explanation": "TypeScript is a statically typed superset of JavaScript — all valid JavaScript is valid TypeScript. The TypeScript compiler (tsc) transpiles .ts files to plain JavaScript. Type annotations, interfaces, and generics exist only at compile time and are erased in the output.",
-    "corrected": false
+    "explanation": "TypeScript compiles down to plain JavaScript, which is what actually executes at runtime in the browser or Node.js environment. Before or during this compilation process, the TypeScript compiler performs static type checking and validation to catch errors based on type annotations.",
+    "corrected": false,
+    "answer": "A. True",
+    "trust": "baseline"
   },
   {
     "id": "q0224",
-    "topic": "Core Java & OOP",
+    "topic": "Java OOP",
     "question": "To change the datatype from one type to another, we require",
     "options": [
       "A. TypeOperator",
@@ -1454,13 +1089,15 @@
       "C. InferredTyping",
       "D. TypeCasting"
     ],
-    "answer_index": 1,
-    "explanation": "The correct answer is \"TypeAssertion\". The other options (\"TypeOperator\", \"InferredTyping\") do not accurately represent the concept described. This is a standard principle in Core Java & OOP — recognising \"TypeAssertion\" in context is key to answering related exam questions.",
-    "corrected": false
+    "answer_index": 3,
+    "explanation": "Type casting is the explicit process of converting a value from one data type to another, such as int to float. It uses built-in functions or operators specifically designed to perform this conversion safely and predictably.",
+    "corrected": false,
+    "answer": "D. TypeCasting",
+    "trust": "baseline"
   },
   {
     "id": "q0225",
-    "topic": "Core Java & OOP",
+    "topic": "Java OOP",
     "question": "For a variable, without specifying any data type is",
     "options": [
       "A. InferredTyping",
@@ -1469,12 +1106,14 @@
       "D. ExplicitTyping"
     ],
     "answer_index": 0,
-    "explanation": "The correct answer is \"InferredTyping\". The other options (\"TypeOperator\", \"TypeAssertion\") do not accurately represent the concept described. This is a standard principle in Core Java & OOP — recognising \"InferredTyping\" in context is key to answering related exam questions.",
-    "corrected": false
+    "explanation": "Inferred typing allows a variable to be declared without explicitly specifying its data type, letting the compiler or interpreter automatically determine the type based on the assigned value. This contrasts with explicit typing, where the programmer must declare the data type manually at the time of variable declaration.",
+    "corrected": false,
+    "answer": "A. InferredTyping",
+    "trust": "baseline"
   },
   {
     "id": "q0226",
-    "topic": "TypeScript",
+    "topic": "JavaScript",
     "question": "Which of the following is valid command to compile TypeScript file?",
     "options": [
       "A. ts abc.ts",
@@ -1483,34 +1122,24 @@
       "D. tst abc.ts"
     ],
     "answer_index": 2,
-    "explanation": "TypeScript is a statically typed superset of JavaScript — all valid JavaScript is valid TypeScript. The TypeScript compiler (tsc) transpiles .ts files to plain JavaScript. Type annotations, interfaces, and generics exist only at compile time and are erased in the output.",
-    "corrected": false
-  },
-  {
-    "id": "q0227",
-    "topic": "Core Java & OOP",
-    "question": "What will be output of: var a:string = 47; console.log(\"Value of a=\" + a);",
-    "options": [
-      "A. Value of a=47",
-      "B. Value of a=0",
-      "C. Value of a=",
-      "D. None of the above"
-    ],
-    "answer_index": 3,
-    "explanation": "The output is \"None of the above\". Trace through the execution step by step: variable assignments, method calls, and control flow all determine the final value. Pay attention to scope, type coercion, and execution order in Core Java & OOP.",
-    "corrected": false
+    "explanation": "'tsc abc.ts' is the correct answer per language specification.",
+    "corrected": false,
+    "answer": "C. tsc abc.ts",
+    "trust": "baseline"
   },
   {
     "id": "q0228",
-    "topic": "TypeScript",
+    "topic": "JavaScript",
     "question": "Internal Modules are known as namespaces in TypeScript.",
     "options": [
       "A. True",
       "B. False"
     ],
     "answer_index": 0,
-    "explanation": "This statement is TRUE. Internal Modules are known as namespaces in TypeScript is correct behaviour in TypeScript. Understanding when this holds (and its exceptions) is essential for assessments.",
-    "corrected": false
+    "explanation": "In TypeScript, internal modules were renamed to 'namespaces' in TypeScript 1.5+.",
+    "corrected": false,
+    "answer": "A. True",
+    "trust": "baseline"
   },
   {
     "id": "q0229",
@@ -1520,16 +1149,17 @@
       "A. var reflect = value => value;",
       "B. var sum = (num1, num2) => num1 + num2;",
       "C. var getName = () => \"Nicholas\";",
-      "D. var sum = (num1, num2) => { return num1 + num2; };",
-      "E. All"
+      "D. var sum = (num1, num2) => { return num1 + num2; };"
     ],
-    "answer_index": 4,
-    "explanation": "\"All\" is correct. The distractors (\"var reflect = value => value;\" and \"var sum = (num1, num2) => num1 + num2;\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"All\" in JavaScript distinguishes this from similar-sounding options.",
-    "corrected": false
+    "answer_index": 0,
+    "explanation": "Arrow function `reflect` correctly takes a single parameter `value` without parentheses and implicitly returns it, following valid ES6 syntax. This concise form is valid because single parameters don't require enclosing parentheses in arrow functions.",
+    "corrected": false,
+    "answer": "A. var reflect = value => value;",
+    "trust": "baseline"
   },
   {
     "id": "q0230",
-    "topic": "TypeScript",
+    "topic": "JavaScript",
     "question": "TypeScript is a",
     "options": [
       "A. Strongly typed",
@@ -1538,12 +1168,14 @@
       "D. All the above"
     ],
     "answer_index": 3,
-    "explanation": "The correct answer is \"All the above\". The other options (\"Strongly typed\", \"Object oriented\") do not accurately represent the concept described. This is a standard principle in TypeScript — recognising \"All the above\" in context is key to answering related exam questions.",
-    "corrected": false
+    "explanation": "TypeScript is strongly typed, object-oriented, and compiled — all three apply.",
+    "corrected": false,
+    "answer": "D. All the above",
+    "trust": "baseline"
   },
   {
     "id": "q0231",
-    "topic": "TypeScript",
+    "topic": "JavaScript",
     "question": "TypeScript is",
     "options": [
       "A. Language",
@@ -1552,12 +1184,14 @@
       "D. None"
     ],
     "answer_index": 2,
-    "explanation": "The correct answer is \"Both\". The other options (\"Language\", \"Set of tools\") do not accurately represent the concept described. This is a standard principle in TypeScript — recognising \"Both\" in context is key to answering related exam questions.",
-    "corrected": false
+    "explanation": "TypeScript is both a language and a set of tools (compiler, language service).",
+    "corrected": false,
+    "answer": "C. Both",
+    "trust": "baseline"
   },
   {
     "id": "q0232",
-    "topic": "TypeScript",
+    "topic": "Java OOP",
     "question": "Select user defined data types in TypeScript",
     "options": [
       "A. Arrays",
@@ -1566,40 +1200,14 @@
       "D. Void"
     ],
     "answer_index": 0,
-    "explanation": "\"Arrays\" is correct. The distractors (\"String\" and \"Boolean\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"Arrays\" in TypeScript distinguishes this from similar-sounding options.",
-    "corrected": false
-  },
-  {
-    "id": "q0233",
-    "topic": "TypeScript",
-    "question": "Which of the following are true?",
-    "options": [
-      "A. We can use printf in TypeScript",
-      "B. We can use console.log in TypeScript",
-      "C. Both",
-      "D. None"
-    ],
-    "answer_index": 1,
-    "explanation": "We can use console.log in TypeScript is the correct answer. Review the question topic (JavaScript) for deeper context.",
-    "corrected": false
-  },
-  {
-    "id": "q0234",
-    "topic": "Core Java & OOP",
-    "question": "Which of the following are array methods?",
-    "options": [
-      "A. Unshift()",
-      "B. Sort()",
-      "C. Pop()",
-      "D. All the above"
-    ],
-    "answer_index": 3,
-    "explanation": "\"All the above\" is correct. The distractors (\"Unshift()\" and \"Sort()\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"All the above\" in Core Java & OOP distinguishes this from similar-sounding options.",
-    "corrected": false
+    "explanation": "Arrays are considered user-defined data types because they allow developers to define a structured collection of elements with a specific type, offering flexibility in how data is organized. In contrast, string, boolean, and void are primitive or built-in types in TypeScript, with predefined behavior and no customization for structure.",
+    "corrected": false,
+    "answer": "A. Arrays",
+    "trust": "baseline"
   },
   {
     "id": "q0235",
-    "topic": "TypeScript",
+    "topic": "Java OOP",
     "question": "Supertype of all datatypes in TypeScript",
     "options": [
       "A. number",
@@ -1609,39 +1217,13 @@
     ],
     "answer_index": 3,
     "explanation": "The 'any' type is the supertype of all types in TypeScript — a variable of type 'any' can hold any value.",
-    "corrected": false
-  },
-  {
-    "id": "q0236",
-    "topic": "Core Java & OOP",
-    "question": "Which of the following are true?",
-    "options": [
-      "A. var a = new String('hii')",
-      "B. var b = new Array(1)",
-      "C. var a: String = 'hii';",
-      "D. All the above"
-    ],
-    "answer_index": 1,
-    "explanation": "var b = new Array(1) is the correct answer. Review the question topic (Java OOP) for deeper context.",
-    "corrected": false
-  },
-  {
-    "id": "q0237",
-    "topic": "TypeScript",
-    "question": "List some features of TypeScript?",
-    "options": [
-      "A. TypeScript can be compiled to all major versions of JavaScript (ES3, ES5, ES6, ES7)",
-      "B. TypeScript can be used for cross-browser development and is an open source project",
-      "C. TypeScript is a superset of JavaScript that provides typed nature to your code",
-      "D. All of the above"
-    ],
-    "answer_index": 3,
-    "explanation": "The correct answer is \"All of the above\". The other options (\"TypeScript can be compiled to all major versions of JavaScript (ES3, ES5, ES6, ES7)\", \"TypeScript can be used for cross-browser development and is an open source project\") do not accurately represent the concept described. This is a standard principle in TypeScript — recognising \"All of the above\" in context is key to answering related exam questions.",
-    "corrected": false
+    "corrected": false,
+    "answer": "D. Any",
+    "trust": "baseline"
   },
   {
     "id": "q0238",
-    "topic": "TypeScript",
+    "topic": "JavaScript",
     "question": "What are the components of TypeScript?",
     "options": [
       "A. TypeScript Language",
@@ -1650,25 +1232,30 @@
       "D. All of these"
     ],
     "answer_index": 3,
-    "explanation": "The answer is \"All of these\". This is the standard definition or correct identification for the concept described. Review the TypeScript documentation to understand how \"All of these\" fits into the broader context.",
-    "corrected": false
+    "explanation": "TypeScript consists of the language itself, which extends JavaScript with types and syntax features, providing the foundation developers write code in. It also includes the compiler (tsc), which transpiles TypeScript to JavaScript, and the language service, which enables features like autocompletion and refactoring in editors.",
+    "corrected": false,
+    "answer": "D. All of these",
+    "trust": "baseline"
   },
   {
     "id": "q0239",
-    "topic": "TypeScript",
+    "topic": "JavaScript",
     "question": "How to declare variables in TypeScript?",
     "options": [
       "A. Var",
       "B. Let",
-      "C. Both"
+      "C. Both",
+      "D. Dim"
     ],
     "answer_index": 2,
-    "explanation": "\"Both\" is correct. The distractors (\"Var\" and \"Let\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"Both\" in TypeScript distinguishes this from similar-sounding options.",
-    "corrected": false
+    "explanation": "TypeScript supports both `var` and `let` for declaring variables, since it's a superset of JavaScript and inherits its variable declaration keywords. Additionally, TypeScript also supports `const` for declaring constants, but between the given options, both `var` and `let` are valid.",
+    "corrected": false,
+    "answer": "C. Both",
+    "trust": "baseline"
   },
   {
     "id": "q0240",
-    "topic": "TypeScript",
+    "topic": "Java OOP",
     "question": "TypeScript uses which data type?",
     "options": [
       "A. String",
@@ -1677,7 +1264,645 @@
       "D. All above option"
     ],
     "answer_index": 3,
-    "explanation": "The correct answer is \"All above option\". The other options (\"String\", \"Number\") do not accurately represent the concept described. This is a standard principle in TypeScript — recognising \"All above option\" in context is key to answering related exam questions.",
-    "corrected": false
+    "explanation": "TypeScript is a statically typed superset of JavaScript that supports multiple primitive types, including String, Number, and Boolean, for variable declarations. These types allow developers to enforce type safety and catch errors at compile time, making all three valid and commonly used data types.",
+    "corrected": false,
+    "answer": "D. All above option",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0241",
+    "topic": "Java OOP",
+    "question": "Default access modifier in TypeScript?",
+    "options": [
+      "A. public",
+      "B. private",
+      "C. protected",
+      "D. readonly"
+    ],
+    "answer_index": 0,
+    "explanation": "If no access modifier is specified in TypeScript, class members are public by default.",
+    "corrected": false,
+    "answer": "A. public",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0242",
+    "topic": "JavaScript",
+    "question": "What is async/await?",
+    "options": [
+      "A. New syntax to write JavaScript promises",
+      "B. New syntax to consume JavaScript promises",
+      "C. New syntax to consume asynchronous callbacks",
+      "D. A new JavaScript feature that replaces promises entirely"
+    ],
+    "answer_index": 1,
+    "explanation": "Async/await is syntactic sugar built on top of promises that provides a cleaner way to handle asynchronous operations by allowing code to be written in a synchronous style. It doesn't create promises (that's still how async functions work internally), but rather consumes them through the `await` keyword, which pauses execution until a promise settles. Promises themselves still exist and are fundamental to how async/await operates.",
+    "corrected": false,
+    "answer": "B. New syntax to consume JavaScript promises",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0243",
+    "topic": "HTML/CSS",
+    "question": "Which of the following is an attribute CSS selector?",
+    "options": [
+      "A. [selector]",
+      "B. .selector",
+      "C. #selector",
+      "D. *selector"
+    ],
+    "answer_index": 0,
+    "explanation": "Attribute selectors use square brackets: [attr] or [attr=value].",
+    "corrected": false,
+    "answer": "A. [selector]",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0244",
+    "topic": "Java OOP",
+    "question": "When is it recommended to pass this.setState a function instead of an object?",
+    "options": [
+      "A. When the new state should completely replace the old state.",
+      "B. When the new state does not depend on the old state.",
+      "C. When the new state depends on the old state.",
+      "D. When the state update needs to be executed asynchronously after an API call."
+    ],
+    "answer_index": 2,
+    "explanation": "React batches setState calls, so relying on this.state right after calling setState can use stale values instead of the most recent state. Passing a function ensures React supplies the latest state as an argument, guaranteeing accurate updates when new state depends on previous state.",
+    "corrected": false,
+    "answer": "C. When the new state depends on the old state.",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0245",
+    "topic": "Concurrency",
+    "question": "A promise represents what?",
+    "options": [
+      "A. A single value in the future",
+      "B. Multiple values in the present",
+      "C. Multiple values in the future",
+      "D. A single value in the present"
+    ],
+    "answer_index": 0,
+    "explanation": "A promise represents the eventual completion (or failure) of a single asynchronous operation and its resulting value.",
+    "corrected": false,
+    "answer": "A. A single value in the future",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0246",
+    "topic": "HTML/CSS",
+    "question": "Can a component be styled with a global styled sheet?",
+    "options": [
+      "A. Only function components can be styled with a global styled sheet",
+      "B. Only if the component returns HTML elements",
+      "C. Yes",
+      "D. No"
+    ],
+    "answer_index": 2,
+    "explanation": "Any component ultimately renders standard HTML elements to the DOM, and CSS selectors target those elements regardless of how they were generated. Since global stylesheets apply based on element type, class, or ID, they can style class or function components alike.",
+    "corrected": false,
+    "answer": "C. Yes",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0247",
+    "topic": "Java OOP",
+    "question": "Where should you sort and filter data?",
+    "options": [
+      "A. In a directive",
+      "B. In a pipe",
+      "C. In your component",
+      "D. In a filter"
+    ],
+    "answer_index": 2,
+    "explanation": "Sorting and filtering in Angular pipes execute on every change detection cycle, which can cause severe performance issues, especially with large datasets or complex operations. Handling this logic in the component instead allows you to control exactly when the operation runs, such as in response to specific user actions or data changes.",
+    "corrected": false,
+    "answer": "C. In your component",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0248",
+    "topic": "Java OOP",
+    "question": "What's the right syntax to assign the function doSomething as the handler of a click event?",
+    "options": [
+      "A. onClick={doSomething}",
+      "B. onClick={() => doSomething}",
+      "C. onClick={doSomething()}",
+      "D. onClick=\"doSomething\""
+    ],
+    "answer_index": 0,
+    "explanation": "Passing `doSomething` without parentheses provides a reference to the function itself, allowing React to call it only when the click event occurs. Using `doSomething()` would invoke the function immediately during render, and wrapping it in quotes treats it as a string rather than a function reference.",
+    "corrected": false,
+    "answer": "A. onClick={doSomething}",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0249",
+    "topic": "JavaScript",
+    "question": "Assuming you define the statement: \"var person: string;\" TypeScript will alert you that there is an error if you enter which additional code?",
+    "options": [
+      "A. person = { name: 'Colleen', age: 25; }",
+      "B. person = 0",
+      "C. person = ['Colleen', 'John'];",
+      "D. All of the above"
+    ],
+    "answer_index": 3,
+    "explanation": "Since person is typed as string, assigning an object, a number, or an array all violate the declared type. TypeScript's static type checker flags each assignment as a compile-time error because none of these values are assignable to the string type.",
+    "corrected": false,
+    "answer": "D. All of the above",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0250",
+    "topic": "Java OOP",
+    "question": "What is the format of the data returned by the JSON Server API?",
+    "options": [
+      "A. YAML",
+      "B. XML",
+      "C. JSON",
+      "D. CSV"
+    ],
+    "answer_index": 2,
+    "explanation": "JSON Server is a mock REST API tool that reads from a JSON file and serves its contents directly as JSON responses over HTTP. Since the underlying data store is JSON, every endpoint returns JSON-formatted objects or arrays without converting to XML, YAML, or CSV.",
+    "corrected": false,
+    "answer": "C. JSON",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0251",
+    "topic": "JavaScript",
+    "question": "What syntax do you use to render the App component into an HTML element with id \"root\"?",
+    "options": [
+      "A. ReactDOM.render(App, document.getElementById(\"root\"));",
+      "B. React.render(App, document.getElementById(\"root\"));",
+      "C. ReactDOM.mountNode(<App />, document.getElementById(\"root\"));",
+      "D. ReactDOM.render(<App />, document.getElementById(\"root\"));"
+    ],
+    "answer_index": 3,
+    "explanation": "'ReactDOM.render(<App />, document.getElementById(\"root\"));' is correct.",
+    "corrected": false,
+    "answer": "D. ReactDOM.render(<App />, document.getElementById(\"root\"));",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0252",
+    "topic": "JavaScript",
+    "question": "What function can be used to change the state of a React component?",
+    "options": [
+      "A. this.state = {}",
+      "B. this.setState",
+      "C. this.changeState",
+      "D. this.updateState"
+    ],
+    "answer_index": 1,
+    "explanation": "this.setState() is the official React API method for updating a component's state and triggering a re-render. It merges the provided object into the current state and schedules the necessary UI updates, unlike directly mutating this.state.",
+    "corrected": false,
+    "answer": "B. this.setState",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0253",
+    "topic": "Java OOP",
+    "question": "What can we do if components A and B are siblings and they require access to the same state element?",
+    "options": [
+      "A. Restructure the application to have A and B be related differently",
+      "B. Place the state in either A or B",
+      "C. Place the state in a third component C that is a sibling to A and B",
+      "D. Place the state in the parent component of A and B"
+    ],
+    "answer_index": 3,
+    "explanation": "'Place the state in the parent component of A and B' is correct.",
+    "corrected": false,
+    "answer": "D. Place the state in the parent component of A and B",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0254",
+    "topic": "Java OOP",
+    "question": "What is the name of the file that manages TypeScript projects?",
+    "options": [
+      "A. tsproj.config",
+      "B. tsmeta.json",
+      "C. tsconfig.json",
+      "D. package.json"
+    ],
+    "answer_index": 2,
+    "explanation": "tsconfig.json is the TypeScript project configuration file. The answer 'tsproj.config' is wrong.",
+    "corrected": true,
+    "answer": "C. tsconfig.json",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0255",
+    "topic": "JavaScript",
+    "question": "When dealing with asynchronous functions, what type of generic must your return type be?",
+    "options": [
+      "A. Async",
+      "B. Promise",
+      "C. Array",
+      "D. AsyncAwait"
+    ],
+    "answer_index": 1,
+    "explanation": "Asynchronous functions always return a Promise object, since await simply unwraps the resolved value from that Promise. Therefore, the return type must be generically typed as Promise<T>, where T represents the actual resolved value's type.",
+    "corrected": false,
+    "answer": "B. Promise",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0256",
+    "topic": "JavaScript",
+    "question": "What tool installs type declaration files?",
+    "options": [
+      "A. Duck",
+      "B. npm",
+      "C. Ruby",
+      "D. NuGet"
+    ],
+    "answer_index": 1,
+    "explanation": "npm installs TypeScript type declaration files (.d.ts) from repositories like DefinitelyTyped using packages prefixed with @types, such as @types/react or @types/node. This allows developers to add type information for JavaScript libraries that lack built-in TypeScript support directly through the npm package manager.",
+    "corrected": false,
+    "answer": "B. npm",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0257",
+    "topic": "JavaScript",
+    "question": "What should appear to the left of the arrow in an arrow function?",
+    "options": [
+      "A. Function name",
+      "B. Function parameters",
+      "C. Curly braces",
+      "D. Function return value"
+    ],
+    "answer_index": 1,
+    "explanation": "In an arrow function, the parameters are placed inside parentheses immediately before the arrow symbol, such as (x, y) => x + y. This syntax tells JavaScript which inputs the function accepts before defining the logic that follows the arrow.",
+    "corrected": false,
+    "answer": "B. Function parameters",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0258",
+    "topic": "Java OOP",
+    "question": "What character separates a variable from its type annotation in a declaration?",
+    "options": [
+      "A. #",
+      "B. $",
+      "C. %",
+      "D. :"
+    ],
+    "answer_index": 3,
+    "explanation": "In most typed languages, a colon (:) is the conventional syntax used to separate a variable name from its declared type, such as in \"x: int\". This notation clearly distinguishes the identifier from its type annotation, making the code readable and unambiguous to both compilers and developers.",
+    "corrected": false,
+    "answer": "D. :",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0260",
+    "topic": "JavaScript",
+    "question": "What keyword requires a variable to be declared before it's used?",
+    "options": [
+      "A. let",
+      "B. dim",
+      "C. declare",
+      "D. set"
+    ],
+    "answer_index": 0,
+    "explanation": "The `let` keyword explicitly declares a variable and its scope before it can be assigned a value or used in code. Attempting to use a variable declared with `let` before its declaration triggers a reference error, enforcing declare-before-use behavior.",
+    "corrected": false,
+    "answer": "A. let",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0261",
+    "topic": "Java OOP",
+    "question": "What keyword declares a class member in the class rather than an instance of the class?",
+    "options": [
+      "A. enum",
+      "B. static",
+      "C. intersection",
+      "D. function"
+    ],
+    "answer_index": 1,
+    "explanation": "The static keyword binds a member directly to the class itself, meaning only one copy exists regardless of how many instances are created. This differs from instance members, which are allocated separately for each object created from the class.",
+    "corrected": false,
+    "answer": "B. static",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0262",
+    "topic": "JavaScript",
+    "question": "Within which function scope would a variable that you declare using the keyword var cover?",
+    "options": [
+      "A. Within the entire function scope",
+      "B. Within an if statement scope",
+      "C. Within a for loop scope",
+      "D. Within a while loop scope"
+    ],
+    "answer_index": 0,
+    "explanation": "Variables declared with var are function-scoped, meaning they are accessible anywhere within the entire function in which they are declared, regardless of nested blocks. Unlike let or const, var ignores block boundaries such as if statements, for loops, or while loops, effectively hoisting the declaration to the top of the enclosing function.",
+    "corrected": false,
+    "answer": "A. Within the entire function scope",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0263",
+    "topic": "Java OOP",
+    "question": "What keyword lets you derive a subclass from a superclass?",
+    "options": [
+      "A. stretches",
+      "B. extends",
+      "C. sub",
+      "D. follows"
+    ],
+    "answer_index": 1,
+    "explanation": "The \"extends\" keyword establishes inheritance, allowing a subclass to acquire fields and methods from its superclass. This creates an \"is-a\" relationship, enabling code reuse and polymorphism in object-oriented programming languages like Java.",
+    "corrected": false,
+    "answer": "B. extends",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0264",
+    "topic": "Java OOP",
+    "question": "EventEmitter class's simple interface, which basically encompasses two methods, can be used to trigger custom events and listen to events as well.",
+    "options": [
+      "A. exit()",
+      "B. superscript()",
+      "C. subscribe()",
+      "D. emit()"
+    ],
+    "answer_index": 3,
+    "explanation": "I believe there's an error in the provided answer key. The correct answer should be D. emit(), not C. subscribe(). The EventEmitter class's two core methods are `emit()` (to trigger custom events) and `on()` or `once()` (to listen to events), not `subscribe()`. While some event systems use `subscribe()`, Node.js's EventEmitter specifically uses `emit()` as its standard method for triggering events.",
+    "corrected": false,
+    "answer": "D. emit()",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0266",
+    "topic": "JavaScript",
+    "question": "A promise represents the final result of an ______ operation.",
+    "options": [
+      "A. asynchronous",
+      "B. synchronous",
+      "C. sequential",
+      "D. recursive"
+    ],
+    "answer_index": 0,
+    "explanation": "A promise represents the eventual completion (or failure) of a single asynchronous operation and its resulting value.",
+    "corrected": false,
+    "answer": "A. asynchronous",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0270",
+    "topic": "HTML/CSS",
+    "question": "Data bindings are applied as ______ or as special sequences of characters in strings.",
+    "options": [
+      "A. expressions",
+      "B. attributes on HTML elements",
+      "C. elements itself",
+      "D. none of above"
+    ],
+    "answer_index": 1,
+    "explanation": "Data bindings are typically applied directly on HTML elements as special attributes, such as ng-bind or v-model, which instruct the framework to link element properties to underlying data. This attribute-based approach allows the binding syntax to remain embedded within the HTML markup itself, enabling declarative connections between the view and the data model.",
+    "corrected": false,
+    "answer": "B. attributes on HTML elements",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0271",
+    "topic": "JavaScript",
+    "question": "A data binding has these four parts:",
+    "options": [
+      "A. host element, curly brackets, target, expression",
+      "B. host element, square brackets, target, evaluation",
+      "C. host element, square brackets, target, expression",
+      "D. host element, parentheses, target, expression"
+    ],
+    "answer_index": 2,
+    "explanation": "'host element, square brackets, target, expression' is correct.",
+    "corrected": false,
+    "answer": "C. host element, square brackets, target, expression",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0272",
+    "topic": "JavaScript",
+    "question": "Attribute binding is similar to property binding but is tied to the ______ rather than the DOM property.",
+    "options": [
+      "A. Page attribute",
+      "B. DOM attribute",
+      "C. Root attribute",
+      "D. HTML attribute"
+    ],
+    "answer_index": 3,
+    "explanation": "Attribute binding sets an HTML attribute directly on an element, such as aria-* or colspan, which have no corresponding DOM property. This differs from property binding, which updates the DOM object's property rather than the markup attribute itself.",
+    "corrected": false,
+    "answer": "D. HTML attribute",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0273",
+    "topic": "HTML/CSS",
+    "question": "Using the ______ animation function, the parent animation can allow the child animation to run at the exact correct time.",
+    "options": [
+      "A. animateChild",
+      "B. childAnimate",
+      "C. animateInner",
+      "D. innerChild"
+    ],
+    "answer_index": 0,
+    "explanation": "The animateChild() function is an Angular animation query method that explicitly triggers child animations from within a parent animation sequence. It ensures child animations execute at the precise timing point specified by the parent, rather than running independently or immediately.",
+    "corrected": false,
+    "answer": "A. animateChild",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0275",
+    "topic": "HTML/CSS",
+    "question": "It's always possible to make use of animation input parameters by setting more data via the ______ property.",
+    "options": [
+      "A. options.param",
+      "B. option.params",
+      "C. option.param",
+      "D. options.params"
+    ],
+    "answer_index": 3,
+    "explanation": "The property must be named \"options\" (plural), since it refers to the full options object passed to configure the animation, not a single option. Within that object, \"params\" (plural) is used because it holds multiple parameter values as key-value pairs for passing extra data.",
+    "corrected": false,
+    "answer": "D. options.params",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0276",
+    "topic": "Java OOP",
+    "question": "Which bootstrap styles are used to create a vertical pills navigation?",
+    "options": [
+      "A. .nav, .nav-tabs",
+      "B. .nav, .nav-pills",
+      "C. .nav, .nav-pills, .nav-stacked",
+      "D. .nav, .nav-tabs, .nav-justified"
+    ],
+    "answer_index": 2,
+    "explanation": "The .nav and .nav-pills classes create the basic pill-style navigation, while .nav-stacked forces the pills to display vertically instead of horizontally. Without .nav-stacked, the pills would default to a horizontal layout, so all three classes are required for a vertical pills navigation.",
+    "corrected": false,
+    "answer": "C. .nav, .nav-pills, .nav-stacked",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0277",
+    "topic": "Java OOP",
+    "question": "Which bootstrap styles are used to create a justified tabs navigation?",
+    "options": [
+      "A. .nav, .nav-tabs",
+      "B. .nav, .nav-pills",
+      "C. .nav, .nav-pills, .nav-stacked",
+      "D. .nav, .nav-tabs, .nav-justified"
+    ],
+    "answer_index": 3,
+    "explanation": "The .nav and .nav-tabs classes establish the base tabbed navigation structure with proper styling and borders. Adding .nav-justified stretches the tabs equally across the parent width, creating evenly distributed justified navigation.",
+    "corrected": false,
+    "answer": "D. .nav, .nav-tabs, .nav-justified",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0279",
+    "topic": "HTML/CSS",
+    "question": "Bootstrap's grid system allows up to ______.",
+    "options": [
+      "A. 6 columns across the page",
+      "B. 12 columns across the page",
+      "C. 8 columns across the page",
+      "D. 16 columns across the page"
+    ],
+    "answer_index": 1,
+    "explanation": "Bootstrap's grid system is based on a 12-column layout, dividing the page width into 12 equal fractions for flexible column arrangements. This allows developers to create responsive layouts by combining columns (e.g., 6+6 or 4+4+4) that always sum to 12 within a row.",
+    "corrected": false,
+    "answer": "B. 12 columns across the page",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0280",
+    "topic": "Java OOP",
+    "question": "Which class makes an image automatically adjust to fit the size of the screen?",
+    "options": [
+      "A. .img-res-image",
+      "B. .img-responsive-image",
+      "C. .img-responsive",
+      "D. .img-res"
+    ],
+    "answer_index": 2,
+    "explanation": "The `.img-responsive` class in Bootstrap applies `max-width: 100%` and `height: auto`, allowing images to scale proportionally within their container. This ensures images resize dynamically based on the viewport or parent element's dimensions, maintaining responsiveness across different screen sizes.",
+    "corrected": false,
+    "answer": "C. .img-responsive",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0281",
+    "topic": "Java OOP",
+    "question": "Which class should be used to indicate a button group?",
+    "options": [
+      "A. btn-group-buttons",
+      "B. btn-group",
+      "C. btn-grp",
+      "D. btn-buttons"
+    ],
+    "answer_index": 1,
+    "explanation": "In Bootstrap, the \"btn-group\" class is the official CSS class used to wrap multiple buttons and style them as a cohesive, connected group. This class handles the necessary spacing, border-radius adjustments, and alignment to visually merge individual button elements together.",
+    "corrected": false,
+    "answer": "B. btn-group",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0282",
+    "topic": "JavaScript",
+    "question": "Expression Language is the part of Core Container in Spring Framework.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "explanation": "Spring Expression Language (SpEL) is bundled within the Core Container module, specifically alongside Beans, Core, Context, and Expression sub-modules. It provides a powerful expression language for querying and manipulating object graphs at runtime, integrated directly into the container's configuration metadata processing.",
+    "corrected": false,
+    "answer": "A. True",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0283",
+    "topic": "Java OOP",
+    "question": "AOP is the part of Core Container in Spring Framework.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 1,
+    "explanation": "AOP is a separate module in Spring Framework, distinct from the Core Container which includes Beans, Core, Context, and SpEL modules. The Core Container handles dependency injection and bean management, while AOP provides aspect-oriented programming capabilities like cross-cutting concerns.",
+    "corrected": false,
+    "answer": "B. False",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0284",
+    "topic": "JavaScript",
+    "question": "In which Spring version has Spring Expression Language been supported?",
+    "options": [
+      "A. Spring 2.0",
+      "B. Spring 2.5",
+      "C. Spring 3.0",
+      "D. Spring 4.0"
+    ],
+    "answer_index": 2,
+    "explanation": "Spring Expression Language (SpEL) was introduced as a core feature in Spring 3.0, providing a unified expression language across the entire Spring portfolio. It enabled querying and manipulating object graphs at runtime, supporting bean definitions, annotations, and XML configuration with expression-based syntax.",
+    "corrected": false,
+    "answer": "C. Spring 3.0",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0285",
+    "topic": "Java OOP",
+    "question": "How to get the object of DAO in Spring Framework?",
+    "options": [
+      "A. Using new operator",
+      "B. Using Spring Dependency Injection",
+      "C. Using static factory method",
+      "D. Using reflection API"
+    ],
+    "answer_index": 1,
+    "explanation": "Spring Dependency Injection allows the container to manage and inject DAO objects automatically, eliminating manual instantiation. This promotes loose coupling, as beans are configured via XML or annotations and wired through the IoC container.",
+    "corrected": false,
+    "answer": "B. Using Spring Dependency Injection",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0286",
+    "topic": "Java OOP",
+    "question": "Which is correct for Spring Framework?",
+    "options": [
+      "A. Spring framework is a heavy-weight solution.",
+      "B. Spring framework is a light-weight solution.",
+      "C. Spring framework is only for web applications.",
+      "D. Spring framework does not support dependency injection."
+    ],
+    "answer_index": 1,
+    "explanation": "Spring uses POJOs and lightweight containers, avoiding the heavy overhead of traditional EJB-based enterprise frameworks. It provides modular architecture and minimal footprint through dependency injection, allowing developers to use only the components they need without excessive resource consumption.",
+    "corrected": false,
+    "answer": "B. Spring framework is a light-weight solution.",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0287",
+    "topic": "Java OOP",
+    "question": "In which Spring version were Java 5 features introduced?",
+    "options": [
+      "A. Spring 2.0",
+      "B. Spring 2.5",
+      "C. Spring 3.0",
+      "D. Spring 4.0"
+    ],
+    "answer_index": 0,
+    "explanation": "Spring 2.0 introduced support for Java 5 features such as annotations, generics, and varargs, allowing developers to use annotation-based configuration alongside traditional XML. This release marked Spring's transition toward embracing newer Java language constructs while maintaining backward compatibility with earlier JDK versions.",
+    "corrected": false,
+    "answer": "A. Spring 2.0",
+    "trust": "baseline"
   }
 ]

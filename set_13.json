@@ -1,0 +1,1926 @@
+[
+  {
+    "question": "What is the primary data storage format used internally by MongoDB?",
+    "options": [
+      "A. BSON",
+      "B. JSON",
+      "C. XML",
+      "D. SQL"
+    ],
+    "answer_index": 0,
+    "answer": "A. BSON",
+    "topic": "MongoDB",
+    "explanation": "MongoDB stores documents internally using BSON, a binary-encoded serialization format that extends JSON with additional data types like dates, binary data, and integers. BSON's binary structure enables faster parsing, efficient traversal, and compact storage compared to plain text JSON, making it ideal for database operations.",
+    "corrected": false,
+    "id": "q1440",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "derived",
+    "options_synthesized": true
+  },
+  {
+    "question": "Which is not a key word of javascript",
+    "options": [
+      "A. Debugger",
+      "B. if",
+      "C. with",
+      "D. use strict"
+    ],
+    "answer_index": 3,
+    "answer": "D. use strict",
+    "topic": "JavaScript",
+    "explanation": "\"use strict\" is a directive expressed as a string literal, not a reserved keyword recognized by the JavaScript parser. In contrast, debugger, if, and with are all actual reserved keywords defined in the ECMAScript specification.",
+    "corrected": false,
+    "id": "q1441",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "In Angular, which route guard interface is used to determine whether a route can be activated (i.e., to control access to a route before navigation)?",
+    "options": [
+      "A. CanActivate",
+      "B. Resolve",
+      "C. CanLoad",
+      "D. CanDeactivate"
+    ],
+    "answer_index": 0,
+    "answer": "A. CanActivate",
+    "topic": "JavaScript",
+    "explanation": "CanActivate is a route guard interface that runs before a route is activated, allowing developers to allow or deny access based on custom logic like authentication status. It returns a boolean, Promise, Observable, or UrlTree to control whether navigation to the route proceeds.",
+    "corrected": false,
+    "id": "q1443",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "question": "A linkage of series of prototype objects is called as ___prototype chain____",
+    "options": [
+      "A. prototype stack",
+      "B. prototype chain",
+      "C. prototypeclass",
+      "D. prototypes"
+    ],
+    "answer_index": 1,
+    "answer": "B. prototype chain",
+    "topic": "Spring Core",
+    "explanation": "A prototype chain forms when objects link to other objects via their internal prototype references, creating a sequence used for property lookup. This linked structure resembles a chain, where each object connects to the next until reaching the end, distinguishing it from a stack or class-based hierarchy.",
+    "corrected": false,
+    "id": "q1444",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "Which HTML syntax correctly creates a checkbox input element?",
+    "options": [
+      "A. <input type=\"checkbox\">",
+      "B. <input type=\"text\">",
+      "C. <checkbox type=\"input\">",
+      "D. <input type=\"radio\">"
+    ],
+    "answer_index": 0,
+    "answer": "A. <input type=\"checkbox\">",
+    "topic": "Spring Core",
+    "explanation": "The `<input>` tag with `type=\"checkbox\"` is the standard HTML syntax for creating a checkbox that users can toggle on or off. Options B and D specify different input types (text and radio), while C uses an invalid, nonexistent HTML tag structure.",
+    "corrected": false,
+    "id": "q1445",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "derived",
+    "options_synthesized": true
+  },
+  {
+    "question": "An image can be embedded into which HTML tag?",
+    "options": [
+      "A. <img>",
+      "B. <src>",
+      "C. <link>",
+      "D. <picture>"
+    ],
+    "answer_index": 0,
+    "answer": "A. <img>",
+    "topic": "Spring Core",
+    "explanation": "The <img> tag is specifically designed to embed images into HTML documents, using the src attribute to specify the image source file. Other options like <src> aren't valid tags, <link> is used for external resources like stylesheets, and <picture> serves a different purpose for responsive images.",
+    "corrected": false,
+    "id": "q1447",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "derived",
+    "options_synthesized": true
+  },
+  {
+    "question": "RowCallbackHandler purpose is to map a single row of the result set to a customized object.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 1,
+    "answer": "B. False",
+    "topic": "JavaScript",
+    "explanation": "RowCallbackHandler processes each row without requiring a return value; it's used for side effects like collecting data into external collections rather than mapping to objects.\n\nRowMapper is the interface designed specifically for mapping individual result set rows to custom objects in Spring's JdbcTemplate framework.",
+    "corrected": false,
+    "id": "q1456",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "JUnits are used for which type of testing?",
+    "options": [
+      "A. Unit Testing",
+      "B. Integration Testing",
+      "C. System Testing",
+      "D. Blackbox Testing"
+    ],
+    "answer_index": 0,
+    "answer": "A. Unit Testing",
+    "topic": "Core Java & OOP",
+    "explanation": "JUnit is a Java framework specifically designed to test individual methods and classes in isolation, verifying their correctness at the smallest code level.\n\nUnit testing focuses on testing single components independently, which is precisely what JUnit's annotations, assertions, and test cases are built to accomplish.",
+    "corrected": false,
+    "id": "q1472",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which of the below statement about JUnit is false?",
+    "options": [
+      "A. It is an open source framework",
+      "B. It provides an annotation to identify test methods",
+      "C. It provides test runners for running test",
+      "D. They cannot be run automatically"
+    ],
+    "answer_index": 3,
+    "answer": "D. They cannot be run automatically",
+    "topic": "React",
+    "explanation": "JUnit tests can be executed automatically through test runners, build tools like Maven, and CI/CD pipelines without manual intervention.\n\nThe @Test annotation enables automated test discovery and execution, making JUnit fully capable of running tests programmatically and automatically.",
+    "corrected": false,
+    "id": "q1473",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which of the below is an incorrect annotation withrespect to JUnits?",
+    "options": [
+      "A. @Test",
+      "B. @BeforeClass",
+      "C. @Junit",
+      "D. @AfterEach"
+    ],
+    "answer_index": 2,
+    "answer": "C. @Junit",
+    "topic": "Spring Core",
+    "explanation": "The correct JUnit annotation is `@Test`, not `@Junit`. The `@Junit` annotation does not exist in the JUnit framework.",
+    "corrected": false,
+    "id": "q1474",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which of these is not a mocking framework?",
+    "options": [
+      "A. EasyMock",
+      "B. Mockito",
+      "C. PowerMock",
+      "D. MockJava"
+    ],
+    "answer_index": 3,
+    "answer": "D. MockJava",
+    "topic": "Core Java & OOP",
+    "explanation": "MockJava is not a recognized mocking framework in the Java testing ecosystem. EasyMock, Mockito, and PowerMock are all established and widely-used Java mocking libraries.",
+    "corrected": false,
+    "id": "q1475",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which method is used to verify the actual and expectedresults in Junits?",
+    "options": [
+      "A. assert()",
+      "B. equals()",
+      "C. ==",
+      "D. isEqual()"
+    ],
+    "answer_index": 0,
+    "answer": "A. assert()",
+    "topic": "Core Java & OOP",
+    "explanation": "The `assert()` method is JUnit's dedicated testing utility that compares actual and expected results and fails the test if they don't match.\n\nOther options (equals(), ==, isEqual()) are general Java methods, not JUnit-specific assertion mechanisms designed for test verification.",
+    "corrected": false,
+    "id": "q1476",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "What does assertSame() method use for assertion?",
+    "options": [
+      "A. equals() method",
+      "B. isEqual() method",
+      "C. ==",
+      "D. compare() method"
+    ],
+    "answer_index": 2,
+    "answer": "C. ==",
+    "topic": "Core Java & OOP",
+    "explanation": "The assertSame() method uses the == operator to check if two references point to the same object in memory, not just value equality.\n\nThe == operator compares object identity, whereas equals() compares object content, making them fundamentally different assertion approaches.",
+    "corrected": false,
+    "id": "q1477",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "How to let junits know that they need to be runusing PowerMock?",
+    "options": [
+      "A. @PowerMock",
+      "B. @RunWith(PowerMock)",
+      "C. @RunWith(Junits)",
+      "D. @RunWith(PowerMockRunner.class)"
+    ],
+    "answer_index": 3,
+    "answer": "D. @RunWith(PowerMockRunner.class)",
+    "topic": "JavaScript",
+    "explanation": "PowerMockRunner is the correct test runner class that enables PowerMock's bytecode manipulation capabilities for mocking static methods and final classes.\n\nThe @RunWith annotation requires a class parameter, not a string, so PowerMockRunner.class is the proper syntax for JUnit integration.",
+    "corrected": false,
+    "id": "q1478",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "How can we simulate if then behavior in Junits?",
+    "options": [
+      "A. if{..} else{..}",
+      "B. if(..){..} else{..}",
+      "C. Mockito.when(…).thenReturn(…);",
+      "D. Mockito.if(..).then(..);"
+    ],
+    "answer_index": 2,
+    "answer": "C. Mockito.when(…).thenReturn(…);",
+    "topic": "Core Java & OOP",
+    "explanation": "Mockito's `when().thenReturn()` syntax simulates conditional behavior by stubbing method calls to return specific values based on given inputs or conditions.\n\nThis allows unit tests to mock dependencies and control their behavior, enabling if-then logic simulation without actual conditional statements in test code.",
+    "corrected": false,
+    "id": "q1479",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "What is used to inject mock fields into the testedobject automatically?",
+    "options": [
+      "A. @InjectMocks",
+      "B. @Inject",
+      "C. @InjectMockObject",
+      "D. @Mock"
+    ],
+    "answer_index": 0,
+    "answer": "A. @InjectMocks",
+    "topic": "Core Java & OOP",
+    "explanation": "@InjectMocks automatically injects mock dependencies into the tested object's fields, eliminating manual setup and reducing boilerplate code in unit tests.\n\nThis annotation works with @Mock to create a complete mock framework, allowing developers to focus on test logic rather than object initialization.",
+    "corrected": false,
+    "id": "q1480",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "PointCut definitions can’t be reused again",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 1,
+    "answer": "B. False",
+    "topic": "Spring Core",
+    "explanation": "PointCut definitions can be reused by referencing them in multiple advice declarations or other pointcuts using the @Pointcut annotation with a method signature.\n\nNamed pointcuts enable DRY principles in AOP, allowing a single pointcut expression to be applied across multiple aspects and advice methods throughout the application.",
+    "corrected": false,
+    "id": "q1482",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Annotation used to refer poincuts?",
+    "options": [
+      "A. @Pointcut",
+      "B. @PointcutExecution",
+      "C. @PointcutBefore",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 0,
+    "answer": "A. @Pointcut",
+    "topic": "Spring Core",
+    "explanation": "The @Pointcut annotation defines reusable pointcut expressions in Spring AOP, allowing you to specify join points once and reference them multiple times across advice methods.\n\nThis is the standard Spring AOP annotation for pointcut declaration; the other options are not valid Spring AOP annotations.",
+    "corrected": false,
+    "id": "q1483",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Consider the following Spring bean class and XML configuration:\n\npublic class Employee {\n    public Employee(String name) {\n        if (name == null) {\n            throw new IllegalArgumentException(\"name cannot be null\");\n        }\n    }\n}\n\n<bean id=\"employee\" class=\"Employee\">\n    <constructor-arg value=\"#{null}\"/>\n</bean>\n\nWhen the Spring ApplicationContext attempts to instantiate the 'employee' bean, what exception is thrown?",
+    "options": [
+      "A. BeanCreation Exception",
+      "B. IllegalArgument Exception",
+      "C. Runtime Error",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 0,
+    "answer": "A. BeanCreation Exception",
+    "topic": "Core Java & OOP",
+    "explanation": "Spring wraps the constructor's IllegalArgumentException in a BeanCreationException when instantiation fails, since the SpEL expression #{null} resolves to null and triggers the constructor's validation check. The underlying IllegalArgumentException becomes the root cause, but the exception actually propagated and visible to the caller from the ApplicationContext is BeanCreationException.",
+    "corrected": false,
+    "id": "q1484",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "question": "Language used to set various kinds of join points",
+    "options": [
+      "A. AspectJ pointcut language",
+      "B. Java pointcut language",
+      "C. XML pointcut language",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 0,
+    "answer": "A. AspectJ pointcut language",
+    "topic": "Spring Core",
+    "explanation": "AspectJ pointcut language is a domain-specific language specifically designed to match and identify join points in aspect-oriented programming with precise syntax and semantics.\n\nOther languages like Java or XML lack the specialized constructs needed to define cross-cutting concerns and pinpoint execution points in code effectively.",
+    "corrected": false,
+    "id": "q1485",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Spring AOP only supports method execution join points for the beans in its IoC container",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "answer": "A. True",
+    "topic": "Spring Core",
+    "explanation": "Spring AOP uses dynamic proxies or bytecode manipulation to intercept method calls on beans managed by its IoC container, limiting joinpoints to method execution only.\n\nSpring AOP cannot intercept field access, constructor calls, or other joinpoints that full AspectJ supports, as it operates exclusively on container-managed bean methods.",
+    "corrected": false,
+    "id": "q1486",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "The annotations must be added to the implementation class but not the interface",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "answer": "A. True",
+    "topic": "TypeScript",
+    "explanation": "In frameworks like JAX-WS or JPA, annotations placed on interface methods are not inherited by implementing classes, since Java annotations do not propagate through implementation relationships. Therefore, annotations must be applied directly to the implementation class to ensure the runtime or compiler processes them correctly during execution or deployment.",
+    "corrected": false,
+    "id": "q1488",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "Bean name patterns are supported by all configurations(XML,Java,AspectJ)",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 1,
+    "answer": "B. False",
+    "topic": "Spring Core",
+    "explanation": "Bean name patterns are only supported in XML and Java configurations, not in AspectJ pointcut declarations which require explicit bean names.\n\nAspectJ's @Pointcut annotation uses a different matching mechanism that doesn't support wildcard patterns like XML's bean() designator does.",
+    "corrected": false,
+    "id": "q1489",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Expressions which returns Parameters of pointcuts?",
+    "options": [
+      "A. target",
+      "B. args",
+      "C. none of the mentioned",
+      "D. all of the mentioned"
+    ],
+    "answer_index": 3,
+    "answer": "D. all of the mentioned",
+    "topic": "Spring Core",
+    "explanation": "Both `target` and `args` are pointcut expressions that extract and return parameters—`target` returns the object instance and `args` returns method arguments.\n\nThese expressions enable access to runtime values within advice methods, making them essential for capturing pointcut context and parameters.",
+    "corrected": false,
+    "id": "q1490",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Are logical operators valid in pointcut expressions?",
+    "options": [
+      "A. Yes",
+      "B. No",
+      "C. Only in Spring AOP, not in AspectJ",
+      "D. Only bitwise operators (&, |) are supported, not logical ones"
+    ],
+    "answer_index": 0,
+    "answer": "A. Yes",
+    "topic": "Spring Core",
+    "explanation": "Pointcut expressions support logical operators like && (AND), || (OR), and ! (NOT) to combine multiple pointcut designators into complex matching conditions.\n\nThese operators enable developers to create sophisticated pointcut expressions that match join points based on multiple criteria simultaneously or exclusively.",
+    "corrected": false,
+    "id": "q1491",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Method which checks if all target classes are matched",
+    "options": [
+      "A. matches()",
+      "B. pair()",
+      "C. matchTargetClass()",
+      "D. none of the mentioned"
+    ],
+    "answer_index": 0,
+    "answer": "A. matches()",
+    "topic": "Core Java & OOP",
+    "explanation": "The `matches()` method verifies if all target classes in a collection satisfy specified conditions or patterns, returning a boolean result.\n\nIt's the standard utility method across frameworks like Spring and Java streams for validating complete class matching requirements.",
+    "corrected": false,
+    "id": "q1492",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Spring supports operations on pointcuts:-",
+    "options": [
+      "A. notably",
+      "B. union",
+      "C. intersection",
+      "D. all of the mentioned"
+    ],
+    "answer_index": 3,
+    "answer": "D. all of the mentioned",
+    "topic": "Spring Core",
+    "explanation": "Spring's pointcut DSL supports union operations using the `||` operator and intersection operations using the `&&` operator for combining multiple pointcuts.\n\nThe `!` operator enables negation of pointcuts, providing comprehensive logical operations for precise join point matching in aspect-oriented programming.",
+    "corrected": false,
+    "id": "q1493",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Pointcuts can be composed using:-",
+    "options": [
+      "A. org.springframework.aop.support.Pointcuts class",
+      "B. composablePointcut class",
+      "C. all of the mentioned",
+      "D. none of the mentioned"
+    ],
+    "answer_index": 2,
+    "answer": "C. all of the mentioned",
+    "topic": "Spring Core",
+    "explanation": "Both `org.springframework.aop.support.Pointcuts` class and `ComposablePointcut` class provide methods to combine multiple pointcuts using logical operations like union and intersection.\n\nSpring AOP supports pointcut composition through multiple mechanisms, making \"all of the mentioned\" the comprehensive correct answer.",
+    "corrected": false,
+    "id": "q1494",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Pointcut used to parse an AspectJ pointcut expression string",
+    "options": [
+      "A. org.springframework.aop.aspectj.AspectJExpressionPointcut",
+      "B. org.springframework.aop.aspectj.AspectJExpressionPointcutString",
+      "C. org.springframework.aop.aspectj.AspectJExpressionString",
+      "D. org.springframework.aop.aspectj.AspectJPointcuttoString"
+    ],
+    "answer_index": 0,
+    "answer": "A. org.springframework.aop.aspectj.AspectJExpressionPointcut",
+    "topic": "Spring Core",
+    "explanation": "AspectJExpressionPointcut is the Spring AOP class that parses AspectJ pointcut expression strings into executable pointcut objects for runtime matching.\n\nThe other options use incorrect naming conventions; AspectJ integration in Spring follows the \"AspectJExpressionPointcut\" pattern for this specific functionality.",
+    "corrected": false,
+    "id": "q1495",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Spring supports most of the popular ORM (or data mapper) frameworks.",
+    "options": [
+      "A. Hibernate",
+      "B. JDO",
+      "C. JPA",
+      "D. All of the mentioned"
+    ],
+    "answer_index": 3,
+    "answer": "D. All of the mentioned",
+    "topic": "Spring Core",
+    "explanation": "Spring Framework provides integration support for Hibernate, JPA, and JDO through dedicated abstraction layers and template classes for data access.\n\nEach ORM framework is supported via Spring's DAO pattern implementation, enabling developers to use any of these persistence technologies interchangeably.",
+    "corrected": false,
+    "id": "q1496",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which ORM is supported by Spring?",
+    "options": [
+      "A. Hibernate",
+      "B. JDO",
+      "C. TopLink",
+      "D. All of the mentioned"
+    ],
+    "answer_index": 3,
+    "answer": "D. All of the mentioned",
+    "topic": "Spring Core",
+    "explanation": "Spring's ORM module provides integration support for multiple persistence frameworks, including Hibernate, JDO (Java Data Objects), and TopLink, through consistent abstraction layers. This allows developers to choose their preferred ORM tool while leveraging Spring's transaction management, dependency injection, and exception handling across all these technologies.",
+    "corrected": false,
+    "id": "q1497",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "derived",
+    "options_synthesized": true
+  },
+  {
+    "question": "An ORM framework persists your objects according to the mapping metadata you provide.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "answer": "A. True",
+    "topic": "Core Java & OOP",
+    "explanation": "ORM frameworks use mapping metadata to define how objects map to database tables and columns, then automatically generate SQL to persist objects based on these mappings.\n\nThis abstraction layer eliminates manual SQL writing by translating object-oriented code into database operations according to the configured metadata relationships.",
+    "corrected": false,
+    "id": "q1498",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Database Engine which uses low memory consumption and easy configuration.",
+    "options": [
+      "A. SQL",
+      "B. MySQL",
+      "C. Apache Derby",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 2,
+    "answer": "C. Apache Derby",
+    "topic": "SQL & JDBC",
+    "explanation": "Apache Derby is an embedded, lightweight database engine designed for minimal memory footprint and requires minimal configuration compared to enterprise databases like SQL Server or MySQL.\n\nIt's ideal for applications needing a self-contained database without separate server setup, making deployment straightforward with automatic configuration management.",
+    "corrected": false,
+    "id": "q1499",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Mode which Derby prefers to run in:-",
+    "options": [
+      "A. embedded",
+      "B. client/server",
+      "C. all of the mentioned",
+      "D. none of the mentioned"
+    ],
+    "answer_index": 0,
+    "answer": "A. embedded",
+    "topic": "Core Java & OOP",
+    "explanation": "Derby supports both embedded mode for single-JVM applications and client/server mode for multi-user distributed deployments, making it flexible across architectures.\n\nThe database engine can operate independently within an application or as a separate server, accommodating different deployment requirements and scalability needs.",
+    "corrected": false,
+    "id": "q1500",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "For testing purposes, the client/server mode is more appropriate.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "answer": "A. True",
+    "topic": "Core Java & OOP",
+    "explanation": "Client/server mode enables isolated testing environments where the client can be tested independently against a controlled server, improving test reliability and reproducibility.\n\nThis architecture allows multiple test instances to run concurrently without interference, facilitating parallel testing and easier debugging of distributed system components.",
+    "corrected": false,
+    "id": "q1501",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "To start the Derby server in the client/server mode.",
+    "options": [
+      "A. startNetworkServer java file",
+      "B. startNetworkServer script",
+      "C. startNetwork script",
+      "D. all of the mentioned"
+    ],
+    "answer_index": 1,
+    "answer": "B. startNetworkServer script",
+    "topic": "Core Java & OOP",
+    "explanation": "The startNetworkServer script is the standard utility provided by Derby to launch the network server daemon for client/server connections.\n\nThis script handles environment setup and JVM initialization automatically, whereas the Java file requires manual compilation and execution with proper classpath configuration.",
+    "corrected": false,
+    "id": "q1502",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "JDBC Properties for Connecting to the Application Database.",
+    "options": [
+      "A. Driver Class",
+      "B. URL",
+      "C. Username",
+      "D. All of the mentioned"
+    ],
+    "answer_index": 3,
+    "answer": "D. All of the mentioned",
+    "topic": "SQL & JDBC",
+    "explanation": "To establish a JDBC connection, you must specify the driver class to load the appropriate database driver, the URL to identify the database location and connection parameters, and credentials for authentication.\n\nAll three properties work together to establish a complete, authenticated connection; omitting any one would prevent successful database connectivity.",
+    "corrected": false,
+    "id": "q1503",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "The general purpose of the Data Access Object (DAO) pattern is to avoid these logic related problems by separating data access logic from business logic and presentation logic.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "answer": "A. True",
+    "topic": "Core Java & OOP",
+    "explanation": "The DAO pattern encapsulates all database interaction code within dedicated classes, isolating SQL queries and persistence mechanics from the rest of the application. This separation allows business and presentation layers to work with data through simple interfaces, improving maintainability and reducing coupling.",
+    "corrected": false,
+    "id": "q1504",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "To access the database with JDBC:-",
+    "options": [
+      "A. DAO interface",
+      "B. DAO Class",
+      "C. DataAccess interface",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 0,
+    "answer": "A. DAO interface",
+    "topic": "TypeScript",
+    "explanation": "The DAO interface defines the contract for database operations, providing abstraction between application logic and data access layer through standardized methods.\n\nJDBC implementation is encapsulated within DAO classes that implement this interface, enabling loose coupling and easier database switching.",
+    "corrected": false,
+    "id": "q1505",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Standard interface defined by the JDBC specification that factories Connection instances.",
+    "options": [
+      "A. javax.sql.DataAccess",
+      "B. javax.sql.DataSource",
+      "C. javax.sql.Data",
+      "D. javax.sql.DataSourceAccess"
+    ],
+    "answer_index": 1,
+    "answer": "B. javax.sql.DataSource",
+    "topic": "TypeScript",
+    "explanation": "DataSource is the standard JDBC interface for obtaining database connections, replacing the DriverManager approach with a more robust, connection pooling-capable factory pattern.\n\nThe other options are either non-existent JDBC interfaces or incorrectly named—only DataSource is formally defined in the javax.sql specification.",
+    "corrected": false,
+    "id": "q1506",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Data source implementations provided by different vendors and projects.",
+    "options": [
+      "A. C3PO",
+      "B. Apache Commons DBCP",
+      "C. All of the mentioned",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 2,
+    "answer": "C. All of the mentioned",
+    "topic": "Core Java & OOP",
+    "explanation": "Explanation\n\nBoth C3PO and Apache Commons DBCP are widely-used connection pool implementations from different vendors/projects that manage database connections efficiently in Java applications.\n\nThese are the primary data source implementations available; the question asks which options represent vendor-provided solutions, making \"all of the mentioned\" the complete answer.",
+    "corrected": false,
+    "id": "q1507",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Spring also provides several convenient but less powerful data source implementations.",
+    "options": [
+      "A. DriverManagerDataSource",
+      "B. DriverManagerData",
+      "C. DriverManagerDataAccess",
+      "D. DriverManagerDataSourceAccess"
+    ],
+    "answer_index": 0,
+    "answer": "A. DriverManagerDataSource",
+    "topic": "SQL & JDBC",
+    "explanation": "DriverManagerDataSource is Spring's built-in convenience class for creating simple JDBC connections without requiring a connection pool or external configuration.\n\nIt follows Spring's standard naming conventions for data source implementations and is documented in Spring Framework's official API for basic data access scenarios.",
+    "corrected": false,
+    "id": "q1508",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "SingleConnectionDataSource (a DriverManagerDataSource subclass). As its name indicates, this maintains only a single connection.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "answer": "A. True",
+    "topic": "SQL & JDBC",
+    "explanation": "SingleConnectionDataSource wraps one JDBC Connection and returns that same instance on every getConnection() call, ignoring close requests to preserve it. It extends DriverManagerDataSource to obtain that connection via driver manager properties but overrides connection handling to enforce single-instance reuse rather than creating new connections.",
+    "corrected": false,
+    "id": "q1509",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "Which DataSource is not stable in MultiThreaded Environment?",
+    "options": [
+      "A. DriverManagerDataSource",
+      "B. SingleConnectionDataSource",
+      "C. All of the mentioned",
+      "D. None of the mentione"
+    ],
+    "answer_index": 2,
+    "answer": "C. All of the mentioned",
+    "topic": "Java Concurrency",
+    "explanation": "DriverManagerDataSource creates a new connection for each request without pooling, causing thread safety issues under concurrent load. SingleConnectionDataSource reuses a single connection across threads, leading to race conditions and data consistency problems in multithreaded environments.",
+    "corrected": false,
+    "id": "q1510",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which of the following is used to convert property values to text Values?",
+    "options": [
+      "A. property Editor",
+      "B. property setter",
+      "C. property getter",
+      "D. none of the mentioned"
+    ],
+    "answer_index": 0,
+    "answer": "A. property Editor",
+    "topic": "Core Java & OOP",
+    "explanation": "A PropertyEditor is a JavaBeans component that converts between property values and their string representations for display and editing in GUI builders and property sheets.\n\nPropertyEditors implement methods like getAsText() to convert object values to text and setAsText() to parse text back into property values.",
+    "corrected": false,
+    "id": "q1511",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which property editor is used to specify a URL String for a property of the URL type?",
+    "options": [
+      "A. java.net.*",
+      "B. java.io.*",
+      "C. java.net.URL",
+      "D. none of the mentioned"
+    ],
+    "answer_index": 3,
+    "answer": "D. none of the mentioned",
+    "topic": "Core Java & OOP",
+    "explanation": "The `java.net.URL` class is the standard Java type used to represent and handle URL strings, providing built-in parsing and validation methods. Property editors in Java frameworks use this class to convert and display URL properties in a type-safe manner.",
+    "corrected": false,
+    "id": "q1512",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which interface is used to create your own property editors?",
+    "options": [
+      "A. CustomEditorConfigurer",
+      "B. RegisterCustomEditor",
+      "C. PropertyEditorConfigurer",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 3,
+    "answer": "D. None of the mentioned",
+    "topic": "TypeScript",
+    "explanation": "CustomEditorConfigurer is a Spring interface that allows you to register custom PropertyEditor implementations for specific bean properties and types.\n\nRegisterCustomEditor is a method used within CustomEditorConfigurer to actually register the editors, not the interface itself for creation.",
+    "corrected": false,
+    "id": "q1513",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which of the following property editors are registered by Spring?",
+    "options": [
+      "A. CustomNumberEditor",
+      "B. FileEditor",
+      "C. CustomDateEditor",
+      "D. CustomNetEditor"
+    ],
+    "answer_index": 1,
+    "answer": "B. FileEditor",
+    "topic": "TypeScript",
+    "explanation": "Spring's PropertyEditorRegistry includes FileEditor as a built-in editor for converting String properties to File objects during bean initialization.\n\nCustomNumberEditor, CustomDateEditor, and CustomNetEditor are not standard Spring registrations; developers must register these custom editors manually.",
+    "corrected": false,
+    "id": "q1514",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Method which converts property into a string value",
+    "options": [
+      "A. getAsText",
+      "B. setAsText",
+      "C. regText",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 0,
+    "answer": "A. getAsText",
+    "topic": "Core Java & OOP",
+    "explanation": "The `getAsText()` method is a PropertyEditor interface method that converts a property object into its string representation for display or serialization purposes.\n\n`setAsText()` performs the reverse operation (string to object), while `regText()` is not a standard Java method, eliminating other options.",
+    "corrected": false,
+    "id": "q1515",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Method that converts string into a property value",
+    "options": [
+      "A. getAsText",
+      "B. setAsText",
+      "C. regText",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 1,
+    "answer": "B. setAsText",
+    "topic": "Core Java & OOP",
+    "explanation": "The `setAsText` method converts a string representation into a property value within a PropertyEditor. It's the standard interface method for parsing and setting property values from string input.",
+    "corrected": false,
+    "id": "q1516",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "The property value is retrieved by:-",
+    "options": [
+      "A. getValue method",
+      "B. setValue method",
+      "C. none of the mentioned",
+      "D. all of the mentioned"
+    ],
+    "answer_index": 0,
+    "answer": "A. getValue method",
+    "topic": "Core Java & OOP",
+    "explanation": "Property values in Java can be accessed through getValue(), setValue(), and other accessor methods depending on the framework or context being used. Different APIs and design patterns support multiple approaches to retrieve property values.",
+    "corrected": false,
+    "id": "q1517",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "For a property editor to be searched correctly, it must be located in the same package as the target class, and the name must be Editor's name",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "answer": "A. True",
+    "topic": "Core Java & OOP",
+    "explanation": "JavaBeans' PropertyEditorManager locates editors by convention: it appends \"Editor\" to the target class's simple name and searches the same package as that class. This naming and location convention allows the editor to be found automatically without explicit registration, so both conditions must be satisfied for correct discovery.",
+    "corrected": false,
+    "id": "q1518",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "Which package is used for periodic work",
+    "options": [
+      "A. java.lang.Thread",
+      "B. java.util.TimerTask",
+      "C. java.util.Timer",
+      "D. java.util.concurrent"
+    ],
+    "answer_index": 2,
+    "answer": "C. java.util.Timer",
+    "topic": "Java Concurrency",
+    "explanation": "TimerTask is an abstract class designed specifically for defining tasks executed by Timer at regular intervals. It provides the run() method override mechanism for periodic work scheduling.",
+    "corrected": false,
+    "id": "q1519",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which subinterface provides functionality for managing Threads and their events",
+    "options": [
+      "A. ExecutorService",
+      "B. ThreadService",
+      "C. All of the mentioned",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 0,
+    "answer": "A. ExecutorService",
+    "topic": "TypeScript",
+    "explanation": "ExecutorService is a subinterface of Executor that provides thread pool management, task scheduling, and lifecycle control for concurrent thread execution.\n\nIt enables managing multiple threads efficiently through methods like submit(), invokeAll(), and shutdown() without manually creating individual threads.",
+    "corrected": false,
+    "id": "q1520",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Method provided by ExectuorService which returns a Future < T >",
+    "options": [
+      "A. submit",
+      "B. publish",
+      "C. addService",
+      "D. registerService"
+    ],
+    "answer_index": 0,
+    "answer": "A. submit",
+    "topic": "Core Java & OOP",
+    "explanation": "The `submit()` method is part of ExecutorService's API and returns a Future object that represents an asynchronous computation result.\n\nOther options (publish, addService, registerService) are not ExecutorService methods and don't return Future objects.",
+    "corrected": false,
+    "id": "q1521",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "The Quartz integration and message driven POJO container doesn’t needs TaskExecutor Services",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 1,
+    "answer": "B. False",
+    "topic": "Java Concurrency",
+    "explanation": "The Quartz integration and message-driven POJO container both require TaskExecutor services to manage asynchronous task execution and thread pooling efficiently.\n\nTaskExecutor abstracts threading complexity, enabling proper scheduling of quartz jobs and concurrent message processing within containers.",
+    "corrected": false,
+    "id": "q1522",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which of the following class’s instance is used by TimerTaskExecutor for managing jobs",
+    "options": [
+      "A. java.util.Timer",
+      "B. java.util.Date",
+      "C. java.util.HashMap",
+      "D. none of the mentioned"
+    ],
+    "answer_index": 0,
+    "answer": "A. java.util.Timer",
+    "topic": "Java Concurrency",
+    "explanation": "TimerTaskExecutor uses java.util.Timer to schedule and execute tasks at specified intervals or delays. Timer manages the scheduling mechanism and background thread needed for job execution.",
+    "corrected": false,
+    "id": "q1523",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Spring supports a series of mechanisms to generatea REST service’s payload.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "answer": "A. True",
+    "topic": "Core Java & OOP",
+    "explanation": "Spring Framework provides multiple mechanisms like `@ResponseBody`, `HttpMessageConverter`, and content negotiation to generate REST service payloads in various formats.\n\nThese mechanisms enable automatic serialization of Java objects into JSON, XML, or other formats based on client requests and server configuration.",
+    "corrected": false,
+    "id": "q1525",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Notation for defining REST end points.",
+    "options": [
+      "A. { }",
+      "B. *",
+      "C. All of the mentioned",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 2,
+    "answer": "C. All of the mentioned",
+    "topic": "Core Java & OOP",
+    "explanation": "Both curly braces `{}` and asterisks `*` are valid notations for defining REST endpoints—braces denote path parameters while asterisks represent wildcards. Therefore, all mentioned notations are correct for different endpoint definition scenarios.",
+    "corrected": false,
+    "id": "q1526",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Marshalling is the process of transforming an in-memory representation of an object into a data",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "answer": "A. True",
+    "topic": "Core Java & OOP",
+    "explanation": "Marshalling converts objects from memory into serialized formats like JSON, XML, or binary for storage or network transmission. This enables data portability across systems and persistent data representation outside the application runtime.",
+    "corrected": false,
+    "id": "q1527",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "The marshaller used by MarshallingView belongs to one of a series of XML marshallers.",
+    "options": [
+      "A. Jaxb2Marshaller",
+      "B. XmlBeansMarshaller",
+      "C. CastorMarshalle",
+      "D. All of the mentioned"
+    ],
+    "answer_index": 3,
+    "answer": "D. All of the mentioned",
+    "topic": "Core Java & OOP",
+    "explanation": "MarshallingView is a Spring framework component that supports multiple XML marshalling implementations interchangeably, including Jaxb2Marshaller, XmlBeansMarshaller, and CastorMarshaller.\n\nAll three marshallers implement Spring's Marshaller interface, allowing developers to choose any of them based on project requirements and preferences.",
+    "corrected": false,
+    "id": "q1528",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "To configure Jaxb2Marshaller marshaller we require.",
+    "options": [
+      "A. ClassesToBeBound",
+      "B. ContextPath",
+      "C. All of the mentioned",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 2,
+    "answer": "C. All of the mentioned",
+    "topic": "Core Java & OOP",
+    "explanation": "Jaxb2Marshaller requires both ClassesToBeBound and ContextPath to properly initialize and configure JAXB marshalling/unmarshalling operations.\n\nEither property can be used individually, but providing both ensures flexibility and optimal configuration for different Spring integration scenarios.",
+    "corrected": false,
+    "id": "q1529",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Accessing a third-party REST service inside a Spring application.",
+    "options": [
+      "A. RestTemplate Class",
+      "B. ViewResolver",
+      "C. InternalViewResolver",
+      "D. View"
+    ],
+    "answer_index": 0,
+    "answer": "A. RestTemplate Class",
+    "topic": "Core Java & OOP",
+    "explanation": "RestTemplate is Spring's HTTP client for making synchronous REST calls to external services with built-in support for serialization and error handling.\n\nViewResolver, InternalViewResolver, and View are presentation layer components for rendering views, not for consuming REST APIs.",
+    "corrected": false,
+    "id": "q1531",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "REST service end point comprises an address.",
+    "options": [
+      "A. starts with http:// and ends with ?",
+      "B. starts with http:// and ends with &",
+      "C. no certain URL is specified",
+      "D. depends upon the platform used"
+    ],
+    "answer_index": 2,
+    "answer": "C. no certain URL is specified",
+    "topic": "Core Java & OOP",
+    "explanation": "A REST endpoint address starts with http:// to specify the protocol for web communication. The ? marks the beginning of query parameters that define specific resource requests or filtering criteria.",
+    "corrected": false,
+    "id": "q1532",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "XML tag which represents information related to a REST service’s request.",
+    "options": [
+      "A. Result",
+      "B. Title",
+      "C. None of the mentioned",
+      "D. All of the mentioned"
+    ],
+    "answer_index": 2,
+    "answer": "C. None of the mentioned",
+    "topic": "Core Java & OOP",
+    "explanation": "XML tags used in REST service documentation (like WADL or custom schemas) can represent request information contextually. Result, Title, and custom tags all potentially convey request-related metadata depending on implementation.\n\nDifferent REST frameworks and documentation standards employ various XML tag conventions, making all options valid in different contexts rather than one specific tag.",
+    "corrected": false,
+    "id": "q1533",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "RestTemplate class method which performs an HTTPHEAD operation.",
+    "options": [
+      "A. headForHeaders(String, Object…)",
+      "B. getForObject(String, Class, Object…)",
+      "C. postForLocation(String, Object, Object…)",
+      "D. postForObject(String, Object, Class, Object…)"
+    ],
+    "answer_index": 0,
+    "answer": "A. headForHeaders(String, Object…)",
+    "topic": "Core Java & OOP",
+    "explanation": "The `headForHeaders()` method is specifically designed to perform HTTP HEAD requests and returns response headers. Other options perform GET, POST, or POST operations, not HEAD requests.",
+    "corrected": false,
+    "id": "q1534",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "The marshaller used by MarshallingView belongs to one of a",
+    "options": [
+      "A. Jaxb2Marshaller",
+      "B. XmlBeansMarshaller",
+      "C. CastorMarshalle",
+      "D. All of the mentioned"
+    ],
+    "answer_index": 3,
+    "answer": "D. All of the mentioned",
+    "topic": "Core Java & OOP",
+    "explanation": "MarshallingView in Spring Framework uses Jaxb2Marshaller as its default marshaller for XML serialization and deserialization operations.\n\nJaxb2Marshaller is the standard choice because it implements the Marshaller interface and provides JAXB-based XML binding capabilities that MarshallingView requires.",
+    "corrected": false,
+    "id": "q1538",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Accessing a third-party REST service inside a Spring",
+    "options": [
+      "A. RestTemplate Class",
+      "B. ViewResolver",
+      "C. InternalViewResolver",
+      "D. View"
+    ],
+    "answer_index": 0,
+    "answer": "A. RestTemplate Class",
+    "topic": "Core Java & OOP",
+    "explanation": "RestTemplate is Spring's synchronous HTTP client for consuming REST APIs and making HTTP requests to third-party services seamlessly.\n\nViewResolver, InternalViewResolver, and View are components for rendering responses, not for consuming external REST services.",
+    "corrected": false,
+    "id": "q1541",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "XML tag which represents information related to a REST",
+    "options": [
+      "A. Result",
+      "B. Title",
+      "C. None of the mentioned",
+      "D. All of the mentioned"
+    ],
+    "answer_index": 0,
+    "answer": "A. Result",
+    "topic": "Core Java & OOP",
+    "explanation": "The `<Result>` XML tag is the standard convention for encapsulating REST API response data and status information in XML-formatted responses.\n\nTitle and other generic tags lack REST-specific semantics, whereas Result explicitly denotes response payload structures in REST API documentation.",
+    "corrected": false,
+    "id": "q1542",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "RestTemplate class method which performs an HTTP HEAD",
+    "options": [
+      "A. headForHeaders(String, Object…)",
+      "B. getForObject(String, Class, Object…)",
+      "C. postForLocation(String, Object, Object…)",
+      "D. postForObject(String, Object, Class, Object…)"
+    ],
+    "answer_index": 0,
+    "answer": "A. headForHeaders(String, Object…)",
+    "topic": "Core Java & OOP",
+    "explanation": "The `headForHeaders()` method specifically performs HTTP HEAD requests and returns response headers without fetching the body content.\n\nOther options use GET or POST methods; only `headForHeaders()` is designed for HEAD operations in RestTemplate.",
+    "corrected": false,
+    "id": "q1543",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Element which secures web flows.",
+    "options": [
+      "A. secured",
+      "B. security",
+      "C. sec",
+      "D. none of the mentioned"
+    ],
+    "answer_index": 0,
+    "answer": "A. secured",
+    "topic": "Core Java & OOP",
+    "explanation": "HTTPS uses SSL/TLS protocols to create secured connections that encrypt data transmission between client and server, protecting web flows from interception.\n\nThe term \"secured\" describes the protective state of web communications, while other options lack the proper grammatical form needed to describe this protective mechanism.",
+    "corrected": false,
+    "id": "q1544",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "To secure web flows with Spring Security.",
+    "options": [
+      "A. DelegatingFilter",
+      "B. DelegatingFilterProxy",
+      "C. DelegatingProxy",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 1,
+    "answer": "B. DelegatingFilterProxy",
+    "topic": "Spring Core",
+    "explanation": "DelegatingFilter is the core Spring Security component that intercepts HTTP requests and delegates authentication/authorization processing to the security filter chain.\n\nIt integrates with the servlet container to apply security policies across all web flows in a Spring application.",
+    "corrected": false,
+    "id": "q1545",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Group id to add spring security using Maven.",
+    "options": [
+      "A. org.springframework.secure",
+      "B. org.springframework.security",
+      "C. org.springframework.securedflow",
+      "D. none of the mentioned"
+    ],
+    "answer_index": 1,
+    "answer": "B. org.springframework.security",
+    "topic": "Spring Core",
+    "explanation": "The correct group id for Spring Security in Maven is org.springframework.security, not org.springframework.secure. The provided answer key appears to contain an error.",
+    "corrected": false,
+    "id": "q1546",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "auto-config provides only default form-based login service.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "answer": "A. True",
+    "topic": "Core Java & OOP",
+    "explanation": "Auto-config in Spring Security automatically enables form-based login as the default authentication mechanism without requiring explicit configuration.\n\nAdditional authentication methods like OAuth2, SAML, or custom schemes require manual configuration beyond auto-config's default setup.",
+    "corrected": false,
+    "id": "q1547",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which of the following class should replace ‘?’.\n<beans ...>\n...\n<webflow:flow-executor id=\"flowExecutor\">\n<webflow:flow-execution-listeners>\n<webflow:listener ref=\"securityFlowExecutionListener\" />\n</webflow:flow-execution-listeners>\n</webflow:flow-executor>\n<bean id=\"securityFlowExecutionListener\" class=\"?\" />\n</beans>",
+    "options": [
+      "A. org.springframework.webflow.security.SecurityFlow",
+      "B. org.springframework.webflow.SecurityFlowExecutionListener",
+      "C. org.springframework.webflow.security.SecurityFlowExecutionListener",
+      "D. org.springframework.security.SecurityFlowExecutionListener"
+    ],
+    "answer_index": 2,
+    "answer": "C. org.springframework.webflow.security.SecurityFlowExecutionListener",
+    "topic": "Core Java & OOP",
+    "explanation": "The SecurityFlowExecutionListener class resides in the org.springframework.webflow.security package, as it integrates Spring Security checks into Spring Web Flow's execution lifecycle. This listener enforces access control rules defined on flow states and transitions, making the fully qualified name org.springframework.webflow.security.SecurityFlowExecutionListener correct.",
+    "corrected": false,
+    "id": "q1548",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "Which attribute is used to access security element of web flow.",
+    "options": [
+      "A. attribute",
+      "B. attributes-security",
+      "C. attributes",
+      "D. none of the mentioned"
+    ],
+    "answer_index": 2,
+    "answer": "C. attributes",
+    "topic": "Core Java & OOP",
+    "explanation": "The `attribute` element in Spring Web Flow is the standard XML configuration tag used to define and access security-related properties within flow definitions.\n\nSecurity constraints and access control rules are configured as attributes within the flow's attribute elements, making option A the correct approach for security element access.",
+    "corrected": false,
+    "id": "q1549",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Spring web flow supports integration with.",
+    "options": [
+      "A. JSF",
+      "B. Hibernate",
+      "C. JPA",
+      "D. All of the mentioned"
+    ],
+    "answer_index": 3,
+    "answer": "D. All of the mentioned",
+    "topic": "Spring Core",
+    "explanation": "Spring Web Flow is a framework specifically designed for JSF (JavaServer Faces) integration, providing conversation management and navigation handling for JSF-based web applications.\n\nWhile Hibernate and JPA are persistence frameworks, Spring Web Flow operates at the presentation layer and doesn't directly integrate with them as core features.",
+    "corrected": false,
+    "id": "q1550",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "To integrate JPA with Spring Web flows.",
+    "options": [
+      "A. JpaFlowExecutionListener",
+      "B. HibernateFlowExecutionListener",
+      "C. All of the mentioned",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 0,
+    "answer": "A. JpaFlowExecutionListener",
+    "topic": "Spring Core",
+    "explanation": "JpaFlowExecutionListener is the Spring Web Flow component specifically designed to manage JPA EntityManager lifecycle and persistence context across flow transitions.\n\nIt handles entity detachment/reattachment and transaction boundaries, ensuring proper ORM integration with stateful web flows.",
+    "corrected": false,
+    "id": "q1551",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "To integrate Hibernate with Spring Web flows.",
+    "options": [
+      "A. JpaFlowExecutionListener",
+      "B. HibernateFlowExecutionListener",
+      "C. All of the mentioned",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 1,
+    "answer": "B. HibernateFlowExecutionListener",
+    "topic": "Spring Core",
+    "explanation": "JpaFlowExecutionListener manages Hibernate session lifecycle within Spring Web Flow scopes, ensuring proper transaction handling and lazy loading support across flow states.\n\nIt provides JPA-standard integration rather than Hibernate-specific implementations, making it the recommended approach for modern Spring applications using ORM frameworks.",
+    "corrected": false,
+    "id": "q1552",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "HibernateFlowExecutionListener and JpaFlowExecutionListener",
+    "options": [
+      "A. org.springframework.web.persistence package",
+      "B. org.springframework.persistence package",
+      "C. org.springframework.webflow package package",
+      "D. org.springframework.webflow.persistence package"
+    ],
+    "answer_index": 3,
+    "answer": "D. org.springframework.webflow.persistence package",
+    "topic": "Spring Core",
+    "explanation": "HibernateFlowExecutionListener and JpaFlowExecutionListener are persistence integration components that bridge web layer concerns with database session management in Spring applications.\n\nThese listeners are located in org.springframework.web.persistence package, which consolidates web-specific persistence utilities separate from core webflow framework classes.",
+    "corrected": false,
+    "id": "q1553",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "JpaFlowExecutionListener and Hibernate Listener binds to flow",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "answer": "A. True",
+    "topic": "Spring Core",
+    "explanation": "JpaFlowExecutionListener integrates with Spring Web Flow to manage JPA entity lifecycle across flow transitions. Hibernate listeners are bound through this mechanism to handle persistence operations during flow execution stages.",
+    "corrected": false,
+    "id": "q1554",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Libraries used to integrate Hibernate with JPA.",
+    "options": [
+      "A. Hibernate 3",
+      "B. Hibernate 3 Entity Manager",
+      "C. JPA API",
+      "D. All of the mentioned"
+    ],
+    "answer_index": 3,
+    "answer": "D. All of the mentioned",
+    "topic": "Spring Core",
+    "explanation": "Hibernate 3 introduced native JPA support and EntityManager implementation, enabling direct JPA integration without additional libraries. It consolidated JPA compliance into the core framework, eliminating the need for separate Entity Manager packages.",
+    "corrected": false,
+    "id": "q1555",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "To configure JPA vendor-specific information.",
+    "options": [
+      "A. JPA vendor adaptor",
+      "B. Data source",
+      "C. All of the mentioned",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 0,
+    "answer": "A. JPA vendor adaptor",
+    "topic": "Core Java & OOP",
+    "explanation": "A JPA vendor adaptor abstracts vendor-specific configurations like dialect, transaction handling, and database features, enabling portable persistence layer code across different JPA implementations.\n\nData sources only manage database connections and credentials, not JPA-specific vendor configurations like Hibernate dialects or EclipseLink weaving settings.",
+    "corrected": false,
+    "id": "q1556",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "You have to register a flow execution listener in the flow",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 1,
+    "answer": "B. False",
+    "topic": "Core Java & OOP",
+    "explanation": "Flow execution listeners track lifecycle events like start, pause, and completion, enabling monitoring and custom logic integration throughout flow execution.\n\nRegistering listeners is required to capture execution state changes and implement callbacks for flow behavior control and observability.",
+    "corrected": false,
+    "id": "q1557",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "A web service contract is described using :-",
+    "options": [
+      "A. Web Services Description Language",
+      "B. Web Services Description",
+      "C. All of the mentioned",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 0,
+    "answer": "A. Web Services Description Language",
+    "topic": "Core Java & OOP",
+    "explanation": "WSDL is the standard XML-based language specifically designed to formally describe web service contracts, defining operations, messages, bindings, and endpoints.\n\nSOAP and REST services use WSDL to communicate interface specifications, enabling clients to understand service capabilities and invoke methods correctly.",
+    "corrected": false,
+    "id": "q1558",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "There are two approaches to developing a web service, depending on whether you define the contract first or last.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "answer": "A. True",
+    "topic": "Core Java & OOP",
+    "explanation": "Web services can be built using Contract-First, where the WSDL or API specification is designed before writing any code, ensuring interoperability. Alternatively, Contract-Last allows developers to write the implementation code first, then generate the contract automatically from the existing classes.",
+    "corrected": false,
+    "id": "q1559",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "In contrast, the contract-first approach encourages you to think of the service contract first in terms of :-",
+    "options": [
+      "A. XML",
+      "B. XML Schema(.xsd)",
+      "C. WSDL",
+      "D. All of the mentioned"
+    ],
+    "answer_index": 3,
+    "answer": "D. All of the mentioned",
+    "topic": "Core Java & OOP",
+    "explanation": "The contract-first approach defines services through multiple interconnected specifications: XML for data structure, XSD for validation rules, and WSDL for service interface and operations.\n\nAll three components work together to establish the complete service contract before implementation, ensuring clear communication between service provider and consumer.",
+    "corrected": false,
+    "id": "q1560",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Service exporters that can export a bean as a remote service based on the :-",
+    "options": [
+      "A. RMI",
+      "B. Hessian",
+      "C. Burlap",
+      "D. All of the mentioned"
+    ],
+    "answer_index": 3,
+    "answer": "D. All of the mentioned",
+    "topic": "Core Java & OOP",
+    "explanation": "RMI, Hessian, and Burlap are all remote service protocols that Spring supports for exporting beans as remote services through their respective exporters.\n\nEach protocol provides different serialization and communication mechanisms, but all three are equally capable of exposing Spring beans as remotely accessible services.",
+    "corrected": false,
+    "id": "q1562",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Spring comes with a service exporter that can export a bean as a SOAP web service.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "answer": "A. True",
+    "topic": "Core Java & OOP",
+    "explanation": "Spring Framework does not include a built-in SOAP web service exporter. SOAP support requires third-party libraries like Apache CXF or additional dependencies.\n\nSpring's core focus is on REST services; SOAP integration needs explicit external configuration and tools.",
+    "corrected": false,
+    "id": "q1563",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "The standard for deploying web services on the Java EE platform as of Java EE 1.4:-",
+    "options": [
+      "A. JAX-RPC",
+      "B. JAX",
+      "C. RPC",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 0,
+    "answer": "A. JAX-RPC",
+    "topic": "Core Java & OOP",
+    "explanation": "JAX-RPC (Java API for XML-RPC) was the official Java EE 1.4 standard for deploying web services, enabling remote procedure calls over XML.\n\nIt provided the foundation for SOAP-based web services before being superseded by JAX-WS in later Java EE versions.",
+    "corrected": false,
+    "id": "q1564",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "To send objects across the wire, beans need to be encoded using the Java Architecture for XML Binding",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 1,
+    "answer": "B. False",
+    "topic": "Core Java & OOP",
+    "explanation": "JAXB serializes Java objects into XML format for network transmission and deserialization on remote systems.\n\nThis encoding enables interoperable data exchange across different platforms and programming languages using a standardized XML representation.",
+    "corrected": false,
+    "id": "q1565",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "If you are deploying into a Java EE 5 (or better) container, you may simply create a bean that is annotated",
+    "options": [
+      "A. javax.jws.WebService",
+      "B. javax.jws.WebServiceProvider",
+      "C. all of the mentioned",
+      "D. none of the mentioned"
+    ],
+    "answer_index": 2,
+    "answer": "C. all of the mentioned",
+    "topic": "Core Java & OOP",
+    "explanation": "Both `@WebService` and `@WebServiceProvider` are valid annotations for creating web services in Java EE 5+ containers. `@WebService` handles SOAP/document-literal services while `@WebServiceProvider` provides low-level message handling for complex scenarios.",
+    "corrected": false,
+    "id": "q1566",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Spring provides a factory that can export beans annotated with:-",
+    "options": [
+      "A. javax.jws.WebService",
+      "B. javax.jws.WebServiceProvider",
+      "C. all of the mentioned",
+      "D. none of the mentioned"
+    ],
+    "answer_index": 2,
+    "answer": "C. all of the mentioned",
+    "topic": "Core Java & OOP",
+    "explanation": "Spring's JaxWsPortProxyFactoryBean supports exporting beans annotated with both @WebService and @WebServiceProvider for JAX-WS web service endpoints.\n\nBoth annotations define web services differently; Spring accommodates both to provide flexible web service publishing capabilities.",
+    "corrected": false,
+    "id": "q1568",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Exposing a stand-alone SOAP endpoint using the:-",
+    "options": [
+      "A. SimpleJaxWsServiceExporter",
+      "B. JAX-WS",
+      "C. All of the mentioned",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 0,
+    "answer": "A. SimpleJaxWsServiceExporter",
+    "topic": "Core Java & OOP",
+    "explanation": "SimpleJaxWsServiceExporter is a Spring class that automatically exports beans as JAX-WS endpoints using the built-in Endpoint API from Java SE 6, publishing them at specified URLs during startup. It handles the low-level Endpoint.publish() calls internally, making it a direct mechanism for creating stand-alone SOAP endpoints without needing an external servlet container.",
+    "corrected": false,
+    "id": "q1569",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "Tomcat doesn’t support JAX-WS by itself.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "answer": "A. True",
+    "topic": "Core Java & OOP",
+    "explanation": "Tomcat is a servlet container that lacks built-in JAX-WS runtime support. JAX-WS requires additional libraries like Apache CXF or Metro to function properly on Tomcat.",
+    "corrected": false,
+    "id": "q1570",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "CXF represents the consolidation of the Celtix and XFire projects, which each had useful SOAP support.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "answer": "A. True",
+    "topic": "Core Java & OOP",
+    "explanation": "CXF was created by merging Celtix and XFire, two SOAP web services frameworks, combining their respective strengths into a single unified project.\n\nBoth predecessors provided production-ready SOAP implementations that CXF inherited and improved upon for broader enterprise adoption.",
+    "corrected": false,
+    "id": "q1571",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Factory to use our Spring bean as the implementation:-",
+    "options": [
+      "A. jaxws:end",
+      "B. jaxws:endpoint",
+      "C. all of the mentioned",
+      "D. none of the mentioned"
+    ],
+    "answer_index": 1,
+    "answer": "B. jaxws:endpoint",
+    "topic": "Core Java & OOP",
+    "explanation": "The `jaxws:endpoint` element is the correct CXF configuration tag that allows you to expose a Spring bean as a SOAP web service endpoint. It bridges Spring-managed beans with JAX-WS service publication in Apache CXF.",
+    "corrected": false,
+    "id": "q1572",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "In contrast, the contract-first approach encouragesyou to think of the service contract first in",
+    "options": [
+      "A. XML",
+      "B. XML Schema(.xsd)",
+      "C. WSDL",
+      "D. All of the mentioned"
+    ],
+    "answer_index": 3,
+    "answer": "D. All of the mentioned",
+    "topic": "Core Java & OOP",
+    "explanation": "The contract-first approach defines services through multiple formats: XML for data structure, XSD for validation rules, and WSDL for complete service interface specifications.\n\nAll three technologies work together to establish the complete service contract before implementation, ensuring clear communication between client and server.",
+    "corrected": false,
+    "id": "q1574",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "In some cases, it's also hard to map an object to XML (e.g., an object graph with cyclic references) because there's actually an impedance mismatch between an object model and an XML model.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "answer": "A. True",
+    "topic": "Core Java & OOP",
+    "explanation": "XML models data as a strict hierarchical tree, but object models often contain graphs with cycles and shared references between instances. This structural mismatch means serializing such objects to XML requires extra mechanisms like ID/IDREF attributes to represent relationships that trees cannot naturally express.",
+    "corrected": false,
+    "id": "q1575",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "To send objects across the wire, beans need to be encoded using the Java Architecture for XML",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "answer": "A. True",
+    "topic": "Core Java & OOP",
+    "explanation": "XML serialization is a standard method for encoding Java objects to enable transmission across networks and systems with platform independence. JAXB (Java Architecture for XML Binding) provides the framework for converting Java beans to/from XML format for wire transport.",
+    "corrected": false,
+    "id": "q1576",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "If you are deploying into a Java EE 5 (or better)container, you may simply create a bean that is",
+    "options": [
+      "A. javax.jws.WebService",
+      "B. javax.jws.WebServiceProvider",
+      "C. all of the mentioned",
+      "D. none of the mentioned"
+    ],
+    "answer_index": 2,
+    "answer": "C. all of the mentioned",
+    "topic": "Core Java & OOP",
+    "explanation": "Both `@javax.jws.WebService` and `@javax.jws.WebServiceProvider` are valid annotations for creating web services in Java EE 5+ containers. `@WebService` handles document/literal style, while `@WebServiceProvider` provides low-level message access.",
+    "corrected": false,
+    "id": "q1577",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "If you are using the JAX-RS Reference Implementation, this intermediary step will involve a tool called wsgen.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 1,
+    "answer": "B. False",
+    "topic": "Core Java & OOP",
+    "explanation": "wsgen is a JAX-WS tool used to generate JAX-WS portable artifacts for SOAP-based web services, not for JAX-RS RESTful services. The Jersey-based JAX-RS Reference Implementation instead uses annotation processing at runtime, so no such intermediary code-generation step with wsgen is required.",
+    "corrected": false,
+    "id": "q1578",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "CXF represents the consolidation of the Celtixand XFire projects, which each had useful SOAP",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "answer": "A. True",
+    "topic": "Core Java & OOP",
+    "explanation": "CXF merged Celtix and XFire, two separate SOAP web services frameworks, to create a unified, more capable platform for web services development.\n\nBoth projects had established SOAP support that was preserved and enhanced in the consolidated CXF framework, avoiding duplication of effort.",
+    "corrected": false,
+    "id": "q1579",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "In React ES6 class can be used to define components. T/F",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "answer": "A. True",
+    "topic": "React",
+    "explanation": "React supports defining components as ES6 classes that extend React.Component, implementing a render() method to return JSX. This class-based approach provides access to lifecycle methods, state management, and other component features, making it a valid way to create components alongside functional components.",
+    "corrected": false,
+    "id": "q1580",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "Which of the following format is supported by MongoDB?",
+    "options": [
+      "A. SQL",
+      "B. XML",
+      "C. BSON",
+      "D. All of the mentioned"
+    ],
+    "answer_index": 2,
+    "answer": "C. BSON",
+    "topic": "MongoDB",
+    "explanation": "MongoDB stores documents internally using BSON (Binary JSON), a binary-encoded serialization format that extends JSON with additional data types like dates and binary data. This makes BSON the native storage and data interchange format for MongoDB, unlike SQL or XML which are unrelated to its core data model.",
+    "corrected": false,
+    "id": "q1581",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "Which of the following is a correct statement about RESTful web services (e.g., built with Spring REST)?",
+    "options": [
+      "A. They can use multiple representation formats such as JSON or XML",
+      "B. They require XML-only payloads for all endpoints",
+      "C. They automatically generate the frontend UI components",
+      "D. They require the server to maintain client session state between requests"
+    ],
+    "answer_index": 0,
+    "answer": "A. They can use multiple representation formats such as JSON or XML",
+    "topic": "Core Java & OOP",
+    "explanation": "RESTful services use content negotiation, allowing clients to request different representation formats like JSON, XML, or others via headers such as Accept and Content-Type. Spring REST supports this natively through HttpMessageConverters, enabling flexible serialization/deserialization without hardcoding a single format.",
+    "corrected": false,
+    "id": "q1582",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "question": "Monolithic application is",
+    "options": [
+      "A. can only be stored as .jar files",
+      "B. it(cid:0)s lightweight and provides services",
+      "C. it(cid:0)s quite complex to create and maintain",
+      "D. it(cid:0)s split into multiple independently deployable services"
+    ],
+    "answer_index": 2,
+    "answer": "C. it(cid:0)s quite complex to create and maintain",
+    "topic": "Core Java & OOP",
+    "explanation": "A monolithic application packages all components into a single deployable unit, typically compiled as a .jar file for Java-based systems. This contrasts with microservices architectures where services are distributed across multiple independent artifacts.",
+    "corrected": false,
+    "id": "q1583",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "What is the scope of inner be",
+    "options": [
+      "A. Singleton",
+      "B. Prototype",
+      "C. Request",
+      "D. None Of the above"
+    ],
+    "answer_index": 1,
+    "answer": "B. Prototype",
+    "topic": "Spring Core",
+    "explanation": "Inner beans in Spring are instantiated fresh for each outer bean instance, making them prototype-scoped rather than singleton.\n\nThis prevents shared state issues and ensures each outer bean gets its own isolated inner bean instance.",
+    "corrected": false,
+    "id": "q1584",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Inner Beans can be retrieved by it’s name.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 1,
+    "answer": "B. False",
+    "topic": "Core Java & OOP",
+    "explanation": "Inner Beans are retrieved by their type or class reference, not by name alone, since they lack independent bean definitions in the Spring container.\n\nThe container resolves Inner Bean dependencies through type matching and injection points, making name-based retrieval unavailable for these anonymous bean instances.",
+    "corrected": false,
+    "id": "q1585",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "public abstract class Product {\npublic static final Product AAA = new Battery(\"AAA\", 2.5); public static final Product CDRW = new Disc(\"CD-RW\", 1.5); ...\n}\n\nA)\n<beans ...>\n<bean id=\"aaa\" class =\"org.springframework.beans.factory.config.FieldRetrievingFactoryBean\">\n<property name=\"staticField\">\n<value>com.shop.Product.AAA</value>\n</property>\n</bean>\n<bean id=\"cdrw\" class= \"org.springframework.beans.factory.config.FieldRetrievingFactoryBean\">\n<property> name=\"staticField\"\nvaluecom.shop.Product.CDRW/value\n</property>\n</bean>\n</beans>\n\nB) Product aaa = com.shop.Product.AAA;\nProduct cdrw = com.shop.Product.CDRW;",
+    "options": [
+      "A. A and B are equivalent",
+      "B. A and B provides different functionality",
+      "C. Runtime Error in A",
+      "D. Exception in B"
+    ],
+    "answer_index": 0,
+    "answer": "A. A and B are equivalent",
+    "topic": "Core Java & OOP",
+    "explanation": "FieldRetrievingFactoryBean is Spring's XML mechanism for accessing a public static field, so it retrieves com.shop.Product.AAA and CDRW just like direct Java field access does. Both approaches ultimately bind the bean/variable to the same static Product instances, producing identical runtime behavior despite different syntax.",
+    "corrected": false,
+    "id": "q1586",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "The Spring Expression Language can be accessed by:- a) XML",
+    "options": [
+      "A. Annotations",
+      "B. None of the mentioned",
+      "C. All of the mentioned",
+      "D. Java code only"
+    ],
+    "answer_index": 2,
+    "answer": "C. All of the mentioned",
+    "topic": "Node.js & Express",
+    "explanation": "Spring Expression Language (SpEL) is primarily accessed through annotations like @Value and @Conditional for runtime evaluation of expressions.\n\nXML configuration can also access SpEL, but annotations are the most common and preferred method in modern Spring applications.",
+    "corrected": false,
+    "id": "q1587",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Ways to declare bean from a static field?",
+    "options": [
+      "A. FieldRetrievingFactoryBean",
+      "B. util:contant",
+      "C. All of the mentioned",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 2,
+    "answer": "C. All of the mentioned",
+    "topic": "Core Java & OOP",
+    "explanation": "FieldRetrievingFactoryBean is a Spring factory bean that retrieves static fields and exposes them as beans for dependency injection.\n\nThe util:constant namespace provides XML shorthand syntax to declare beans from static fields more concisely than using FieldRetrievingFactoryBean.",
+    "corrected": false,
+    "id": "q1588",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "What will be the output of the code snippet?\n\npackage com.apress.springrecipes.calculator;\nimport org.aspectj.lang.annotation.Aspect;\nimport org.aspectj.lang.annotation.Pointcut;\n\n@Aspect\npublic class CalculatorPointcuts\n{\n@Pointcut(\"execution(* *.*(..))\")\npublic void loggingOperation() {}\n}\n\npackage com.apress.springrecipes.calculator;\n@Aspect\npublic class CalculatorLoggingAspect\n{\n...\n@Before(\"CalculatorPointcuts.loggingOperation()\")\npublic void logBefore(JoinPoint joinPoint)\n{\n...\n}\n\n@AfterReturning(\npointcut = \"loggingOperation()\",\nreturning = \"result\")\npublic void logAfterReturning(JoinPoint joinPoint, Object result)\n{\nthrow new IllegalArgumentException();\n}\n\n@AfterThrowing(\npointcut = \"CalculatorPointcuts.loggingOperation()\",\nthrowing = \"e\")\npublic void logAfterThrowing(JoinPoint joinPoint, IllegalArgumentException e)\n{\n...\n}\n\n@Around(\"CalculatorPointcuts.loggingOperation()\")\npublic Object logAround(ProceedingJoinPoint joinPoint) throws Throwable\n{\n...\n}\n}",
+    "options": [
+      "A. BeanCreationException",
+      "B. Bean Created",
+      "C. ClassPathException",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 0,
+    "answer": "A. BeanCreationException",
+    "topic": "Core Java & OOP",
+    "explanation": "The `@AfterReturning` pointcut expression `\"loggingOperation()\"` lacks the required `CalculatorPointcuts.` prefix, causing Spring AOP to fail resolving the pointcut reference during proxy creation. This invalid pointcut declaration triggers a BeanCreationException at application context startup, since the aspect bean cannot be properly instantiated with a broken advice configuration.",
+    "corrected": false,
+    "id": "q1589",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "For collection merging, which Principles we have to follow: 1. The beans must and should follow bean inheritance. 2. The bean collection implementation classes must be the same. 3. The collection implementation class's generic type must be the same.",
+    "options": [
+      "A. 1 And 2",
+      "B. Only 2",
+      "C. All three",
+      "D. None of the above."
+    ],
+    "answer_index": 3,
+    "answer": "D. None of the above.",
+    "topic": "MongoDB",
+    "explanation": "Collection merging in Spring only requires that the parent and child bean definitions use collection properties of compatible types (like both List or both Map); the underlying implementation classes need not match. Bean inheritance is optional for merging to occur, and generic type parameters are not enforced or checked by Spring's merging mechanism at the XML/configuration level.",
+    "corrected": false,
+    "id": "q1590",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "Which of the following is not feature of Beans?",
+    "options": [
+      "A. Introspection",
+      "B. Events",
+      "C. Persistence",
+      "D. Serialization"
+    ],
+    "answer_index": 3,
+    "answer": "D. Serialization",
+    "topic": "Core Java & OOP",
+    "explanation": "Serialization is not a core feature of JavaBeans; it's an external mechanism that beans may optionally support through the Serializable interface.\n\nThe three actual JavaBeans features are introspection (runtime property discovery), events (component communication), and persistence (property state management).",
+    "corrected": false,
+    "id": "q1591",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Declaring a bean from a static field requires a built-in factory bean",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "answer": "A. True",
+    "topic": "Core Java & OOP",
+    "explanation": "Spring requires a FactoryBean to wrap static field access because beans must be instantiated through the container's lifecycle management, not direct static references.\n\nFactoryBean's getObject() method allows Spring to intercept and control how the static value is retrieved and exposed as a managed bean instance.",
+    "corrected": false,
+    "id": "q1594",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "As an alternative to specifying the field name in the staticField property explicitly, you can set it as the bean name of FieldRetrievingFactoryBean.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "answer": "A. True",
+    "topic": "Core Java & OOP",
+    "explanation": "FieldRetrievingFactoryBean can derive the static field to retrieve directly from its bean name when no explicit staticField property is set, using the name as a shorthand reference like \"com.example.Constants.VALUE\". This allows Spring configuration to be more concise since the fully qualified field path in the bean id itself supplies the necessary class and field information.",
+    "corrected": false,
+    "id": "q1595",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "Which configuration can be used for Dependency Injection? a) XML",
+    "options": [
+      "A. Annotation Configuration",
+      "B. Java Based Configuration",
+      "C. All of the mentioned",
+      "D. XML Based Configuration only"
+    ],
+    "answer_index": 2,
+    "answer": "C. All of the mentioned",
+    "topic": "Spring Core",
+    "explanation": "Annotation Configuration enables Dependency Injection through @Autowired, @Inject, and @Qualifier annotations at compile-time, allowing beans to be automatically wired into components.\n\nXML, Java-based, and annotation configurations all support DI, making \"All of the mentioned\" the most accurate answer, not just annotation configuration alone.",
+    "corrected": false,
+    "id": "q1598",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "In Spring, a bean can be created using which of the following mechanisms?",
+    "options": [
+      "A. Static factory-method",
+      "B. Instance (non-static) factory-method",
+      "C. Constructor",
+      "D. All of the mentioned"
+    ],
+    "answer_index": 3,
+    "answer": "D. All of the mentioned",
+    "topic": "Spring Core",
+    "explanation": "Spring's IoC container supports instantiating beans via constructors, static factory methods (specified with factory-method attribute, no factory-bean needed), and instance factory methods (using factory-bean plus factory-method attributes together). Each mechanism is fully supported in XML and annotation-based configurations, giving developers flexibility depending on whether object creation logic resides in a constructor or a dedicated factory class/method.",
+    "corrected": false,
+    "id": "q1599",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "question": "Which scope creates a new bean instance each time when requested? A. Singleton",
+    "options": [
+      "A. Prototype",
+      "B. Session",
+      "C. Request",
+      "D. True"
+    ],
+    "answer_index": 0,
+    "answer": "A. Prototype",
+    "topic": "Spring Core",
+    "explanation": "Prototype scope instantiates a new bean object every time it's requested from the container, unlike singleton which reuses one instance.\n\nThis is ideal for stateful beans where each client needs independent object instances with separate state management.",
+    "corrected": false,
+    "id": "q1600",
+    "trust": "unverified-source"
+  }
+]

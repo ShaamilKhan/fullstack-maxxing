@@ -1,1132 +1,7 @@
 [
   {
-    "id": "q0601",
-    "topic": "Java Concurrency",
-    "question": "Which Java Set implementation is sorted and synchronized?",
-    "options": [
-      "A. TreeSet",
-      "B. LinkedHashSet",
-      "C. HashSet",
-      "D. ConcurrentSkipListSet"
-    ],
-    "answer_index": 3,
-    "explanation": "The synchronized keyword in Java provides mutual exclusion — only one thread can execute a synchronized block/method on the same monitor (object) at a time. It also establishes a happens-before relationship, ensuring visibility of writes across threads.",
-    "corrected": false
-  },
-  {
-    "id": "q0602",
-    "topic": "Core Java & OOP",
-    "question": "Which of the following statements is NOT correct for JVM?",
-    "options": [
-      "A. JVM acts as a translator that translates different Machine code (on the basis of Host Machine) for a common Byte Code.",
-      "B. JVM is a Virtual Machine that acts as an intermediary between Java Application and Host Operating System.",
-      "C. JVM reads Byte Code and generates Machine Code.",
-      "D. JVM reads Source Code and generates Byte Code."
-    ],
-    "answer_index": 3,
-    "explanation": "The JVM reads bytecode (compiled .class files), not source code. The Java compiler (javac) reads source and produces bytecode.",
-    "corrected": false
-  },
-  {
-    "id": "q0603",
-    "topic": "Core Java & OOP",
-    "question": "Is the following a valid Java code snippet?\n\nOptional<String> aValue = Optional.of(\"Not Empty\");\nif (aValue.ifPresent()) {\n    System.out.println(\"Got Not Empty\");\n}",
-    "options": [
-      "A. True",
-      "B. False"
-    ],
-    "answer_index": 1,
-    "explanation": "Optional<T> is a container that may or may not hold a non-null value, replacing null checks. Use .isPresent()/.isEmpty() to check, .get() to retrieve (throws if empty), or .orElse()/.map() for safer access. It was introduced in Java 8 to reduce NullPointerExceptions.",
-    "corrected": false
-  },
-  {
-    "id": "q0604",
-    "topic": "DevOps & CI/CD",
-    "question": "Java Stream does NOT store the elements. It simply performs the aggregate operations to get the desired stream of data.",
-    "options": [
-      "A. True",
-      "B. False"
-    ],
-    "answer_index": 0,
-    "explanation": "Java 8 Streams provide a declarative, pipeline-style API for processing collections. Operations are either intermediate (filter, map, sorted — lazy) or terminal (collect, forEach, reduce — trigger execution). Parallel streams split work across threads using the fork/join framework.",
-    "corrected": false
-  },
-  {
-    "id": "q0605",
-    "topic": "Core Java & OOP",
-    "question": "Which Java class is used to apply reduction or aggregate functions on streams?",
-    "options": [
-      "A. Filters",
-      "B. Reduction",
-      "C. Collectors"
-    ],
-    "answer_index": 2,
-    "explanation": "The Collectors utility class provides factory methods for collectors (toList, groupingBy, reducing, etc.).",
-    "corrected": false
-  },
-  {
-    "id": "q0606",
-    "topic": "Core Java & OOP",
-    "question": "Which of the following statements are true about Java finally block?",
-    "options": [
-      "A. i. A finally block is executed, only after the catch block is executed.",
-      "B. ii. A finally block is executed whether an exception is thrown or not.",
-      "C. iii. A finally block is NOT mandatory.",
-      "D. iv. A finally block is executed, only if an exception occurs."
-    ],
-    "answer_index": 1,
-    "explanation": "A finally block always runs whether or not an exception is thrown (unless JVM exits). It is NOT mandatory.",
-    "corrected": false
-  },
-  {
-    "id": "q0607",
-    "topic": "Core Java & OOP",
-    "question": "Which of these is a standard Java Interface?",
-    "options": [
-      "A. Serializable",
-      "B. Long",
-      "C. System",
-      "D. Collections"
-    ],
-    "answer_index": 0,
-    "explanation": "\"Serializable\" is correct. The distractors (\"Long\" and \"System\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"Serializable\" in Core Java & OOP distinguishes this from similar-sounding options.",
-    "corrected": false
-  },
-  {
-    "id": "q0608",
-    "topic": "Core Java & OOP",
-    "question": "What is the replacement for PermGen space in Java 8?",
-    "options": [
-      "A. FixedGen",
-      "B. Metaspace",
-      "C. MetaGenspace"
-    ],
-    "answer_index": 1,
-    "explanation": "Java 8 replaced PermGen (Permanent Generation) with Metaspace, which resides in native memory rather than the JVM heap. Unlike PermGen, Metaspace grows dynamically by default, eliminating OutOfMemoryError: PermGen space errors. You can still cap it with -XX:MaxMetaspaceSize.",
-    "corrected": false
-  },
-  {
-    "id": "q0609",
-    "topic": "Core Java & OOP",
-    "question": "What is the output of the following Java code snippet?\n\nStringJoiner astring = new StringJoiner(\"-\", \"{\", \"}\");\nastring.add(\"A\");\nastring.add(\"B\");\nastring.add(\"C\");",
-    "options": [
-      "A. {A-B-C}",
-      "B. {A}-{B}-{C}",
-      "C. {-A-}{-B-}{-C-}"
-    ],
-    "answer_index": 0,
-    "explanation": "The answer is \"{A-B-C}\". This is the standard definition or correct identification for the concept described. Review the Core Java & OOP documentation to understand how \"{A-B-C}\" fits into the broader context.",
-    "corrected": false
-  },
-  {
-    "id": "q0610",
-    "topic": "TypeScript",
-    "question": "What is the return type of Java Lambda expressions?",
-    "options": [
-      "A. Void",
-      "B. Lambda",
-      "C. Function",
-      "D. Regex"
-    ],
-    "answer_index": 2,
-    "explanation": "A Functional Interface in Java has exactly one abstract method (SAM — Single Abstract Method). It can have any number of default or static methods. The @FunctionalInterface annotation is optional but enforces the constraint at compile time and enables lambda expressions.",
-    "corrected": false
-  },
-  {
-    "id": "q0611",
-    "topic": "Git & Version Control",
-    "question": "Name the two types of streams in Java.",
-    "options": [
-      "A. Sync and async",
-      "B. Sequential and parallel",
-      "C. Random and ordered"
-    ],
-    "answer_index": 1,
-    "explanation": "Java 8 Streams provide a declarative, pipeline-style API for processing collections. Operations are either intermediate (filter, map, sorted — lazy) or terminal (collect, forEach, reduce — trigger execution). Parallel streams split work across threads using the fork/join framework.",
-    "corrected": false
-  },
-  {
-    "id": "q0612",
-    "topic": "Core Java & OOP",
-    "question": "What is the difference between peek() and dequeue()?",
-    "options": [
-      "A. peek() returns the next item in line but dequeue() removes and returns the next item in line",
-      "B. peek() and dequeue() return the next item in line",
-      "C. peek() and dequeue() remove and return the next item in line"
-    ],
-    "answer_index": 0,
-    "explanation": "'peek() returns the next item in line but dequeue() removes and returns the next item in line' is correct.",
-    "corrected": false
-  },
-  {
-    "id": "q0613",
-    "topic": "Core Java & OOP",
-    "question": "Which one of the following statements on Java String is correct?",
-    "options": [
-      "A. replace() method replaces only first occurrences of a character in invoking string with the given character.",
-      "B. replace() method replaces last occurrence of a character in invoking string with the given character.",
-      "C. replace() method replaces all occurrences of one character in invoking string with the given character.",
-      "D. replace() method replaces all the characters in invoking string with the given character."
-    ],
-    "answer_index": 2,
-    "explanation": "'replace() method replaces all occurrences of one character in invoking string with the given character.' is correct.",
-    "corrected": false
-  },
-  {
-    "id": "q0614",
-    "topic": "Java Concurrency",
-    "question": "What is the result of the following Java code snippet?\n\nAnimal animal = new Dog();\nCat cat = (Cat) animal;\nSystem.out.println(cat.noise());\n// Exception in thread \"main\" java.lang.ClassCastException",
-    "options": [
-      "A. peep",
-      "B. bark",
-      "C. meow",
-      "D. Compilation fails",
-      "E. An exception is thrown at runtime"
-    ],
-    "answer_index": 4,
-    "explanation": "The answer is \"An exception is thrown at runtime\". This is the standard definition or correct identification for the concept described. Review the Java Concurrency documentation to understand how \"An exception is thrown at runtime\" fits into the broader context.",
-    "corrected": false
-  },
-  {
-    "id": "q0615",
-    "topic": "Core Java & OOP",
-    "question": "What is the output of the following Java code snippet with exception handling?\n\nA a = new SubB2();\na.foo(); // line 15",
-    "options": [
-      "A. B",
-      "B. B, followed by an Exception.",
-      "C. Compilation fails due to an error on line 9.",
-      "D. Compilation fails due to an error on line 15.",
-      "E. An Exception is thrown with no other output"
-    ],
-    "answer_index": 3,
-    "explanation": "The code produces 'Compilation fails due to an error on line 15.' based on Java execution semantics.",
-    "corrected": false
-  },
-  {
-    "id": "q0616",
-    "topic": "Java Concurrency",
-    "question": "What is the output of the following Java code snippet?\n\nThread t = Thread.currentThread();\nt.setName(\"new thread\");\nSystem.out.println(t);",
-    "options": [
-      "A. Thread[main,5,main]",
-      "B. Thread[new thread,5,main]",
-      "C. Thread[Thread-0,5,main]",
-      "D. Compilation fails"
-    ],
-    "answer_index": 1,
-    "explanation": "Thread.toString() returns 'Thread[name,priority,group]'. After setName(\"new thread\"), the name part changes.",
-    "corrected": false
-  },
-  {
-    "id": "q0617",
-    "topic": "Java Concurrency",
-    "question": "Which of these will create and start the MyRunnable thread?",
-    "options": [
-      "A. new MyRunnable().start()",
-      "B. new Thread(new MyRunnable()).run()",
-      "C. new Thread(new MyRunnable()).start()",
-      "D. MyRunnable.startThread()"
-    ],
-    "answer_index": 2,
-    "explanation": "\"new Thread(new MyRunnable()).start()\" is correct. The distractors (\"new MyRunnable().start()\" and \"new Thread(new MyRunnable()).run()\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"new Thread(new MyRunnable()).start()\" in Java Concurrency distinguishes this from similar-sounding options.",
-    "corrected": false
-  },
-  {
-    "id": "q0618",
-    "topic": "Core Java & OOP",
-    "question": "Observe the code below. Which four statements are true? (Choose four)\n\nclass Mammal { }  \nclass Raccoon extends Mammal {  \n    Mammal m = new Mammal();  \n}  \nclass BabyRaccoon extends Mammal { }",
-    "options": [
-      "A. Raccoon is-a Mammal.",
-      "B. Raccoon has-a Mammal.",
-      "C. BabyRaccoon is-a Mammal.",
-      "D. BabyRaccoon is-a Raccoon.",
-      "E. BabyRaccoon has-a Mammal.",
-      "F. BabyRaccoon is-a BabyRaccoon."
-    ],
-    "answer_index": 0,
-    "explanation": "The correct answer is \"Raccoon is-a Mammal.\". The other options (\"Raccoon has-a Mammal.\", \"BabyRaccoon is-a Mammal.\") do not accurately represent the concept described. This is a standard principle in Core Java & OOP — recognising \"Raccoon is-a Mammal.\" in context is key to answering related exam questions.",
-    "corrected": false
-  },
-  {
-    "id": "q0619",
-    "topic": "Core Java & OOP",
-    "question": "Observe the code and predict the output:\n\nByteArrayInputStream reading example",
-    "options": [
-      "A. abc",
-      "B. ABC",
-      "C. Abc",
-      "D. Compilation fails"
-    ],
-    "answer_index": 1,
-    "explanation": "Java 8 Streams provide a declarative, pipeline-style API for processing collections. Operations are either intermediate (filter, map, sorted — lazy) or terminal (collect, forEach, reduce — trigger execution). Parallel streams split work across threads using the fork/join framework.",
-    "corrected": false
-  },
-  {
-    "id": "q0620",
-    "topic": "Core Java & OOP",
-    "question": "Predict the output of the code:\n\nStringBuffer s1 = new StringBuffer(\"Hello World\");\ns1.insert(6, \"Good \");\nSystem.out.println(s1);",
-    "options": [
-      "A. HelloGoodWorld",
-      "B. HellGoodoWorld",
-      "C. HellGood oWorld",
-      "D. Hello Good World"
-    ],
-    "answer_index": 3,
-    "explanation": "The output is \"Hello Good World\". Trace through the execution step by step: variable assignments, method calls, and control flow all determine the final value. Pay attention to scope, type coercion, and execution order in Core Java & OOP.",
-    "corrected": false
-  },
-  {
-    "id": "q0621",
-    "topic": "Core Java & OOP",
-    "question": "Which of these keywords cannot be used for a class which has been declared final?",
-    "options": [
-      "A. abstract",
-      "B. extends",
-      "C. abstract and extends",
-      "D. None of the mentioned"
-    ],
-    "answer_index": 2,
-    "explanation": "\"abstract and extends\" is correct. The distractors (\"abstract\" and \"extends\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"abstract and extends\" in Core Java & OOP distinguishes this from similar-sounding options.",
-    "corrected": false
-  },
-  {
-    "id": "q0622",
-    "topic": "Core Java & OOP",
-    "question": "Predict the output:\n\nsos('1' + new Integer(2) + 3);",
-    "options": [
-      "A. 6",
-      "B. 123",
-      "C. 33",
-      "D. Compilation fails"
-    ],
-    "answer_index": 1,
-    "explanation": "The output is \"123\". Trace through the execution step by step: variable assignments, method calls, and control flow all determine the final value. Pay attention to scope, type coercion, and execution order in Core Java & OOP.",
-    "corrected": false
-  },
-  {
-    "id": "q0623",
-    "topic": "Core Java & OOP",
-    "question": "Observe the code and predict the output:\n\nint a[] = new int[]{1, 2, 6, 4, 5};  \nint b[] = new int[5];  \nb[2] = a[2];  \na[2] = 10;  \nSystem.out.println(b[2]);",
-    "options": [
-      "A. 10",
-      "B. 6",
-      "C. 2",
-      "D. Compilation fails"
-    ],
-    "answer_index": 1,
-    "explanation": "The output is \"6\". Trace through the execution step by step: variable assignments, method calls, and control flow all determine the final value. Pay attention to scope, type coercion, and execution order in Core Java & OOP.",
-    "corrected": false
-  },
-  {
-    "id": "q0624",
-    "topic": "Core Java & OOP",
-    "question": "What is the output of this program?\n\nVector obj = new Vector(4, 2);  \nobj.addElement(new Integer(3));  \nobj.addElement(new Integer(2));  \nobj.addElement(new Integer(5));  \nobj.removeAll(obj);  \nSystem.out.println(obj.isEmpty());",
-    "options": [
-      "A. 0",
-      "B. 1",
-      "C. true",
-      "D. false"
-    ],
-    "answer_index": 2,
-    "explanation": "The answer is \"true\". This is the standard definition or correct identification for the concept described. Review the Core Java & OOP documentation to understand how \"true\" fits into the broader context.",
-    "corrected": false
-  },
-  {
-    "id": "q0625",
-    "topic": "Core Java & OOP",
-    "question": "What is the output?\n\nTreeMap example",
-    "options": [
-      "A. [A, B, C]",
-      "B. [1, 2, 3]",
-      "C. {A=1, B=2, C=3}",
-      "D. [A=1, B=2, C=3]"
-    ],
-    "answer_index": 3,
-    "explanation": "The answer is \"[A=1, B=2, C=3]\". This is the standard definition or correct identification for the concept described. Review the Core Java & OOP documentation to understand how \"[A=1, B=2, C=3]\" fits into the broader context.",
-    "corrected": false
-  },
-  {
-    "id": "q0626",
-    "topic": "Core Java & OOP",
-    "question": "What is the output?\n\nBitSet example with clear(2)",
-    "options": [
-      "A. {0, 1, 3, 4}",
-      "B. {0, 1, 2, 4}",
-      "C. {0, 1, 2, 3, 4}",
-      "D. {0, 0, 0, 3, 4}"
-    ],
-    "answer_index": 0,
-    "explanation": "The answer is \"{0, 1, 3, 4}\". This is the standard definition or correct identification for the concept described. Review the Core Java & OOP documentation to understand how \"{0, 1, 3, 4}\" fits into the broader context.",
-    "corrected": false
-  },
-  {
-    "id": "q0627",
-    "topic": "Core Java & OOP",
-    "question": "What is the output?\n\nArray example with Arrays.fill",
-    "options": [
-      "A. 12885",
-      "B. 12845",
-      "C. 58881",
-      "D. 54881"
-    ],
-    "answer_index": 2,
-    "explanation": "The answer is \"58881\". This is the standard definition or correct identification for the concept described. Review the Core Java & OOP documentation to understand how \"58881\" fits into the broader context.",
-    "corrected": false
-  },
-  {
-    "id": "q0628",
-    "topic": "Core Java & OOP",
-    "question": "What is the output of the following program?\n\nLinkedList, shuffle example",
-    "options": [
-      "A. 2 8 5 1",
-      "B. 1 5 8 2",
-      "C. 1 2 5 8",
-      "D. Any random order"
-    ],
-    "answer_index": 3,
-    "explanation": "The answer is \"Any random order\". This is the standard definition or correct identification for the concept described. Review the Core Java & OOP documentation to understand how \"Any random order\" fits into the broader context.",
-    "corrected": false
-  },
-  {
-    "id": "q0629",
-    "topic": "Core Java & OOP",
-    "question": "What is the output?\n\nLinkedList, sort example",
-    "options": [
-      "A. 2 8 5 1",
-      "B. 1 5 8 2",
-      "C. 1 2 5 8",
-      "D. 2 1 8 5"
-    ],
-    "answer_index": 2,
-    "explanation": "The answer is \"1 2 5 8\". This is the standard definition or correct identification for the concept described. Review the Core Java & OOP documentation to understand how \"1 2 5 8\" fits into the broader context.",
-    "corrected": false
-  },
-  {
-    "id": "q0630",
-    "topic": "Core Java & OOP",
-    "question": "What is the output?\n\nGeneric stack example with Strings and Integers",
-    "options": [
-      "A. Error // error because gs String and gs Integer use same variable name",
-      "B. Hello",
-      "C. 36",
-      "D. Hello 36"
-    ],
-    "answer_index": 3,
-    "explanation": "The answer is \"Hello 36\". This is the standard definition or correct identification for the concept described. Review the Core Java & OOP documentation to understand how \"Hello 36\" fits into the broader context.",
-    "corrected": false
-  },
-  {
-    "id": "q0631",
-    "topic": "Core Java & OOP",
-    "question": "What is the output?\n\nclass output {  \n    public static void main(String args[]) {  \n        StringBuffer c = new StringBuffer(\"Hello\");  \n        StringBuffer c1 = new StringBuffer(\" World\");  \n        c.append(c1);  \n        System.out.println(c);  \n    }  \n}",
-    "options": [
-      "A. Hello",
-      "B. World",
-      "C. HelloWorld",
-      "D. Hello World"
-    ],
-    "answer_index": 3,
-    "explanation": "The answer is \"Hello World\". This is the standard definition or correct identification for the concept described. Review the Core Java & OOP documentation to understand how \"Hello World\" fits into the broader context.",
-    "corrected": false
-  },
-  {
-    "id": "q0632",
-    "topic": "Core Java & OOP",
-    "question": "What is the output?\n\nclass exception_handling {  \n    public static void main(String args[]) {  \n        try {  \n            System.out.print(\"Hello\" + \" \" + 1 / 0);  \n        }  \n        catch(ArithmeticException e) {  \n            System.out.print(\"World\");  \n        }  \n    }  \n}",
-    "options": [
-      "A. Hello",
-      "B. World",
-      "C. HelloWorld",
-      "D. Hello World"
-    ],
-    "answer_index": 1,
-    "explanation": "The answer is \"World\". This is the standard definition or correct identification for the concept described. Review the Core Java & OOP documentation to understand how \"World\" fits into the broader context.",
-    "corrected": false
-  },
-  {
-    "id": "q0633",
-    "topic": "Core Java & OOP",
-    "question": "What is the output?\n\nclass output {  \n    public static void main(String args[]) {  \n        char c[] = {'a', '1', 'b', ' ', 'A', '0'};  \n        for (int i = 0; i < 5; ++i) {  \n            if (Character.isDigit(c[i]))  \n                System.out.println(c[i] + \" is a digit\");  \n            if (Character.isWhitespace(c[i]))  \n                System.out.println(c[i] + \" is a Whitespace char\");  \n            if (Character.isUpperCase(c[i]))  \n                System.out.println(c[i] + \" is an Upper case Letter\");  \n            if (Character.isLowerCase(c[i]))  \n                System.out.println(c[i] + \" is a lower case Letter\");  \n            i = i + 3;  \n        }  \n    }  \n}",
-    "options": [
-      "A. a is a lower case Letter, is White space character",
-      "B. b is a lower case Letter, is White space character",
-      "C. a is a lower case Letter, A is an Upper case Letter",
-      "D. a is a lower case Letter, 0 is a digit"
-    ],
-    "answer_index": 2,
-    "explanation": "The code produces 'a is a lower case Letter, A is an Upper case Letter' based on Java execution semantics.",
-    "corrected": false
-  },
-  {
-    "id": "q0634",
-    "topic": "Core Java & OOP",
-    "question": "What is the output?\n\nimport java.io.*;  \nclass filesinputoutput {  \n    public static void main(String args[]) throws IOException {  \n        InputStream obj = new FileInputStream(\"inputoutput.java\");  \n        System.out.print(obj.available());  \n    }  \n}",
-    "options": [
-      "A. true",
-      "B. false",
-      "C. prints number of bytes in file",
-      "D. prints number of characters in the file"
-    ],
-    "answer_index": 2,
-    "explanation": "Java 8 Streams provide a declarative, pipeline-style API for processing collections. Operations are either intermediate (filter, map, sorted — lazy) or terminal (collect, forEach, reduce — trigger execution). Parallel streams split work across threads using the fork/join framework.",
-    "corrected": false
-  },
-  {
-    "id": "q0635",
-    "topic": "Core Java & OOP",
-    "question": "Observe the code and predict output with ByteArrayOutputStream",
-    "options": [
-      "A. abc",
-      "B. ABC",
-      "C. ABC abc",
-      "D. Compilation fails"
-    ],
-    "answer_index": 1,
-    "explanation": "Java 8 Streams provide a declarative, pipeline-style API for processing collections. Operations are either intermediate (filter, map, sorted — lazy) or terminal (collect, forEach, reduce — trigger execution). Parallel streams split work across threads using the fork/join framework.",
-    "corrected": false
-  },
-  {
-    "id": "q0636",
-    "topic": "Core Java & OOP",
-    "question": "Which of these methods are used to read in from file?",
-    "options": [
-      "A. get()",
-      "B. read()",
-      "C. scan()",
-      "D. readFileInput()"
-    ],
-    "answer_index": 1,
-    "explanation": "\"read()\" is correct. The distractors (\"get()\" and \"scan()\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"read()\" in Core Java & OOP distinguishes this from similar-sounding options.",
-    "corrected": false
-  },
-  {
-    "id": "q0637",
-    "topic": "Core Java & OOP",
-    "question": "What is the output of the code?\n\nStringBuffer s1 = new StringBuffer(\"Hello\");\nStringBuffer s2 = s1.reverse();\nSystem.out.println(s2);",
-    "options": [
-      "A. Hello",
-      "B. olleH",
-      "C. HELLO",
-      "D. Compilation fails"
-    ],
-    "answer_index": 1,
-    "explanation": "The answer is \"olleH\". This is the standard definition or correct identification for the concept described. Review the Core Java & OOP documentation to understand how \"olleH\" fits into the broader context.",
-    "corrected": false
-  },
-  {
-    "id": "q0638",
-    "topic": "JavaScript",
-    "question": "Which pattern is used in the following code?\n\nList iteration example using Iterator",
-    "options": [
-      "A. Observer",
-      "B. Singleton",
-      "C. Iterator",
-      "D. Factory"
-    ],
-    "answer_index": 2,
-    "explanation": "\"Iterator\" is correct. The distractors (\"Observer\" and \"Singleton\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"Iterator\" in JavaScript distinguishes this from similar-sounding options.",
-    "corrected": false
-  },
-  {
-    "id": "q0639",
-    "topic": "JavaScript",
-    "question": "java.util.Enumeration is an example of which pattern?",
-    "options": [
-      "A. Observer",
-      "B. Singleton",
-      "C. Iterator",
-      "D. Factory"
-    ],
-    "answer_index": 2,
-    "explanation": "The correct answer is \"Iterator\". The other options (\"Observer\", \"Singleton\") do not accurately represent the concept described. This is a standard principle in JavaScript — recognising \"Iterator\" in context is key to answering related exam questions.",
-    "corrected": false
-  },
-  {
-    "id": "q0640",
-    "topic": "Core Java & OOP",
-    "question": "Predict the output of the code with exception handling:\n\nint a = 5; int b = 0; int c = a / b;",
-    "options": [
-      "A. World",
-      "B. hello"
-    ],
-    "answer_index": 1,
-    "explanation": "The output is \"hello\". Trace through the execution step by step: variable assignments, method calls, and control flow all determine the final value. Pay attention to scope, type coercion, and execution order in Core Java & OOP.",
-    "corrected": false
-  },
-  {
-    "id": "q0641",
-    "topic": "Java Concurrency",
-    "question": "Which two of the following methods are defined in class Thread?",
-    "options": [
-      "A. start()",
-      "B. wait()",
-      "C. notify()",
-      "D. run()"
-    ],
-    "answer_index": 0,
-    "explanation": "\"start()\" is correct. The distractors (\"wait()\" and \"notify()\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"start()\" in Java Concurrency distinguishes this from similar-sounding options.",
-    "corrected": false
-  },
-  {
-    "id": "q0642",
-    "topic": "Java Concurrency",
-    "question": "Assume the following method is properly synchronized and called from a thread A on an object B: wait(2000); When will thread A become a candidate to get another turn at the CPU?",
-    "options": [
-      "A. After thread A is notified, or after two seconds.",
-      "B. After the lock on B is released, or after two seconds.",
-      "C. Two seconds after thread A is notified.",
-      "D. Two seconds after lock B is released."
-    ],
-    "answer_index": 0,
-    "explanation": "The synchronized keyword in Java provides mutual exclusion — only one thread can execute a synchronized block/method on the same monitor (object) at a time. It also establishes a happens-before relationship, ensuring visibility of writes across threads.",
-    "corrected": false
-  },
-  {
-    "id": "q0643",
-    "topic": "Core Java & OOP",
-    "question": "The code snippet below is an example of which of the following?\n\nLong myLong = 21L;",
-    "options": [
-      "A. Auto boxing",
-      "B. Auto unboxing",
-      "C. Auto casting",
-      "D. Auto instancing"
-    ],
-    "answer_index": 0,
-    "explanation": "The output is \"Auto boxing\". Trace through the execution step by step: variable assignments, method calls, and control flow all determine the final value. Pay attention to scope, type coercion, and execution order in Core Java & OOP.",
-    "corrected": false
-  },
-  {
-    "id": "q0644",
-    "topic": "TypeScript",
-    "question": "What is the result?\n\ninterface TestA { String toString(); } \nAnonymous class printing toString()",
-    "options": [
-      "A. test",
-      "B. null",
-      "C. An exception is thrown at runtime",
-      "D. Compilation fails because of an error in line 1",
-      "E. Compilation fails because of an error in line 4",
-      "F. Compilation fails because of an error in line 5"
-    ],
-    "answer_index": 0,
-    "explanation": "The answer is \"test\". This is the standard definition or correct identification for the concept described. Review the TypeScript documentation to understand how \"test\" fits into the broader context.",
-    "corrected": false
-  },
-  {
-    "id": "q0645",
-    "topic": "Core Java & OOP",
-    "question": "What is the output?\n\nclass Output {  \n    public static void main(String args[]) {  \n        Object obj = new Object();  \n        System.out.print(obj.getClass());  \n    }  \n}",
-    "options": [
-      "A. Object",
-      "B. class Object",
-      "C. class java.lang.Object",
-      "D. java.lang.Object"
-    ],
-    "answer_index": 2,
-    "explanation": "The answer is \"class java.lang.Object\". This is the standard definition or correct identification for the concept described. Review the Core Java & OOP documentation to understand how \"class java.lang.Object\" fits into the broader context.",
-    "corrected": false
-  },
-  {
-    "id": "q0646",
-    "topic": "Core Java & OOP",
-    "question": "What is the output?\n\nclass A {  \n    int i;  \n    int j;  \n    A() {  \n        i = 1;  \n        j = 2;  \n    }  \n}  \n\nclass Output {  \n    public static void main(String args[]) {  \n        A obj1 = new A();  \n        System.out.println(obj1.toString());  \n    }  \n}",
-    "options": [
-      "A. A",
-      "B. 1 2",
-      "C. String associated with obj1, e.g., A@5e265ba4",
-      "D. Compilation fails"
-    ],
-    "answer_index": 2,
-    "explanation": "The code produces 'String associated with obj1, e.g., A@5e265ba4' based on Java execution semantics.",
-    "corrected": false
-  },
-  {
-    "id": "q0647",
-    "topic": "Core Java & OOP",
-    "question": "Output of divide method with try-catch-finally when exception occurs",
-    "options": [
-      "A. Only Exception is printed",
-      "B. Only finally is printed",
-      "C. Both Exception and finally are printed if exception occurs",
-      "D. Compilation fails"
-    ],
-    "answer_index": 2,
-    "explanation": "The output is \"Both Exception and finally are printed if exception occurs\". Trace through the execution step by step: variable assignments, method calls, and control flow all determine the final value. Pay attention to scope, type coercion, and execution order in Core Java & OOP.",
-    "corrected": false
-  },
-  {
-    "id": "q0648",
-    "topic": "Core Java & OOP",
-    "question": "Insert the appropriate code:\n\npublic class Sprite {  \n    public int fubar(Foo foo) {  \n        return foo.bar();  \n    }  \n    public void testFoo() {  \n        fubar(  \n            // insert code here  \n        );  \n    }  \n}",
-    "options": [
-      "A. new Foo()",
-      "B. new Foo() { public int bar() { return 1; } }",
-      "C. new Foo(1)",
-      "D. Foo.bar()"
-    ],
-    "answer_index": 1,
-    "explanation": "The correct answer is \"new Foo() { public int bar() { return 1; } }\". The other options (\"new Foo()\", \"new Foo(1)\") do not accurately represent the concept described. This is a standard principle in Core Java & OOP — recognising \"new Foo() { public int bar() { return 1; } }\" in context is key to answering related exam questions.",
-    "corrected": false
-  },
-  {
-    "id": "q0649",
-    "topic": "Core Java & OOP",
-    "question": "What is the output of the following code?\n\nclass Main {  \n    String getValue(String word) {  \n        System.out.println(word);  \n        if (word.length() == 1) {  \n            return \"\";  \n        } else {  \n            return getValue(word.substring(0, word.length() - 1)) + word.charAt(word.length() - 1);  \n        }  \n    }  \n    public static void main(String[] args) {  \n        Main obj = new Main();  \n        System.out.println(obj.getValue(\"DEMOS\"));  \n    }  \n}",
-    "options": [
-      "A. D",
-      "B. DEMOS",
-      "C. EMOS",
-      "D. Empty String"
-    ],
-    "answer_index": 2,
-    "explanation": "The answer is \"EMOS\". This is the standard definition or correct identification for the concept described. Review the Core Java & OOP documentation to understand how \"EMOS\" fits into the broader context.",
-    "corrected": false
-  },
-  {
-    "id": "q0650",
-    "topic": "Core Java & OOP",
-    "question": "What sort of compilation error you will get? How to fix the compilation error?\n\nabstract class xyz {  \n    abstract abc(int a, int b) { }  \n}",
-    "options": [
-      "A. Missing return type",
-      "B. Method cannot have a body",
-      "C. Syntax error",
-      "D. Give return type void. and remove empty parenthesis."
-    ],
-    "answer_index": 3,
-    "explanation": "\"Give return type void. and remove empty parenthesis.\" is correct. The distractors (\"Missing return type\" and \"Method cannot have a body\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"Give return type void. and remove empty parenthesis.\" in Core Java & OOP distinguishes this from similar-sounding options.",
-    "corrected": false
-  },
-  {
-    "id": "q0651",
-    "topic": "TypeScript",
-    "question": "Will this code compile?\n\ninterface ATOB {  \n    String s = \"yo\";  \n    public void meth();  \n}  \ninterface BTOC { }  \ninterface C extends ATOB, BTOC {  \n    public void meth();  \n    public void meth(int x);  \n}",
-    "options": [
-      "A. Yes, this code will compile without any error",
-      "B. No, compilation fails due to multiple inheritance",
-      "C. No, compilation fails because of variable s",
-      "D. No, compilation fails because of method overloading"
-    ],
-    "answer_index": 0,
-    "explanation": "The correct answer is \"Yes, this code will compile without any error\". The other options (\"No, compilation fails due to multiple inheritance\", \"No, compilation fails because of variable s\") do not accurately represent the concept described. This is a standard principle in TypeScript — recognising \"Yes, this code will compile without any error\" in context is key to answering related exam questions.",
-    "corrected": false
-  },
-  {
-    "id": "q0652",
-    "topic": "TypeScript",
-    "question": "How can I inherit both the interface and abstract class?\n\ninterface Data {  \n    public void load();  \n}  \nabstract class Info {  \n    public abstract void load();  \n}",
-    "options": [
-      "A. class Xyz extends Info implements Data { void load() { } }",
-      "B. class Xyz implements Data, Info { void load() { } }",
-      "C. class Xyz extends Info, Data { void load() { } }",
-      "D. Not possible in Java"
-    ],
-    "answer_index": 0,
-    "explanation": "\"class Xyz extends Info implements Data { void load() { } }\" is correct. The distractors (\"class Xyz implements Data, Info { void load() { } }\" and \"class Xyz extends Info, Data { void load() { } }\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"class Xyz extends Info implements Data { void load() { } }\" in TypeScript distinguishes this from similar-sounding options.",
-    "corrected": false
-  },
-  {
-    "id": "q0653",
-    "topic": "Core Java & OOP",
-    "question": "Will this code compile?\n\nclass ATOB {  \n    static public String str = \"abc\";  \n}  \nclass BTOC extends ATOB {  \n    static public String str = \"bcr\";  \n}  \nclass Main {  \n    public static void main(String[] args) {  \n        BTOC obj = new BTOC();  \n        System.out.println(obj.str);  \n    }  \n}",
-    "options": [
-      "A. Yes, will compile fine and print \"abc\"",
-      "B. Yes. will compile fine, but str is being overwritten in B class.",
-      "C. No, compilation fails",
-      "D. Runtime exception"
-    ],
-    "answer_index": 1,
-    "explanation": "The output is \"Yes. will compile fine, but str is being overwritten in B class.\". Trace execution step by step: follow variable assignments, control flow, and implicit conversions. Common wrong answers (\"Yes, will compile fine and print \"abc\"\", \"No, compilation fails\") usually arise from scope confusion, precedence errors, or off-by-one mistakes.",
-    "corrected": false
-  },
-  {
-    "id": "q0654",
-    "topic": "Java Concurrency",
-    "question": "Which of these handles the exception when no catch is used?",
-    "options": [
-      "A. Default handler",
-      "B. Finally",
-      "C. Throw handler",
-      "D. Java run time system"
-    ],
-    "answer_index": 0,
-    "explanation": "If no catch block is present, Java's default handler handles the uncaught exception (prints stack trace and terminates).",
-    "corrected": false
-  },
-  {
-    "id": "q0655",
-    "topic": "Core Java & OOP",
-    "question": "What is the output of the code?\n\nclass Main {  \n    static boolean foo(char c) {  \n        System.out.print(c);  \n        return true;  \n    }  \n    public static void main(String[] args) {  \n        int i = 0;  \n        for(foo('A'); foo('B') && (i < 2); foo('C')) {  \n            i++;  \n            foo('D');  \n        }  \n    }  \n}",
-    "options": [
-      "A. ABCD",
-      "B. ABDCBDCB",
-      "C. ABABAB",
-      "D. ADBCC"
-    ],
-    "answer_index": 1,
-    "explanation": "The answer is \"ABDCBDCB\". This is the standard definition or correct identification for the concept described. Review the Core Java & OOP documentation to understand how \"ABDCBDCB\" fits into the broader context.",
-    "corrected": false
-  },
-  {
-    "id": "q0656",
-    "topic": "Core Java & OOP",
-    "question": "What is the OUTPUT of the code with TreeSet?\n\nal.add(\"7\"); // line 5",
-    "options": [
-      "A. 7 9",
-      "B. 9 7",
-      "C. error: incompatible types: String cannot be converted to Integer (line 5)",
-      "D. Runtime Exception"
-    ],
-    "answer_index": 2,
-    "explanation": "The code produces 'error: incompatible types: String cannot be converted to Integer (line 5)' based on Java execution semantics.",
-    "corrected": false
-  },
-  {
-    "id": "q0657",
-    "topic": "JavaScript",
-    "question": "Which implementation of Set would you choose if you want the iterator of Set to give objects in the order they were inserted?",
-    "options": [
-      "A. LinkedHashSet",
-      "B. TreeSet",
-      "C. HashSet"
-    ],
-    "answer_index": 0,
-    "explanation": "\"LinkedHashSet\" is correct. The distractors (\"TreeSet\" and \"HashSet\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"LinkedHashSet\" in JavaScript distinguishes this from similar-sounding options.",
-    "corrected": false
-  },
-  {
-    "id": "q0658",
-    "topic": "Core Java & OOP",
-    "question": "What is the output of the HashMap code?",
-    "options": [
-      "A. 100 John 101 Paul 102 George 103 Ringo",
-      "B. 100 John 101 Paul 102 George",
-      "C. 103 Ringo 102 George 101 Paul 100 John",
-      "D. Compilation error"
-    ],
-    "answer_index": 0,
-    "explanation": "The answer is \"100 John 101 Paul 102 George 103 Ringo\". This is the standard definition or correct identification for the concept described. Review the Core Java & OOP documentation to understand how \"100 John 101 Paul 102 George 103 Ringo\" fits into the broader context.",
-    "corrected": false
-  },
-  {
-    "id": "q0659",
-    "topic": "Core Java & OOP",
-    "question": "What is the output after sorting and reversing ArrayList?",
-    "options": [
-      "A. [1, 2, 3, 5]",
-      "B. [2, 1, 3, 5]",
-      "C. [2, 5, 3, 1]",
-      "D. [5, 3, 2, 1]",
-      "E. [1, 3, 5, 2]",
-      "F. Compilation fails",
-      "6. An exception is thrown at runtime"
-    ],
-    "answer_index": 2,
-    "explanation": "The answer is \"[2, 5, 3, 1]\". This is the standard definition or correct identification for the concept described. Review the Core Java & OOP documentation to understand how \"[2, 5, 3, 1]\" fits into the broader context.",
-    "corrected": false
-  },
-  {
-    "id": "q0660",
-    "topic": "Core Java & OOP",
-    "question": "Which Man class properly represents the relationship \"Man has a best friend who is a Dog\"?",
-    "options": [
-      "A. class Man extends Dog { }",
-      "B. class Man implements Dog { }",
-      "C. class Man { private BestFriend dog; }",
-      "D. class Man { private Dog bestFriend; }",
-      "E. class Man { private Dog<bestFriend>; }",
-      "F. class Man { private BestFriend<dog>; }"
-    ],
-    "answer_index": 3,
-    "explanation": "HAS-A relationship is modeled by composition: a Dog field inside Man. 'class Man { private Dog bestFriend; }'",
-    "corrected": false
-  },
-  {
-    "id": "q0661",
-    "topic": "Core Java & OOP",
-    "question": "What is the output?\n\nAlpha a = new Beta(); Beta b = (Beta)a; a.foo(); b.foo();",
-    "options": [
-      "A. Afoo Afoo",
-      "B. Afoo Bfoo",
-      "C. Bfoo Afoo",
-      "D. Bfoo Bfoo",
-      "E. Compilation fails"
-    ],
-    "answer_index": 3,
-    "explanation": "The answer is \"Bfoo Bfoo\". This is the standard definition or correct identification for the concept described. Review the Core Java & OOP documentation to understand how \"Bfoo Bfoo\" fits into the broader context.",
-    "corrected": false
-  },
-  {
-    "id": "q0662",
-    "topic": "Core Java & OOP",
-    "question": "Which code fragment, inserted at line 23, allows the code to compile?\n\nDateFormat df; Date date = new Date(); String s = df.format(date);",
-    "options": [
-      "A. df = new DateFormat();",
-      "B. df = Date.getFormat();",
-      "C. df = date.getFormat();",
-      "D. df = DateFormat.getFormat();",
-      "E. df = DateFormat.getInstance();"
-    ],
-    "answer_index": 4,
-    "explanation": "\"df = DateFormat.getInstance();\" is correct. The distractors (\"df = new DateFormat();\" and \"df = Date.getFormat();\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"df = DateFormat.getInstance();\" in Core Java & OOP distinguishes this from similar-sounding options.",
-    "corrected": false
-  },
-  {
-    "id": "q0663",
-    "topic": "Core Java & OOP",
-    "question": "Output?\n\npublic class Base {  \n    public static final String FOO = \"foo\";  \n    public static void main(String[] args) {  \n        Base b = new Base();  \n        Sub s = new Sub();  \n        System.out.print(Base.FOO);  \n        System.out.print(Sub.FOO);  \n        System.out.print(b.FOO);  \n        System.out.print(s.FOO);  \n        System.out.print(((Base)s).FOO);  \n    }  \n}  \n\nclass Sub extends Base {  \n    public static final String FOO = \"bar\";  \n}",
-    "options": [
-      "A. foofoofoofoofoo",
-      "B. foobarfoobarbar",
-      "C. foobarfoofoofoo",
-      "D. foobarfoobarfoo",
-      "E. barbarbarbarbar",
-      "F. foofoofoobarbar",
-      "6. foofoofoobarfoo"
-    ],
-    "answer_index": 3,
-    "explanation": "The output is \"foobarfoobarfoo\". Trace through the execution step by step: variable assignments, method calls, and control flow all determine the final value. Pay attention to scope, type coercion, and execution order in Core Java & OOP.",
-    "corrected": false
-  },
-  {
-    "id": "q0664",
-    "topic": "Core Java & OOP",
-    "question": "A company has a business application that provides reports. Adding support for new printers requires changes in all reports. Which two design concepts most likely explain this situation?",
-    "options": [
-      "A. Inheritance",
-      "B. Low cohesion",
-      "C. Tight coupling",
-      "D. High cohesion",
-      "E. Loose coupling",
-      "F. Object immutability"
-    ],
-    "answer_index": 1,
-    "explanation": "The output is \"Low cohesion\". Trace execution step by step: follow variable assignments, control flow, and implicit conversions. Common wrong answers (\"Inheritance\", \"Tight coupling\") usually arise from scope confusion, precedence errors, or off-by-one mistakes.",
-    "corrected": false
-  },
-  {
-    "id": "q0665",
-    "topic": "Core Java & OOP",
-    "question": "Reducing number of methods in a utility class API without losing functionality promotes which OO principles?",
-    "options": [
-      "A. Looser coupling",
-      "B. Tighter coupling",
-      "C. Lower cohesion",
-      "D. Higher cohesion",
-      "E. Weaker encapsulation",
-      "F. Stronger encapsulation"
-    ],
-    "answer_index": 0,
-    "explanation": "The correct answer is \"Looser coupling\". The other options (\"Tighter coupling\", \"Lower cohesion\") do not accurately represent the concept described. This is a standard principle in Core Java & OOP — recognising \"Looser coupling\" in context is key to answering related exam questions.",
-    "corrected": false
-  },
-  {
-    "id": "q0666",
-    "topic": "Core Java & OOP",
-    "question": "The current design allows other classes to access methods that should be internal. What design issue is this?",
-    "options": [
-      "A. Tight coupling",
-      "B. Low cohesion",
-      "C. High cohesion",
-      "D. Loose coupling",
-      "E. Weak encapsulation",
-      "F. Strong encapsulation"
-    ],
-    "answer_index": 4,
-    "explanation": "The correct answer is \"Weak encapsulation\". The other options (\"Tight coupling\", \"Low cohesion\") do not accurately represent the concept described. This is a standard principle in Core Java & OOP — recognising \"Weak encapsulation\" in context is key to answering related exam questions.",
-    "corrected": false
-  },
-  {
-    "id": "q0667",
-    "topic": "Core Java & OOP",
-    "question": "Output?\n\npublic class TestString1 {  \n    public static void main(String[] args) {  \n        String str = \"420\";  \n        str += 42;  \n        System.out.print(str);  \n    }  \n}",
-    "options": [
-      "A. 42",
-      "B. 420",
-      "C. 462",
-      "D. 42042",
-      "E. Compilation fails",
-      "F. An exception is thrown at runtime"
-    ],
-    "answer_index": 3,
-    "explanation": "The output is \"42042\". Trace through the execution step by step: variable assignments, method calls, and control flow all determine the final value. Pay attention to scope, type coercion, and execution order in Core Java & OOP.",
-    "corrected": false
-  },
-  {
-    "id": "q0668",
-    "topic": "TypeScript",
-    "question": "Which three are valid modifiers on this line?\n\npublic interface Status {  \n    /* insert code here */ int MY_VALUE = 10;  \n}",
-    "options": [
-      "A. final",
-      "B. static",
-      "C. native",
-      "D. public",
-      "E. private",
-      "F. abstract",
-      "6. protected"
-    ],
-    "answer_index": 0,
-    "explanation": "\"final\" is correct. The distractors (\"static\" and \"native\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"final\" in TypeScript distinguishes this from similar-sounding options.",
-    "corrected": false
-  },
-  {
-    "id": "q0669",
-    "topic": "Core Java & OOP",
-    "question": "Algorithm requires a List supporting efficient add(0, object) but no quick random access. Which implementation supports this?",
-    "options": [
-      "A. java.util.Queue",
-      "B. java.util.ArrayList",
-      "C. java.util.LinearList",
-      "D. java.util.LinkedList"
-    ],
-    "answer_index": 3,
-    "explanation": "The correct answer is \"java.util.LinkedList\". The other options (\"java.util.Queue\", \"java.util.ArrayList\") do not accurately represent the concept described. This is a standard principle in Core Java & OOP — recognising \"java.util.LinkedList\" in context is key to answering related exam questions.",
-    "corrected": false
-  },
-  {
-    "id": "q0670",
-    "topic": "TypeScript",
-    "question": "Which three are true?\n\ninterface Jumper { public void jump(); }  \nclass Animal {}  \nclass Dog extends Animal { Tail tail; }  \nclass Beagle extends Dog implements Jumper { public void jump() {} }  \nclass Cat implements Jumper { public void jump() {} }",
-    "options": [
-      "A. Cat is-a Animal",
-      "B. Cat is-a Jumper",
-      "C. Dog is-a Animal",
-      "D. Dog is-a Jumper",
-      "E. Cat has-a Animal",
-      "F. Beagle has-a Tail",
-      "6. Beagle is-a Jumper"
-    ],
-    "answer_index": 1,
-    "explanation": "\"Cat is-a Jumper\" is correct. The distractors (\"Cat is-a Animal\" and \"Dog is-a Animal\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"Cat is-a Jumper\" in TypeScript distinguishes this from similar-sounding options.",
-    "corrected": false
-  },
-  {
-    "id": "q0671",
-    "topic": "TypeScript",
-    "question": "Which class correctly uses Data interface and Info abstract class?\n\ninterface Data { public void load(); }  \nabstract class Info { public abstract void load(); }",
-    "options": [
-      "A. public class Employee extends Info implements Data { public void load() { /* do something */ } }",
-      "B. public class Employee implements Info extends Data { public void load() { /* do something */ } }",
-      "C. public class Employee extends Info implements Data { public void load() { } public void Info.load() { } }",
-      "D. public class Employee implements Info extends Data { public void Data.load() { } public void load() { } }",
-      "E. public class Employee implements Info extends Data { public void load() { } public void Info.load() { } }",
-      "F. public class Employee extends Info implements Data { public void Data.load() { } public void Info.load() { } }"
-    ],
-    "answer_index": 0,
-    "explanation": "'public class Employee extends Info implements Data { public void load() { /* do something */ } }' is correct.",
-    "corrected": false
-  },
-  {
-    "id": "q0672",
-    "topic": "Core Java & OOP",
-    "question": "Output?\n\nclass TestA {  public void start() { System.out.println(\"TestA\"); } }  \nclass TestB extends TestA {  public void start() { System.out.println(\"TestB\"); }  \n    public static void main(String[] args) {  ((TestA)new TestB()).start(); } }",
-    "options": [
-      "A. TestA",
-      "B. TestB",
-      "C. Compilation fails",
-      "D. An exception is thrown at runtime"
-    ],
-    "answer_index": 1,
-    "explanation": "The output is \"TestB\". Trace through the execution step by step: variable assignments, method calls, and control flow all determine the final value. Pay attention to scope, type coercion, and execution order in Core Java & OOP.",
-    "corrected": false
-  },
-  {
-    "id": "q0673",
-    "topic": "Core Java & OOP",
-    "question": "Output?\n\nimport java.io.*;  \nclass files {  \n    public static void main(String args[]) {  \n        File obj = new File(\"/java/system\");  \n        System.out.print(obj.getName());  \n    }  \n}",
-    "options": [
-      "A. java",
-      "B. system",
-      "C. java/system",
-      "D. /java/system"
-    ],
-    "answer_index": 1,
-    "explanation": "The output is \"system\". Trace through the execution step by step: variable assignments, method calls, and control flow all determine the final value. Pay attention to scope, type coercion, and execution order in Core Java & OOP.",
-    "corrected": false
-  },
-  {
-    "id": "q0674",
-    "topic": "Core Java & OOP",
-    "question": "Output?\n\nimport java.io.*;  \nclass files {  \n    public static void main(String args[]) {  \n        File obj = new File(\"/java/system\");  \n        System.out.print(obj.getAbsolutePath());  \n    }  \n}",
-    "options": [
-      "A. java",
-      "B. system",
-      "C. java/system",
-      "D. /java/system"
-    ],
-    "answer_index": 3,
-    "explanation": "The output is \"/java/system\". Trace through the execution step by step: variable assignments, method calls, and control flow all determine the final value. Pay attention to scope, type coercion, and execution order in Core Java & OOP.",
-    "corrected": false
-  },
-  {
-    "id": "q0675",
-    "topic": "Core Java & OOP",
-    "question": "Output?\n\nimport java.lang.*;  \nclass exception_handling {  \n    public static void main(String args[]) {  \n        try {  \n            int a = args.length;  \n            int b = 10 / a;  \n            System.out.print(a);  \n            try {  \n                if (a == 1)  a = a / a - a;  \n                if (a == 2) { int[] c = {1}; c[8] = 9; }  \n            }  \n            catch(ArrayIndexOutOfBoundsException e) { System.out.println(\"TypeA\"); }  \n        }  \n        catch (ArithmeticException e) { System.out.println(\"TypeB\"); }  \n    }  \n}",
-    "options": [
-      "A. TypeA",
-      "B. TypeB",
-      "C. 0TypeA"
-    ],
-    "answer_index": 1,
-    "explanation": "The output is \"TypeB\". Trace through the execution step by step: variable assignments, method calls, and control flow all determine the final value. Pay attention to scope, type coercion, and execution order in Core Java & OOP.",
-    "corrected": false
-  },
-  {
-    "id": "q0676",
-    "topic": "DevOps & CI/CD",
-    "question": "You have just executed \"docker swarm leave\" on a node. What command can be run on the same node to confirm it has left the cluster?",
-    "options": [
-      "A. docker node ls",
-      "B. docker system info",
-      "C. docker swarm status",
-      "D. docker node inspect"
-    ],
-    "answer_index": 1,
-    "explanation": "Docker packages applications and their dependencies into portable containers that run identically across environments. A Dockerfile defines the image; docker-compose orchestrates multiple containers. Containers share the host OS kernel, making them lighter than VMs.",
-    "corrected": false
-  },
-  {
-    "id": "q0677",
-    "topic": "DevOps & CI/CD",
-    "question": "The server is running low on disk space. What command can be used to check disk usage of images, containers, and volumes?",
-    "options": [
-      "A. docker system df",
-      "B. docker disk usage",
-      "C. docker container df",
-      "D. docker image usage"
-    ],
-    "answer_index": 0,
-    "explanation": "Docker packages applications and their dependencies into portable containers that run identically across environments. A Dockerfile defines the image; docker-compose orchestrates multiple containers. Containers share the host OS kernel, making them lighter than VMs.",
-    "corrected": false
-  },
-  {
-    "id": "q0678",
-    "topic": "DevOps & CI/CD",
-    "question": "Which Dockerfile instruction initializes a new build stage and sets the base image?",
-    "options": [
-      "A. RUN",
-      "B. FROM",
-      "C. CMD",
-      "D. ENTRYPOINT"
-    ],
-    "answer_index": 1,
-    "explanation": "Docker packages applications and their dependencies into portable containers that run identically across environments. A Dockerfile defines the image; docker-compose orchestrates multiple containers. Containers share the host OS kernel, making them lighter than VMs.",
-    "corrected": false
-  },
-  {
-    "id": "q0679",
-    "topic": "DevOps & CI/CD",
-    "question": "Which command automatically creates a volume when a container is started?",
-    "options": [
-      "A. docker volume create nginx-test",
-      "B. docker container run --name nginx-test --volume /app nginx",
-      "C. docker volume attach nginx-test",
-      "D. docker run --storage nginx"
-    ],
-    "answer_index": 1,
-    "explanation": "Docker packages applications and their dependencies into portable containers that run identically across environments. A Dockerfile defines the image; docker-compose orchestrates multiple containers. Containers share the host OS kernel, making them lighter than VMs.",
-    "corrected": false
-  },
-  {
     "id": "q0680",
-    "topic": "DevOps & CI/CD",
+    "topic": "Java OOP",
     "question": "What is the Docker command to add or update a published port?",
     "options": [
       "A. docker service port-update",
@@ -1135,12 +10,14 @@
       "D. docker service publish"
     ],
     "answer_index": 2,
-    "explanation": "Docker packages applications and their dependencies into portable containers that run identically across environments. A Dockerfile defines the image; docker-compose orchestrates multiple containers. Containers share the host OS kernel, making them lighter than VMs.",
-    "corrected": false
+    "explanation": "Why Option C is Correct\n\nThe `docker service update` command is the standard way to modify an existing service's configuration in Docker Swarm, and the `--publish-add` flag specifically adds or updates port mappings without disrupting the running service. Options A, B, and D are not valid Docker commands—Docker doesn't have dedicated `port-update`, `expose`, or `publish` subcommands for services.",
+    "corrected": false,
+    "answer": "C. docker service update --publish-add",
+    "trust": "baseline"
   },
   {
     "id": "q0681",
-    "topic": "Core Java & OOP",
+    "topic": "Java OOP",
     "question": "What service mode is used to deploy a single task of a service to each node?",
     "options": [
       "A. Replicated",
@@ -1149,12 +26,14 @@
       "D. Distributed"
     ],
     "answer_index": 1,
-    "explanation": "\"Global\" is correct. The distractors (\"Replicated\" and \"Cluster\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"Global\" in Core Java & OOP distinguishes this from similar-sounding options.",
-    "corrected": false
+    "explanation": "Global service mode automatically deploys exactly one task of a service to every node in the Docker Swarm cluster, ensuring uniform distribution across all available nodes. In contrast, Replicated mode (the default) allows you to specify an arbitrary number of task replicas that may be distributed unevenly across nodes. Cluster and Distributed are not valid Docker Swarm service modes.",
+    "corrected": false,
+    "answer": "B. Global",
+    "trust": "baseline"
   },
   {
     "id": "q0682",
-    "topic": "Core Java & OOP",
+    "topic": "Java OOP",
     "question": "Which description best fits a DaemonSet?",
     "options": [
       "A. A controller that manages deployments",
@@ -1163,12 +42,14 @@
       "D. A pod that runs only once"
     ],
     "answer_index": 1,
-    "explanation": "\"A way to run a copy of a pod on all or some nodes\" is correct. The distractors (\"A controller that manages deployments\" and \"A service that balances traffic between pods\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"A way to run a copy of a pod on all or some nodes\" in Core Java & OOP distinguishes this from similar-sounding options.",
-    "corrected": false
+    "explanation": "'A way to run a copy of a pod on all or some nodes' is correct.",
+    "corrected": false,
+    "answer": "B. A way to run a copy of a pod on all or some nodes",
+    "trust": "baseline"
   },
   {
     "id": "q0683",
-    "topic": "DevOps & CI/CD",
+    "topic": "Java OOP",
     "question": "Docker command to connect a running container to an existing user-defined bridge network?",
     "options": [
       "A. docker network attach",
@@ -1177,12 +58,14 @@
       "D. docker network add"
     ],
     "answer_index": 1,
-    "explanation": "Docker packages applications and their dependencies into portable containers that run identically across environments. A Dockerfile defines the image; docker-compose orchestrates multiple containers. Containers share the host OS kernel, making them lighter than VMs.",
-    "corrected": false
+    "explanation": "The `docker network connect` command is the correct Docker syntax for attaching a running container to an existing network. This command takes the network name and container ID/name as arguments and dynamically connects them without requiring container restart. The other options either don't exist as valid Docker commands (A, C, D) or use incorrect syntax.",
+    "corrected": false,
+    "answer": "B. docker network connect",
+    "trust": "baseline"
   },
   {
     "id": "q0684",
-    "topic": "DevOps & CI/CD",
+    "topic": "Java OOP",
     "question": "Docker command to display detailed information on one or more networks?",
     "options": [
       "A. docker network inspect",
@@ -1191,26 +74,14 @@
       "D. docker network show"
     ],
     "answer_index": 0,
-    "explanation": "Docker packages applications and their dependencies into portable containers that run identically across environments. A Dockerfile defines the image; docker-compose orchestrates multiple containers. Containers share the host OS kernel, making them lighter than VMs.",
-    "corrected": false
-  },
-  {
-    "id": "q0685",
-    "topic": "DevOps & CI/CD",
-    "question": "In Kubernetes, a node is:",
-    "options": [
-      "A. A container registry",
-      "B. A worker machine",
-      "C. A cluster service",
-      "D. A control plane component"
-    ],
-    "answer_index": 1,
-    "explanation": "Kubernetes (K8s) is a container orchestration platform. A cluster has a control plane (scheduler, API server) and worker nodes that run Pods (one or more containers). Services expose Pods; Deployments manage replicas and rolling updates.",
-    "corrected": false
+    "explanation": "The `docker network inspect` command is the correct Docker CLI syntax for querying detailed information about one or more networks. Docker follows the pattern `docker [resource] [action]`, where \"network\" is the resource and \"inspect\" is the action, making this the standard and officially supported command for retrieving network configuration details, connected containers, and other metadata.",
+    "corrected": false,
+    "answer": "A. docker network inspect",
+    "trust": "baseline"
   },
   {
     "id": "q0686",
-    "topic": "DevOps & CI/CD",
+    "topic": "Java OOP",
     "question": "What is the default format of docker inspect output?",
     "options": [
       "A. XML",
@@ -1219,12 +90,14 @@
       "D. TXT"
     ],
     "answer_index": 2,
-    "explanation": "Docker packages applications and their dependencies into portable containers that run identically across environments. A Dockerfile defines the image; docker-compose orchestrates multiple containers. Containers share the host OS kernel, making them lighter than VMs.",
-    "corrected": false
+    "explanation": "The `docker inspect` command outputs data in JSON format by default because JSON is a structured, machine-readable format that allows easy parsing and integration with other tools and scripts. Docker chose JSON as the standard output format across its CLI to maintain consistency and provide developers with a universally supported data serialization format.",
+    "corrected": false,
+    "answer": "C. JSON",
+    "trust": "baseline"
   },
   {
     "id": "q0687",
-    "topic": "DevOps & CI/CD",
+    "topic": "Java OOP",
     "question": "What is a label in Kubernetes?",
     "options": [
       "A. A security rule for pods",
@@ -1233,12 +106,14 @@
       "D. A container runtime setting"
     ],
     "answer_index": 1,
-    "explanation": "Kubernetes (K8s) is a container orchestration platform. A cluster has a control plane (scheduler, API server) and worker nodes that run Pods (one or more containers). Services expose Pods; Deployments manage replicas and rolling updates.",
-    "corrected": false
+    "explanation": "'A way to group related things using key/value pairs' is correct.",
+    "corrected": false,
+    "answer": "B. A way to group related things using key/value pairs",
+    "trust": "baseline"
   },
   {
     "id": "q0688",
-    "topic": "DevOps & CI/CD",
+    "topic": "Java OOP",
     "question": "Docker command to find the current logging driver for a running container?",
     "options": [
       "A. docker logs",
@@ -1247,12 +122,14 @@
       "D. docker container info"
     ],
     "answer_index": 1,
-    "explanation": "Docker packages applications and their dependencies into portable containers that run identically across environments. A Dockerfile defines the image; docker-compose orchestrates multiple containers. Containers share the host OS kernel, making them lighter than VMs.",
-    "corrected": false
+    "explanation": "The `docker inspect` command returns detailed configuration metadata for a container in JSON format, including the logging driver specified under the \"LogConfig\" section. While `docker logs` displays container output and `docker info` shows system-wide daemon information, neither provides container-specific logging driver configuration. `docker container info` is not a valid Docker command.",
+    "corrected": false,
+    "answer": "B. docker inspect",
+    "trust": "baseline"
   },
   {
     "id": "q0689",
-    "topic": "DevOps & CI/CD",
+    "topic": "HTML/CSS",
     "question": "Docker command to see the storage driver Docker is currently using?",
     "options": [
       "A. docker storage",
@@ -1261,12 +138,14 @@
       "D. docker info"
     ],
     "answer_index": 3,
-    "explanation": "Docker packages applications and their dependencies into portable containers that run identically across environments. A Dockerfile defines the image; docker-compose orchestrates multiple containers. Containers share the host OS kernel, making them lighter than VMs.",
-    "corrected": false
+    "explanation": "The `docker info` command displays comprehensive Docker daemon configuration details, including the storage driver in use (shown in the \"Storage Driver\" field). While `docker inspect` shows object-specific metadata and `docker system df` reports disk usage, neither outputs storage driver information. `docker storage` is not a valid Docker command.",
+    "corrected": false,
+    "answer": "D. docker info",
+    "trust": "baseline"
   },
   {
     "id": "q0690",
-    "topic": "DevOps & CI/CD",
+    "topic": "HTML/CSS",
     "question": "What does docker image prune do?",
     "options": [
       "A. Removes all images",
@@ -1275,12 +154,14 @@
       "D. Removes unused volumes"
     ],
     "answer_index": 1,
-    "explanation": "Docker packages applications and their dependencies into portable containers that run identically across environments. A Dockerfile defines the image; docker-compose orchestrates multiple containers. Containers share the host OS kernel, making them lighter than VMs.",
-    "corrected": false
+    "explanation": "`docker image prune` specifically targets dangling and unused images—those not tagged and not referenced by any container. It does not remove all images indiscriminately (A), nor does it affect containers (C) or volumes (D), which have their own separate prune commands. This command helps reclaim disk space by cleaning up orphaned image layers while preserving images actively in use.",
+    "corrected": false,
+    "answer": "B. Removes unused images",
+    "trust": "baseline"
   },
   {
     "id": "q0691",
-    "topic": "Core Java & OOP",
+    "topic": "Java OOP",
     "question": "What manages assigning nodes to pods depending on resource availability?",
     "options": [
       "A. Controller Manager",
@@ -1289,12 +170,14 @@
       "D. Kubelet"
     ],
     "answer_index": 1,
-    "explanation": "\"Scheduler\" is correct. The distractors (\"Controller Manager\" and \"API Server\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"Scheduler\" in Core Java & OOP distinguishes this from similar-sounding options.",
-    "corrected": false
+    "explanation": "The Scheduler is responsible for watching for newly created pods without node assignments and selecting appropriate nodes based on resource requirements (CPU, memory), constraints, and availability. It evaluates each node's capacity and runs filter and scoring algorithms to make optimal placement decisions. The other components (Controller Manager manages workloads, API Server handles requests, Kubelet executes on nodes) do not perform this scheduling function.",
+    "corrected": false,
+    "answer": "B. Scheduler",
+    "trust": "baseline"
   },
   {
     "id": "q0692",
-    "topic": "DevOps & CI/CD",
+    "topic": "Java OOP",
     "question": "What can you deploy on Kubernetes?",
     "options": [
       "A. Virtual Machines",
@@ -1303,12 +186,14 @@
       "D. Drivers"
     ],
     "answer_index": 1,
-    "explanation": "Kubernetes (K8s) is a container orchestration platform. A cluster has a control plane (scheduler, API server) and worker nodes that run Pods (one or more containers). Services expose Pods; Deployments manage replicas and rolling updates.",
-    "corrected": false
+    "explanation": "Kubernetes is a container orchestration platform designed specifically to manage containerized applications at scale. Containers are lightweight, portable units that package applications with their dependencies, which Kubernetes deploys, schedules, and manages across a cluster of machines. Virtual machines, operating systems, and drivers operate at different abstraction levels and cannot be directly deployed as Kubernetes workloads.",
+    "corrected": false,
+    "answer": "B. Containers",
+    "trust": "baseline"
   },
   {
     "id": "q0693",
-    "topic": "DevOps & CI/CD",
+    "topic": "Java OOP",
     "question": "Which command is used to create a service in Kubernetes?",
     "options": [
       "A. kubectl service create",
@@ -1317,12 +202,14 @@
       "D. kubectl deploy service"
     ],
     "answer_index": 1,
-    "explanation": "Kubernetes (K8s) is a container orchestration platform. A cluster has a control plane (scheduler, API server) and worker nodes that run Pods (one or more containers). Services expose Pods; Deployments manage replicas and rolling updates.",
-    "corrected": false
+    "explanation": "The `kubectl expose` command is the primary method to create a Kubernetes Service by exposing an existing Pod or Deployment. While `kubectl create service` (option C) is also valid in newer Kubernetes versions, `kubectl expose` is the standard and most commonly used approach, as it automatically handles port mapping and selector configuration based on the source resource.",
+    "corrected": false,
+    "answer": "B. kubectl expose",
+    "trust": "baseline"
   },
   {
     "id": "q0694",
-    "topic": "DevOps & CI/CD",
+    "topic": "Java OOP",
     "question": "Which command is used to create a service?",
     "options": [
       "A. kubectl service create",
@@ -1331,12 +218,14 @@
       "D. kubectl deploy service"
     ],
     "answer_index": 1,
-    "explanation": "\"kubectl expose\" is correct. The distractors (\"kubectl service create\" and \"kubectl create service\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"kubectl expose\" in DevOps & CI/CD distinguishes this from similar-sounding options.",
-    "corrected": false
+    "explanation": "The `kubectl expose` command is the primary method to create a Kubernetes Service by exposing an existing resource (Pod, Deployment, ReplicaSet, etc.) and mapping it to a port. While `kubectl create service` (option C) can also create services directly, `kubectl expose` is the standard and most commonly used approach for exposing applications within Kubernetes clusters.",
+    "corrected": false,
+    "answer": "B. kubectl expose",
+    "trust": "baseline"
   },
   {
     "id": "q0695",
-    "topic": "Core Java & OOP",
+    "topic": "Java OOP",
     "question": "What is the function of a node?",
     "options": [
       "A. To manage the control plane",
@@ -1345,12 +234,14 @@
       "D. To configure network policies"
     ],
     "answer_index": 1,
-    "explanation": "The answer is \"To run pods according to master components\". This is the standard definition or correct identification for the concept described. Review the Core Java & OOP documentation to understand how \"To run pods according to master components\" fits into the broader context.",
-    "corrected": false
+    "explanation": "A node is a worker machine in Kubernetes that executes the actual containerized workloads. The control plane (master components) makes scheduling decisions and manages the cluster, while nodes receive these instructions and run the pods as directed. Nodes host the kubelet agent, container runtime, and kube-proxy to facilitate pod execution and networking.",
+    "corrected": false,
+    "answer": "B. To run pods according to master components",
+    "trust": "baseline"
   },
   {
     "id": "q0696",
-    "topic": "DevOps & CI/CD",
+    "topic": "Java OOP",
     "question": "OpenShift is based on which container orchestration platform?",
     "options": [
       "A. Docker Swarm",
@@ -1359,12 +250,14 @@
       "D. Nomad"
     ],
     "answer_index": 1,
-    "explanation": "Kubernetes (K8s) is a container orchestration platform. A cluster has a control plane (scheduler, API server) and worker nodes that run Pods (one or more containers). Services expose Pods; Deployments manage replicas and rolling updates.",
-    "corrected": false
+    "explanation": "OpenShift is Red Hat's enterprise-grade container platform built directly on top of Kubernetes, using it as the underlying orchestration engine. OpenShift extends Kubernetes with additional enterprise features such as integrated CI/CD, developer tools, security enhancements, and simplified deployment mechanisms while maintaining full Kubernetes API compatibility.",
+    "corrected": false,
+    "answer": "B. Kubernetes",
+    "trust": "baseline"
   },
   {
     "id": "q0697",
-    "topic": "DevOps & CI/CD",
+    "topic": "Java OOP",
     "question": "What is a Pod?",
     "options": [
       "A. A single container instance",
@@ -1373,12 +266,14 @@
       "D. A container image repository"
     ],
     "answer_index": 1,
-    "explanation": "The answer is \"A group of one or more application containers with shared volumes and IP address\". This is the standard definition or correct identification for the concept described. Review the DevOps & CI/CD documentation to understand how \"A group of one or more application containers with shared volumes and IP address\" fits into the broader context.",
-    "corrected": false
+    "explanation": "'A group of one or more application containers with shared volumes and IP address' is correct.",
+    "corrected": false,
+    "answer": "B. A group of one or more application containers with shared volumes and IP address",
+    "trust": "baseline"
   },
   {
     "id": "q0698",
-    "topic": "MongoDB",
+    "topic": "Java OOP",
     "question": "A ______ ensures that all nodes run a copy of a pod.",
     "options": [
       "A. ReplicaSet",
@@ -1387,12 +282,14 @@
       "D. StatefulSet"
     ],
     "answer_index": 2,
-    "explanation": "The correct answer is \"DaemonSet\". The other options (\"ReplicaSet\", \"Deployment\") do not accurately represent the concept described. This is a standard principle in MongoDB — recognising \"DaemonSet\" in context is key to answering related exam questions.",
-    "corrected": false
+    "explanation": "A DaemonSet is specifically designed to run a single pod replica on every node in a Kubernetes cluster, making it ideal for node-level services like logging agents, monitoring daemons, or network plugins. In contrast, ReplicaSets and Deployments maintain a fixed number of pod replicas across the cluster, and StatefulSets manage stateful applications with ordered pod identities—none guarantee one pod per node.",
+    "corrected": false,
+    "answer": "C. DaemonSet",
+    "trust": "baseline"
   },
   {
     "id": "q0699",
-    "topic": "DevOps & CI/CD",
+    "topic": "Java OOP",
     "question": "What is a Kubernetes volume?",
     "options": [
       "A. A storage driver for Docker",
@@ -1401,12 +298,14 @@
       "D. A backup container"
     ],
     "answer_index": 1,
-    "explanation": "Kubernetes (K8s) is a container orchestration platform. A cluster has a control plane (scheduler, API server) and worker nodes that run Pods (one or more containers). Services expose Pods; Deployments manage replicas and rolling updates.",
-    "corrected": false
+    "explanation": "'A directory for data accessible to containers in a pod' is correct.",
+    "corrected": false,
+    "answer": "B. A directory for data accessible to containers in a pod",
+    "trust": "baseline"
   },
   {
     "id": "q0700",
-    "topic": "DevOps & CI/CD",
+    "topic": "HTML/CSS",
     "question": "Which command removes the cluster-admin role from a user?",
     "options": [
       "A. oc adm policy remove-role-from-user",
@@ -1415,12 +314,14 @@
       "D. kubectl delete cluster-admin"
     ],
     "answer_index": 1,
-    "explanation": "\"oc adm policy remove-cluster-role-from-user\" is correct. The distractors (\"oc adm policy remove-role-from-user\" and \"kubectl remove cluster-role\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"oc adm policy remove-cluster-role-from-user\" in DevOps & CI/CD distinguishes this from similar-sounding options.",
-    "corrected": false
+    "explanation": "Option B is correct because `oc adm policy remove-cluster-role-from-user` is the OpenShift-specific command designed to remove cluster-level roles from users, and cluster-admin is a cluster role that requires the cluster-role variant (not the role variant). Option A removes regular namespaced roles, while options C and D use kubectl syntax that doesn't support this operation correctly.",
+    "corrected": false,
+    "answer": "B. oc adm policy remove-cluster-role-from-user",
+    "trust": "baseline"
   },
   {
     "id": "q0701",
-    "topic": "DevOps & CI/CD",
+    "topic": "Java OOP",
     "question": "What is a kubelet?",
     "options": [
       "A. A Kubernetes scheduler component",
@@ -1429,12 +330,14 @@
       "D. A Kubernetes network plugin"
     ],
     "answer_index": 1,
-    "explanation": "The answer is \"A node agent that manages pods and their containers\". This is the standard definition or correct identification for the concept described. Review the DevOps & CI/CD documentation to understand how \"A node agent that manages pods and their containers\" fits into the broader context.",
-    "corrected": false
+    "explanation": "'A node agent that manages pods and their containers' is correct.",
+    "corrected": false,
+    "answer": "B. A node agent that manages pods and their containers",
+    "trust": "baseline"
   },
   {
     "id": "q0702",
-    "topic": "Core Java & OOP",
+    "topic": "Java OOP",
     "question": "What is the intended use of etcd?",
     "options": [
       "A. To run container workloads",
@@ -1443,12 +346,14 @@
       "D. To schedule pods on nodes"
     ],
     "answer_index": 1,
-    "explanation": "The answer is \"To store all cluster data and maintain cluster state\". This is the standard definition or correct identification for the concept described. Review the Core Java & OOP documentation to understand how \"To store all cluster data and maintain cluster state\" fits into the broader context.",
-    "corrected": false
+    "explanation": "'To store all cluster data and maintain cluster state' is correct.",
+    "corrected": false,
+    "answer": "B. To store all cluster data and maintain cluster state",
+    "trust": "baseline"
   },
   {
     "id": "q0703",
-    "topic": "DevOps & CI/CD",
+    "topic": "Java OOP",
     "question": "Docker command to increase the number of replicas?",
     "options": [
       "A. docker service scale",
@@ -1457,12 +362,14 @@
       "D. docker scale service"
     ],
     "answer_index": 0,
-    "explanation": "Docker packages applications and their dependencies into portable containers that run identically across environments. A Dockerfile defines the image; docker-compose orchestrates multiple containers. Containers share the host OS kernel, making them lighter than VMs.",
-    "corrected": false
+    "explanation": "The `docker service scale` command is the correct and direct way to adjust the number of replicas for a Docker Swarm service. This command accepts the syntax `docker service scale <service-name>=<number-of-replicas>` and immediately updates the desired replica count. While `docker service update` can also modify replicas, it's a more general update command; `docker service scale` is purpose-built for this specific operation.",
+    "corrected": false,
+    "answer": "A. docker service scale",
+    "trust": "baseline"
   },
   {
     "id": "q0704",
-    "topic": "DevOps & CI/CD",
+    "topic": "Java OOP",
     "question": "Docker command to display layers of a Docker image?",
     "options": [
       "A. docker image layers",
@@ -1471,12 +378,14 @@
       "D. docker image show"
     ],
     "answer_index": 2,
-    "explanation": "Docker packages applications and their dependencies into portable containers that run identically across environments. A Dockerfile defines the image; docker-compose orchestrates multiple containers. Containers share the host OS kernel, making them lighter than VMs.",
-    "corrected": false
+    "explanation": "The `docker history` command displays all the layers of a Docker image in chronological order, showing each instruction from the Dockerfile along with its size and creation timestamp. While `docker inspect` provides metadata about an image, it does not display the layered structure; only `docker history` specifically visualizes how the image was built layer-by-layer. The other options are either non-existent commands or don't serve this specific purpose.",
+    "corrected": false,
+    "answer": "C. docker history",
+    "trust": "baseline"
   },
   {
     "id": "q0705",
-    "topic": "DevOps & CI/CD",
+    "topic": "Java OOP",
     "question": "What is the result of \"kubectl exec -ti my-pod-name bash\"?",
     "options": [
       "A. Restarts the pod",
@@ -1485,12 +394,14 @@
       "D. Shows pod logs"
     ],
     "answer_index": 1,
-    "explanation": "The answer is \"Opens a console on the first container inside the pod\". This is the standard definition or correct identification for the concept described. Review the DevOps & CI/CD documentation to understand how \"Opens a console on the first container inside the pod\" fits into the broader context.",
-    "corrected": false
+    "explanation": "'Opens a console on the first container inside the pod' is correct.",
+    "corrected": false,
+    "answer": "B. Opens a console on the first container inside the pod",
+    "trust": "baseline"
   },
   {
     "id": "q0706",
-    "topic": "DevOps & CI/CD",
+    "topic": "Java OOP",
     "question": "Which Docker commands can be used to find all port mappings?",
     "options": [
       "A. docker inspect, docker ps, docker port",
@@ -1499,12 +410,14 @@
       "D. docker container ports, docker list"
     ],
     "answer_index": 0,
-    "explanation": "Docker packages applications and their dependencies into portable containers that run identically across environments. A Dockerfile defines the image; docker-compose orchestrates multiple containers. Containers share the host OS kernel, making them lighter than VMs.",
-    "corrected": false
+    "explanation": "The correct answer is A. docker inspect, docker ps, docker port because these three commands provide different ways to view port mappings:\ndocker ps displays running containers with their port mappings in the PORTS column\ndocker port shows all port mappings for a specific container\ndocker inspect provides detailed container configuration including all exposed and mapped ports in JSON format\n\nThe other options are incorrect because `docker ports`, `docker network inspect`, and `docker container ports` are either non-existent or don't primarily serve the purpose of finding port mappings.",
+    "corrected": false,
+    "answer": "A. docker inspect, docker ps, docker port",
+    "trust": "baseline"
   },
   {
     "id": "q0707",
-    "topic": "DevOps & CI/CD",
+    "topic": "Java OOP",
     "question": "What does Dockerfile LABEL do?",
     "options": [
       "A. Adds metadata to an image",
@@ -1513,12 +426,14 @@
       "D. Specifies exposed ports"
     ],
     "answer_index": 0,
-    "explanation": "Docker packages applications and their dependencies into portable containers that run identically across environments. A Dockerfile defines the image; docker-compose orchestrates multiple containers. Containers share the host OS kernel, making them lighter than VMs.",
-    "corrected": false
+    "explanation": "Why A is Correct\n\nThe LABEL instruction adds key-value metadata pairs to Docker images, which can be used for organization, versioning, documentation, and automation purposes. This metadata is stored in the image configuration and can be inspected with `docker inspect`, but does not affect the runtime behavior of containers. The other options describe different Dockerfile instructions (ENTRYPOINT, EXPOSE, etc.) or operations (container creation) rather than LABEL's actual function.",
+    "corrected": false,
+    "answer": "A. Adds metadata to an image",
+    "trust": "baseline"
   },
   {
     "id": "q0708",
-    "topic": "DevOps & CI/CD",
+    "topic": "Java OOP",
     "question": "At its core Kubernetes is a platform for:",
     "options": [
       "A. Running and scheduling container applications on a cluster",
@@ -1527,12 +442,14 @@
       "D. Storing container registries"
     ],
     "answer_index": 0,
-    "explanation": "Kubernetes (K8s) is a container orchestration platform. A cluster has a control plane (scheduler, API server) and worker nodes that run Pods (one or more containers). Services expose Pods; Deployments manage replicas and rolling updates.",
-    "corrected": false
+    "explanation": "'Running and scheduling container applications on a cluster' is correct.",
+    "corrected": false,
+    "answer": "A. Running and scheduling container applications on a cluster",
+    "trust": "baseline"
   },
   {
     "id": "q0709",
-    "topic": "DevOps & CI/CD",
+    "topic": "Java OOP",
     "question": "Which command shows volumes for a specific container?",
     "options": [
       "A. docker volume list",
@@ -1541,12 +458,14 @@
       "D. docker volume inspect"
     ],
     "answer_index": 1,
-    "explanation": "Docker packages applications and their dependencies into portable containers that run identically across environments. A Dockerfile defines the image; docker-compose orchestrates multiple containers. Containers share the host OS kernel, making them lighter than VMs.",
-    "corrected": false
+    "explanation": "The `docker inspect` command displays detailed configuration metadata for a container, including its mounted volumes, mount points, and their source paths. While `docker volume list` shows all volumes on the system, `docker inspect` specifically retrieves volume information tied to a particular container instance. The other options don't exist as valid Docker commands.",
+    "corrected": false,
+    "answer": "B. docker inspect",
+    "trust": "baseline"
   },
   {
     "id": "q0710",
-    "topic": "DevOps & CI/CD",
+    "topic": "Java OOP",
     "question": "Docker command to update an existing service?",
     "options": [
       "A. docker service update",
@@ -1555,26 +474,14 @@
       "D. docker container update"
     ],
     "answer_index": 0,
-    "explanation": "Docker packages applications and their dependencies into portable containers that run identically across environments. A Dockerfile defines the image; docker-compose orchestrates multiple containers. Containers share the host OS kernel, making them lighter than VMs.",
-    "corrected": false
-  },
-  {
-    "id": "q0711",
-    "topic": "DevOps & CI/CD",
-    "question": "Docker command to update an existing service?",
-    "options": [
-      "A. docker service update",
-      "B. docker service create",
-      "C. docker update service",
-      "D. docker service modify"
-    ],
-    "answer_index": 0,
-    "explanation": "Docker packages applications and their dependencies into portable containers that run identically across environments. A Dockerfile defines the image; docker-compose orchestrates multiple containers. Containers share the host OS kernel, making them lighter than VMs.",
-    "corrected": false
+    "explanation": "The correct Docker command syntax for managing services in swarm mode follows the pattern `docker service <action>`, where `docker service update` is the designated command to modify existing service configurations such as image, replicas, environment variables, and resource limits. Options B and C use incorrect command structures, while option D targets containers rather than services, which operate under different management paradigms in Docker.",
+    "corrected": false,
+    "answer": "A. docker service update",
+    "trust": "baseline"
   },
   {
     "id": "q0712",
-    "topic": "DevOps & CI/CD",
+    "topic": "Java OOP",
     "question": "What runs on each node to ensure containers are running in a pod?",
     "options": [
       "A. kube-proxy",
@@ -1583,12 +490,14 @@
       "D. kubectl"
     ],
     "answer_index": 1,
-    "explanation": "\"kubelet\" is correct. The distractors (\"kube-proxy\" and \"etcd\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"kubelet\" in DevOps & CI/CD distinguishes this from similar-sounding options.",
-    "corrected": false
+    "explanation": "The kubelet is a node-level agent that runs on every node in a Kubernetes cluster and is responsible for ensuring containers are running in their assigned pods. It communicates with the container runtime to start, stop, and monitor containers, and reports the pod status back to the control plane. While kube-proxy handles networking, etcd stores cluster data, and kubectl is a CLI tool, only the kubelet has the direct responsibility of container lifecycle management on each node.",
+    "corrected": false,
+    "answer": "B. kubelet",
+    "trust": "baseline"
   },
   {
     "id": "q0713",
-    "topic": "DevOps & CI/CD",
+    "topic": "Java OOP",
     "question": "What does Dockerfile EXPOSE do?",
     "options": [
       "A. Opens the port on host automatically",
@@ -1597,12 +506,14 @@
       "D. Creates a new network port"
     ],
     "answer_index": 2,
-    "explanation": "Docker packages applications and their dependencies into portable containers that run identically across environments. A Dockerfile defines the image; docker-compose orchestrates multiple containers. Containers share the host OS kernel, making them lighter than VMs.",
-    "corrected": false
+    "explanation": "'Informs Docker that the container listens on the specified port' is correct.",
+    "corrected": false,
+    "answer": "C. Informs Docker that the container listens on the specified port",
+    "trust": "baseline"
   },
   {
     "id": "q0714",
-    "topic": "DevOps & CI/CD",
+    "topic": "JavaScript",
     "question": "What is true about using -P option in Docker?",
     "options": [
       "A. Binds container port to fixed host port",
@@ -1611,12 +522,14 @@
       "D. Publishes only port 80"
     ],
     "answer_index": 1,
-    "explanation": "Docker packages applications and their dependencies into portable containers that run identically across environments. A Dockerfile defines the image; docker-compose orchestrates multiple containers. Containers share the host OS kernel, making them lighter than VMs.",
-    "corrected": false
+    "explanation": "'Docker binds each exposed container port to a random host port' is correct.",
+    "corrected": false,
+    "answer": "B. Docker binds each exposed container port to a random host port",
+    "trust": "baseline"
   },
   {
     "id": "q0715",
-    "topic": "DevOps & CI/CD",
+    "topic": "HTML/CSS",
     "question": "Difference between ADD and COPY in Dockerfile?",
     "options": [
       "A. ADD supports remote URL handling, COPY does not",
@@ -1625,12 +538,14 @@
       "D. COPY automatically extracts files"
     ],
     "answer_index": 0,
-    "explanation": "Docker packages applications and their dependencies into portable containers that run identically across environments. A Dockerfile defines the image; docker-compose orchestrates multiple containers. Containers share the host OS kernel, making them lighter than VMs.",
-    "corrected": false
+    "explanation": "'ADD supports remote URL handling, COPY does not' is correct.",
+    "corrected": false,
+    "answer": "A. ADD supports remote URL handling, COPY does not",
+    "trust": "baseline"
   },
   {
     "id": "q0716",
-    "topic": "HTML & CSS",
+    "topic": "HTML/CSS",
     "question": "What is a cluster?",
     "options": [
       "A. A single container system",
@@ -1639,12 +554,14 @@
       "D. A container image repository"
     ],
     "answer_index": 1,
-    "explanation": "The answer is \"A single system made up of several other resources\". This is the standard definition or correct identification for the concept described. Review the HTML & CSS documentation to understand how \"A single system made up of several other resources\" fits into the broader context.",
-    "corrected": false
+    "explanation": "'A single system made up of several other resources' is correct.",
+    "corrected": false,
+    "answer": "B. A single system made up of several other resources",
+    "trust": "baseline"
   },
   {
     "id": "q0717",
-    "topic": "DevOps & CI/CD",
+    "topic": "Java OOP",
     "question": "Command to display Docker configuration on host?",
     "options": [
       "A. docker config",
@@ -1653,12 +570,14 @@
       "D. docker status"
     ],
     "answer_index": 2,
-    "explanation": "Docker packages applications and their dependencies into portable containers that run identically across environments. A Dockerfile defines the image; docker-compose orchestrates multiple containers. Containers share the host OS kernel, making them lighter than VMs.",
-    "corrected": false
+    "explanation": "Why C is Correct\n\nThe `docker info` command displays comprehensive Docker daemon configuration and system information on the host, including storage driver, runtime details, container/image counts, and resource metrics. Options A, B, and D either don't exist as Docker commands or don't serve this specific purpose—`docker config` manages secrets/configs in Swarm mode, while `docker status` and `docker host info` are not valid Docker CLI commands.",
+    "corrected": false,
+    "answer": "C. docker info",
+    "trust": "baseline"
   },
   {
     "id": "q0718",
-    "topic": "DevOps & CI/CD",
+    "topic": "Java OOP",
     "question": "Function of a node in Kubernetes?",
     "options": [
       "A. To store container images",
@@ -1667,12 +586,14 @@
       "D. To store cluster configuration"
     ],
     "answer_index": 1,
-    "explanation": "Kubernetes (K8s) is a container orchestration platform. A cluster has a control plane (scheduler, API server) and worker nodes that run Pods (one or more containers). Services expose Pods; Deployments manage replicas and rolling updates.",
-    "corrected": false
+    "explanation": "A node is a worker machine in Kubernetes that executes containerized workloads (pods) as directed by the control plane components. The kubelet agent on each node receives scheduling decisions from the API server and ensures pods are running with the correct resource allocation. Options A, C, and D describe functions of the container registry, API server/authentication layer, and etcd respectively, not nodes.",
+    "corrected": false,
+    "answer": "B. To run pods according to master components",
+    "trust": "baseline"
   },
   {
     "id": "q0719",
-    "topic": "DevOps & CI/CD",
+    "topic": "Java OOP",
     "question": "Which command provides users edit access to developers group?",
     "options": [
       "A. oc adm policy add-role-to-group edit developers -n develop",
@@ -1681,12 +602,14 @@
       "D. kubectl role add developers"
     ],
     "answer_index": 0,
-    "explanation": "\"oc adm policy add-role-to-group edit developers -n develop\" is correct. The distractors (\"oc adm grant edit developers\" and \"oc role add developers edit\") are either non-existent in this context, describe a different concept, or are common misconceptions. Knowing the precise definition of \"oc adm policy add-role-to-group edit developers -n develop\" in DevOps & CI/CD distinguishes this from similar-sounding options.",
-    "corrected": false
+    "explanation": "'oc adm policy add-role-to-group edit developers -n develop' is correct.",
+    "corrected": false,
+    "answer": "A. oc adm policy add-role-to-group edit developers -n develop",
+    "trust": "baseline"
   },
   {
     "id": "q0720",
-    "topic": "Core Java & OOP",
+    "topic": "Java OOP",
     "question": "Default port to access WebSphere Application Server console?",
     "options": [
       "A. 8080",
@@ -1695,7 +618,1301 @@
       "D. 9443"
     ],
     "answer_index": 2,
-    "explanation": "The correct answer is \"9080\". The other options (\"8080\", \"7001\") do not accurately represent the concept described. This is a standard principle in Core Java & OOP — recognising \"9080\" in context is key to answering related exam questions.",
-    "corrected": false
+    "explanation": "WebSphere Application Server uses port 9080 as the default HTTP port for administrative console access and application deployment. While 8080 is a common default for other application servers like Tomcat, and 7001 is used by Oracle WebLogic, WebSphere specifically reserves 9080 for HTTP communications and 9443 for HTTPS/SSL communications on the administrative console.",
+    "corrected": false,
+    "answer": "C. 9080",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0721",
+    "topic": "Java OOP",
+    "question": "What is proxy service used for?",
+    "options": [
+      "A. To store containers",
+      "B. To act as an intermediary between endpoint servers",
+      "C. To manage images",
+      "D. To deploy pods"
+    ],
+    "answer_index": 1,
+    "explanation": "'To act as an intermediary between endpoint servers' is correct.",
+    "corrected": false,
+    "answer": "B. To act as an intermediary between endpoint servers",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0722",
+    "topic": "Java OOP",
+    "question": "Which servers run Kubernetes control components in OpenShift?",
+    "options": [
+      "A. Workers",
+      "B. Masters",
+      "C. Nodes",
+      "D. Agents"
+    ],
+    "answer_index": 1,
+    "explanation": "Master nodes in OpenShift are dedicated servers that host the Kubernetes control plane components, including the API server, controller manager, and etcd database. These components manage cluster state, orchestrate workloads, and make scheduling decisions for all worker nodes. Workers, nodes, and agents are terms referring to compute resources that run application workloads, not control plane infrastructure.",
+    "corrected": false,
+    "answer": "B. Masters",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0723",
+    "topic": "Java OOP",
+    "question": "Which resource sets default request/limit for containers?",
+    "options": [
+      "A. ResourceQuota",
+      "B. LimitRange",
+      "C. PodLimit",
+      "D. ContainerPolicy"
+    ],
+    "answer_index": 1,
+    "explanation": "LimitRange is a Kubernetes resource that enforces minimum and maximum compute resource constraints at the container, pod, and namespace levels. It automatically applies default CPU and memory requests/limits to containers that don't explicitly specify them, whereas ResourceQuota only tracks aggregate resource consumption across a namespace without setting individual container defaults.",
+    "corrected": false,
+    "answer": "B. LimitRange",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0724",
+    "topic": "Java OOP",
+    "question": "Docker command to create a bridge network?",
+    "options": [
+      "A. docker network create",
+      "B. docker create network",
+      "C. docker bridge create",
+      "D. docker network add"
+    ],
+    "answer_index": 0,
+    "explanation": "The correct Docker command syntax is `docker network create`, which is the primary command for creating networks of any type, including bridge networks (the default type). Options B, C, and D use incorrect syntax—Docker CLI commands follow the pattern of `docker [object] [action]`, not `docker [action] [object]`, and \"add\" is not a valid subcommand for network operations.",
+    "corrected": false,
+    "answer": "A. docker network create",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0725",
+    "topic": "Java OOP",
+    "question": "Purpose of ReplicaSet?",
+    "options": [
+      "A. To delete pods",
+      "B. To duplicate pods",
+      "C. To build images",
+      "D. To create networks"
+    ],
+    "answer_index": 1,
+    "explanation": "A ReplicaSet ensures a specified number of pod replicas are running at all times by creating, scaling, and replacing pods as needed. It maintains desired state by duplicating pods across nodes and automatically recreating failed pods to meet the replica count. This provides high availability and load distribution for applications in Kubernetes.",
+    "corrected": false,
+    "answer": "B. To duplicate pods",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0726",
+    "topic": "Java OOP",
+    "question": "Which is NOT a valid way to tag a Docker image?",
+    "options": [
+      "A. Tag by repository name",
+      "B. Tag by version",
+      "C. Tag by image ID",
+      "D. Tag using latest"
+    ],
+    "answer_index": 2,
+    "explanation": "Docker tags are human-readable labels assigned to images and must follow naming conventions (repository:tag format), whereas image IDs are immutable SHA256 hashes that uniquely identify images. You cannot use an image ID as a tag because tags are distinct metadata separate from the ID—they serve as aliases for easy reference, while IDs are the actual image identifiers. Options A, B, and D are all valid tagging practices (e.g., `myrepo:v1.0`, `myimage:latest`).",
+    "corrected": false,
+    "answer": "C. Tag by image ID",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0727",
+    "topic": "Java OOP",
+    "question": "Mission of control plane in Kubernetes?",
+    "options": [
+      "A. Regulate communication between Kubernetes clusters",
+      "B. Run application containers",
+      "C. Store container images",
+      "D. Monitor host hardware"
+    ],
+    "answer_index": 0,
+    "explanation": "'Regulate communication between Kubernetes clusters' is correct.",
+    "corrected": false,
+    "answer": "A. Regulate communication between Kubernetes clusters",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0728",
+    "topic": "Java OOP",
+    "question": "Service mode used to deploy a single task to each node?",
+    "options": [
+      "A. Replicated",
+      "B. Global",
+      "C. Node",
+      "D. Distributed"
+    ],
+    "answer_index": 1,
+    "explanation": "In Docker Swarm, Global mode ensures a service deploys exactly one task per node in the cluster, making it ideal for system-level services like monitoring agents or log collectors. Replicated mode (the default) allows you to specify an arbitrary number of task replicas distributed across nodes, whereas Global automatically scales to every node regardless of cluster size.",
+    "corrected": false,
+    "answer": "B. Global",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0729",
+    "topic": "HTML/CSS",
+    "question": "After you initialize a new Git repository and create a file named git-quiz.html, which command will NOT work if issued?",
+    "options": [
+      "A. git add git-quiz.html",
+      "B. git status",
+      "C. git add .",
+      "D. git commit -m \"git quiz web file added\""
+    ],
+    "answer_index": 3,
+    "explanation": "After initializing a Git repository and creating a file, you must stage the file with `git add` before committing. Option D fails because it attempts to commit without first staging the file—Git has nothing to commit since the file exists in the working directory but not in the staging area. Options A, B, and C all work: A and C stage the file, and B displays the repository status regardless of whether files are staged.",
+    "corrected": false,
+    "answer": "D. git commit -m \"git quiz web file added\"",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0730",
+    "topic": "Java OOP",
+    "question": "Which of the following are the benefits of using Gradle over Maven?",
+    "options": [
+      "A. Gradle supports more languages than Maven",
+      "B. Gradle incorporates Maven features as well as additional functionality",
+      "C. Gradle builds are successful more often than Maven builds",
+      "D. A Gradle build is 1000 times faster than a Maven build"
+    ],
+    "answer_index": 1,
+    "explanation": "'Gradle supports more languages than Maven' is the correct answer per language specification.",
+    "corrected": false,
+    "answer": "B. Gradle incorporates Maven features as well as additional functionality",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0731",
+    "topic": "Java OOP",
+    "question": "Adopting Agile is necessary prior to embracing DevOps practices.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 1,
+    "explanation": "DevOps and Agile are independent practices that address different concerns—DevOps focuses on collaboration between development and operations with continuous delivery, while Agile addresses software development methodology. Organizations can implement DevOps practices (infrastructure automation, CI/CD pipelines, monitoring) without adopting Agile frameworks, and vice versa, though they often complement each other effectively when combined.",
+    "corrected": false,
+    "answer": "B. False",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0732",
+    "topic": "Java OOP",
+    "question": "Adopting DevOps requires planning that spans which of the following?",
+    "options": [
+      "A. People",
+      "B. Efforts",
+      "C. Process",
+      "D. Tools/Technology"
+    ],
+    "answer_index": 0,
+    "explanation": "While DevOps does involve process, tools, and efforts, people is the foundational element that DevOps adoption planning must span because cultural transformation and organizational restructuring are prerequisites for success. DevOps fundamentally requires breaking down silos between development and operations teams, which demands changes in roles, responsibilities, collaboration practices, and mindsets—all people-centric concerns. Without addressing the human and organizational aspects first, tools and processes will fail to deliver the intended benefits.",
+    "corrected": false,
+    "answer": "A. People",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0734",
+    "topic": "Java OOP",
+    "question": "In DevOps, what is the main goal of version control?",
+    "options": [
+      "A. Ensure the ability to alert when configuration changes from the desired state",
+      "B. Ensure the ability to re-create the previous state of the test environment",
+      "C. Ensure the ability to re-create the production environment and build processes",
+      "D. Ensure the ability to share the source code between different developer teams"
+    ],
+    "answer_index": 2,
+    "explanation": "'Ensure the ability to re-create the previous state of the test environment' is correct.",
+    "corrected": false,
+    "answer": "C. Ensure the ability to re-create the production environment and build processes",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0735",
+    "topic": "Java OOP",
+    "question": "What is a continuous build?",
+    "options": [
+      "A. A build that runs non-stop over and over again",
+      "B. A build that has not failed in 10 continuous attempts",
+      "C. A build executed every hour/day by a CI server",
+      "D. A build executed on every commit by a CI server"
+    ],
+    "answer_index": 3,
+    "explanation": "'A build executed every hour/day by a CI server' is correct.",
+    "corrected": false,
+    "answer": "D. A build executed on every commit by a CI server",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0737",
+    "topic": "Java OOP",
+    "question": "How does a DevOps organization act when financing its work?",
+    "options": [
+      "A. It finances special projects to serve its clients",
+      "B. It finances products and services to serve its clients",
+      "C. It finances teams in matrix organizations",
+      "D. It finances development and operations teams separately"
+    ],
+    "answer_index": 1,
+    "explanation": "'It finances products and services to serve its clients' is correct.",
+    "corrected": false,
+    "answer": "B. It finances products and services to serve its clients",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0740",
+    "topic": "Java OOP",
+    "question": "In DevOps, which of the following is a widely used reusable asset designed to reinforce the information security of software deliverables?",
+    "options": [
+      "A. Security patterns",
+      "B. Data storage systems",
+      "C. Continuous integration pipelines",
+      "D. Version control repositories"
+    ],
+    "answer_index": 0,
+    "explanation": "Security patterns are reusable, well-documented solutions to recurring security problems, allowing teams to embed proven defenses like authentication or encryption schemes consistently across deliverables. Unlike storage systems, CI pipelines, or version control—which are infrastructure or process tools—security patterns directly encode security expertise into reusable design templates.",
+    "corrected": false,
+    "answer": "A. Security patterns",
+    "trust": "baseline",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "id": "q0741",
+    "topic": "HTML/CSS",
+    "question": "What is the sequence in which Maven looks for resources?",
+    "options": [
+      "A. Local → Remote → Maven Central",
+      "B. Remote → Maven Central → Local",
+      "C. Remote → Local → Maven Central",
+      "D. Maven Central → Local → Remote"
+    ],
+    "answer_index": 0,
+    "explanation": "Maven Resource Lookup Sequence\n\nMaven checks the local repository first (typically `~/.m2/repository`) to avoid redundant downloads. If the resource isn't found locally, it queries configured remote repositories in the order they're defined in `pom.xml` or `settings.xml`. Maven Central serves as the default fallback remote repository when no other remote repositories are specified or when the artifact isn't found in them.",
+    "corrected": false,
+    "answer": "A. Local → Remote → Maven Central",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0742",
+    "topic": "Java OOP",
+    "question": "Why should production and development environments be similar?",
+    "options": [
+      "A. It is easier for the ops team",
+      "B. It improves testing accuracy and reduces deployment problems",
+      "C. People can fix defects directly in production",
+      "D. Development environments are cheaper"
+    ],
+    "answer_index": 1,
+    "explanation": "'It improves testing accuracy and reduces deployment problems' is correct.",
+    "corrected": false,
+    "answer": "B. It improves testing accuracy and reduces deployment problems",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0744",
+    "topic": "Java OOP",
+    "question": "What is continuous deployment?",
+    "options": [
+      "A. Deployment on every code push/commit",
+      "B. Deployment every hour/day",
+      "C. Local deployment on developer laptop",
+      "D. Deployment on IBM Cloud"
+    ],
+    "answer_index": 0,
+    "explanation": "Continuous deployment (CD) is an automated process where code changes are automatically deployed to production immediately after passing automated tests, with each commit triggering a deployment pipeline. This differs from continuous delivery, which prepares code for release but requires manual approval, and from scheduled or local deployments which are neither continuous nor production-focused. The \"continuous\" aspect specifically refers to the frequency of deployments tied directly to code changes, not time-based intervals.",
+    "corrected": false,
+    "answer": "A. Deployment on every code push/commit",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0745",
+    "topic": "HTML/CSS",
+    "question": "In DevOps, one significant ROI area is:",
+    "options": [
+      "A. Zero defects",
+      "B. Faster time to value",
+      "C. Less feedback",
+      "D. Less customer experience"
+    ],
+    "answer_index": 1,
+    "explanation": "DevOps directly reduces time to value by automating CI/CD pipelines, enabling faster deployment cycles, and shortening the feedback loop between development and production. This accelerated delivery translates to measurable ROI through quicker feature releases, faster bug fixes, and earlier revenue generation. While other options may seem desirable, they're either unrealistic (zero defects) or contradict DevOps principles (less feedback and customer experience are detrimental).",
+    "corrected": false,
+    "answer": "B. Faster time to value",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0746",
+    "topic": "HTML/CSS",
+    "question": "How do you remove local untracked files and directories from the Git working tree?",
+    "options": [
+      "A. git clean -f",
+      "B. git delete -f",
+      "C. git remove -f -d",
+      "D. git add --all"
+    ],
+    "answer_index": 0,
+    "explanation": "The `git clean` command is specifically designed to remove untracked files from the working directory, with the `-f` (force) flag required to actually delete them. To remove both files and directories, you'd use `git clean -f -d`, but option A is the standard command for removing untracked files. The other options are either non-existent Git commands (`git delete`, `git remove`) or perform different functions (`git add --all` stages files for commit rather than removing them).",
+    "corrected": false,
+    "answer": "A. git clean -f",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0747",
+    "topic": "Java OOP",
+    "question": "Spring-WS provides various abstract endpoint classes for you to process the request.",
+    "options": [
+      "A. org.springframework.ws.server.endpoint",
+      "B. org.springframework.ws.server",
+      "C. org.springframework.*",
+      "D. none of the mentioned"
+    ],
+    "answer_index": 0,
+    "explanation": "The package `org.springframework.ws.server.endpoint` specifically contains abstract endpoint classes like `AbstractDomPayloadEndpoint`, `AbstractJaxb2PayloadEndpoint`, and `AbstractStaxPayloadEndpoint` that developers extend to handle SOAP/XML-RPC requests in Spring-WS applications. While `org.springframework.ws.server` is a parent package, the endpoint-specific abstractions are organized under the more granular `endpoint` subpackage. Option C is too broad, and Option D is incorrect since Spring-WS does provide these classes.",
+    "corrected": false,
+    "answer": "A. org.springframework.ws.server.endpoint",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0748",
+    "topic": "Java OOP",
+    "question": "Which method is used to gracefully shutdown all the bean processes after closing the spring container?",
+    "options": [
+      "A. shutdownHook",
+      "B. destroy method",
+      "C. none of the mentioned",
+      "D. all of the mentioned"
+    ],
+    "answer_index": 0,
+    "explanation": "The `shutdownHook` is the correct method because it registers a JVM shutdown hook with Spring's `ConfigurableApplicationContext` that ensures all bean destruction methods are invoked gracefully when the application terminates, even if the container isn't explicitly closed. While the `destroy` method handles bean-level cleanup, it requires the container to be actively closed, whereas `shutdownHook` operates at the JVM level and guarantees proper shutdown sequencing regardless of how the application exits.",
+    "corrected": false,
+    "answer": "A. shutdownHook",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0749",
+    "topic": "Java OOP",
+    "question": "Which one is the default scope of the beans?",
+    "options": [
+      "A. Prototype",
+      "B. Session",
+      "C. Request",
+      "D. Singleton"
+    ],
+    "answer_index": 3,
+    "explanation": "In Spring Framework, the default scope is Singleton because the container creates only one instance of the bean per application context and reuses it for all subsequent requests. This approach optimizes memory usage and performance by avoiding unnecessary object instantiation, making it the most efficient default for stateless beans.",
+    "corrected": false,
+    "answer": "D. Singleton",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0750",
+    "topic": "Java OOP",
+    "question": "Declaring bean from object properties can be done using:",
+    "options": [
+      "A. PropertyPathFactoryBean",
+      "B. util:constant",
+      "C. None of the mentioned",
+      "D. All of the mentioned"
+    ],
+    "answer_index": 0,
+    "explanation": "PropertyPathFactoryBean is a Spring FactoryBean that evaluates a property path on an object and exposes the resulting value as a bean. It allows you to extract and declare a bean from nested object properties using property path expressions. While util:constant is used for declaring constant values, not object properties, making PropertyPathFactoryBean the correct and specific answer for this use case.",
+    "corrected": false,
+    "answer": "A. PropertyPathFactoryBean",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0751",
+    "topic": "Java OOP",
+    "question": "What are the ways to create custom Property Editors?",
+    "options": [
+      "A. implement PropertyEditor interface",
+      "B. extend PropertyEditorSupport Class",
+      "C. none of the mentioned",
+      "D. all of the mentioned"
+    ],
+    "answer_index": 3,
+    "explanation": "Both approaches are valid for creating custom Property Editors in Java. Implementing the `PropertyEditor` interface directly gives you full control by requiring you to implement all interface methods, while extending `PropertyEditorSupport` provides a convenient abstract base class with default implementations that you can selectively override. Therefore, developers have two legitimate options, making \"all of the mentioned\" the correct answer.",
+    "corrected": false,
+    "answer": "D. all of the mentioned",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0752",
+    "topic": "Java OOP",
+    "question": "Spring Web MVC follows the 'Open for extension, closed for modification' principle. Many methods in core classes are marked final.",
+    "options": [
+      "A. true",
+      "B. false"
+    ],
+    "answer_index": 1,
+    "explanation": "Spring Web MVC marks many core class methods as `final` to prevent unintended overrides that could break the framework's internal contracts and expected behavior patterns. This design enforces extension through composition and dependency injection (Spring's preferred mechanisms) rather than inheritance, adhering to the Open/Closed Principle by allowing framework extension via configuration and custom beans while protecting critical implementation details from modification.",
+    "corrected": false,
+    "answer": "B. false",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0754",
+    "topic": "Java OOP",
+    "question": "How does the Spring DispatcherServlet support returning the last modification date as specified by the Servlet API?",
+    "options": [
+      "A. By implementing the LastModified interface",
+      "B. By implementing the LastSessionModified interface",
+      "C. By implementing the LastDateModified interface",
+      "D. By implementing the LastModifiedDate interface"
+    ],
+    "answer_index": 0,
+    "explanation": "The `LastModified` interface is part of the Servlet API and provides the `getLastModified()` method that handlers can implement to return the last modification time of a resource. Spring's `DispatcherServlet` checks if a handler implements this interface and uses the returned timestamp to set the `Last-Modified` HTTP response header, enabling HTTP caching mechanisms like conditional GET requests (304 Not Modified responses). The other options are not part of the standard Servlet API.",
+    "corrected": false,
+    "answer": "A. By implementing the LastModified interface",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0755",
+    "topic": "Java OOP",
+    "question": "@RequestMapping annotation is used to map an HTTP request method (GET or POST) to a specific controller class or method.",
+    "options": [
+      "A. false",
+      "B. true"
+    ],
+    "answer_index": 1,
+    "explanation": "The @RequestMapping annotation in Spring Framework explicitly maps HTTP requests to handler methods or controller classes by specifying the URL path and HTTP method (GET, POST, PUT, DELETE, etc.). When a request matches the specified path and method criteria, Spring routes it to the annotated controller method for processing. This is a core Spring MVC mechanism for routing incoming HTTP requests.",
+    "corrected": false,
+    "answer": "B. true",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0756",
+    "topic": "Java OOP",
+    "question": "Which exception class is related to all exceptions thrown in Spring applications?",
+    "options": [
+      "A. DataAccessException",
+      "B. ArrayIndexOutOfBound",
+      "C. NullPointerException",
+      "D. SpringException"
+    ],
+    "answer_index": 0,
+    "explanation": "DataAccessException is the root exception class for all data access-related exceptions in Spring's data access framework. It serves as a checked exception hierarchy that wraps vendor-specific database exceptions, providing a consistent and database-agnostic way to handle data access errors across Spring applications. This abstraction allows developers to catch Spring-specific data access issues without coupling to underlying persistence technologies.",
+    "corrected": false,
+    "answer": "A. DataAccessException",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0757",
+    "topic": "Java OOP",
+    "question": "Which of the following is true for Controllers in Spring?",
+    "options": [
+      "A. An abstract class",
+      "B. An interface",
+      "C. Concrete class",
+      "D. Final class"
+    ],
+    "answer_index": 2,
+    "explanation": "'An interface' is the correct answer per language specification.",
+    "corrected": false,
+    "answer": "C. Concrete class",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0758",
+    "topic": "Java OOP",
+    "question": "Annotations work as metadata for classes and Spring uses annotations as an alternative to XML for declarative configuration.",
+    "options": [
+      "A. false",
+      "B. true"
+    ],
+    "answer_index": 1,
+    "explanation": "Annotations in Spring serve as metadata markers that provide configuration information directly within Java code. Spring's annotation-driven configuration (such as `@Component`, `@Autowired`, `@Bean`, etc.) eliminates the need for XML-based bean definitions and wiring, offering a more modern and less verbose alternative to traditional XML configuration files.",
+    "corrected": false,
+    "answer": "B. true",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0759",
+    "topic": "Java OOP",
+    "question": "Which of the following specify the points where weaving can be applied?",
+    "options": [
+      "A. Compile Time , Classload Time , load time",
+      "B. Compile Time , Classload Time , Runtime",
+      "C. Compile Time and Runtime",
+      "D. Compile Time and Classload Time"
+    ],
+    "answer_index": 1,
+    "explanation": "'Compile Time , Classload Time , Runtime' is the correct answer per language specification.",
+    "corrected": false,
+    "answer": "B. Compile Time , Classload Time , Runtime",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0760",
+    "topic": "Java OOP",
+    "question": "In which layer is the @Controller annotation used?",
+    "options": [
+      "A. Business layer",
+      "B. Service layer",
+      "C. Presentation layer",
+      "D. Session layer"
+    ],
+    "answer_index": 2,
+    "explanation": "The `@Controller` annotation is used in the presentation layer because it marks classes that handle HTTP requests and prepare responses for the user interface. Controllers act as the entry point between the client and the application, directly managing request routing and view rendering. This separates user-facing concerns from business logic, which resides in service and business layers.",
+    "corrected": false,
+    "answer": "C. Presentation layer",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0762",
+    "topic": "Java OOP",
+    "question": "Which of the following correctly mentions the Autowire types?",
+    "options": [
+      "A. None of these",
+      "B. byName , byMethod , constructor and autodetect",
+      "C. byName , byType , destructor and autodetect",
+      "D. byName , byType , constructor and autodetect"
+    ],
+    "answer_index": 3,
+    "explanation": "'byName , byType , constructor and autodetect' is the correct answer per language specification.",
+    "corrected": false,
+    "answer": "D. byName , byType , constructor and autodetect",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0763",
+    "topic": "Java OOP",
+    "question": "Which advice is executed only when joint point returns or throws an exception?",
+    "options": [
+      "A. @Before",
+      "B. @After",
+      "C. @AfterReturning",
+      "D. @AfterThrowing"
+    ],
+    "answer_index": 1,
+    "explanation": "Correction Needed\n\nThe correct answer should be D. @AfterThrowing, not C.\n\nExplanation: @AfterThrowing advice executes only when a joint point throws an exception. @AfterReturning executes only when a method returns normally without throwing an exception. @After runs regardless of whether an exception occurs or the method returns normally.",
+    "corrected": false,
+    "answer": "B. @After",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0764",
+    "topic": "Java OOP",
+    "question": "Special compiler used during weaving.",
+    "options": [
+      "A. jvm",
+      "B. gcc",
+      "C. ajc",
+      "D. none of the mentioned"
+    ],
+    "answer_index": 2,
+    "explanation": "AJC (AspectJ Compiler) is the specialized compiler used during the weaving process in AspectJ, which is a framework for aspect-oriented programming on top of Java. AJC compiles aspect code and weaves it into Java classes by transforming bytecode or source code, integrating cross-cutting concerns like logging, security, and transactions. JVM and GCC are general-purpose runtime environments and compilers respectively, making them unsuitable for the specific task of aspect weaving.",
+    "corrected": false,
+    "answer": "C. ajc",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0765",
+    "topic": "Java OOP",
+    "question": "How to inject Spring bean into domain objects?",
+    "options": [
+      "A. AOP",
+      "B. XML",
+      "C. AspectJ",
+      "D. Java Based"
+    ],
+    "answer_index": 2,
+    "explanation": "Java-based configuration (using `@Component`, `@Autowired`, and `@Configuration` annotations) is the most direct and practical method for injecting Spring beans into domain objects. While AOP and AspectJ can technically facilitate injection through aspect-oriented techniques, they are indirect approaches; Java-based configuration provides explicit, type-safe dependency injection that is the standard Spring practice for this use case. XML configuration is also viable but less modern compared to Java-based approaches in contemporary Spring applications.",
+    "corrected": false,
+    "answer": "C. AspectJ",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0766",
+    "topic": "Java OOP",
+    "question": "Method used to process bean before initialization callback.",
+    "options": [
+      "A. scope",
+      "B. postProcessAfterInitialization()",
+      "C. postProcessBeforeInitialization()",
+      "D. its own constructor"
+    ],
+    "answer_index": 2,
+    "explanation": "The `postProcessBeforeInitialization()` method is part of the `BeanPostProcessor` interface and is explicitly invoked by the Spring container before any initialization callbacks (like `@PostConstruct` or `InitializingBean.afterPropertiesSet()`) are executed on a bean. This allows custom processing logic to modify the bean instance right before initialization occurs, making it the correct method for pre-initialization processing. The other options either occur at different lifecycle stages (scope defines bean lifecycle, constructor is before dependency injection, and `postProcessAfterInitialization()` runs after initialization).",
+    "corrected": false,
+    "answer": "C. postProcessBeforeInitialization()",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0767",
+    "topic": "Java OOP",
+    "question": "Which attribute is used to set the scope of the bean?",
+    "options": [
+      "A. setScope",
+      "B. scope",
+      "C. getScope",
+      "D. none of the mentioned"
+    ],
+    "answer_index": 1,
+    "explanation": "The `scope` attribute is used in bean configuration (typically in XML or annotations) to define the lifecycle and visibility of a bean instance. Methods like `setScope()` and `getScope()` are programmatic accessors, but the actual configuration attribute recognized by Spring or other bean frameworks is `scope`. This attribute accepts values like \"singleton,\" \"prototype,\" \"request,\" \"session,\" etc., which determine how and when the bean is instantiated and shared.",
+    "corrected": false,
+    "answer": "B. scope",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0768",
+    "topic": "Java OOP",
+    "question": "Which attribute is used to specify classname of the bean?",
+    "options": [
+      "A. name",
+      "B. id",
+      "C. class",
+      "D. constructor-args"
+    ],
+    "answer_index": 2,
+    "explanation": "The `class` attribute in a Spring bean definition specifies the fully qualified Java class name that will be instantiated by the container. The `id` and `name` attributes only identify the bean instance, while `constructor-args` defines constructor parameters, neither of which specifies the actual class type.",
+    "corrected": false,
+    "answer": "C. class",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0769",
+    "topic": "Java OOP",
+    "question": "Which tag is allowed for static field?",
+    "options": [
+      "A. util:constant",
+      "B. list",
+      "C. set",
+      "D. constructor-args"
+    ],
+    "answer_index": 0,
+    "explanation": "The `util:constant` tag is specifically designed in Spring to inject static field values into bean properties. It retrieves the value of a public static final field and assigns it to the target property, making it the dedicated mechanism for static field initialization in Spring XML configuration. The other options (list, set, constructor-args) are used for collection types or constructor parameters, not for accessing static fields.",
+    "corrected": false,
+    "answer": "A. util:constant",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0770",
+    "topic": "Java OOP",
+    "question": "Element used to specify access attributes for bean methods.",
+    "options": [
+      "A. security:protect",
+      "B. security:intercept",
+      "C. security:intercept-security",
+      "D. none of the mentioned"
+    ],
+    "answer_index": 0,
+    "explanation": "The `security:protect` element is the standard Spring Security XML namespace configuration used to specify access control attributes and authorization rules for bean methods. It defines which roles or permissions are required to invoke specific methods, integrating method-level security into the Spring bean configuration. The other options (`security:intercept` and `security:intercept-security`) are not valid Spring Security namespace elements.",
+    "corrected": false,
+    "answer": "A. security:protect",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0771",
+    "topic": "Java OOP",
+    "question": "States related to Spring Web flows.",
+    "options": [
+      "A. view",
+      "B. action",
+      "C. decision",
+      "D. all of the mentioned"
+    ],
+    "answer_index": 3,
+    "explanation": "Spring Web Flow defines three core state types that represent different phases of a flow: view states display user interfaces, action states execute business logic or method invocations, and decision states evaluate conditions to determine flow routing. Together, these three state types form the complete set of possible states in Spring Web Flow applications.",
+    "corrected": false,
+    "answer": "D. all of the mentioned",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0772",
+    "topic": "Java OOP",
+    "question": "To enable Spring security for web flows.",
+    "options": [
+      "A. SecurityFlowExecutionListener",
+      "B. SecurityFlowExecution",
+      "C. FlowSecurity",
+      "D. SecurityFlowListener"
+    ],
+    "answer_index": 0,
+    "explanation": "`SecurityFlowExecutionListener` is the correct Spring Security listener component that intercepts and secures web flow executions by implementing the `FlowExecutionListener` interface. It integrates Spring Security's authentication and authorization checks into the Web Flow lifecycle, enabling security context propagation across flow transitions and state changes. The other options are either non-existent classes or incorrectly named components that don't follow Spring Web Flow's naming conventions for security integration.",
+    "corrected": false,
+    "answer": "A. SecurityFlowExecutionListener",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0773",
+    "topic": "Java OOP",
+    "question": "How could you externalize constants from a Spring configuration file or annotation into a .properties file?",
+    "options": [
+      "A. By using the <context:property-placeholder /> tag",
+      "B. By using the <util:constant /> tag",
+      "C. By declaring the ConstantPlaceholderConfigurer bean post processor",
+      "D. By using the c: namespace"
+    ],
+    "answer_index": 0,
+    "explanation": "'By using the <context:property-placeholder /> tag' is correct.",
+    "corrected": false,
+    "answer": "A. By using the <context:property-placeholder /> tag",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0776",
+    "topic": "Java OOP",
+    "question": "By default, XmlViewResolver loads view beans from /WEB-INF/views.xml.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "explanation": "By default, XmlViewResolver loads view beans from `/WEB-INF/views.xml` only if explicitly configured with that location. Without configuration, XmlViewResolver has no default location and requires the `location` property to be explicitly set to specify which XML file to load view bean definitions from. Therefore, the statement is false.",
+    "corrected": false,
+    "answer": "A. True",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0777",
+    "topic": "Java OOP",
+    "question": "Views that can't be resolved by InternalResourceViewResolver.",
+    "options": [
+      "A. redirect",
+      "B. redirect:prefix",
+      "C. redirect:suffix",
+      "D. all of the mentioned"
+    ],
+    "answer_index": 1,
+    "explanation": "InternalResourceViewResolver cannot resolve views prefixed with \"redirect:\" because the redirect prefix is a special instruction to Spring MVC that bypasses the normal view resolution process and instead returns a RedirectView object. The resolver only handles internal resource paths (JSP files, etc.), not redirect directives, making \"redirect\" the only view type it cannot resolve from the given options.",
+    "corrected": false,
+    "answer": "B. redirect:prefix",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0778",
+    "topic": "Java OOP",
+    "question": "To publish a REST service with Spring.",
+    "options": [
+      "A. publishing an application's data as a REST service",
+      "B. accessing data from third-party REST services",
+      "C. none of the mentioned",
+      "D. all of the mentioned"
+    ],
+    "answer_index": 0,
+    "explanation": "'publishing an application's data as a REST service' is correct.",
+    "corrected": false,
+    "answer": "A. publishing an application's data as a REST service",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0781",
+    "topic": "Java OOP",
+    "question": "Annotation which allows the Jaxb2Marshaller to detect a class's fields.",
+    "options": [
+      "A. @XmlRootElement",
+      "B. @XmlRoot",
+      "C. @NotNull",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 0,
+    "explanation": "The `@XmlRootElement` annotation marks a class as the root element of an XML document, enabling Jaxb2Marshaller to recognize and process the class's fields during XML marshalling and unmarshalling operations. Without this annotation, JAXB cannot properly serialize/deserialize the class structure. `@XmlRoot` is not a valid JAXB annotation, and `@NotNull` is a validation annotation unrelated to XML binding.",
+    "corrected": false,
+    "answer": "A. @XmlRootElement",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0782",
+    "topic": "Java OOP",
+    "question": "Considering classes AccountServiceImpl and ClientServiceImpl. What is the result of the pointcut expression execution(* *..AccountServiceImpl.update(..)) && execution(* *..ClientServiceImpl.update(..))?",
+    "options": [
+      "A. No joint point is defined",
+      "B. Matches public update methods of both classes",
+      "C. Matches any update methods of both classes",
+      "D. Matches update methods with one or more arguments"
+    ],
+    "answer_index": 0,
+    "explanation": "The pointcut uses the AND operator (&&) to combine two execution expressions, requiring a single join point to simultaneously match both conditions. Since a method execution can only be from either AccountServiceImpl OR ClientServiceImpl, but not both at the same time, no join point can satisfy both conditions concurrently, resulting in zero matches.",
+    "corrected": false,
+    "answer": "A. No joint point is defined",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0784",
+    "topic": "Java OOP",
+    "question": "What is the name of the bean defined in the following configuration class? Select a single answer.\n@Configuration\npublic class ApplicationConfig {\n@Autowired\nprivate DataSource dataSource;\n@Bean\nClientRepository clientRepository() {\nClientRepository accountRepository = new JpaClientRepository();\naccountRepository.setDataSource(dataSource);\nreturn accountRepository;\n}\n}",
+    "options": [
+      "A. clientRepository",
+      "B. JpaClientRepository",
+      "C. Two beans are defined: a data souce and a repository",
+      "D. accountRepository"
+    ],
+    "answer_index": 0,
+    "explanation": "The @Bean annotation registers a bean using the method name as its default identifier, so the bean is named \"clientRepository\" after the method. The DataSource is injected via @Autowired but is not itself defined as a bean in this class, ruling out option C.",
+    "corrected": false,
+    "answer": "A. clientRepository",
+    "trust": "baseline",
+    "recovered": true,
+    "repair_origin": "source",
+    "options_synthesized": true
+  },
+  {
+    "id": "q0785",
+    "topic": "Java OOP",
+    "question": "Select method signatures that match with the pointcut execution(* com.test.service..*.*(*))",
+    "options": [
+      "A. void com.test.service.MyServiceImpl#transfert(Money amount)",
+      "B. void com.test.service.account.MyServiceImpl#transfert(Money amount)",
+      "C. void com.test.service.MyServiceImpl#transfert(Account account, Money amount)",
+      "D. void com.test.service.account.MyServiceImpl#transfert(Account account, Money amount)"
+    ],
+    "answer_index": 0,
+    "explanation": "'void com.test.service.MyServiceImpl#transfert(Money amount)' is correct.",
+    "corrected": false,
+    "answer": "A. void com.test.service.MyServiceImpl#transfert(Money amount)",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0786",
+    "topic": "Java OOP",
+    "question": "Given the Spring configuration <bean class=\"com.spring.service.BankServiceImpl\" p:bankName=\"NationalBank\">, which statement is correct?",
+    "options": [
+      "A. The p namespace has to be declared",
+      "B. NationalBank is a scalar value",
+      "C. Bean id is bankServiceImpl",
+      "D. The BankServiceImpl references a NationalBank bean"
+    ],
+    "answer_index": 0,
+    "explanation": "The `p:` namespace is a Spring XML shorthand for property injection that must be explicitly declared in the XML schema declarations (typically `xmlns:p=\"http://www.springframework.org/schema/p\"`). Without this declaration, the XML parser cannot recognize and process the `p:bankName` attribute syntax, causing a parsing error.",
+    "corrected": false,
+    "answer": "A. The p namespace has to be declared",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0787",
+    "topic": "Java OOP",
+    "question": "To load root application context at the startup.",
+    "options": [
+      "A. ContextListener",
+      "B. ContextLoader",
+      "C. ContextLoaderListener",
+      "D. ContextEventListener"
+    ],
+    "answer_index": 2,
+    "explanation": "`ContextLoaderListener` is a ServletContextListener that bootstraps the root WebApplicationContext when the web application starts up. It reads the Spring configuration file (typically specified via `contextConfigLocation` in web.xml) and initializes the application context before any servlets are loaded. The other options either don't exist as Spring classes (`ContextListener`, `ContextEventListener`) or serve different purposes (`ContextLoader` is a utility class, not a listener).",
+    "corrected": false,
+    "answer": "C. ContextLoaderListener",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0788",
+    "topic": "Java OOP",
+    "question": "ActionSupport class provides a method to access Spring's application context.",
+    "options": [
+      "A. getWebApplicationContext()",
+      "B. getWebApplication()",
+      "C. getApplicationContext()",
+      "D. contextEventListener()"
+    ],
+    "answer_index": 0,
+    "explanation": "ActionSupport is a Struts 2 class that implements ApplicationContextAware, allowing it to access Spring's WebApplicationContext through the `getWebApplicationContext()` method. This method is specifically designed to return the web-aware Spring application context, distinguishing it from the generic `getApplicationContext()` which would not be available in ActionSupport. The \"Web\" prefix in the method name correctly indicates it handles Spring's web application context rather than a generic application context.",
+    "corrected": false,
+    "answer": "A. getWebApplicationContext()",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0789",
+    "topic": "Java OOP",
+    "question": "XML element to specify property values for scripting bean.",
+    "options": [
+      "A. lang:property",
+      "B. bean:property",
+      "C. script:property",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 0,
+    "explanation": "The `lang:property` element is the correct XML namespace prefix used in scripting frameworks (particularly in Spring Framework's scripting support) to define and inject property values into scripting beans. The `lang:` prefix specifically denotes language-level bean configuration, whereas `bean:property` and `script:property` are non-standard namespace conventions that don't correspond to actual XML schema definitions used in bean property declaration.",
+    "corrected": false,
+    "answer": "A. lang:property",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0790",
+    "topic": "Java OOP",
+    "question": "Annotation used to declare an introduction in Spring AOP.",
+    "options": [
+      "A. Before",
+      "B. After",
+      "C. @DeclareParents",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 2,
+    "explanation": "@DeclareParents is used in Spring AOP to introduce new methods and interfaces to existing classes at runtime, effectively declaring parent types for a target class. The other options (@Before and @After) are advice annotations that define when to apply cross-cutting concerns, not what to introduce. This annotation enables aspect-oriented introduction of new functionality without modifying the original class definition.",
+    "corrected": false,
+    "answer": "C. @DeclareParents",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0791",
+    "topic": "Java OOP",
+    "question": "Is the following pointcut expression correct? execution(* ArithmeticCalculator.*(..))",
+    "options": [
+      "A. Yes",
+      "B. No",
+      "C. If every target class is in same package",
+      "D. Depends where target class is located"
+    ],
+    "answer_index": 3,
+    "explanation": "The pointcut `execution(* ArithmeticCalculator.*(..))` lacks a package qualifier, so it assumes `ArithmeticCalculator` is in the same package as the class where the pointcut is declared. If `ArithmeticCalculator` is in a different package, the expression will fail to resolve correctly unless the fully qualified class name (e.g., `com.example.ArithmeticCalculator`) is used. Therefore, the expression is only correct when the target class shares the same package as the declaring class.",
+    "corrected": false,
+    "answer": "D. Depends where target class is located",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0792",
+    "topic": "Java OOP",
+    "question": "DAO methods require access to the session factory, which can be injected by:",
+    "options": [
+      "A. a setter method",
+      "B. constructor argument",
+      "C. none of the mentioned",
+      "D. all of the mentioned"
+    ],
+    "answer_index": 3,
+    "explanation": "The session factory can be injected into DAO methods through multiple dependency injection mechanisms: constructor injection (B) establishes the dependency at object creation time ensuring it's always available, setter injection (A) allows flexible configuration after instantiation, and both approaches are valid design patterns in Spring and similar frameworks. Therefore, all mentioned options (D) represent legitimate ways to provide the session factory to DAO instances.",
+    "corrected": false,
+    "answer": "D. all of the mentioned",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0793",
+    "topic": "Java OOP",
+    "question": "Which Java Collection types can be injected in a Spring application?",
+    "options": [
+      "A. None of these",
+      "B. Using list, set, map or collection tag",
+      "C. Using list, set, props or collection tag",
+      "D. Using list, set, map or props tag"
+    ],
+    "answer_index": 3,
+    "explanation": "Spring XML configuration provides four dedicated tags for injecting Java Collection types: `<list>` for List implementations, `<set>` for Set implementations, `<map>` for Map implementations, and `<props>` for Properties (a special case of Map with String keys/values). The `<props>` tag is specifically designed for injecting java.util.Properties objects, which is why it appears in the correct answer instead of a generic \"collection\" tag.",
+    "corrected": false,
+    "answer": "D. Using list, set, map or props tag",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0794",
+    "topic": "Java OOP",
+    "question": "What are the different types of AutoProxying?",
+    "options": [
+      "A. BeanNameAutoProxyCreator",
+      "B. DefaultAdvisorAutoProxyCreator",
+      "C. Metadata autoproxying",
+      "D. All of the above"
+    ],
+    "answer_index": 3,
+    "explanation": "AutoProxying Types Explanation\n\nSpring Framework provides three distinct autoproxying mechanisms: BeanNameAutoProxyCreator matches bean names to apply advisors, DefaultAdvisorAutoProxyCreator automatically applies all registered advisors to matching beans, and Metadata autoproxying uses annotations or other metadata to determine proxy candidates. Since all three are valid and distinct approaches within Spring's autoproxying architecture, the answer encompasses all available options.",
+    "corrected": false,
+    "answer": "D. All of the above",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0795",
+    "topic": "Java OOP",
+    "question": "What are the various editors used in Spring?",
+    "options": [
+      "A. PropertyEditor , URLEditor",
+      "B. ClassEditor, CustomDateEditor, StringTrimmerEditor",
+      "C. FileEditor, LocaleEditor, StringArrayPropertyEditor",
+      "D. All of the above"
+    ],
+    "answer_index": 3,
+    "explanation": "Spring provides multiple built-in PropertyEditor implementations for type conversion and data binding across different data types. All the editors listed in options A, B, and C (PropertyEditor, URLEditor, ClassEditor, CustomDateEditor, StringTrimmerEditor, FileEditor, LocaleEditor, and StringArrayPropertyEditor) are actual Spring framework components used to convert string values to their respective object types during property binding. Therefore, option D is correct as it encompasses all available Spring editors.",
+    "corrected": false,
+    "answer": "D. All of the above",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0796",
+    "topic": "Java OOP",
+    "question": "How to use <ref> in Spring framework?",
+    "options": [
+      "A. <ref> is used with bean id",
+      "B. <ref> is used with string values",
+      "C. <ref> is used to inject property values directly without bean lookup",
+      "D. <ref> is used to define a new bean class inline within the parent bean"
+    ],
+    "answer_index": 0,
+    "explanation": "Why Option A is Correct\n\nThe `<ref>` element in Spring XML configuration is specifically designed to reference an existing bean by its `id` or `name` attribute, establishing a dependency injection relationship between beans. It performs a bean lookup in the container and injects the resolved bean instance into the target property, which is fundamentally different from the other options—`<value>` handles string literals (B), `<ref>` doesn't bypass bean lookup (C), and `<bean>` is used for inline bean definitions, not `<ref>` (D).",
+    "corrected": false,
+    "answer": "A. <ref> is used with bean id",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0797",
+    "topic": "Java OOP",
+    "question": "How to define Inner bean in Spring?",
+    "options": [
+      "A. Use <property/> only",
+      "B. Use <property/> or <constructor-arg/>",
+      "C. Use <bean-ref/> only",
+      "D. Use <inner-bean/> tag explicitly"
+    ],
+    "answer_index": 1,
+    "explanation": "An inner bean in Spring is defined by declaring a `<bean>` element directly within either a `<property/>` or `<constructor-arg/>` tag, rather than as a top-level bean with an id attribute. This allows the bean to be instantiated and injected inline without needing a separate bean definition or reference, making it useful for beans that are only used in one place.",
+    "corrected": false,
+    "answer": "B. Use <property/> or <constructor-arg/>",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0798",
+    "topic": "Java OOP",
+    "question": "Which property is replaced by c-namespace in Spring?",
+    "options": [
+      "A. <property/>",
+      "B. <constructor-arg>",
+      "C. <property-namespace/>",
+      "D. <bean-arg/>"
+    ],
+    "answer_index": 1,
+    "explanation": "The c-namespace is a shorthand syntax introduced in Spring 3.1 for constructor injection that replaces the verbose `<constructor-arg>` XML element. It allows you to specify constructor arguments more concisely using attribute notation (e.g., `c:propertyName=\"value\"`) instead of nested `<constructor-arg>` tags. This makes XML configuration cleaner while maintaining the same constructor-based dependency injection functionality.",
+    "corrected": false,
+    "answer": "B. <constructor-arg>",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0799",
+    "topic": "Java OOP",
+    "question": "By default a bean is eagerly initialized in Spring.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "explanation": "By default, Spring instantiates singleton beans eagerly during application startup (when the ApplicationContext is created) rather than waiting until they're first requested. This allows Spring to detect configuration errors and dependency issues immediately at startup time, rather than later at runtime when a bean is actually needed.",
+    "corrected": false,
+    "answer": "A. True",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0800",
+    "topic": "Java OOP",
+    "question": "By default a bean is not autowired.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "explanation": "By default, beans in Spring are autowired when the `@Autowired` annotation is applied to a field, constructor, or setter method, or when using component scanning with `@Component`, `@Service`, `@Repository`, etc. Spring's default behavior is to perform autowiring for annotated beans, making the statement false.",
+    "corrected": false,
+    "answer": "A. True",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0802",
+    "topic": "Java OOP",
+    "question": "InitializingBean and DisposableBean are used to customize the nature of bean in Spring.",
+    "options": [
+      "A. Yes",
+      "B. No",
+      "C. Only DisposableBean customizes bean nature; InitializingBean is unrelated to lifecycle",
+      "D. Yes, but only when using Spring Boot auto-configuration"
+    ],
+    "answer_index": 0,
+    "explanation": "InitializingBean and DisposableBean are Spring lifecycle interfaces that allow beans to customize their initialization and destruction behavior respectively. InitializingBean's `afterPropertiesSet()` method executes after dependency injection, while DisposableBean's `destroy()` method executes during container shutdown, making both essential for controlling bean lifecycle behavior.",
+    "corrected": false,
+    "answer": "A. Yes",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0803",
+    "topic": "Java OOP",
+    "question": "How to shutdown the Spring IoC container gracefully in non-web applications?",
+    "options": [
+      "A. Using shutdownNow()",
+      "B. registerShutdownHook()",
+      "C. Using close()",
+      "D. Using destroyBean()"
+    ],
+    "answer_index": 1,
+    "explanation": "`registerShutdownHook()` is the recommended approach because it registers a JVM shutdown hook that ensures the Spring container gracefully closes when the application terminates, properly invoking all bean destruction callbacks and resource cleanup. While `close()` works, it requires manual invocation, and `shutdownNow()` and `destroyBean()` are either not Spring-specific container methods or don't provide full container shutdown semantics in non-web applications.",
+    "corrected": false,
+    "answer": "B. registerShutdownHook()",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0805",
+    "topic": "Java OOP",
+    "question": "How to reload changes on Spring Boot without restarting the server?",
+    "options": [
+      "A. spring-boot-devtools dependency",
+      "B. spring-boot-test dependency",
+      "C. spring-boot-web dependency",
+      "D. spring-boot-jasper dependency"
+    ],
+    "answer_index": 0,
+    "explanation": "The spring-boot-devtools dependency enables automatic application restarts by monitoring classpath resources for changes during development. When files are modified, DevTools triggers a fast restart of the application context, allowing developers to see changes immediately without manually stopping and restarting the server. The other dependencies serve different purposes: spring-boot-test is for testing, spring-boot-web provides web capabilities, and spring-boot-jasper handles JSP compilation.",
+    "corrected": false,
+    "answer": "A. spring-boot-devtools dependency",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0807",
+    "topic": "Java OOP",
+    "question": "LoggerInterceptor implementing HandlerInterceptor overrides which methods?",
+    "options": [
+      "A. preHandle(), postHandle(), afterCompletion()",
+      "B. preHandlerBean(), postHandlerBean(), afterCompletion()",
+      "C. PreProcessHandler(), PostProcessHandler(), afterCompletion()",
+      "D. PreHandler(), PostHandler(), afterCompletion()"
+    ],
+    "answer_index": 0,
+    "explanation": "The HandlerInterceptor interface in Spring MVC defines exactly three methods: preHandle(), postHandle(), and afterCompletion(), which control request lifecycle stages. LoggerInterceptor must override these specific method signatures to properly hook into the request processing pipeline before, after, and upon completion of handler execution.",
+    "corrected": false,
+    "answer": "A. preHandle(), postHandle(), afterCompletion()",
+    "trust": "baseline",
+    "recovered": true,
+    "repair_origin": "derived",
+    "options_synthesized": true
+  },
+  {
+    "id": "q0808",
+    "topic": "Java OOP",
+    "question": "Which annotation represents an advice to be executed after the method execution only if method exits by throwing an exception?",
+    "options": [
+      "A. @Before",
+      "B. @After",
+      "C. @Around",
+      "D. @AfterThrowing"
+    ],
+    "answer_index": 3,
+    "explanation": "The `@AfterThrowing` annotation is specifically designed to intercept method execution when an exception is thrown, allowing advice to execute only in that exceptional scenario. Unlike `@After` which runs regardless of how a method exits, `@AfterThrowing` provides targeted exception handling within the AOP framework, enabling cross-cutting concerns like logging or exception translation.",
+    "corrected": false,
+    "answer": "D. @AfterThrowing",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0809",
+    "topic": "Java OOP",
+    "question": "What attribute is added in the bean.xml to reduce or eliminate the need of <property> and <constructor-arg>?",
+    "options": [
+      "A. Autodiscovery",
+      "B. Autowire",
+      "C. Scope",
+      "D. Auto-detect"
+    ],
+    "answer_index": 1,
+    "explanation": "The `autowire` attribute in Spring's bean.xml enables automatic dependency injection by allowing the container to resolve and inject bean dependencies without explicitly declaring them via `<property>` or `<constructor-arg>` elements. When autowire is configured (e.g., `autowire=\"byType\"` or `autowire=\"byName\"`), Spring automatically matches and injects dependencies based on type or name matching, significantly reducing XML configuration boilerplate.",
+    "corrected": false,
+    "answer": "B. Autowire",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0810",
+    "topic": "Java OOP",
+    "question": "Which of the following examples summarizes Program to an interface rather than an implementation?",
+    "options": [
+      "A. Map m = new HashMap();",
+      "B. ArrayList list = new ArrayList();",
+      "C. ArrayList<Integer> = new ArrayList<Integer>();",
+      "D. String s = \"HelloWorld\";"
+    ],
+    "answer_index": 0,
+    "explanation": "'ArrayList<Integer> = new ArrayList<Integer>();' is the correct answer per language specification.",
+    "corrected": false,
+    "answer": "A. Map m = new HashMap();",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0811",
+    "topic": "Java OOP",
+    "question": "If any of the beans implements the BeanPostProcessor interface, Spring will call which of these methods?",
+    "options": [
+      "A. processBeforeInitialization()",
+      "B. BeanPostProcessor()",
+      "C. postProcessInterface()",
+      "D. postProcessBeforeInitialization()"
+    ],
+    "answer_index": 3,
+    "explanation": "The `BeanPostProcessor` interface defines two callback methods that Spring invokes during bean lifecycle: `postProcessBeforeInitialization()` (called before `@PostConstruct` or `init-method`) and `postProcessAfterInitialization()` (called after). Option D uses the correct method name with the proper naming convention; the other options are either non-existent methods (A, C) or refer to the interface itself rather than a method (B).",
+    "corrected": false,
+    "answer": "D. postProcessBeforeInitialization()",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0812",
+    "topic": "Java OOP",
+    "question": "Which Collections elements does Spring support?",
+    "options": [
+      "A. List, hashmap, arraylist, and set",
+      "B. List, props, hashmaps, and arraylist",
+      "C. List, set, map, and props",
+      "D. Hashmaps, arraylist, list, and treemap"
+    ],
+    "answer_index": 2,
+    "explanation": "Spring's dependency injection container supports the four core Java collection interfaces: List (ordered collections), Set (unique elements), Map (key-value pairs), and Properties (a specialized Map for string key-value pairs commonly used in configuration). Options A, B, and D incorrectly include concrete implementations (HashMap, ArrayList) rather than the abstract collection types that Spring actually configures, and they omit or misname Properties as \"props.\"",
+    "corrected": false,
+    "answer": "C. List, set, map, and props",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0813",
+    "topic": "Java OOP",
+    "question": "What will be the result if you use Web-aware Spring Application Context scopes in a regular Spring IoC container?",
+    "options": [
+      "A. It will return nothing.",
+      "B. It will return a NullPointer Exception",
+      "C. It will return a IllegalStateException",
+      "D. It will work correctly."
+    ],
+    "answer_index": 2,
+    "explanation": "Web-aware scopes (request, session, application) rely on `RequestContextHolder` to access the current HTTP request context, which is only populated by Spring's web infrastructure (DispatcherServlet). In a regular IoC container without this context, the framework silently falls back to singleton scope behavior, effectively returning the bean without raising an error, though the web-scoping directives are ignored.",
+    "corrected": false,
+    "answer": "C. It will return a IllegalStateException",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0814",
+    "topic": "Java OOP",
+    "question": "Which Bean scopes are valid only in the context of a web-aware Spring Application Context?",
+    "options": [
+      "A. Singleton and Prototype",
+      "B. Session, Global Session, and Request",
+      "C. Singleton, Prototype, Request, and Session",
+      "D. Session, Singleton, and Global Session"
+    ],
+    "answer_index": 1,
+    "explanation": "Session, Global Session, and Request scopes are web-specific because they depend on HTTP request/session lifecycle concepts that only exist within a web application context. Singleton and Prototype scopes are general-purpose and work in any Spring application context (web or non-web), making them universally valid regardless of the container type.",
+    "corrected": false,
+    "answer": "B. Session, Global Session, and Request",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0815",
+    "topic": "Java OOP",
+    "question": "To use java.util.List, what is the Spring Collections element that you need?",
+    "options": [
+      "A. <list>",
+      "B. <lists>",
+      "C. util:list",
+      "D. <array>"
+    ],
+    "answer_index": 0,
+    "explanation": "The `<list>` element is the correct Spring XML configuration element for injecting `java.util.List` dependencies. Spring's bean definition language uses lowercase XML tags (like `<list>`, `<map>`, `<set>`) to define collection types, following XML naming conventions and Spring's established schema. The `util:list` namespace would require an additional namespace declaration and is used for defining standalone list beans, not for direct injection into bean properties.",
+    "corrected": false,
+    "answer": "A. <list>",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0816",
+    "topic": "HTML/CSS",
+    "question": "Which of the below are benefits of using DI?",
+    "options": [
+      "A. Tight coupling",
+      "B. Loose coupling",
+      "C. Easy testing",
+      "D. Removing run time error"
+    ],
+    "answer_index": 1,
+    "explanation": "Why B is Correct\n\nDependency Injection removes hard dependencies by injecting required objects rather than having classes create them internally, resulting in loose coupling between components. This allows classes to depend on abstractions (interfaces) instead of concrete implementations, making the system more flexible and maintainable. While DI also facilitates easy testing (option C), loose coupling is its primary and most fundamental benefit.",
+    "corrected": false,
+    "answer": "B. Loose coupling",
+    "trust": "baseline"
   }
 ]
