@@ -1,0 +1,956 @@
+[
+  {
+    "id": "q0817",
+    "topic": "Java OOP",
+    "question": "What is the difference between ClassPathXMLApplicationContext and FilePathXMLApplicationContext?",
+    "options": [
+      "A. First one reads from application class path and second one reads from absolute file path.",
+      "B. First one reads from application class path and second one reads from relative file path.",
+      "C. First one reads from relative application class path and second one reads from absolute file path.",
+      "D. None of the above."
+    ],
+    "answer_index": 0,
+    "explanation": "'First one reads from relative application class path and second one reads from absolute file path.' is correct.",
+    "corrected": false,
+    "answer": "A. First one reads from application class path and second one reads from absolute file path.",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0818",
+    "topic": "Java OOP",
+    "question": "The Dependency Look up is a methodology where we get the resource after demand. Types of Dependency Look up include:",
+    "options": [
+      "A. Factory Method",
+      "B. JNDI Method",
+      "C. Key Word Method",
+      "D. All of the above"
+    ],
+    "answer_index": 3,
+    "explanation": "Dependency Lookup encompasses multiple methodologies for retrieving resources on-demand, and all three options represent valid approaches: Factory Method creates objects through factory classes, JNDI Method locates resources through Java Naming and Directory Interface, and Key Word Method uses predefined keywords to identify resources. Since the question asks for types of Dependency Lookup methodology, all three represent legitimate implementation patterns within this broader pattern.",
+    "corrected": false,
+    "answer": "D. All of the above",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0819",
+    "topic": "Java OOP",
+    "question": "Which of the following declarations of inner Beans are correct?\n\nA.\n<bean id=\"outerBean\" class=\"...\">\n  <property name=\"target\">\n    <bean id=\"innerBean\" class=\"...\"/>\n  </property>\n</bean>\n\nB.\n<bean id=\"outerBean\" class=\"...\">\n  <bean id=\"innerBean\" class=\"...\">\n    <property name=\"target\">\n    </property>\n  </bean>\n</bean>\n\nC.\n<bean id=\"outerBean\" class=\"...\">\n  <bean id=\"innerBean\" class=\"...\">\n    <property name=\"target\">\n    </property>\n  </bean>\n</bean>\n\nD.\n<bean id=\"outerBean\" class=\"...\">\n  <property name=\"target\">\n    <bean class=\"...\">\n      <property name=\"name\" value=\"HelloWorld\"/>\n    </bean>\n  </property>\n</bean>",
+    "options": [
+      "A. A and B",
+      "B. B and C",
+      "C. B and D",
+      "D. A and D"
+    ],
+    "answer_index": 3,
+    "explanation": "Options A and D correctly nest the inner bean inside a `<property>` element, which is the required Spring syntax for defining inner beans as property values. Options B and C incorrectly place the inner bean directly inside the outer bean tag without a `<property>` wrapper, violating Spring's XML schema for inner bean declarations.",
+    "corrected": false,
+    "answer": "D. A and D",
+    "trust": "baseline",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "id": "q0820",
+    "topic": "Java OOP",
+    "question": "When do you use Dependency Injection?",
+    "options": [
+      "A. DI is very useful for decoupling your system.",
+      "B. DI is most useful when you are aiming for code reuse.",
+      "C. DI helps in designing tightly coupled code.",
+      "D. DI does NOT help in unit testing the code."
+    ],
+    "answer_index": 0,
+    "explanation": "Dependency Injection decouples classes from their dependencies by injecting them from outside rather than having classes create their own dependencies internally. This loose coupling allows components to be independent, swappable, and easier to maintain. Options B, C, and D are incorrect because DI is not primarily about code reuse, it actually promotes loose coupling (not tight coupling), and it significantly improves unit testing by allowing mock dependencies to be injected.",
+    "corrected": false,
+    "answer": "A. DI is very useful for decoupling your system.",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0821",
+    "topic": "Java OOP",
+    "question": "Which is the main component in Spring Web MVC?",
+    "options": [
+      "A. Faces Servlet",
+      "B. Action Servlet",
+      "C. View Renderer Servlet",
+      "D. Dispatcher Servlet"
+    ],
+    "answer_index": 3,
+    "explanation": "The DispatcherServlet is the central front controller in Spring Web MVC that receives all incoming HTTP requests and routes them to appropriate handlers (controllers) based on URL mappings and configuration. It orchestrates the entire request-response cycle, including view resolution and exception handling, making it the core component that enables the MVC pattern in Spring. The other options are either specific to JSF (Faces Servlet) or legacy frameworks (Action Servlet from Struts), not Spring.",
+    "corrected": false,
+    "answer": "D. Dispatcher Servlet",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0822",
+    "topic": "Java OOP",
+    "question": "What annotation wiring element is added to scan packages to find and register beans within the Application Context?",
+    "options": [
+      "A. <context:annotation-config/>",
+      "B. <context:annotation-scan/>",
+      "C. <context:component-config/>",
+      "D. <context:component-scan>"
+    ],
+    "answer_index": 3,
+    "explanation": "The `<context:component-scan>` element is the correct XML configuration directive that enables Spring to automatically discover and register beans by scanning specified packages for classes annotated with `@Component`, `@Service`, `@Repository`, `@Controller`, and other stereotype annotations. While `<context:annotation-config/>` only processes annotations on already-registered beans, `<context:component-scan>` performs the initial bean detection and registration, making it the appropriate choice for finding and registering beans throughout the Application Context.",
+    "corrected": false,
+    "answer": "D. <context:component-scan>",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0823",
+    "topic": "Java OOP",
+    "question": "Spring handles object creation in order to be non-invasive. Can you identify which definition creates a spring-managed object?",
+    "options": [
+      "A. String myObj;",
+      "B. @Autowired private String myObj;",
+      "C. private String myObj = new String(\"spring\");",
+      "D. @Spring String myObj=null;"
+    ],
+    "answer_index": 1,
+    "explanation": "Actually, the provided answer is incorrect. The correct answer should be B. @Autowired private String myObj;\n\nOption B uses the `@Autowired` annotation, which explicitly tells Spring to manage the object creation and dependency injection. Option C (`new String(\"spring\")`) is manually instantiated by the developer, not Spring-managed—Spring's non-invasive approach means it doesn't require manual `new` keyword usage when Spring is responsible for object creation.",
+    "corrected": false,
+    "answer": "B. @Autowired private String myObj;",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0824",
+    "topic": "Java OOP",
+    "question": "How many types of autowiring modes are supported in Spring?",
+    "options": [
+      "A. Three",
+      "B. Five",
+      "C. Six",
+      "D. Four"
+    ],
+    "answer_index": 1,
+    "explanation": "Spring Autowiring Modes Explanation\n\nSpring supports five autowiring modes: no, byName, byType, constructor, and autodetect. Each mode determines how Spring resolves and injects dependencies into beans—either by disabling autowiring entirely, matching bean names, matching bean types, using constructor parameters, or automatically detecting the best strategy. These modes provide flexibility in how dependency injection is configured within the Spring container.",
+    "corrected": false,
+    "answer": "B. Five",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0825",
+    "topic": "Java OOP",
+    "question": "The use of Autodiscovery and Autowire will reduce the amount of _________.",
+    "options": [
+      "A. Java code generated",
+      "B. Methods generated",
+      "C. XML Spring configurations",
+      "D. <bean> elements"
+    ],
+    "answer_index": 3,
+    "explanation": "Autodiscovery (component scanning) and Autowire are Spring features that automatically detect and inject beans without explicit configuration. While they reduce XML configuration overall, their primary benefit is eliminating the need to declare individual `<bean>` elements in XML files—each autowired class essentially replaces what would have been a separate `<bean>` declaration. Java code, methods, and total XML configuration are not fundamentally reduced by these features; only the explicit bean element declarations are.",
+    "corrected": false,
+    "answer": "D. <bean> elements",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0826",
+    "topic": "HTML/CSS",
+    "question": "Dependency Injection (DI) or Inversion of Control (IOC) is based on which Hollywood principle?",
+    "options": [
+      "A. Do not call us. We will call you.",
+      "B. Understand the problem first.",
+      "C. The customer is always right.",
+      "D. What you see is what you get."
+    ],
+    "answer_index": 0,
+    "explanation": "Dependency Injection and Inversion of Control reverse the traditional control flow where classes actively request their dependencies. Instead, the framework or container injects dependencies into classes, meaning classes don't call for what they need—the system calls and provides them. This \"Hollywood Principle\" encapsulates the core concept that the DI/IoC container controls object creation and dependency resolution, not the objects themselves.",
+    "corrected": false,
+    "answer": "A. Do not call us. We will call you.",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0827",
+    "topic": "Java OOP",
+    "question": "From where does the Spring container get its instructions?",
+    "options": [
+      "A. Properties File",
+      "B. Spring JARS",
+      "C. XML File",
+      "D. Annotations"
+    ],
+    "answer_index": 2,
+    "explanation": "The Spring container historically receives its primary configuration instructions from XML files (typically `applicationContext.xml`), which define bean definitions, dependencies, and wiring. While modern Spring also supports annotations and Java-based configuration, XML files remain the traditional and foundational mechanism for providing explicit configuration metadata to the container. Properties files are used for external configuration values, not container instructions, and Spring JARs are just libraries without configuration content.",
+    "corrected": false,
+    "answer": "C. XML File",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0828",
+    "topic": "JavaScript",
+    "question": "The use of the prototype scope is recommended for ______ type of be",
+    "options": [
+      "A. Stateless",
+      "B. Stateful",
+      "C. Restless",
+      "D. Restful"
+    ],
+    "answer_index": 1,
+    "explanation": "The prototype scope creates a new bean instance every time it's requested, making it ideal for stateful beans that maintain instance-specific data. Since each request gets its own independent instance, there's no risk of different clients sharing or interfering with each other's state, which is critical for beans that hold mutable, user-specific information.",
+    "corrected": false,
+    "answer": "B. Stateful",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0829",
+    "topic": "Java OOP",
+    "question": "Which is the alternative to create, load, and manage beans in a Spring Application?",
+    "options": [
+      "A. Application Factory",
+      "B. Context Factory",
+      "C. Bean Factory",
+      "D. Spring Bean Factory"
+    ],
+    "answer_index": 2,
+    "explanation": "The `BeanFactory` is Spring's fundamental interface for creating, loading, and managing beans as an alternative to the `ApplicationContext`. While `ApplicationContext` is the higher-level container used in most Spring applications, `BeanFactory` provides the core bean instantiation and lifecycle management capabilities with a simpler, more lightweight implementation. The other options are not valid Spring framework components for bean management.",
+    "corrected": false,
+    "answer": "C. Bean Factory",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0830",
+    "topic": "Java OOP",
+    "question": "Java-based configuration allows bean definition and Spring configuration to move out of ________.",
+    "options": [
+      "A. XML files",
+      "B. Java code",
+      "C. Property files",
+      "D. All of the above"
+    ],
+    "answer_index": 0,
+    "explanation": "Java-based configuration (using `@Configuration` and `@Bean` annotations) provides an alternative to XML-based bean definition, allowing developers to define Spring beans programmatically in Java classes instead of maintaining separate XML configuration files. This approach moves bean definitions from XML files into type-safe, refactorable Java code, eliminating the need for XML parsing and making configuration subject to compile-time checking.",
+    "corrected": false,
+    "answer": "A. XML files",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0831",
+    "topic": "Java OOP",
+    "question": "Which one of these statements about XML declaration of transaction manager bean is NOT true?",
+    "options": [
+      "A. The tx namespace provides JTA transaction manager declaration shortcut syntax.",
+      "B. The Id of the bean has to be transactionManager.",
+      "C. Depending on the application persistence technology, the HibernateTransactionManager or the DataSourceTransactionManager could be used as bean class.",
+      "D. A default transaction timeout could be given."
+    ],
+    "answer_index": 0,
+    "explanation": "'The Id of the bean has to be transactionManager.' is correct.",
+    "corrected": false,
+    "answer": "A. The tx namespace provides JTA transaction manager declaration shortcut syntax.",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0832",
+    "topic": "Java OOP",
+    "question": "Which one of the following is one of the challenges of Traditional Transaction Management?",
+    "options": [
+      "A. Transaction Management at Database Connection Level",
+      "B. Programmatic Management of Transactions",
+      "C. Error-Prone Connection Management",
+      "D. All of the above"
+    ],
+    "answer_index": 3,
+    "explanation": "Traditional transaction management requires developers to manually handle transactions at the database connection level, making the code inherently error-prone due to complex connection lifecycle management and the need for explicit programmatic control over transaction boundaries (commit/rollback logic). All three options represent fundamental challenges of this approach—lack of abstraction at the connection level, manual transaction control burden on developers, and the high risk of resource leaks or inconsistent states from improper error handling.",
+    "corrected": false,
+    "answer": "D. All of the above",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0833",
+    "topic": "Java OOP",
+    "question": "What does the JDBC Template use to connect to the database?",
+    "options": [
+      "A. A simple java bean with connection properties",
+      "B. A data source bean configuration",
+      "C. An XML with DB connection parameters",
+      "D. A JDBC connection object"
+    ],
+    "answer_index": 1,
+    "explanation": "JDBC Template Connection Explanation\n\nJdbcTemplate is a Spring Framework class that abstracts away boilerplate JDBC code by delegating database connections to a DataSource object. The DataSource bean is injected into JdbcTemplate and manages connection pooling and lifecycle, allowing JdbcTemplate to obtain connections on demand without directly handling JDBC Connection objects. This design decouples the template from specific connection management details and enables flexible configuration through Spring's dependency injection.",
+    "corrected": false,
+    "answer": "B. A data source bean configuration",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0834",
+    "topic": "Java OOP",
+    "question": "What is the use of Autodiscovery?",
+    "options": [
+      "A. Eliminate the use of the <property> element",
+      "B. Reduce the use of the <constructor-arg> element",
+      "C. Eliminate the use of the <props> element",
+      "D. Reduce the use of the <bean> element"
+    ],
+    "answer_index": 3,
+    "explanation": "Autodiscovery (annotation-based component scanning) allows Spring to automatically detect and register beans using annotations like `@Component`, `@Service`, and `@Repository`, eliminating the need to explicitly declare each bean with `<bean>` elements in XML configuration. This reduces boilerplate XML configuration by replacing manual bean definitions with classpath scanning and annotation-based component detection.",
+    "corrected": false,
+    "answer": "D. Reduce the use of the <bean> element",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0835",
+    "topic": "Java OOP",
+    "question": "Which of the following attributes are valid in a Spring bean definition?",
+    "options": [
+      "A. ID",
+      "B. Map",
+      "C. Set",
+      "D. Class"
+    ],
+    "answer_index": 0,
+    "explanation": "The id attribute is a valid and fundamental bean definition attribute in Spring that uniquely identifies a bean within its container. While class, map, and set are also valid Spring bean configuration elements, only id (option A) matches the exact naming convention for a bean definition attribute; the others refer to property types or nested elements rather than bean-level attributes.",
+    "corrected": false,
+    "answer": "A. ID",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0836",
+    "topic": "Java OOP",
+    "question": "What Spring Collection can be used to inject a collection of name-value pairs, where name and value can be of any type?",
+    "options": [
+      "A. <set>",
+      "B. <list>",
+      "C. <map>",
+      "D. <props>"
+    ],
+    "answer_index": 2,
+    "explanation": "The `<map>` collection in Spring is specifically designed to inject key-value pairs where both keys and values can be of any type, making it the most flexible choice for name-value pair injection. While `<props>` also stores name-value pairs, it restricts both keys and values to String type. `<set>` and `<list>` are ordered/unordered collections of single values, not name-value pairs.",
+    "corrected": false,
+    "answer": "C. <map>",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0837",
+    "topic": "Java OOP",
+    "question": "Which attributes are applicable for an inner bean?",
+    "options": [
+      "A. Context, Parent",
+      "B. Id, Class",
+      "C. Class, Inner",
+      "D. Interface, Id"
+    ],
+    "answer_index": 1,
+    "explanation": "In Spring Framework, inner beans are beans defined within the property or constructor argument of another bean and do not require an `id` attribute since they're not independently referenced. The `class` attribute is mandatory to specify the bean's type, and the `inner` attribute (when using certain XML configurations) explicitly marks a bean as inner scope, making these the two applicable attributes for inner beans.",
+    "corrected": false,
+    "answer": "B. Id, Class",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0838",
+    "topic": "Java OOP",
+    "question": "To use bean definition template, you should add what attribute in the bean?",
+    "options": [
+      "A. abstract=\"true\"",
+      "B. interface=\"true\"",
+      "C. class=\"com.example.helloworld\"",
+      "D. public=\"true\""
+    ],
+    "answer_index": 0,
+    "explanation": "In Spring Framework, setting `abstract=\"true\"` on a bean definition marks it as a template that cannot be instantiated directly and is intended only for inheritance by other bean definitions. This prevents Spring from attempting to create an instance of the template bean while allowing child beans to inherit its properties, constructor arguments, and setter values through the `parent` attribute.",
+    "corrected": false,
+    "answer": "A. abstract=\"true\"",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0839",
+    "topic": "Java OOP",
+    "question": "A collection value of the type java.util.Properties is defined by what element?",
+    "options": [
+      "A. <props>",
+      "B. <prop>",
+      "C. <properties>",
+      "D. <property>"
+    ],
+    "answer_index": 0,
+    "explanation": "In Spring Framework XML configuration, the `<props>` element is used to define a collection value of type `java.util.Properties`, which represents a set of key-value pairs where both keys and values are strings. The `<prop>` element (child of `<props>`) defines individual key-value entries within the Properties collection. The other options (`<properties>` and `<property>`) are not valid Spring collection definition elements for this purpose.",
+    "corrected": false,
+    "answer": "A. <props>",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0840",
+    "topic": "Java OOP",
+    "question": "Which of the following tasks are performed by a JDBCTemplate?",
+    "options": [
+      "A. Execute SQL query",
+      "B. Execute Update statements",
+      "C. Execute a Java program",
+      "D. Execute stored procedure calls"
+    ],
+    "answer_index": 0,
+    "explanation": "'Execute SQL query' is the correct answer per language specification.",
+    "corrected": false,
+    "answer": "A. Execute SQL query",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0841",
+    "topic": "Java OOP",
+    "question": "Which of the following statement is false?",
+    "options": [
+      "A. The Core package is the most fundamental part of the framework and provides the IoC and Dependency Injection feature.",
+      "B. The DAO package provides a JDBC-abstraction layer that removes the need to do tedious JDBC coding and parsing of database-vendor specific error code.",
+      "C. The ORM package provides integration layers for popular object-relational mapping APIs, including JPA, JDO, Hibernate, iBatis.",
+      "D. AOP takes out the direct dependency of crosscutting tasks from classes."
+    ],
+    "answer_index": 3,
+    "explanation": "'None of these' is the correct answer per language specification.",
+    "corrected": false,
+    "answer": "D. AOP takes out the direct dependency of crosscutting tasks from classes.",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0842",
+    "topic": "Java OOP",
+    "question": "Which of the following is actual representation of the Spring IoC container?",
+    "options": [
+      "A. Application Context",
+      "B. Xml Bean Factory",
+      "C. Bean Factory",
+      "D. Web Application Context"
+    ],
+    "answer_index": 2,
+    "explanation": "'Bean Factory' is the correct answer per language specification.",
+    "corrected": false,
+    "answer": "C. Bean Factory",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0843",
+    "topic": "Java OOP",
+    "question": "A bean is simply an object that is instantiated, assembled and otherwise managed by a Spring IoC container.",
+    "options": [
+      "A. true",
+      "B. false"
+    ],
+    "answer_index": 0,
+    "explanation": "A Spring bean is fundamentally defined as any object whose lifecycle is managed by the Spring IoC (Inversion of Control) container. The container is responsible for instantiating beans from class definitions, injecting their dependencies, and managing their lifecycle phases (initialization, use, and destruction). This is the core concept that distinguishes Spring beans from regular Java objects.",
+    "corrected": false,
+    "answer": "A. true",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0844",
+    "topic": "Java OOP",
+    "question": "How does the container load configuration metadata from external resources such as the local file system or Java CLASSPATH?",
+    "options": [
+      "A. Application Context constructor",
+      "B. Init()",
+      "C. Context Constructor",
+      "D. XmlClassPath Constructor"
+    ],
+    "answer_index": 0,
+    "explanation": "The ApplicationContext constructor is responsible for loading configuration metadata because it accepts resource locations (file paths, classpath resources, URLs) as parameters during instantiation, which triggers the parsing and initialization of bean definitions from external sources like XML files. The other options either don't exist as standard Spring components (XmlClassPath Constructor) or represent lifecycle methods that execute after context initialization is already complete. ApplicationContext implements ResourceLoader, enabling it to resolve and load resources from various locations during construction.",
+    "corrected": false,
+    "answer": "A. Application Context constructor",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0845",
+    "topic": "Java OOP",
+    "question": "Which of the following is the correct way to load bean definitions from another file?",
+    "options": [
+      "A. <bean id=\"bean1\" class=\"...\" import=\"something.xml\"/>",
+      "B. <resources name=\"something.xml\" import=\"true\"/>",
+      "C. <import resource=\"something.xml\"/>",
+      "D. All of the above"
+    ],
+    "answer_index": 2,
+    "explanation": "'<import resource=\"something.xml\"/>' is the correct answer per language specification.",
+    "corrected": false,
+    "answer": "C. <import resource=\"something.xml\"/>",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0847",
+    "topic": "Java OOP",
+    "question": "Which of the following are correct statements?",
+    "options": [
+      "A. Form Controllers handle form interaction",
+      "B. Multipart resolver handles file uploads",
+      "C. Dynamic binding of data to domain model",
+      "D. Interaction with Velocity, JSP, Thymeleaf, PDF, Excel"
+    ],
+    "answer_index": 0,
+    "explanation": "'Form Controllers handle form interaction' is the correct answer per language specification.",
+    "corrected": false,
+    "answer": "A. Form Controllers handle form interaction",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0848",
+    "topic": "Java OOP",
+    "question": "What do you mean by 'bean'?",
+    "options": [
+      "A. component",
+      "B. object",
+      "C. class",
+      "D. container"
+    ],
+    "answer_index": 0,
+    "explanation": "In Java, a \"bean\" refers to a reusable software component that follows specific conventions (private fields, public getters/setters, no-arg constructor). The term \"component\" is the most accurate descriptor because beans are designed as self-contained, reusable units of functionality that can be combined in various applications. While beans are technically objects and instances of classes, \"component\" best captures their architectural role as standardized, interoperable building blocks.",
+    "corrected": false,
+    "answer": "A. component",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0849",
+    "topic": "Java OOP",
+    "question": "What responsibilities are included for BeanFactory?",
+    "options": [
+      "A. Instantiating or sourcing application objects",
+      "B. Configuring such objects",
+      "C. Assembling the dependencies between these objects",
+      "D. Manage lifecycle of Spring"
+    ],
+    "answer_index": 0,
+    "explanation": "The BeanFactory is the core interface responsible for creating and retrieving bean instances from the IoT container; while it does handle some basic lifecycle management and dependency injection, its primary responsibility is instantiation. The other options (B, C, D) represent broader ApplicationContext capabilities or are overstated—BeanFactory itself doesn't perform \"full\" lifecycle management or dependency assembly as comprehensively as higher-level abstractions.",
+    "corrected": false,
+    "answer": "A. Instantiating or sourcing application objects",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0850",
+    "topic": "Java OOP",
+    "question": "What are the responsibilities included for XmlBeanFactory?",
+    "options": [
+      "A. Allows you to express the objects that compose your application",
+      "B. Resolves inter-dependencies between such objects using XML",
+      "C. Uses XML configuration metadata to create a fully configured system",
+      "D. None of the above"
+    ],
+    "answer_index": 0,
+    "explanation": "'Allows you to express the objects that compose your application' is correct.",
+    "corrected": false,
+    "answer": "A. Allows you to express the objects that compose your application",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0851",
+    "topic": "Java OOP",
+    "question": "What are the correct ways to instantiate a bean?",
+    "options": [
+      "A. Using default (empty) constructor",
+      "B. Instantiation using a static factory method",
+      "C. Instantiation using an instance factory method",
+      "D. Using the container"
+    ],
+    "answer_index": 3,
+    "explanation": "The default (empty) constructor is the fundamental and most basic way to instantiate a bean in Spring. While options B, C, and D are also valid Spring bean instantiation methods, option A represents the primary mechanism—when no explicit factory method or container configuration is specified, Spring uses the no-arg constructor to create bean instances via reflection.",
+    "corrected": false,
+    "answer": "D. Using the container",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0852",
+    "topic": "Java OOP",
+    "question": "Which statements are true about DI (Dependency Injection)?",
+    "options": [
+      "A. DI says your components and services should tightly coupled in code.",
+      "B. DI says that no need create your objects but describe how they should be created.",
+      "C. We should not directly connect your components and services together in code but describe which services are needed by which components in a configuration file",
+      "D. Inversion of control relies on dependency injection"
+    ],
+    "answer_index": 1,
+    "explanation": "Dependency Injection removes the responsibility of object creation from a class itself, letting an external container instantiate and supply dependencies based on defined rules. This means you simply specify how objects should be constructed, rather than manually instantiating them within your code.",
+    "corrected": false,
+    "answer": "B. DI says that no need create your objects but describe how they should be created.",
+    "trust": "baseline",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "id": "q0853",
+    "topic": "Java OOP",
+    "question": "Which statements are true about IOC (Inversion of Control)?",
+    "options": [
+      "A. Decoupling of the execution of a certain task from implementation.",
+      "B. Each module can focus on what it is designed for.",
+      "C. Replacing modules should not affect other modules.",
+      "D. Modules should observe about what other systems do"
+    ],
+    "answer_index": 0,
+    "explanation": "'Decoupling of the execution of a certain task from implementation.' is correct.",
+    "corrected": false,
+    "answer": "A. Decoupling of the execution of a certain task from implementation.",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0854",
+    "topic": "Java OOP",
+    "question": "What do you mean by inner bean?",
+    "options": [
+      "A. A <bean/> element inside the <bean/> elements is used to define an inner bean.",
+      "B. A <bean/> element inside the <property/> elements is used to define an inner bean.",
+      "C. A <bean/> element inside the <constructor-arg/> elements is used to define an inner bean.",
+      "D. A <bean/> element inside the property or <constructor-arg/> elements is used to define an inner bean."
+    ],
+    "answer_index": 3,
+    "explanation": "'A <bean/> element inside the property or <constructor-arg/> elements is used to define an inner bean.' is correct.",
+    "corrected": false,
+    "answer": "D. A <bean/> element inside the property or <constructor-arg/> elements is used to define an inner bean.",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0855",
+    "topic": "Java OOP",
+    "question": "Which of the following are basic techniques to implement inversion of control?",
+    "options": [
+      "A. Using a factory pattern",
+      "B. Using a service locator pattern",
+      "C. Constructor injection",
+      "D. Setter injection"
+    ],
+    "answer_index": 0,
+    "explanation": "'All the above' is the correct answer per language specification.",
+    "corrected": false,
+    "answer": "A. Using a factory pattern",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0856",
+    "topic": "Java OOP",
+    "question": "Which of the following statements are false about Constructor-based DI?",
+    "options": [
+      "A. Constructor-based DI is effected by invoking a constructor with a number of arguments, each representing a dependency.",
+      "B. We can also use @Autowired annotation on constructor for constructor based autowiring.",
+      "C. Constructor-based DI is accomplished when the container invokes a class constructor with a number of arguments.",
+      "D. Constructor-based DI is effected by invoking Setter Injection each representing a dependency."
+    ],
+    "answer_index": 3,
+    "explanation": "'Constructor-based DI is effected by invoking Setter Injection each representing a dependency.' is the correct answer per language specification.",
+    "corrected": false,
+    "answer": "D. Constructor-based DI is effected by invoking Setter Injection each representing a dependency.",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0857",
+    "topic": "Java OOP",
+    "question": "What are the correct ways to define constructor injection?",
+    "options": [
+      "A. Using <constructor-arg> with <value> element",
+      "B. Using <constructor-arg> with value attribute",
+      "C. Using self-closing <constructor-arg value=\"...\"/>",
+      "D. All of the above"
+    ],
+    "answer_index": 3,
+    "explanation": "All three syntaxes are valid Spring XML configuration methods for constructor injection. Options A and B use nested and attribute-based approaches respectively, while option C uses self-closing tag shorthand—each accomplishes the same goal of passing values to constructor parameters during bean instantiation.",
+    "corrected": false,
+    "answer": "D. All of the above",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0858",
+    "topic": "Java OOP",
+    "question": "Spring Web MVC (and in Spring in general) follows the \"Open for extension, closed for modification\" principle.",
+    "options": [
+      "A. true",
+      "B. false"
+    ],
+    "answer_index": 0,
+    "explanation": "Spring Web MVC achieves this through its use of interfaces, abstract classes, and dependency injection, allowing developers to extend functionality (e.g., creating custom controllers, interceptors, or resolvers) without modifying the framework's core code. The framework's architecture is built on abstractions like `DispatcherServlet`, `HandlerMapping`, and `ViewResolver`, which can be extended or replaced with custom implementations while keeping the framework itself unchanged.",
+    "corrected": false,
+    "answer": "A. true",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0859",
+    "topic": "Java OOP",
+    "question": "Which of the following is not a special bean in WebApplicationContext?",
+    "options": [
+      "A. Locale resolver",
+      "B. Theme resolver",
+      "C. Multipart file",
+      "D. Resolver"
+    ],
+    "answer_index": 3,
+    "explanation": "'Resolver' is the correct answer per language specification.",
+    "corrected": false,
+    "answer": "D. Resolver",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0861",
+    "topic": "Java OOP",
+    "question": "WebApplicationContext has more scopes like request, session, globalSession compared to standard ApplicationContext.",
+    "options": [
+      "A. true",
+      "B. false"
+    ],
+    "answer_index": 0,
+    "explanation": "WebApplicationContext extends ApplicationContext and adds web-specific bean scopes beyond the standard singleton and prototype scopes. The request scope creates new beans for each HTTP request, session scope maintains beans for user sessions, and globalSession scope (deprecated in Spring 4.3) was used for portlet applications, making these additional scopes necessary for web application lifecycle management.",
+    "corrected": false,
+    "answer": "A. true",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0862",
+    "topic": "Java OOP",
+    "question": "All Spring's various controllers inherit from AbstractController.",
+    "options": [
+      "A. true",
+      "B. false"
+    ],
+    "answer_index": 1,
+    "explanation": "In Spring Framework, all controllers inherit from `AbstractController`, which is a base class that provides common functionality for handling HTTP requests. This inheritance hierarchy allows Spring controllers to leverage shared features like request mapping, exception handling, and lifecycle management through the abstract parent class.",
+    "corrected": false,
+    "answer": "B. false",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0863",
+    "topic": "Java OOP",
+    "question": "You can write your own controller by using handleRequestInternal(HttpServletRequest, HttpServletResponse) method from AbstractController and returning a ModelAndView object.",
+    "options": [
+      "A. true",
+      "B. false"
+    ],
+    "answer_index": 0,
+    "explanation": "AbstractController is a base class in Spring Framework that provides a template for creating custom controllers. By overriding the `handleRequestInternal(HttpServletRequest, HttpServletResponse)` method, developers can implement custom request handling logic and return a ModelAndView object containing the model data and view name, which Spring then resolves to render the response.",
+    "corrected": false,
+    "answer": "A. true",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0864",
+    "topic": "HTML/CSS",
+    "question": "Which of the following controller inspects the URL and retrieves the filename of the file request and uses that as a view name? For example, the filename of http://www.springframework.org/welcome.html request is welcome.",
+    "options": [
+      "A. UrlFilenameViewController",
+      "B. MultiActionController",
+      "C. CommandController",
+      "D. AbstractController"
+    ],
+    "answer_index": 0,
+    "explanation": "'UrlFilenameViewController' is the correct answer per language specification.",
+    "corrected": false,
+    "answer": "A. UrlFilenameViewController",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0865",
+    "topic": "Java OOP",
+    "question": "Which statements are true about WebApplicationContext?",
+    "options": [
+      "A. The WebApplicationContext is an extension of the plain ApplicationContext.",
+      "B. The WebApplicationContext is bound in the ServletContext and can be accessed using RequestContextUtils.",
+      "C. WebApplicationContext differs from a normal ApplicationContext in that it is capable of resolving themes.",
+      "D. We can get WebApplicationContext reference by using ApplicationContext."
+    ],
+    "answer_index": 0,
+    "explanation": "'The WebApplicationContext is an extension of the plain ApplicationContext.' is correct.",
+    "corrected": false,
+    "answer": "A. The WebApplicationContext is an extension of the plain ApplicationContext.",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0866",
+    "topic": "Java OOP",
+    "question": "Which of the following controller combines multiple request-handling methods into one controller?",
+    "options": [
+      "A. UrlFilenameViewController",
+      "B. MultiActionController",
+      "C. CommandController",
+      "D. MultiRequestController"
+    ],
+    "answer_index": 1,
+    "explanation": "'MultiActionController' is the correct answer per language specification.",
+    "corrected": false,
+    "answer": "B. MultiActionController",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0867",
+    "topic": "Java OOP",
+    "question": "https://localhost:8080/testing.view will result in the method testing(HttpServletRequest, HttpServletResponse) being invoked. Which is the correct view resolver for this?",
+    "options": [
+      "A. ParameterMethodName Resolver",
+      "B. Properties MethodName Resolver",
+      "C. InternalViewResolver",
+      "D. InternalPathMethodName Resolver"
+    ],
+    "answer_index": 3,
+    "explanation": "`InternalPathMethodName Resolver` derives the method name from the URL path itself. It extracts \"testing\" from the request path `/testing.view` and maps it to the `testing()` method. The other resolvers either use request parameters (A), property files (B), or are view resolvers rather than method name resolvers (C), making them inappropriate for this URL-to-method mapping scenario.",
+    "corrected": false,
+    "answer": "D. InternalPathMethodName Resolver",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0868",
+    "topic": "Java OOP",
+    "question": "'/index/welcome.html=dolt' and a request to /index/welcome.html comes in, the dolt(HttpServletRequest, HttpServletResponse) method will be invoked. Which is the correct view resolver for this?",
+    "options": [
+      "A. InternalPathMethodName Resolver",
+      "B. ParameterMethodName Resolver",
+      "C. Properties MethodName Resolver",
+      "D. XmlMappingMethodName Resolver"
+    ],
+    "answer_index": 2,
+    "explanation": "The `ParameterMethodName Resolver` maps request parameters to handler methods. Since the configuration `/index/welcome.html=dolt` uses URL parameter syntax (the `=` assignment), it instructs the resolver to look for a request parameter named `dolt` and invoke the corresponding method. When a request arrives with this parameter, the resolver extracts it and calls the matching `dolt()` method.",
+    "corrected": false,
+    "answer": "C. Properties MethodName Resolver",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0869",
+    "topic": "Java OOP",
+    "question": "Which of the following controller provides a way to interact with data objects and dynamically bind parameters from the HttpServletRequest to the data object specified?",
+    "options": [
+      "A. MultiActionController",
+      "B. AbstractController",
+      "C. FormActionController",
+      "D. CommandController"
+    ],
+    "answer_index": 3,
+    "explanation": "'CommandController' is the correct answer per language specification.",
+    "corrected": false,
+    "answer": "D. CommandController",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0870",
+    "topic": "Java OOP",
+    "question": "Which of the following is not a view resolver?",
+    "options": [
+      "A. BeanNameViewResolver",
+      "B. VelocityViewResolver",
+      "C. JasperReportsViewResolver",
+      "D. UrlBasedViewResolver"
+    ],
+    "answer_index": 2,
+    "explanation": "'JasperReportsViewResolver' is the correct answer per language specification.",
+    "corrected": false,
+    "answer": "C. JasperReportsViewResolver",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0873",
+    "topic": "JavaScript",
+    "question": "React's abstraction of the document object model is often called...",
+    "options": [
+      "A. Virtual DOM",
+      "B. Meta DOM",
+      "C. Virtualized Model",
+      "D. Shadow DOM"
+    ],
+    "answer_index": 0,
+    "explanation": "React maintains an in-memory representation of the UI called the Virtual DOM, which is a lightweight JavaScript abstraction of the actual DOM. React uses this Virtual DOM to calculate the minimal set of changes needed before updating the real DOM, significantly improving performance through a process called reconciliation. The other options either don't exist in React's architecture (Meta DOM, Virtualized Model) or refer to different browser APIs (Shadow DOM is a Web Components feature for DOM encapsulation).",
+    "corrected": false,
+    "answer": "A. Virtual DOM",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0880",
+    "topic": "JavaScript",
+    "question": "How would you define a string type variable with the value bar in TypeScript?",
+    "options": [
+      "A. let string: foo = 'bar';",
+      "B. let foo:string = 'bar';",
+      "C. let string foo = 'bar';",
+      "D. let foo (string) = 'bar';"
+    ],
+    "answer_index": 1,
+    "explanation": "Correct Answer: B\n\nThe provided answer is incorrect. The correct syntax is Option B: `let foo:string = 'bar';`\n\nIn TypeScript, type annotations follow the variable name with a colon separator. Option B correctly declares a variable named `foo` with the `string` type annotation, assigned the value `'bar'`. Option A reverses the syntax (type before variable name) and confuses the identifier and type keywords, making it invalid TypeScript.",
+    "corrected": false,
+    "answer": "B. let foo:string = 'bar';",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0881",
+    "topic": "HTML/CSS",
+    "question": "What theorem or principal MongoDB follows?",
+    "options": [
+      "A. APAC",
+      "B. Always-Sync",
+      "C. ASCII",
+      "D. CAP"
+    ],
+    "answer_index": 3,
+    "explanation": "MongoDB follows the CAP theorem, which states that distributed systems can guarantee at most two of three properties: Consistency, Availability, and Partition tolerance. MongoDB prioritizes Consistency and Partition tolerance (CP), ensuring data integrity and fault tolerance even when network partitions occur, though this may temporarily impact availability. The other options are not relevant theorems or principles in the context of distributed database design.",
+    "corrected": false,
+    "answer": "D. CAP",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0882",
+    "topic": "JavaScript",
+    "question": "Upon running the following command, what all the fields will be returned in the output? db.collection.find( { qty: { $gt: 6 } }, { name: 1, _id: 0 } )",
+    "options": [
+      "A. _id",
+      "B. name",
+      "C. _id, name",
+      "D. name1, _id0"
+    ],
+    "answer_index": 1,
+    "explanation": "The second parameter in `find()` is a projection document that explicitly controls which fields are returned. The projection `{ name: 1, _id: 0 }` means: include the `name` field (1 = include) and explicitly exclude the `_id` field (0 = exclude). Therefore, only the `name` field will be returned in the output.",
+    "corrected": false,
+    "answer": "B. name",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0883",
+    "topic": "JavaScript",
+    "question": "EventEmitter class's simple interface, which basically encompass two methods . . . . . . . . . can therefore be used to trigger custom events and listen to events as well, both synchronously or asynchronously.",
+    "options": [
+      "A. exit()",
+      "B. superscript()",
+      "C. subscribe()",
+      "D. emit()"
+    ],
+    "answer_index": 3,
+    "explanation": "The EventEmitter class's core interface consists of `on()` (or `subscribe()`) and `emit()` methods—these two methods enable listening to and triggering custom events respectively. The correct answer is C. subscribe() because `subscribe()` is the method used to listen/attach listeners to events, while `emit()` triggers those events, forming the fundamental event handling pair in EventEmitter implementations.",
+    "corrected": false,
+    "answer": "D. emit()",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0884",
+    "topic": "JavaScript",
+    "question": "If you chain multiple pipes together, they are executed . . . . .",
+    "options": [
+      "A. in parallel",
+      "B. LIFO order",
+      "C. in the order in which you specify them",
+      "D. none of above"
+    ],
+    "answer_index": 2,
+    "explanation": "Pipes in Unix/Linux systems operate sequentially from left to right, with the standard output of each command feeding directly into the standard input of the next command. This sequential processing model ensures predictable data flow and allows commands to be chained logically, where each stage transforms the data before passing it downstream.",
+    "corrected": false,
+    "answer": "C. in the order in which you specify them",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0885",
+    "topic": "JavaScript",
+    "question": "Annotation added as an input parameter to the handler method.",
+    "options": [
+      "A. @PathVariable",
+      "B. @Path",
+      "C. @PathLocale",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 0,
+    "explanation": "@PathVariable is a Spring Framework annotation that extracts values from the URI path template and binds them as method parameters in handler methods. For example, in a mapping like `/users/{id}`, @PathVariable extracts the `{id}` value from the URL and passes it to the method parameter. @Path is a JAX-RS annotation (not Spring), and @PathLocale is not a standard annotation in common web frameworks.",
+    "corrected": false,
+    "answer": "A. @PathVariable",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0889",
+    "topic": "Java OOP",
+    "question": "Which Annotation is used to refer to Pointcuts.",
+    "options": [
+      "A. @PointCut.",
+      "B. @PointCutExecution.",
+      "C. @PointCutBefore.",
+      "D. @Pointer"
+    ],
+    "answer_index": 0,
+    "explanation": "The `@Pointcut` annotation is the standard Spring AOP annotation used to define and reference pointcuts, which are expressions that specify where advice should be applied in the application. The other options are either non-existent Spring annotations or incorrectly named; Spring AOP uses `@Pointcut` (not `@PointCutExecution`, `@PointCutBefore`, or `@Pointer`) as the dedicated annotation for pointcut declaration and reuse across multiple advice methods.",
+    "corrected": false,
+    "answer": "A. @PointCut.",
+    "trust": "baseline"
+  }
+]

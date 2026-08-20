@@ -1,0 +1,990 @@
+[
+  {
+    "id": "q0890",
+    "topic": "Java OOP",
+    "question": "Which of the following statements is true about microservices architecture ? i. Microservices applications are required to be deployed on the same physical host. ii. Microservices architecture supports high availability of individual microservices. iii. Microservices cannot be used if a company is embracing DevOps. iv. Microservices are designed using a bounded context that can communicate with other bounded contexts.",
+    "options": [
+      "A. Only i",
+      "B. Only ii",
+      "C. Only ii and iv",
+      "D. All of the above."
+    ],
+    "answer_index": 2,
+    "explanation": "Microservices can be deployed independently across different hosts, and they integrate seamlessly with DevOps practices like CI/CD pipelines, making statements i and iii false. Each microservice operates within its own bounded context, communicating with others via APIs, while supporting high availability through independent scaling and failure isolation, confirming statements ii and iv.",
+    "corrected": false,
+    "answer": "C. Only ii and iv",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0891",
+    "topic": "Concurrency",
+    "question": "What are the limitations of React?\n1. React is only for view layer of the app so we still need the help of other technologies to get a complete tooling set for development.\n2. React uses inline templating and JSX. This can seem awkward to some developers.\n3. The library of React is too large.",
+    "options": [
+      "A. React is only for view layer of the app so we still need the help of other technologies to get a complete tooling set for development.",
+      "B. React uses inline templating and JSX. This can seem awkward to some developers.",
+      "C. The library of React is too large.",
+      "D. All of the above"
+    ],
+    "answer_index": 0,
+    "explanation": "React only handles the view layer, meaning developers must integrate additional libraries for routing, state management, and other application concerns. This is a genuine limitation, unlike option B which is a stylistic preference or option C, since React's library size is actually small compared to full frameworks.",
+    "corrected": false,
+    "answer": "A. React is only for view layer of the app so we still need the help of other technologies to get a complete tooling set for development.",
+    "trust": "baseline",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "id": "q0892",
+    "topic": "HTML/CSS",
+    "question": "What theorem or principal MongoDB follows? (like this but question diff)",
+    "options": [
+      "A. APAC",
+      "B. Always-Sync",
+      "C. ASCII",
+      "D. CAP"
+    ],
+    "answer_index": 3,
+    "explanation": "MongoDB follows the APAC theorem (Availability, Partition tolerance, Atomicity, Consistency), which prioritizes availability and partition tolerance while maintaining atomicity at the document level and eventual consistency across replicas. This contrasts with the CAP theorem's requirement to choose only two of three properties; APAC allows MongoDB to optimize for distributed systems by guaranteeing atomic operations within documents while accepting eventual consistency across the cluster.",
+    "corrected": false,
+    "answer": "D. CAP",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0893",
+    "topic": "Java OOP",
+    "question": "Which class indicates a dropdown menu?",
+    "options": [
+      "A. .dropdown-list",
+      "B. .select",
+      "C. .dropdown",
+      "D. .menu-toggle"
+    ],
+    "answer_index": 2,
+    "explanation": "The `.dropdown-list` class is the standard Bootstrap convention for styling dropdown menu containers, as it specifically denotes a list-based dropdown component. While `.dropdown` marks the wrapper container and `.menu-toggle` typically triggers the dropdown, `.dropdown-list` is the semantic class that identifies the actual menu list element itself. The `.select` option refers to HTML form select elements, not dropdown menus.",
+    "corrected": false,
+    "answer": "C. .dropdown",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0894",
+    "topic": "JavaScript",
+    "question": "How can we render JSX in the browser ? i. Using Babel ii. Using Typescript. iii. Using Flux. iv. Using Redux.",
+    "options": [
+      "A. Only i and ii",
+      "B. Only iv",
+      "C. Only i,ii and iv",
+      "D. Only iii and iv."
+    ],
+    "answer_index": 0,
+    "explanation": "JSX must be transpiled into regular JavaScript before browsers can execute it. Babel is a JavaScript compiler that transforms JSX syntax into `React.createElement()` calls, while TypeScript also compiles JSX to JavaScript as part of its transpilation process. Flux and Redux are state management libraries that don't handle JSX compilation—they only manage application state after JSX has already been rendered.",
+    "corrected": false,
+    "answer": "A. Only i and ii",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0896",
+    "topic": "Java OOP",
+    "question": "Which of the following is NOT a valid keyword in JavaScript?",
+    "options": [
+      "A. use strict",
+      "B. debugger",
+      "C. with",
+      "D. if"
+    ],
+    "answer_index": 0,
+    "explanation": "'use strict' is the correct answer per language specification.",
+    "corrected": false,
+    "answer": "A. use strict",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0897",
+    "topic": "Java OOP",
+    "question": "Can a single Docker image be used to create only one container?",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 1,
+    "explanation": "A Docker image is a reusable blueprint that can be instantiated into multiple containers simultaneously. The entire purpose of containerization is to enable efficient resource sharing by running many containers from the same image, each with isolated processes and filesystems.",
+    "corrected": false,
+    "answer": "B. False",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0898",
+    "topic": "Java OOP",
+    "question": "A Docker container contains all the application files but does not include the instructions required to run the application.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 1,
+    "explanation": "A Docker container is built from a Docker image, which is created using a Dockerfile that explicitly contains all instructions needed to run the application (CMD, ENTRYPOINT, environment variables, working directory, etc.). These instructions are bundled into the image and therefore exist within the container at runtime, enabling it to execute the application automatically.",
+    "corrected": false,
+    "answer": "B. False",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0899",
+    "topic": "JavaScript",
+    "question": "Which of the below methods are NOT a part of React Component's lifecycle ?",
+    "options": [
+      "A. Initial Rendering.",
+      "B. Render / Re-Render.",
+      "C. unMounting.",
+      "D. Remote URL calls."
+    ],
+    "answer_index": 3,
+    "explanation": "Initial Rendering is not a distinct lifecycle method—it's the outcome of the mounting phase that includes methods like `constructor()` and `componentDidMount()`. The actual lifecycle phases are Mounting, Updating (which includes Render/Re-Render), and Unmounting, while Remote URL calls are side effects typically handled within lifecycle methods like `componentDidMount()`, not a phase itself.",
+    "corrected": false,
+    "answer": "D. Remote URL calls.",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0903",
+    "topic": "JavaScript",
+    "question": "What is React in MVC ?",
+    "options": [
+      "A. Controller",
+      "B. Middleware",
+      "C. Model",
+      "D. Router"
+    ],
+    "answer_index": 2,
+    "explanation": "React handles the presentation logic and user interactions by managing component state and responding to events, which are core responsibilities of a Controller in the MVC pattern. The Controller acts as the intermediary between the Model (data/business logic) and the View (UI), and React components fulfill this role by orchestrating data flow and managing UI behavior. React is not the Model (which manages data), Middleware (which processes requests), or Router (which handles URL navigation), but rather the logic layer that controls how the View responds to user actions.",
+    "corrected": false,
+    "answer": "C. Model",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0904",
+    "topic": "Java OOP",
+    "question": "Which of the following are array methods",
+    "options": [
+      "A. Unshift()",
+      "B. Sort()",
+      "C. Pop()",
+      "D. All the above"
+    ],
+    "answer_index": 3,
+    "explanation": "Unshift() adds one or more elements to the beginning of an array, Pop() removes the last element, and Sort() rearranges elements in a specified order. All three are built-in JavaScript Array prototype methods that operate directly on array objects, confirming that all the above is correct.",
+    "corrected": false,
+    "answer": "D. All the above",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0906",
+    "topic": "Concurrency",
+    "question": "Which of the following statements are true about Java ? i. A finally block is executed, only after the catch block is executed. ii. A finally block is executed whether an exception is thrown or not. iii. A finally block is NOT Mandatory. iv. A finally block is executed, only if an exception occurs.",
+    "options": [
+      "A. i",
+      "B. iv",
+      "C. i and iv",
+      "D. ii and iii"
+    ],
+    "answer_index": 3,
+    "explanation": "Statement ii is true: a finally block executes regardless of whether an exception occurs or not (it runs after try or catch completes). Statement iii is true: a finally block is optional—you can have try-catch without finally. Statements i and iv are false because finally executes after the try block completes (not just after catch), and it executes even when no exception occurs (not only when one does).",
+    "corrected": false,
+    "answer": "D. ii and iii",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0907",
+    "topic": "Java OOP",
+    "question": "Which Java Class has natural sorting implemented ?",
+    "options": [
+      "A. LinkedHashSet.",
+      "B. TreeSet",
+      "C. HashSet",
+      "D. ArrayList"
+    ],
+    "answer_index": 1,
+    "explanation": "This answer is incorrect. The correct answer should be B. TreeSet.\n\nTreeSet implements the SortedSet interface and uses a Red-Black tree internally to maintain elements in natural sorted order (according to their natural ordering or a provided Comparator). LinkedHashSet maintains insertion order, not natural sort order—it uses a hash table with a linked list to preserve the sequence elements were added, not to sort them.",
+    "corrected": false,
+    "answer": "B. TreeSet",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0911",
+    "topic": "Java OOP",
+    "question": "Pick the correct Java Stream API's?",
+    "options": [
+      "A. Stream.allMatch",
+      "B. Stream.noneMatch",
+      "C. Stream.anyMatch",
+      "D. All the above"
+    ],
+    "answer_index": 3,
+    "explanation": "All three methods are legitimate terminal operations in the Java Stream API that perform short-circuit evaluations on stream elements. `allMatch()` returns true if all elements satisfy a predicate, `anyMatch()` returns true if at least one element satisfies it, and `noneMatch()` returns true if no elements satisfy it—making all three valid Stream API methods.",
+    "corrected": false,
+    "answer": "D. All the above",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0912",
+    "topic": "JavaScript",
+    "question": "How does React handle the Web Accessibility Initiative - Accessible Rich Internet Applications (WAI-ARIA) standard ?",
+    "options": [
+      "A. aria -* HTML attributes are fully supported in JSX where most DOM properties and attributes in React are camelCased , these attributes should be lowercase.",
+      "B. React processes aria - * attributes separately and updates the DOM for accessibility if the user requires it.",
+      "C. aria-* attributes should be converted to camelCase like other attributes; For example: className, onChange and so on.",
+      "D. React is yet to support the WAI-ARIA standard."
+    ],
+    "answer_index": 0,
+    "explanation": "'React is yet to support the WAI-ARIA standard.' is correct.",
+    "corrected": false,
+    "answer": "A. aria -* HTML attributes are fully supported in JSX where most DOM properties and attributes in React are camelCased , these attributes should be lowercase.",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0918",
+    "topic": "Java OOP",
+    "question": "Spring Web MVC (and in Spring in general) is the \"Open for extension, closed for modification\" principle.The reason that this principle is being mentioned here is because a number of methods in the core classes in Spring Web MVC are marked final.",
+    "options": [
+      "A. true",
+      "B. false"
+    ],
+    "answer_index": 0,
+    "explanation": "The Open/Closed Principle (OCP) states that classes should be open for extension but closed for modification. Spring Web MVC uses `final` methods to enforce this principle by preventing developers from modifying core framework behavior through method overriding, thereby protecting framework integrity while still allowing extension through composition, dependency injection, and other extension points like interceptors and filters.",
+    "corrected": false,
+    "answer": "A. true",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0920",
+    "topic": "JavaScript",
+    "question": "Which are the different Data Types supported by Typescript?",
+    "options": [
+      "A. Boolean var bValue: boolean = false",
+      "B. Number var age: number = 16",
+      "C. String var name: string = \"jon\"",
+      "D. All of the above mentioned"
+    ],
+    "answer_index": 3,
+    "explanation": "TypeScript supports all three primitive data types listed: Boolean for true/false values, Number for numeric values (integers and floats), and String for text values. Each option demonstrates correct syntax and usage of these fundamental TypeScript types, making \"All of the above\" the complete and accurate answer.",
+    "corrected": false,
+    "answer": "D. All of the above mentioned",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0922",
+    "topic": "JavaScript",
+    "question": "What will be output of : var a:string=47;       console.log(\"Value of a=\"+a);",
+    "options": [
+      "A. Value of a=47",
+      "B. Value of a=0",
+      "C. Value of a=",
+      "D. None of the above"
+    ],
+    "answer_index": 3,
+    "explanation": "The code contains a type mismatch error: the variable `a` is declared as type `string`, but is initialized with the numeric value `47`. In TypeScript (which uses the `var` syntax with type annotations), this violates type safety and will result in a compilation error rather than executing successfully. Therefore, no output will be produced at all, making \"None of the above\" the correct answer.",
+    "corrected": false,
+    "answer": "D. None of the above",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0925",
+    "topic": "JavaScript",
+    "question": "Which of the following are true",
+    "options": [
+      "A. we can use printf in ts(typescript)",
+      "B. we can use console.log in ts(typescript)",
+      "C. we can use scanf in ts(typescript)",
+      "D. we can use cout in ts(typescript)"
+    ],
+    "answer_index": 1,
+    "explanation": "'we can use console.log in ts(typescript)' is the correct answer per language specification.",
+    "corrected": false,
+    "answer": "B. we can use console.log in ts(typescript)",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0926",
+    "topic": "JavaScript",
+    "question": "Which of the following is valid JavaScript syntax for creating a String object?",
+    "options": [
+      "A. var a = new String(\"hii\");",
+      "B. var b = new array[1];",
+      "C. var a:String = \"hii\";",
+      "D. All the above"
+    ],
+    "answer_index": 0,
+    "explanation": "`new String(\"hii\")` correctly invokes the String constructor with the `new` keyword, creating a String object rather than a primitive string value. The other options are invalid: `new array[1]` misuses array syntax for object creation, and `var a:String` uses TypeScript-style type annotation, which JavaScript does not support.",
+    "corrected": false,
+    "answer": "A. var a = new String(\"hii\");",
+    "trust": "baseline",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "id": "q0927",
+    "topic": "JavaScript",
+    "question": "List some features of Typescript?",
+    "options": [
+      "A. Typescript can be compiled to all major versions of Javascript(ES3,ES5,ES6,ES7)",
+      "B. Typescript can be used for cross -browser development and is an open source project",
+      "C. Typescript is a superset of JavaScript that provides typed nature to your code",
+      "D. All of the above"
+    ],
+    "answer_index": 3,
+    "explanation": "All three statements accurately describe TypeScript's capabilities and characteristics. Option A is correct because TypeScript's compiler supports multiple JavaScript target versions through configuration. Option B is valid as TypeScript is indeed open-source and enables cross-browser compatibility by transpiling to standard JavaScript. Option C is fundamental to TypeScript's purpose—it's a typed superset of JavaScript that adds static type checking on top of JavaScript's dynamic nature. Therefore, all features are legitimate and the comprehensive answer is D.",
+    "corrected": false,
+    "answer": "D. All of the above",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0928",
+    "topic": "Concurrency",
+    "question": "Thread A executes the following code: synchronized(b) { b.wait(2000); } Under what condition will thread A resume execution from the wait() call?",
+    "options": [
+      "A. After thread A is notified, or after two seconds.",
+      "B. After the lock on B is released, or after two seconds.",
+      "C. Two seconds after thread A is notified.",
+      "D. Two seconds after lock B is released."
+    ],
+    "answer_index": 0,
+    "explanation": "wait(2000) causes the thread to release the lock on b and block until either another thread calls notify()/notifyAll() on b or the specified timeout elapses. Since either event independently ends the wait, thread A resumes after being notified or after two seconds, whichever occurs first.",
+    "corrected": false,
+    "answer": "A. After thread A is notified, or after two seconds.",
+    "trust": "baseline",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "id": "q0930",
+    "topic": "Java OOP",
+    "question": "The JDBC-ODBC Bridge supports multiple concurrent open statements per connection?",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 1,
+    "explanation": "The JDBC-ODBC Bridge allows multiple concurrent open statements per connection because it manages statement objects independently within a single connection context. Each statement maintains its own execution state and result set, enabling parallel statement operations on the same database connection without interference.",
+    "corrected": false,
+    "answer": "B. False",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0931",
+    "topic": "Java OOP",
+    "question": "Which of the following allows non repeatable read in JDBC Connection?",
+    "options": [
+      "A. TRANSACTION_READ_UNCOMMITTED",
+      "B. TRANSACTION_READ_COMMITTED",
+      "C. TRANSACTION_SERIALIZABLE",
+      "D. TRANSACTION_REPEATABLE_READ"
+    ],
+    "answer_index": 0,
+    "explanation": "TRANSACTION_READ_UNCOMMITTED is the lowest isolation level and allows a transaction to read uncommitted changes (dirty reads) from other concurrent transactions. Since other transactions can modify data between multiple reads of the same row within a single transaction, this creates non-repeatable reads. The other options (READ_COMMITTED, REPEATABLE_READ, and SERIALIZABLE) implement progressively stronger locking mechanisms that prevent non-repeatable reads by either locking read rows or using snapshot isolation.",
+    "corrected": false,
+    "answer": "A. TRANSACTION_READ_UNCOMMITTED",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0932",
+    "topic": "Concurrency",
+    "question": "Which of the following statements is false as far as different type of statements is concern in JDBC?",
+    "options": [
+      "A. Regular Statement",
+      "B. Prepared Statement",
+      "C. Callable Statement",
+      "D. Interim Statement"
+    ],
+    "answer_index": 3,
+    "explanation": "JDBC defines only three statement types: Statement, PreparedStatement, and CallableStatement, each serving distinct purposes for executing SQL queries. \"Interim Statement\" is not a recognized JDBC interface or class, making it a fabricated term with no functional implementation in the API.",
+    "corrected": false,
+    "answer": "D. Interim Statement",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0933",
+    "topic": "Java OOP",
+    "question": "Which of the following methods are needed for loading a database driver in JDBC?",
+    "options": [
+      "A. registerDriver() method",
+      "B. Class.forName()",
+      "C. Both A and B",
+      "D. getConnection()"
+    ],
+    "answer_index": 2,
+    "explanation": "The `registerDriver()` method is the direct and explicit way to load a JDBC driver by instantiating the driver class and registering it with the DriverManager. While `Class.forName()` can also load a driver (as a side effect of class initialization), `registerDriver()` is the dedicated method specifically designed for this purpose and is considered the proper JDBC approach.",
+    "corrected": false,
+    "answer": "C. Both A and B",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0934",
+    "topic": "Java OOP",
+    "question": "Which of the following is false as far as type 4 driver is concern?",
+    "options": [
+      "A. Type 4 driver is \"native protocol, pure java\" driver",
+      "B. Type 4 drivers are 100% Java compatible",
+      "C. Type 4 drivers uses Socket class to connect to the database",
+      "D. Type 4 drivers can not be used with Netscape"
+    ],
+    "answer_index": 3,
+    "explanation": "Type 4 drivers are actually \"pure Java\" drivers that use a vendor-specific protocol (not native protocol) to communicate directly with the database over sockets, making option A false. Type 4 drivers are 100% Java-based, fully portable across platforms, use Socket connections, and work with any Java-enabled environment including Netscape, making all other options true.",
+    "corrected": false,
+    "answer": "D. Type 4 drivers can not be used with Netscape",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0935",
+    "topic": "Concurrency",
+    "question": "To execute a stored procedure \"totalStock\" in a database server, which of the following code snippet is used?",
+    "options": [
+      "A. Statement stmt = connection.createStatement();stmt.execute(\"totalStock()\");",
+      "B. CallableStatement clbstmnt = con.prepareCall(\"{call totalStock}\");cs.executeQuery();",
+      "C. StoreProcedureStatement stmt=connection.createStoreProcedure(\"totalStock()\");spstmt.executeQuery();",
+      "D. PrepareStatement pstmt = connection.prepareStatement(\"totalStock()\");pstmt.execute();"
+    ],
+    "answer_index": 1,
+    "explanation": "CallableStatement is the JDBC interface specifically designed to execute stored procedures, using the standard escape syntax \"{call procedureName}\" to invoke them on the database server. The other options misuse Statement or PreparedStatement objects, or reference nonexistent classes like StoreProcedureStatement, which JDBC does not support.",
+    "corrected": false,
+    "answer": "B. CallableStatement clbstmnt = con.prepareCall(\"{call totalStock}\");cs.executeQuery();",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0936",
+    "topic": "Java OOP",
+    "question": "Which driver is efficient and always preferable for using JDBC applications?",
+    "options": [
+      "A. Type - 4",
+      "B. Type - 1",
+      "C. Type - 3",
+      "D. Type - 2"
+    ],
+    "answer_index": 0,
+    "explanation": "Type-4 drivers (Thin drivers) are pure Java implementations that communicate directly with the database using native protocols, eliminating the need for native libraries or middleware. This makes them platform-independent, easier to deploy, and more efficient since they reduce network overhead and eliminate translation layers. Type-1, Type-2, and Type-3 drivers require ODBC bridges, native libraries, or additional middleware respectively, making them heavier, less portable, and harder to maintain in distributed environments.",
+    "corrected": false,
+    "answer": "A. Type - 4",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0937",
+    "topic": "Java OOP",
+    "question": "JDBC facilitates to store the java objects by using which of the methods of PreparedStatement setObject () 2. setBlob() 3. setClob()",
+    "options": [
+      "A. 1, 2",
+      "B. 1,2,3",
+      "C. 1,3",
+      "D. 2,3"
+    ],
+    "answer_index": 1,
+    "explanation": "The `setObject()` method is the primary JDBC mechanism for storing Java objects in a database, as it accepts any serializable object type. The `setBlob()` method is also used for object storage, specifically for storing large binary data (BLOB - Binary Large Object). However, `setClob()` is designed exclusively for storing character data (CLOB - Character Large Object) and is not a general-purpose object storage method, making option B incorrect.",
+    "corrected": false,
+    "answer": "B. 1,2,3",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0938",
+    "topic": "Concurrency",
+    "question": "Which statement is static and synchronized in JDBC API?",
+    "options": [
+      "A. executeQuery()",
+      "B. executeUpdate()",
+      "C. getConnection()",
+      "D. prepareCall()"
+    ],
+    "answer_index": 2,
+    "explanation": "Actually, the correct answer should be C. getConnection(), not A. The `getConnection()` method in the `DriverManager` class is both static and synchronized to ensure thread-safe access to database connections and prevent race conditions when multiple threads request connections simultaneously. The other methods like `executeQuery()`, `executeUpdate()`, and `prepareCall()` are instance methods on Statement/PreparedStatement objects and are not static.",
+    "corrected": false,
+    "answer": "C. getConnection()",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0939",
+    "topic": "Concurrency",
+    "question": "The JDBC-ODBC bridge is",
+    "options": [
+      "A. Three tiered",
+      "B. Multithreaded",
+      "C. Best for any platform",
+      "D. All of the above"
+    ],
+    "answer_index": 0,
+    "explanation": "JDBC-ODBC Bridge Architecture\n\nThe JDBC-ODBC bridge is a three-tiered architecture consisting of: (1) the JDBC driver layer that accepts Java calls, (2) the bridge itself that translates JDBC calls to ODBC calls, and (3) the ODBC driver layer that communicates with the database. While the bridge can be multithreaded and platform-independent, it is not universally best for any platform since direct JDBC drivers are typically more efficient and preferred in modern development.",
+    "corrected": false,
+    "answer": "A. Three tiered",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0940",
+    "topic": "Java OOP",
+    "question": "All raw data types (including binary documents or images) should be read and uploaded to the database as an array of",
+    "options": [
+      "A. byte",
+      "B. int",
+      "C. boolean",
+      "D. char"
+    ],
+    "answer_index": 0,
+    "explanation": "Bytes are the fundamental unit for representing raw binary data because a single byte (8 bits) can represent any value from 0-255, making it the standard container for arbitrary binary sequences. Images, documents, and other raw files are composed of sequences of bytes, so arrays of bytes naturally preserve the exact binary content without loss or interpretation. In contrast, chars, ints, and booleans are higher-level data types designed for specific purposes and cannot reliably represent arbitrary binary data without corruption or encoding issues.",
+    "corrected": false,
+    "answer": "A. byte",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0941",
+    "topic": "Java OOP",
+    "question": "The class java.sql.Timestamp has its super class as",
+    "options": [
+      "A. java.sql.Time",
+      "B. java.util.Date",
+      "C. java.util.Time",
+      "D. None of the above"
+    ],
+    "answer_index": 1,
+    "explanation": "java.sql.Timestamp extends java.util.Date, inheriting its date-handling fields and methods while adding nanosecond precision for SQL timestamp values. This inheritance allows Timestamp objects to be used wherever a Date is expected, maintaining compatibility with JDBC APIs.",
+    "corrected": false,
+    "answer": "B. java.util.Date",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0942",
+    "topic": "Java OOP",
+    "question": "BLOB, CLOB, ARRAY and REF type columns can be updated in",
+    "options": [
+      "A. JDBC 1.0",
+      "B. JDBC 4.0",
+      "C. JDBC 2.0",
+      "D. JDBC 3.0"
+    ],
+    "answer_index": 2,
+    "explanation": "BLOB, CLOB, ARRAY, and REF types were introduced as updatable column types starting with JDBC 1.0, which provided the foundational support for these SQL data types through the `java.sql` package. While later JDBC versions (2.0, 3.0, 4.0) enhanced and expanded functionality around these types, the core capability to update these columns was present from JDBC 1.0 onwards.",
+    "corrected": false,
+    "answer": "C. JDBC 2.0",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0943",
+    "topic": "Java OOP",
+    "question": "Which of the following methods finds the maximum number of connections that a specific driver can obtain?",
+    "options": [
+      "A. Database.getMaxConnections",
+      "B. Connection.getMaxConnections",
+      "C. DatabaseMetaData.getMaxConnections",
+      "D. ResultSetMetaData.getMaxConnections"
+    ],
+    "answer_index": 2,
+    "explanation": "The `Database.getMaxConnections()` method is correct because it operates at the database connection pool level, where driver-specific connection limits are managed and enforced. The other options are incorrect: `Connection` and `ResultSetMetaData` objects represent individual connections and result sets respectively, not the driver's overall capacity, while `DatabaseMetaData.getMaxConnections()` (if it existed) would query database server limits rather than driver-level constraints.",
+    "corrected": false,
+    "answer": "C. DatabaseMetaData.getMaxConnections",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0944",
+    "topic": "Java OOP",
+    "question": "Are prepared statements actually compiled?",
+    "options": [
+      "A. Yes, they compiled",
+      "B. No, they are bound by the JDBC driver",
+      "C. Yes, but only when using annotation-based configuration",
+      "D. No, they are compiled by the JVM at class load time"
+    ],
+    "answer_index": 0,
+    "explanation": "Prepared statements are precompiled by the database server when created, which separates SQL syntax from data parameters and enables the database to optimize the execution plan once rather than repeatedly. This precompilation occurs at the database level (not the JVM level), allowing the statement to be executed multiple times with different parameter values without recompilation overhead. Options B, C, and D mischaracterize the compilation process—it's neither dependent on JDBC driver binding, annotation configuration, nor JVM class loading.",
+    "corrected": false,
+    "answer": "A. Yes, they compiled",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0945",
+    "topic": "Java OOP",
+    "question": "When the message \"No Suitable Driver\" occurs?",
+    "options": [
+      "A. When the driver is not registered by Class.forname() method",
+      "B. When the user name, password and the database does not match",
+      "C. When the JDBC database URL passed is not constructed properly",
+      "D. When the type 4 driver is used"
+    ],
+    "answer_index": 2,
+    "explanation": "The \"No Suitable Driver\" exception occurs when the JDBC DriverManager cannot find a registered driver that matches the database URL protocol. The `Class.forName()` method is the standard way to load and register a JDBC driver; if this step is skipped or fails, no driver is available for the DriverManager to use, resulting in this error. Without proper driver registration, the connection attempt has no driver implementation to delegate to, regardless of the URL or credentials being correct.",
+    "corrected": false,
+    "answer": "C. When the JDBC database URL passed is not constructed properly",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0946",
+    "topic": "Java OOP",
+    "question": "Which driver is called as thin-driver in JDBC?",
+    "options": [
+      "A. Type-4 driver",
+      "B. Type-1 driver",
+      "C. Type-3 driver",
+      "D. Type-2 driver"
+    ],
+    "answer_index": 0,
+    "explanation": "Type-4 drivers are called \"thin drivers\" because they are pure Java implementations that communicate directly with the database server using native database protocols, eliminating the need for intermediate layers or native code libraries. This makes them lightweight and portable, requiring no additional software installation on the client machine. They are the most efficient and commonly used drivers in modern JDBC applications.",
+    "corrected": false,
+    "answer": "A. Type-4 driver",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0947",
+    "topic": "Java OOP",
+    "question": "How many transaction isolation levels are defined in java.sql.Connection interface?",
+    "options": [
+      "A. 4",
+      "B. 3",
+      "C. 5",
+      "D. 2"
+    ],
+    "answer_index": 2,
+    "explanation": "The `java.sql.Connection` interface defines four transaction isolation levels as static constants: `TRANSACTION_READ_UNCOMMITTED`, `TRANSACTION_READ_COMMITTED`, `TRANSACTION_REPEATABLE_READ`, and `TRANSACTION_SERIALIZABLE`. These levels represent the SQL standard isolation levels that control how concurrent transactions interact and prevent phenomena like dirty reads, non-repeatable reads, and phantom reads.",
+    "corrected": false,
+    "answer": "C. 5",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0948",
+    "topic": "Java OOP",
+    "question": "Which method is used to perform DML statements in JDBC?",
+    "options": [
+      "A. execute()",
+      "B. executeQuery()",
+      "C. executeUpdate()",
+      "D. executeResult()"
+    ],
+    "answer_index": 2,
+    "explanation": "executeUpdate() is designed for INSERT, UPDATE, and DELETE statements, returning an int representing the number of rows affected by the operation. In contrast, executeQuery() is used for SELECT statements returning a ResultSet, making it unsuitable for DML operations.",
+    "corrected": false,
+    "answer": "C. executeUpdate()",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0949",
+    "topic": "Java OOP",
+    "question": "What is the disadvantage of Type-4 Native-Protocol Driver?",
+    "options": [
+      "A. At client side, a separate driver is needed for each database.",
+      "B. Type-4 driver is entirely written in Java",
+      "C. The driver converts JDBC calls into vendor-specific database protocol",
+      "D. It does not support to read MySQL data."
+    ],
+    "answer_index": 0,
+    "explanation": "Type-4 drivers are pure Java drivers that communicate directly with the database using vendor-specific protocols, requiring a unique driver implementation for each database system. This means developers must install and manage separate driver libraries for MySQL, Oracle, PostgreSQL, etc., creating dependency management overhead and increasing deployment complexity compared to bridge-based drivers that can work across multiple databases.",
+    "corrected": false,
+    "answer": "A. At client side, a separate driver is needed for each database.",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0950",
+    "topic": "Java OOP",
+    "question": "Given:\n5. import java.util.*;\n6. public class SortOf {\n7. public static void main(String[] args) {\n8. ArrayList<Integer> a = new ArrayList<Integer>();\n9. a.add(1); a.add(5); a.add(3);\n11. Collections.sort(a);\n12. a.add(2);\n13. Collections.reverse(a);\n14. System.out.println(a);\n15. }\n16. }\nWhat is the result?",
+    "options": [
+      "A. [2, 5, 3, 1]",
+      "B. [1, 2, 3, 5]",
+      "C. [2, 1, 3, 5]",
+      "D. [5, 3, 2, 1]"
+    ],
+    "answer_index": 0,
+    "explanation": "After sorting, the list becomes [1, 3, 5], then adding 2 appends it to the end, resulting in [1, 3, 5, 2]. Reversing this list produces [2, 5, 3, 1], matching option A.",
+    "corrected": false,
+    "answer": "A. [2, 5, 3, 1]",
+    "trust": "baseline",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "id": "q0951",
+    "topic": "Java OOP",
+    "question": "Given the declaration: class BabyRaccoon extends Mammal { } Which statement correctly describes the relationship between BabyRaccoon and Mammal?",
+    "options": [
+      "A. BabyRaccoon is-a Mammal.",
+      "B. BabyRaccoon has-a Mammal.",
+      "C. Mammal is-a BabyRaccoon.",
+      "D. BabyRaccoon and Mammal are unrelated types."
+    ],
+    "answer_index": 0,
+    "explanation": "Extending a class establishes an inheritance relationship, meaning the subclass is a specialized version of the superclass. Since BabyRaccoon extends Mammal, it inherits all Mammal's properties and methods, making \"is-a\" the correct relationship.",
+    "corrected": false,
+    "answer": "A. BabyRaccoon is-a Mammal.",
+    "trust": "baseline",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "id": "q0953",
+    "topic": "Java OOP",
+    "question": "Given the following Java code:\n\nclass A {\n    void foo() { System.out.println(\"Afoo\"); }\n}\n\nclass B extends A {\n    void foo() { System.out.println(\"Bfoo\"); }\n}\n\npublic class Test {\n    public static void main(String[] args) {\n        A a = new B();\n        B b = new B();\n        a.foo();\n        b.foo();\n    }\n}\n\nWhat is the result?",
+    "options": [
+      "A. Afoo Afoo",
+      "B. Afoo Bfoo",
+      "C. Bfoo Afoo",
+      "D. Bfoo Bfoo"
+    ],
+    "answer_index": 3,
+    "explanation": "Java uses dynamic method dispatch, meaning the overridden method in the actual runtime class (B) is invoked, not the declared reference type (A). Since both `a` and `b` reference objects of type B, calling `foo()` on either invokes B's overridden version, printing \"Bfoo\" twice.",
+    "corrected": false,
+    "answer": "D. Bfoo Bfoo",
+    "trust": "baseline",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "id": "q0954",
+    "topic": "Java OOP",
+    "question": "String s = df.format(date); Which code fragment, inserted at line 23, allows the code to compile?",
+    "options": [
+      "A. df = new DateFormat();",
+      "B. df = Date.getFormat();",
+      "C. df = DateFormat.getFormat();",
+      "D. df = DateFormat.getDateInstance();"
+    ],
+    "answer_index": 0,
+    "explanation": "Option A is correct because `DateFormat` is an abstract class that cannot be instantiated directly. However, the question's answer key appears to contain an error—the actual correct answer should be E (`df = DateFormat.getInstance()`), as `getInstance()` is a factory method that returns a concrete `DateFormat` implementation. Option A would throw an `InstantiationException` at runtime since you cannot instantiate abstract classes with the `new` keyword.",
+    "corrected": false,
+    "answer": "A. df = new DateFormat();",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0956",
+    "topic": "Java OOP",
+    "question": "A company has a business application that provides its users with many different reports: receivables reports, payables reports, revenue projects, and so on. The company has just purchased some new, state-of-the-art, wireless printers, and a programmer has been assigned the task of enhancing all of the reports to use not only the company's old printers, but the new wireless printers as well. When the programmer starts looking into the application, the programmer discovers that because of the design of the application, it is necessary to make changes to each report to support the new printers. Which two design concepts most likely explain this situation? (Choose two.)",
+    "options": [
+      "A. Inheritance",
+      "B. Low cohesion",
+      "C. Tight coupling",
+      "D. High cohesion"
+    ],
+    "answer_index": 1,
+    "explanation": "Low cohesion means that the report functionality is scattered across multiple classes with unclear responsibilities, forcing changes to each report individually rather than centralizing printer logic in a single component. This lack of focused design means there's no abstraction layer for printer handling, so adding new printer support requires modifying every report instead of extending a shared printer interface.",
+    "corrected": false,
+    "answer": "B. Low cohesion",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0957",
+    "topic": "Java OOP",
+    "question": "A team of programmers is reviewing a proposed API for a new utility class. After some discussion, they realize that they can reduce the number of methods in the API without losing any functionality. If they implement the new design, which two OO principles will they be promoting?",
+    "options": [
+      "A. Looser coupling",
+      "B. Tighter coupling",
+      "C. Lower cohesion",
+      "D. Higher cohesion"
+    ],
+    "answer_index": 3,
+    "explanation": "Reducing the number of methods in an API decreases the surface area that client code depends on, which lowers the number of connection points between the class and its consumers. This directly reduces coupling by making clients less dependent on the utility class's implementation details. Fewer public methods mean fewer reasons for dependent code to change when the class evolves.",
+    "corrected": false,
+    "answer": "D. Higher cohesion",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0958",
+    "topic": "Java OOP",
+    "question": "A team of programmers is involved in reviewing a proposed design for a new utility class. After some discussion, they realize that the current design allows other classes to access methods in the utility class that should be accessible only to methods within the utility class itself. What design issue has the team discovered?",
+    "options": [
+      "A. Tight coupling",
+      "B. Low cohesion",
+      "C. High cohesion",
+      "D. Loose coupling"
+    ],
+    "answer_index": 0,
+    "explanation": "The correct answer is E. Weak encapsulation, not A as stated.\n\nWhy: Encapsulation is the principle of hiding internal implementation details and controlling access to class members through visibility modifiers (private, protected, public). The scenario describes methods that should be private but are currently accessible externally, which is a direct violation of encapsulation. Tight coupling refers to dependencies between classes, which is not the issue being described here.",
+    "corrected": false,
+    "answer": "A. Tight coupling",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0959",
+    "topic": "Java OOP",
+    "question": "Given:\n1. public class TestString1 {\n2. public static void main(String[] args) {\n3. String str = \"420\";\n4. str += 42;\n5. System.out.print(str);\n6. }\n7. }\nWhat is the output?",
+    "options": [
+      "A. 42042",
+      "B. 42",
+      "C. 420",
+      "D. 462"
+    ],
+    "answer_index": 0,
+    "explanation": "The += operator on a String performs concatenation, not arithmetic addition, since str is a String type. The int value 42 is converted to its string representation \"42\" and appended to \"420\", producing \"42042\".",
+    "corrected": false,
+    "answer": "A. 42042",
+    "trust": "baseline",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "id": "q0960",
+    "topic": "Java OOP",
+    "question": "Which three are valid on line 12? (Choose three.)\n[CODE]\npublic interface Status {\n    12. /* insert code here */ int MY_VALUE = 10;\n    13. }\n[/CODE]",
+    "options": [
+      "A. final",
+      "B. static",
+      "C. native",
+      "D. public"
+    ],
+    "answer_index": 0,
+    "explanation": "In a Java interface, all fields are implicitly `public static final`, so explicitly declaring `final` is valid and redundant but permitted. The other modifiers are invalid: `static` and `public` are already implicit; `native`, `abstract`, `protected`, and `private` cannot be applied to interface fields—`native` applies only to methods, `abstract` is invalid for fields, and `protected`/`private` conflict with the required `public` visibility.",
+    "corrected": false,
+    "answer": "A. final",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0961",
+    "topic": "Java OOP",
+    "question": "fubar( 15. // insert code here 16. ); 17. } 18. } Which code, inserted at line 15, allows the class Sprite to compile?",
+    "options": [
+      "A. Foo { public int bar() { return 1; }",
+      "B. new Foo { public int bar() { return 1; }",
+      "C. new Foo() { public int bar() { return 1; }",
+      "D. new class Foo { public int bar() { return 1; }"
+    ],
+    "answer_index": 2,
+    "explanation": "Option C is correct because it uses anonymous class syntax with proper constructor invocation: `new Foo()` creates an instance while the braces `{ }` define an anonymous inner class that implements or extends `Foo` with an overridden `bar()` method. Options A and B lack the parentheses `()` needed for constructor invocation, and Option D incorrectly uses the `class` keyword, which is invalid in this context.",
+    "corrected": false,
+    "answer": "C. new Foo() { public int bar() { return 1; }",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0962",
+    "topic": "Java OOP",
+    "question": "class Animal { public String noise() { return \"peep\"; } }\n12. class Dog extends Animal {\n13. public String noise() { return \"bark\"; }\n14. }\n15. class Cat extends Animal {\n16. public String noise() { return \"meow\"; }\n17. }\n...\n30. Animal animal = new Dog();\n31. Cat cat = (Cat)animal;\n32. System.out.println(cat.noise());\nWhat is the result?",
+    "options": [
+      "A. An exception is thrown at runtime.",
+      "B. peep",
+      "C. bark",
+      "D. meow"
+    ],
+    "answer_index": 0,
+    "explanation": "The variable `animal` actually references a `Dog` object at runtime, not a `Cat`. Casting it to `Cat` fails because `Dog` and `Cat` are unrelated types, throwing a `ClassCastException` at line 31.",
+    "corrected": false,
+    "answer": "A. An exception is thrown at runtime.",
+    "trust": "baseline",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "id": "q0963",
+    "topic": "Java OOP",
+    "question": "A programmer has an algorithm that requires a java.util.List that provides an efficient implementation of add(0, object), but does NOT need to support quick random access. What supports these requirements?",
+    "options": [
+      "A. java.util.Queue",
+      "B. java.util.ArrayList",
+      "C. java.util.LinearList",
+      "D. java.util.LinkedList"
+    ],
+    "answer_index": 3,
+    "explanation": "LinkedList implements a doubly-linked list structure that supports O(1) insertion at the beginning via add(0, object), whereas ArrayList requires O(n) time for this operation due to shifting elements. LinkedList doesn't optimize for random access (get(index) is O(n)), which aligns with the stated requirements.",
+    "corrected": false,
+    "answer": "D. java.util.LinkedList",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0964",
+    "topic": "Java OOP",
+    "question": "Given the following code:\n\nclass Animal {}\ninterface Jumper { void jump(); }\nclass Cat extends Animal implements Jumper {\n    public void jump() {}\n}\nclass Dog extends Animal {\n    public void jump() {}\n}\n\nWhich statement about these classes is true?",
+    "options": [
+      "A. Dog is-a Animal but not a Jumper, even though it defines a jump() method",
+      "B. Dog is-a Jumper because it defines a jump() method with the same signature",
+      "C. Cat is-a Jumper but not an Animal",
+      "D. Cat is-a Animal but not a Jumper"
+    ],
+    "answer_index": 0,
+    "explanation": "Dog extends Animal but does not implement the Jumper interface, so it lacks the type relationship required for is-a Jumper status. Simply defining a method with the same signature as an interface method does not satisfy the interface contract without an explicit \"implements\" declaration.",
+    "corrected": false,
+    "answer": "A. Dog is-a Animal but not a Jumper, even though it defines a jump() method",
+    "trust": "baseline",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "id": "q0965",
+    "topic": "Java OOP",
+    "question": "Which class correctly uses the Data interface and Info class?\n[CODE]\nabstract class Info {\n    public abstract void load();\n}\n[/CODE]",
+    "options": [
+      "A. public class Employee extends Info implements Data { public void load() { /*do something*/ } }",
+      "B. public class Employee implements Info extends Data { public void load() { /*do something*/ } }",
+      "C. public class Employee extends Info implements Data { public void load(){ /*do something*/ } public void Info.load(){ /*do something*/ } }",
+      "D. public class Employee implements Info extends Data { public void Data.load(){ /*do something*/ } public void load(){ /*do something*/ } }"
+    ],
+    "answer_index": 0,
+    "explanation": "'public class Employee extends Info implements Data { public void load() { /do something/ } }' is correct.",
+    "corrected": false,
+    "answer": "A. public class Employee extends Info implements Data { public void load() { /*do something*/ } }",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0966",
+    "topic": "Java OOP",
+    "question": "What is the result?\n\nclass TestA {\n    public void start() {\n        System.out.println(\"TestA\");\n    }\n}\n\nclass TestB extends TestA {\n    public void start() {\n        System.out.println(\"TestB\");\n    }\n\n    public static void main(String[] args) {\n        ((TestA)new TestB()).start();\n    }\n}",
+    "options": [
+      "A. TestA",
+      "B. TestB",
+      "C. Compilation fails.",
+      "D. An exception is thrown at runtime."
+    ],
+    "answer_index": 1,
+    "explanation": "Method calls in Java are resolved at runtime based on the actual object type, not the reference type used in the cast. Since the actual object is a TestB instance, its overridden start() method executes, printing \"TestB\".",
+    "corrected": false,
+    "answer": "B. TestB",
+    "trust": "baseline",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "id": "q0967",
+    "topic": "Java OOP",
+    "question": "\n[CODE]\nimport java.io.*;\n\nclass files {\n    public static void main(String args[]) {\n        File obj = new File(\"/java/system\");\n        System.out.print(obj.getName());\n    }\n}\n[/CODE]",
+    "options": [
+      "A. java",
+      "B. system",
+      "C. java/system",
+      "D. /java/system"
+    ],
+    "answer_index": 1,
+    "explanation": "The `getName()` method in Java's `File` class returns only the final component of the file path—the filename or last directory name—not the entire path. In this case, it extracts \"system\" from the path \"/java/system\". If you needed the full path, you would use `getPath()` or `getAbsolutePath()` instead.",
+    "corrected": false,
+    "answer": "B. system",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0968",
+    "topic": "Java OOP",
+    "question": "Note: file is made in c drive.\n[CODE]\nimport java.io.*;\n\nclass files {\n    public static void main(String args[]) {\n        File obj = new File(\"/java/system\");\n        System.out.print(obj.getAbsolutePath());\n    }\n}\n[/CODE]",
+    "options": [
+      "A. java",
+      "B. system",
+      "C. java/system",
+      "D. /java/system"
+    ],
+    "answer_index": 3,
+    "explanation": "The `getAbsolutePath()` method returns the absolute pathname string of the file object exactly as it was constructed. Since the File object was initialized with the string `\"/java/system\"`, the method returns that same path string without modification or resolution to an actual file system location. The fact that no file exists at this path on the C drive is irrelevant—`getAbsolutePath()` simply returns the canonical representation of the path provided during object creation.",
+    "corrected": false,
+    "answer": "D. /java/system",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0969",
+    "topic": "Java OOP",
+    "question": "What is the output of this program?\n\nimport java.io.*;\n\nclass files {\n    public static void main(String args[]) {\n        File obj = new File(\"/java/system\");\n        System.out.println(obj.getName());\n    }\n}",
+    "options": [
+      "A. java",
+      "B. system",
+      "C. java/system",
+      "D. /java/system"
+    ],
+    "answer_index": 1,
+    "explanation": "The File.getName() method returns only the last segment of the pathname, which represents the file or directory name itself. For the path \"/java/system\", the last segment after the final \"/\" separator is \"system\".",
+    "corrected": false,
+    "answer": "B. system",
+    "trust": "baseline",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  }
+]

@@ -1,0 +1,806 @@
+[
+  {
+    "question": "Which Man class properly represents the relationship \"Man has a best friend who is a",
+    "options": [
+      "A. class Man extends Dog { }",
+      "B. class Man implements Dog { }",
+      "C. class Man { private BestFriend dog; }",
+      "D. class Man { private Dog bestFriend; }"
+    ],
+    "answer_index": 3,
+    "answer": "D. class Man { private Dog bestFriend; }",
+    "topic": "Core Java & OOP",
+    "explanation": "Option D correctly uses composition with a private instance variable of type Dog, representing the \"has-a\" relationship where Man owns/has a best friend that is a Dog.\n\nOptions A and B incorrectly use inheritance, implying Man IS-A Dog, while option C lacks type specification for the best friend object.",
+    "corrected": false,
+    "id": "q2474",
+    "trust": "legit-source"
+  },
+  {
+    "question": "Given the following class/interface declarations:\n\ninterface Jumper {}\nclass Animal {}\nclass Cat extends Animal {}\nclass Dog {}\n\nWhich statement is true based on this code?",
+    "options": [
+      "A. Cat is-a Animal",
+      "B. Cat is-a Jumper",
+      "C. Dog is-a Animal",
+      "D. Dog is-a Jumper"
+    ],
+    "answer_index": 0,
+    "answer": "A. Cat is-a Animal",
+    "topic": "Core Java & OOP",
+    "explanation": "Cat extends Animal, so Cat inherits from Animal, establishing a valid is-a relationship through class inheritance. Dog does not extend Animal and neither Cat nor Dog implements Jumper, so those options are invalid.",
+    "corrected": false,
+    "id": "q2475",
+    "trust": "legit-source",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "question": "Which class correctly uses the Data interface and Info abstract class?\ninterface Data { public void load(); }\nabstract class Info { public abstract void load(); }",
+    "options": [
+      "A. public class Employee extends Info implements Data {\npublic void load() { /* do something */ }\n}",
+      "B. public class Employee implements Info extends Data {\npublic void load() { /* do something */ }\n}",
+      "C. public class Employee extends Info implements Data {\npublic void load() { /* do something */ }\npublic void Info.load() { /* do something */ }\n}",
+      "D. public class Employee implements Info extends Data {\npublic void Data.load() { /* do something */ }\npublic void load() { /* do something */ }\n}"
+    ],
+    "answer_index": 0,
+    "answer": "A. public class Employee extends Info implements Data {\npublic void load() { /* do something */ }\n}",
+    "topic": "TypeScript",
+    "explanation": "A class must use \"extends\" for an abstract class like Info and \"implements\" for an interface like Data, which option A correctly follows. Since both Info and Data declare a load() method with identical signatures, a single overriding method satisfies both requirements simultaneously.",
+    "corrected": false,
+    "id": "q2476",
+    "trust": "legit-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "What annotation does Spring Boot provide to conditionally wire a bean based on an environment variable?",
+    "options": [
+      "A. @ConditionalOnValue",
+      "B. @ConditionalOnProperty",
+      "C. @ConditionalOnSystemProperty",
+      "D. @ConditionalOnEnvironmentVariable"
+    ],
+    "answer_index": 1,
+    "answer": "B. @ConditionalOnProperty",
+    "topic": "Spring Core",
+    "explanation": "@ConditionalOnProperty checks the Spring Environment for a specified property, which includes values from environment variables, system properties, and application.properties files. This makes it the correct mechanism for conditionally registering beans based on external configuration, including environment variables.",
+    "corrected": false,
+    "id": "q2477",
+    "trust": "legit-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "The following method only queries or retrieves data from the data source:",
+    "options": [
+      "A. Add the readOnly option to the @Transactional annotation. This provides a hint to the",
+      "B. Add the timeout option to the @Transactional annotation. This limits the time the transaction",
+      "C. Add the readOnly option to the @Transactional annotation. This prevents any write",
+      "D. Set the appropriate transactionManager option in the @Transactional annotation. This allows"
+    ],
+    "answer_index": 0,
+    "answer": "A. Add the readOnly option to the @Transactional annotation. This provides a hint to the",
+    "topic": "Spring Core",
+    "explanation": "The readOnly=true option optimizes transaction handling by allowing the persistence provider to skip flush operations and apply database-level read optimizations for query-only methods.\n\nThis hint enables the transaction manager to apply performance enhancements like disabling write-ahead logging and preventing unnecessary dirty checking on retrieved entities.",
+    "corrected": false,
+    "id": "q2479",
+    "trust": "legit-source"
+  },
+  {
+    "question": "You write a Java Server Pages (JSP) error page that should deal with HTTP errors. You also create a controller to populate the error page:\n\n@Controller\npublic class ErrorPageController {\n@RequestMapping(value = \"errors\", method = RequestMethod.GET)\npublic ModelAndView showError(HttpServletRequest request) {\nvar errorPage = new ModelAndView(\"errorPage\");\nvar httpCode = getHttpCode(request);\nvar message = switch (httpCode) {\ncase 400 -> \"Http Code: 400\";\ncase 404 -> \"Http Code: 404\";\ncase 500 -> \"Http Code: 500\";\n}\nerrorPage.addObject(\"message\", message);\nreturn errorPage;\n}\nprivate int getHttpCode(HttpServletRequest request) {\n// implementation omitted\n}\n}\n\nThe controller is not dealing with the errors. How can you make it work?",
+    "options": [
+      "A. Add the following to the web.xml:\n<error-page>\n<location>/errors</location>\n</error-page>",
+      "B. Store the error page in the folder errors where Spring will look for it. If that is not an option, configure explicitly where the application can find the view.",
+      "C. Add the following bean:\n<bean id=\"viewResolver\" class=\"org.springframework.web.servlet.view.InternalResourceViewResolver\">\n<property name=\"prefix\" value=\"/WEB-INF/errors/\"",
+      "D. Annotate the controller with @ExceptionHandler(\"errorPage\")."
+    ],
+    "answer_index": 0,
+    "answer": "A. Add the following to the web.xml:\n<error-page>\n<location>/errors</location>\n</error-page>",
+    "topic": "Core Java & OOP",
+    "explanation": "The controller only maps a URL to a view; it never gets invoked unless the servlet container is told to route error responses there. Registering the error-page element in web.xml tells the container to forward HTTP error status codes to the \"/errors\" URL, triggering the controller.",
+    "corrected": false,
+    "id": "q2480",
+    "trust": "legit-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "You write the following code, but the test is not working. What is the most likely solution?",
+    "options": [
+      "A. The ContextConfiguration is too minimalistic. Extend it for integration testing.",
+      "B. You must annotate the creation method with @EventListener(EmployeeCreationEvent.class).",
+      "C. You must add @RecordApplicationEvents to the top of the class.",
+      "D. You must make sure that the application is registering a bean of type ApplicationEvents"
+    ],
+    "answer_index": 2,
+    "answer": "C. You must add @RecordApplicationEvents to the top of the class.",
+    "topic": "Core Java & OOP",
+    "explanation": "The @ContextConfiguration likely only loads a minimal bean set, missing event infrastructure beans needed for ApplicationEvents to function properly.\n\nExtending the configuration ensures event listeners, event publishers, and related Spring framework components are registered in the test context.",
+    "corrected": false,
+    "id": "q2482",
+    "trust": "legit-source"
+  },
+  {
+    "question": "Which Spring class can you configure to function as a special environment with custom set",
+    "options": [
+      "A. ConfigurableEnvironment",
+      "B. PropertySource",
+      "C. TestEnv",
+      "D. MockEnvironment"
+    ],
+    "answer_index": 3,
+    "answer": "D. MockEnvironment",
+    "topic": "Core Java & OOP",
+    "explanation": "ConfigurableEnvironment is a Spring interface that allows programmatic configuration and manipulation of environment properties and profiles at runtime.\n\nIt extends Environment and provides setter methods to customize property sources, active profiles, and default profiles for testing or special scenarios.",
+    "corrected": false,
+    "id": "q2483",
+    "trust": "legit-source"
+  },
+  {
+    "question": "You write a test class. The test class should only run when the operating system is Apple",
+    "options": [
+      "A. @SpringJUnitWebConfig(system = \"mac\")",
+      "B. @EnabledOnMac",
+      "C. @EnabledIf(\"#{systemProperties['os.name'].toLowerCase().contains('mac')}\")",
+      "D. @DetectOS(category = \"mac\")"
+    ],
+    "answer_index": 1,
+    "answer": "B. @EnabledOnMac",
+    "topic": "Core Java & OOP",
+    "explanation": "The `@SpringJUnitWebConfig` annotation provides OS-specific test configuration filtering through its `system` parameter, enabling conditional test execution based on the operating system.\n\nThis is Spring's native approach for OS-conditional test execution, whereas the other options use JUnit 5 or custom annotations not standard in Spring testing frameworks.",
+    "corrected": false,
+    "id": "q2484",
+    "trust": "legit-source"
+  },
+  {
+    "question": "How would you change the following code snippets so the list of names in the model contains four items?\n\n@Controller\npublic class NameController {\n@ModelAttribute(\"names\")\npublic List <String> getNames() {\nList <String> names = new ArrayList<>();\nnames.add(\"User1\");\nnames.add(\"User2\");\nnames.add(\"User3\");\nreturn names;\n}\n@GetMapping(\"/names\")\npublic String allNames(@ModelAttribute(\"list\") List <String> list, Model model) {\n// Add another name\nlist.add(\"User4\");\nreturn \"names\";\n}\n}",
+    "options": [
+      "A. Change the signature of getNames to:\npublic List <String> getNames(Model model)",
+      "B. Change the signature of getNames to:\npublic List <String> getNames(Model model, @ModelAttribute(\"names\") List <String> names)",
+      "C. Change the signature of allNames to:\npublic String allNames(Model model, @ModelAttribute(\"names\") List <String> names)",
+      "D. Change the signature of allNames to:\npublic String allNames(@ModelAttribute(\"names\") List <String> names, Model model)"
+    ],
+    "answer_index": 2,
+    "answer": "C. Change the signature of allNames to:\npublic String allNames(Model model, @ModelAttribute(\"names\") List <String> names)",
+    "topic": "Core Java & OOP",
+    "explanation": "The original code uses \"list\" as the ModelAttribute key, which doesn't match \"names\" defined in getNames(), so a new empty list is created instead of retrieving the populated one. Changing the key to \"names\" correctly binds the parameter to the existing list from getNames(), allowing \"User4\" to be appended to the same three-item list, resulting in four items total.",
+    "corrected": false,
+    "id": "q2485",
+    "trust": "legit-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "A developer adds a method annotated with @ExceptionHandler(ArithmeticException.class) inside a specific @Controller class, expecting it to catch ArithmeticException thrown by any controller in the application. However, when the exception is thrown from a different controller, the handler method is never invoked. What is the most likely reason?",
+    "options": [
+      "A. The @ExceptionHandler method only handles exceptions thrown within the same controller class; it must be moved to a class annotated with @ControllerAdvice to apply globally",
+      "B. The method must be renamed to match the exception class name exactly",
+      "C. Spring cannot find the view associated with this method because it is not specified in the mapping",
+      "D. The return type is incorrect; an @ExceptionHandler method can only return a View or a String"
+    ],
+    "answer_index": 0,
+    "answer": "A. The @ExceptionHandler method only handles exceptions thrown within the same controller class; it must be moved to a class annotated with @ControllerAdvice to apply globally",
+    "topic": "Core Java & OOP",
+    "explanation": "@ExceptionHandler methods defined in a @Controller are scoped only to that specific controller instance, catching exceptions thrown solely within its own request-handling methods. To apply exception handling globally across multiple controllers, the handler must reside in a class annotated with @ControllerAdvice, which registers it application-wide via component scanning.",
+    "corrected": false,
+    "id": "q2486",
+    "trust": "legit-source",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "question": "You create the following auto-configuration class:\n@AutoConfiguration\npublic class MyAutoConfiguration {\n@Bean\n@ConditionalOnMissingBean(MyComponent.class)\nMyComponent myComponent() {\nreturn new MyComponent();\n}\n}\nIt is on your classpath, but it is not loading. What configuration step is missing?",
+    "options": [
+      "A. You must reference the auto-configuration class in each application's @SpringBootConfiguration annotation.",
+      "B. You must add the @Configuration annotation.",
+      "C. You must list the auto-configuration class in a META-INF/spring/org.springframework.boot.autoconfigure.AutoConfiguration.imports file on the classpath.",
+      "D. You must list the auto-configuration class name in an application.properties file under the property spring.autoconfigure.imports."
+    ],
+    "answer_index": 2,
+    "answer": "C. You must list the auto-configuration class in a META-INF/spring/org.springframework.boot.autoconfigure.AutoConfiguration.imports file on the classpath.",
+    "topic": "Core Java & OOP",
+    "explanation": "Spring Boot's auto-configuration mechanism discovers configuration classes by reading the META-INF/spring/org.springframework.boot.autoconfigure.AutoConfiguration.imports file, not through component scanning or manual imports. Without this file listing MyAutoConfiguration's fully qualified class name, the ImportCandidates loader won't recognize the class as an auto-configuration candidate, so it never gets loaded during the auto-configuration phase.",
+    "corrected": false,
+    "id": "q2487",
+    "trust": "legit-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "Which is an example of the XML for mapping a NullPointerException to a page called npe?",
+    "options": [
+      "A. <bean class=\"org.springframework.web.servlet.handler.SimpleMappingExceptionResolver\">\n<property name=\"exceptionMappings\">\n<props>\n<prop key=\"java.lang.NullPointerException\">npe</prop>\n</props>\n</property>\n</bean>",
+      "B. <exceptionHandler class=\"org.springframework.web.servlet.handler.SimpleMappingExceptionResolver\">\n<property name=\"exceptionMappings\">\n<props>\n<prop key=\"java.lang.NullPointerException\">npe</prop>\n</props>\n</property>\n</exceptionHandler>",
+      "C. <bean class=\"org.springframework.web.servlet.handler.SimpleMappingExceptionResolver\">\n<property name=\"exceptionMappings\">\n<props>\n<prop view=\"npe\">java.lang.NullPointerException</prop>\n</props>\n</property>\n</bean>",
+      "D. <exceptionHandler class=\"org.springframework.web.servlet.handler.SimpleMappingExceptionResolver\">\n<property name=\"exceptionMappings\">\n<props>\n<prop view=\"npe\">java.lang.NullPointerException</prop>\n</props>\n</property>\n</exceptionHandler>"
+    ],
+    "answer_index": 0,
+    "answer": "A. <bean class=\"org.springframework.web.servlet.handler.SimpleMappingExceptionResolver\">\n<property name=\"exceptionMappings\">\n<props>\n<prop key=\"java.lang.NullPointerException\">npe</prop>\n</props>\n</property>\n</bean>",
+    "topic": "Core Java & OOP",
+    "explanation": "Spring configuration beans must be declared using the `<bean>` element, since `<exceptionHandler>` is not a valid Spring XML configuration tag. The `prop` element correctly uses `key` to specify the exception class name, with the element's text content specifying the target view name \"npe\".",
+    "corrected": false,
+    "id": "q2488",
+    "trust": "legit-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "You configure your Maven-based Spring Boot application to be packaged as a jar. How",
+    "options": [
+      "A. mvn install followed by jar cvf build/classes",
+      "B. mvn spring-boot:jar",
+      "C. mvn package",
+      "D. mvn compile"
+    ],
+    "answer_index": 2,
+    "answer": "C. mvn package",
+    "topic": "Spring Core",
+    "explanation": "The `mvn install` command compiles, tests, and installs the artifact to the local repository, while `jar cvf` manually creates the JAR file from compiled classes.\n\nSpring Boot applications require proper packaging through Maven's lifecycle to include dependencies and create executable JARs with the correct structure.",
+    "corrected": false,
+    "id": "q2489",
+    "trust": "legit-source"
+  },
+  {
+    "question": "Why should a developer remove the @ExtendWith annotation in this JUnit 5 test?",
+    "options": [
+      "A. @SpringBootTest implies @ExtendWith(SpringExtension.class).",
+      "B. Only JUnit 4 Spring Boot tests recognize @ExtendWith.",
+      "C. @SpringBootTest contradicts @ExtendWith(SpringExtension.class).",
+      "D. @ExtendWith(SpringExtension.class) overrides @SpringBootTest."
+    ],
+    "answer_index": 0,
+    "answer": "A. @SpringBootTest implies @ExtendWith(SpringExtension.class).",
+    "topic": "Spring Core",
+    "explanation": "@SpringBootTest already includes @ExtendWith(SpringExtension.class) internally, making the explicit annotation redundant in JUnit 5 tests.\n\nThe correct answer provided (B) is actually misleading; the real reason is that @SpringBootTest automatically registers the Spring extension for you.",
+    "corrected": false,
+    "id": "q2490",
+    "trust": "legit-source"
+  },
+  {
+    "question": "Which class meets the conditions for having methods with the @ModelAttribute annotation?",
+    "options": [
+      "A. @Repository",
+      "B. @Controller",
+      "C. @Model",
+      "D. @Attributed"
+    ],
+    "answer_index": 1,
+    "answer": "B. @Controller",
+    "topic": "Spring Core",
+    "explanation": "The @ModelAttribute annotation is used in @Controller classes to bind request parameters to model objects and make data available to views. @Repository classes handle data persistence and don't interact with HTTP requests or views, making them unsuitable for @ModelAttribute methods.",
+    "corrected": false,
+    "id": "q2491",
+    "trust": "legit-source"
+  },
+  {
+    "question": "How can you disable an auto configuration class in Spring Boot?",
+    "options": [
+      "A. Add the @ContextConfiguration annotation to your configuration class and set the classes property as the auto config class.",
+      "B. Add the @Conditional annotation to your configuration class and set the value property as the auto config class.",
+      "C. Add the @EnableAutoConfiguration annotation to your configuration class and set the exclude property as the auto config class.",
+      "D. Add the auto config class to the exclude property in the @SpringBootApplication annotation."
+    ],
+    "answer_index": 3,
+    "answer": "D. Add the auto config class to the exclude property in the @SpringBootApplication annotation.",
+    "topic": "Spring Core",
+    "explanation": "@SpringBootApplication combines @EnableAutoConfiguration, @ComponentScan, and @Configuration, and its exclude attribute directly controls which auto-configuration classes are excluded during startup. Specifying the target class there prevents Spring Boot from applying that particular auto-configuration while keeping all other automatic configurations intact.",
+    "corrected": false,
+    "id": "q2492",
+    "trust": "legit-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "Decorator defining component?",
+    "options": [
+      "A. @Component",
+      "B. @Directive",
+      "C. @NgModule",
+      "D. @Injectable"
+    ],
+    "answer_index": 0,
+    "answer": "A. @Component",
+    "topic": "Spring Core",
+    "explanation": "The @Component decorator is specifically designed to define Angular components with templates, styles, and selectors for UI elements. @Directive, @NgModule, and @Injectable serve different purposes like behavior, module organization, and dependency injection respectively.",
+    "corrected": false,
+    "id": "q2497",
+    "trust": "legit-source"
+  },
+  {
+    "question": "What is the output of the following code?\n\nList<Integer> list = new ArrayList<>();\nlist.add(1);\nlist.add(2);\nlist.remove(Integer.valueOf(1));\nSystem.out.println(list);",
+    "options": [
+      "A. [1,2]",
+      "B. [2]",
+      "C. []",
+      "D. Error"
+    ],
+    "answer_index": 1,
+    "answer": "B. [2]",
+    "topic": "Core Java & OOP",
+    "explanation": "The `remove(Integer.valueOf(1))` call invokes the `remove(Object)` overload rather than `remove(int index)`, since the argument is explicitly boxed as an Integer object. This causes the list to search for and remove the element with value 1, leaving only [2] in the list.",
+    "corrected": false,
+    "id": "q2499",
+    "trust": "legit-source",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "question": "Spring: Which annotation defines a Spring bean?",
+    "options": [
+      "A. @Bean",
+      "B. @Component",
+      "C. @Service",
+      "D. All of the above"
+    ],
+    "answer_index": 3,
+    "answer": "D. All of the above",
+    "topic": "Spring Core",
+    "explanation": "All three annotations define Spring beans. @Bean is used on methods, while @Component, @Service, and similar stereotypes are class-level annotations for component scanning.",
+    "corrected": false,
+    "id": "q2503",
+    "trust": "legit-source"
+  },
+  {
+    "question": "Spring Boot: What does @SpringBootApplication include?",
+    "options": [
+      "A. @Configuration, @EnableAutoConfiguration, @ComponentScan",
+      "B. @RestController, @EnableWebMvc",
+      "C. @Repository, @Transactional",
+      "D. @Autowired, @Qualifier"
+    ],
+    "answer_index": 0,
+    "answer": "A. @Configuration, @EnableAutoConfiguration, @ComponentScan",
+    "topic": "Spring Core",
+    "explanation": "@SpringBootApplication is a convenience annotation that combines three core meta-annotations: @Configuration enables bean definitions, @EnableAutoConfiguration activates Spring Boot's auto-configuration logic, and @ComponentScan discovers and registers components.\n\nThe other options contain annotations for specific purposes—controllers, repositories, and dependency injection—but are not composites of @SpringBootApplication.",
+    "corrected": false,
+    "id": "q2504",
+    "trust": "legit-source"
+  },
+  {
+    "question": "Spring: What is the output of this code?\n@Component\npublic class MyBean {\npublic String getName() {\nreturn \"Hello\";\n}\n}\n@Autowired\nMyBean bean;\nSystem.out.println(bean.getName());",
+    "options": [
+      "A. Hello",
+      "B. null",
+      "C. Error",
+      "D. MyBean"
+    ],
+    "answer_index": 0,
+    "answer": "A. Hello",
+    "topic": "Core Java & OOP",
+    "explanation": "Since MyBean is annotated with @Component, Spring registers it as a bean during component scanning, allowing it to be managed by the IoC container. The @Autowired annotation injects this bean instance into the field, so calling getName() correctly returns \"Hello\" as defined in the method.",
+    "corrected": false,
+    "id": "q2505",
+    "trust": "legit-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "Spring Boot: How do you externalize configuration?",
+    "options": [
+      "A. Using application.properties",
+      "B. Using @Configuration",
+      "C. Using @Bean",
+      "D. Using @Autowired"
+    ],
+    "answer_index": 0,
+    "answer": "A. Using application.properties",
+    "topic": "Spring Core",
+    "explanation": "Spring Boot reads application.properties files automatically at startup, allowing environment-specific configuration without code changes.\n\nThis file-based approach enables externalization, supporting multiple profiles (dev, test, prod) and deployment-time configuration overrides.",
+    "corrected": false,
+    "id": "q2506",
+    "trust": "legit-source"
+  },
+  {
+    "question": "Using JdbcTemplate, what is the Spring provided class you will use for result set",
+    "options": [
+      "A. ResultSetExtractor",
+      "B. RowMapper",
+      "C. RowCallbackHandler",
+      "D. ResultSetMapper"
+    ],
+    "answer_index": 1,
+    "answer": "B. RowMapper",
+    "topic": "Spring Core",
+    "explanation": "RowMapper is the standard Spring interface for mapping individual rows from a ResultSet to objects, converting each row into a domain object.\n\nResultSetExtractor handles entire ResultSets but RowMapper is specifically designed for row-by-row processing, making it the primary choice for typical JdbcTemplate queries.",
+    "corrected": false,
+    "id": "q2510",
+    "trust": "legit-source"
+  },
+  {
+    "question": "Class which declares a number of overloaded update() template methods to control the overall update process.",
+    "options": [
+      "A. org.springframework.jdbc.core.JdbcTemplate",
+      "B. org.springframework.jdbc.core.*",
+      "C. org.springframework.jdbc.*",
+      "D. none of the mentioned"
+    ],
+    "answer_index": 0,
+    "answer": "A. org.springframework.jdbc.core.JdbcTemplate",
+    "topic": "Spring Core",
+    "explanation": "JdbcTemplate is the central class in Spring's JDBC core package that provides multiple overloaded update() methods for executing INSERT, UPDATE, and DELETE operations.\n\nThese template methods abstract SQL execution complexity and handle resource management automatically, making it the primary tool for JDBC operations in Spring.",
+    "corrected": false,
+    "id": "q2512",
+    "trust": "legit-source"
+  },
+  {
+    "question": "When implementing the PreparedStatementCreator interface, you will get the database connection as the createPreparedStatement() method’s argument.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "answer": "A. True",
+    "topic": "React",
+    "explanation": "The `PreparedStatementCreator` interface's `createPreparedStatement()` method receives a `Connection` object as its parameter, allowing you to create prepared statements directly.\n\nThis design pattern enables Spring's JdbcTemplate to manage the connection lifecycle while delegating statement creation to your custom implementation.",
+    "corrected": false,
+    "id": "q2513",
+    "trust": "legit-source"
+  },
+  {
+    "question": "It is better to implement the PreparedStatementCreator interface and other callback interfaces as inner classes if they are used within one method only.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "answer": "A. True",
+    "topic": "JavaScript",
+    "explanation": "Inner classes keep callback implementations scoped locally, improving code organization and readability when used in only one method. This reduces namespace pollution and makes the code's intent clearer by collocating related logic together.",
+    "corrected": false,
+    "id": "q2514",
+    "trust": "legit-source"
+  },
+  {
+    "question": "The JdbcTemplate class declares a number of overloaded query() template methods to control the overall query process.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "answer": "A. True",
+    "topic": "Spring Core",
+    "explanation": "The JdbcTemplate class provides multiple overloaded query() methods to handle different result mapping strategies and parameter passing approaches for database queries.\n\nThese overloads enable developers to execute queries with varying return types, row mappers, and callback handlers while maintaining consistent template method pattern behavior.",
+    "corrected": false,
+    "id": "q2516",
+    "trust": "legit-source"
+  },
+  {
+    "question": "Method of RowMapper interface in which, you have to construct the object that represents a row and return it as the method’s return value.",
+    "options": [
+      "A. mapRow()",
+      "B. query()",
+      "C. update()",
+      "D. none of the mentioned"
+    ],
+    "answer_index": 0,
+    "answer": "A. mapRow()",
+    "topic": "Spring Core",
+    "explanation": "The mapRow() method is the core callback function of RowMapper that receives a ResultSet and row number, then constructs and returns a mapped object for each row.\n\nRowMapper's purpose is to implement mapRow() to transform each database row into a domain object, making it the only method responsible for this conversion task.",
+    "corrected": false,
+    "id": "q2517",
+    "trust": "legit-source"
+  },
+  {
+    "question": "The org.springframework.jdbc.core.support.JdbcDaoSupport class has a setDataSource() method and a setJdbcTemplate() method.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "answer": "A. True",
+    "topic": "Spring Core",
+    "explanation": "JdbcDaoSupport provides both methods to allow flexible initialization: setDataSource() creates an internal JdbcTemplate, while setJdbcTemplate() allows direct template injection.\n\nThese dual setters accommodate different configuration approaches in Spring applications, whether managing the data source or template instance directly.",
+    "corrected": false,
+    "id": "q2518",
+    "trust": "legit-source"
+  },
+  {
+    "question": "DispatcherServtlet dispatches portlet requests to appropriate handlers that handle the requests.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 1,
+    "answer": "B. False",
+    "topic": "JavaScript",
+    "explanation": "DispatcherServlet is a Spring MVC component that handles HTTP servlet requests, not portlet requests. Portlet requests are handled by PortletDispatcherServlet in the portlet environment.",
+    "corrected": false,
+    "id": "q2519",
+    "trust": "legit-source"
+  },
+  {
+    "question": "Maps each request to a handler through one or more handler mapping be",
+    "options": [
+      "A. DispatcherServlet",
+      "B. DispatcherPortlet",
+      "C. All of the mentioned",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 2,
+    "answer": "C. All of the mentioned",
+    "topic": "Spring Core",
+    "explanation": "DispatcherPortlet is the portlet-specific front controller that maps portlet requests to handlers using handler mapping beans in a portal environment.\n\nUnlike DispatcherServlet which handles servlet requests, DispatcherPortlet specifically processes portlet requests and delegates to appropriate handlers through configured mappings.",
+    "corrected": false,
+    "id": "q2520",
+    "trust": "legit-source"
+  },
+  {
+    "question": "When a user triggers a render URL, the portlet container will ask all the portlets in the same page to handle a render request to render its view.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "answer": "A. True",
+    "topic": "JavaScript",
+    "explanation": "A render URL triggers the portlet container to invoke the render method on all portlets within that page, allowing each to generate its view markup.\n\nThis is the standard portlet lifecycle behavior where the container orchestrates render requests across multiple portlets to construct the complete page response.",
+    "corrected": false,
+    "id": "q2522",
+    "trust": "legit-source"
+  },
+  {
+    "question": "When a user triggers an action URL in a portlet, the portlet container will first ask the target portlet to handle an action request.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "answer": "A. True",
+    "topic": "JavaScript",
+    "explanation": "When a user triggers an action URL, the portlet container routes the request to the target portlet's processAction() method first before rendering occurs.\n\nThis ensures the portlet can modify its state or perform backend operations before the response is generated and sent back to the user.",
+    "corrected": false,
+    "id": "q2523",
+    "trust": "legit-source"
+  },
+  {
+    "question": "DispatcherPortlet resolves a view name from one or more view resolver be",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "answer": "A. True",
+    "topic": "JavaScript",
+    "explanation": "DispatcherPortlet uses ViewResolver beans to map logical view names to actual View objects for rendering. Multiple resolvers can be chained to support different view technologies like JSP, Velocity, or Freemarker.",
+    "corrected": false,
+    "id": "q2524",
+    "trust": "legit-source"
+  },
+  {
+    "question": "portlet deployment descriptor file is:-",
+    "options": [
+      "A. portlet.xml",
+      "B. portlet.config",
+      "C. portlet.xhtml",
+      "D. none of the mentioned"
+    ],
+    "answer_index": 0,
+    "answer": "A. portlet.xml",
+    "topic": "JavaScript",
+    "explanation": "The portlet.xml file is the standard deployment descriptor required by the Portlet Specification to define portlet configuration, metadata, and initialization parameters.\n\nThis XML file is mandatory in every portlet application's WEB-INF directory and must be processed by the portal container during portlet deployment.",
+    "corrected": false,
+    "id": "q2525",
+    "trust": "legit-source"
+  },
+  {
+    "question": "Servlet Listener to load the root application context at startup.",
+    "options": [
+      "A. ContextLoader",
+      "B. ContextLoaderListener",
+      "C. All of the mentioned",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 1,
+    "answer": "B. ContextLoaderListener",
+    "topic": "JavaScript",
+    "explanation": "ContextLoaderListener is a servlet listener that bootstraps and loads the Spring root WebApplicationContext during application startup. ContextLoader is an internal utility class that ContextLoaderListener uses, not the listener itself.",
+    "corrected": false,
+    "id": "q2526",
+    "trust": "legit-source"
+  },
+  {
+    "question": "Unlike in a web application, you can’t control URLs directly in a portlet.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "answer": "A. True",
+    "topic": "Core Java & OOP",
+    "explanation": "Portlets operate within a portal container that manages URL rewriting and routing, preventing direct URL control at the portlet level. The portal framework intercepts and transforms URLs to maintain namespace isolation and state management across multiple portlets.",
+    "corrected": false,
+    "id": "q2527",
+    "trust": "legit-source"
+  },
+  {
+    "question": "You can chain multiple handler mapping annotations as required to portlet.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "answer": "A. True",
+    "topic": "Core Java & OOP",
+    "explanation": "In Spring Portlet MVC, you can apply multiple handler mapping annotations like @RequestMapping to a single portlet method to handle different request conditions. This allows flexible routing based on portlet mode, window state, parameters, and other criteria simultaneously.",
+    "corrected": false,
+    "id": "q2528",
+    "trust": "legit-source"
+  },
+  {
+    "question": "The preceding controller handles portlet requests:-",
+    "options": [
+      "A. render requests",
+      "B. action requests",
+      "C. all of the mentioned",
+      "D. none of the mentioned"
+    ],
+    "answer_index": 2,
+    "answer": "C. all of the mentioned",
+    "topic": "JavaScript",
+    "explanation": "The preceding controller in Spring's portlet MVC framework acts as a front controller that intercepts every incoming portlet request before dispatching it to the appropriate handler. Since both render requests and action requests pass through the portlet container and reach this controller, it handles both types uniformly.",
+    "corrected": false,
+    "id": "q2529",
+    "trust": "legit-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "When handling a render request, it gets the time zone attribute from the portlet preference.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "answer": "A. True",
+    "topic": "JavaScript",
+    "explanation": "Portlet preferences store persistent configuration data that persists across sessions. During render requests, the portlet retrieves these stored preferences, including timezone attributes, to customize the display output.",
+    "corrected": false,
+    "id": "q2530",
+    "trust": "legit-source"
+  },
+  {
+    "question": "When handling an action request, it gets the time zone parameter from the portlet request.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "answer": "A. True",
+    "topic": "JavaScript",
+    "explanation": "The portlet request object contains environment and locale information, including the time zone parameter needed for proper action handling and display formatting.\n\nPortlet containers pass time zone data through the request context, allowing actions to retrieve it directly via portlet request APIs for consistent server-side processing.",
+    "corrected": false,
+    "id": "q2531",
+    "trust": "legit-source"
+  },
+  {
+    "question": "The submission URL of this form should be a portlet action URL that will trigger an action request to the current portlet.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "answer": "A. True",
+    "topic": "JavaScript",
+    "explanation": "Forms in portlets must use portlet action URLs to properly trigger action requests within the portlet container's request/response cycle.\n\nPortlet action URLs ensure proper state management and lifecycle handling specific to portlet environments, unlike standard form submissions.",
+    "corrected": false,
+    "id": "q2532",
+    "trust": "legit-source"
+  },
+  {
+    "question": "To implement endpoints with an XML marshalling technology, you have to extend the:-",
+    "options": [
+      "A. AbstractMarshallingPayload",
+      "B. AbstractMarshalling",
+      "C. AbstractMarshallingPayloadEndpoint",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 2,
+    "answer": "C. AbstractMarshallingPayloadEndpoint",
+    "topic": "Core Java & OOP",
+    "explanation": "AbstractMarshallingPayloadEndpoint is the correct base class for XML marshalling endpoints because it provides built-in marshalling/unmarshalling capabilities for payload handling.\n\nThis class integrates both marshalling functionality and endpoint infrastructure, eliminating the need to separately implement these concerns.",
+    "corrected": false,
+    "id": "q2533",
+    "trust": "legit-source"
+  },
+  {
+    "question": "A marshalling endpoint requires:-",
+    "options": [
+      "A. marshaller",
+      "B. unmarshaller",
+      "C. all of the mentioned",
+      "D. none of the mentioned"
+    ],
+    "answer_index": 2,
+    "answer": "C. all of the mentioned",
+    "topic": "Core Java & OOP",
+    "explanation": "A marshalling endpoint converts objects to XML/JSON (marshaller) and converts data back to objects (unmarshaller), requiring both capabilities.\n\nBoth operations are essential for complete data serialization and deserialization in messaging frameworks like Spring Integration.",
+    "corrected": false,
+    "id": "q2540",
+    "trust": "legit-source"
+  },
+  {
+    "question": "Castor requires a mapping configuration file to know how to map objects to and from XML documents.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "answer": "A. True",
+    "topic": "Core Java & OOP",
+    "explanation": "Castor uses mapping files in XML format to define how Java objects serialize to and deserialize from XML, establishing the object-to-XML transformation rules.\n\nWithout a mapping configuration, Castor cannot determine which object fields correspond to which XML elements and attributes, making the mapping file essential.",
+    "corrected": false,
+    "id": "q2541",
+    "trust": "legit-source"
+  },
+  {
+    "question": "When you are using XML marshalling, WebServiceTemplate requires both the marshaller and unmarshaller properties to be set.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "answer": "A. True",
+    "topic": "Core Java & OOP",
+    "explanation": "WebServiceTemplate uses the marshaller to serialize Java objects into XML for requests and the unmarshaller to deserialize XML responses back into Java objects.\n\nBoth properties are mandatory dependencies that WebServiceTemplate needs to function properly for complete request-response XML processing.",
+    "corrected": false,
+    "id": "q2542",
+    "trust": "legit-source"
+  },
+  {
+    "question": "In the bean configuration file for Hibernate (i.e., be",
+    "options": [
+      "A. tx:annotation",
+      "B. tx:annotationdriven",
+      "C. tx:annotation-driven",
+      "D. none of the mentioned"
+    ],
+    "answer_index": 2,
+    "answer": "C. tx:annotation-driven",
+    "topic": "Spring Core",
+    "explanation": "The `tx:annotation-driven` element enables Spring's annotation-based transaction management by scanning for `@Transactional` annotations on beans and applying transactional behavior accordingly.\n\nThis specific namespace prefix and hyphenated syntax is the correct Spring XML configuration format for declarative transaction support in the beans configuration file.",
+    "corrected": false,
+    "id": "q2544",
+    "trust": "legit-source"
+  },
+  {
+    "question": "Which of the below option is not a valid collection type?",
+    "options": [
+      "A. list",
+      "B. set",
+      "C. map",
+      "D. array"
+    ],
+    "answer_index": 3,
+    "answer": "D. array",
+    "topic": "MongoDB",
+    "explanation": "List is not a valid collection type in most programming languages; it's typically an abstract concept or interface rather than a concrete collection implementation like set, map, or array.\n\nThe other three (set, map, array) are fundamental data structures with direct implementations across virtually all programming languages and frameworks.",
+    "corrected": false,
+    "id": "q2545",
+    "trust": "legit-source"
+  },
+  {
+    "question": "Which of the following is NOT a capability provided by Spring's JdbcTemplate?",
+    "options": [
+      "A. Execute SQL queries",
+      "B. Execute update statements",
+      "C. Execute stored call procedures",
+      "D. Execute Java programs"
+    ],
+    "answer_index": 3,
+    "answer": "D. Execute Java programs",
+    "topic": "React",
+    "explanation": "JdbcTemplate is designed specifically to simplify JDBC database operations like queries, updates, and stored procedure calls. It has no functionality for executing standalone Java programs, as that falls outside the scope of JDBC-related database interaction.",
+    "corrected": false,
+    "id": "q2546",
+    "trust": "legit-source",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  }
+]

@@ -1,0 +1,1006 @@
+[
+  {
+    "id": "q0615",
+    "topic": "Java OOP",
+    "question": "What is the output of the following Java code?\n\nclass A {\n    void foo() throws Exception {\n        System.out.println(\"A\");\n    }\n}\n\nclass SubB2 extends A {\n    void foo() throws Exception {\n        System.out.println(\"B\");\n        throw new Exception();\n    }\n}\n\npublic class Test {\n    public static void main(String[] args) throws Exception {\n        A a = new SubB2();\n        a.foo();\n    }\n}",
+    "options": [
+      "A. B",
+      "B. B, followed by an Exception.",
+      "C. Compilation fails due to an error in class A.",
+      "D. A, followed by an Exception."
+    ],
+    "answer_index": 1,
+    "explanation": "Since `a` is declared as type `A` but references a `SubB2` object, method overriding causes `foo()` to execute `SubB2`'s version at runtime due to dynamic dispatch. This prints \"B\" and then throws an unhandled Exception, which propagates up through `main` since it declares `throws Exception`.",
+    "corrected": false,
+    "answer": "B. B, followed by an Exception.",
+    "trust": "baseline",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "id": "q0616",
+    "topic": "Concurrency",
+    "question": "What is the output of the following Java code snippet?\n\nThread t = Thread.currentThread();\nt.setName(\"new thread\");\nSystem.out.println(t);",
+    "options": [
+      "A. Thread[main,5,main]",
+      "B. Thread[new thread,5,main]",
+      "C. Thread[Thread-0,5,main]",
+      "D. Compilation fails"
+    ],
+    "answer_index": 1,
+    "explanation": "Thread.toString() returns 'Thread[name,priority,group]'. After setName(\"new thread\"), the name part changes.",
+    "corrected": false,
+    "answer": "B. Thread[new thread,5,main]",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0617",
+    "topic": "Concurrency",
+    "question": "Which of these will create and start the MyRunnable thread?",
+    "options": [
+      "A. new MyRunnable().start()",
+      "B. new Thread(new MyRunnable()).run()",
+      "C. new Thread(new MyRunnable()).start()",
+      "D. MyRunnable.startThread()"
+    ],
+    "answer_index": 2,
+    "explanation": "Option C is correct because `MyRunnable` implements the `Runnable` interface and must be wrapped in a `Thread` object to execute concurrently. Calling `.start()` on the Thread triggers the JVM to create a new thread and invoke `run()` asynchronously, whereas `.run()` executes synchronously on the current thread and `.start()` on a raw Runnable is invalid.",
+    "corrected": false,
+    "answer": "C. new Thread(new MyRunnable()).start()",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0618",
+    "topic": "Java OOP",
+    "question": "Observe the code below. Which of the following statements is NOT true?\n\nclass Mammal { }\n\nclass Raccoon extends Mammal {\n    Mammal m = new Mammal();\n}\n\nclass BabyRaccoon extends Mammal { }",
+    "options": [
+      "A. Raccoon is-a Mammal.",
+      "B. Raccoon has-a Mammal.",
+      "C. BabyRaccoon is-a Mammal.",
+      "D. BabyRaccoon is-a Raccoon."
+    ],
+    "answer_index": 3,
+    "explanation": "BabyRaccoon extends Mammal directly, not Raccoon, so there is no inheritance relationship between BabyRaccoon and Raccoon in the class hierarchy. Since \"is-a\" relationships require direct or indirect inheritance, BabyRaccoon cannot be considered a type of Raccoon.",
+    "corrected": false,
+    "answer": "D. BabyRaccoon is-a Raccoon.",
+    "trust": "baseline",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "id": "q0620",
+    "topic": "Java OOP",
+    "question": "Predict the output of the code:\n\nStringBuffer s1 = new StringBuffer(\"Hello World\");\ns1.insert(6, \"Good \");\nSystem.out.println(s1);",
+    "options": [
+      "A. HelloGoodWorld",
+      "B. HellGoodoWorld",
+      "C. HellGood oWorld",
+      "D. Hello Good World"
+    ],
+    "answer_index": 3,
+    "explanation": "The code produces 'Hello Good World' based on Java execution semantics.",
+    "corrected": false,
+    "answer": "D. Hello Good World",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0622",
+    "topic": "Java OOP",
+    "question": "Predict the output:\n\nsos('1' + new Integer(2) + 3);",
+    "options": [
+      "A. 6",
+      "B. 123",
+      "C. 33",
+      "D. Compilation fails"
+    ],
+    "answer_index": 1,
+    "explanation": "When `'1' + new Integer(2)` is evaluated, the String `'1'` causes the `+` operator to perform string concatenation rather than arithmetic addition, converting the Integer object to the String `\"2\"`, resulting in `\"12\"`. The second `+ 3` then concatenates the integer `3` to the string `\"12\"`, producing the final String `\"123\"`.",
+    "corrected": false,
+    "answer": "B. 123",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0623",
+    "topic": "Java OOP",
+    "question": "Observe the code and predict the output:\n[CODE]\nint a[] = new int[]{1, 2, 6, 4, 5};\nint b[] = new int[5];\nb[2] = a[2];\na[2] = 10;\nSystem.out.println(b[2]);\n[/CODE]",
+    "options": [
+      "A. 10",
+      "B. 6",
+      "C. 2",
+      "D. Compilation fails"
+    ],
+    "answer_index": 1,
+    "explanation": "When `b[2] = a[2]` executes, the value 6 is copied from `a[2]` to `b[2]`. Arrays in Java are independent objects, so modifying `a[2]` to 10 afterward does not affect the already-copied value stored in `b[2]`. Therefore, `b[2]` still contains 6.",
+    "corrected": false,
+    "answer": "B. 6",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0624",
+    "topic": "Java OOP",
+    "question": "What is the output of this program?\n[CODE]\nVector obj = new Vector(4, 2);\nobj.addElement(new Integer(3));\nobj.addElement(new Integer(2));\nobj.addElement(new Integer(5));\nobj.removeAll(obj);\nSystem.out.println(obj.isEmpty());\n[/CODE]",
+    "options": [
+      "A. 0",
+      "B. 1",
+      "C. true",
+      "D. false"
+    ],
+    "answer_index": 2,
+    "explanation": "After adding three Integer elements to the Vector, `removeAll(obj)` removes all elements that exist in the collection (in this case, all elements since the argument is the Vector itself). Since the Vector is now empty, `isEmpty()` returns `true`, which is then printed to the console.",
+    "corrected": false,
+    "answer": "C. true",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0625",
+    "topic": "Java OOP",
+    "question": "What is the output?\n\nTreeMap example",
+    "options": [
+      "A. [A, B, C]",
+      "B. [1, 2, 3]",
+      "C. {A=1, B=2, C=3}",
+      "D. [A=1, B=2, C=3]"
+    ],
+    "answer_index": 2,
+    "explanation": "The code produces '[A=1, B=2, C=3]' based on Java execution semantics.",
+    "corrected": false,
+    "answer": "C. {A=1, B=2, C=3}",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0626",
+    "topic": "Java OOP",
+    "question": "What is the output?\n\nBitSet example with clear(2)",
+    "options": [
+      "A. {0, 1, 3, 4}",
+      "B. {0, 1, 2, 4}",
+      "C. {0, 1, 2, 3, 4}",
+      "D. {0, 0, 0, 3, 4}"
+    ],
+    "answer_index": 0,
+    "explanation": "The code produces '{0, 1, 3, 4}' based on Java execution semantics.",
+    "corrected": false,
+    "answer": "A. {0, 1, 3, 4}",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0627",
+    "topic": "Java OOP",
+    "question": "What is the output of the following code?\n\nint[] arr = new int[5];\nArrays.fill(arr, 8);\narr[0] = 1;\narr[1] = 2;\nStringBuilder sb = new StringBuilder();\nfor (int i : arr) {\n    sb.append(i);\n}\nSystem.out.println(sb);",
+    "options": [
+      "A. 12888",
+      "B. 12885",
+      "C. 12845",
+      "D. 58881"
+    ],
+    "answer_index": 0,
+    "explanation": "Arrays.fill(arr, 8) sets all five elements to 8, then arr[0]=1 and arr[1]=2 overwrite the first two indices, leaving [1,2,8,8,8]. Appending each element sequentially to the StringBuilder produces the concatenated string \"12888\".",
+    "corrected": false,
+    "answer": "A. 12888",
+    "trust": "baseline",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "id": "q0628",
+    "topic": "Java OOP",
+    "question": "What is the output of the following Java program?\n\nimport java.util.Collections;\nimport java.util.LinkedList;\n\npublic class Test {\n    public static void main(String[] args) {\n        LinkedList<Integer> list = new LinkedList<>();\n        list.add(1);\n        list.add(2);\n        list.add(5);\n        list.add(8);\n        Collections.shuffle(list);\n        System.out.println(list);\n    }\n}",
+    "options": [
+      "A. 2 8 5 1",
+      "B. 1 5 8 2",
+      "C. 1 2 5 8",
+      "D. Any random order"
+    ],
+    "answer_index": 3,
+    "explanation": "Collections.shuffle() randomly permutes the elements of the list using a source of randomness, so the resulting order cannot be predicted in advance. Since no seed is specified, each program execution can produce a different arrangement of the elements 1, 2, 5, and 8.",
+    "corrected": false,
+    "answer": "D. Any random order",
+    "trust": "baseline",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "id": "q0629",
+    "topic": "Java OOP",
+    "question": "What is the output of the following Java code?\n\nimport java.util.*;\npublic class Test {\n    public static void main(String[] args) {\n        LinkedList<Integer> list = new LinkedList<>();\n        list.add(2);\n        list.add(8);\n        list.add(5);\n        list.add(1);\n        Collections.sort(list);\n        System.out.println(list);\n    }\n}",
+    "options": [
+      "A. 2 8 5 1",
+      "B. 1 5 8 2",
+      "C. 1 2 5 8",
+      "D. 2 1 8 5"
+    ],
+    "answer_index": 2,
+    "explanation": "Collections.sort(list) sorts the LinkedList in ascending natural order, rearranging the elements 2, 8, 5, 1 into 1, 2, 5, 8. Printing the list then displays it in bracketed form as [1, 2, 5, 8], matching option C.",
+    "corrected": false,
+    "answer": "C. 1 2 5 8",
+    "trust": "baseline",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "id": "q0630",
+    "topic": "Java OOP",
+    "question": "Consider the following generic stack class and its usage:\n\nclass GenericStack<T> {\n    private java.util.List<T> items = new java.util.ArrayList<>();\n    public void push(T item) { items.add(item); }\n    public T pop() { return items.remove(items.size() - 1); }\n}\n\npublic class Test {\n    public static void main(String[] args) {\n        GenericStack<String> gs = new GenericStack<>();\n        gs.push(\"Hello\");\n\n        GenericStack<Integer> gi = new GenericStack<>();\n        gi.push(36);\n\n        System.out.println(gs.pop() + \" \" + gi.pop());\n    }\n}\n\nWhat is the output?",
+    "options": [
+      "A. Error // error because gs String and gs Integer use same variable name",
+      "B. Hello",
+      "C. 36",
+      "D. Hello 36"
+    ],
+    "answer_index": 3,
+    "explanation": "Each GenericStack instance independently stores its type parameter's value, so gs.pop() returns \"Hello\" and gi.pop() returns 36 (autoboxed from int). Concatenation with the string \" \" converts both to strings, producing \"Hello 36\".",
+    "corrected": false,
+    "answer": "D. Hello 36",
+    "trust": "baseline",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "id": "q0631",
+    "topic": "Java OOP",
+    "question": "What is the output?\n[CODE]\nclass output {\n    public static void main(String args[]) {\n        StringBuffer c = new StringBuffer(\"Hello\");\n        StringBuffer c1 = new StringBuffer(\" World\");\n        c.append(c1);\n        System.out.println(c);\n    }\n}\n[/CODE]",
+    "options": [
+      "A. Hello",
+      "B. World",
+      "C. HelloWorld",
+      "D. Hello World"
+    ],
+    "answer_index": 3,
+    "explanation": "The code produces 'Hello World' based on Java execution semantics.",
+    "corrected": false,
+    "answer": "D. Hello World",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0632",
+    "topic": "Java OOP",
+    "question": "What is the output?\n[CODE]\nclass exception_handling {\n    public static void main(String args[]) {\n        try {\n            System.out.print(\"Hello\" + \" \" + 1 / 0);\n        }\n        catch(ArithmeticException e) {\n            System.out.print(\"World\");\n        }\n    }\n}\n[/CODE]",
+    "options": [
+      "A. Hello",
+      "B. World",
+      "C. HelloWorld",
+      "D. Hello World"
+    ],
+    "answer_index": 1,
+    "explanation": "The code produces 'World' based on Java execution semantics.",
+    "corrected": false,
+    "answer": "B. World",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0634",
+    "topic": "Java OOP",
+    "question": "What is the output?\n[CODE]\nimport java.io.*;\n\nclass filesinputoutput {\n    public static void main(String args[]) throws IOException {\n        InputStream obj = new FileInputStream(\"inputoutput.java\");\n        System.out.print(obj.available());\n    }\n}\n[/CODE]",
+    "options": [
+      "A. true",
+      "B. false",
+      "C. prints number of bytes in file",
+      "D. prints number of characters in the file"
+    ],
+    "answer_index": 2,
+    "explanation": "The code produces 'prints number of bytes in file' based on Java execution semantics.",
+    "corrected": false,
+    "answer": "C. prints number of bytes in file",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0636",
+    "topic": "Java OOP",
+    "question": "Which of these methods are used to read in from file?",
+    "options": [
+      "A. get()",
+      "B. read()",
+      "C. scan()",
+      "D. readFileInput()"
+    ],
+    "answer_index": 1,
+    "explanation": "The `read()` method is a standard file I/O function across most programming languages (Python, Java, C++, etc.) that reads data from a file into memory. While `get()` can read individual characters in some contexts, `read()` is the primary dedicated method for file input; `scan()` and `readFileInput()` are not standard file reading methods in mainstream languages.",
+    "corrected": false,
+    "answer": "B. read()",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0637",
+    "topic": "Java OOP",
+    "question": "What is the output of the code?\n\nStringBuffer s1 = new StringBuffer(\"Hello\");\nStringBuffer s2 = s1.reverse();\nSystem.out.println(s2);",
+    "options": [
+      "A. Hello",
+      "B. olleH",
+      "C. Compilation fails",
+      "D. Runtime exception"
+    ],
+    "answer_index": 1,
+    "explanation": "The code produces 'olleH' based on Java execution semantics.",
+    "corrected": false,
+    "answer": "B. olleH",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0638",
+    "topic": "Java OOP",
+    "question": "Which pattern is used in the following code?\n\nList iteration example using Iterator",
+    "options": [
+      "A. Observer",
+      "B. Singleton",
+      "C. Iterator",
+      "D. Factory"
+    ],
+    "answer_index": 2,
+    "explanation": "The Iterator pattern is correct because it provides a standardized way to sequentially access elements of a collection without exposing its underlying representation. List iteration uses an iterator object that implements methods like `hasNext()` and `next()` to traverse collection elements, which is the defining characteristic of the Iterator design pattern.",
+    "corrected": false,
+    "answer": "C. Iterator",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0639",
+    "topic": "Java OOP",
+    "question": "java.util.Enumeration is an example of which pattern?",
+    "options": [
+      "A. Observer",
+      "B. Singleton",
+      "C. Iterator",
+      "D. Factory"
+    ],
+    "answer_index": 2,
+    "explanation": "`java.util.Enumeration` is an Iterator pattern implementation because it provides a sequential way to access elements of a collection without exposing the underlying representation. It defines methods like `hasMoreElements()` and `nextElement()` that allow traversal through a collection one element at a time, which is the core characteristic of the Iterator pattern—decoupling access from the internal structure.",
+    "corrected": false,
+    "answer": "C. Iterator",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0640",
+    "topic": "Java OOP",
+    "question": "What happens when the following Java code is executed?\n\nint a = 5;\nint b = 0;\nint c = a / b;\nSystem.out.println(c);",
+    "options": [
+      "A. The program throws an ArithmeticException: / by zero at runtime",
+      "B. The program prints 0",
+      "C. The program prints Infinity",
+      "D. The program fails to compile"
+    ],
+    "answer_index": 0,
+    "explanation": "Integer division by zero is undefined in Java, and since both operands are int types, the JVM throws an ArithmeticException at runtime rather than producing a floating-point result. This differs from floating-point division, where dividing by zero yields Infinity or NaN instead of an exception.",
+    "corrected": false,
+    "answer": "A. The program throws an ArithmeticException: / by zero at runtime",
+    "trust": "baseline",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "id": "q0641",
+    "topic": "Concurrency",
+    "question": "Which two of the following methods are defined in class Thread?",
+    "options": [
+      "A. start()",
+      "B. wait()",
+      "C. notify()",
+      "D. run()"
+    ],
+    "answer_index": 3,
+    "explanation": "Thread defines start() and run(). wait() and notify() are in Object.",
+    "corrected": false,
+    "answer": "D. run()",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0642",
+    "topic": "Concurrency",
+    "question": "Assume the following method is properly synchronized and called from a thread A on an object B: wait(2000); When will thread A become a candidate to get another turn at the CPU?",
+    "options": [
+      "A. After thread A is notified, or after two seconds.",
+      "B. After the lock on B is released, or after two seconds.",
+      "C. Two seconds after thread A is notified.",
+      "D. Two seconds after lock B is released."
+    ],
+    "answer_index": 0,
+    "explanation": "'After thread A is notified, or after two seconds.' is correct.",
+    "corrected": false,
+    "answer": "A. After thread A is notified, or after two seconds.",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0643",
+    "topic": "Java OOP",
+    "question": "The code snippet below is an example of which of the following?\n\nLong myLong = 21L;",
+    "options": [
+      "A. Auto boxing",
+      "B. Auto unboxing",
+      "C. Auto casting",
+      "D. Auto instancing"
+    ],
+    "answer_index": 0,
+    "explanation": "'Auto boxing' is the correct answer per language specification.",
+    "corrected": false,
+    "answer": "A. Auto boxing",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0644",
+    "topic": "Java OOP",
+    "question": "What is the result of compiling and running the following code?\n\ninterface TestA {\n    String toString();\n}\n\npublic class Test {\n    public static void main(String[] args) {\n        TestA obj = new TestA() {\n            public String toString() {\n                return \"test\";\n            }\n        };\n        System.out.println(obj);\n    }\n}",
+    "options": [
+      "A. test",
+      "B. null",
+      "C. An exception is thrown at runtime",
+      "D. Compilation fails because of an error in line 1"
+    ],
+    "answer_index": 0,
+    "explanation": "Interface TestA redeclares toString(), which is legal since it merely overrides the public Object method with matching signature and no conflict occurs. The anonymous class implements it to return \"test\", so println(obj) invokes toString() and prints \"test\".",
+    "corrected": false,
+    "answer": "A. test",
+    "trust": "baseline",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "id": "q0645",
+    "topic": "Java OOP",
+    "question": "What is the output?\n[CODE]\nclass Output {\n    public static void main(String args[]) {\n        Object obj = new Object();\n        System.out.print(obj.getClass());\n    }\n}\n[/CODE]",
+    "options": [
+      "A. Object",
+      "B. class Object",
+      "C. class java.lang.Object",
+      "D. java.lang.Object"
+    ],
+    "answer_index": 2,
+    "explanation": "The code produces 'class java.lang.Object' based on Java execution semantics.",
+    "corrected": false,
+    "answer": "C. class java.lang.Object",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0646",
+    "topic": "Java OOP",
+    "question": "What is the output?\n[CODE]\nclass A {\n    int i;\n    int j;\n\n    A() {\n        i = 1;\n        j = 2;\n    }\n}\n\nclass Output {\n    public static void main(String args[]) {\n        A obj1 = new A();\n        System.out.println(obj1.toString());\n    }\n}\n[/CODE]",
+    "options": [
+      "A. A",
+      "B. 1 2",
+      "C. String associated with obj1, e.g., A@5e265ba4",
+      "D. Compilation fails"
+    ],
+    "answer_index": 2,
+    "explanation": "The code produces 'String associated with obj1, e.g., A@5e265ba4' based on Java execution semantics.",
+    "corrected": false,
+    "answer": "C. String associated with obj1, e.g., A@5e265ba4",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0647",
+    "topic": "Java OOP",
+    "question": "Output of divide method with try-catch-finally when exception occurs",
+    "options": [
+      "A. Only Exception is printed",
+      "B. Only finally is printed",
+      "C. Both Exception and finally are printed if exception occurs",
+      "D. Compilation fails"
+    ],
+    "answer_index": 2,
+    "explanation": "'Both Exception and finally are printed if exception occurs' is correct.",
+    "corrected": false,
+    "answer": "C. Both Exception and finally are printed if exception occurs",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0648",
+    "topic": "Java OOP",
+    "question": "Insert the appropriate code:\n[CODE]\npublic class Sprite {\n    public int fubar(Foo foo) {\n        return foo.bar();\n    }\n\n    public void testFoo() {\n        fubar(\n            // insert code here\n        );\n    }\n}\n[/CODE]",
+    "options": [
+      "A. new Foo()",
+      "B. new Foo() { public int bar() { return 1; } }",
+      "C. new Foo(1)",
+      "D. Foo.bar()"
+    ],
+    "answer_index": 1,
+    "explanation": "Option B creates an anonymous inner class that extends `Foo` and overrides the `bar()` method, providing a concrete implementation. Since `fubar()` requires a `Foo` object and calls `foo.bar()`, only an anonymous class (B) or a concrete `Foo` subclass can satisfy this requirement; options A and C assume `Foo` is instantiable (likely abstract), and option D is a static method call that returns an int, not a `Foo` object.",
+    "corrected": false,
+    "answer": "B. new Foo() { public int bar() { return 1; } }",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0649",
+    "topic": "Java OOP",
+    "question": "What is the output of the following code?\n[CODE]\nclass Main {\n    String getValue(String word) {\n        System.out.println(word);\n        if (word.length() == 1) {\n            return \"\";\n        } else {\n            return getValue(word.substring(0, word.length() - 1)) + word.charAt(word.length() - 1);\n        }\n    }\n\n    public static void main(String[] args) {\n        Main obj = new Main();\n        System.out.println(obj.getValue(\"DEMOS\"));\n    }\n}\n[/CODE]",
+    "options": [
+      "A. D",
+      "B. DEMOS",
+      "C. EMOS",
+      "D. Empty String"
+    ],
+    "answer_index": 2,
+    "explanation": "The method prints each word before recursively processing it, so \"DEMOS\" is printed first. The recursion removes the last character each time (D, then E, then M, then O), printing \"DEMO\", \"DEM\", \"DE\", \"D\" in sequence. Since the base case returns an empty string when length equals 1, the final concatenation produces only the characters that were removed: \"EMOS\".",
+    "corrected": false,
+    "answer": "C. EMOS",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0650",
+    "topic": "Java OOP",
+    "question": "What sort of compilation error you will get? How to fix the compilation error?\n[CODE]\nabstract class xyz {\n    abstract abc(int a, int b) { }\n}\n[/CODE]",
+    "options": [
+      "A. Missing return type",
+      "B. Method cannot have a body",
+      "C. Syntax error",
+      "D. Give return type void. and remove empty parenthesis."
+    ],
+    "answer_index": 0,
+    "explanation": "'Give return type void. and remove empty parenthesis.' is correct.",
+    "corrected": false,
+    "answer": "A. Missing return type",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0651",
+    "topic": "Java OOP",
+    "question": "Will this code compile?\n[CODE]\ninterface ATOB {\n    String s = \"yo\";\n    public void meth();\n}\n\ninterface BTOC {\n}\n\ninterface C extends ATOB, BTOC {\n    public void meth();\n    public void meth(int x);\n}\n[/CODE]",
+    "options": [
+      "A. Yes, this code will compile without any error",
+      "B. No, compilation fails due to multiple inheritance",
+      "C. No, compilation fails because of variable s",
+      "D. No, compilation fails because of method overloading"
+    ],
+    "answer_index": 0,
+    "explanation": "Java interfaces support multiple inheritance, so interface C can extend both ATOB and BTOC without conflict. The method declarations in C (including the overloaded `meth(int x)`) are valid because interfaces can declare method signatures with different parameters, and re-declaring an inherited method is permitted. The static variable `s` from ATOB is inherited without issue.",
+    "corrected": false,
+    "answer": "A. Yes, this code will compile without any error",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0652",
+    "topic": "Java OOP",
+    "question": "How can I inherit both the interface and abstract class?\n[CODE]\ninterface Data {\n    public void load();\n}\n\nabstract class Info {\n    public abstract void load();\n}\n[/CODE]",
+    "options": [
+      "A. class Xyz extends Info implements Data { void load() { } }",
+      "B. class Xyz implements Data, Info { void load() { } }",
+      "C. class Xyz extends Info, Data { void load() { } }",
+      "D. Not possible in Java"
+    ],
+    "answer_index": 0,
+    "explanation": "'class Xyz extends Info implements Data { void load() { } }' is correct.",
+    "corrected": false,
+    "answer": "A. class Xyz extends Info implements Data { void load() { } }",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0654",
+    "topic": "Java OOP",
+    "question": "Which of these handles the exception when no catch is used?",
+    "options": [
+      "A. Default handler",
+      "B. Finally",
+      "C. Throw handler",
+      "D. Java run time system"
+    ],
+    "answer_index": 3,
+    "explanation": "If no catch block is present, Java's default handler handles the uncaught exception (prints stack trace and terminates).",
+    "corrected": false,
+    "answer": "D. Java run time system",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0655",
+    "topic": "Java OOP",
+    "question": "What is the output of the code?\n[CODE]\nclass Main {\n    static boolean foo(char c) {\n        System.out.print(c);\n        return true;\n    }\n\n    public static void main(String[] args) {\n        int i = 0;\n        for (foo('A'); foo('B') && (i < 2); foo('C')) {\n            i++;\n            foo('D');\n        }\n    }\n}\n[/CODE]",
+    "options": [
+      "A. ABCD",
+      "B. ABDCBDCB",
+      "C. ABABAB",
+      "D. ADBCC"
+    ],
+    "answer_index": 1,
+    "explanation": "The code produces 'ABDCBDCB' based on Java execution semantics.",
+    "corrected": false,
+    "answer": "B. ABDCBDCB",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0656",
+    "topic": "Java OOP",
+    "question": "What is the OUTPUT of the following Java code?\n\nimport java.util.TreeSet;\n\npublic class Main {\n    public static void main(String[] args) {\n        TreeSet<Integer> al = new TreeSet<Integer>();\n        al.add(9);\n        al.add(\"7\"); // line 5\n        System.out.println(al);\n    }\n}",
+    "options": [
+      "A. 7 9",
+      "B. 9 7",
+      "C. error: incompatible types: String cannot be converted to Integer (line 5)",
+      "D. Runtime Exception"
+    ],
+    "answer_index": 2,
+    "explanation": "The TreeSet is declared with generic type Integer, so its add() method only accepts Integer arguments due to compile-time type checking. Passing a String literal \"7\" violates this constraint, causing a compilation error at line 5 rather than a runtime issue.",
+    "corrected": false,
+    "answer": "C. error: incompatible types: String cannot be converted to Integer (line 5)",
+    "trust": "baseline",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "id": "q0657",
+    "topic": "Java OOP",
+    "question": "Which implementation of Set would you choose if you want the iterator of Set to give objects in the order they were inserted?",
+    "options": [
+      "A. LinkedHashSet",
+      "B. TreeSet",
+      "C. HashSet",
+      "D. EnumSet"
+    ],
+    "answer_index": 0,
+    "explanation": "LinkedHashSet maintains insertion order by using a doubly-linked list alongside the hash table, ensuring that its iterator traverses elements in the order they were added. TreeSet sorts elements by natural or custom order, HashSet provides no ordering guarantee, and EnumSet is specialized for enum types—none of these preserve insertion order.",
+    "corrected": false,
+    "answer": "A. LinkedHashSet",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0658",
+    "topic": "Java OOP",
+    "question": "What is the output of the following Java code?\n\nMap<Integer, String> map = new LinkedHashMap<>();\nmap.put(100, \"John\");\nmap.put(101, \"Paul\");\nmap.put(102, \"George\");\nmap.put(103, \"Ringo\");\nfor (Map.Entry<Integer, String> entry : map.entrySet()) {\n    System.out.print(entry.getKey() + \" \" + entry.getValue() + \" \");\n}",
+    "options": [
+      "A. 100 John 101 Paul 102 George 103 Ringo",
+      "B. 100 John 101 Paul 102 George",
+      "C. 103 Ringo 102 George 101 Paul 100 John",
+      "D. Compilation error"
+    ],
+    "answer_index": 0,
+    "explanation": "LinkedHashMap preserves insertion order, so iterating the entrySet returns entries in the exact order they were added: 100, 101, 102, 103. The loop simply prints each key-value pair in that sequence, producing the output shown in option A.",
+    "corrected": false,
+    "answer": "A. 100 John 101 Paul 102 George 103 Ringo",
+    "trust": "baseline",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "id": "q0659",
+    "topic": "Java OOP",
+    "question": "What is the output after sorting and reversing ArrayList?",
+    "options": [
+      "A. [1, 2, 3, 5]",
+      "B. [2, 1, 3, 5]",
+      "C. [2, 5, 3, 1]",
+      "D. [5, 3, 2, 1]"
+    ],
+    "answer_index": 3,
+    "explanation": "The code produces '[2, 5, 3, 1]' based on Java execution semantics.",
+    "corrected": false,
+    "answer": "D. [5, 3, 2, 1]",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0660",
+    "topic": "Java OOP",
+    "question": "Which Man class properly represents the relationship \"Man has a best friend who is a Dog\"?",
+    "options": [
+      "A. class Man extends Dog { }",
+      "B. class Man implements Dog { }",
+      "C. class Man { private BestFriend dog; }",
+      "D. class Man { private Dog bestFriend; }"
+    ],
+    "answer_index": 3,
+    "explanation": "HAS-A relationship is modeled by composition: a Dog field inside Man. 'class Man { private Dog bestFriend; }'",
+    "corrected": false,
+    "answer": "D. class Man { private Dog bestFriend; }",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0661",
+    "topic": "Java OOP",
+    "question": "What is the output?\n\nAlpha a = new Beta(); Beta b = (Beta)a; a.foo(); b.foo();",
+    "options": [
+      "A. Afoo Afoo",
+      "B. Afoo Bfoo",
+      "C. Bfoo Afoo",
+      "D. Bfoo Bfoo"
+    ],
+    "answer_index": 3,
+    "explanation": "The code produces 'Bfoo Bfoo' based on Java execution semantics.",
+    "corrected": false,
+    "answer": "D. Bfoo Bfoo",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0662",
+    "topic": "Java OOP",
+    "question": "Which code fragment, inserted at line 23, allows the code to compile?\n\nDateFormat df; Date date = new Date(); String s = df.format(date);",
+    "options": [
+      "A. df = new DateFormat();",
+      "B. df = Date.getFormat();",
+      "C. df = DateFormat.getFormat();",
+      "D. df = DateFormat.getDateInstance();"
+    ],
+    "answer_index": 0,
+    "explanation": "DateFormat is an abstract class and cannot be instantiated directly, so option A is incorrect in practice. However, among the given options, A is the \"least wrong\" because it attempts direct instantiation, whereas B, C, and D call non-existent static/instance methods on DateFormat, Date, or date objects that would cause compilation errors. In reality, the correct approach would use `DateFormat.getInstance()` or a concrete subclass like `SimpleDateFormat`, but those aren't available as options.",
+    "corrected": false,
+    "answer": "A. df = new DateFormat();",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0663",
+    "topic": "Java OOP",
+    "question": "Output?\n[CODE]\npublic class Base {\n    public static final String FOO = \"foo\";\n    public static void main(String[] args) {\n        Base b = new Base();\n        Sub s = new Sub();\n        System.out.print(Base.FOO);\n        System.out.print(Sub.FOO);\n        System.out.print(b.FOO);\n        System.out.print(s.FOO);\n        System.out.print(((Base)s).FOO);\n    }\n}\n\nclass Sub extends Base {\n    public static final String FOO = \"bar\";\n}\n[/CODE]",
+    "options": [
+      "A. foofoofoofoofoo",
+      "B. foobarfoobarbar",
+      "C. foobarfoofoofoo",
+      "D. foobarfoobarfoo"
+    ],
+    "answer_index": 3,
+    "explanation": "Static fields are resolved at compile-time based on the declared type of the variable, not the runtime type of the object. `Base.FOO` and `b.FOO` resolve to `\"foo\"` because they're typed as `Base`, while `Sub.FOO` and `s.FOO` resolve to `\"bar\"` because they're typed as `Sub`. The cast `((Base)s).FOO` also resolves to `\"foo\"` since the compile-time type is `Base`, even though `s` references a `Sub` instance.",
+    "corrected": false,
+    "answer": "D. foobarfoobarfoo",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0664",
+    "topic": "Java OOP",
+    "question": "A company's business application generates various reports. Whenever support for a new printer type must be added, developers must modify the code in every report module, because each report directly contains printer-specific formatting logic. Which design concept best explains why this change ripples through all the reports?",
+    "options": [
+      "A. Tight coupling",
+      "B. Inheritance",
+      "C. High cohesion",
+      "D. Encapsulation"
+    ],
+    "answer_index": 0,
+    "explanation": "Each report module directly embeds printer-specific logic, creating a tight dependency between the reports and the printer implementation details. This tight coupling means any change to printer formatting requires modifying every dependent module, causing changes to ripple across the system.",
+    "corrected": false,
+    "answer": "A. Tight coupling",
+    "trust": "baseline",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "id": "q0665",
+    "topic": "Java OOP",
+    "question": "Reducing number of methods in a utility class API without losing functionality promotes which OO principles?",
+    "options": [
+      "A. Looser coupling",
+      "B. Tighter coupling",
+      "C. Lower cohesion",
+      "D. Higher cohesion"
+    ],
+    "answer_index": 0,
+    "explanation": "Reducing the number of methods in a utility class API decreases the surface area of dependencies that client code must interact with, thereby minimizing the points of contact between classes. Fewer public methods mean fewer ways other classes can depend on the utility class, which directly reduces coupling. This aligns with the principle of providing only necessary functionality and encouraging clients to depend on abstractions rather than concrete implementation details.",
+    "corrected": false,
+    "answer": "A. Looser coupling",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0666",
+    "topic": "Java OOP",
+    "question": "The current design allows other classes to access methods that should be internal. What design issue is this?",
+    "options": [
+      "A. Tight coupling",
+      "B. Low cohesion",
+      "C. High cohesion",
+      "D. Loose coupling"
+    ],
+    "answer_index": 0,
+    "explanation": "Exposing internal methods violates encapsulation — this is weak encapsulation.",
+    "corrected": false,
+    "answer": "A. Tight coupling",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0667",
+    "topic": "Java OOP",
+    "question": "Output?\n[CODE]\npublic class TestString1 {\n    public static void main(String[] args) {\n        String str = \"420\";\n        str += 42;\n        System.out.print(str);\n    }\n}\n[/CODE]",
+    "options": [
+      "A. 42",
+      "B. 420",
+      "C. 462",
+      "D. 42042"
+    ],
+    "answer_index": 3,
+    "explanation": "When `str += 42` is executed, the `+=` operator performs string concatenation (not arithmetic addition) because `str` is a String object. The integer `42` is automatically converted to the string `\"42\"` and appended to `\"420\"`, resulting in `\"42042\"`.",
+    "corrected": false,
+    "answer": "D. 42042",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0668",
+    "topic": "Java OOP",
+    "question": "Which three are valid modifiers on this line?\n[CODE]\npublic interface Status {\n    /* insert code here */ int MY_VALUE = 10;\n}\n[/CODE]",
+    "options": [
+      "A. final",
+      "B. static",
+      "C. native",
+      "D. public"
+    ],
+    "answer_index": 1,
+    "explanation": "Interface variables are implicitly `public` and `static`, so only `final` is a valid explicit modifier that adds meaningful behavior—it prevents reassignment of the constant value. The `native` modifier applies only to methods, not variables, making it invalid here.",
+    "corrected": false,
+    "answer": "B. static",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0669",
+    "topic": "Java OOP",
+    "question": "Algorithm requires a List supporting efficient add(0, object) but no quick random access. Which implementation supports this?",
+    "options": [
+      "A. java.util.Queue",
+      "B. java.util.ArrayList",
+      "C. java.util.LinearList",
+      "D. java.util.LinkedList"
+    ],
+    "answer_index": 3,
+    "explanation": "LinkedList uses a doubly-linked node structure, enabling O(1) insertion at the beginning via `add(0, object)` since it only requires updating node pointers. In contrast, ArrayList requires O(n) time to shift all elements right, and Queue is an interface without guaranteed efficient front insertion; additionally, LinkedList intentionally sacrifices random access efficiency (O(n)) for superior insertion/deletion performance at arbitrary positions.",
+    "corrected": false,
+    "answer": "D. java.util.LinkedList",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0670",
+    "topic": "Java OOP",
+    "question": "Which three are true?\n[CODE]\ninterface Jumper {\n    public void jump();\n}\n\nclass Animal {\n}\n\nclass Dog extends Animal {\n    Tail tail;\n}\n\nclass Beagle extends Dog implements Jumper {\n    public void jump() {\n    }\n}\n\nclass Cat implements Jumper {\n    public void jump() {\n    }\n}\n[/CODE]",
+    "options": [
+      "A. Cat is-a Animal",
+      "B. Cat is-a Jumper",
+      "C. Dog is-a Animal",
+      "D. Dog is-a Jumper"
+    ],
+    "answer_index": 1,
+    "explanation": "Cat implements Jumper directly, so Cat is-a Jumper is true through the implements relationship. Similarly, Dog extends Animal, making \"Dog is-a Animal\" true, and Beagle extends Dog and implements Jumper, but Dog itself does not implement Jumper, so \"Dog is-a Jumper\" is false; Cat does not extend Animal, so \"Cat is-a Animal\" is false.",
+    "corrected": false,
+    "answer": "B. Cat is-a Jumper",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0671",
+    "topic": "Java OOP",
+    "question": "Which class correctly uses Data interface and Info abstract class?\n[CODE]\ninterface Data {\n    public void load();\n}\n\nabstract class Info {\n    public abstract void load();\n}\n[/CODE]",
+    "options": [
+      "A. public class Employee extends Info implements Data { public void load() { /* do something */ } }",
+      "B. public class Employee implements Info extends Data { public void load() { /* do something */ } }",
+      "C. public class Employee extends Info implements Data { public void load() { } public void Info.load() { } }",
+      "D. public class Employee implements Info extends Data { public void Data.load() { } public void load() { } }"
+    ],
+    "answer_index": 0,
+    "explanation": "'public class Employee extends Info implements Data { public void load() { /* do something */ } }' is correct.",
+    "corrected": false,
+    "answer": "A. public class Employee extends Info implements Data { public void load() { /* do something */ } }",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0672",
+    "topic": "Java OOP",
+    "question": "Output?\n[CODE]\nclass TestA {\n    public void start() {\n        System.out.println(\"TestA\");\n    }\n}\n\nclass TestB extends TestA {\n    public void start() {\n        System.out.println(\"TestB\");\n    }\n\n    public static void main(String[] args) {\n        ((TestA) new TestB()).start();\n    }\n}\n[/CODE]",
+    "options": [
+      "A. TestA",
+      "B. TestB",
+      "C. Compilation fails",
+      "D. An exception is thrown at runtime"
+    ],
+    "answer_index": 1,
+    "explanation": "This demonstrates polymorphism in Java. Even though the reference is cast to `TestA`, the actual object created is `TestB`. At runtime, Java uses dynamic method dispatch to invoke the `start()` method of the actual object type (`TestB`), not the reference type, so `TestB` is printed.",
+    "corrected": false,
+    "answer": "B. TestB",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0673",
+    "topic": "Java OOP",
+    "question": "Output?\n[CODE]\nimport java.io.*;\n\nclass files {\n    public static void main(String args[]) {\n        File obj = new File(\"/java/system\");\n        System.out.print(obj.getName());\n    }\n}\n[/CODE]",
+    "options": [
+      "A. java",
+      "B. system",
+      "C. java/system",
+      "D. /java/system"
+    ],
+    "answer_index": 1,
+    "explanation": "The `getName()` method returns only the final component of the file path—the name of the file or directory itself, not the full path. In this case, it extracts \"system\" from the path \"/java/system\", which is the last segment after the final forward slash.",
+    "corrected": false,
+    "answer": "B. system",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0674",
+    "topic": "Java OOP",
+    "question": "Output?\n[CODE]\nimport java.io.*;\n\nclass files {\n    public static void main(String args[]) {\n        File obj = new File(\"/java/system\");\n        System.out.print(obj.getAbsolutePath());\n    }\n}\n[/CODE]",
+    "options": [
+      "A. java",
+      "B. system",
+      "C. java/system",
+      "D. /java/system"
+    ],
+    "answer_index": 3,
+    "explanation": "The `getAbsolutePath()` method returns the complete file path as a string, exactly as specified in the File object's constructor. Since the path \"/java/system\" is already an absolute path (begins with a forward slash indicating the root directory), it is returned unchanged rather than being resolved relative to the current working directory.",
+    "corrected": false,
+    "answer": "D. /java/system",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0675",
+    "topic": "Java OOP",
+    "question": "Output?\n[CODE]\nimport java.lang.*;\n\nclass exception_handling {\n    public static void main(String args[]) {\n        try {\n            int a = args.length;\n            int b = 10 / a;\n            System.out.print(a);\n            try {\n                if (a == 1) a = a / a - a;\n                if (a == 2) {\n                    int[] c = {1};\n                    c[8] = 9;\n                }\n            }\n            catch (ArrayIndexOutOfBoundsException e) {\n                System.out.println(\"TypeA\");\n            }\n        }\n        catch (ArithmeticException e) {\n            System.out.println(\"TypeB\");\n        }\n    }\n}\n[/CODE]",
+    "options": [
+      "A. TypeA",
+      "B. TypeB",
+      "C. 0TypeA",
+      "D. 0TypeB"
+    ],
+    "answer_index": 1,
+    "explanation": "When the program runs with no command-line arguments, `args.length` equals 0, making `a = 0`. The expression `10 / a` throws an `ArithmeticException` (division by zero) in the outer try block, which is immediately caught by the outer catch clause, printing \"TypeB\". The inner try-catch block is never reached because the exception occurs before that code executes.",
+    "corrected": false,
+    "answer": "B. TypeB",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0676",
+    "topic": "HTML/CSS",
+    "question": "You have just executed \"docker swarm leave\" on a node. What command can be run on the same node to confirm it has left the cluster?",
+    "options": [
+      "A. docker node ls",
+      "B. docker system info",
+      "C. docker swarm status",
+      "D. docker node inspect"
+    ],
+    "answer_index": 1,
+    "explanation": "After leaving a swarm, `docker system info` displays the node's swarm status in its output, showing \"Swarm: inactive\" to confirm the node is no longer part of the cluster. Commands like `docker node ls` and `docker node inspect` require swarm manager privileges and won't execute on a non-swarm node, while `docker swarm status` is not a valid Docker command.",
+    "corrected": false,
+    "answer": "B. docker system info",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0677",
+    "topic": "HTML/CSS",
+    "question": "The server is running low on disk space. What command can be used to check disk usage of images, containers, and volumes?",
+    "options": [
+      "A. docker system df",
+      "B. docker disk usage",
+      "C. docker container df",
+      "D. docker image usage"
+    ],
+    "answer_index": 0,
+    "explanation": "The `docker system df` command displays disk usage across all Docker components including images, containers, volumes, and build cache in a single unified report. The other options don't exist as valid Docker commands—`docker disk usage`, `docker container df`, and `docker image usage` are not recognized Docker CLI commands for checking storage metrics.",
+    "corrected": false,
+    "answer": "A. docker system df",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0678",
+    "topic": "Java OOP",
+    "question": "Which Dockerfile instruction initializes a new build stage and sets the base image?",
+    "options": [
+      "A. RUN",
+      "B. FROM",
+      "C. CMD",
+      "D. ENTRYPOINT"
+    ],
+    "answer_index": 1,
+    "explanation": "The FROM instruction is the mandatory starting point of any Dockerfile and specifies the base image upon which all subsequent layers are built. It initializes a new build stage, allowing you to create multi-stage builds where each FROM starts a fresh context with its own set of layers. All other options (RUN, CMD, ENTRYPOINT) are build or runtime instructions that operate within an already-established stage.",
+    "corrected": false,
+    "answer": "B. FROM",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0679",
+    "topic": "Java OOP",
+    "question": "Which command automatically creates a volume when a container is started?",
+    "options": [
+      "A. docker volume create nginx-test",
+      "B. docker container run --name nginx-test --volume /app nginx",
+      "C. docker volume attach nginx-test",
+      "D. docker run --storage nginx"
+    ],
+    "answer_index": 1,
+    "explanation": "'docker container run --name nginx-test --volume /app nginx' is correct.",
+    "corrected": false,
+    "answer": "B. docker container run --name nginx-test --volume /app nginx",
+    "trust": "baseline"
+  }
+]

@@ -1,0 +1,966 @@
+[
+  {
+    "question": "Servlet listener which loads application context.",
+    "options": [
+      "A. global-method-security",
+      "B. ContextLoaderListener",
+      "C. None of the mentioned",
+      "D. DispatcherServlet"
+    ],
+    "answer_index": 1,
+    "answer": "B. ContextLoaderListener",
+    "topic": "JavaScript",
+    "explanation": "The correct servlet listener that loads application context is ContextLoaderListener, making option C the accurate answer, not D.\n\nOption D is incorrect because a valid answer exists among the choices provided in this question.",
+    "corrected": false,
+    "id": "q1316",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Method to retrieve Spring Applicationcontext.",
+    "options": [
+      "A. WebApplicationContextUtils.getRequiredWebApplicationContext()",
+      "B. WebApplicationContextUtils.getRequiredWeb()",
+      "C. WebApplicationUtils.getRequiredWebApplicationContext()",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 0,
+    "answer": "A. WebApplicationContextUtils.getRequiredWebApplicationContext()",
+    "topic": "Spring Core",
+    "explanation": "The class `WebApplicationContextUtils` provides utility methods to retrieve the Spring `ApplicationContext` in web environments. `getRequiredWebApplicationContext()` is the correct method name that retrieves the context and throws an exception if not found.",
+    "corrected": false,
+    "id": "q1317",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "In order to leverage Spring application context machinery and configuration.",
+    "options": [
+      "A. HttpRequestHandlerJNDI",
+      "B. HttpRequestHandlerServlet",
+      "C. HttpRequestHandler",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 1,
+    "answer": "B. HttpRequestHandlerServlet",
+    "topic": "JavaScript",
+    "explanation": "HttpRequestHandlerServlet is a special servlet that forwards requests to a HttpRequestHandler bean defined in the Spring application context, enabling Spring's DI and configuration for handling raw servlet requests. This allows developers to leverage Spring's context machinery, such as bean lifecycle management and dependency injection, while still working within the traditional servlet API for handling HTTP requests directly.",
+    "corrected": false,
+    "id": "q1319",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "Interface implemented by object instantiated byHttpRequestHandlerServlet.",
+    "options": [
+      "A. HttpRequestHandlerJNDI",
+      "B. HttpRequestHandlerServlet",
+      "C. HttpRequestHandler",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 2,
+    "answer": "C. HttpRequestHandler",
+    "topic": "JavaScript",
+    "explanation": "The HttpRequestHandlerServlet instantiates objects that implement the HttpRequestHandler interface, which defines the contract for handling HTTP requests in Spring Framework.\n\nHttpRequestHandler is the core interface that all HTTP request handlers must implement to process incoming requests and generate responses.",
+    "corrected": false,
+    "id": "q1320",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Attribute used to look up and delegate a particularroot bean.",
+    "options": [
+      "A. filter",
+      "B. filter-name",
+      "C. filtername",
+      "D. none of the mentioned"
+    ],
+    "answer_index": 1,
+    "answer": "B. filter-name",
+    "topic": "Core Java & OOP",
+    "explanation": "The `filter-name` attribute in Spring configuration specifies which root bean to delegate to when processing requests through the filter chain. This naming convention follows XML schema standards for bean lookup and delegation in web application contexts.",
+    "corrected": false,
+    "id": "q1321",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "ActionSupport class provides a method to accessspring application context.",
+    "options": [
+      "A. getWebApplicationContext()",
+      "B. getWebApplication()",
+      "C. getApplicationContext()",
+      "D. contextEventListener()"
+    ],
+    "answer_index": 0,
+    "answer": "A. getWebApplicationContext()",
+    "topic": "Spring Core",
+    "explanation": "The ActionSupport class in Struts provides getWebApplicationContext() to access the Spring ApplicationContext within a web environment. This method specifically returns the web-aware application context instance for dependency injection and bean management.",
+    "corrected": false,
+    "id": "q1322",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Struts servlet used to handle web requests.",
+    "options": [
+      "A. ActionServlet",
+      "B. Action",
+      "C. ActionSupport",
+      "D. ActionStruts"
+    ],
+    "answer_index": 0,
+    "answer": "A. ActionServlet",
+    "topic": "JavaScript",
+    "explanation": "ActionServlet is the core controller servlet in Struts that intercepts all incoming HTTP requests and routes them to appropriate Action classes for processing.\n\nIt implements the Front Controller pattern, managing request mapping, form validation, and forwarding responses to JSP views.",
+    "corrected": false,
+    "id": "q1323",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Struts plugin used to integrate with spring.",
+    "options": [
+      "A. ContextLoaderListener",
+      "B. ContextLoaderPlugin",
+      "C. ContextLoaderListenerPlugin",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 1,
+    "answer": "B. ContextLoaderPlugin",
+    "topic": "Core Java & OOP",
+    "explanation": "ContextLoaderPlugin is the Struts-specific plugin that initializes Spring's ApplicationContext within the Struts framework during startup.\n\nIt bridges Struts and Spring by loading Spring configuration files and making beans available to Struts actions without requiring a separate listener.",
+    "corrected": false,
+    "id": "q1324",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Integration of JSF with Spring Application Context.",
+    "options": [
+      "A. ContextLoaderListener",
+      "B. DelegatingVariableResolver",
+      "C. SpringBeanFacesELResolver",
+      "D. All of the mentioned"
+    ],
+    "answer_index": 3,
+    "answer": "D. All of the mentioned",
+    "topic": "Core Java & OOP",
+    "explanation": "ContextLoaderListener initializes Spring Application Context at startup, while DelegatingVariableResolver and SpringBeanFacesELResolver enable JSF to resolve and access Spring beans through EL expressions.\n\nAll three components work together to establish complete integration between JSF and Spring, handling context lifecycle management and bean resolution.",
+    "corrected": false,
+    "id": "q1325",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "To handle web requests in JSF.",
+    "options": [
+      "A. FacesServlet",
+      "B. JavaFacesServlet",
+      "C. Faces-Servlet",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 0,
+    "answer": "A. FacesServlet",
+    "topic": "JavaScript",
+    "explanation": "FacesServlet is the front controller in JSF that intercepts all HTTP requests matching the configured URL pattern and routes them to the JSF lifecycle for processing.\n\nIt manages the entire JSF request-response cycle including component tree restoration, validation, model updates, and rendering of the response view.",
+    "corrected": false,
+    "id": "q1326",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Component of JSF, for user’s input in a form.",
+    "options": [
+      "A. h:form",
+      "B. h:commandButton",
+      "C. h:outputText",
+      "D. h:inputText"
+    ],
+    "answer_index": 3,
+    "answer": "D. h:inputText",
+    "topic": "Core Java & OOP",
+    "explanation": "The h:form component is a container that manages user input data collection and submission in JSF applications. It wraps input elements and handles form processing, making it the essential structural component for forms.",
+    "corrected": false,
+    "id": "q1327",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Tag used to provide result of web requests andis read only.",
+    "options": [
+      "A. h:form",
+      "B. h:commandButton",
+      "C. h:outputText",
+      "D. h:inputText"
+    ],
+    "answer_index": 2,
+    "answer": "C. h:outputText",
+    "topic": "Core Java & OOP",
+    "explanation": "The `h:outputText` tag is specifically designed to display read-only text output from server-side processing or web request results in JSF applications.\n\nUnlike input components, `h:outputText` renders as non-editable content and cannot accept user input, making it ideal for presenting processed data.",
+    "corrected": false,
+    "id": "q1328",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Tag which triggers server side requests.",
+    "options": [
+      "A. h:form",
+      "B. h:commandButton",
+      "C. h:outputText",
+      "D. h:inputText"
+    ],
+    "answer_index": 1,
+    "answer": "B. h:commandButton",
+    "topic": "Core Java & OOP",
+    "explanation": "The h:commandButton tag renders an HTML button that submits form data and triggers server-side action methods or listeners when clicked.\n\nOther tags like h:outputText and h:inputText are passive display/input components that don't initiate requests; h:form only contains components but doesn't trigger requests itself.",
+    "corrected": false,
+    "id": "q1329",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Tag used to integrate Spring with DWR.",
+    "options": [
+      "A. dwr:integrate",
+      "B. dwr:remote",
+      "C. dwr:action",
+      "D. none of the mentioned"
+    ],
+    "answer_index": 1,
+    "answer": "B. dwr:remote",
+    "topic": "Core Java & OOP",
+    "explanation": "The `dwr:remote` tag exposes Spring beans as DWR remote services, enabling direct JavaScript-to-Java method calls over HTTP.\n\nDWR uses this tag to map Spring-managed objects to client-side proxy objects, facilitating seamless integration between the two frameworks.",
+    "corrected": false,
+    "id": "q1330",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which of below is not a dependency management tool?",
+    "options": [
+      "A. Ant",
+      "B. Maven",
+      "C. Gradle",
+      "D. Jenkins"
+    ],
+    "answer_index": 3,
+    "answer": "D. Jenkins",
+    "topic": "DevOps & CI/CD",
+    "explanation": "Jenkins is a continuous integration/continuous deployment (CI/CD) tool for automating build and test processes, not managing project dependencies.\n\nAnt, Maven, and Gradle are all build tools that handle dependency management and resolution within projects.",
+    "corrected": false,
+    "id": "q1331",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which of the following is not a maven goal?",
+    "options": [
+      "A. clean",
+      "B. package",
+      "C. install",
+      "D. debug"
+    ],
+    "answer_index": 3,
+    "answer": "D. debug",
+    "topic": "Core Java & OOP",
+    "explanation": "Maven's standard lifecycle goals are clean, compile, test, package, install, and deploy. Debug is not an official Maven goal and must be implemented through plugins or external tools.",
+    "corrected": false,
+    "id": "q1332",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which file is used to define dependency in maven?",
+    "options": [
+      "A. build.xml",
+      "B. pom.xml",
+      "C. dependency.xml",
+      "D. version.xml"
+    ],
+    "answer_index": 1,
+    "answer": "B. pom.xml",
+    "topic": "Core Java & OOP",
+    "explanation": "Maven uses pom.xml (Project Object Model) as its configuration file to declare project metadata, build settings, and all project dependencies.\n\nThe pom.xml file is the core Maven configuration that enables dependency management through the `<dependencies>` section, automating downloads and version control.",
+    "corrected": false,
+    "id": "q1333",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which file is used to specify the packaging cycle?",
+    "options": [
+      "A. build.xml",
+      "B. pom.xml",
+      "C. dependency.xml",
+      "D. version.xml"
+    ],
+    "answer_index": 1,
+    "answer": "B. pom.xml",
+    "topic": "Core Java & OOP",
+    "explanation": "The build.xml file is an Ant configuration file that defines the complete build lifecycle, including packaging cycles and deployment targets. It specifies how source code should be compiled, tested, and packaged into distributable artifacts.",
+    "corrected": false,
+    "id": "q1334",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which environment variable is used to specify the path to maven?",
+    "options": [
+      "A. JAVA_HOME",
+      "B. PATH",
+      "C. MAVEN_HOME",
+      "D. CLASSPATH"
+    ],
+    "answer_index": 2,
+    "answer": "C. MAVEN_HOME",
+    "topic": "Core Java & OOP",
+    "explanation": "The MAVEN_HOME environment variable explicitly points to Maven's installation directory, allowing the system to locate Maven executables and libraries.\n\nOther variables like JAVA_HOME, PATH, and CLASSPATH serve different purposes—they reference Java, system executables, and compiled classes respectively.",
+    "corrected": false,
+    "id": "q1335",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which of the below is a source code management tool?",
+    "options": [
+      "A. Jenkins",
+      "B. Maven",
+      "C. Git",
+      "D. Hudson"
+    ],
+    "answer_index": 2,
+    "answer": "C. Git",
+    "topic": "DevOps & CI/CD",
+    "explanation": "Git is a distributed version control system designed to track changes in source code and manage collaborative development across multiple contributors. Jenkins and Hudson are continuous integration/automation servers, while Maven is a build automation tool, none of which manage source code versioning.",
+    "corrected": false,
+    "id": "q1336",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "Can we run Junits as a part of Jenkins job?",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "answer": "A. True",
+    "topic": "DevOps & CI/CD",
+    "explanation": "Jenkins has built-in support for executing JUnit tests through plugins and can parse test results directly from XML reports. This enables automated test execution and reporting as part of continuous integration pipelines.",
+    "corrected": false,
+    "id": "q1337",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which command can be used to check maven version?",
+    "options": [
+      "A. mvn -ver",
+      "B. maven -ver",
+      "C. maven -version",
+      "D. mvn -version"
+    ],
+    "answer_index": 3,
+    "answer": "D. mvn -version",
+    "topic": "Core Java & OOP",
+    "explanation": "The `mvn` command is Maven's official CLI tool executable, while `maven` is not a recognized command. The `-version` flag (not `-ver`) is the correct syntax to display Maven's installed version information.",
+    "corrected": false,
+    "id": "q1338",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which of the following is not true for Ant?",
+    "options": [
+      "A. It is a tool box",
+      "B. It provides lifecycle management",
+      "C. It is procedural",
+      "D. It doesn’t have formal conventions"
+    ],
+    "answer_index": 1,
+    "answer": "B. It provides lifecycle management",
+    "topic": "Core Java & OOP",
+    "explanation": "Ant is a build tool, not a project lifecycle manager like Maven. It focuses on task automation and compilation rather than managing full project phases and dependencies.",
+    "corrected": false,
+    "id": "q1339",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which maven plugin creates the project structure?",
+    "options": [
+      "A. dependency",
+      "B. properties",
+      "C. archetype",
+      "D. execution"
+    ],
+    "answer_index": 2,
+    "answer": "C. archetype",
+    "topic": "Core Java & OOP",
+    "explanation": "The archetype plugin generates standardized project structures from templates, including directories, source files, and POM configuration for new Maven projects.\n\nIt eliminates manual setup by providing predefined project layouts for different application types like web apps, libraries, and microservices.",
+    "corrected": false,
+    "id": "q1340",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which tag informs the spring container about theuse of AspectJ annotation?",
+    "options": [
+      "A. aop:aspectj-autowire",
+      "B. aop:aspectj-name",
+      "C. aop:aspectj-autoproxy",
+      "D. none of the mentioned"
+    ],
+    "answer_index": 2,
+    "answer": "C. aop:aspectj-autoproxy",
+    "topic": "Spring Core",
+    "explanation": "The `<aop:aspectj-autoproxy>` tag enables automatic proxy creation for classes annotated with `@Aspect`, allowing the Spring container to recognize and process AspectJ annotations.\n\nThis tag activates the AspectJ annotation-driven AOP model, scanning for `@Aspect` classes and weaving advice into matching join points automatically.",
+    "corrected": false,
+    "id": "q1341",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "An advice is an action which comes into play at pointcuts.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 1,
+    "answer": "B. False",
+    "topic": "Spring Core",
+    "explanation": "An advice is a piece of code (a method-like block) that is executed when a join point matched by a pointcut is reached, not the action itself occurring at the pointcut. The pointcut defines where and when advice runs, while the advice defines what code executes there.",
+    "corrected": false,
+    "id": "q1343",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "Which advice is executed once a joint point finishes?",
+    "options": [
+      "A. @Before",
+      "B. @After",
+      "C. @AfterReturning",
+      "D. @AfterThrowing"
+    ],
+    "answer_index": 1,
+    "answer": "B. @After",
+    "topic": "Spring Core",
+    "explanation": "The @After advice executes unconditionally after a joint point finishes, regardless of whether it completed successfully or threw an exception.\n\nIt guarantees cleanup operations run in all scenarios, making it ideal for resource management like closing connections or releasing locks.",
+    "corrected": false,
+    "id": "q1344",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which advice combines all advices into one?",
+    "options": [
+      "A. @Before",
+      "B. @After",
+      "C. @AfterThrowing",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 3,
+    "answer": "D. None of the mentioned",
+    "topic": "Spring Core",
+    "explanation": "There is no single annotation that combines all Spring AOP advices (@Before, @After, @AfterThrowing, @AfterReturning, @Around) into one unified advice type.\n\n@Around is the most comprehensive as it wraps method execution, but it still doesn't inherently combine all advice semantics into a single annotation.",
+    "corrected": false,
+    "id": "q1345",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "An advice can access the current join point information by declaring an argument of type org.aspectj.lang.AdvicePoint in the advice method signature.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 1,
+    "answer": "B. False",
+    "topic": "SQL & JDBC",
+    "explanation": "The correct type for accessing join point information in AspectJ is org.aspectj.lang.JoinPoint, not AdvicePoint. Declaring a parameter of type JoinPoint (or ProceedingJoinPoint for around advice) in the advice method signature grants access to context such as signature, arguments, and target object.",
+    "corrected": false,
+    "id": "q1346",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "Which interface is implemented to specify precedenceof aspects?",
+    "options": [
+      "A. Ordered",
+      "B. ApplicationAspect",
+      "C. AspectPointcut",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 0,
+    "answer": "A. Ordered",
+    "topic": "Spring Core",
+    "explanation": "The Ordered interface allows aspects to define their execution sequence through the getOrder() method, with lower values executing first.\n\nIn Spring AOP, implementing Ordered enables explicit precedence control when multiple aspects target the same joinpoint.",
+    "corrected": false,
+    "id": "q1347",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Alternative annotative way to specify precedence of aspects?",
+    "options": [
+      "A. @Order",
+      "B. @Aspect",
+      "C. @PointCut",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 0,
+    "answer": "A. @Order",
+    "topic": "Spring Core",
+    "explanation": "The @Order annotation specifies the precedence or execution order of multiple aspects in Spring AOP when they need to be applied to the same join point.\n\nLower order values execute first, allowing developers to control which aspects run before or after others in the aspect chain.",
+    "corrected": false,
+    "id": "q1348",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Method which returns the highest priority of aspect’sjoin point?",
+    "options": [
+      "A. getHighestPriority",
+      "B. getOrder",
+      "C. getHighOrder",
+      "D. getPriority"
+    ],
+    "answer_index": 1,
+    "answer": "B. getOrder",
+    "topic": "Spring Core",
+    "explanation": "The `getOrder()` method is the standard Spring AOP interface method that returns an aspect's priority value for join point execution ordering.\n\nLower numeric values indicate higher priority, making `getOrder()` the correct method name used across Spring's Ordered interface implementation.",
+    "corrected": false,
+    "id": "q1349",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "import org.aspectj.lang.annotation.Aspect;\nimport org.aspectj.lang.annotation.AfterThrowing;\n@Aspect\npublic class AfterThrowingExample\n{\n@AfterThrowing(\npointcut=\"com.xyz.myapp.SystemArchitecture.dataAccessOperation()\",\nthrowing=\"ex\")\npublic void doRecoveryActions(DataAccessException e)\n{\nthrow new IllegalArgumentException();\n// ...\n}\n}",
+    "options": [
+      "A. Runtime Error",
+      "B. IllegalArgumentException",
+      "C. BeanCreation Exception",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 2,
+    "answer": "C. BeanCreation Exception",
+    "topic": "Spring Core",
+    "explanation": "The advice method's parameter type `DataAccessException` doesn't match the declared `throwing=\"ex\"` binding correctly with the pointcut signature, causing Spring AOP proxy creation to fail during bean instantiation. This mismatch is detected at container startup when AspectJ validates the advice binding, resulting in a BeanCreationException rather than the exception being thrown at runtime.",
+    "corrected": false,
+    "id": "q1350",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "Which instantiation model is supported by AspectJ?",
+    "options": [
+      "A. perthis",
+      "B. pertarget",
+      "C. none of the mentioned",
+      "D. all of the mentioned"
+    ],
+    "answer_index": 3,
+    "answer": "D. all of the mentioned",
+    "topic": "Spring Core",
+    "explanation": "AspectJ supports multiple instantiation models: perthis creates one aspect instance per object, pertarget creates one per target object, and the default model handles singleton instantiation.\n\nAll four options (perthis, pertarget, singleton, and percflow) are valid instantiation models available in AspectJ for controlling aspect lifecycle and instance management.",
+    "corrected": false,
+    "id": "q1351",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which tag in XML is used to declare @Before advice’s method?",
+    "options": [
+      "A. aop:before",
+      "B. aop:after",
+      "C. aop:afterthrow",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 0,
+    "answer": "A. aop:before",
+    "topic": "Spring Core",
+    "explanation": "The `aop:before` tag in Spring AOP XML configuration specifically designates a method to execute before the target method is invoked.\n\nThis tag binds the advice method to a pointcut expression, enabling cross-cutting concerns like logging or validation before business logic execution.",
+    "corrected": false,
+    "id": "q1352",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Tag used to enable AspectJ annotation?",
+    "options": [
+      "A. Introduction",
+      "B. aop:aspectj-autowire",
+      "C. aop:aspectj-autoproxy",
+      "D. AfterSpecial"
+    ],
+    "answer_index": 2,
+    "answer": "C. aop:aspectj-autoproxy",
+    "topic": "Spring Core",
+    "explanation": "The `<aop:aspectj-autoproxy>` tag enables AspectJ annotation processing in Spring, allowing auto-detection of `@Aspect` annotated classes.\n\nIntroduction is a pointcut type for adding new methods/fields, not the tag that enables AspectJ annotations.",
+    "corrected": false,
+    "id": "q1353",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Tag which defined Spring AOP configurations",
+    "options": [
+      "A. aop:config",
+      "B. aop:configregister",
+      "C. aop:configbeans",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 0,
+    "answer": "A. aop:config",
+    "topic": "Spring Core",
+    "explanation": "The `<aop:config>` tag is the root XML element in Spring's AOP namespace that defines and configures aspect-oriented programming settings, including pointcuts and advice.\n\nOther options like `aop:configregister` and `aop:configbeans` are not valid Spring AOP XML tags and don't exist in the framework's schema.",
+    "corrected": false,
+    "id": "q1354",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "What are the ways to declare an advice?",
+    "options": [
+      "A. pointcut-ref attribute",
+      "B. pointcut attribute",
+      "C. all of the mentioned",
+      "D. none of the mentioned"
+    ],
+    "answer_index": 2,
+    "answer": "C. all of the mentioned",
+    "topic": "Spring Core",
+    "explanation": "The pointcut-ref attribute references a named pointcut defined elsewhere, enabling reusable advice declarations in Spring AOP configuration.\n\nThe pointcut attribute allows inline pointcut expressions directly within the advice element, providing both declaration methods for AspectJ advice.",
+    "corrected": false,
+    "id": "q1355",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Applying aspects to your target objects",
+    "options": [
+      "A. AspectJ Annotation",
+      "B. Weaving",
+      "C. All of the mentioned",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 1,
+    "answer": "B. Weaving",
+    "topic": "Spring Core",
+    "explanation": "AspectJ Annotation is the mechanism used to declare and apply aspects to target objects through @Aspect, @Pointcut, and @Before/@After annotations.\n\nWeaving is the process that implements these annotations at runtime or compile-time, making annotation the direct method for applying aspects.",
+    "corrected": false,
+    "id": "q1356",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Name of the process when targe classes are loaded into JVM",
+    "options": [
+      "A. load-time weaving",
+      "B. process-time weaving",
+      "C. load-process weaving",
+      "D. process-delivery weaving"
+    ],
+    "answer_index": 0,
+    "answer": "A. load-time weaving",
+    "topic": "Core Java & OOP",
+    "explanation": "Load-time weaving occurs when the JVM loads target classes and injects aspects into bytecode before execution. This timing is called \"load-time\" because it happens during the class loading phase, not during compilation or runtime execution.",
+    "corrected": false,
+    "id": "q1357",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "How to weave your classes using argument while compiling?",
+    "options": [
+      "A. -javaagent:CLASSPATH",
+      "B. -javaagent:PackgePath",
+      "C. -javaweave:CLASSPATH",
+      "D. -javaweave:PackagePath"
+    ],
+    "answer_index": 0,
+    "answer": "A. -javaagent:CLASSPATH",
+    "topic": "Core Java & OOP",
+    "explanation": "The `-javaagent` flag is the standard JVM argument for runtime instrumentation and bytecode weaving of classes during compilation and execution. It accepts a CLASSPATH to the agent JAR file, not a package path, making option A the correct syntax.",
+    "corrected": false,
+    "id": "q1358",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "XML Element to include load-time weaver",
+    "options": [
+      "A. aop:config",
+      "B. aop:auto-wire",
+      "C. context:load-time-weaver",
+      "D. aop:load-time-weaver"
+    ],
+    "answer_index": 2,
+    "answer": "C. context:load-time-weaver",
+    "topic": "Spring Core",
+    "explanation": "The `aop:config` element is the root XML configuration for Spring AOP and enables load-time weaving through its `weaving-enabled` attribute.\n\nLoad-time weaver configuration is nested within `aop:config`, making it the container element for all AOP-related settings including LTW.",
+    "corrected": false,
+    "id": "q1359",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "You also have to include suitable load-time weaver’s configuration in XML",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "answer": "A. True",
+    "topic": "Core Java & OOP",
+    "explanation": "When using AspectJ load-time weaving with Spring, the context:load-time-weaver element must be declared in the XML configuration to activate the LoadTimeWeaver infrastructure. This enables class instrumentation at load time, allowing aspects to be woven into classes as the classloader loads them, which requires explicit XML setup rather than relying on defaults.",
+    "corrected": false,
+    "id": "q1360",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "Library to use AspectJ weaver",
+    "options": [
+      "A. spring-instrument.jar",
+      "B. spring-introduction.jar",
+      "C. spring-aop.jar",
+      "D. spring-weave.jar"
+    ],
+    "answer_index": 0,
+    "answer": "A. spring-instrument.jar",
+    "topic": "Spring Core",
+    "explanation": "Spring-instrument.jar provides the instrumentation agent required for load-time weaving of AspectJ aspects into classes during classloading. It enables the AspectJ weaver to instrument bytecode at runtime when the JVM loads classes.",
+    "corrected": false,
+    "id": "q1361",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Objects created outside the container:-",
+    "options": [
+      "A. Domain Objects",
+      "B. User Objects",
+      "C. SpringVisitor Objects",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 0,
+    "answer": "A. Domain Objects",
+    "topic": "Core Java & OOP",
+    "explanation": "Domain Objects are business entities created independently of the Spring container and exist outside its lifecycle management.\n\nThey represent core application data models that don't require Spring's dependency injection or bean instantiation mechanisms.",
+    "corrected": false,
+    "id": "q1362",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "We can directly use Spring AOP for injection of beans",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 1,
+    "answer": "B. False",
+    "topic": "Spring Core",
+    "explanation": "Spring AOP uses aspect-oriented programming to intercept method calls and inject cross-cutting concerns like logging, security, and transactions without modifying source code directly.\n\nAspectJ annotations and pointcut expressions allow developers to declaratively define where beans should be injected and applied across the application through advice mechanisms.",
+    "corrected": false,
+    "id": "q1363",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which scope does @Configurable instantiated class looks for?",
+    "options": [
+      "A. Singleton",
+      "B. Prototype",
+      "C. None of the mentioned",
+      "D. All of the mentioned"
+    ],
+    "answer_index": 1,
+    "answer": "B. Prototype",
+    "topic": "Spring Core",
+    "explanation": "The @Configurable annotation enables dependency injection for objects instantiated outside the container, defaulting to singleton scope for bean lookups.\n\nWhen @Configurable processes an instance, it searches the ApplicationContext for singleton beans to inject, as prototype beans would create new instances on each lookup.",
+    "corrected": false,
+    "id": "q1364",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Spring includes AnnotationBeanConfigurerAspect in its aspect library for configuring the dependencies of any objects",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "answer": "A. True",
+    "topic": "Spring Core",
+    "explanation": "Spring's aspect library includes AnnotationBeanConfigurerAspect, which uses AspectJ to inject dependencies into objects annotated with @Configurable, even those instantiated outside the Spring container. This enables domain objects created via constructors or frameworks like ORMs to still receive dependency injection through Spring's configuration mechanism.",
+    "corrected": false,
+    "id": "q1365",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "External scripts can’t take the tag _________",
+    "options": [
+      "A. <script>",
+      "B. <form>",
+      "C. <h1>",
+      "D. <title>"
+    ],
+    "answer_index": 0,
+    "answer": "A. <script>",
+    "topic": "HTML & CSS",
+    "explanation": "External scripts load via the `src` attribute and execute the referenced file's code directly without needing HTML tags inside them.\n\nThe `<script>` tag itself cannot be nested within an external script file since scripts execute as plain text, not HTML markup.",
+    "corrected": false,
+    "id": "q1366",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "For displaying data in JavaScript, we can’t use ____________",
+    "options": [
+      "A. document.write()",
+      "B. console.log()",
+      "C. innerHTML",
+      "D. document.getElementById()"
+    ],
+    "answer_index": 3,
+    "answer": "D. document.getElementById()",
+    "topic": "JavaScript",
+    "explanation": "document.getElementById() retrieves HTML elements but doesn't display data; it only returns a reference for manipulation or styling purposes.\n\nTo display data, you need document.write(), console.log(), or innerHTML which actually output or render content visibly.",
+    "corrected": false,
+    "id": "q1367",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "For testing we should use ________",
+    "options": [
+      "A. document.write()",
+      "B. console.log()",
+      "C. window.alert()",
+      "D. innerHTML"
+    ],
+    "answer_index": 1,
+    "answer": "B. console.log()",
+    "topic": "HTML & CSS",
+    "explanation": "`document.write()` is the standard testing method because it directly outputs text to the HTML document during page load, making it ideal for debugging script execution and variable values.\n\nThe other methods are unsuitable for testing: `console.log()` requires developer tools access, `window.alert()` interrupts execution, and `innerHTML` requires existing DOM elements.",
+    "corrected": false,
+    "id": "q1368",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which of the following keyword stops the execution of JavaScript?",
+    "options": [
+      "A. break",
+      "B. return",
+      "C. debugger",
+      "D. try….catch"
+    ],
+    "answer_index": 2,
+    "answer": "C. debugger",
+    "topic": "JavaScript",
+    "explanation": "The `debugger` keyword pauses execution and breaks into the debugger console when developer tools are open, halting program flow entirely.\n\nOther keywords like `break`, `return`, and `try...catch` control flow within specific contexts but don't stop overall execution like `debugger` does.",
+    "corrected": false,
+    "id": "q1369",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Arrays in JavaScript are written within ____________",
+    "options": [
+      "A. {}",
+      "B. [].",
+      "C. “”",
+      "D. ()"
+    ],
+    "answer_index": 1,
+    "answer": "B. [].",
+    "topic": "JavaScript",
+    "explanation": "Square brackets `[]` define arrays in JavaScript, distinguishing them from objects `{}`, strings `\"\"`, and function calls `()`.\n\nArray literals use bracket notation to create ordered, indexed collections accessible by numeric position starting at zero.",
+    "corrected": false,
+    "id": "q1370",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "typeof “null” in JavaScript is _______",
+    "options": [
+      "A. number",
+      "B. string",
+      "C. object",
+      "D. undefined"
+    ],
+    "answer_index": 2,
+    "answer": "C. object",
+    "topic": "JavaScript",
+    "explanation": "The `typeof` operator returns \"object\" for `null` due to a bug in JavaScript's original implementation that was preserved for backward compatibility. This quirk means `null` is classified as an object type despite being a distinct primitive value.",
+    "corrected": false,
+    "id": "q1371",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Negative positions for string do not work in ______________",
+    "options": [
+      "A. Internet Explorer 8",
+      "B. Chrome",
+      "C. Firefox",
+      "D. Opera"
+    ],
+    "answer_index": 0,
+    "answer": "A. Internet Explorer 8",
+    "topic": "Core Java & OOP",
+    "explanation": "Internet Explorer 8 has known limitations in its string indexing implementation, failing to properly support negative index values for accessing characters from the end of a string. Other browsers like Chrome, Firefox, and Opera correctly interpret negative positions, while IE8's engine returns undefined or errors instead of the expected character.",
+    "corrected": false,
+    "id": "q1372",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "For converting string to array we can use ______________ method.",
+    "options": [
+      "A. charAt()",
+      "B. charCodeAt()",
+      "C. split()",
+      "D. toLowerCase()"
+    ],
+    "answer_index": 2,
+    "answer": "C. split()",
+    "topic": "Core Java & OOP",
+    "explanation": "The split() method divides a string into an array of substrings based on a specified separator, returning the resulting array.\n\nOther methods like charAt() and charCodeAt() return single characters or codes, while toLowerCase() only changes case without converting to array format.",
+    "corrected": false,
+    "id": "q1373",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "JavaScript numbers are stored as ______________",
+    "options": [
+      "A. integers",
+      "B. double precision floating point",
+      "C. double",
+      "D. floating point"
+    ],
+    "answer_index": 1,
+    "answer": "B. double precision floating point",
+    "topic": "JavaScript",
+    "explanation": "JavaScript uses the IEEE 754 standard to represent all numbers as 64-bit double precision floating point values, enabling both integers and decimals.\n\nThis format provides a balance between precision and range, allowing JavaScript to handle diverse numeric operations with a single data type.",
+    "corrected": false,
+    "id": "q1374",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "The integers in JavaScript are precise up to ___________",
+    "options": [
+      "A. 12 digits",
+      "B. 10 digits",
+      "C. 23 digits",
+      "D. 15 digits"
+    ],
+    "answer_index": 3,
+    "answer": "D. 15 digits",
+    "topic": "JavaScript",
+    "explanation": "JavaScript uses 64-bit floating-point numbers (IEEE 754), which can safely represent integers up to 2^53 - 1, approximately 15-16 significant digits.\n\nBeyond 15 digits, precision is lost due to the limited mantissa bits available for integer representation in the floating-point format.",
+    "corrected": false,
+    "id": "q1375",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Typeof “infinity” will return ___________",
+    "options": [
+      "A. string",
+      "B. number",
+      "C. object",
+      "D. undefined"
+    ],
+    "answer_index": 0,
+    "answer": "A. string",
+    "topic": "JavaScript",
+    "explanation": "In JavaScript, `Infinity` is a built-in numeric constant representing unbounded magnitude, not a string literal. The `typeof` operator correctly identifies it as type `number`.",
+    "corrected": false,
+    "id": "q1376",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "By default JavaScript displays the numbers as ___________",
+    "options": [
+      "A. base 16",
+      "B. base 10",
+      "C. base 6",
+      "D. base 2"
+    ],
+    "answer_index": 1,
+    "answer": "B. base 10",
+    "topic": "JavaScript",
+    "explanation": "JavaScript uses base 10 (decimal) as the default number system for display because it's the standard human-readable format for most programming languages and mathematics.\n\nYou can represent numbers in other bases using methods like toString(16) for hexadecimal or parseInt() with radix parameters, but base 10 is the default output.",
+    "corrected": false,
+    "id": "q1377",
+    "trust": "unverified-source"
+  }
+]

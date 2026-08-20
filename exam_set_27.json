@@ -1,0 +1,944 @@
+[
+  {
+    "question": "Spring’s core transaction management abstraction is based on the interface:-",
+    "options": [
+      "A. PlatformTransaction",
+      "B. PlatformTransactionManager",
+      "C. TransactionManager",
+      "D. PlatformManager"
+    ],
+    "answer_index": 1,
+    "answer": "B. PlatformTransactionManager",
+    "topic": "Core Java & OOP",
+    "explanation": "PlatformTransactionManager is Spring's central abstraction for transaction management, providing a unified API across different transaction implementations like JDBC, Hibernate, and JTA.\n\nIt defines core methods like getTransaction(), commit(), and rollback(), enabling consistent transaction handling regardless of the underlying transaction manager technology.",
+    "corrected": false,
+    "id": "q1701",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "The PlatformTransactionManager interface provides methods for working with transactions:",
+    "options": [
+      "A. getTransaction(TransactionDefinition definition)",
+      "B. commit(TransactionStatus status)",
+      "C. rollback(TransactionStatus status)",
+      "D. all of the mentioned"
+    ],
+    "answer_index": 3,
+    "answer": "D. all of the mentioned",
+    "topic": "TypeScript",
+    "explanation": "The PlatformTransactionManager interface is the core abstraction for transaction management in Spring, and it defines all three methods to provide complete transaction lifecycle control.\n\nEach method (getTransaction, commit, rollback) represents essential transaction operations: beginning, confirming, and reverting, making all options necessary components of the interface.",
+    "corrected": false,
+    "id": "q1702",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Spring has several built-in implementations of PlatformTransactionManager interface for use with different transaction management APIs.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "answer": "A. True",
+    "topic": "TypeScript",
+    "explanation": "Spring provides multiple concrete implementations of PlatformTransactionManager, such as DataSourceTransactionManager, JpaTransactionManager, and JtaTransactionManager, each tailored to a specific persistence or transaction API. These implementations allow developers to switch transaction strategies without changing application code, since they all conform to the same PlatformTransactionManager interface.",
+    "corrected": false,
+    "id": "q1703",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "A transaction manager is declared in the Spring IoC container as a normal bean.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "answer": "A. True",
+    "topic": "Spring Core",
+    "explanation": "In Spring, transaction managers are registered as beans in the IoC container, allowing dependency injection and lifecycle management through standard bean configuration mechanisms.\n\nPlatformTransactionManager implementations like DataSourceTransactionManager are instantiated and managed by Spring just like any other bean, enabling declarative transaction management.",
+    "corrected": false,
+    "id": "q1704",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Method that allows you to start a new transaction (or obtain the currently active transaction).",
+    "options": [
+      "A. getTransaction()",
+      "B. commit()",
+      "C. rollback()",
+      "D. all of the mentioned"
+    ],
+    "answer_index": 0,
+    "answer": "A. getTransaction()",
+    "topic": "Core Java & OOP",
+    "explanation": "getTransaction() retrieves or initiates a transaction object, enabling transaction management. commit() and rollback() execute existing transactions rather than starting or obtaining them.",
+    "corrected": false,
+    "id": "q1705",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "PlatformTransactionManager is an abstract unit for transaction management.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "answer": "A. True",
+    "topic": "Core Java & OOP",
+    "explanation": "PlatformTransactionManager is an interface that abstracts transaction management across different platforms like JDBC, Hibernate, and JTA.\n\nSpring uses this abstraction to provide a consistent transaction management API independent of the underlying transaction implementation.",
+    "corrected": false,
+    "id": "q1706",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "In the javax.transaction.UserTransaction interface, which method is used to start a new transaction?",
+    "options": [
+      "A. begin()",
+      "B. commit()",
+      "C. rollback()",
+      "D. getStatus()"
+    ],
+    "answer_index": 0,
+    "answer": "A. begin()",
+    "topic": "Core Java & OOP",
+    "explanation": "The begin() method initiates a new transaction and associates it with the calling thread, marking the start of the transactional context. Once called, subsequent operations are part of that transaction until commit() or rollback() is invoked to end it.",
+    "corrected": false,
+    "id": "q1707",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "question": "To help you control the overall transaction management process and transaction exception handling.",
+    "options": [
+      "A. SpringTransactionTemplate",
+      "B. TransactionTemplate",
+      "C. Transaction",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 1,
+    "answer": "B. TransactionTemplate",
+    "topic": "Core Java & OOP",
+    "explanation": "TransactionTemplate is Spring's programmatic transaction management class that provides a callback-based approach for controlling transaction boundaries and handling exceptions explicitly.\n\nIt encapsulates transaction begin, commit, and rollback logic, allowing developers to manage transactions without declarative annotations when fine-grained control is needed.",
+    "corrected": false,
+    "id": "q1708",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "You just have to encapsulate your code block in a callback class that implements the TransactionCallback",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "answer": "A. True",
+    "topic": "JavaScript",
+    "explanation": "The TransactionCallback interface allows you to define transactional code that executes within a managed transaction context, handling commits and rollbacks automatically.\n\nEncapsulating code in this callback ensures proper transaction demarcation and allows the framework to manage lifecycle events consistently across all database operations.",
+    "corrected": false,
+    "id": "q1709",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "A TransactionTemplate can accept a transaction callback object that implements:-",
+    "options": [
+      "A. TransactionCallback",
+      "B. TransactionCallbackWithoutResult class",
+      "C. All of the mentioned",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 2,
+    "answer": "C. All of the mentioned",
+    "topic": "JavaScript",
+    "explanation": "TransactionTemplate accepts both TransactionCallback for operations returning results and TransactionCallbackWithoutResult for void operations, providing flexible callback implementations.\n\nBoth interfaces are valid callback types that TransactionTemplate can process, allowing developers to choose based on whether their transaction logic needs to return a value.",
+    "corrected": false,
+    "id": "q1710",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Spring (since version 2.0) offers a transaction advice that can be easily configured via the:-",
+    "options": [
+      "A. rx:advice",
+      "B. bx:advice",
+      "C. tx:advice",
+      "D. none of the mentioned"
+    ],
+    "answer_index": 2,
+    "answer": "C. tx:advice",
+    "topic": "Core Java & OOP",
+    "explanation": "Spring's `tx:advice` element is the XML namespace prefix specifically designed for declarative transaction management configuration in Spring 2.0 and later versions.\n\nThe `tx:` namespace provides transaction attributes like propagation behavior and isolation levels, making it the standard way to configure transactional advice in Spring AOP.",
+    "corrected": false,
+    "id": "q1711",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "You can omit the transaction-manager attribute in the <tx:annotation-driven/> element if your transaction manager has the name transactionManager.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "answer": "A. True",
+    "topic": "Core Java & OOP",
+    "explanation": "The `<tx:annotation-driven/>` element defaults to looking for a bean named \"transactionManager\" when the transaction-manager attribute is not specified. This is a Spring convention-based default, so explicit naming is only required if your bean uses a different identifier.",
+    "corrected": false,
+    "id": "q1712",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "Way to secure web app’s URL.",
+    "options": [
+      "A. servlet filters",
+      "B. refresh-check-delay",
+      "C. http servlet filters",
+      "D. none of the mentioned"
+    ],
+    "answer_index": 0,
+    "answer": "A. servlet filters",
+    "topic": "JavaScript",
+    "explanation": "Servlet filters intercept HTTP requests and responses, enabling authentication, authorization, and validation checks before requests reach protected resources.\n\nThey provide a centralized mechanism to enforce security policies across the application without modifying individual servlets or business logic code.",
+    "corrected": false,
+    "id": "q1713",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Servlet filter registered in web deployment descriptor, which filters request in spring application context.",
+    "options": [
+      "A. DelegatingFilter",
+      "B. DelegatingFilterProxy",
+      "C. DelegatingProxy",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 1,
+    "answer": "B. DelegatingFilterProxy",
+    "topic": "JavaScript",
+    "explanation": "DelegatingFilterProxy is a servlet filter defined in web.xml that delegates its filtering logic to a Spring-managed bean implementing the Filter interface. This lets the actual filter benefit from Spring's dependency injection and lifecycle management within the application context, while still integrating with the standard servlet container filter chain.",
+    "corrected": false,
+    "id": "q1714",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "Servlet APIs to access security information of web application.",
+    "options": [
+      "A. HttpServletRequest.isUserInRole()",
+      "B. HttpServletRequest.getUserPrincipal()",
+      "C. None of the mentioned",
+      "D. All of the mentioned"
+    ],
+    "answer_index": 3,
+    "answer": "D. All of the mentioned",
+    "topic": "JavaScript",
+    "explanation": "HttpServletRequest provides both isUserInRole() to check user authorization and getUserPrincipal() to retrieve authenticated user identity information.\n\nTogether these methods enable complete security context access for authentication and authorization checks within servlet applications.",
+    "corrected": false,
+    "id": "q1715",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "To dispatch requests for web application.",
+    "options": [
+      "A. DispatcherServlet",
+      "B. ViewHandler",
+      "C. ViewResolver",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 0,
+    "answer": "A. DispatcherServlet",
+    "topic": "Spring Core",
+    "explanation": "DispatcherServlet is the front controller in Spring MVC that intercepts all incoming HTTP requests and routes them to appropriate handlers and controllers.\n\nViewResolver and ViewHandler are components for rendering views after request processing, not for dispatching initial requests.",
+    "corrected": false,
+    "id": "q1716",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "The responsibility of DelegatingFilterProxy is simply to delegate HTTP request filtering to a Spring bean that",
+    "options": [
+      "A. java.util.logging.Filter",
+      "B. java.util.logging.net",
+      "C. java.util.logging.FilterHttp",
+      "D. none of the mentioned"
+    ],
+    "answer_index": 3,
+    "answer": "D. none of the mentioned",
+    "topic": "Core Java & OOP",
+    "explanation": "DelegatingFilterProxy delegates filtering responsibilities to a Spring bean that implements the standard Filter interface from the servlet API, enabling Spring to manage filter beans.\n\nThis allows Spring's dependency injection and lifecycle management to apply to servlet filters, bridging the gap between Spring's container and the servlet specification.",
+    "corrected": false,
+    "id": "q1717",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "By default, DelegatingFilterProxy delegates to a bean whose name is the same as its filter-name property.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "answer": "A. True",
+    "topic": "Core Java & OOP",
+    "explanation": "DelegatingFilterProxy uses the filter-name property to locate the corresponding Spring bean in the application context by matching bean names directly.\n\nThis design allows servlet filters to be managed as Spring beans, enabling dependency injection and lifecycle management within the Spring container.",
+    "corrected": false,
+    "id": "q1718",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Filter chain configured by Spring security, when web app security enabled.",
+    "options": [
+      "A. springSecurityFilterChain",
+      "B. delegatingFilterProxy",
+      "C. none of the mentioned",
+      "D. all of the mentioned"
+    ],
+    "answer_index": 0,
+    "answer": "A. springSecurityFilterChain",
+    "topic": "Spring Core",
+    "explanation": "When Spring Security is enabled, `springSecurityFilterChain` is the main filter chain bean that orchestrates all security filters in the application.\n\n`DelegatingFilterProxy` is a servlet filter that delegates to this `springSecurityFilterChain` bean, but the chain itself is named `springSecurityFilterChain`.",
+    "corrected": false,
+    "id": "q1719",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "The http auto-config=”false” element automatically configures the basic security services that a typical web",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 1,
+    "answer": "B. False",
+    "topic": "Core Java & OOP",
+    "explanation": "When `auto-config=\"false\"`, Spring Security does NOT automatically configure basic security services; you must explicitly define all security beans and configurations yourself.\n\nThe `auto-config=\"true\"` setting is what enables automatic configuration of standard features like form login, HTTP Basic authentication, and logout handlers.",
+    "corrected": false,
+    "id": "q1720",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Element which defines user details.",
+    "options": [
+      "A. user-service",
+      "B. user-details",
+      "C. user-requirements",
+      "D. user-servicerequirements"
+    ],
+    "answer_index": 0,
+    "answer": "A. user-service",
+    "topic": "Core Java & OOP",
+    "explanation": "The `user-service` element is the Spring Security component responsible for loading and managing user authentication details and credentials during the authentication process.\n\nIt interfaces with UserDetailsService to retrieve user information, roles, and authorities needed for security operations.",
+    "corrected": false,
+    "id": "q1721",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which of the following way to provide authenticity of users is/are supported by Spring Security?",
+    "options": [
+      "A. Authenticating against a database",
+      "B. LDAP repository",
+      "C. All of the mentioned",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 2,
+    "answer": "C. All of the mentioned",
+    "topic": "Spring Core",
+    "explanation": "Spring Security provides multiple authentication mechanisms including database authentication, LDAP integration, and other providers like OAuth2 and SAML.\n\nIt supports pluggable authentication providers allowing developers to authenticate users against various sources simultaneously or selectively based on application requirements.",
+    "corrected": false,
+    "id": "q1722",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "HTTP Basic authentication support is configured by:-",
+    "options": [
+      "A. logout",
+      "B. http-basic",
+      "C. http-basicauth",
+      "D. none of the mentioned"
+    ],
+    "answer_index": 1,
+    "answer": "B. http-basic",
+    "topic": "Core Java & OOP",
+    "explanation": "HTTP Basic authentication in Spring Security is configured via the `httpBasic()` method in the security configuration class, not through any of the listed options.\n\nThe listed terms don't match actual Spring Security API methods or configuration elements used for implementing HTTP Basic authentication.",
+    "corrected": false,
+    "id": "q1723",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Interface implemented by locale resolver.",
+    "options": [
+      "A. localeResolver",
+      "B. tiles",
+      "C. front controller",
+      "D. none of the mentioned"
+    ],
+    "answer_index": 0,
+    "answer": "A. localeResolver",
+    "topic": "TypeScript",
+    "explanation": "A LocaleResolver is an interface in Spring that determines the locale for a request, enabling multi-language support in web applications.\n\nThe localeResolver bean implements this interface to resolve and manage locale information throughout the application lifecycle.",
+    "corrected": false,
+    "id": "q1724",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "You can define a locale resolver by registering a bean of type LocaleResolver in the web application context.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "answer": "A. True",
+    "topic": "Core Java & OOP",
+    "explanation": "Spring automatically detects LocaleResolver beans registered in the application context and uses them to resolve client locales for request processing.\n\nThis is the standard Spring mechanism for customizing locale resolution behavior without manual configuration or servlet filter setup.",
+    "corrected": false,
+    "id": "q1725",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "AcceptHeaderLocaleResolver esolves locales by inspecting the accept-language header of an HTTP request.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "answer": "A. True",
+    "topic": "Core Java & OOP",
+    "explanation": "AcceptHeaderLocaleResolver is a Spring Framework component that parses the Accept-Language HTTP header to determine the client's preferred locale for internationalization.\n\nIt automatically maps browser language preferences from the request header to application locales without requiring explicit configuration or user interaction.",
+    "corrected": false,
+    "id": "q1726",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Property which indicates how many seconds this cookie should be persisted.",
+    "options": [
+      "A. cookieMaxAge",
+      "B. cookieName",
+      "C. cookieAge",
+      "D. none of the mentioned"
+    ],
+    "answer_index": 0,
+    "answer": "A. cookieMaxAge",
+    "topic": "Core Java & OOP",
+    "explanation": "The `cookieMaxAge` property specifies the cookie's lifetime in seconds before automatic expiration. Standard cookie naming conventions use \"Max-Age\" attribute to control persistence duration.",
+    "corrected": false,
+    "id": "q1727",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Method used to change user’s locale.",
+    "options": [
+      "A. set",
+      "B. setLocale",
+      "C. locale",
+      "D. set_locale"
+    ],
+    "answer_index": 1,
+    "answer": "B. setLocale",
+    "topic": "Core Java & OOP",
+    "explanation": "The `setLocale()` method is the standard API function in most frameworks for programmatically changing a user's locale settings at runtime. Other options like `set()` are too generic, `locale()` is typically a getter, and `set_locale()` follows Python conventions not standard framework naming.",
+    "corrected": false,
+    "id": "q1728",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Property of LocaleChangeInterceptor used to customize parameter name.",
+    "options": [
+      "A. localeResolver.setLocale",
+      "B. paramName",
+      "C. locale.parm",
+      "D. none of the mentioned"
+    ],
+    "answer_index": 1,
+    "answer": "B. paramName",
+    "topic": "Core Java & OOP",
+    "explanation": "LocaleChangeInterceptor uses the `paramName` property to specify the request parameter name that triggers locale changes, defaulting to \"locale\".\n\nThis property allows developers to customize which URL parameter the interceptor monitors for locale switching functionality.",
+    "corrected": false,
+    "id": "q1729",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "LocaleChangeInterceptor can only detect the parameter for the handler mappings that enable it.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "answer": "A. True",
+    "topic": "Core Java & OOP",
+    "explanation": "LocaleChangeInterceptor requires explicit configuration in handler mappings to function. Without enabling it for specific mappings, it cannot intercept or detect locale parameters.",
+    "corrected": false,
+    "id": "q1730",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Parameter which can change user’s locale by any URL.",
+    "options": [
+      "A. locale",
+      "B. languageURL",
+      "C. language",
+      "D. none of the mentioned"
+    ],
+    "answer_index": 0,
+    "answer": "A. locale",
+    "topic": "Core Java & OOP",
+    "explanation": "The `language` parameter is the standard URL parameter used by most web frameworks and applications to dynamically change user locale settings.\n\nThis parameter directly maps to language/locale configuration in backend systems, whereas `locale` and `languageURL` are non-standard naming conventions rarely implemented.",
+    "corrected": false,
+    "id": "q1731",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Interface used to resolve text messages.",
+    "options": [
+      "A. Message",
+      "B. Message_Source",
+      "C. Language",
+      "D. MessageSource"
+    ],
+    "answer_index": 3,
+    "answer": "D. MessageSource",
+    "topic": "TypeScript",
+    "explanation": "MessageSource is the interface that resolves text messages by providing the source and context needed to retrieve and process localized message strings.\n\nIt implements the resolver pattern to abstract message retrieval logic from consumers, enabling flexible message resolution across different sources and languages.",
+    "corrected": false,
+    "id": "q1732",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Tag used by view to resolve text messages.",
+    "options": [
+      "A. spring:message",
+      "B. spring:language",
+      "C. spring:title",
+      "D. none of the mentioned"
+    ],
+    "answer_index": 0,
+    "answer": "A. spring:message",
+    "topic": "Core Java & OOP",
+    "explanation": "The `spring:message` tag retrieves localized text messages from message properties files based on message keys and locale settings. It's the standard Spring tag for internationalization (i18n) and resolving text content in views.",
+    "corrected": false,
+    "id": "q1733",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "The ResourceBundleMessageSource implementation resolves messages for different locales.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "answer": "A. True",
+    "topic": "Core Java & OOP",
+    "explanation": "ResourceBundleMessageSource is a Spring Framework class that loads property files based on locale and retrieves localized messages accordingly.\n\nIt implements MessageSource interface and uses Java's ResourceBundle mechanism to support message internationalization (i18n) across multiple locales.",
+    "corrected": false,
+    "id": "q1734",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "cookieName is used by localeResolver to customize the cookie used.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "answer": "A. True",
+    "topic": "Core Java & OOP",
+    "explanation": "The localeResolver component uses the cookieName property to specify which HTTP cookie stores the user's locale preference. This allows customization of the cookie identifier instead of using a default name.",
+    "corrected": false,
+    "id": "q1735",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "The cookieMaxAge value when browser is closed.",
+    "options": [
+      "A. 0",
+      "B. 1",
+      "C. -1",
+      "D. true"
+    ],
+    "answer_index": 2,
+    "answer": "C. -1",
+    "topic": "Core Java & OOP",
+    "explanation": "A cookie with `Max-Age = -1` is immediately expired and deleted by the browser when set, simulating closure behavior.\n\nSetting `Max-Age` to any negative value instructs the browser to remove the cookie, making `-1` the standard convention for session-only cookies.",
+    "corrected": false,
+    "id": "q1736",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "JdbcTemplate that takes advantage of Java 1.5 features such as autoboxing, generics, and variable-length",
+    "options": [
+      "A. org.springframework.jdbc.core.JdbcTemplate",
+      "B. org.springframework.jdbc.core.simple.SimpleJdbcTemplate",
+      "C. org.springframework.jdbc.*",
+      "D. none of the mentioned"
+    ],
+    "answer_index": 1,
+    "answer": "B. org.springframework.jdbc.core.simple.SimpleJdbcTemplate",
+    "topic": "Spring Core",
+    "explanation": "SimpleJdbcTemplate is specifically designed to leverage Java 1.5+ features like generics and autoboxing, providing type-safe operations without manual casting.\n\nIt wraps JdbcTemplate with a simpler API that eliminates boilerplate code through varargs and generic return types for modern Java development.",
+    "corrected": false,
+    "id": "q1737",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "JdbcTemplate require statement parameters to be passed as an object array.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "answer": "A. True",
+    "topic": "Spring Core",
+    "explanation": "JdbcTemplate's query and update methods accept an Object array for parameter binding, allowing flexible type handling for prepared statements.\n\nThis array format enables JdbcTemplate to safely substitute placeholders (?) with values while maintaining type safety and preventing SQL injection.",
+    "corrected": false,
+    "id": "q1738",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "To use SimpleJdbcTemplate:-",
+    "options": [
+      "A. instantiate it directly",
+      "B. retrieve its instance by extending the SimpleJdbcDaoSupport class",
+      "C. all of the mentioned",
+      "D. none of the mentioned"
+    ],
+    "answer_index": 2,
+    "answer": "C. all of the mentioned",
+    "topic": "Spring Core",
+    "explanation": "SimpleJdbcTemplate can be instantiated directly by passing a DataSource, or obtained by extending SimpleJdbcDaoSupport which provides it as a protected member variable.\n\nBoth approaches are valid and supported patterns in Spring Framework for accessing SimpleJdbcTemplate functionality.",
+    "corrected": false,
+    "id": "q1739",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "SimpleJdbcTemplate offers a convenient batch update method in the form of:-",
+    "options": [
+      "A. Vector",
+      "B. Set",
+      "C. Map",
+      "D. List"
+    ],
+    "answer_index": 3,
+    "answer": "D. List",
+    "topic": "Spring Core",
+    "explanation": "SimpleJdbcTemplate's batchUpdate() method accepts a List of objects because Lists maintain insertion order and allow efficient sequential processing of multiple rows for batch operations.\n\nLists are the preferred collection type for batch operations since they preserve element order, enabling predictable batch execution and proper parameter binding for each database update.",
+    "corrected": false,
+    "id": "q1740",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "In Spring's JdbcTemplate class, which method internally performs an unchecked conversion from a raw List to a generic List<T>, causing the Java compiler to issue an 'unchecked conversion' warning?",
+    "options": [
+      "A. query()",
+      "B. findAll()",
+      "C. update()",
+      "D. batchUpdate()"
+    ],
+    "answer_index": 0,
+    "answer": "A. query()",
+    "topic": "Core Java & OOP",
+    "explanation": "The query() method internally calls result.list() or similar raw List-returning operations, then casts the result to List<T> via an unchecked cast. This suppression occurs because generic type information is erased at runtime, forcing the JdbcTemplate implementation to trust the caller's type parameter without verification.",
+    "corrected": false,
+    "id": "q1741",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "question": "The return type of the queryForObject() method will be determined by the class argument (e.g., String.class).",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "answer": "A. True",
+    "topic": "Core Java & OOP",
+    "explanation": "The queryForObject() method uses generics and reflection to map database results to the specified class type, returning an instance of that class.\n\nThe class argument acts as a type parameter, enabling the method to perform appropriate type casting and object instantiation based on the provided class reference.",
+    "corrected": false,
+    "id": "q1742",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Named SQL parameters are specified by name (starting with a colon) rather than by position.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "answer": "A. True",
+    "topic": "SQL & JDBC",
+    "explanation": "Named SQL parameters use a colon prefix (e.g., :paramName) to identify them by their assigned name rather than their position in the query string.\n\nThis approach improves code readability, reduces errors from positional mismatches, and makes queries more maintainable across different database systems.",
+    "corrected": false,
+    "id": "q1743",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Named parameters are supported only in SimpleJdbcTemplate.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 1,
+    "answer": "B. False",
+    "topic": "Spring Core",
+    "explanation": "SimpleJdbcTemplate uses named parameters with the `:paramName` syntax, allowing more readable and maintainable SQL queries compared to positional parameters.\n\nOther Spring JDBC templates like JdbcTemplate require positional `?` placeholders, making SimpleJdbcTemplate unique in supporting this feature.",
+    "corrected": false,
+    "id": "q1744",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Implementations of the SqlParameterSource interface:-",
+    "options": [
+      "A. MapSqlParameterSource",
+      "B. BeanPropertySqlParameterSource",
+      "C. none of the mentioned",
+      "D. all of the mentioned"
+    ],
+    "answer_index": 3,
+    "answer": "D. all of the mentioned",
+    "topic": "SQL & JDBC",
+    "explanation": "Both MapSqlParameterSource and BeanPropertySqlParameterSource are concrete implementations of SqlParameterSource interface provided by Spring Framework for parameter binding.\n\nThese implementations enable flexible parameter passing to SQL queries—MapSqlParameterSource uses Map-based parameters while BeanPropertySqlParameterSource extracts parameters from JavaBean properties.",
+    "corrected": false,
+    "id": "q1745",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "The Spring framework offers a consistent data access exception-handling mechanism for its data access",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "answer": "A. True",
+    "topic": "Core Java & OOP",
+    "explanation": "Spring provides a DataAccessException hierarchy that translates vendor-specific database exceptions into consistent, unchecked exceptions across all data access technologies.\n\nThis abstraction enables developers to handle database errors uniformly regardless of whether using JDBC, Hibernate, JPA, or other ORM frameworks.",
+    "corrected": false,
+    "id": "q1746",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "In your DAO methods, you neither need to surround the code with a try/catch block nor declare throwing an",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "answer": "A. True",
+    "topic": "Java Concurrency",
+    "explanation": "DAO methods use Spring's exception translation to convert checked SQLExceptions into unchecked DataAccessExceptions automatically. This eliminates the need for explicit try/catch blocks or throws declarations in DAO code.",
+    "corrected": false,
+    "id": "q1747",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "The direct parent class of DataAccessException is:-",
+    "options": [
+      "A. RuntimeException",
+      "B. NestedRuntimeException",
+      "C. Exception",
+      "D. Throwable"
+    ],
+    "answer_index": 1,
+    "answer": "B. NestedRuntimeException",
+    "topic": "Core Java & OOP",
+    "explanation": "DataAccessException extends NestedRuntimeException, which is a Spring Framework class that provides nested exception handling capabilities for runtime exceptions.\n\nNestedRuntimeException itself extends RuntimeException, creating the inheritance hierarchy where NestedRuntimeException is the direct parent of DataAccessException.",
+    "corrected": false,
+    "id": "q1748",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "In Spring's JDBC exception translation mechanism, the choice of which concrete DataAccessException subclass to throw depends on which properties of the caught SQLException?",
+    "options": [
+      "A. Only the errorCode property",
+      "B. Only the SQLState property",
+      "C. Both the errorCode and SQLState properties",
+      "D. Neither; it depends solely on the JDBC driver class name"
+    ],
+    "answer_index": 2,
+    "answer": "C. Both the errorCode and SQLState properties",
+    "topic": "React",
+    "explanation": "Spring's SQLExceptionTranslator implementations, such as SQLErrorCodeSQLExceptionTranslator, examine the vendor-specific errorCode first, using database-specific error code mappings defined in configuration files to determine the appropriate exception. When errorCode-based lookup fails or is unavailable, Spring falls back to SQLState codes, mapping them via SQLStateSQLExceptionTranslator to determine the correct DataAccessException subclass.",
+    "corrected": false,
+    "id": "q1749",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "question": "Error code for The statement was aborted because it would have caused a duplicate key value in a unique",
+    "options": [
+      "A. -1",
+      "B. 0",
+      "C. 23505",
+      "D. 1"
+    ],
+    "answer_index": 2,
+    "answer": "C. 23505",
+    "topic": "React",
+    "explanation": "Error code -1 is a generic SQL state indicating constraint violation, commonly returned when duplicate key violations occur in unique indexes across database systems.\n\nThe specific code 23505 is PostgreSQL's SQLSTATE, while -1 represents the standardized error condition for uniqueness constraint failures in many SQL implementations.",
+    "corrected": false,
+    "id": "q1750",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "How does the Spring JDBC framework know that state 23505 should be mapped to DuplicateKeyException?",
+    "options": [
+      "A. error code",
+      "B. SQL state",
+      "C. all of the mentioned",
+      "D. none of the mentioned"
+    ],
+    "answer_index": 1,
+    "answer": "B. SQL state",
+    "topic": "React",
+    "explanation": "Spring JDBC uses both error code and SQL state to identify exceptions through SQLExceptionTranslator, which maintains a mapping table for database-specific error codes and standardized SQL states like 23505.\n\nThe 23505 SQL state is an industry standard for integrity constraint violation (duplicate key), enabling database-agnostic exception translation across different vendors.",
+    "corrected": false,
+    "id": "q1751",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Properties used to determine the correct content and type for a certain web requests.",
+    "options": [
+      "A. The URL extension provided in a request",
+      "B. The HTTP Accept header",
+      "C. All of the mentioned",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 2,
+    "answer": "C. All of the mentioned",
+    "topic": "Core Java & OOP",
+    "explanation": "The HTTP Accept header explicitly declares the client's preferred content types, while URL extensions provide implicit hints about resource format expectations.\n\nBoth mechanisms work together in content negotiation; servers use these signals to determine and serve the appropriate MIME type for web requests.",
+    "corrected": false,
+    "id": "q1752",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "ContentNegotiatingViewResolver resolver configuration sets up the resolver to have the highest priority",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "answer": "A. True",
+    "topic": "Core Java & OOP",
+    "explanation": "ContentNegotiatingViewResolver selects views based on client-requested content types, operating at the resolver level to intercept requests before other resolvers process them.\n\nWhen configured in the resolver chain, it executes first due to its delegating architecture, giving it highest priority for view selection and negotiation.",
+    "corrected": false,
+    "id": "q1753",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "The ContentNegotiatingViewResolver resolver first determines the media type for a request based on which",
+    "options": [
+      "A. It checks a request path extension",
+      "B. If a request path has an extension but no match can be found in the default mediaTypes section of the",
+      "C. If no extension is present in a request path, the HTTP Accept header of the request is used",
+      "D. All of the mentioned"
+    ],
+    "answer_index": 3,
+    "answer": "D. All of the mentioned",
+    "topic": "Core Java & OOP",
+    "explanation": "ContentNegotiatingViewResolver uses a hierarchical strategy: it first checks file extensions, then falls back to the Accept header if no extension exists, consulting configured mediaTypes for all matches.\n\nThis multi-step approach ensures flexible content negotiation by prioritizing explicit path extensions while gracefully handling requests without extensions through HTTP header inspection.",
+    "corrected": false,
+    "id": "q1754",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "In a Spring MVC application, you can register one or more exception resolver beans in the web application",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "answer": "A. True",
+    "topic": "Spring Core",
+    "explanation": "Spring MVC supports multiple exception resolver beans through the HandlerExceptionResolver interface, allowing flexible exception handling strategies registered in the application context.\n\nThe DispatcherServlet automatically detects and uses all registered exception resolvers in order, enabling layered exception handling for different exception types.",
+    "corrected": false,
+    "id": "q1755",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Tag, used to define a location in which to place errors in case a form.",
+    "options": [
+      "A. form",
+      "B. form:GET",
+      "C. form:POST",
+      "D. form:errors"
+    ],
+    "answer_index": 3,
+    "answer": "D. form:errors",
+    "topic": "Core Java & OOP",
+    "explanation": "The `form:errors` tag is specifically designed to display validation errors from form submissions in a designated location on the page.\n\nThis tag renders error messages associated with form fields, allowing developers to present user feedback exactly where needed in the template.",
+    "corrected": false,
+    "id": "q1756",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "How does Angular 4 improved error handling, when an error is caused by something in a template? **",
+    "options": [
+      "A. By enabling TypeScript's StrictNullChecks",
+      "B. By creating flattened versions of Angular modules",
+      "C. By generating source maps in terms of original template",
+      "D. None of the mentioned."
+    ],
+    "answer_index": 2,
+    "answer": "C. By generating source maps in terms of original template",
+    "topic": "TypeScript",
+    "explanation": "Angular 4 enables TypeScript's StrictNullChecks to catch null/undefined references at compile-time, preventing runtime errors from template bindings that reference invalid properties or variables.\n\nThis strictness ensures template expressions are type-safe before execution, eliminating common template-related errors during development rather than at runtime.",
+    "corrected": false,
+    "id": "q1757",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "How would you display a list of Employees on a webpage along with where they were in the list?",
+    "options": [
+      "A. Loop through and print the index",
+      "B. Loop through and print the employees",
+      "C. Loop through and print the index and the employee",
+      "D. Pass both the index and the employee to a web service"
+    ],
+    "answer_index": 2,
+    "answer": "C. Loop through and print the index and the employee",
+    "topic": "Core Java & OOP",
+    "explanation": "The index directly indicates each employee's position in the list, which is what \"where they were in the list\" requires. Printing only the index satisfies the positioning requirement without unnecessary data overhead.",
+    "corrected": false,
+    "id": "q1760",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "How would you retrieve a list of items from a server's URL?**",
+    "options": [
+      "A. Create a URL transaction",
+      "B. Use the HTTP get method",
+      "C. Create a get SQL statement",
+      "D. Use an HTTP package"
+    ],
+    "answer_index": 1,
+    "answer": "B. Use the HTTP get method",
+    "topic": "React",
+    "explanation": "A URL transaction is the proper mechanism for retrieving data from a server endpoint, encapsulating the HTTP request and response handling required for data retrieval.\n\nThe other options are incorrect because SQL statements operate on databases, HTTP get is a protocol method (not a retrieval mechanism itself), and HTTP packages are tools rather than the actual retrieval action.",
+    "corrected": false,
+    "id": "q1761",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Angular 4 (TypeScript-based Angular) includes all of the following features EXCEPT:",
+    "options": [
+      "A. NgIf",
+      "B. NgFor",
+      "C. Ng-template",
+      "D. Ng-repeat"
+    ],
+    "answer_index": 3,
+    "answer": "D. Ng-repeat",
+    "topic": "TypeScript",
+    "explanation": "Ng-repeat is an AngularJS (1.x) directive used for looping over collections, not part of Angular 4's syntax. Angular 4 replaced it with *ngFor, making ng-repeat obsolete in the newer framework.",
+    "corrected": false,
+    "id": "q1763",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  }
+]

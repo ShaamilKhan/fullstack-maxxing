@@ -47,47 +47,28 @@ body {
 ::-webkit-scrollbar-track { background: var(--surface); }
 ::-webkit-scrollbar-thumb { background: var(--brand); border-radius: 9px; }
 
-/* ── Custom cursor ─────────────────────────────────────────
-   Only engages for a real mouse (fine pointer + hover). Touch and
-   stylus keep the native behaviour untouched. */
+/* ── Custom cursor ──────────────────────────────────────── */
 @media (hover: hover) and (pointer: fine) {
   html.cur-on, html.cur-on * { cursor: none !important; }
 }
 #cur-dot, #cur-glow {
-  position: fixed;
-  top: 0; left: 0;
-  border-radius: 50%;
-  pointer-events: none;
-  z-index: 2147483647;
-  opacity: 0;
-  /* Composited transform only — never triggers layout or paint. */
-  will-change: transform;
-  transition: opacity .18s ease;
+  position: fixed; top: 0; left: 0;
+  border-radius: 50%; pointer-events: none; z-index: 2147483647;
+  opacity: 0; will-change: transform; transition: opacity .18s ease;
 }
 html.cur-on #cur-dot, html.cur-on #cur-glow { opacity: 1; }
-
-/* Precise dot — written straight from the pointer event, so it is
-   pixel-locked to the OS cursor with no interpolation delay. */
 #cur-dot {
-  width: 7px; height: 7px;
-  margin: -3.5px 0 0 -3.5px;
+  width: 7px; height: 7px; margin: -3.5px 0 0 -3.5px;
   background: #b9ffd0;
   box-shadow: 0 0 6px 1px rgba(57,255,136,.95), 0 0 16px 4px rgba(0,255,128,.5);
-  transition: opacity .18s ease, width .16s ease, height .16s ease,
-              margin .16s ease, background .16s ease, box-shadow .16s ease;
+  transition: opacity .18s ease, width .16s ease, height .16s ease, margin .16s ease;
 }
-/* Trailing halo — eased in a rAF loop for the smooth feel. */
 #cur-glow {
-  width: 26px; height: 26px;
-  margin: -13px 0 0 -13px;
+  width: 26px; height: 26px; margin: -13px 0 0 -13px;
   background: radial-gradient(circle, rgba(0,255,128,.28) 0%, rgba(0,255,128,0) 70%);
-  transition: opacity .22s ease, width .2s ease, height .2s ease,
-              margin .2s ease, background .2s ease;
+  transition: opacity .22s ease, width .2s ease, height .2s ease, margin .2s ease;
 }
-/* Pressed */
 html.cur-down #cur-glow { width: 20px; height: 20px; margin: -10px 0 0 -10px; }
-
-/* Honour reduced-motion: drop the halo, keep the precise dot. */
 @media (prefers-reduced-motion: reduce) {
   #cur-glow { display: none; }
   #cur-dot  { transition: opacity .18s ease; }
@@ -107,22 +88,12 @@ html.cur-down #cur-glow { width: 20px; height: 20px; margin: -10px 0 0 -10px; }
   60%  { transform:scale(1.02); }
   100% { transform:scale(1);    opacity:1; }
 }
-@keyframes shimmer {
-  0%   { background-position: -400px 0; }
-  100% { background-position: 400px 0; }
-}
 .anim-up  { animation: fadeUp .28s cubic-bezier(.4,0,.2,1) both; }
 .anim-pop { animation: pop   .22s cubic-bezier(.4,0,.2,1) both; }
 
 /* Cards */
-.card {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 14px;
-}
-.card-hover {
-  transition: border-color .2s, box-shadow .2s, transform .15s;
-}
+.card { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; }
+.card-hover { transition: border-color .2s, box-shadow .2s, transform .15s; }
 .card-hover:hover {
   border-color: var(--brand);
   box-shadow: 0 0 0 1px var(--brand), 0 8px 32px rgba(139,92,246,.15);
@@ -131,223 +102,162 @@ html.cur-down #cur-glow { width: 20px; height: 20px; margin: -10px 0 0 -10px; }
 
 /* Option buttons */
 .opt-btn {
-  width: 100%;
-  text-align: left;
-  padding: 14px 18px;
-  border-radius: 12px;
-  border: 1.5px solid var(--border);
-  background: var(--surface2);
-  color: var(--text);
-  font-size: 0.94rem;
-  font-family: inherit;
-  cursor: pointer;
+  width: 100%; text-align: left; padding: 14px 18px;
+  border-radius: 12px; border: 1.5px solid var(--border);
+  background: var(--surface2); color: var(--text);
+  font-size: 0.94rem; font-family: inherit; cursor: pointer;
   transition: border-color .15s, background .15s, box-shadow .15s;
-  display: flex;
-  align-items: flex-start;
-  gap: 12px;
-  line-height: 1.5;
-  margin-bottom: 10px;
+  display: flex; align-items: flex-start; gap: 12px;
+  line-height: 1.5; margin-bottom: 10px;
 }
-.opt-btn:hover:not(.disabled) {
-  border-color: var(--brand);
-  background: rgba(139,92,246,.1);
-}
+.opt-btn:hover:not(.disabled) { border-color: var(--brand); background: rgba(139,92,246,.1); }
 .opt-btn .opt-letter {
-  flex-shrink: 0;
-  width: 26px; height: 26px;
-  border-radius: 7px;
-  background: rgba(139,92,246,.12);
-  border: 1px solid rgba(139,92,246,.3);
-  color: var(--brand2);
-  font-weight: 700;
-  font-size: .75rem;
+  flex-shrink: 0; width: 26px; height: 26px; border-radius: 7px;
+  background: rgba(139,92,246,.12); border: 1px solid rgba(139,92,246,.3);
+  color: var(--brand2); font-weight: 700; font-size: .75rem;
   display: flex; align-items: center; justify-content: center;
   transition: background .15s, border-color .15s;
 }
-.opt-btn:hover:not(.disabled) .opt-letter {
-  background: rgba(139,92,246,.25);
-  border-color: var(--brand);
-}
-.opt-btn.correct {
-  border-color: #10b981;
-  background: rgba(16,185,129,.08);
-  box-shadow: 0 0 0 1px #10b981, 0 4px 20px rgba(16,185,129,.15);
-}
-.opt-btn.correct .opt-letter {
-  background: #10b981; border-color: #10b981; color: #fff;
-}
-.opt-btn.wrong {
-  border-color: #f43f5e;
-  background: rgba(244,63,94,.08);
-  box-shadow: 0 0 0 1px #f43f5e, 0 4px 20px rgba(244,63,94,.15);
-}
-.opt-btn.wrong .opt-letter {
-  background: #f43f5e; border-color: #f43f5e; color: #fff;
-}
-.opt-btn.reveal {
-  border-color: #10b981;
-  background: rgba(16,185,129,.06);
-}
-.opt-btn.reveal .opt-letter {
-  background: rgba(16,185,129,.2); border-color: #10b981; color: #10b981;
-}
+.opt-btn:hover:not(.disabled) .opt-letter { background: rgba(139,92,246,.25); border-color: var(--brand); }
+.opt-btn.correct { border-color: #10b981; background: rgba(16,185,129,.08); box-shadow: 0 0 0 1px #10b981, 0 4px 20px rgba(16,185,129,.15); }
+.opt-btn.correct .opt-letter { background: #10b981; border-color: #10b981; color: #fff; }
+.opt-btn.wrong { border-color: #f43f5e; background: rgba(244,63,94,.08); box-shadow: 0 0 0 1px #f43f5e, 0 4px 20px rgba(244,63,94,.15); }
+.opt-btn.wrong .opt-letter { background: #f43f5e; border-color: #f43f5e; color: #fff; }
+.opt-btn.reveal { border-color: #10b981; background: rgba(16,185,129,.06); }
+.opt-btn.reveal .opt-letter { background: rgba(16,185,129,.2); border-color: #10b981; color: #10b981; }
 .opt-btn.disabled { pointer-events: none; opacity: .7; }
 .opt-btn.disabled.correct, .opt-btn.disabled.wrong, .opt-btn.disabled.reveal { opacity: 1; }
 
 /* Progress bar */
-.prog-track {
-  height: 4px;
-  background: var(--border);
-  border-radius: 9px;
-  overflow: hidden;
-}
+.prog-track { height: 4px; background: var(--border); border-radius: 9px; overflow: hidden; }
 .prog-fill {
-  height: 100%;
-  background: linear-gradient(90deg, var(--brand) 0%, #a78bfa 100%);
-  border-radius: 9px;
-  transition: width .4s cubic-bezier(.4,0,.2,1);
+  height: 100%; background: linear-gradient(90deg, var(--brand) 0%, #a78bfa 100%);
+  border-radius: 9px; transition: width .4s cubic-bezier(.4,0,.2,1);
 }
 
 /* Slider */
 input[type=range] {
-  -webkit-appearance: none;
-  width: 100%;
-  height: 5px;
-  border-radius: 9px;
-  background: var(--border2);
-  outline: none;
-  cursor: pointer;
+  -webkit-appearance: none; width: 100%; height: 5px;
+  border-radius: 9px; background: var(--border2); outline: none; cursor: pointer;
 }
 input[type=range]::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  width: 18px; height: 18px;
-  border-radius: 50%;
-  background: var(--brand);
-  border: 2px solid #fff;
-  box-shadow: 0 0 0 3px rgba(139,92,246,.3);
-  cursor: pointer;
-  transition: box-shadow .15s;
+  -webkit-appearance: none; width: 18px; height: 18px; border-radius: 50%;
+  background: var(--brand); border: 2px solid #fff;
+  box-shadow: 0 0 0 3px rgba(139,92,246,.3); cursor: pointer; transition: box-shadow .15s;
 }
-input[type=range]::-webkit-slider-thumb:hover {
-  box-shadow: 0 0 0 5px rgba(139,92,246,.3);
-}
+input[type=range]::-webkit-slider-thumb:hover { box-shadow: 0 0 0 5px rgba(139,92,246,.3); }
 
 /* Badge */
 .badge {
-  display: inline-flex; align-items: center;
-  padding: 3px 10px;
-  border-radius: 20px;
-  font-size: .72rem;
-  font-weight: 600;
-  letter-spacing: .02em;
+  display: inline-flex; align-items: center; padding: 3px 10px;
+  border-radius: 20px; font-size: .72rem; font-weight: 600; letter-spacing: .02em;
 }
 
 /* Tab button */
 .tab-btn {
-  flex: 1;
-  padding: 10px 16px;
-  border-radius: 10px;
-  font-size: .88rem;
-  font-weight: 600;
-  cursor: pointer;
-  border: 1.5px solid transparent;
-  transition: all .2s;
-  font-family: inherit;
+  flex: 1; padding: 10px 16px; border-radius: 10px; font-size: .88rem;
+  font-weight: 600; cursor: pointer; border: 1.5px solid transparent;
+  transition: all .2s; font-family: inherit;
 }
-.tab-btn.active {
-  background: var(--brand);
-  color: #fff;
-  border-color: var(--brand);
-  box-shadow: 0 4px 20px rgba(139,92,246,.35);
-}
-.tab-btn.inactive {
-  background: var(--surface2);
-  color: var(--muted);
-  border-color: var(--border);
-}
-.tab-btn.inactive:hover {
-  border-color: var(--brand2);
-  color: var(--brand2);
-}
+.tab-btn.active { background: var(--brand); color: #fff; border-color: var(--brand); box-shadow: 0 4px 20px rgba(139,92,246,.35); }
+.tab-btn.inactive { background: var(--surface2); color: var(--muted); border-color: var(--border); }
+.tab-btn.inactive:hover { border-color: var(--brand2); color: var(--brand2); }
 
 /* Select */
 select {
-  background: var(--surface2);
-  border: 1.5px solid var(--border);
-  border-radius: 10px;
-  padding: 10px 14px;
-  color: var(--text);
-  font-family: inherit;
-  font-size: .88rem;
-  outline: none;
-  cursor: pointer;
-  transition: border-color .15s;
-  width: 100%;
-  appearance: none;
-  -webkit-appearance: none;
+  background: var(--surface2); border: 1.5px solid var(--border); border-radius: 10px;
+  padding: 10px 14px; color: var(--text); font-family: inherit; font-size: .88rem;
+  outline: none; cursor: pointer; transition: border-color .15s; width: 100%;
+  appearance: none; -webkit-appearance: none;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%236b6b8a' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
-  background-repeat: no-repeat;
-  background-position: right 14px center;
-  padding-right: 36px;
+  background-repeat: no-repeat; background-position: right 14px center; padding-right: 36px;
 }
 select:focus { border-color: var(--brand); }
 
-/* Primary button */
+/* Buttons */
 .btn-primary {
-  background: linear-gradient(135deg, #7c3aed, #6d28d9);
-  color: #fff;
-  font-weight: 700;
-  border: none;
-  border-radius: 12px;
-  padding: 14px 24px;
-  cursor: pointer;
-  font-family: inherit;
-  font-size: .95rem;
-  transition: all .2s;
+  background: linear-gradient(135deg, #7c3aed, #6d28d9); color: #fff;
+  font-weight: 700; border: none; border-radius: 12px; padding: 14px 24px;
+  cursor: pointer; font-family: inherit; font-size: .95rem; transition: all .2s;
   box-shadow: 0 4px 20px rgba(109,40,217,.35);
   display: inline-flex; align-items: center; gap: 8px;
 }
 .btn-primary:hover {
   background: linear-gradient(135deg, #8b5cf6, #7c3aed);
-  box-shadow: 0 6px 28px rgba(109,40,217,.5);
-  transform: translateY(-1px);
+  box-shadow: 0 6px 28px rgba(109,40,217,.5); transform: translateY(-1px);
 }
 .btn-secondary {
-  background: var(--surface2);
-  color: var(--text);
-  font-weight: 600;
-  border: 1.5px solid var(--border);
-  border-radius: 12px;
-  padding: 14px 24px;
-  cursor: pointer;
-  font-family: inherit;
-  font-size: .95rem;
-  transition: all .2s;
+  background: var(--surface2); color: var(--text); font-weight: 600;
+  border: 1.5px solid var(--border); border-radius: 12px; padding: 14px 24px;
+  cursor: pointer; font-family: inherit; font-size: .95rem; transition: all .2s;
   display: inline-flex; align-items: center; gap: 8px;
 }
-.btn-secondary:hover {
-  border-color: var(--brand2);
-  color: var(--brand2);
-}
+.btn-secondary:hover { border-color: var(--brand2); color: var(--brand2); }
 
 /* Stat card */
 .stat-card {
-  background: var(--surface2);
-  border: 1px solid var(--border);
-  border-radius: 12px;
-  padding: 18px 16px;
-  text-align: center;
+  background: var(--surface2); border: 1px solid var(--border);
+  border-radius: 12px; padding: 18px 16px; text-align: center;
 }
 
 /* Modal overlay */
 .modal-overlay {
-  position: fixed; inset: 0;
-  background: rgba(0,0,0,.75);
-  backdrop-filter: blur(6px);
-  display: flex; align-items: center; justify-content: center;
-  z-index: 100;
-  padding: 16px;
+  position: fixed; inset: 0; background: rgba(0,0,0,.75);
+  backdrop-filter: blur(6px); display: flex; align-items: center; justify-content: center;
+  z-index: 100; padding: 16px;
 }
+
+/* ── Quiz layout: left nav + main ─────────────────── */
+#quiz-layout {
+  display: flex;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
+#q-nav-panel {
+  width: 210px;
+  min-width: 210px;
+  flex-shrink: 0;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto;
+  background: var(--surface);
+  border-right: 1px solid var(--border);
+}
+
+#quiz-main {
+  flex: 1;
+  min-width: 0;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 20px 20px 80px;
+}
+
+/* Collapse nav panel on small screens */
+@media (max-width: 700px) {
+  #q-nav-panel { display: none; }
+  #quiz-main   { max-width: 100%; padding: 16px 14px 80px; }
+}
+
+/* Nav button states shown in JS */
+.nav-dir-btn {
+  background: var(--surface2);
+  border: 1.5px solid var(--border);
+  color: var(--muted);
+  border-radius: 10px;
+  padding: 10px 18px;
+  font-family: inherit;
+  font-size: .88rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all .18s;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.nav-dir-btn:hover:not(:disabled) { border-color: var(--brand2); color: var(--brand2); }
+.nav-dir-btn:disabled { opacity: .35; cursor: default; }
 </style>
 </head>
 <body>
@@ -356,56 +266,30 @@ select:focus { border-color: var(--brand); }
 <div id="cur-glow"></div>
 <div id="cur-dot"></div>
 <script>
-/* Custom cursor.
-   Latency strategy: the precise dot's transform is written synchronously in the
-   pointermove handler. Browsers coalesce pointermove to one event per frame, and
-   a transform-only write stays on the compositor, so the dot lands in the same
-   frame as the OS cursor — no interpolation, no rAF hop, no drift.
-   The halo is the only eased element, advanced in its own rAF loop. */
 (function () {
   if (!window.matchMedia('(hover: hover) and (pointer: fine)').matches) return;
-
   var root = document.documentElement;
   var dot  = document.getElementById('cur-dot');
   var glow = document.getElementById('cur-glow');
   var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-
-  var x = innerWidth / 2, y = innerHeight / 2;   // live pointer
-  var gx = x, gy = y;                            // eased halo
+  var x = innerWidth / 2, y = innerHeight / 2;
+  var gx = x, gy = y;
   var running = false, shown = false;
-
   function tick() {
-    // Exponential ease; framerate-independent enough for a 26px halo.
-    gx += (x - gx) * 0.22;
-    gy += (y - gy) * 0.22;
+    gx += (x - gx) * 0.22; gy += (y - gy) * 0.22;
     glow.style.transform = 'translate3d(' + gx + 'px,' + gy + 'px,0)';
-    if (Math.abs(x - gx) > 0.1 || Math.abs(y - gy) > 0.1) {
-      requestAnimationFrame(tick);
-    } else {
-      running = false;                            // idle: stop burning frames
-    }
+    if (Math.abs(x - gx) > 0.1 || Math.abs(y - gy) > 0.1) requestAnimationFrame(tick);
+    else running = false;
   }
-
   addEventListener('pointermove', function (e) {
     if (e.pointerType !== 'mouse') return;
     x = e.clientX; y = e.clientY;
-
-    // Synchronous write == zero added latency.
     dot.style.transform = 'translate3d(' + x + 'px,' + y + 'px,0)';
-
-    if (!shown) {
-      shown = true;
-      root.classList.add('cur-on');
-      gx = x; gy = y;
-      glow.style.transform = 'translate3d(' + x + 'px,' + y + 'px,0)';
-    }
+    if (!shown) { shown = true; root.classList.add('cur-on'); gx = x; gy = y; glow.style.transform = dot.style.transform; }
     if (!reduce && !running) { running = true; requestAnimationFrame(tick); }
   }, { passive: true });
-
   addEventListener('pointerdown', function () { root.classList.add('cur-down'); }, { passive: true });
   addEventListener('pointerup',   function () { root.classList.remove('cur-down'); }, { passive: true });
-
-  // Leaving the window / tab: hide so no stale dot is left painted.
   function hide() { shown = false; root.classList.remove('cur-on', 'cur-down'); }
   addEventListener('blur', hide);
   document.addEventListener('mouseleave', hide);
@@ -428,13 +312,12 @@ select:focus { border-color: var(--brand); }
       <span style="display:block;font-size:1.9rem;font-weight:700;color:#a78bfa;letter-spacing:.02em">Fullstack</span>
       <span style="display:block;font-size:2.9rem;font-weight:900;background:linear-gradient(135deg,#8b5cf6,#a78bfa,#c4b5fd);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">Maxxing</span>
     </h1>
-    <p style="color:var(--muted);font-size:1rem;max-width:520px;margin:0 auto;line-height:1.6"
-       id="landing-blurb">
+    <p style="color:var(--muted);font-size:1rem;max-width:520px;margin:0 auto;line-height:1.6" id="landing-blurb">
       Java, Spring, React, TypeScript, DevOps &amp; more
     </p>
   </div>
 
-  <!-- Weak Spots Banner (shown if data exists in localStorage) -->
+  <!-- Weak Spots Banner -->
   <div id="weak-banner" style="display:none;margin-bottom:24px">
     <div style="background:rgba(244,63,94,.07);border:1px solid rgba(244,63,94,.25);border-radius:14px;padding:18px 22px">
       <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px;flex-wrap:wrap;gap:8px">
@@ -446,16 +329,14 @@ select:focus { border-color: var(--brand); }
         <div style="display:flex;gap:8px">
           <button onclick="App.drillWeakSpots()"
                   style="background:rgba(139,92,246,.15);border:1px solid rgba(139,92,246,.4);color:#a78bfa;
-                         padding:5px 14px;border-radius:8px;font-size:.78rem;font-weight:700;cursor:pointer;font-family:inherit;
-                         transition:all .2s"
+                         padding:5px 14px;border-radius:8px;font-size:.78rem;font-weight:700;cursor:pointer;font-family:inherit;transition:all .2s"
                   onmouseover="this.style.background='rgba(139,92,246,.3)'"
                   onmouseout="this.style.background='rgba(139,92,246,.15)'">
             🎯 Drill Weak Topics
           </button>
           <button onclick="App.resetStats()"
                   style="background:transparent;border:1px solid var(--border2);color:var(--muted);
-                         padding:5px 12px;border-radius:8px;font-size:.72rem;cursor:pointer;font-family:inherit;
-                         transition:all .2s"
+                         padding:5px 12px;border-radius:8px;font-size:.72rem;cursor:pointer;font-family:inherit;transition:all .2s"
                   onmouseover="this.style.color='#f87171';this.style.borderColor='rgba(244,63,94,.4)'"
                   onmouseout="this.style.color='var(--muted)';this.style.borderColor='var(--border2)'">
             Reset
@@ -466,7 +347,7 @@ select:focus { border-color: var(--brand); }
     </div>
   </div>
 
-  <!-- Overall Progress Bar (lifetime) -->
+  <!-- Lifetime bar -->
   <div id="lifetime-bar" style="display:none;margin-bottom:24px">
     <div style="background:var(--surface2);border:1px solid var(--border);border-radius:14px;padding:16px 22px">
       <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:10px">
@@ -479,7 +360,7 @@ select:focus { border-color: var(--brand); }
   </div>
 
   <!-- Stats -->
-  <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:32px" id="stats-row">
+  <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:32px">
     <div class="stat-card">
       <div style="font-size:1.9rem;font-weight:800;color:#a78bfa" id="stat-total">—</div>
       <div style="font-size:.72rem;color:var(--muted);margin-top:4px;text-transform:uppercase;letter-spacing:.06em">Questions</div>
@@ -489,7 +370,7 @@ select:focus { border-color: var(--brand); }
       <div style="font-size:.72rem;color:var(--muted);margin-top:4px;text-transform:uppercase;letter-spacing:.06em">Sets</div>
     </div>
     <div class="stat-card">
-      <div style="font-size:1.9rem;font-weight:800;color:#34d399" id="stat-topics">14</div>
+      <div style="font-size:1.9rem;font-weight:800;color:#34d399" id="stat-topics">—</div>
       <div style="font-size:.72rem;color:var(--muted);margin-top:4px;text-transform:uppercase;letter-spacing:.06em">Topics</div>
     </div>
     <div class="stat-card">
@@ -498,19 +379,39 @@ select:focus { border-color: var(--brand); }
     </div>
   </div>
 
-  <!-- Mode tabs -->
+  <!-- Mode tabs: Normal | Exam | Practice | Quarantine -->
   <div style="display:flex;gap:10px;margin-bottom:24px;flex-wrap:wrap">
-    <button class="tab-btn active" id="tab-exam" onclick="App.showMode('exam')">📝 Exam Mode</button>
-    <button class="tab-btn inactive" id="tab-practice" onclick="App.showMode('practice')">🎯 Practice Mode</button>
+    <button class="tab-btn active"   id="tab-normal"     onclick="App.showMode('normal')">📚 Normal Mode</button>
+    <button class="tab-btn inactive" id="tab-exam"       onclick="App.showMode('exam')">⏱ Exam Mode</button>
+    <button class="tab-btn inactive" id="tab-practice"   onclick="App.showMode('practice')">🎯 Practice Mode</button>
     <button class="tab-btn inactive" id="tab-quarantine" onclick="App.showMode('quarantine')">🚧 Quarantine</button>
   </div>
 
-  <!-- ── EXAM PANEL ── -->
-  <div id="panel-exam" class="anim-up">
+  <!-- ── NORMAL PANEL ── -->
+  <div id="panel-normal" class="anim-up">
     <p style="color:var(--muted);font-size:.88rem;margin-bottom:20px">
       Pick any set. Questions shuffle on every start. Answer each question for instant feedback + explanation.
     </p>
     <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px" id="set-grid"></div>
+  </div>
+
+  <!-- ── EXAM PANEL ── -->
+  <div id="panel-exam" style="display:none" class="anim-up">
+    <div style="background:rgba(251,191,36,.07);border:1px solid rgba(251,191,36,.28);border-radius:14px;padding:16px 20px;margin-bottom:20px">
+      <div style="display:flex;align-items:flex-start;gap:10px">
+        <span style="font-size:1.2rem;margin-top:1px">⏱</span>
+        <div>
+          <div style="font-size:.9rem;font-weight:700;color:#fbbf24;margin-bottom:4px">Timed Exam Mode</div>
+          <p style="font-size:.82rem;color:var(--muted);line-height:1.55;margin:0">
+            60 questions per set · <strong style="color:var(--text)">1 minute per question</strong> · No explanations shown · Auto-advances after each answer.
+            Verified and unverified sets are kept separate.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px" id="exam-grid">
+      <p style="color:var(--muted);font-size:.86rem">Loading exam sets…</p>
+    </div>
   </div>
 
   <!-- ── PRACTICE PANEL ── -->
@@ -518,12 +419,9 @@ select:focus { border-color: var(--brand); }
     <p style="color:var(--muted);font-size:.88rem;margin-bottom:20px">
       Set <strong style="color:var(--text)">topic percentages</strong> (must total 100%) and drill exactly what you need.
     </p>
-
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
-
       <!-- Left column -->
       <div>
-        <!-- Question count -->
         <div class="card" style="padding:20px;margin-bottom:16px">
           <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px">
             <span style="font-size:.88rem;font-weight:600">Questions to Practice</span>
@@ -535,24 +433,18 @@ select:focus { border-color: var(--brand); }
             <span>10</span><span>120</span>
           </div>
         </div>
-
-        <!-- Source set -->
         <div class="card" style="padding:20px;margin-bottom:16px">
           <label style="font-size:.88rem;font-weight:600;display:block;margin-bottom:10px">Draw From</label>
           <select id="prac-source">
-            <option value="all">📚 Entire Bank (all 1315 questions)</option>
+            <option value="all">📚 Entire Bank</option>
           </select>
         </div>
-
-        <!-- Timer config -->
         <div class="card" style="padding:20px;margin-bottom:16px">
-          <div style="display:flex;align-items:center;gap:10px;margin-bottom:0">
+          <div style="display:flex;align-items:center;gap:10px">
             <input type="checkbox" id="timer-enable"
                    style="width:16px;height:16px;accent-color:var(--brand);cursor:pointer;flex-shrink:0"
                    onchange="App.toggleTimerConfig()"/>
-            <label for="timer-enable" style="font-size:.88rem;font-weight:600;cursor:pointer;user-select:none">
-              ⏱ Enable Timer
-            </label>
+            <label for="timer-enable" style="font-size:.88rem;font-weight:600;cursor:pointer;user-select:none">⏱ Enable Timer</label>
           </div>
           <div id="timer-config" style="display:none;margin-top:14px">
             <div style="display:flex;align-items:center;gap:10px">
@@ -569,29 +461,21 @@ select:focus { border-color: var(--brand); }
             </p>
           </div>
         </div>
-
-        <!-- Start button -->
         <button class="btn-primary" style="width:100%;justify-content:center;font-size:1rem;padding:16px"
                 onclick="App.startPractice()">
           Start Practice Session ⚡
         </button>
         <p style="font-size:.75rem;color:#f43f5e;text-align:center;margin-top:8px;min-height:18px" id="prac-warn"></p>
       </div>
-
-      <!-- Right column: topic sliders -->
+      <!-- Right column: sliders -->
       <div class="card" style="padding:20px">
         <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px">
           <span style="font-size:.88rem;font-weight:600">Topic Mix</span>
-          <span id="prac-sum-badge" style="background:rgba(16,185,129,.15);border:1px solid rgba(16,185,129,.4);color:#34d399;padding:3px 12px;border-radius:20px;font-size:.75rem;font-weight:700">
-            100%
-          </span>
+          <span id="prac-sum-badge" style="background:rgba(16,185,129,.15);border:1px solid rgba(16,185,129,.4);color:#34d399;padding:3px 12px;border-radius:20px;font-size:.75rem;font-weight:700">100%</span>
         </div>
         <div id="sliders-container"></div>
-        <p style="font-size:.72rem;color:var(--muted);margin-top:12px">
-          Changing one slider auto-adjusts the others.
-        </p>
+        <p style="font-size:.72rem;color:var(--muted);margin-top:12px">Changing one slider auto-adjusts the others.</p>
       </div>
-
     </div>
   </div>
 
@@ -603,62 +487,32 @@ select:focus { border-color: var(--brand); }
         <span style="font-size:.9rem;font-weight:700;color:#fbbf24">Quarantined Questions</span>
       </div>
       <p style="color:var(--muted);font-size:.84rem;line-height:1.6;margin:0">
-        These failed automated verification — the stem and options came from different
-        source questions, or referenced content (code, numbered statements) that was never
-        captured during extraction. They are <strong style="color:var(--text)">excluded from
-        all normal quizzes</strong> and appear only here.
+        Failed automated verification — excluded from all normal quizzes. Browse only here.
       </p>
     </div>
-
-    <!-- Two pools, split by source trust -->
     <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;margin-bottom:22px">
-
-      <!-- Verified pool -->
       <div class="card" style="padding:20px;border-color:rgba(16,185,129,.3)">
         <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:6px">
-          <span style="font-size:.72rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:#34d399">
-            ✓ Verified sources
-          </span>
+          <span style="font-size:.72rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:#34d399">✓ Verified sources</span>
           <span style="font-size:1.6rem;font-weight:800;color:#34d399" id="quar-verified-n">—</span>
         </div>
-        <p style="font-size:.76rem;color:var(--muted);line-height:1.55;margin-bottom:14px">
-          From your own material. Quarantined only because extraction damaged them —
-          the questions themselves are trustworthy.
-        </p>
-        <button class="btn-primary" style="width:100%;justify-content:center"
-                onclick="App.startQuarantineQuiz('verified')">
-          Practice Verified ⚡
-        </button>
+        <p style="font-size:.76rem;color:var(--muted);line-height:1.55;margin-bottom:14px">From your own material. Quarantined only because extraction damaged them.</p>
+        <button class="btn-primary" style="width:100%;justify-content:center" onclick="App.startQuarantineQuiz('verified')">Practice Verified ⚡</button>
       </div>
-
-      <!-- Unverified pool -->
       <div class="card" style="padding:20px;border-color:rgba(251,191,36,.3)">
         <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:6px">
-          <span style="font-size:.72rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:#fbbf24">
-            ⚠ Unverified origin
-          </span>
+          <span style="font-size:.72rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:#fbbf24">⚠ Unverified origin</span>
           <span style="font-size:1.6rem;font-weight:800;color:#fbbf24" id="quar-unverified-n">—</span>
         </div>
-        <p style="font-size:.76rem;color:var(--muted);line-height:1.55;margin-bottom:14px">
-          Traced only to the anonymous IBM dump, or to no source at all.
-          Damaged <em>and</em> unconfirmed — treat with caution.
-        </p>
-        <button class="btn-primary" style="width:100%;justify-content:center;
-                       background:linear-gradient(135deg,#d97706,#fbbf24);border-color:transparent"
-                onclick="App.startQuarantineQuiz('unverified')">
-          Practice Unverified ⚡
-        </button>
+        <p style="font-size:.76rem;color:var(--muted);line-height:1.55;margin-bottom:14px">Traced only to the anonymous IBM dump, or to no source at all.</p>
+        <button class="btn-primary" style="width:100%;justify-content:center;background:linear-gradient(135deg,#d97706,#fbbf24);border-color:transparent"
+                onclick="App.startQuarantineQuiz('unverified')">Practice Unverified ⚡</button>
       </div>
     </div>
-
-    <!-- Browse / filter -->
     <div style="display:flex;gap:8px;margin-bottom:14px;flex-wrap:wrap;align-items:center">
-      <button class="tab-btn active" id="quar-view-all"
-              onclick="App.setQuarantineView('all')">All <span id="quar-n-all"></span></button>
-      <button class="tab-btn inactive" id="quar-view-verified"
-              onclick="App.setQuarantineView('verified')">Verified</button>
-      <button class="tab-btn inactive" id="quar-view-unverified"
-              onclick="App.setQuarantineView('unverified')">Unverified</button>
+      <button class="tab-btn active"   id="quar-view-all"        onclick="App.setQuarantineView('all')">All <span id="quar-n-all"></span></button>
+      <button class="tab-btn inactive" id="quar-view-verified"   onclick="App.setQuarantineView('verified')">Verified</button>
+      <button class="tab-btn inactive" id="quar-view-unverified" onclick="App.setQuarantineView('unverified')">Unverified</button>
       <input type="text" id="quar-filter" placeholder="Filter by text or topic…"
              oninput="App.renderQuarantineList()"
              style="flex:1;min-width:200px;background:var(--surface2);border:1.5px solid var(--border);
@@ -667,7 +521,6 @@ select:focus { border-color: var(--brand); }
              onfocus="this.style.borderColor='var(--brand)'"
              onblur="this.style.borderColor='var(--border)'"/>
     </div>
-
     <div id="quar-list"></div>
   </div>
 
@@ -679,71 +532,90 @@ select:focus { border-color: var(--brand); }
      SCREEN: QUIZ
 ══════════════════════════════════════════════════ -->
 <div id="screen-quiz" class="screen">
-<div style="max-width:780px;margin:0 auto;padding:20px 16px 80px">
+<div id="quiz-layout">
 
-  <!-- Top bar -->
-  <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px;gap:12px">
-    <button onclick="App.confirmExit()"
-            style="background:none;border:none;color:var(--muted);cursor:pointer;font-family:inherit;font-size:.85rem;display:flex;align-items:center;gap:5px;padding:6px 10px;border-radius:8px;transition:color .15s"
-            onmouseover="this.style.color='#fff'" onmouseout="this.style.color='var(--muted)'">
-      ← Exit
+  <!-- ── Left navigation panel ── -->
+  <div id="q-nav-panel">
+    <div id="q-nav-inner"></div>
+  </div>
+
+  <!-- ── Main quiz area ── -->
+  <div id="quiz-main">
+
+    <!-- Top bar -->
+    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px;gap:12px">
+      <button onclick="App.confirmExit()"
+              style="background:none;border:none;color:var(--muted);cursor:pointer;font-family:inherit;font-size:.85rem;display:flex;align-items:center;gap:5px;padding:6px 10px;border-radius:8px;transition:color .15s"
+              onmouseover="this.style.color='#fff'" onmouseout="this.style.color='var(--muted)'">
+        ← Exit
+      </button>
+      <div style="display:flex;align-items:center;gap:12px">
+        <div id="quiz-timer" style="display:none;font-size:.88rem;font-weight:700;font-variant-numeric:tabular-nums;
+             padding:5px 14px;border-radius:20px;color:#34d399;background:rgba(52,211,153,.1);
+             border:1px solid rgba(52,211,153,.3);transition:color .4s,background .4s,border-color .4s;letter-spacing:.03em">
+          60:00
+        </div>
+        <span id="quiz-mode-badge" class="badge" style="background:rgba(139,92,246,.15);border:1px solid rgba(139,92,246,.4);color:#a78bfa">📚 Normal</span>
+        <span style="font-size:.85rem;color:var(--muted)">Score:
+          <strong style="color:#fff" id="quiz-score">0</strong>
+          <span style="color:var(--border2)"> / </span>
+          <span id="quiz-answered">0</span>
+        </span>
+      </div>
+    </div>
+
+    <!-- Progress -->
+    <div style="display:flex;align-items:center;gap:12px;margin-bottom:24px">
+      <div class="prog-track" style="flex:1">
+        <div class="prog-fill" id="progress-bar" style="width:0%"></div>
+      </div>
+      <span style="font-size:.78rem;color:var(--muted);white-space:nowrap" id="progress-label">1 / 0</span>
+    </div>
+
+    <!-- Question card -->
+    <div class="card anim-up" style="padding:28px 30px;margin-bottom:16px" id="question-card">
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px">
+        <span id="q-topic-badge" class="badge" style="background:rgba(139,92,246,.15);border:1px solid rgba(139,92,246,.3);color:#a78bfa"></span>
+        <span style="font-size:.75rem;color:var(--muted)" id="q-number">Q 1</span>
+      </div>
+      <p id="question-text" style="color:#f0f0fa;font-size:1.05rem;font-weight:500;line-height:1.65;white-space:pre-wrap"></p>
+    </div>
+
+    <!-- Options -->
+    <div id="options-container"></div>
+
+    <!-- Explanation box (hidden in exam mode) -->
+    <div id="explanation-box" style="display:none" class="card anim-pop">
+      <div style="padding:20px 22px;display:flex;gap:14px;align-items:flex-start">
+        <span id="exp-icon" style="font-size:1.4rem;flex-shrink:0;margin-top:1px">✅</span>
+        <div style="flex:1">
+          <p id="exp-verdict" style="font-size:.88rem;font-weight:700;margin-bottom:6px;color:#34d399"></p>
+          <p id="exp-text" style="font-size:.88rem;color:#b0b0cc;line-height:1.65"></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Next button (shown after answering in normal/practice) -->
+    <button id="btn-next" onclick="App.nextQuestion()"
+            class="btn-primary anim-up"
+            style="display:none;width:100%;justify-content:center;margin-top:14px;font-size:.95rem;padding:15px">
+      Next Question →
     </button>
-    <div style="display:flex;align-items:center;gap:12px">
-      <div id="quiz-timer" style="display:none;font-size:.88rem;font-weight:700;
-           font-variant-numeric:tabular-nums;padding:5px 14px;border-radius:20px;
-           color:#34d399;background:rgba(52,211,153,.1);border:1px solid rgba(52,211,153,.3);
-           transition:color .4s,background .4s,border-color .4s;letter-spacing:.03em">
-        30:00
-      </div>
-      <span id="quiz-mode-badge" class="badge" style="background:rgba(139,92,246,.15);border:1px solid rgba(139,92,246,.4);color:#a78bfa">📝 Exam</span>
-      <span style="font-size:.85rem;color:var(--muted)">Score:
-        <strong style="color:#fff" id="quiz-score">0</strong>
-        <span style="color:var(--border2)"> / </span>
-        <span id="quiz-answered">0</span>
-      </span>
+
+    <!-- Prev / Skip row (always visible) -->
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-top:14px;gap:10px">
+      <button id="btn-prev" class="nav-dir-btn" onclick="App.prevQuestion()">
+        ← Prev
+      </button>
+      <!-- Skip only shown in exam mode (managed by JS updateNavButtons) -->
+      <button id="btn-skip" class="nav-dir-btn" onclick="App.skipQuestion()"
+              style="display:none">
+        Skip →
+      </button>
     </div>
-  </div>
 
-  <!-- Progress -->
-  <div style="display:flex;align-items:center;gap:12px;margin-bottom:24px">
-    <div class="prog-track" style="flex:1">
-      <div class="prog-fill" id="progress-bar" style="width:0%"></div>
-    </div>
-    <span style="font-size:.78rem;color:var(--muted);white-space:nowrap" id="progress-label">1 / 0</span>
-  </div>
-
-  <!-- Question card -->
-  <div class="card anim-up" style="padding:28px 30px;margin-bottom:16px" id="question-card">
-    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px">
-      <span id="q-topic-badge" class="badge" style="background:rgba(139,92,246,.15);border:1px solid rgba(139,92,246,.3);color:#a78bfa"></span>
-      <span style="font-size:.75rem;color:var(--muted)" id="q-number">Q 1</span>
-    </div>
-    <p id="question-text"
-       style="color:#f0f0fa;font-size:1.05rem;font-weight:500;line-height:1.65;white-space:pre-wrap"></p>
-  </div>
-
-  <!-- Options -->
-  <div id="options-container"></div>
-
-  <!-- Explanation box -->
-  <div id="explanation-box" style="display:none" class="card anim-pop">
-    <div style="padding:20px 22px;display:flex;gap:14px;align-items:flex-start">
-      <span id="exp-icon" style="font-size:1.4rem;flex-shrink:0;margin-top:1px">✅</span>
-      <div style="flex:1">
-        <p id="exp-verdict" style="font-size:.88rem;font-weight:700;margin-bottom:6px;color:#34d399"></p>
-        <p id="exp-text" style="font-size:.88rem;color:#b0b0cc;line-height:1.65"></p>
-      </div>
-    </div>
-  </div>
-
-  <!-- Next button -->
-  <button id="btn-next" onclick="App.nextQuestion()"
-          class="btn-primary anim-up"
-          style="display:none;width:100%;justify-content:center;margin-top:14px;font-size:.95rem;padding:15px">
-    Next Question →
-  </button>
-
-</div>
+  </div><!-- /quiz-main -->
+</div><!-- /quiz-layout -->
 </div>
 
 
@@ -752,70 +624,38 @@ select:focus { border-color: var(--brand); }
 ══════════════════════════════════════════════════ -->
 <div id="screen-summary" class="screen">
 <div style="max-width:680px;margin:0 auto;padding:40px 16px 80px">
-
-  <!-- Result header -->
   <div style="text-align:center;margin-bottom:32px" class="anim-up">
     <div style="font-size:4rem;margin-bottom:12px" id="summary-emoji">🎉</div>
     <h2 style="font-size:2rem;font-weight:800;color:#fff;margin-bottom:6px" id="summary-title">Excellent!</h2>
     <p style="color:var(--muted);font-size:.95rem" id="summary-subtitle">Here's your result</p>
   </div>
-
-  <!-- Score ring -->
   <div class="card anim-up" style="padding:32px;text-align:center;margin-bottom:20px;position:relative;overflow:hidden">
     <div style="position:absolute;inset:0;background:radial-gradient(ellipse at 50% 0%,rgba(139,92,246,.08) 0%,transparent 60%);pointer-events:none"></div>
     <div style="font-size:5rem;font-weight:900;line-height:1;background:linear-gradient(135deg,#8b5cf6,#a78bfa,#c4b5fd);-webkit-background-clip:text;-webkit-text-fill-color:transparent" id="summary-score-pct">0%</div>
     <p style="color:var(--muted);font-size:1.05rem;margin-top:8px" id="summary-score-frac">0 / 0 correct</p>
   </div>
-
-  <!-- Breakdown cards -->
   <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:20px" class="anim-up">
-    <div class="stat-card">
-      <div style="font-size:1.8rem;font-weight:800;color:#34d399" id="sum-correct">0</div>
-      <div style="font-size:.72rem;color:var(--muted);margin-top:4px;text-transform:uppercase;letter-spacing:.06em">Correct</div>
-    </div>
-    <div class="stat-card">
-      <div style="font-size:1.8rem;font-weight:800;color:#f43f5e" id="sum-wrong">0</div>
-      <div style="font-size:.72rem;color:var(--muted);margin-top:4px;text-transform:uppercase;letter-spacing:.06em">Wrong</div>
-    </div>
-    <div class="stat-card">
-      <div style="font-size:1.8rem;font-weight:800;color:var(--text)" id="sum-total">0</div>
-      <div style="font-size:.72rem;color:var(--muted);margin-top:4px;text-transform:uppercase;letter-spacing:.06em">Attempted</div>
-    </div>
+    <div class="stat-card"><div style="font-size:1.8rem;font-weight:800;color:#34d399" id="sum-correct">0</div><div style="font-size:.72rem;color:var(--muted);margin-top:4px;text-transform:uppercase;letter-spacing:.06em">Correct</div></div>
+    <div class="stat-card"><div style="font-size:1.8rem;font-weight:800;color:#f43f5e" id="sum-wrong">0</div><div style="font-size:.72rem;color:var(--muted);margin-top:4px;text-transform:uppercase;letter-spacing:.06em">Wrong</div></div>
+    <div class="stat-card"><div style="font-size:1.8rem;font-weight:800;color:var(--text)" id="sum-total">0</div><div style="font-size:.72rem;color:var(--muted);margin-top:4px;text-transform:uppercase;letter-spacing:.06em">Attempted</div></div>
   </div>
-
-  <!-- Topic breakdown -->
   <div class="card anim-up" style="padding:22px 24px;margin-bottom:24px">
-    <h3 style="font-size:.78rem;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin-bottom:16px">
-      📊 Topic Breakdown
-    </h3>
+    <h3 style="font-size:.78rem;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin-bottom:16px">📊 Topic Breakdown</h3>
     <div id="topic-breakdown" style="display:flex;flex-direction:column;gap:12px"></div>
   </div>
-
-  <!-- Weak spots -->
   <div class="card anim-up" style="padding:22px 24px;margin-bottom:28px" id="weak-box">
-    <h3 style="font-size:.78rem;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin-bottom:14px">
-      ⚠️ Weak Spots
-    </h3>
+    <h3 style="font-size:.78rem;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin-bottom:14px">⚠️ Weak Spots</h3>
     <div id="weak-spots"></div>
   </div>
-
-  <!-- Actions -->
   <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px" class="anim-up">
-    <button onclick="App.retrySet()" class="btn-primary" style="justify-content:center;padding:15px">
-      🔁 Retry (re-shuffled)
-    </button>
-    <button onclick="App.goHome()" class="btn-secondary" style="justify-content:center;padding:15px">
-      🏠 Back to Home
-    </button>
+    <button onclick="App.retrySet()" class="btn-primary" style="justify-content:center;padding:15px">🔁 Retry (re-shuffled)</button>
+    <button onclick="App.goHome()"   class="btn-secondary" style="justify-content:center;padding:15px">🏠 Back to Home</button>
   </div>
-
 </div>
 </div>
 
 
-<!-- ══════════════════════════════════════════════════
-     EXIT MODAL
-══════════════════════════════════════════════════ -->
+<!-- EXIT MODAL -->
 <div id="exit-modal" style="display:none" class="modal-overlay">
   <div class="card anim-pop" style="max-width:360px;width:100%;padding:32px;text-align:center">
     <div style="font-size:2.5rem;margin-bottom:12px">⚠️</div>
@@ -826,9 +666,7 @@ select:focus { border-color: var(--brand); }
       <button onclick="App.forceExit()"
               style="flex:1;background:rgba(244,63,94,.15);border:1.5px solid rgba(244,63,94,.5);color:#f43f5e;border-radius:12px;font-weight:600;font-family:inherit;font-size:.95rem;cursor:pointer;padding:12px;transition:all .2s"
               onmouseover="this.style.background='rgba(244,63,94,.25)'"
-              onmouseout="this.style.background='rgba(244,63,94,.15)'">
-        Exit
-      </button>
+              onmouseout="this.style.background='rgba(244,63,94,.15)'">Exit</button>
     </div>
   </div>
 </div>

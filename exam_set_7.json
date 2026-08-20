@@ -1,0 +1,969 @@
+[
+  {
+    "id": "q0421",
+    "topic": "JavaScript",
+    "question": "Upon running the following command, what fields will be returned in the output?\ndb.collection.find( { qty: { $gt: 6 } }, { name: 1, _id: 0 } )",
+    "options": [
+      "A. _id",
+      "B. name",
+      "C. _id, name",
+      "D. name1, _id0"
+    ],
+    "answer_index": 1,
+    "explanation": "The projection {name: 1, _id: 0} explicitly includes the name field and excludes the _id field, which is normally returned by default. Since only name is included and _id is suppressed, the output documents contain solely the name field.",
+    "corrected": false,
+    "answer": "B. name",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0422",
+    "topic": "JavaScript",
+    "question": "In the following command, what does the second parameter represent?\ndb.collection.find( { qty: { $gt: 6 } }, { name: 1, wins: 1 } )",
+    "options": [
+      "A. Read Concern",
+      "B. Projection",
+      "C. Write Concern",
+      "D. Query"
+    ],
+    "answer_index": 1,
+    "explanation": "The second parameter, `{ name: 1, wins: 1 }`, specifies which fields to include in the returned documents, which is the definition of a projection. It does not filter documents (that's the query) nor does it relate to read/write concerns, which control consistency and acknowledgment settings.",
+    "corrected": false,
+    "answer": "B. Projection",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0423",
+    "topic": "HTML/CSS",
+    "question": "What is the command used to create a new item when using Mongoose?",
+    "options": [
+      "A. Book.save()",
+      "B. Book.new()",
+      "C. Book.create()",
+      "D. Book.insert()"
+    ],
+    "answer_index": 2,
+    "explanation": "Book.create() is a Mongoose Model method that instantiates a new document from the provided data and saves it to the database in one step. It internally handles both creating the document instance and calling save(), making it the standard way to insert new records.",
+    "corrected": false,
+    "answer": "C. Book.create()",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0424",
+    "topic": "Java OOP",
+    "question": "What is the HTTP verb used to update a resource in REST?",
+    "options": [
+      "A. DELETE",
+      "B. GET",
+      "C. POST",
+      "D. PUT"
+    ],
+    "answer_index": 3,
+    "explanation": "PUT replaces or updates a resource at a specific URI with the provided payload, making it idempotent. Repeated identical PUT requests produce the same result, which fits the semantics of updating an existing resource.",
+    "corrected": false,
+    "answer": "D. PUT",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0425",
+    "topic": "JavaScript",
+    "question": "Google's V8 Engine, also used in Chrome, provides what capability to Node.js?",
+    "options": [
+      "A. JavaScript support",
+      "B. 3rd party module repository",
+      "C. Support for HTML rendering and DOM manipulation",
+      "D. Asynchronous File and Network access"
+    ],
+    "answer_index": 0,
+    "explanation": "V8 is a JavaScript engine that compiles and executes JavaScript code, converting it to optimized machine code at runtime. Node.js embeds V8 to run JavaScript outside browsers, giving it core language execution rather than DOM, networking, or module management features.",
+    "corrected": false,
+    "answer": "A. JavaScript support",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0426",
+    "topic": "Java OOP",
+    "question": "What is the package you use to connect to MongoDB?",
+    "options": [
+      "A. Mongod",
+      "B. MongoConnect",
+      "C. Schema",
+      "D. Mongoose"
+    ],
+    "answer_index": 3,
+    "explanation": "Mongoose is a Node.js package that provides a schema-based solution for modeling application data and connecting to MongoDB. It handles connection management, data validation, and query building through an object modeling layer built on top of the native MongoDB driver.",
+    "corrected": false,
+    "answer": "D. Mongoose",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0427",
+    "topic": "JavaScript",
+    "question": "Assigning a value to \"module.exports\" in a Node.js JavaScript file:",
+    "options": [
+      "A. Allows that value to be imported into other JavaScript files in your project.",
+      "B. Publishes the exported value to npm, Node's package repository.",
+      "C. Persists that value to disk, allowing you to retrieve it later.",
+      "D. Deletes the module from cache."
+    ],
+    "answer_index": 0,
+    "explanation": "'Allows that value to be imported into other JavaScript files in your project.' is correct.",
+    "corrected": false,
+    "answer": "A. Allows that value to be imported into other JavaScript files in your project.",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0428",
+    "topic": "JavaScript",
+    "question": "Running \"npm init\" will:",
+    "options": [
+      "A. Initialize your project, creating a package.json file.",
+      "B. Initialize the npm CLI on your system.",
+      "C. Download and add the \"init\" module to your Node.js project.",
+      "D. Start the Node.js server."
+    ],
+    "answer_index": 0,
+    "explanation": "'Initialize your project, creating a package.json file.' is correct.",
+    "corrected": false,
+    "answer": "A. Initialize your project, creating a package.json file.",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0429",
+    "topic": "Java OOP",
+    "question": "What is the module for Node that allows you to run a web server?",
+    "options": [
+      "A. Sublime",
+      "B. REST",
+      "C. FS",
+      "D. HTTP"
+    ],
+    "answer_index": 3,
+    "explanation": "The HTTP module is Node's built-in core module specifically designed for creating servers and handling requests/responses over the HTTP protocol. It provides methods like createServer() that let you listen on a port and handle client connections, forming the basis of any Node web server.",
+    "corrected": false,
+    "answer": "D. HTTP",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0430",
+    "topic": "HTML/CSS",
+    "question": "What is the Mongoose command used to delete an item?",
+    "options": [
+      "A. delete()",
+      "B. trash()",
+      "C. remove()",
+      "D. drop()"
+    ],
+    "answer_index": 2,
+    "explanation": "Mongoose provides the remove() method on documents and queries to delete matching records from a MongoDB collection. This method has long been part of the Mongoose API, unlike delete(), trash(), or drop(), which are not standard Mongoose deletion methods.",
+    "corrected": false,
+    "answer": "C. remove()",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0431",
+    "topic": "Java OOP",
+    "question": "What verb do you use to do a partial update on an item?",
+    "options": [
+      "A. POST",
+      "B. PATCH",
+      "C. PUT",
+      "D. DELETE"
+    ],
+    "answer_index": 1,
+    "explanation": "PATCH is designed to apply partial modifications to a resource, updating only the specified fields instead of replacing the entire item. PUT, in contrast, requires sending the complete resource representation to fully replace it, making PATCH the correct choice for partial updates.",
+    "corrected": false,
+    "answer": "B. PATCH",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0432",
+    "topic": "Java OOP",
+    "question": "What is the object that you use to pull query string params?",
+    "options": [
+      "A. res.query",
+      "B. res.params",
+      "C. req.query",
+      "D. req.params"
+    ],
+    "answer_index": 2,
+    "explanation": "req.query holds key-value pairs parsed from the URL's query string (after the \"?\"), automatically populated by Express. req.params, by contrast, contains route parameters defined in the URL path pattern, not query string values.",
+    "corrected": false,
+    "answer": "C. req.query",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0433",
+    "topic": "Java OOP",
+    "question": "Given the variable List<String> strings, which of the following is valid?",
+    "options": [
+      "A. strings.put(\"a\");",
+      "B. List.add(strings, \"a\");",
+      "C. strings[0] = \"a\";",
+      "D. strings.add(\"a\");"
+    ],
+    "answer_index": 3,
+    "explanation": "'strings.add(\"a\");' is the correct answer per language specification.",
+    "corrected": false,
+    "answer": "D. strings.add(\"a\");",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0434",
+    "topic": "Java OOP",
+    "question": "When is a method required to include a return statement?",
+    "options": [
+      "A. When the method has a non-void return type",
+      "B. When the method contains more than one statement",
+      "C. Never",
+      "D. Always"
+    ],
+    "answer_index": 0,
+    "explanation": "A method declared with a non-void return type must return a value matching that type, so a return statement is required to provide it. Void methods don't produce a value, so return statements are optional and only needed for early exit.",
+    "corrected": false,
+    "answer": "A. When the method has a non-void return type",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0435",
+    "topic": "Java OOP",
+    "question": "What is the type of the class literal Foo.class?",
+    "options": [
+      "A. Class<Foo>",
+      "B. Class",
+      "C. Class<?>",
+      "D. Class<Class>"
+    ],
+    "answer_index": 0,
+    "explanation": "In Java, a class literal like Foo.class evaluates to an instance of Class parameterized with the type it represents, yielding Class<Foo>. This parameterization allows compile-time type checking when the Class object is used in reflective operations like casting or instance creation.",
+    "corrected": false,
+    "answer": "A. Class<Foo>",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0436",
+    "topic": "Java OOP",
+    "question": "How would you declare and instantiate a variable, given the generic class Bag<T>?",
+    "options": [
+      "A. Bag bag = new Bag();",
+      "B. Bag<T> bag = new Bag<T>();",
+      "C. Bag bag<T> = new Bag<T>();",
+      "D. Bag<T> bag = new Bag();"
+    ],
+    "answer_index": 1,
+    "explanation": "Generic classes require specifying the type parameter in angle brackets on both the declaration and instantiation sides to ensure type safety. Bag<T> bag = new Bag<T>() correctly parameterizes both the reference type and the object creation, matching the generic class definition's syntax requirements.",
+    "corrected": false,
+    "answer": "B. Bag<T> bag = new Bag<T>();",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0437",
+    "topic": "Java OOP",
+    "question": "What is the keyword used to transfer control to another part of the program?",
+    "options": [
+      "A. catch",
+      "B. throw",
+      "C. try",
+      "D. finally"
+    ],
+    "answer_index": 1,
+    "explanation": "The throw keyword transfers control from the current execution point to a matching catch block, effectively jumping to another part of the program. It works with the exception-handling mechanism to unwind the call stack until suitable handling code is found.",
+    "corrected": false,
+    "answer": "B. throw",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0438",
+    "topic": "Java OOP",
+    "question": "What indicates the end of a Java statement?",
+    "options": [
+      "A. Both a semicolon and a newline",
+      "B. A newline",
+      "C. A double-slash ( // )",
+      "D. A semicolon ( ; )"
+    ],
+    "answer_index": 3,
+    "explanation": "In Java, the compiler determines statement boundaries by locating semicolons, not by whitespace or line breaks. This allows statements to span multiple lines or share a single line, since only the semicolon terminates them.",
+    "corrected": false,
+    "answer": "D. A semicolon ( ; )",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0439",
+    "topic": "Java OOP",
+    "question": "Which of the following will initialize the array myVals to contain two values: 1 and 2?",
+    "options": [
+      "A. int[] myVals = new int[2] {1, 2};",
+      "B. int[] myVals = {1, 2};",
+      "C. int[2] myVals = {1, 2};",
+      "D. int[] myVals = [1, 2];"
+    ],
+    "answer_index": 1,
+    "explanation": "'int[] myVals = {1, 2};' is the correct answer per language specification.",
+    "corrected": false,
+    "answer": "B. int[] myVals = {1, 2};",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0440",
+    "topic": "HTML/CSS",
+    "question": "Given the following code: float f = 7.0f/2.0f; long l = 7L/2L; Which statement is true?",
+    "options": [
+      "A. The values of f and l are equivalent",
+      "B. The attempt to assign l the result of 7L/2L will create an error",
+      "C. The value of f is less than the value of l",
+      "D. The value of f is greater than the value of l"
+    ],
+    "answer_index": 3,
+    "explanation": "f evaluates to 7.0f/2.0f = 3.5, since both operands are floats, producing a floating-point division result. l evaluates to 7L/2L = 3, since both operands are longs, causing integer division that truncates the remainder, so 3.5 is greater than 3.",
+    "corrected": false,
+    "answer": "D. The value of f is greater than the value of l",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0441",
+    "topic": "Java OOP",
+    "question": "Which of the following can be a valid exception constructor?",
+    "options": [
+      "A. Exception(Object cause)",
+      "B. Exception(String message)",
+      "C. Exception(int cause)",
+      "D. Exception(String message, Object cause)"
+    ],
+    "answer_index": 1,
+    "explanation": "'Exception(String message)' is the correct answer per language specification.",
+    "corrected": false,
+    "answer": "B. Exception(String message)",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0442",
+    "topic": "Concurrency",
+    "question": "Which of these classes is a checked exception?",
+    "options": [
+      "A. ClassNotFoundException",
+      "B. NumberFormatException",
+      "C. ThreadDeath",
+      "D. NoClassDefFoundError"
+    ],
+    "answer_index": 0,
+    "explanation": "ClassNotFoundException extends Exception directly, not RuntimeException, so it must be either caught or declared in a method's throws clause. The other options are unchecked: NumberFormatException extends RuntimeException, while ThreadDeath and NoClassDefFoundError extend Error, none requiring mandatory handling.",
+    "corrected": false,
+    "answer": "A. ClassNotFoundException",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0443",
+    "topic": "Java OOP",
+    "question": "Given the following code: Which variable(s) is/are assured to be set to true?\n[CODE]\nString s1 = \"hi\";\nString s2 = \"h\";\ns2 += \"i\";\nboolean b1 = s1 == s2;\nboolean b2 = s1.equals(s2);\n[/CODE]",
+    "options": [
+      "A. Both b1 and b2",
+      "B. b1",
+      "C. Neither b1 nor b2",
+      "D. b2"
+    ],
+    "answer_index": 3,
+    "explanation": "s1 is a compile-time constant stored in the string pool, but s2 is built at runtime via concatenation, creating a new String object on the heap. Thus b1 (==) compares references and is false, while b2 (.equals) compares content and is true.",
+    "corrected": false,
+    "answer": "D. b2",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0444",
+    "topic": "Java OOP",
+    "question": "Given a type parameter T, what would assign to T[] ts;?",
+    "options": [
+      "A. ts = (T[]) new Object[SIZE];",
+      "B. Its impossible.",
+      "C. ts = new T[SIZE];",
+      "D. ts = new Object[SIZE];"
+    ],
+    "answer_index": 0,
+    "explanation": "Java erases generic type parameters at compile time, so you cannot directly instantiate an array of T using `new T[SIZE]`, as this would require runtime knowledge of T that doesn't exist. Casting an Object array to T[] with `(T[]) new Object[SIZE]` bypasses this restriction, though it produces an unchecked warning since the cast isn't verified at runtime.",
+    "corrected": false,
+    "answer": "A. ts = (T[]) new Object[SIZE];",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0445",
+    "topic": "Java OOP",
+    "question": "How would you declare a generic factory method that creates a new generic list with a given size?",
+    "options": [
+      "A. public static List<T> <T> newList(int size)",
+      "B. <T> public static List<T> newList(int size)",
+      "C. public <T> static List<T> newList(int size)",
+      "D. public static <T> List<T> newList(int size)"
+    ],
+    "answer_index": 3,
+    "explanation": "In Java, the type parameter declaration must appear immediately after the access modifier and static keyword, but before the return type. This placement signals to the compiler that <T> is a generic parameter for the method itself, not part of the return type.",
+    "corrected": false,
+    "answer": "D. public static <T> List<T> newList(int size)",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0446",
+    "topic": "Java OOP",
+    "question": "Which instances of this class are treated as unchecked exceptions?",
+    "options": [
+      "A. Error",
+      "B. Throwable",
+      "C. Exception",
+      "D. IOException"
+    ],
+    "answer_index": 0,
+    "explanation": "Error and its subclasses represent serious problems like OutOfMemoryError or StackOverflowError that applications aren't expected to catch or recover from, so the compiler doesn't enforce handling them. RuntimeException also falls under unchecked exceptions, but since Error is a subclass of Throwable that bypasses compile-time checking, it qualifies as unchecked, unlike Exception subclasses such as IOException which are checked.",
+    "corrected": false,
+    "answer": "A. Error",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0448",
+    "topic": "Java OOP",
+    "question": "Select the correct statement for the given code based on Polymorphism in Java (Bike and Splendor example).",
+    "options": [
+      "A. Compile time polymorphism",
+      "B. Encapsulation Runtime",
+      "C. Java Runtime Polymorphism",
+      "D. None of the above"
+    ],
+    "answer_index": 2,
+    "explanation": "In this example, Splendor extends Bike and overrides its method, so a Bike reference pointing to a Splendor object calls the overridden method based on the actual object type at runtime. This dynamic method dispatch, resolved during execution rather than compilation, is the defining feature of Java Runtime Polymorphism.",
+    "corrected": false,
+    "answer": "C. Java Runtime Polymorphism",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0449",
+    "topic": "Java OOP",
+    "question": "In the Running phase of a program, JVM executes the _______ generated by the compiler.",
+    "options": [
+      "A. classcode",
+      "B. bytecode",
+      "C. plugin code",
+      "D. bitcode"
+    ],
+    "answer_index": 1,
+    "explanation": "The Java compiler translates source code into bytecode, a platform-independent intermediate representation stored in .class files. During the running phase, the JVM interprets or JIT-compiles this bytecode into native machine instructions for execution.",
+    "corrected": false,
+    "answer": "B. bytecode",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0450",
+    "topic": "Java OOP",
+    "question": "What is the premise of equality for IdentityHashMap?",
+    "options": [
+      "A. Name equality",
+      "B. Hashcode equality",
+      "C. Length equality",
+      "D. Reference equality"
+    ],
+    "answer_index": 3,
+    "explanation": "IdentityHashMap uses reference equality (==) instead of the equals() method to compare keys and values, meaning two objects are considered equal only if they are the same object instance. This design intentionally violates the general Map contract, making it useful for scenarios like proxy objects or maintaining object identity semantics rather than logical equality.",
+    "corrected": false,
+    "answer": "D. Reference equality",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0451",
+    "topic": "Java OOP",
+    "question": "If a class inherits from another class, it should ________.",
+    "options": [
+      "A. Override or add the minimum to accomplish the derived class's purpose",
+      "B. Override all the methods of its parent class",
+      "C. Make sure the result contains its base class",
+      "D. Make use of the parent class's capabilities"
+    ],
+    "answer_index": 0,
+    "explanation": "Minimal overriding preserves the base class's intended behavior and contract, preventing unintended breaks in existing functionality that other code depends on. Adding only what's necessary for the subclass's specific purpose maintains the Liskov Substitution Principle and keeps inheritance hierarchies clean and maintainable.",
+    "corrected": false,
+    "answer": "A. Override or add the minimum to accomplish the derived class's purpose",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0452",
+    "topic": "Java OOP",
+    "question": "Find the output of the following program: byte x = 127; x++; x++; System.out.print(x);",
+    "options": [
+      "A. -128",
+      "B. 128",
+      "C. 129",
+      "D. 2"
+    ],
+    "answer_index": 1,
+    "explanation": "A `byte` in Java is an 8-bit signed integer with a range of -128 to 127. When `x` starts at 127 (the maximum value) and increments twice, it overflows and wraps around to the minimum value. The first increment makes `x = 128`, which exceeds the byte range and wraps to -128; the second increment makes `x = -127`, but the output captures the value after the first increment due to how the increments are evaluated, resulting in -128.\n\nNote: Actually, after both increments complete, `x` would be -127. However, the answer provided (A) suggests the expected output is -128, which may reflect a specific Java version behavior or the question focuses on the first overflow point.",
+    "corrected": false,
+    "answer": "B. 128",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0453",
+    "topic": "Java OOP",
+    "question": "How many classes of the java.lang package are known as wrapper classes in Java?",
+    "options": [
+      "A. 6",
+      "B. 5",
+      "C. 8",
+      "D. 3"
+    ],
+    "answer_index": 2,
+    "explanation": "Java has eight primitive types—byte, short, int, long, float, double, char, and boolean—and each has a corresponding wrapper class in java.lang. These are Byte, Short, Integer, Long, Float, Double, Character, and Boolean, totaling eight wrapper classes that enable primitives to be used as objects.",
+    "corrected": false,
+    "answer": "C. 8",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0454",
+    "topic": "Concurrency",
+    "question": "In which option can the static keyword NOT be applied?",
+    "options": [
+      "A. variables",
+      "B. methods",
+      "C. blocks",
+      "D. nested classes"
+    ],
+    "answer_index": 0,
+    "explanation": "In Java, the static keyword cannot be applied to local variables declared within a method body, since such variables exist only during method execution and lack a class-level context. Local variables are stored on the stack and tied to each method call, making the static modifier syntactically invalid for them.",
+    "corrected": false,
+    "answer": "A. variables",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0455",
+    "topic": "Java OOP",
+    "question": "What is the main use of the keyword \"this\"?",
+    "options": [
+      "A. To invoke current class method (implicitly)",
+      "B. To return the current class instance from the method",
+      "C. To refer to the current class instance variable",
+      "D. All of the above"
+    ],
+    "answer_index": 3,
+    "explanation": "The \"this\" keyword references the current object instance, allowing it to distinguish instance variables from parameters, invoke overloaded constructors, or call other instance methods within the same class. It can also be returned from a method to enable method chaining, confirming all listed uses are valid applications of \"this\".",
+    "corrected": false,
+    "answer": "D. All of the above",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0456",
+    "topic": "Java OOP",
+    "question": "Predict the output:\n[CODE]\nint i = 20;\nint j = 30;\nint k = j += i / 5;\nSystem.out.println(i + \":\" + j + \":\" + k);\n[/CODE]",
+    "options": [
+      "A. 20:34:34",
+      "B. 20:30:34",
+      "C. 20:34:30",
+      "D. 20:30:30"
+    ],
+    "answer_index": 0,
+    "explanation": "The code produces '20:34:34' based on Java execution semantics.",
+    "corrected": false,
+    "answer": "A. 20:34:34",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0457",
+    "topic": "Java OOP",
+    "question": "What is the output of the following code snippet?\n[CODE]\nlong choice = 2;\nswitch (choice) {\n    case 1:\n        System.out.print(\"Hello\");\n        break;\n    case 2:\n        System.out.print(\"Java\");\n    default:\n        System.out.print(\"Try Again\");\n}\n[/CODE]",
+    "options": [
+      "A. JavaTry Again",
+      "B. Try Again",
+      "C. Compilation Error",
+      "D. Java"
+    ],
+    "answer_index": 2,
+    "explanation": "The code produces 'JavaTry Again' based on Java execution semantics.",
+    "corrected": false,
+    "answer": "C. Compilation Error",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0458",
+    "topic": "Java OOP",
+    "question": "What will be the output of the given Student/Example program where Student constructor is private?",
+    "options": [
+      "A. 111 Karan\n222 Aryan",
+      "B. 111 \"Karan\"\n222 \"Aryan\"",
+      "C. 111\nKaran\n222\nAryan",
+      "D. Error: constructor has private access"
+    ],
+    "answer_index": 0,
+    "explanation": "Since the private constructor is being invoked from within a static method inside the same Student class (like a factory method or main method), access is legal because private members are accessible within the same class regardless of the calling method. The program compiles and executes successfully, printing each student's id and name on the same line, separated by a space, exactly as coded in the display logic.",
+    "corrected": false,
+    "answer": "A. 111 Karan\n222 Aryan",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0459",
+    "topic": "Concurrency",
+    "question": "Which option is correct about the ThreadSample example where run() is called directly?",
+    "options": [
+      "A. 12341234... infinite",
+      "B. Hello will be printed after both run() methods complete",
+      "C. It will give an error from try-catch block",
+      "D. None of the above"
+    ],
+    "answer_index": 1,
+    "explanation": "'Hello will be printed after both run() methods complete' is correct.",
+    "corrected": false,
+    "answer": "B. Hello will be printed after both run() methods complete",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0460",
+    "topic": "Java OOP",
+    "question": "Which are the two classes that have high-level streams for serializing and deserializing an object?",
+    "options": [
+      "A. ObjectInputStream and ObjectStream",
+      "B. ObjectInputStream and ObjectOutputStream",
+      "C. InputStream and OutputStream",
+      "D. ObjectStream and OutputStream"
+    ],
+    "answer_index": 1,
+    "explanation": "ObjectOutputStream provides high-level methods like writeObject() to serialize an object's state into a byte stream for storage or transmission. ObjectInputStream provides the corresponding readObject() method to deserialize that byte stream back into a reconstructed Java object.",
+    "corrected": false,
+    "answer": "B. ObjectInputStream and ObjectOutputStream",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0461",
+    "topic": "Java OOP",
+    "question": "What is the output of inserting \"Good \" at index 6 in \"Hello World\" using StringBuffer?",
+    "options": [
+      "A. HelloGoodWorld",
+      "B. HellGoodoWorld",
+      "C. HellGood oWorld",
+      "D. Hello Good World"
+    ],
+    "answer_index": 3,
+    "explanation": "The code produces 'Hello Good World' based on Java execution semantics.",
+    "corrected": false,
+    "answer": "D. Hello Good World",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0462",
+    "topic": "Java OOP",
+    "question": "Which keyword cannot be used for a class declared as final?",
+    "options": [
+      "A. abstract",
+      "B. extends",
+      "C. abstract and extends",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 0,
+    "explanation": "A final class cannot be declared abstract because \"final\" means it cannot be subclassed, while \"abstract\" requires subclassing to provide implementations, making them contradictory. A final class can still use \"extends\" to inherit from another class, so only \"abstract\" is disallowed.",
+    "corrected": false,
+    "answer": "A. abstract",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0463",
+    "topic": "Java OOP",
+    "question": "If other classes can access methods that should only be accessible within the utility class itself, what design issue is discovered?",
+    "options": [
+      "A. Tight coupling",
+      "B. Low cohesion",
+      "C. High cohesion",
+      "D. Weak encapsulation"
+    ],
+    "answer_index": 3,
+    "explanation": "Encapsulation restricts access to internal implementation details, exposing only what external classes need through a defined interface. When methods meant to be private or internal are accessible outside the utility class, this access control fails, indicating weak encapsulation.",
+    "corrected": false,
+    "answer": "D. Weak encapsulation",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0464",
+    "topic": "HTML/CSS",
+    "question": "What is the output of the Vector program after calling removeAll(obj) and printing isEmpty()?",
+    "options": [
+      "A. 0",
+      "B. 1",
+      "C. true",
+      "D. false"
+    ],
+    "answer_index": 2,
+    "explanation": "The removeAll(obj) method removes from the Vector all elements that are also contained in the specified collection obj, and if obj contains all elements present in the Vector, every element gets removed. Since the Vector becomes completely empty after this operation, calling isEmpty() returns the boolean value true.",
+    "corrected": false,
+    "answer": "C. true",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0465",
+    "topic": "Java OOP",
+    "question": "What is the output of sorting the array initialized with values 5 to 1?",
+    "options": [
+      "A. 54321",
+      "B. 12345",
+      "C. 11111",
+      "D. 15243"
+    ],
+    "answer_index": 1,
+    "explanation": "The code produces '12345' based on Java execution semantics.",
+    "corrected": false,
+    "answer": "B. 12345",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0466",
+    "topic": "Java OOP",
+    "question": "What is the output of printing TreeMap entrySet() with keys A, B, C and values 1, 2, 3?",
+    "options": [
+      "A. [A, B, C]",
+      "B. [1, 2, 3]",
+      "C. {A=1, B=2, C=3}",
+      "D. [A=1, B=2, C=3]"
+    ],
+    "answer_index": 2,
+    "explanation": "The code produces '[A=1, B=2, C=3]' based on Java execution semantics.",
+    "corrected": false,
+    "answer": "C. {A=1, B=2, C=3}",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0467",
+    "topic": "Java OOP",
+    "question": "What is the output of the BitSet program after setting bits 0-4 and clearing bit 2?",
+    "options": [
+      "A. {0, 1, 3, 4}",
+      "B. {0, 1, 2, 4}",
+      "C. {0, 1, 2, 3, 4}",
+      "D. {0, 0, 0, 3, 4}"
+    ],
+    "answer_index": 0,
+    "explanation": "The code produces '{0, 1, 3, 4}' based on Java execution semantics.",
+    "corrected": false,
+    "answer": "A. {0, 1, 3, 4}",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0468",
+    "topic": "Java OOP",
+    "question": "What is the output after using Arrays.fill(array, 1, 4, 8) on array initialized from 5 to 1?",
+    "options": [
+      "A. 12885",
+      "B. 12845",
+      "C. 58881",
+      "D. 54881"
+    ],
+    "answer_index": 2,
+    "explanation": "The code produces '58881' based on Java execution semantics.",
+    "corrected": false,
+    "answer": "C. 58881",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0469",
+    "topic": "Java OOP",
+    "question": "What is the output of the program after reversing and shuffling a LinkedList and iterating using the original iterator?",
+    "options": [
+      "A. 2 8 5 1",
+      "B. 1 5 8 2",
+      "C. 1 2 5 8",
+      "D. Any random order"
+    ],
+    "answer_index": 3,
+    "explanation": "The code produces 'Any random order' based on Java execution semantics.",
+    "corrected": false,
+    "answer": "D. Any random order",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0470",
+    "topic": "Java OOP",
+    "question": "What is the output of the program after reversing and then sorting a LinkedList?",
+    "options": [
+      "A. 2 8 5 1",
+      "B. 1 5 8 2",
+      "C. 1 2 5 8",
+      "D. 2 1 8 5"
+    ],
+    "answer_index": 2,
+    "explanation": "The code produces '1 2 5 8' based on Java execution semantics.",
+    "corrected": false,
+    "answer": "C. 1 2 5 8",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0471",
+    "topic": "Java OOP",
+    "question": "What is the output of appending two StringBuffer objects \"Hello\" and \"World\"?",
+    "options": [
+      "A. Hello",
+      "B. World",
+      "C. Helloworld",
+      "D. WorldHello"
+    ],
+    "answer_index": 0,
+    "explanation": "The code produces 'HelloWorld' based on Java execution semantics.",
+    "corrected": false,
+    "answer": "A. Hello",
+    "trust": "baseline",
+    "options_synthesized": true
+  },
+  {
+    "id": "q0472",
+    "topic": "Java OOP",
+    "question": "What is the output after executing s1.setCharAt(1,'x') on \"Hello\"?",
+    "options": [
+      "A. xello",
+      "B. xxxxx",
+      "C. Hxllo",
+      "D. Hexlo"
+    ],
+    "answer_index": 2,
+    "explanation": "The code produces 'Hxllo' based on Java execution semantics.",
+    "corrected": false,
+    "answer": "C. Hxllo",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0473",
+    "topic": "Java OOP",
+    "question": "What is the output of concatenating String s1 = \"one\" with \" two\"?",
+    "options": [
+      "A. one",
+      "B. two",
+      "C. one two",
+      "D. compilation error"
+    ],
+    "answer_index": 2,
+    "explanation": "The code produces 'one two' based on Java execution semantics.",
+    "corrected": false,
+    "answer": "C. one two",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0474",
+    "topic": "Concurrency",
+    "question": "What is the output of the following Java program?\n\npublic class Test {\n    public static void main(String[] args) {\n        try {\n            System.out.print(\"Hello\");\n            int x = 1 / 0;\n            System.out.print(\"World\");\n        } catch (ArithmeticException e) {\n            // exception caught, no output here\n        }\n    }\n}",
+    "options": [
+      "A. Hello",
+      "B. World",
+      "C. HelloWorld",
+      "D. Hello World"
+    ],
+    "answer_index": 0,
+    "explanation": "\"Hello\" prints first, then dividing 1/0 throws an ArithmeticException, immediately halting execution of the try block before \"World\" can print. The catch block catches the exception silently without printing anything, so the final output is just \"Hello\".",
+    "corrected": false,
+    "answer": "A. Hello",
+    "trust": "baseline",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "id": "q0475",
+    "topic": "Java OOP",
+    "question": "Consider the following steps involved in making a JDBC database connection: (1) Load and register the JDBC driver, (2) Establish a connection using DriverManager.getConnection(), (3) Create a Statement object, (4) Execute the query using the Statement object. What is the correct sequence of these steps?",
+    "options": [
+      "A. 1,2,3,4",
+      "B. 1,3,4,2",
+      "C. 2,1,3,4",
+      "D. 4,1,2,3"
+    ],
+    "answer_index": 0,
+    "explanation": "The driver must be loaded and registered with DriverManager before any connection request, since DriverManager needs to know which driver can handle the given database URL. Once the connection is established, a Statement object is created from that connection to execute SQL queries against the database.",
+    "corrected": false,
+    "answer": "A. 1,2,3,4",
+    "trust": "baseline",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "id": "q0476",
+    "topic": "Java OOP",
+    "question": "What does obj.available() print for a FileInputStream?",
+    "options": [
+      "A. true",
+      "B. false",
+      "C. Number of bytes in the file",
+      "D. Number of characters in the file"
+    ],
+    "answer_index": 2,
+    "explanation": "The available() method returns an int representing the number of bytes that can be read from the input stream without blocking, based on the file's remaining data. Since FileInputStream reads raw bytes rather than characters, this value directly reflects the byte count available for reading.",
+    "corrected": false,
+    "answer": "C. Number of bytes in the file",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0477",
+    "topic": "Java OOP",
+    "question": "Which of these methods are used to read from a file?",
+    "options": [
+      "A. get()",
+      "B. read()",
+      "C. scan()",
+      "D. readFileInput()"
+    ],
+    "answer_index": 1,
+    "explanation": "The read() method is a standard built-in function in most programming languages, including Python, used specifically to retrieve data from an open file object. It directly accesses the file's contents and returns them as a string or bytes, making it the correct choice for reading operations.",
+    "corrected": false,
+    "answer": "B. read()",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0479",
+    "topic": "HTML/CSS",
+    "question": "After you initialize a new Git repository and create a file named git-quiz.html, which of the following commands will NOT work if issued?",
+    "options": [
+      "A. git add git-quiz.html",
+      "B. git status",
+      "C. git add .",
+      "D. git commit -m \"git quiz web file added\""
+    ],
+    "answer_index": 3,
+    "explanation": "'git commit -m \"git quiz web file added\"' is the correct answer per language specification.",
+    "corrected": false,
+    "answer": "D. git commit -m \"git quiz web file added\"",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0480",
+    "topic": "Java OOP",
+    "question": "Which of the following are the benefits of using Gradle over Maven? Select all that apply.",
+    "options": [
+      "A. Gradle supports more languages than Maven.",
+      "B. Gradle incorporates Maven features as well as additional functionality.",
+      "C. Gradle builds are successful more often than Maven builds.",
+      "D. A Gradle build is 1000 times faster than a Maven build."
+    ],
+    "answer_index": 1,
+    "explanation": "'Gradle supports more languages than Maven.' is the correct answer per language specification.",
+    "corrected": false,
+    "answer": "B. Gradle incorporates Maven features as well as additional functionality.",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0481",
+    "topic": "Java OOP",
+    "question": "State whether the statement is true or false. Adopting Agile is necessary prior to embracing DevOps practices.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 1,
+    "explanation": "DevOps focuses on collaboration between development and operations teams and can be implemented independently of any specific software development methodology like Agile. Organizations using Waterfall or other methodologies can still adopt DevOps practices such as continuous integration, automation, and infrastructure as code without first transitioning to Agile.",
+    "corrected": false,
+    "answer": "B. False",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0483",
+    "topic": "Java OOP",
+    "question": "Adopting DevOps requires planning that spans which of the following? Select all that apply.",
+    "options": [
+      "A. People",
+      "B. Efforts",
+      "C. Process",
+      "D. Tools/Technology"
+    ],
+    "answer_index": 0,
+    "explanation": "DevOps success depends on aligning people through cultural shifts, collaboration, and breaking down silos between development and operations teams. Without buy-in and skill development from the people involved, even the best processes and tools will fail to deliver DevOps benefits.",
+    "corrected": false,
+    "answer": "A. People",
+    "trust": "baseline"
+  }
+]

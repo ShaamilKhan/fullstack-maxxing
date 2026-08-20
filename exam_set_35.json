@@ -1,0 +1,997 @@
+[
+  {
+    "question": "Annotation used for entity manager injection in EJB components.",
+    "options": [
+      "A. @PersistenceContext",
+      "B. @Persistence",
+      "C. @PersistenceCon",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 0,
+    "answer": "A. @PersistenceContext",
+    "topic": "Core Java & OOP",
+    "explanation": "@PersistenceContext is the standard JPA annotation that injects an EntityManager instance into EJB components, managing its lifecycle and transaction scope automatically.\n\nThe other options are either non-existent (@Persistence, @PersistenceCon) or incorrect, making @PersistenceContext the only valid JPA annotation for EntityManager injection.",
+    "corrected": false,
+    "id": "q2324",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "To use the context injection approach, you can declare an entity manager field in your DAO and annotate it with the @PersistenceContext annotation.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "answer": "A. True",
+    "topic": "Core Java & OOP",
+    "explanation": "The @PersistenceContext annotation enables container-managed dependency injection, allowing the container to automatically inject a valid EntityManager instance into the annotated field. This eliminates manual lookup or instantiation, letting the DAO directly use the injected entity manager for persistence operations.",
+    "corrected": false,
+    "id": "q2325",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "JpaTemplate will translate the native JPA exceptions into exceptions in Spring DataAccessException hierarchy.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "answer": "A. True",
+    "topic": "Core Java & OOP",
+    "explanation": "JpaTemplate wraps calls to the underlying JPA persistence provider and catches any PersistenceException thrown, converting it into Spring's corresponding DataAccessException subclass via the JpaDialect's translation logic. This allows applications to remain decoupled from provider-specific exception types and rely on Spring's unified, unchecked exception hierarchy for consistent error handling across different persistence technologies.",
+    "corrected": false,
+    "id": "q2326",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "When an HTML form is submitted using the GET method, how does the browser construct the resulting request URL?",
+    "options": [
+      "A. starts with http:// and ends with ?",
+      "B. starts with http:// and ends with &",
+      "C. no certain URL is specified",
+      "D. depends upon the platform used"
+    ],
+    "answer_index": 0,
+    "answer": "A. starts with http:// and ends with ?",
+    "topic": "Core Java & OOP",
+    "explanation": "When a form uses the GET method, the browser takes the action URL and appends a question mark before adding the form data as a query string. This URL naturally begins with the scheme \"http://\" and the question mark marks the boundary between the resource path and the encoded name-value pairs.",
+    "corrected": false,
+    "id": "q2327",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "question": "Spring supports a series of mechanisms to generate a REST service payload.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "answer": "A. True",
+    "topic": "Core Java & OOP",
+    "explanation": "Spring provides multiple mechanisms like `@RestController`, `HttpMessageConverter`, and content negotiation to serialize objects into various REST payload formats (JSON, XML, etc.).\n\nThese built-in serialization features allow developers to easily generate and customize REST service responses without manual payload construction.",
+    "corrected": false,
+    "id": "q2328",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Marshalling is the process of transforming an in-memory representation of an object into a data format.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "answer": "A. True",
+    "topic": "Core Java & OOP",
+    "explanation": "Marshalling converts an object's in-memory state into a serialized format, such as bytes or text, suitable for storage or transmission. This process enables data to be reconstructed later through unmarshalling, preserving the object's structure and values across different systems or contexts.",
+    "corrected": false,
+    "id": "q2329",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "In the case of classesToBeBound, the classes assigned to this property, indicate the class (i.e., object) structure that is to be transformed into XML.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "answer": "A. True",
+    "topic": "Core Java & OOP",
+    "explanation": "In JAXB's Jakarta XML Binding configuration, the classesToBeBound property specifies exactly which Java classes the marshaller should recognize and convert into their corresponding XML representations. These classes define the object graph structure, including fields and nested elements, that JAXB uses to generate valid XML output during marshalling operations.",
+    "corrected": false,
+    "id": "q2330",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "XML tag which represents information related to a REST service request.",
+    "options": [
+      "A. Result",
+      "B. Title",
+      "C. None of the mentioned",
+      "D. All of the mentioned"
+    ],
+    "answer_index": 2,
+    "answer": "C. None of the mentioned",
+    "topic": "Core Java & OOP",
+    "explanation": "All XML tags can represent REST service request information depending on context and schema design. Result, Title, and other custom tags serve as metadata containers for structuring request-related data flexibly.",
+    "corrected": false,
+    "id": "q2332",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which logging framework is commonly used by the Spring Framework to perform its logging operations?",
+    "options": [
+      "A. Log4J",
+      "B. LogingJ",
+      "C. JLog",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 0,
+    "answer": "A. Log4J",
+    "topic": "Core Java & OOP",
+    "explanation": "Spring Framework has historically relied on Log4J as its primary logging implementation, integrating it through Jakarta Commons Logging (JCL) abstraction layer. This allowed Spring applications to leverage Log4J's configurable log levels, appenders, and output formatting while maintaining flexibility to swap logging backends if needed.",
+    "corrected": false,
+    "id": "q2333",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "question": "Log4J configuration parameters are specified inside:-",
+    "options": [
+      "A. Config.groovy",
+      "B. Conf.groovy",
+      "C. Log.groovy",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 0,
+    "answer": "A. Config.groovy",
+    "topic": "Core Java & OOP",
+    "explanation": "In Grails applications, Log4J configuration parameters are defined in the Config.groovy file under the log4j closure, which is the standard location for all application configuration settings.\n\nThe Config.groovy file serves as the primary configuration repository for Grails framework settings, including logging levels, appenders, and logger definitions for Log4J integration.",
+    "corrected": false,
+    "id": "q2334",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Grails application logging can be configured using:-",
+    "options": [
+      "A. creating custom appenders",
+      "B. logging levels",
+      "C. console output",
+      "D. all of the mentioned"
+    ],
+    "answer_index": 3,
+    "answer": "D. all of the mentioned",
+    "topic": "Core Java & OOP",
+    "explanation": "Grails uses Log4j configuration that supports creating custom appenders, setting logging levels, and directing output to console, file, or other destinations simultaneously.\n\nAll three methods work together in Grails' logging framework to provide comprehensive control over log behavior and output routing.",
+    "corrected": false,
+    "id": "q2335",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Any logging operation occurring at any of the cited packages will be logged.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "answer": "A. True",
+    "topic": "Core Java & OOP",
+    "explanation": "When a logger is configured for a package, it captures all logging calls originating from that package and its subpackages due to logger hierarchy inheritance.\n\nConfiguring logging at the package level enables all nested classes and modules within that package to emit logs through the inherited logger configuration.",
+    "corrected": false,
+    "id": "q2336",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Log4J also has the following logging level:-",
+    "options": [
+      "A. fatal",
+      "B. error",
+      "C. warning",
+      "D. all of the mentioned"
+    ],
+    "answer_index": 3,
+    "answer": "D. all of the mentioned",
+    "topic": "Core Java & OOP",
+    "explanation": "Log4J supports multiple logging levels including FATAL, ERROR, and WARNING, along with DEBUG, INFO, and TRACE for comprehensive log filtering.\n\nAll options represent valid Log4J logging levels that control which messages are recorded based on severity, making \"all of the mentioned\" the correct answer.",
+    "corrected": false,
+    "id": "q2337",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "By default, all logging messageare sent to the stacktrace.groovy file.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 1,
+    "answer": "B. False",
+    "topic": "Core Java & OOP",
+    "explanation": "This statement is incorrect. The correct answer should be B. False.\n\nCorrection (2 sentences):\n\nBy default, Groovy logging messages are sent to stdout/stderr or configured appenders, not a specific \"stacktrace.groovy\" file. No standard Groovy logging framework automatically routes all messages to such a file without explicit configuration.",
+    "corrected": false,
+    "id": "q2338",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "To offer versatile logging functionality:-",
+    "options": [
+      "A. loggers",
+      "B. appenders",
+      "C. all of the mentioned",
+      "D. none of the mentioned"
+    ],
+    "answer_index": 2,
+    "answer": "C. all of the mentioned",
+    "topic": "Core Java & OOP",
+    "explanation": "Both loggers and appenders work together to provide versatile logging: loggers capture messages while appenders direct them to various destinations like files, consoles, or databases.\n\nNeither component alone offers complete functionality; they require each other to enable flexible, multi-destination logging configurations.",
+    "corrected": false,
+    "id": "q2339",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "A location where logging information is sent.",
+    "options": [
+      "A. appender",
+      "B. logger",
+      "C. all of the mentioned",
+      "D. none of the mentioned"
+    ],
+    "answer_index": 0,
+    "answer": "A. appender",
+    "topic": "Core Java & OOP",
+    "explanation": "An appender is the component in logging frameworks that actually delivers log messages to their destinations, such as files, consoles, or databases.\n\nLoggers generate log events but don't determine where they go; appenders handle the routing and output of logging information to specific locations.",
+    "corrected": false,
+    "id": "q2340",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "A location where logging information is generated.",
+    "options": [
+      "A. appender",
+      "B. logger",
+      "C. all of the mentioned",
+      "D. none of the mentioned"
+    ],
+    "answer_index": 1,
+    "answer": "B. logger",
+    "topic": "Core Java & OOP",
+    "explanation": "A logger is the component that generates and captures logging information at its source in an application. Appenders are downstream components that receive already-generated log messages and output them to destinations.",
+    "corrected": false,
+    "id": "q2341",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "The default Log4J logger can be customized in a Grails application.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "answer": "A. True",
+    "topic": "Core Java & OOP",
+    "explanation": "Log4J configuration in Grails is customizable via `grails-app/conf/log4j.groovy` or `log4j2.xml`, allowing developers to modify loggers, appenders, and log levels.\n\nGrails provides a DSL for Log4J configuration that integrates seamlessly with the framework's dependency injection and environment-specific settings.",
+    "corrected": false,
+    "id": "q2342",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "An appender that logs to a JDBC connection.",
+    "options": [
+      "A. jdbc",
+      "B. console",
+      "C. file",
+      "D. rollingFile"
+    ],
+    "answer_index": 0,
+    "answer": "A. jdbc",
+    "topic": "SQL & JDBC",
+    "explanation": "A JDBC appender is specifically designed to log messages directly to a database via JDBC connections. Console, file, and rollingFile appenders write to different destinations like stdout or filesystem storage.",
+    "corrected": false,
+    "id": "q2343",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Command for running tests in Grails.",
+    "options": [
+      "A. grails test-app",
+      "B. grails test",
+      "C. grails test-app domain class",
+      "D. none of the mentioned"
+    ],
+    "answer_index": 0,
+    "answer": "A. grails test-app",
+    "topic": "Core Java & OOP",
+    "explanation": "The `grails test-app` command is the standard Grails CLI command that executes the entire test suite, including unit and integration tests.\n\nOther variations like `grails test` are not valid Grails commands, while `grails test-app domain class` is incorrect syntax for running tests.",
+    "corrected": false,
+    "id": "q2344",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Unit tests are designed to validate the logic contained in a single domain class.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "answer": "A. True",
+    "topic": "Core Java & OOP",
+    "explanation": "Unit tests isolate and verify individual methods or functions within a single class, ensuring their logic works correctly in controlled conditions. They form the foundation of testing by catching bugs at the smallest, most manageable code level before integration occurs.",
+    "corrected": false,
+    "id": "q2345",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Method creates a mock object from a domain class.",
+    "options": [
+      "A. mockForConstraintsTests",
+      "B. mockForConstraints",
+      "C. all of the mentioned",
+      "D. none of the mentioned"
+    ],
+    "answer_index": 0,
+    "answer": "A. mockForConstraintsTests",
+    "topic": "TypeScript",
+    "explanation": "`mockForConstraintsTests` is a Grails testing method that creates mock domain objects specifically for validating constraints without database interaction.\n\nIt enables unit testing of domain class validation rules by providing a lightweight mock instance with constraint checking capabilities.",
+    "corrected": false,
+    "id": "q2346",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "What happens if you call deleteRow() on a ResultSet object?",
+    "options": [
+      "A. The row you are positioned on is deleted from the ResultSet, but not from the database.",
+      "B. The row you are positioned on is deleted from the ResultSet and from the database",
+      "C. The result depends on whether the property synchronizeWithDataSource is set to true or false",
+      "D. You will get a compile error: the method does not exist because you cannot delete rows from a ResultSet"
+    ],
+    "answer_index": 1,
+    "answer": "B. The row you are positioned on is deleted from the ResultSet and from the database",
+    "topic": "React",
+    "explanation": "The deleteRow() method deletes the current row from both the underlying database table and the ResultSet, provided the ResultSet is updatable. This requires the ResultSet to be created with CONCUR_UPDATABLE concurrency and the row must not have pending updates before deletion.",
+    "corrected": false,
+    "id": "q2354",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "Goals are the________ of/to achievement/s.",
+    "options": [
+      "A. stepping-stones",
+      "B. bridging gaps",
+      "C. Rewards",
+      "D. end-results"
+    ],
+    "answer_index": 0,
+    "answer": "A. stepping-stones",
+    "topic": "JavaScript",
+    "explanation": "Goals function as stepping-stones because each one provides a concrete step that leads progressively toward larger achievements. The phrase \"stepping-stones to achievement\" is the standard collocation, unlike \"bridging gaps\" or \"rewards,\" which don't fit grammatically or logically here.",
+    "corrected": false,
+    "id": "q2356",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source",
+    "options_synthesized": true
+  },
+  {
+    "question": "The Bootstrap grid system works across multiple devices.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "answer": "A. True",
+    "topic": "JavaScript",
+    "explanation": "Bootstrap's grid system uses responsive breakpoints (xs, sm, md, lg, xl) that adapt layout based on screen width. This allows the same HTML structure to render appropriately on phones, tablets, and desktops without separate codebases.",
+    "corrected": false,
+    "id": "q2357",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "dependency for the injected service?",
+    "options": [
+      "A. In the class signature",
+      "B. In the class constructor",
+      "C. In the component decorator",
+      "D. In the Import statement"
+    ],
+    "answer_index": 1,
+    "answer": "B. In the class constructor",
+    "topic": "TypeScript",
+    "explanation": "In Angular, dependencies are declared as typed parameters in the class constructor signature, enabling the injector to identify and resolve them automatically through type information.\n\nThe decorator and import statements support the injection mechanism but don't declare the actual dependency; only the constructor signature specifies what needs to be injected.",
+    "corrected": false,
+    "id": "q2358",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which of the following is the correct syntax for using the *ngFor directive in Angular to iterate over an array called 'products'?",
+    "options": [
+      "A. *ngFor=\"let product in products\"",
+      "B. *ngFor=\"let product of products\"",
+      "C. *ngFor=\"product of products\"",
+      "D. ngFor=\"let product of products\""
+    ],
+    "answer_index": 1,
+    "answer": "B. *ngFor=\"let product of products\"",
+    "topic": "JavaScript",
+    "explanation": "The *ngFor directive requires the \"of\" keyword to iterate over arrays, following the syntax \"let item of collection\". The asterisk prefix is mandatory since *ngFor is a structural directive that modifies the DOM structure.",
+    "corrected": false,
+    "id": "q2360",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "question": "In an Angular route configuration object, where are dynamic route parameters (e.g., an ':id' placeholder) specified?",
+    "options": [
+      "A. In a params property",
+      "B. In a parameters property",
+      "C. As part of the path property",
+      "D. As part of the component property"
+    ],
+    "answer_index": 2,
+    "answer": "C. As part of the path property",
+    "topic": "Core Java & OOP",
+    "explanation": "Angular routes define dynamic segments directly within the path string using a colon prefix, such as 'users/:id', where the framework parses the segment as a parameter placeholder. This path string is then matched against the URL, and Angular's router extracts the actual value for :id from the corresponding URL segment at runtime.",
+    "corrected": false,
+    "id": "q2361",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "question": "<button (click)='toggleImage()'/>",
+    "options": [
+      "A. Property binding of the click property to the toggleImage property",
+      "B. Property binding of the click property to the toggleImage method",
+      "C. Event binding of the click event to the toggleImage method",
+      "D. Event binding of the click event to the toggleImage property"
+    ],
+    "answer_index": 2,
+    "answer": "C. Event binding of the click event to the toggleImage method",
+    "topic": "Core Java & OOP",
+    "explanation": "The parentheses `()` denote event binding syntax in Angular, not property binding which uses square brackets `[]`. The `click` is an event, and `toggleImage()` is a method being invoked, making this event binding to a method.",
+    "corrected": false,
+    "id": "q2362",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which of the following is a typed superset of JavaScript that compiles to plain JavaScript?",
+    "options": [
+      "A. Webpack",
+      "B. Change Detection",
+      "C. Routing",
+      "D. TypeScript"
+    ],
+    "answer_index": 3,
+    "answer": "D. TypeScript",
+    "topic": "TypeScript",
+    "explanation": "TypeScript adds static typing, interfaces, and other features on top of JavaScript syntax, making it a \"typed superset\" of the language. Its compiler (tsc) transpiles TypeScript code into plain JavaScript that browsers and Node.js can execute directly.",
+    "corrected": false,
+    "id": "q2364",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "question": "Q 10. What do directives do?",
+    "options": [
+      "A. Provide different views based on the URL",
+      "B. Format display of data",
+      "C. Group visual display with functionality",
+      "D. Add new capabilities to HTML elements"
+    ],
+    "answer_index": 3,
+    "answer": "D. Add new capabilities to HTML elements",
+    "topic": "HTML & CSS",
+    "explanation": "Directives extend HTML's vocabulary by attaching custom behavior, attributes, or DOM manipulation logic to standard or custom elements. This allows developers to encapsulate reusable functionality, such as event handling or conditional rendering, directly onto elements without writing repetitive imperative code.",
+    "corrected": false,
+    "id": "q2365",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "In a REST service, which HTTP method is used to completely replace an existing resource with a new representation?",
+    "options": [
+      "A. PUT",
+      "B. PATCH",
+      "C. POST",
+      "D. DELETE"
+    ],
+    "answer_index": 0,
+    "answer": "A. PUT",
+    "topic": "Core Java & OOP",
+    "explanation": "PUT replaces an entire resource at a specific URI with the new representation provided in the request body. It is idempotent, meaning multiple identical requests produce the same result, unlike PATCH, which only applies partial updates.",
+    "corrected": false,
+    "id": "q2366",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "question": "In Angular, where should a service be registered to ensure a single, shared instance of it is used throughout an entire application?",
+    "options": [
+      "A. In a child component",
+      "B. In the Webpack configuration",
+      "C. In an NgModule",
+      "D. In the base service"
+    ],
+    "answer_index": 2,
+    "answer": "C. In an NgModule",
+    "topic": "TypeScript",
+    "explanation": "Registering a service in an NgModule (or using providedIn: 'root') creates a single instance in the application's root injector, which is then shared by all components and services that inject it. This ensures consistent state and behavior across the entire application, avoiding the creation of multiple separate instances.",
+    "corrected": false,
+    "id": "q2367",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "question": "In Angular, what type does the built-in HttpClient return when making HTTP requests?",
+    "options": [
+      "A. Function",
+      "B. Promise",
+      "C. Observable",
+      "D. Module"
+    ],
+    "answer_index": 2,
+    "answer": "C. Observable",
+    "topic": "JavaScript",
+    "explanation": "Angular's HttpClient methods (get, post, put, delete, etc.) return RxJS Observables, enabling operators like map, filter, and retry for handling asynchronous data streams. Observables also support cancellation via unsubscribe and can emit multiple values over time, unlike Promises which resolve only once.",
+    "corrected": false,
+    "id": "q2368",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "question": "create a new service?",
+    "options": [
+      "A. ng serve",
+      "B. npm service",
+      "C. ng generate",
+      "D. npm start"
+    ],
+    "answer_index": 2,
+    "answer": "C. ng generate",
+    "topic": "Node.js & Express",
+    "explanation": "The `ng serve` command builds and serves an Angular application locally with hot module reloading for development purposes.\n\n`ng generate` creates new components/services, `npm start` runs custom scripts, and `npm service` doesn't exist as a standard command.",
+    "corrected": false,
+    "id": "q2369",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "You also have to include suitable load-time weaver’s configuration",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "answer": "A. True",
+    "topic": "Core Java & OOP",
+    "explanation": "Load-time weaving requires explicit configuration to instrument classes during JVM startup, enabling aspect-oriented programming frameworks like Spring to apply cross-cutting concerns.\n\nWithout proper weaver configuration, the runtime environment cannot intercept and modify bytecode, preventing aspects from being woven into target classes at class-loading time.",
+    "corrected": false,
+    "id": "q2370",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which method is used to register BeanPostProcessor?",
+    "options": [
+      "A. addBeanPostProcessors",
+      "B. registerBeanPostProcessors",
+      "C. addBeanProcessors",
+      "D. none of the mentioned"
+    ],
+    "answer_index": 1,
+    "answer": "B. registerBeanPostProcessors",
+    "topic": "Core Java & OOP",
+    "explanation": "BeanPostProcessor instances are registered in Spring through the `addBeanPostProcessors` method, which is part of the ConfigurableListableBeanFactory interface for managing post-processors.\n\nThis method allows programmatic registration of custom bean post-processors that intercept bean creation and initialization lifecycle events during the Spring container startup process.",
+    "corrected": false,
+    "id": "q2372",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which Interface for bean Post Processor is used to distinguish between checked beans",
+    "options": [
+      "A. StorageConfig",
+      "B. Marker",
+      "C. None of the mentioned",
+      "D. All of the mentioned"
+    ],
+    "answer_index": 1,
+    "answer": "B. Marker",
+    "topic": "TypeScript",
+    "explanation": "The Marker interface contains no methods; it simply tags a bean class so Spring can identify it during BeanPostProcessor checks. This allows the container to distinguish already-processed or specially-treated beans from ordinary ones without adding behavioral contracts.",
+    "corrected": false,
+    "id": "q2373",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "In Spring, which interface allows custom logic to be executed before and after bean initialization via its two callback methods, postProcessBeforeInitialization() and postProcessAfterInitialization()?",
+    "options": [
+      "A. BeanPostProcessor",
+      "B. BeanFactoryPostProcessor",
+      "C. InitializingBean",
+      "D. ApplicationListener"
+    ],
+    "answer_index": 0,
+    "answer": "A. BeanPostProcessor",
+    "topic": "Core Java & OOP",
+    "explanation": "BeanPostProcessor defines postProcessBeforeInitialization() and postProcessAfterInitialization(), which Spring invokes around each bean's initialization step, allowing custom logic like proxying or property modification. The other options serve different purposes: BeanFactoryPostProcessor modifies bean definitions before instantiation, InitializingBean provides a single init callback, and ApplicationListener handles application events.",
+    "corrected": false,
+    "id": "q2374",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "question": "PathCheckingBeanPostProcessor will not work properly in case",
+    "options": [
+      "A. XML Configuration",
+      "B. Java based Configuration",
+      "C. JSR Annotation",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 0,
+    "answer": "A. XML Configuration",
+    "topic": "Core Java & OOP",
+    "explanation": "PathCheckingBeanPostProcessor requires classpath scanning to detect beans, which annotation-based and Java config support natively. XML configuration lacks automatic component detection capabilities.",
+    "corrected": false,
+    "id": "q2375",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which bean factory post processor externalizes part of the bean",
+    "options": [
+      "A. PropertyPlaceholderConfigurer",
+      "B. PropertyPlaceholderRegister",
+      "C. PropertyGetPath",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 0,
+    "answer": "A. PropertyPlaceholderConfigurer",
+    "topic": "Core Java & OOP",
+    "explanation": "PropertyPlaceholderConfigurer is a BeanFactoryPostProcessor that replaces ${...} placeholders in bean property values with externalized properties from configuration files.\n\nIt enables externalization of configuration by reading properties from external sources like .properties files, allowing beans to reference external values without hardcoding them.",
+    "corrected": false,
+    "id": "q2376",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which interface defines methods for resolving text messages",
+    "options": [
+      "A. MessageSource",
+      "B. ApplicationListener",
+      "C. ApplicationContextListener",
+      "D. TextEvent"
+    ],
+    "answer_index": 0,
+    "answer": "A. MessageSource",
+    "topic": "Spring Core",
+    "explanation": "MessageSource is Spring's interface that provides methods like getMessage() to resolve text messages from property files, supporting internationalization and message lookup.\n\nApplicationListener, ApplicationContextListener, and TextEvent are unrelated interfaces that handle events or context lifecycle, not message resolution functionality.",
+    "corrected": false,
+    "id": "q2377",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which interface is used to listen to certain events",
+    "options": [
+      "A. ApplicationListener",
+      "B. ContextListener",
+      "C. EventListener",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 0,
+    "answer": "A. ApplicationListener",
+    "topic": "TypeScript",
+    "explanation": "ApplicationListener is a Spring framework interface that allows beans to listen to and respond to application events published by the ApplicationContext.\n\nIt implements the EventListener marker interface and provides the onApplicationEvent() method to handle specific application events during the application lifecycle.",
+    "corrected": false,
+    "id": "q2378",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which method is used to publish your own custom event",
+    "options": [
+      "A. contextPublish",
+      "B. publishEvent",
+      "C. applicationEventPublish",
+      "D. addEvent"
+    ],
+    "answer_index": 1,
+    "answer": "B. publishEvent",
+    "topic": "Core Java & OOP",
+    "explanation": "The `contextPublish` method is the standard API for publishing custom events in application frameworks, allowing developers to trigger and broadcast events across components.\n\nThis method integrates with the context system to ensure proper event propagation and listener notification throughout the application lifecycle.",
+    "corrected": false,
+    "id": "q2379",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which of the following is a well known recognized event",
+    "options": [
+      "A. ContextCloasedEvemt",
+      "B. ContextRefreshedEvent",
+      "C. RequestHandledEvent",
+      "D. All of the mentioned"
+    ],
+    "answer_index": 3,
+    "answer": "D. All of the mentioned",
+    "topic": "Core Java & OOP",
+    "explanation": "ContextClosedEvent is fired when the Spring ApplicationContext is closed, making it a fundamental lifecycle event that developers commonly use for cleanup operations.\n\nThe other options contain typos or are less commonly recognized in Spring Framework documentation compared to this well-established context lifecycle event.",
+    "corrected": false,
+    "id": "q2380",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which event is provoked when web request comes into action",
+    "options": [
+      "A. ContextClosedEvent",
+      "B. ContextStoppedEvent",
+      "C. SessionEvent",
+      "D. RequestHandledEvent"
+    ],
+    "answer_index": 3,
+    "answer": "D. RequestHandledEvent",
+    "topic": "Core Java & OOP",
+    "explanation": "The RequestHandledEvent is fired by Spring whenever an HTTP request is successfully processed and completed by the application.\n\nThis event is specifically designed to handle web request lifecycle events, making it the appropriate choice for request-based actions.",
+    "corrected": false,
+    "id": "q2381",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "The element ___________ simply groups items within an enclosed dd tag, though it may associate",
+    "options": [
+      "A. object",
+      "B. figure",
+      "C. embed",
+      "D. none of the mentioned"
+    ],
+    "answer_index": 1,
+    "answer": "B. figure",
+    "topic": "Core Java & OOP",
+    "explanation": "The `<object>` element serves as a container for external resources like images, audio, or embedded content, grouping them within its structure. It can associate parameters and fallback content while maintaining semantic relationship between the object and its properties.",
+    "corrected": false,
+    "id": "q2382",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which of the following element is used for highlighting content similarly to how a highlighter pen",
+    "options": [
+      "A. em",
+      "B. strong",
+      "C. mark",
+      "D. none of the mentioned"
+    ],
+    "answer_index": 2,
+    "answer": "C. mark",
+    "topic": "Core Java & OOP",
+    "explanation": "The `<mark>` element is specifically designed to highlight text with a yellow background, mimicking a physical highlighter pen's visual effect.\n\nThe `<em>` and `<strong>` tags emphasize text through italics and bold styling respectively, not highlighting functionality.",
+    "corrected": false,
+    "id": "q2383",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "In HTML Audio/Video DOM, __________ returns a TimeRanges object representing the buffered",
+    "options": [
+      "A. preload",
+      "B. networkState",
+      "C. buffered",
+      "D. controller"
+    ],
+    "answer_index": 2,
+    "answer": "C. buffered",
+    "topic": "React",
+    "explanation": "The `buffered` property returns a TimeRanges object representing buffered portions of media. The correct answer provided (preload) is actually incorrect; `buffered` is the accurate property.",
+    "corrected": false,
+    "id": "q2385",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "The ____________ method must fill all the subpaths of the current path, using fillStyle, and using the non-zero winding number rule.",
+    "options": [
+      "A. fill()",
+      "B. stroke()",
+      "C. clip()",
+      "D. none of the mentioned"
+    ],
+    "answer_index": 0,
+    "answer": "A. fill()",
+    "topic": "Core Java & OOP",
+    "explanation": "The fill() method paints the interior of all subpaths in the current path object using the current fillStyle, applying the non-zero winding number rule to determine insideness. This differs from stroke(), which outlines paths, and clip(), which restricts future drawing to the path region rather than filling it.",
+    "corrected": false,
+    "id": "q2386",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "Scripting languages supported by Spring?",
+    "options": [
+      "A. JRuby",
+      "B. Groovy",
+      "C. BeanShell",
+      "D. All of the mentioned"
+    ],
+    "answer_index": 3,
+    "answer": "D. All of the mentioned",
+    "topic": "Core Java & OOP",
+    "explanation": "Spring Framework supports multiple scripting languages including JRuby, Groovy, and BeanShell through its scripting support infrastructure for dynamic bean definitions and expressions.\n\nThe correct answer is D (All of the mentioned) because Spring integrates with all three languages, not just JRuby alone.",
+    "corrected": false,
+    "id": "q2388",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Scripting language based on Ruby",
+    "options": [
+      "A. JRuby",
+      "B. Groovy",
+      "C. BeanShell",
+      "D. All of the mentioned"
+    ],
+    "answer_index": 0,
+    "answer": "A. JRuby",
+    "topic": "Core Java & OOP",
+    "explanation": "JRuby is a Java implementation of Ruby that runs on the JVM, making it a scripting language directly based on Ruby's syntax and semantics. Groovy and BeanShell are independent JVM languages not based on Ruby.",
+    "corrected": false,
+    "id": "q2389",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Dynamic Language for java platform to cope up with other",
+    "options": [
+      "A. JRuby",
+      "B. Groovy",
+      "C. BeanShell",
+      "D. All of the mentioned"
+    ],
+    "answer_index": 3,
+    "answer": "D. All of the mentioned",
+    "topic": "Core Java & OOP",
+    "explanation": "JRuby is a Java implementation of Ruby that runs on the JVM, providing dynamic language capabilities while maintaining full Java interoperability and library access.\n\nWhile Groovy and BeanShell exist, JRuby is the most mature and widely adopted dynamic language for the Java platform offering comprehensive Ruby feature parity.",
+    "corrected": false,
+    "id": "q2390",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Lightweight java scripting language executing java fragments",
+    "options": [
+      "A. JRuby",
+      "B. Groovy",
+      "C. BeanShell",
+      "D. All of the mentioned"
+    ],
+    "answer_index": 2,
+    "answer": "C. BeanShell",
+    "topic": "Core Java & OOP",
+    "explanation": "JRuby is a Java implementation of Ruby that executes Ruby code on the JVM while seamlessly integrating Java libraries and fragments into scripts.\n\nBeanShell and Groovy are Java-based scripting languages, but JRuby specifically excels at lightweight execution of Java code fragments within Ruby syntax.",
+    "corrected": false,
+    "id": "q2391",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "In Ruby instance variable begins with",
+    "options": [
+      "A. #",
+      "B. *",
+      "C. @",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 2,
+    "answer": "C. @",
+    "topic": "Core Java & OOP",
+    "explanation": "In Ruby, instance variables are prefixed with the @ symbol, distinguishing them from local variables and class variables (which use @@). This naming convention allows the interpreter to identify variables that belong to a specific object instance and persist across method calls within that object.",
+    "corrected": false,
+    "id": "q2392",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "XML Element to declare a bean implemented by JRuby",
+    "options": [
+      "A. lang:jruby",
+      "B. aop:jruby",
+      "C. beanscript:jruby",
+      "D. script:jruby"
+    ],
+    "answer_index": 0,
+    "answer": "A. lang:jruby",
+    "topic": "Spring Core",
+    "explanation": "The `lang:jruby` namespace element is the standard Spring Framework XML declaration for defining beans implemented in JRuby language.\n\nOther prefixes (aop, beanscript, script) are either incorrect namespaces or don't correspond to Spring's JRuby bean declaration syntax.",
+    "corrected": false,
+    "id": "q2393",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "XML Element to declare a bean implemented by Groovy",
+    "options": [
+      "A. lang:groovy",
+      "B. lang:jruby",
+      "C. beanscript:jruby",
+      "D. script:jruby"
+    ],
+    "answer_index": 0,
+    "answer": "A. lang:groovy",
+    "topic": "Core Java & OOP",
+    "explanation": "The `lang:groovy` namespace prefix in Spring XML configuration specifically designates beans implemented using Groovy language scripting within the Spring framework.\n\nOther options use incorrect namespace prefixes (`beanscript`, `script`) or target different languages (`jruby`), which don't match Spring's standard Groovy bean declaration syntax.",
+    "corrected": false,
+    "id": "q2394",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Script’s location is specified by attribute",
+    "options": [
+      "A. script-source",
+      "B. xml-source",
+      "C. script-annotation",
+      "D. none of the mentioned"
+    ],
+    "answer_index": 3,
+    "answer": "D. none of the mentioned",
+    "topic": "Core Java & OOP",
+    "explanation": "The `script-source` attribute explicitly defines where a script resource is located, allowing the system to retrieve and execute code from specified sources.\n\nThis attribute is the standard mechanism in XML/markup configurations for declaring external script file paths and URLs.",
+    "corrected": false,
+    "id": "q2395",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Interface used to create additional features in groovy based beans",
+    "options": [
+      "A. GroovyObjectCustomizer",
+      "B. GroovyBeanCustomizer",
+      "C. GroovyCustomizer",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 1,
+    "answer": "B. GroovyBeanCustomizer",
+    "topic": "TypeScript",
+    "explanation": "GroovyObjectCustomizer is the Spring interface that allows you to customize Groovy bean instances by adding dynamic features and modifying bean behavior post-instantiation.\n\nThis interface provides a customize() method that receives the Groovy object, enabling developers to add methods, properties, or other dynamic enhancements to beans.",
+    "corrected": false,
+    "id": "q2396",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Attribute which specifies all the interfaces",
+    "options": [
+      "A. script-interfaces",
+      "B. lang:bsh",
+      "C. lang:script",
+      "D. script:bsh"
+    ],
+    "answer_index": 0,
+    "answer": "A. script-interfaces",
+    "topic": "Core Java & OOP",
+    "explanation": "The `script-interfaces` attribute is the standard XML/configuration element that declares all interfaces a script component will implement or provide.\n\nThis naming convention follows the pattern of specifying collection-level interface declarations in service component architecture and scripting frameworks.",
+    "corrected": false,
+    "id": "q2397",
+    "trust": "unverified-source"
+  }
+]

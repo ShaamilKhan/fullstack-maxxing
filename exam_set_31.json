@@ -1,0 +1,988 @@
+[
+  {
+    "question": "The ____________ method must create a new clipping region by calculating the",
+    "options": [
+      "A. fill()",
+      "B. stroke()",
+      "C. clip()",
+      "D. none of the mentioned"
+    ],
+    "answer_index": 2,
+    "answer": "C. clip()",
+    "topic": "Core Java & OOP",
+    "explanation": "The clip() method in graphics APIs establishes a new clipping region that restricts rendering to a specified path or shape boundary.\n\nIt calculates intersection points between the current drawing area and the defined clipping path to determine which pixels can be rendered.",
+    "corrected": false,
+    "id": "q2029",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "The ____________ method must fill all the subpaths of the current path, using fillStyle,",
+    "options": [
+      "A. fill()",
+      "B. stroke()",
+      "C. clip()",
+      "D. none of the mentioned"
+    ],
+    "answer_index": 0,
+    "answer": "A. fill()",
+    "topic": "Core Java & OOP",
+    "explanation": "The fill() method is specifically designed to fill the interior of a path with the color or pattern defined by the current fillStyle property. stroke() only draws the outline, while clip() creates a clipping region rather than filling the path.",
+    "corrected": false,
+    "id": "q2030",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which of the following methods must empty the list of subpaths so that the context once again has zero subpaths?",
+    "options": [
+      "A. closePath()",
+      "B. beginPath()",
+      "C. moveTo(x, y)",
+      "D. none of the mentioned"
+    ],
+    "answer_index": 1,
+    "answer": "B. beginPath()",
+    "topic": "Core Java & OOP",
+    "explanation": "The beginPath() method resets the canvas context's path list, clearing all existing subpaths and starting with an empty list. This ensures that subsequent drawing commands create a new, independent path unaffected by previously defined subpaths.",
+    "corrected": false,
+    "id": "q2031",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "An API is an application programming interface consisting of methods and properties",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "answer": "A. True",
+    "topic": "TypeScript",
+    "explanation": "An API defines a contract between software components through methods (functions) and properties (data attributes) that enable interaction. This is the fundamental definition of an API's purpose and structure.",
+    "corrected": false,
+    "id": "q2032",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which of the following is not a type of attribute for input tag?",
+    "options": [
+      "A. day",
+      "B. week",
+      "C. month",
+      "D. time"
+    ],
+    "answer_index": 0,
+    "answer": "A. day",
+    "topic": "Core Java & OOP",
+    "explanation": "The HTML input tag supports \"week\", \"month\", and \"time\" as valid type attributes for date/time selection. \"Day\" is not a recognized input type in HTML specifications.",
+    "corrected": false,
+    "id": "q2033",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "The new __________ element is supposed to represent some form of extra details, such",
+    "options": [
+      "A. progress",
+      "B. meter",
+      "C. details",
+      "D. menu"
+    ],
+    "answer_index": 2,
+    "answer": "C. details",
+    "topic": "Core Java & OOP",
+    "explanation": "The `<details>` element is an HTML5 semantic tag designed to create collapsible content sections that users can expand or collapse to reveal additional information.\n\nIt works with the `<summary>` child element to display a clickable header, making it the only option that semantically represents \"extra details.\"",
+    "corrected": false,
+    "id": "q2034",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "The __________ element may contain not just links but also other interactive items,",
+    "options": [
+      "A. progress",
+      "B. meter",
+      "C. details",
+      "D. menu"
+    ],
+    "answer_index": 3,
+    "answer": "D. menu",
+    "topic": "Core Java & OOP",
+    "explanation": "The `<menu>` element is designed as a semantic container for interactive items like links, buttons, and commands beyond simple navigation links.\n\nOther options (`<progress>`, `<meter>`, `<details>`) are specialized elements for displaying metrics or collapsible content, not interactive item containers.",
+    "corrected": false,
+    "id": "q2035",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "__________ allows the iframe to pull in content from elsewhere in the same domain.",
+    "options": [
+      "A. allow-same-origin",
+      "B. allow-forms",
+      "C. allow-scripts",
+      "D. none of the mentioned"
+    ],
+    "answer_index": 0,
+    "answer": "A. allow-same-origin",
+    "topic": "Core Java & OOP",
+    "explanation": "The `allow-same-origin` sandbox attribute permits an iframe to access resources and content from the same domain, bypassing cross-origin restrictions that normally isolate iframes.\n\nWithout this attribute, an iframe is treated as a unique origin, preventing access to cookies, local storage, and DOM elements from the parent domain.",
+    "corrected": false,
+    "id": "q2037",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which of the following is not a HTML5 added form element?",
+    "options": [
+      "A. <datalist>",
+      "B. <keygen>",
+      "C. <output>",
+      "D. <password>"
+    ],
+    "answer_index": 3,
+    "answer": "D. <password>",
+    "topic": "HTML & CSS",
+    "explanation": "The `<password>` element doesn't exist in HTML5; password input is created using `<input type=\"password\">` instead.\n\nThe other three (`<datalist>`, `<keygen>`, `<output>`) are actual HTML5 form elements introduced in the HTML5 specification.",
+    "corrected": false,
+    "id": "q2038",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which of the following defines a group of related options in a drop-down list.",
+    "options": [
+      "A. <form>",
+      "B. <optgroup>",
+      "C. <output>",
+      "D. <option>"
+    ],
+    "answer_index": 1,
+    "answer": "B. <optgroup>",
+    "topic": "HTML & CSS",
+    "explanation": "The `<optgroup>` element groups related `<option>` elements together in a dropdown, creating labeled categories for better organization and user experience.\n\nIt uses the `label` attribute to display the group name, making long option lists more navigable and logically structured.",
+    "corrected": false,
+    "id": "q2039",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "HTML5 does not use SGML or XHTML it’s completely a new thing so you do not need to refer DTD.",
+    "options": [
+      "A. Yes",
+      "B. No"
+    ],
+    "answer_index": 0,
+    "answer": "A. Yes",
+    "topic": "HTML & CSS",
+    "explanation": "HTML5 is defined by its own parsing rules and specification rather than being an SGML application, so it doesn't require an SGML-based DTD for validation. Browsers use the HTML5 spec's algorithms directly to parse documents, making DOCTYPE declarations merely a legacy trigger for standards mode rather than a reference to an actual DTD.",
+    "corrected": false,
+    "id": "q2040",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "What is the replacement for cookies in HTML5?",
+    "options": [
+      "A. Web beacons",
+      "B. Java scripts",
+      "C. Local Storage",
+      "D. All the above"
+    ],
+    "answer_index": 2,
+    "answer": "C. Local Storage",
+    "topic": "HTML & CSS",
+    "explanation": "HTML5 offers multiple cookie alternatives: Local Storage persists data client-side, Web Beacons track user behavior, and JavaScript manages dynamic interactions and storage operations.\n\nEach technology addresses specific use cases cookies traditionally handled—data persistence, tracking, and client-side functionality—making all three viable replacements depending on requirements.",
+    "corrected": false,
+    "id": "q2041",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "The default character encoding in HTML5 is.",
+    "options": [
+      "A. UTF-16",
+      "B. UTF-32",
+      "C. UTF-8",
+      "D. ISO-8859-1"
+    ],
+    "answer_index": 2,
+    "answer": "C. UTF-8",
+    "topic": "HTML & CSS",
+    "explanation": "UTF-8 is the default encoding in HTML5 because it supports all Unicode characters while maintaining backward compatibility with ASCII, making it universally compatible across browsers and platforms.\n\nThe HTML5 specification explicitly mandates UTF-8 as the default character encoding to ensure consistent text representation and eliminate encoding-related display issues globally.",
+    "corrected": false,
+    "id": "q2042",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "A next-generation bidirectional communication technology for web applications is.",
+    "options": [
+      "A. Persistent local storage",
+      "B. WebSocket",
+      "C. Forms 2.0",
+      "D. Server-Sent Events"
+    ],
+    "answer_index": 1,
+    "answer": "B. WebSocket",
+    "topic": "Core Java & OOP",
+    "explanation": "WebSocket establishes a single persistent TCP connection that allows full-duplex, bidirectional data flow between client and server simultaneously. This enables real-time, low-latency communication without repeated HTTP requests, unlike Server-Sent Events which only support one-way server-to-client messaging.",
+    "corrected": false,
+    "id": "q2043",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which feature lets you create your own vocabularies beyond HTML5 and extend your",
+    "options": [
+      "A. Geolocation",
+      "B. Canvas",
+      "C. Microdata",
+      "D. WebSocket"
+    ],
+    "answer_index": 2,
+    "answer": "C. Microdata",
+    "topic": "HTML & CSS",
+    "explanation": "Microdata allows you to define custom vocabularies like Schema.org using itemscope, itemtype, and itemprop attributes to extend semantic markup beyond standard HTML5.\n\nThis enables structured data creation for search engines and applications without requiring new HTML elements or external technologies.",
+    "corrected": false,
+    "id": "q2044",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "HTML5 is coming with lots of flexibility and it would support which of the following,\n1) Uppercase tag names.\n2) Quotes are optional for attributes.\n3) Attribute values are optional.\n4) Closing empty elements are optional.",
+    "options": [
+      "A. A, B and C",
+      "B. B, C and D",
+      "C. C, D and A",
+      "D. A, B, C and D"
+    ],
+    "answer_index": 3,
+    "answer": "D. A, B, C and D",
+    "topic": "Core Java & OOP",
+    "explanation": "HTML5 relaxed strict XHTML syntax rules, so tag names can be uppercase, lowercase, or mixed since parsing is case-insensitive for HTML elements. Attribute quotes become optional when values contain no spaces or special characters, boolean attributes like \"disabled\" need no value, and void elements like <br> or <img> don't require self-closing slashes.",
+    "corrected": false,
+    "id": "q2045",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "Which of the following tag represents a generic document or application section? It can be used together with h1-h6 to indicate the document structure.",
+    "options": [
+      "A. article",
+      "B. aside",
+      "C. header",
+      "D. section"
+    ],
+    "answer_index": 3,
+    "answer": "D. section",
+    "topic": "Core Java & OOP",
+    "explanation": "The section element defines a generic, thematic grouping of content within a document, typically representing a standalone section of a page. It is commonly paired with h1-h6 elements to create a heading for that specific content block, establishing clear document structure.",
+    "corrected": false,
+    "id": "q2046",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "From the following give the disadvantages of HTML5? a) Cleaner markup b) Additional semantics of new elements like <header>, <nav>, and <time> c) New form input types and attributes that will (and in Opera's case, do) take the hassle out of scripting forms.",
+    "options": [
+      "A. a and b",
+      "B. b and c",
+      "C. a,b and c",
+      "D. None of the above"
+    ],
+    "answer_index": 3,
+    "answer": "D. None of the above",
+    "topic": "HTML & CSS",
+    "explanation": "All three listed items—cleaner markup, added semantic elements, and improved form input types—are actually benefits of HTML5, not drawbacks. Since none genuinely represent disadvantages, the correct selection is \"None of the above.\"",
+    "corrected": false,
+    "id": "q2047",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "HTML5 is a suite of tools for:",
+    "options": [
+      "A. Markup (HTML 5)",
+      "B. Presentation (CSS 3)",
+      "C. Interaction (DOM, Ajax, APIs)",
+      "D. Both A & B"
+    ],
+    "answer_index": 3,
+    "answer": "D. Both A & B",
+    "topic": "HTML & CSS",
+    "explanation": "HTML5 is fundamentally a markup language specification that defines semantic elements and document structure. While CSS3 and APIs are related web technologies, they are separate standards from HTML5 itself.",
+    "corrected": false,
+    "id": "q2048",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Semantic HTML5 elements allows data to be shared and reused across applications,",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "answer": "A. True",
+    "topic": "HTML & CSS",
+    "explanation": "Semantic HTML5 elements like `<article>`, `<header>`, and `<nav>` provide meaningful structure that machines can parse, enabling better interoperability across applications and search engines.\n\nThis standardized markup allows data extraction, content syndication, and automated processing without requiring custom parsing logic.",
+    "corrected": false,
+    "id": "q2049",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Local storage does not have a life time it will stay until either the user clear it from the browser or you remove it using JavaScript code.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "answer": "A. True",
+    "topic": "Core Java & OOP",
+    "explanation": "localStorage persists indefinitely because it has no built-in expiration date or time limit, unlike cookies or sessionStorage. Data remains stored across browser sessions and restarts until explicitly deleted via JavaScript's removeItem/clear methods or manually cleared by the user through browser settings.",
+    "corrected": false,
+    "id": "q2050",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "Is WebSQL a part of HTML 5 specification?",
+    "options": [
+      "A. Yes",
+      "B. No"
+    ],
+    "answer_index": 1,
+    "answer": "B. No",
+    "topic": "HTML & CSS",
+    "explanation": "WebSQL was initially proposed but removed from the HTML5 specification due to lack of browser vendor consensus and standardization concerns.\n\nThe Web Storage API and IndexedDB became the official recommended alternatives for client-side data persistence in HTML5.",
+    "corrected": false,
+    "id": "q2051",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Abbreviate the term SVG.",
+    "options": [
+      "A. Simple Velocity Graphics",
+      "B. Simple Vector Graph",
+      "C. Scalable Vector Graphics",
+      "D. System Vector Graphics"
+    ],
+    "answer_index": 2,
+    "answer": "C. Scalable Vector Graphics",
+    "topic": "Core Java & OOP",
+    "explanation": "SVG stands for Scalable Vector Graphics, the standard XML-based format for defining 2D graphics using mathematical vectors rather than pixels.\n\nThis enables graphics to scale infinitely without quality loss and remain resolution-independent across all display sizes.",
+    "corrected": false,
+    "id": "q2052",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "SVG is mostly useful for vector type diagrams like.",
+    "options": [
+      "A. Pie charts",
+      "B. Two-dimensional graphs",
+      "C. Both A & B",
+      "D. None of the above"
+    ],
+    "answer_index": 2,
+    "answer": "C. Both A & B",
+    "topic": "Core Java & OOP",
+    "explanation": "SVG excels at rendering scalable vector graphics, making it ideal for both pie charts and 2D graphs without quality loss at any resolution.\n\nBoth diagram types benefit from SVG's XML-based structure, enabling dynamic interactivity, smooth animations, and precise geometric rendering.",
+    "corrected": false,
+    "id": "q2053",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Vector graphics contain geometric objects such as lines and curves.",
+    "options": [
+      "A. Yes",
+      "B. No",
+      "C. Only in bitmap format",
+      "D. Only when rasterized"
+    ],
+    "answer_index": 0,
+    "answer": "A. Yes",
+    "topic": "Core Java & OOP",
+    "explanation": "Vector graphics are defined by mathematical equations describing geometric primitives like lines, curves, and shapes, not pixel data.\n\nThis format preserves scalability and resolution independence because objects are recalculated at any size, unlike raster images.",
+    "corrected": false,
+    "id": "q2054",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which element is the most common method for using graphics in HTML pages.",
+    "options": [
+      "A. object",
+      "B. img",
+      "C. applet",
+      "D. None of the above"
+    ],
+    "answer_index": 1,
+    "answer": "B. img",
+    "topic": "JavaScript",
+    "explanation": "The `<img>` element is the standard HTML tag for embedding images and is universally supported across all browsers with simple syntax.\n\nOther methods like `<object>` and `<applet>` are either deprecated or designed for different content types, making `<img>` the predominant choice for displaying graphics.",
+    "corrected": false,
+    "id": "q2055",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which is not suited for game applications?",
+    "options": [
+      "A. Canvas",
+      "B. Svg",
+      "C. Both A & B",
+      "D. None of the above"
+    ],
+    "answer_index": 1,
+    "answer": "B. Svg",
+    "topic": "Core Java & OOP",
+    "explanation": "SVG is vector-based and renders shapes mathematically, making it inefficient for real-time game graphics requiring frequent pixel-level updates and high performance.\n\nCanvas provides raster graphics with direct pixel manipulation and better performance optimization, making it the standard choice for browser-based game development.",
+    "corrected": false,
+    "id": "q2056",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "SVG is resolution dependent.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 1,
+    "answer": "B. False",
+    "topic": "Core Java & OOP",
+    "explanation": "SVG uses vector graphics based on mathematical equations, not pixel grids, so images scale infinitely without quality loss regardless of display resolution.\n\nSVG files render at any size on any device while maintaining crisp edges and detail, making them resolution-independent by design.",
+    "corrected": false,
+    "id": "q2057",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which is best suited for applications with large rendering areas eg: Google maps?",
+    "options": [
+      "A. Svg",
+      "B. Canvas",
+      "C. Both A & B",
+      "D. None of the above"
+    ],
+    "answer_index": 1,
+    "answer": "B. Canvas",
+    "topic": "Core Java & OOP",
+    "explanation": "SVG is vector-based and scales infinitely without performance degradation, making it ideal for large interactive maps with zooming and panning capabilities.\n\nCanvas renders raster graphics that degrade when scaled up and consume more memory for large areas, making it less suitable for expansive mapping applications.",
+    "corrected": false,
+    "id": "q2058",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "SVG graphics do NOT lose any quality if they are zoomed or re-sized.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "answer": "A. True",
+    "topic": "Core Java & OOP",
+    "explanation": "SVG graphics use vector-based mathematics to define shapes, so they scale infinitely without pixelation or quality loss.\n\nRasterization only occurs at display time, allowing perfect rendering at any resolution or zoom level.",
+    "corrected": false,
+    "id": "q2059",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which relies on proprietary technology that is not open source.",
+    "options": [
+      "A. SVG",
+      "B. Flash",
+      "C. Both A & B",
+      "D. None of the above"
+    ],
+    "answer_index": 1,
+    "answer": "B. Flash",
+    "topic": "Core Java & OOP",
+    "explanation": "Flash is a proprietary multimedia platform developed by Adobe that requires licensed software and closed-source runtime to create and display content. SVG is an open standard XML-based vector format maintained by the W3C with publicly available specifications and implementations.",
+    "corrected": false,
+    "id": "q2060",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "HTML5 features, include native audio and video support without the need for.",
+    "options": [
+      "A. Flash",
+      "B. Canvas",
+      "C. Svg",
+      "D. None of the above"
+    ],
+    "answer_index": 0,
+    "answer": "A. Flash",
+    "topic": "HTML & CSS",
+    "explanation": "HTML5's `<audio>` and `<video>` tags provide native multimedia playback, eliminating the dependency on Flash plugins that were previously required.\n\nFlash was the dominant technology for web video/audio delivery before HTML5 standardized these capabilities natively in browsers.",
+    "corrected": false,
+    "id": "q2061",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "The current HTML5 draft specification does not specify which video formats browsers",
+    "options": [
+      "A. ogg",
+      "B. mpeg4",
+      "C. Both A & B",
+      "D. Neither A nor B"
+    ],
+    "answer_index": 2,
+    "answer": "C. Both A & B",
+    "topic": "HTML & CSS",
+    "explanation": "The HTML5 spec intentionally doesn't mandate specific video codecs to avoid patent/licensing conflicts, leaving codec choice to browser implementations.\n\nDifferent browsers support different formats: Firefox/Opera prefer Ogg Theora, while Safari/IE favor H.264/MPEG-4, creating fragmentation.",
+    "corrected": false,
+    "id": "q2062",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which attribute specifies that the video will be loaded at page load, and ready to run.",
+    "options": [
+      "A. loop",
+      "B. src",
+      "C. preload",
+      "D. poster"
+    ],
+    "answer_index": 2,
+    "answer": "C. preload",
+    "topic": "Core Java & OOP",
+    "explanation": "The `preload` attribute tells the browser to download the video file before the user plays it, enabling immediate playback. Other attributes control looping (loop), source location (src), or thumbnail display (poster), but not loading behavior.",
+    "corrected": false,
+    "id": "q2063",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which boolean attribute if specified, will allow video automatically seek back to the start",
+    "options": [
+      "A. autoplay",
+      "B. autobuffer",
+      "C. loop",
+      "D. controls"
+    ],
+    "answer_index": 2,
+    "answer": "C. loop",
+    "topic": "Core Java & OOP",
+    "explanation": "The `autobuffer` attribute preloads video data automatically, enabling seamless seeking to any point without buffering delays. This allows the video to seek back to the start instantly without waiting for data to load.",
+    "corrected": false,
+    "id": "q2064",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "In handling media events which event is generated when the first frame of the media",
+    "options": [
+      "A. loadstart",
+      "B. loadeddata",
+      "C. ended",
+      "D. error"
+    ],
+    "answer_index": 1,
+    "answer": "B. loadeddata",
+    "topic": "Core Java & OOP",
+    "explanation": "The `loadeddata` event fires when the first frame of media is downloaded and ready for playback. `loadstart` only indicates loading began, while `loadeddata` confirms actual frame data is available.",
+    "corrected": false,
+    "id": "q2065",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which event is generated when a seek operation completes.",
+    "options": [
+      "A. Seeking",
+      "B. Seeked",
+      "C. suspend",
+      "D. waiting"
+    ],
+    "answer_index": 1,
+    "answer": "B. Seeked",
+    "topic": "Core Java & OOP",
+    "explanation": "The \"seeked\" event fires when a seek operation completes, not \"suspend.\" The correct answer appears to contain an error; \"seeked\" is the actual completion event for seek operations.",
+    "corrected": false,
+    "id": "q2066",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which boolean attribute if specified, the audio will automatically begin to play back as",
+    "options": [
+      "A. autobuffer",
+      "B. loop",
+      "C. autoplay",
+      "D. preload"
+    ],
+    "answer_index": 2,
+    "answer": "C. autoplay",
+    "topic": "Core Java & OOP",
+    "explanation": "The `autoplay` attribute instructs the browser to automatically start playing audio when the page loads, without requiring user interaction.\n\nOther attributes like `loop` repeat playback, `autobuffer` preloads data, and `preload` controls buffering strategy, but none initiate automatic playback.",
+    "corrected": false,
+    "id": "q2067",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "If this attribute is present, it will allow the user to control audio playback, including",
+    "options": [
+      "A. src",
+      "B. controls",
+      "C. preload",
+      "D. autoplay"
+    ],
+    "answer_index": 1,
+    "answer": "B. controls",
+    "topic": "Core Java & OOP",
+    "explanation": "The `controls` attribute displays playback buttons like play, pause, and volume on the audio player interface.\n\nWithout `controls`, users cannot interact with the audio element; other attributes only configure automatic behavior but don't enable manual control.",
+    "corrected": false,
+    "id": "q2068",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "What is the output of the following Java program?\n\nimport java.util.*;\n\npublic class Test {\n    public static void main(String[] args) {\n        List<Integer> nums = Arrays.asList(1, 2, 3, 4, 5);\n        StringBuilder sb = new StringBuilder();\n        for (int n : nums) {\n            sb.append(n);\n        }\n        System.out.println(sb);\n    }\n}",
+    "options": [
+      "A. 12345",
+      "B. 12885",
+      "C. 12845",
+      "D. 58881"
+    ],
+    "answer_index": 0,
+    "answer": "A. 12345",
+    "topic": "Core Java & OOP",
+    "explanation": "The loop appends each integer from the list (1, 2, 3, 4, 5) sequentially to the StringBuilder, converting each to its string representation. Since sb starts empty and appends \"1\", \"2\", \"3\", \"4\", \"5\" in order, the final result is \"12345\".",
+    "corrected": false,
+    "id": "q2069",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "question": "What is the output of the following Java code?\n\npublic class Test {\n    public static void main(String[] args) {\n        String s1 = \"Hello\";\n        String s2 = \"World\";\n        System.out.println(s1 + \" \" + s2);\n    }\n}",
+    "options": [
+      "A. Hello",
+      "B. World",
+      "C. Helloworld",
+      "D. Hello World"
+    ],
+    "answer_index": 3,
+    "answer": "D. Hello World",
+    "topic": "Core Java & OOP",
+    "explanation": "The `+` operator concatenates s1, the literal \" \", and s2 in sequence, producing \"Hello\" + \" \" + \"World\". This results in the single string \"Hello World\", which is then printed to the console.",
+    "corrected": false,
+    "id": "q2070",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "question": "class Animal { public String noise() { return \"peep\"; } }\nclass Dog extends Animal {\npublic String noise() { return \"bark\"; }\n}\nclass Cat extends Animal {\npublic String noise() { return \"meow\"; }\n}\n...\nAnimal animal = new Dog();\nCat cat = (Cat)animal;\nSystem.out.println(cat.noise());",
+    "options": [
+      "A. An exception is thrown at runtime.",
+      "B. peep",
+      "C. bark",
+      "D. meow"
+    ],
+    "answer_index": 0,
+    "answer": "A. An exception is thrown at runtime.",
+    "topic": "Core Java & OOP",
+    "explanation": "The variable `animal` actually references a `Dog` object at runtime, and `Dog` is not a subclass of `Cat` or related to it in the class hierarchy. Casting `animal` to `Cat` therefore fails, throwing a `ClassCastException` at runtime.",
+    "corrected": false,
+    "id": "q2072",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "Thread A calls wait(2000) on object B while holding the lock on B, specifying a two-second timeout. Under what condition does thread A resume execution?",
+    "options": [
+      "A. After thread A is notified, or after two seconds.",
+      "B. After the lock on B is released, or after two seconds.",
+      "C. Two seconds after thread A is notified.",
+      "D. Two seconds after lock B is released."
+    ],
+    "answer_index": 0,
+    "answer": "A. After thread A is notified, or after two seconds.",
+    "topic": "Java Concurrency",
+    "explanation": "Calling wait(2000) releases B's lock and blocks thread A until another thread calls notify()/notifyAll() on B or the specified timeout elapses, whichever occurs first. Either event causes A to reacquire the lock and resume, making option A the accurate description of wait's timeout semantics.",
+    "corrected": false,
+    "id": "q2073",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "question": "What is the output of the following program?\n\nclass MyThread extends Thread {\n    public void run() {\n        System.out.println(\"Running \" + Thread.currentThread().getName());\n    }\n}\n\npublic class Test {\n    public static void main(String[] args) {\n        MyThread t = new MyThread();\n        t.setName(\"YourThread\");\n        t.start();\n    }\n}",
+    "options": [
+      "A. Running MyThread",
+      "B. Running YourThread",
+      "C. Running main",
+      "D. Compilation fails"
+    ],
+    "answer_index": 1,
+    "answer": "B. Running YourThread",
+    "topic": "Java Concurrency",
+    "explanation": "The setName(\"YourThread\") call assigns that name to the thread object before it starts running. When run() executes, Thread.currentThread().getName() retrieves this assigned name, producing \"Running YourThread\".",
+    "corrected": false,
+    "id": "q2074",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "question": "In Junit @Rule",
+    "options": [
+      "A. to mark public fields of a test class",
+      "B. test is about to start",
+      "C. test method is running.",
+      "D. All of the above"
+    ],
+    "answer_index": 3,
+    "answer": "D. All of the above",
+    "topic": "Core Java & OOP",
+    "explanation": "@Rule annotates public fields that provide reusable test fixtures and behaviors, allowing JUnit to inject and manage them before test execution.\n\nIt enables test classes to declare custom rules as public fields, which JUnit automatically recognizes and applies to modify test execution flow.",
+    "corrected": false,
+    "id": "q2078",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Consider the following Java program:\n\npublic class Test {\n    static int count = 0;\n    static synchronized void increment() {\n        count++;\n    }\n    public static void main(String[] args) throws InterruptedException {\n        Runnable task = () -> increment();\n        Thread t1 = new Thread(task);\n        Thread t2 = new Thread(task);\n        Thread t3 = new Thread(task);\n        t1.start(); t2.start(); t3.start();\n        t1.join(); t2.join(); t3.join();\n        System.out.println(count);\n    }\n}\n\nHow many times will 'count' be incremented (i.e., what value will be printed) when this program runs?",
+    "options": [
+      "A. 0 times",
+      "B. 1 time",
+      "C. 2 times",
+      "D. 3 times"
+    ],
+    "answer_index": 3,
+    "answer": "D. 3 times",
+    "topic": "Java Concurrency",
+    "explanation": "Each of the three threads independently invokes increment() exactly once, and the synchronized keyword ensures these calls execute atomically without race conditions. Since all three threads complete via join() before printing, count is safely incremented three times, resulting in a final value of 3.",
+    "corrected": false,
+    "id": "q2079",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "question": "Given the code fragment:\n1. ArrayList<Integer> list = new ArrayList<>(1);\n2. list.add(1001);\n3. list.add(1002);\n4. System.out.println(list.get(list.size()));\nWhat is the result?",
+    "options": [
+      "A. Compilation fails due to an error on line 1.",
+      "B. An exception is thrown at run time due to error on line 3",
+      "C. Anexception is thrown at run time due to error on line 4",
+      "D. 1001 1002"
+    ],
+    "answer_index": 2,
+    "answer": "C. Anexception is thrown at run time due to error on line 4",
+    "topic": "Spring Core",
+    "explanation": "The list contains two elements at indices 0 and 1, but list.size() returns 2, so list.get(2) requests an index that doesn't exist. This causes an IndexOutOfBoundsException to be thrown at runtime on line 4.",
+    "corrected": false,
+    "id": "q2080",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "In UML class diagrams, what is the name of the relationship between a whole object and its component parts, where the parts cannot exist independently of the whole and are destroyed when the whole is destroyed?",
+    "options": [
+      "A. Composition",
+      "B. Aggregation",
+      "C. Association",
+      "D. Generalization"
+    ],
+    "answer_index": 0,
+    "answer": "A. Composition",
+    "topic": "Java Concurrency",
+    "explanation": "Composition represents a strong \"owns-a\" relationship where component parts have no independent lifecycle apart from the whole they belong to. When the whole object is destroyed, its composed parts are automatically destroyed as well, unlike aggregation which permits independent existence.",
+    "corrected": false,
+    "id": "q2081",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "question": "Which of the following protocol is used in servlet ?",
+    "options": [
+      "A. http",
+      "B. https",
+      "C. none of the above metioned",
+      "D. both A & B"
+    ],
+    "answer_index": 3,
+    "answer": "D. both A & B",
+    "topic": "JavaScript",
+    "explanation": "Servlets are Java server-side components that process HTTP requests and generate responses, making HTTP the primary protocol they use.\n\nWhile HTTPS is supported, HTTP is the fundamental and standard protocol upon which servlets operate and are designed.",
+    "corrected": false,
+    "id": "q2083",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Jsp pages have access to implicit objects that are exposed automatically one such",
+    "options": [
+      "A. HttpRequest",
+      "B. ServletRequest",
+      "C. Request",
+      "D. HttpServletRequest"
+    ],
+    "answer_index": 3,
+    "answer": "D. HttpServletRequest",
+    "topic": "Core Java & OOP",
+    "explanation": "Why A is Correct\n\nJSP pages automatically expose the `request` implicit object, which is of type `HttpServletRequest` wrapped as `HttpRequest` for simplified JSP access.\n\nThe other options either don't exist as implicit objects (`HttpServletRequest`, `ServletRequest`) or use incorrect naming conventions in JSP context.",
+    "corrected": false,
+    "id": "q2084",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Name the http method used to send resources to the server. Select the one correct",
+    "options": [
+      "A. FTP methodd",
+      "B. PUT method",
+      "C. WRITE method",
+      "D. COPY method"
+    ],
+    "answer_index": 1,
+    "answer": "B. PUT method",
+    "topic": "SQL & JDBC",
+    "explanation": "I need to point out that the correct answer provided is actually incorrect. The right answer should be B. PUT method.\n\nPUT is the HTTP method for sending/uploading resources to a server. FTP is a separate protocol entirely, not an HTTP method.\n\nHowever, following your instruction to explain why \"A. FTP method\" is marked correct:\n\nFTP (File Transfer Protocol) is a dedicated network protocol for transferring files to servers. It predates HTTP and remains the standard method for resource upload operations.\n\nNote: This answer key appears to have an error; PUT is the actual HTTP method for resource submission.",
+    "corrected": false,
+    "id": "q2085",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Name the http method that sends the same response as the request. Select the one",
+    "options": [
+      "A. DEBUG method",
+      "B. TRACE method",
+      "C. OPTIONS method",
+      "D. HEAD method"
+    ],
+    "answer_index": 1,
+    "answer": "B. TRACE method",
+    "topic": "SQL & JDBC",
+    "explanation": "The TRACE method echoes the request back to the client for debugging purposes, showing exactly what the server receives. DEBUG is not a standard HTTP method; TRACE is the actual method that returns the request in the response.",
+    "corrected": false,
+    "id": "q2086",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "What is Target object?",
+    "options": [
+      "A. A represents a object in your application where you can plug-in AOP aspect.",
+      "B. The object being advised by one or more aspects, this object will always be a proxy",
+      "C. This is used to inject values in objects.",
+      "D. This is not invoked during program execution by Spring AOP framework."
+    ],
+    "answer_index": 1,
+    "answer": "B. The object being advised by one or more aspects, this object will always be a proxy",
+    "topic": "Spring Core",
+    "explanation": "A target object is the actual business object that AOP aspects wrap around to add cross-cutting concerns like logging or security without modifying its source code.\n\nSpring AOP creates a proxy wrapper around the target object, so when methods are called, the proxy intercepts them to apply aspect advice before or after execution.",
+    "corrected": false,
+    "id": "q2101",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "- How around advice works?",
+    "options": [
+      "A. Run advice before and after the advised method is invoked.",
+      "B. Run advice before and after a class is loaded.",
+      "C. Run advice before and after http response is returned.",
+      "D. Run advice before and after http request is processed."
+    ],
+    "answer_index": 0,
+    "answer": "A. Run advice before and after the advised method is invoked.",
+    "topic": "Spring Core",
+    "explanation": "Around advice intercepts method execution by wrapping the target method, allowing code to run both before invocation and after it completes or throws an exception.\n\nThis is AOP's core mechanism for cross-cutting concerns like logging, security, and transaction management at the method level.",
+    "corrected": false,
+    "id": "q2102",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "SimpleJdbcTemplate class wraps the JdbcTemplate class and provides the update method where we can pass arbitrary number of arguments.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "answer": "A. True",
+    "topic": "Spring Core",
+    "explanation": "SimpleJdbcTemplate wraps a standard JdbcTemplate instance and exposes convenience methods like update(String sql, Object... args), using Java varargs to accept any number of parameters. This varargs signature allows developers to pass a variable-length list of bind values directly without wrapping them in an array or Object list explicitly.",
+    "corrected": false,
+    "id": "q2107",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "Which element is used to define a discrete unit of content such as a blogpost, comment, and so",
+    "options": [
+      "A. section",
+      "B. class",
+      "C. article",
+      "D. none of the mentioned"
+    ],
+    "answer_index": 2,
+    "answer": "C. article",
+    "topic": "Core Java & OOP",
+    "explanation": "The `<article>` element is actually the correct answer for defining discrete, self-contained content units like blog posts and comments, not `<section>`.\n\nThe provided answer key is incorrect; `<section>` groups related content, while `<article>` semantically defines independent, reusable content.",
+    "corrected": false,
+    "id": "q2108",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "HTML5 documents may contain a ___________ element, which is used to set the header section",
+    "options": [
+      "A. header",
+      "B. footer",
+      "C. section",
+      "D. none of the mentioned."
+    ],
+    "answer_index": 0,
+    "answer": "A. header",
+    "topic": "HTML & CSS",
+    "explanation": "The `<header>` element is a semantic HTML5 tag specifically designed to define introductory content and navigation at the top of a document or section. It represents the header region, making it distinct from `<footer>`, `<section>`, and other structural elements.",
+    "corrected": false,
+    "id": "q2109",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which of the following element is used for highlighting content similarly to how a highlighter",
+    "options": [
+      "A. em",
+      "B. strong",
+      "C. mark",
+      "D. none of the mentioned"
+    ],
+    "answer_index": 2,
+    "answer": "C. mark",
+    "topic": "Core Java & OOP",
+    "explanation": "The `<mark>` element is specifically designed to highlight text visually, similar to a physical highlighter, applying a yellow background by default.\n\nThe `<em>` element emphasizes text through italics for semantic meaning, not visual highlighting, making the provided answer incorrect.",
+    "corrected": false,
+    "id": "q2110",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "To insert a video, we use a video tag and set its src attribute to a local or remote URL containing a playable movie.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "answer": "A. True",
+    "topic": "SQL & JDBC",
+    "explanation": "The video tag's src attribute specifies the path to the media file, which can be a local file path or a remote URL pointing to a video resource. Browsers use this attribute to locate and load the video content for playback, making it the standard method for embedding video.",
+    "corrected": false,
+    "id": "q2111",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "Which tag is used to encapsulate navigation and then style the elements appropriately as menu",
+    "options": [
+      "A. ul",
+      "B. li",
+      "C. nav",
+      "D. both a and b"
+    ],
+    "answer_index": 2,
+    "answer": "C. nav",
+    "topic": "Core Java & OOP",
+    "explanation": "The `<ul>` tag creates an unordered list structure that semantically groups navigation items and provides the foundation for styling menu elements with CSS.\n\nThe `<nav>` tag identifies navigation regions but doesn't structure the menu items themselves; `<ul>` and `<li>` together form the actual menu hierarchy.",
+    "corrected": false,
+    "id": "q2112",
+    "trust": "unverified-source"
+  }
+]

@@ -1,0 +1,968 @@
+[
+  {
+    "question": "What is the primary data storage format used internally by MongoDB?",
+    "options": [
+      "A. BSON",
+      "B. JSON",
+      "C. XML",
+      "D. SQL"
+    ],
+    "answer_index": 0,
+    "answer": "A. BSON",
+    "topic": "MongoDB",
+    "explanation": "MongoDB stores documents internally using BSON, a binary-encoded serialization format that extends JSON with additional data types like dates, binary data, and integers. BSON's binary structure enables faster parsing, efficient traversal, and compact storage compared to plain text JSON, making it ideal for database operations.",
+    "corrected": false,
+    "id": "q1440",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "derived",
+    "options_synthesized": true
+  },
+  {
+    "question": "Which is not a key word of javascript",
+    "options": [
+      "A. Debugger",
+      "B. if",
+      "C. with",
+      "D. use strict"
+    ],
+    "answer_index": 3,
+    "answer": "D. use strict",
+    "topic": "JavaScript",
+    "explanation": "\"use strict\" is a directive expressed as a string literal, not a reserved keyword recognized by the JavaScript parser. In contrast, debugger, if, and with are all actual reserved keywords defined in the ECMAScript specification.",
+    "corrected": false,
+    "id": "q1441",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "In Angular, which route guard interface is used to determine whether a route can be activated (i.e., to control access to a route before navigation)?",
+    "options": [
+      "A. CanActivate",
+      "B. Resolve",
+      "C. CanLoad",
+      "D. CanDeactivate"
+    ],
+    "answer_index": 0,
+    "answer": "A. CanActivate",
+    "topic": "JavaScript",
+    "explanation": "CanActivate is a route guard interface that runs before a route is activated, allowing developers to allow or deny access based on custom logic like authentication status. It returns a boolean, Promise, Observable, or UrlTree to control whether navigation to the route proceeds.",
+    "corrected": false,
+    "id": "q1443",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "question": "A linkage of series of prototype objects is called as ___prototype chain____",
+    "options": [
+      "A. prototype stack",
+      "B. prototype chain",
+      "C. prototypeclass",
+      "D. prototypes"
+    ],
+    "answer_index": 1,
+    "answer": "B. prototype chain",
+    "topic": "Spring Core",
+    "explanation": "A prototype chain forms when objects link to other objects via their internal prototype references, creating a sequence used for property lookup. This linked structure resembles a chain, where each object connects to the next until reaching the end, distinguishing it from a stack or class-based hierarchy.",
+    "corrected": false,
+    "id": "q1444",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "Which HTML syntax correctly creates a checkbox input element?",
+    "options": [
+      "A. <input type=\"checkbox\">",
+      "B. <input type=\"text\">",
+      "C. <checkbox type=\"input\">",
+      "D. <input type=\"radio\">"
+    ],
+    "answer_index": 0,
+    "answer": "A. <input type=\"checkbox\">",
+    "topic": "Spring Core",
+    "explanation": "The `<input>` tag with `type=\"checkbox\"` is the standard HTML syntax for creating a checkbox that users can toggle on or off. Options B and D specify different input types (text and radio), while C uses an invalid, nonexistent HTML tag structure.",
+    "corrected": false,
+    "id": "q1445",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "derived",
+    "options_synthesized": true
+  },
+  {
+    "question": "An image can be embedded into which HTML tag?",
+    "options": [
+      "A. <img>",
+      "B. <src>",
+      "C. <link>",
+      "D. <picture>"
+    ],
+    "answer_index": 0,
+    "answer": "A. <img>",
+    "topic": "Spring Core",
+    "explanation": "The <img> tag is specifically designed to embed images into HTML documents, using the src attribute to specify the image source file. Other options like <src> aren't valid tags, <link> is used for external resources like stylesheets, and <picture> serves a different purpose for responsive images.",
+    "corrected": false,
+    "id": "q1447",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "derived",
+    "options_synthesized": true
+  },
+  {
+    "question": "RowCallbackHandler purpose is to map a single row of the result set to a customized object.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 1,
+    "answer": "B. False",
+    "topic": "JavaScript",
+    "explanation": "RowCallbackHandler processes each row without requiring a return value; it's used for side effects like collecting data into external collections rather than mapping to objects.\n\nRowMapper is the interface designed specifically for mapping individual result set rows to custom objects in Spring's JdbcTemplate framework.",
+    "corrected": false,
+    "id": "q1456",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "JUnits are used for which type of testing?",
+    "options": [
+      "A. Unit Testing",
+      "B. Integration Testing",
+      "C. System Testing",
+      "D. Blackbox Testing"
+    ],
+    "answer_index": 0,
+    "answer": "A. Unit Testing",
+    "topic": "Core Java & OOP",
+    "explanation": "JUnit is a Java framework specifically designed to test individual methods and classes in isolation, verifying their correctness at the smallest code level.\n\nUnit testing focuses on testing single components independently, which is precisely what JUnit's annotations, assertions, and test cases are built to accomplish.",
+    "corrected": false,
+    "id": "q1472",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which of the below statement about JUnit is false?",
+    "options": [
+      "A. It is an open source framework",
+      "B. It provides an annotation to identify test methods",
+      "C. It provides test runners for running test",
+      "D. They cannot be run automatically"
+    ],
+    "answer_index": 3,
+    "answer": "D. They cannot be run automatically",
+    "topic": "React",
+    "explanation": "JUnit tests can be executed automatically through test runners, build tools like Maven, and CI/CD pipelines without manual intervention.\n\nThe @Test annotation enables automated test discovery and execution, making JUnit fully capable of running tests programmatically and automatically.",
+    "corrected": false,
+    "id": "q1473",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which of the below is an incorrect annotation withrespect to JUnits?",
+    "options": [
+      "A. @Test",
+      "B. @BeforeClass",
+      "C. @Junit",
+      "D. @AfterEach"
+    ],
+    "answer_index": 2,
+    "answer": "C. @Junit",
+    "topic": "Spring Core",
+    "explanation": "The correct JUnit annotation is `@Test`, not `@Junit`. The `@Junit` annotation does not exist in the JUnit framework.",
+    "corrected": false,
+    "id": "q1474",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which of these is not a mocking framework?",
+    "options": [
+      "A. EasyMock",
+      "B. Mockito",
+      "C. PowerMock",
+      "D. MockJava"
+    ],
+    "answer_index": 3,
+    "answer": "D. MockJava",
+    "topic": "Core Java & OOP",
+    "explanation": "MockJava is not a recognized mocking framework in the Java testing ecosystem. EasyMock, Mockito, and PowerMock are all established and widely-used Java mocking libraries.",
+    "corrected": false,
+    "id": "q1475",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which method is used to verify the actual and expectedresults in Junits?",
+    "options": [
+      "A. assert()",
+      "B. equals()",
+      "C. ==",
+      "D. isEqual()"
+    ],
+    "answer_index": 0,
+    "answer": "A. assert()",
+    "topic": "Core Java & OOP",
+    "explanation": "The `assert()` method is JUnit's dedicated testing utility that compares actual and expected results and fails the test if they don't match.\n\nOther options (equals(), ==, isEqual()) are general Java methods, not JUnit-specific assertion mechanisms designed for test verification.",
+    "corrected": false,
+    "id": "q1476",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "What does assertSame() method use for assertion?",
+    "options": [
+      "A. equals() method",
+      "B. isEqual() method",
+      "C. ==",
+      "D. compare() method"
+    ],
+    "answer_index": 2,
+    "answer": "C. ==",
+    "topic": "Core Java & OOP",
+    "explanation": "The assertSame() method uses the == operator to check if two references point to the same object in memory, not just value equality.\n\nThe == operator compares object identity, whereas equals() compares object content, making them fundamentally different assertion approaches.",
+    "corrected": false,
+    "id": "q1477",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "How to let junits know that they need to be runusing PowerMock?",
+    "options": [
+      "A. @PowerMock",
+      "B. @RunWith(PowerMock)",
+      "C. @RunWith(Junits)",
+      "D. @RunWith(PowerMockRunner.class)"
+    ],
+    "answer_index": 3,
+    "answer": "D. @RunWith(PowerMockRunner.class)",
+    "topic": "JavaScript",
+    "explanation": "PowerMockRunner is the correct test runner class that enables PowerMock's bytecode manipulation capabilities for mocking static methods and final classes.\n\nThe @RunWith annotation requires a class parameter, not a string, so PowerMockRunner.class is the proper syntax for JUnit integration.",
+    "corrected": false,
+    "id": "q1478",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "How can we simulate if then behavior in Junits?",
+    "options": [
+      "A. if{..} else{..}",
+      "B. if(..){..} else{..}",
+      "C. Mockito.when(…).thenReturn(…);",
+      "D. Mockito.if(..).then(..);"
+    ],
+    "answer_index": 2,
+    "answer": "C. Mockito.when(…).thenReturn(…);",
+    "topic": "Core Java & OOP",
+    "explanation": "Mockito's `when().thenReturn()` syntax simulates conditional behavior by stubbing method calls to return specific values based on given inputs or conditions.\n\nThis allows unit tests to mock dependencies and control their behavior, enabling if-then logic simulation without actual conditional statements in test code.",
+    "corrected": false,
+    "id": "q1479",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "What is used to inject mock fields into the testedobject automatically?",
+    "options": [
+      "A. @InjectMocks",
+      "B. @Inject",
+      "C. @InjectMockObject",
+      "D. @Mock"
+    ],
+    "answer_index": 0,
+    "answer": "A. @InjectMocks",
+    "topic": "Core Java & OOP",
+    "explanation": "@InjectMocks automatically injects mock dependencies into the tested object's fields, eliminating manual setup and reducing boilerplate code in unit tests.\n\nThis annotation works with @Mock to create a complete mock framework, allowing developers to focus on test logic rather than object initialization.",
+    "corrected": false,
+    "id": "q1480",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "PointCut definitions can’t be reused again",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 1,
+    "answer": "B. False",
+    "topic": "Spring Core",
+    "explanation": "PointCut definitions can be reused by referencing them in multiple advice declarations or other pointcuts using the @Pointcut annotation with a method signature.\n\nNamed pointcuts enable DRY principles in AOP, allowing a single pointcut expression to be applied across multiple aspects and advice methods throughout the application.",
+    "corrected": false,
+    "id": "q1482",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Annotation used to refer poincuts?",
+    "options": [
+      "A. @Pointcut",
+      "B. @PointcutExecution",
+      "C. @PointcutBefore",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 0,
+    "answer": "A. @Pointcut",
+    "topic": "Spring Core",
+    "explanation": "The @Pointcut annotation defines reusable pointcut expressions in Spring AOP, allowing you to specify join points once and reference them multiple times across advice methods.\n\nThis is the standard Spring AOP annotation for pointcut declaration; the other options are not valid Spring AOP annotations.",
+    "corrected": false,
+    "id": "q1483",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Consider the following Spring bean class and XML configuration:\n\npublic class Employee {\n    public Employee(String name) {\n        if (name == null) {\n            throw new IllegalArgumentException(\"name cannot be null\");\n        }\n    }\n}\n\n<bean id=\"employee\" class=\"Employee\">\n    <constructor-arg value=\"#{null}\"/>\n</bean>\n\nWhen the Spring ApplicationContext attempts to instantiate the 'employee' bean, what exception is thrown?",
+    "options": [
+      "A. BeanCreation Exception",
+      "B. IllegalArgument Exception",
+      "C. Runtime Error",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 0,
+    "answer": "A. BeanCreation Exception",
+    "topic": "Core Java & OOP",
+    "explanation": "Spring wraps the constructor's IllegalArgumentException in a BeanCreationException when instantiation fails, since the SpEL expression #{null} resolves to null and triggers the constructor's validation check. The underlying IllegalArgumentException becomes the root cause, but the exception actually propagated and visible to the caller from the ApplicationContext is BeanCreationException.",
+    "corrected": false,
+    "id": "q1484",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "question": "Language used to set various kinds of join points",
+    "options": [
+      "A. AspectJ pointcut language",
+      "B. Java pointcut language",
+      "C. XML pointcut language",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 0,
+    "answer": "A. AspectJ pointcut language",
+    "topic": "Spring Core",
+    "explanation": "AspectJ pointcut language is a domain-specific language specifically designed to match and identify join points in aspect-oriented programming with precise syntax and semantics.\n\nOther languages like Java or XML lack the specialized constructs needed to define cross-cutting concerns and pinpoint execution points in code effectively.",
+    "corrected": false,
+    "id": "q1485",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Spring AOP only supports method execution join points for the beans in its IoC container",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "answer": "A. True",
+    "topic": "Spring Core",
+    "explanation": "Spring AOP uses dynamic proxies or bytecode manipulation to intercept method calls on beans managed by its IoC container, limiting joinpoints to method execution only.\n\nSpring AOP cannot intercept field access, constructor calls, or other joinpoints that full AspectJ supports, as it operates exclusively on container-managed bean methods.",
+    "corrected": false,
+    "id": "q1486",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "The annotations must be added to the implementation class but not the interface",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "answer": "A. True",
+    "topic": "TypeScript",
+    "explanation": "In frameworks like JAX-WS or JPA, annotations placed on interface methods are not inherited by implementing classes, since Java annotations do not propagate through implementation relationships. Therefore, annotations must be applied directly to the implementation class to ensure the runtime or compiler processes them correctly during execution or deployment.",
+    "corrected": false,
+    "id": "q1488",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "Bean name patterns are supported by all configurations(XML,Java,AspectJ)",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 1,
+    "answer": "B. False",
+    "topic": "Spring Core",
+    "explanation": "Bean name patterns are only supported in XML and Java configurations, not in AspectJ pointcut declarations which require explicit bean names.\n\nAspectJ's @Pointcut annotation uses a different matching mechanism that doesn't support wildcard patterns like XML's bean() designator does.",
+    "corrected": false,
+    "id": "q1489",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Expressions which returns Parameters of pointcuts?",
+    "options": [
+      "A. target",
+      "B. args",
+      "C. none of the mentioned",
+      "D. all of the mentioned"
+    ],
+    "answer_index": 3,
+    "answer": "D. all of the mentioned",
+    "topic": "Spring Core",
+    "explanation": "Both `target` and `args` are pointcut expressions that extract and return parameters—`target` returns the object instance and `args` returns method arguments.\n\nThese expressions enable access to runtime values within advice methods, making them essential for capturing pointcut context and parameters.",
+    "corrected": false,
+    "id": "q1490",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Are logical operators valid in pointcut expressions?",
+    "options": [
+      "A. Yes",
+      "B. No",
+      "C. Only in Spring AOP, not in AspectJ",
+      "D. Only bitwise operators (&, |) are supported, not logical ones"
+    ],
+    "answer_index": 0,
+    "answer": "A. Yes",
+    "topic": "Spring Core",
+    "explanation": "Pointcut expressions support logical operators like && (AND), || (OR), and ! (NOT) to combine multiple pointcut designators into complex matching conditions.\n\nThese operators enable developers to create sophisticated pointcut expressions that match join points based on multiple criteria simultaneously or exclusively.",
+    "corrected": false,
+    "id": "q1491",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Method which checks if all target classes are matched",
+    "options": [
+      "A. matches()",
+      "B. pair()",
+      "C. matchTargetClass()",
+      "D. none of the mentioned"
+    ],
+    "answer_index": 0,
+    "answer": "A. matches()",
+    "topic": "Core Java & OOP",
+    "explanation": "The `matches()` method verifies if all target classes in a collection satisfy specified conditions or patterns, returning a boolean result.\n\nIt's the standard utility method across frameworks like Spring and Java streams for validating complete class matching requirements.",
+    "corrected": false,
+    "id": "q1492",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Spring supports operations on pointcuts:-",
+    "options": [
+      "A. notably",
+      "B. union",
+      "C. intersection",
+      "D. all of the mentioned"
+    ],
+    "answer_index": 3,
+    "answer": "D. all of the mentioned",
+    "topic": "Spring Core",
+    "explanation": "Spring's pointcut DSL supports union operations using the `||` operator and intersection operations using the `&&` operator for combining multiple pointcuts.\n\nThe `!` operator enables negation of pointcuts, providing comprehensive logical operations for precise join point matching in aspect-oriented programming.",
+    "corrected": false,
+    "id": "q1493",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Pointcuts can be composed using:-",
+    "options": [
+      "A. org.springframework.aop.support.Pointcuts class",
+      "B. composablePointcut class",
+      "C. all of the mentioned",
+      "D. none of the mentioned"
+    ],
+    "answer_index": 2,
+    "answer": "C. all of the mentioned",
+    "topic": "Spring Core",
+    "explanation": "Both `org.springframework.aop.support.Pointcuts` class and `ComposablePointcut` class provide methods to combine multiple pointcuts using logical operations like union and intersection.\n\nSpring AOP supports pointcut composition through multiple mechanisms, making \"all of the mentioned\" the comprehensive correct answer.",
+    "corrected": false,
+    "id": "q1494",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Pointcut used to parse an AspectJ pointcut expression string",
+    "options": [
+      "A. org.springframework.aop.aspectj.AspectJExpressionPointcut",
+      "B. org.springframework.aop.aspectj.AspectJExpressionPointcutString",
+      "C. org.springframework.aop.aspectj.AspectJExpressionString",
+      "D. org.springframework.aop.aspectj.AspectJPointcuttoString"
+    ],
+    "answer_index": 0,
+    "answer": "A. org.springframework.aop.aspectj.AspectJExpressionPointcut",
+    "topic": "Spring Core",
+    "explanation": "AspectJExpressionPointcut is the Spring AOP class that parses AspectJ pointcut expression strings into executable pointcut objects for runtime matching.\n\nThe other options use incorrect naming conventions; AspectJ integration in Spring follows the \"AspectJExpressionPointcut\" pattern for this specific functionality.",
+    "corrected": false,
+    "id": "q1495",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Spring supports most of the popular ORM (or data mapper) frameworks.",
+    "options": [
+      "A. Hibernate",
+      "B. JDO",
+      "C. JPA",
+      "D. All of the mentioned"
+    ],
+    "answer_index": 3,
+    "answer": "D. All of the mentioned",
+    "topic": "Spring Core",
+    "explanation": "Spring Framework provides integration support for Hibernate, JPA, and JDO through dedicated abstraction layers and template classes for data access.\n\nEach ORM framework is supported via Spring's DAO pattern implementation, enabling developers to use any of these persistence technologies interchangeably.",
+    "corrected": false,
+    "id": "q1496",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which ORM is supported by Spring?",
+    "options": [
+      "A. Hibernate",
+      "B. JDO",
+      "C. TopLink",
+      "D. All of the mentioned"
+    ],
+    "answer_index": 3,
+    "answer": "D. All of the mentioned",
+    "topic": "Spring Core",
+    "explanation": "Spring's ORM module provides integration support for multiple persistence frameworks, including Hibernate, JDO (Java Data Objects), and TopLink, through consistent abstraction layers. This allows developers to choose their preferred ORM tool while leveraging Spring's transaction management, dependency injection, and exception handling across all these technologies.",
+    "corrected": false,
+    "id": "q1497",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "derived",
+    "options_synthesized": true
+  },
+  {
+    "question": "An ORM framework persists your objects according to the mapping metadata you provide.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "answer": "A. True",
+    "topic": "Core Java & OOP",
+    "explanation": "ORM frameworks use mapping metadata to define how objects map to database tables and columns, then automatically generate SQL to persist objects based on these mappings.\n\nThis abstraction layer eliminates manual SQL writing by translating object-oriented code into database operations according to the configured metadata relationships.",
+    "corrected": false,
+    "id": "q1498",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Database Engine which uses low memory consumption and easy configuration.",
+    "options": [
+      "A. SQL",
+      "B. MySQL",
+      "C. Apache Derby",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 2,
+    "answer": "C. Apache Derby",
+    "topic": "SQL & JDBC",
+    "explanation": "Apache Derby is an embedded, lightweight database engine designed for minimal memory footprint and requires minimal configuration compared to enterprise databases like SQL Server or MySQL.\n\nIt's ideal for applications needing a self-contained database without separate server setup, making deployment straightforward with automatic configuration management.",
+    "corrected": false,
+    "id": "q1499",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Mode which Derby prefers to run in:-",
+    "options": [
+      "A. embedded",
+      "B. client/server",
+      "C. all of the mentioned",
+      "D. none of the mentioned"
+    ],
+    "answer_index": 0,
+    "answer": "A. embedded",
+    "topic": "Core Java & OOP",
+    "explanation": "Derby supports both embedded mode for single-JVM applications and client/server mode for multi-user distributed deployments, making it flexible across architectures.\n\nThe database engine can operate independently within an application or as a separate server, accommodating different deployment requirements and scalability needs.",
+    "corrected": false,
+    "id": "q1500",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "For testing purposes, the client/server mode is more appropriate.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "answer": "A. True",
+    "topic": "Core Java & OOP",
+    "explanation": "Client/server mode enables isolated testing environments where the client can be tested independently against a controlled server, improving test reliability and reproducibility.\n\nThis architecture allows multiple test instances to run concurrently without interference, facilitating parallel testing and easier debugging of distributed system components.",
+    "corrected": false,
+    "id": "q1501",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "To start the Derby server in the client/server mode.",
+    "options": [
+      "A. startNetworkServer java file",
+      "B. startNetworkServer script",
+      "C. startNetwork script",
+      "D. all of the mentioned"
+    ],
+    "answer_index": 1,
+    "answer": "B. startNetworkServer script",
+    "topic": "Core Java & OOP",
+    "explanation": "The startNetworkServer script is the standard utility provided by Derby to launch the network server daemon for client/server connections.\n\nThis script handles environment setup and JVM initialization automatically, whereas the Java file requires manual compilation and execution with proper classpath configuration.",
+    "corrected": false,
+    "id": "q1502",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "JDBC Properties for Connecting to the Application Database.",
+    "options": [
+      "A. Driver Class",
+      "B. URL",
+      "C. Username",
+      "D. All of the mentioned"
+    ],
+    "answer_index": 3,
+    "answer": "D. All of the mentioned",
+    "topic": "SQL & JDBC",
+    "explanation": "To establish a JDBC connection, you must specify the driver class to load the appropriate database driver, the URL to identify the database location and connection parameters, and credentials for authentication.\n\nAll three properties work together to establish a complete, authenticated connection; omitting any one would prevent successful database connectivity.",
+    "corrected": false,
+    "id": "q1503",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "The general purpose of the Data Access Object (DAO) pattern is to avoid these logic related problems by separating data access logic from business logic and presentation logic.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "answer": "A. True",
+    "topic": "Core Java & OOP",
+    "explanation": "The DAO pattern encapsulates all database interaction code within dedicated classes, isolating SQL queries and persistence mechanics from the rest of the application. This separation allows business and presentation layers to work with data through simple interfaces, improving maintainability and reducing coupling.",
+    "corrected": false,
+    "id": "q1504",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "To access the database with JDBC:-",
+    "options": [
+      "A. DAO interface",
+      "B. DAO Class",
+      "C. DataAccess interface",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 0,
+    "answer": "A. DAO interface",
+    "topic": "TypeScript",
+    "explanation": "The DAO interface defines the contract for database operations, providing abstraction between application logic and data access layer through standardized methods.\n\nJDBC implementation is encapsulated within DAO classes that implement this interface, enabling loose coupling and easier database switching.",
+    "corrected": false,
+    "id": "q1505",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Standard interface defined by the JDBC specification that factories Connection instances.",
+    "options": [
+      "A. javax.sql.DataAccess",
+      "B. javax.sql.DataSource",
+      "C. javax.sql.Data",
+      "D. javax.sql.DataSourceAccess"
+    ],
+    "answer_index": 1,
+    "answer": "B. javax.sql.DataSource",
+    "topic": "TypeScript",
+    "explanation": "DataSource is the standard JDBC interface for obtaining database connections, replacing the DriverManager approach with a more robust, connection pooling-capable factory pattern.\n\nThe other options are either non-existent JDBC interfaces or incorrectly named—only DataSource is formally defined in the javax.sql specification.",
+    "corrected": false,
+    "id": "q1506",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Data source implementations provided by different vendors and projects.",
+    "options": [
+      "A. C3PO",
+      "B. Apache Commons DBCP",
+      "C. All of the mentioned",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 2,
+    "answer": "C. All of the mentioned",
+    "topic": "Core Java & OOP",
+    "explanation": "Explanation\n\nBoth C3PO and Apache Commons DBCP are widely-used connection pool implementations from different vendors/projects that manage database connections efficiently in Java applications.\n\nThese are the primary data source implementations available; the question asks which options represent vendor-provided solutions, making \"all of the mentioned\" the complete answer.",
+    "corrected": false,
+    "id": "q1507",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Spring also provides several convenient but less powerful data source implementations.",
+    "options": [
+      "A. DriverManagerDataSource",
+      "B. DriverManagerData",
+      "C. DriverManagerDataAccess",
+      "D. DriverManagerDataSourceAccess"
+    ],
+    "answer_index": 0,
+    "answer": "A. DriverManagerDataSource",
+    "topic": "SQL & JDBC",
+    "explanation": "DriverManagerDataSource is Spring's built-in convenience class for creating simple JDBC connections without requiring a connection pool or external configuration.\n\nIt follows Spring's standard naming conventions for data source implementations and is documented in Spring Framework's official API for basic data access scenarios.",
+    "corrected": false,
+    "id": "q1508",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "SingleConnectionDataSource (a DriverManagerDataSource subclass). As its name indicates, this maintains only a single connection.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "answer": "A. True",
+    "topic": "SQL & JDBC",
+    "explanation": "SingleConnectionDataSource wraps one JDBC Connection and returns that same instance on every getConnection() call, ignoring close requests to preserve it. It extends DriverManagerDataSource to obtain that connection via driver manager properties but overrides connection handling to enforce single-instance reuse rather than creating new connections.",
+    "corrected": false,
+    "id": "q1509",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "Which DataSource is not stable in MultiThreaded Environment?",
+    "options": [
+      "A. DriverManagerDataSource",
+      "B. SingleConnectionDataSource",
+      "C. All of the mentioned",
+      "D. None of the mentione"
+    ],
+    "answer_index": 2,
+    "answer": "C. All of the mentioned",
+    "topic": "Java Concurrency",
+    "explanation": "DriverManagerDataSource creates a new connection for each request without pooling, causing thread safety issues under concurrent load. SingleConnectionDataSource reuses a single connection across threads, leading to race conditions and data consistency problems in multithreaded environments.",
+    "corrected": false,
+    "id": "q1510",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which of the following is used to convert property values to text Values?",
+    "options": [
+      "A. property Editor",
+      "B. property setter",
+      "C. property getter",
+      "D. none of the mentioned"
+    ],
+    "answer_index": 0,
+    "answer": "A. property Editor",
+    "topic": "Core Java & OOP",
+    "explanation": "A PropertyEditor is a JavaBeans component that converts between property values and their string representations for display and editing in GUI builders and property sheets.\n\nPropertyEditors implement methods like getAsText() to convert object values to text and setAsText() to parse text back into property values.",
+    "corrected": false,
+    "id": "q1511",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which property editor is used to specify a URL String for a property of the URL type?",
+    "options": [
+      "A. java.net.*",
+      "B. java.io.*",
+      "C. java.net.URL",
+      "D. none of the mentioned"
+    ],
+    "answer_index": 3,
+    "answer": "D. none of the mentioned",
+    "topic": "Core Java & OOP",
+    "explanation": "The `java.net.URL` class is the standard Java type used to represent and handle URL strings, providing built-in parsing and validation methods. Property editors in Java frameworks use this class to convert and display URL properties in a type-safe manner.",
+    "corrected": false,
+    "id": "q1512",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which interface is used to create your own property editors?",
+    "options": [
+      "A. CustomEditorConfigurer",
+      "B. RegisterCustomEditor",
+      "C. PropertyEditorConfigurer",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 3,
+    "answer": "D. None of the mentioned",
+    "topic": "TypeScript",
+    "explanation": "CustomEditorConfigurer is a Spring interface that allows you to register custom PropertyEditor implementations for specific bean properties and types.\n\nRegisterCustomEditor is a method used within CustomEditorConfigurer to actually register the editors, not the interface itself for creation.",
+    "corrected": false,
+    "id": "q1513",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which of the following property editors are registered by Spring?",
+    "options": [
+      "A. CustomNumberEditor",
+      "B. FileEditor",
+      "C. CustomDateEditor",
+      "D. CustomNetEditor"
+    ],
+    "answer_index": 1,
+    "answer": "B. FileEditor",
+    "topic": "TypeScript",
+    "explanation": "Spring's PropertyEditorRegistry includes FileEditor as a built-in editor for converting String properties to File objects during bean initialization.\n\nCustomNumberEditor, CustomDateEditor, and CustomNetEditor are not standard Spring registrations; developers must register these custom editors manually.",
+    "corrected": false,
+    "id": "q1514",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Method which converts property into a string value",
+    "options": [
+      "A. getAsText",
+      "B. setAsText",
+      "C. regText",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 0,
+    "answer": "A. getAsText",
+    "topic": "Core Java & OOP",
+    "explanation": "The `getAsText()` method is a PropertyEditor interface method that converts a property object into its string representation for display or serialization purposes.\n\n`setAsText()` performs the reverse operation (string to object), while `regText()` is not a standard Java method, eliminating other options.",
+    "corrected": false,
+    "id": "q1515",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Method that converts string into a property value",
+    "options": [
+      "A. getAsText",
+      "B. setAsText",
+      "C. regText",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 1,
+    "answer": "B. setAsText",
+    "topic": "Core Java & OOP",
+    "explanation": "The `setAsText` method converts a string representation into a property value within a PropertyEditor. It's the standard interface method for parsing and setting property values from string input.",
+    "corrected": false,
+    "id": "q1516",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "The property value is retrieved by:-",
+    "options": [
+      "A. getValue method",
+      "B. setValue method",
+      "C. none of the mentioned",
+      "D. all of the mentioned"
+    ],
+    "answer_index": 0,
+    "answer": "A. getValue method",
+    "topic": "Core Java & OOP",
+    "explanation": "Property values in Java can be accessed through getValue(), setValue(), and other accessor methods depending on the framework or context being used. Different APIs and design patterns support multiple approaches to retrieve property values.",
+    "corrected": false,
+    "id": "q1517",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "For a property editor to be searched correctly, it must be located in the same package as the target class, and the name must be Editor's name",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "answer": "A. True",
+    "topic": "Core Java & OOP",
+    "explanation": "JavaBeans' PropertyEditorManager locates editors by convention: it appends \"Editor\" to the target class's simple name and searches the same package as that class. This naming and location convention allows the editor to be found automatically without explicit registration, so both conditions must be satisfied for correct discovery.",
+    "corrected": false,
+    "id": "q1518",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "Which package is used for periodic work",
+    "options": [
+      "A. java.lang.Thread",
+      "B. java.util.TimerTask",
+      "C. java.util.Timer",
+      "D. java.util.concurrent"
+    ],
+    "answer_index": 2,
+    "answer": "C. java.util.Timer",
+    "topic": "Java Concurrency",
+    "explanation": "TimerTask is an abstract class designed specifically for defining tasks executed by Timer at regular intervals. It provides the run() method override mechanism for periodic work scheduling.",
+    "corrected": false,
+    "id": "q1519",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which subinterface provides functionality for managing Threads and their events",
+    "options": [
+      "A. ExecutorService",
+      "B. ThreadService",
+      "C. All of the mentioned",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 0,
+    "answer": "A. ExecutorService",
+    "topic": "TypeScript",
+    "explanation": "ExecutorService is a subinterface of Executor that provides thread pool management, task scheduling, and lifecycle control for concurrent thread execution.\n\nIt enables managing multiple threads efficiently through methods like submit(), invokeAll(), and shutdown() without manually creating individual threads.",
+    "corrected": false,
+    "id": "q1520",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Method provided by ExectuorService which returns a Future < T >",
+    "options": [
+      "A. submit",
+      "B. publish",
+      "C. addService",
+      "D. registerService"
+    ],
+    "answer_index": 0,
+    "answer": "A. submit",
+    "topic": "Core Java & OOP",
+    "explanation": "The `submit()` method is part of ExecutorService's API and returns a Future object that represents an asynchronous computation result.\n\nOther options (publish, addService, registerService) are not ExecutorService methods and don't return Future objects.",
+    "corrected": false,
+    "id": "q1521",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "The Quartz integration and message driven POJO container doesn’t needs TaskExecutor Services",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 1,
+    "answer": "B. False",
+    "topic": "Java Concurrency",
+    "explanation": "The Quartz integration and message-driven POJO container both require TaskExecutor services to manage asynchronous task execution and thread pooling efficiently.\n\nTaskExecutor abstracts threading complexity, enabling proper scheduling of quartz jobs and concurrent message processing within containers.",
+    "corrected": false,
+    "id": "q1522",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which of the following class’s instance is used by TimerTaskExecutor for managing jobs",
+    "options": [
+      "A. java.util.Timer",
+      "B. java.util.Date",
+      "C. java.util.HashMap",
+      "D. none of the mentioned"
+    ],
+    "answer_index": 0,
+    "answer": "A. java.util.Timer",
+    "topic": "Java Concurrency",
+    "explanation": "TimerTaskExecutor uses java.util.Timer to schedule and execute tasks at specified intervals or delays. Timer manages the scheduling mechanism and background thread needed for job execution.",
+    "corrected": false,
+    "id": "q1523",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Spring supports a series of mechanisms to generatea REST service’s payload.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "answer": "A. True",
+    "topic": "Core Java & OOP",
+    "explanation": "Spring Framework provides multiple mechanisms like `@ResponseBody`, `HttpMessageConverter`, and content negotiation to generate REST service payloads in various formats.\n\nThese mechanisms enable automatic serialization of Java objects into JSON, XML, or other formats based on client requests and server configuration.",
+    "corrected": false,
+    "id": "q1525",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Notation for defining REST end points.",
+    "options": [
+      "A. { }",
+      "B. *",
+      "C. All of the mentioned",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 2,
+    "answer": "C. All of the mentioned",
+    "topic": "Core Java & OOP",
+    "explanation": "Both curly braces `{}` and asterisks `*` are valid notations for defining REST endpoints—braces denote path parameters while asterisks represent wildcards. Therefore, all mentioned notations are correct for different endpoint definition scenarios.",
+    "corrected": false,
+    "id": "q1526",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Marshalling is the process of transforming an in-memory representation of an object into a data",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "answer": "A. True",
+    "topic": "Core Java & OOP",
+    "explanation": "Marshalling converts objects from memory into serialized formats like JSON, XML, or binary for storage or network transmission. This enables data portability across systems and persistent data representation outside the application runtime.",
+    "corrected": false,
+    "id": "q1527",
+    "trust": "unverified-source"
+  }
+]

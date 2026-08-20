@@ -1,0 +1,954 @@
+[
+  {
+    "id": "q0214",
+    "topic": "Java OOP",
+    "question": "What term describes the concept of treating an object as if it were a particular type, even if it weren't declared as that type?",
+    "options": [
+      "A. Extension Typing",
+      "B. Duck Typing",
+      "C. Interface Typing",
+      "D. Generic Typing"
+    ],
+    "answer_index": 1,
+    "explanation": "Duck typing determines an object's suitability for use based on the presence of specific methods or properties, rather than its actual declared type or class. This allows code to treat any object as a given type as long as it implements the required behavior, following the principle \"if it walks like a duck and quacks like a duck, it's a duck.\"",
+    "corrected": false,
+    "answer": "B. Duck Typing",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0216",
+    "topic": "Java OOP",
+    "question": "What is the primary difference between a generic class and a non-generic class?",
+    "options": [
+      "A. Generic classes do not accept constructor parameters.",
+      "B. Generic classes are always declared abstract.",
+      "C. Generic classes may not implement interfaces.",
+      "D. Generic classes accept a type parameter."
+    ],
+    "answer_index": 3,
+    "explanation": "Generic classes are defined with one or more type parameters (e.g., class Box<T>) that act as placeholders for actual types specified at instantiation. This allows the same class to operate on different data types while maintaining compile-time type safety, unlike non-generic classes with fixed types.",
+    "corrected": false,
+    "answer": "D. Generic classes accept a type parameter.",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0217",
+    "topic": "JavaScript",
+    "question": "Which TypeScript compiler option lets you specify the location of the tsconfig.json file to be used for the compilation?",
+    "options": [
+      "A. --project",
+      "B. --json",
+      "C. --outDir",
+      "D. --input"
+    ],
+    "answer_index": 0,
+    "explanation": "The --project flag (or -p) lets you specify a path to a tsconfig.json file.",
+    "corrected": false,
+    "answer": "A. --project",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0218",
+    "topic": "JavaScript",
+    "question": "Which of the following symbols is used to denote that a function parameter is a rest parameter?",
+    "options": [
+      "A. <>",
+      "B. >>>",
+      "C. !!",
+      "D. ..."
+    ],
+    "answer_index": 3,
+    "explanation": "The rest parameter syntax ...params collects remaining arguments into an array.",
+    "corrected": true,
+    "answer": "D. ...",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0219",
+    "topic": "Java OOP",
+    "question": "Which of the following will correctly import the items exported by this export statement? export { GetUser as GetLibraryUser, GetBook as GetLibraryBook };",
+    "options": [
+      "A. import TypeScript from './library';",
+      "B. import namespace from './library';",
+      "C. import { GetLibraryUser, GetLibraryBook } from './library';",
+      "D. import { GetUser, GetBook } from './library';"
+    ],
+    "answer_index": 2,
+    "explanation": "'import { GetLibraryUser, GetLibraryBook } from './library';' is the correct answer per language specification.",
+    "corrected": false,
+    "answer": "C. import { GetLibraryUser, GetLibraryBook } from './library';",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0221",
+    "topic": "Java OOP",
+    "question": "What are the variable scopes available in TypeScript?",
+    "options": [
+      "A. Global Scope",
+      "B. Class Scope",
+      "C. Local Scope",
+      "D. All of the above"
+    ],
+    "answer_index": 3,
+    "explanation": "TypeScript supports global scope, where variables are accessible throughout the entire program, and class scope, where variables (properties) are accessible within a class using this. It also supports local scope, where variables declared with let or const inside functions or blocks are only accessible within that specific function or block.",
+    "corrected": false,
+    "answer": "D. All of the above",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0222",
+    "topic": "JavaScript",
+    "question": "Which object oriented terms are supported by TypeScript?",
+    "options": [
+      "A. Modules",
+      "B. Classes",
+      "C. Interfaces",
+      "D. All of these"
+    ],
+    "answer_index": 3,
+    "explanation": "TypeScript extends JavaScript by adding classes, which support properties, methods, constructors, and inheritance to enable object-oriented programming patterns. It also introduces interfaces for defining contracts that classes must implement, and modules for organizing and encapsulating code into reusable, namespaced units.",
+    "corrected": false,
+    "answer": "D. All of these",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0223",
+    "topic": "JavaScript",
+    "question": "In TypeScript, it calls JavaScript internally and then performs validations.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "explanation": "TypeScript compiles down to plain JavaScript, which is what actually executes at runtime in the browser or Node.js environment. Before or during this compilation process, the TypeScript compiler performs static type checking and validation to catch errors based on type annotations.",
+    "corrected": false,
+    "answer": "A. True",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0224",
+    "topic": "Java OOP",
+    "question": "To change the datatype from one type to another, we require",
+    "options": [
+      "A. TypeOperator",
+      "B. TypeAssertion",
+      "C. InferredTyping",
+      "D. TypeCasting"
+    ],
+    "answer_index": 3,
+    "explanation": "Type casting is the explicit process of converting a value from one data type to another, such as int to float. It uses built-in functions or operators specifically designed to perform this conversion safely and predictably.",
+    "corrected": false,
+    "answer": "D. TypeCasting",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0225",
+    "topic": "Java OOP",
+    "question": "For a variable, without specifying any data type is",
+    "options": [
+      "A. InferredTyping",
+      "B. TypeOperator",
+      "C. TypeAssertion",
+      "D. ExplicitTyping"
+    ],
+    "answer_index": 0,
+    "explanation": "Inferred typing allows a variable to be declared without explicitly specifying its data type, letting the compiler or interpreter automatically determine the type based on the assigned value. This contrasts with explicit typing, where the programmer must declare the data type manually at the time of variable declaration.",
+    "corrected": false,
+    "answer": "A. InferredTyping",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0226",
+    "topic": "JavaScript",
+    "question": "Which of the following is valid command to compile TypeScript file?",
+    "options": [
+      "A. ts abc.ts",
+      "B. t abc.ts",
+      "C. tsc abc.ts",
+      "D. tst abc.ts"
+    ],
+    "answer_index": 2,
+    "explanation": "'tsc abc.ts' is the correct answer per language specification.",
+    "corrected": false,
+    "answer": "C. tsc abc.ts",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0228",
+    "topic": "JavaScript",
+    "question": "Internal Modules are known as namespaces in TypeScript.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "explanation": "In TypeScript, internal modules were renamed to 'namespaces' in TypeScript 1.5+.",
+    "corrected": false,
+    "answer": "A. True",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0229",
+    "topic": "JavaScript",
+    "question": "Which of the following Arrow Functions are true?",
+    "options": [
+      "A. var reflect = value => value;",
+      "B. var sum = (num1, num2) => num1 + num2;",
+      "C. var getName = () => \"Nicholas\";",
+      "D. var sum = (num1, num2) => { return num1 + num2; };"
+    ],
+    "answer_index": 0,
+    "explanation": "Arrow function `reflect` correctly takes a single parameter `value` without parentheses and implicitly returns it, following valid ES6 syntax. This concise form is valid because single parameters don't require enclosing parentheses in arrow functions.",
+    "corrected": false,
+    "answer": "A. var reflect = value => value;",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0230",
+    "topic": "JavaScript",
+    "question": "TypeScript is a",
+    "options": [
+      "A. Strongly typed",
+      "B. Object oriented",
+      "C. Compiled Language",
+      "D. All the above"
+    ],
+    "answer_index": 3,
+    "explanation": "TypeScript is strongly typed, object-oriented, and compiled — all three apply.",
+    "corrected": false,
+    "answer": "D. All the above",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0231",
+    "topic": "JavaScript",
+    "question": "TypeScript is",
+    "options": [
+      "A. Language",
+      "B. Set of tools",
+      "C. Both",
+      "D. None"
+    ],
+    "answer_index": 2,
+    "explanation": "TypeScript is both a language and a set of tools (compiler, language service).",
+    "corrected": false,
+    "answer": "C. Both",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0232",
+    "topic": "Java OOP",
+    "question": "Select user defined data types in TypeScript",
+    "options": [
+      "A. Arrays",
+      "B. String",
+      "C. Boolean",
+      "D. Void"
+    ],
+    "answer_index": 0,
+    "explanation": "Arrays are considered user-defined data types because they allow developers to define a structured collection of elements with a specific type, offering flexibility in how data is organized. In contrast, string, boolean, and void are primitive or built-in types in TypeScript, with predefined behavior and no customization for structure.",
+    "corrected": false,
+    "answer": "A. Arrays",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0235",
+    "topic": "Java OOP",
+    "question": "Supertype of all datatypes in TypeScript",
+    "options": [
+      "A. number",
+      "B. Enum",
+      "C. Void",
+      "D. Any"
+    ],
+    "answer_index": 3,
+    "explanation": "The 'any' type is the supertype of all types in TypeScript — a variable of type 'any' can hold any value.",
+    "corrected": false,
+    "answer": "D. Any",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0238",
+    "topic": "JavaScript",
+    "question": "What are the components of TypeScript?",
+    "options": [
+      "A. TypeScript Language",
+      "B. TypeScript Compiler",
+      "C. TypeScript Language Service",
+      "D. All of these"
+    ],
+    "answer_index": 3,
+    "explanation": "TypeScript consists of the language itself, which extends JavaScript with types and syntax features, providing the foundation developers write code in. It also includes the compiler (tsc), which transpiles TypeScript to JavaScript, and the language service, which enables features like autocompletion and refactoring in editors.",
+    "corrected": false,
+    "answer": "D. All of these",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0239",
+    "topic": "JavaScript",
+    "question": "How to declare variables in TypeScript?",
+    "options": [
+      "A. Var",
+      "B. Let",
+      "C. Both",
+      "D. Dim"
+    ],
+    "answer_index": 2,
+    "explanation": "TypeScript supports both `var` and `let` for declaring variables, since it's a superset of JavaScript and inherits its variable declaration keywords. Additionally, TypeScript also supports `const` for declaring constants, but between the given options, both `var` and `let` are valid.",
+    "corrected": false,
+    "answer": "C. Both",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0240",
+    "topic": "Java OOP",
+    "question": "TypeScript uses which data type?",
+    "options": [
+      "A. String",
+      "B. Number",
+      "C. Boolean",
+      "D. All above option"
+    ],
+    "answer_index": 3,
+    "explanation": "TypeScript is a statically typed superset of JavaScript that supports multiple primitive types, including String, Number, and Boolean, for variable declarations. These types allow developers to enforce type safety and catch errors at compile time, making all three valid and commonly used data types.",
+    "corrected": false,
+    "answer": "D. All above option",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0241",
+    "topic": "Java OOP",
+    "question": "Default access modifier in TypeScript?",
+    "options": [
+      "A. public",
+      "B. private",
+      "C. protected",
+      "D. readonly"
+    ],
+    "answer_index": 0,
+    "explanation": "If no access modifier is specified in TypeScript, class members are public by default.",
+    "corrected": false,
+    "answer": "A. public",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0242",
+    "topic": "JavaScript",
+    "question": "What is async/await?",
+    "options": [
+      "A. New syntax to write JavaScript promises",
+      "B. New syntax to consume JavaScript promises",
+      "C. New syntax to consume asynchronous callbacks",
+      "D. A new JavaScript feature that replaces promises entirely"
+    ],
+    "answer_index": 1,
+    "explanation": "Async/await is syntactic sugar built on top of promises that provides a cleaner way to handle asynchronous operations by allowing code to be written in a synchronous style. It doesn't create promises (that's still how async functions work internally), but rather consumes them through the `await` keyword, which pauses execution until a promise settles. Promises themselves still exist and are fundamental to how async/await operates.",
+    "corrected": false,
+    "answer": "B. New syntax to consume JavaScript promises",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0243",
+    "topic": "HTML/CSS",
+    "question": "Which of the following is an attribute CSS selector?",
+    "options": [
+      "A. [selector]",
+      "B. .selector",
+      "C. #selector",
+      "D. *selector"
+    ],
+    "answer_index": 0,
+    "explanation": "Attribute selectors use square brackets: [attr] or [attr=value].",
+    "corrected": false,
+    "answer": "A. [selector]",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0244",
+    "topic": "Java OOP",
+    "question": "When is it recommended to pass this.setState a function instead of an object?",
+    "options": [
+      "A. When the new state should completely replace the old state.",
+      "B. When the new state does not depend on the old state.",
+      "C. When the new state depends on the old state.",
+      "D. When the state update needs to be executed asynchronously after an API call."
+    ],
+    "answer_index": 2,
+    "explanation": "React batches setState calls, so relying on this.state right after calling setState can use stale values instead of the most recent state. Passing a function ensures React supplies the latest state as an argument, guaranteeing accurate updates when new state depends on previous state.",
+    "corrected": false,
+    "answer": "C. When the new state depends on the old state.",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0245",
+    "topic": "Concurrency",
+    "question": "A promise represents what?",
+    "options": [
+      "A. A single value in the future",
+      "B. Multiple values in the present",
+      "C. Multiple values in the future",
+      "D. A single value in the present"
+    ],
+    "answer_index": 0,
+    "explanation": "A promise represents the eventual completion (or failure) of a single asynchronous operation and its resulting value.",
+    "corrected": false,
+    "answer": "A. A single value in the future",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0246",
+    "topic": "HTML/CSS",
+    "question": "Can a component be styled with a global styled sheet?",
+    "options": [
+      "A. Only function components can be styled with a global styled sheet",
+      "B. Only if the component returns HTML elements",
+      "C. Yes",
+      "D. No"
+    ],
+    "answer_index": 2,
+    "explanation": "Any component ultimately renders standard HTML elements to the DOM, and CSS selectors target those elements regardless of how they were generated. Since global stylesheets apply based on element type, class, or ID, they can style class or function components alike.",
+    "corrected": false,
+    "answer": "C. Yes",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0247",
+    "topic": "Java OOP",
+    "question": "Where should you sort and filter data?",
+    "options": [
+      "A. In a directive",
+      "B. In a pipe",
+      "C. In your component",
+      "D. In a filter"
+    ],
+    "answer_index": 2,
+    "explanation": "Sorting and filtering in Angular pipes execute on every change detection cycle, which can cause severe performance issues, especially with large datasets or complex operations. Handling this logic in the component instead allows you to control exactly when the operation runs, such as in response to specific user actions or data changes.",
+    "corrected": false,
+    "answer": "C. In your component",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0248",
+    "topic": "Java OOP",
+    "question": "What's the right syntax to assign the function doSomething as the handler of a click event?",
+    "options": [
+      "A. onClick={doSomething}",
+      "B. onClick={() => doSomething}",
+      "C. onClick={doSomething()}",
+      "D. onClick=\"doSomething\""
+    ],
+    "answer_index": 0,
+    "explanation": "Passing `doSomething` without parentheses provides a reference to the function itself, allowing React to call it only when the click event occurs. Using `doSomething()` would invoke the function immediately during render, and wrapping it in quotes treats it as a string rather than a function reference.",
+    "corrected": false,
+    "answer": "A. onClick={doSomething}",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0249",
+    "topic": "JavaScript",
+    "question": "Assuming you define the statement: \"var person: string;\" TypeScript will alert you that there is an error if you enter which additional code?",
+    "options": [
+      "A. person = { name: 'Colleen', age: 25; }",
+      "B. person = 0",
+      "C. person = ['Colleen', 'John'];",
+      "D. All of the above"
+    ],
+    "answer_index": 3,
+    "explanation": "Since person is typed as string, assigning an object, a number, or an array all violate the declared type. TypeScript's static type checker flags each assignment as a compile-time error because none of these values are assignable to the string type.",
+    "corrected": false,
+    "answer": "D. All of the above",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0250",
+    "topic": "Java OOP",
+    "question": "What is the format of the data returned by the JSON Server API?",
+    "options": [
+      "A. YAML",
+      "B. XML",
+      "C. JSON",
+      "D. CSV"
+    ],
+    "answer_index": 2,
+    "explanation": "JSON Server is a mock REST API tool that reads from a JSON file and serves its contents directly as JSON responses over HTTP. Since the underlying data store is JSON, every endpoint returns JSON-formatted objects or arrays without converting to XML, YAML, or CSV.",
+    "corrected": false,
+    "answer": "C. JSON",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0251",
+    "topic": "JavaScript",
+    "question": "What syntax do you use to render the App component into an HTML element with id \"root\"?",
+    "options": [
+      "A. ReactDOM.render(App, document.getElementById(\"root\"));",
+      "B. React.render(App, document.getElementById(\"root\"));",
+      "C. ReactDOM.mountNode(<App />, document.getElementById(\"root\"));",
+      "D. ReactDOM.render(<App />, document.getElementById(\"root\"));"
+    ],
+    "answer_index": 3,
+    "explanation": "'ReactDOM.render(<App />, document.getElementById(\"root\"));' is correct.",
+    "corrected": false,
+    "answer": "D. ReactDOM.render(<App />, document.getElementById(\"root\"));",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0252",
+    "topic": "JavaScript",
+    "question": "What function can be used to change the state of a React component?",
+    "options": [
+      "A. this.state = {}",
+      "B. this.setState",
+      "C. this.changeState",
+      "D. this.updateState"
+    ],
+    "answer_index": 1,
+    "explanation": "this.setState() is the official React API method for updating a component's state and triggering a re-render. It merges the provided object into the current state and schedules the necessary UI updates, unlike directly mutating this.state.",
+    "corrected": false,
+    "answer": "B. this.setState",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0253",
+    "topic": "Java OOP",
+    "question": "What can we do if components A and B are siblings and they require access to the same state element?",
+    "options": [
+      "A. Restructure the application to have A and B be related differently",
+      "B. Place the state in either A or B",
+      "C. Place the state in a third component C that is a sibling to A and B",
+      "D. Place the state in the parent component of A and B"
+    ],
+    "answer_index": 3,
+    "explanation": "'Place the state in the parent component of A and B' is correct.",
+    "corrected": false,
+    "answer": "D. Place the state in the parent component of A and B",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0254",
+    "topic": "Java OOP",
+    "question": "What is the name of the file that manages TypeScript projects?",
+    "options": [
+      "A. tsproj.config",
+      "B. tsmeta.json",
+      "C. tsconfig.json",
+      "D. package.json"
+    ],
+    "answer_index": 2,
+    "explanation": "tsconfig.json is the TypeScript project configuration file. The answer 'tsproj.config' is wrong.",
+    "corrected": true,
+    "answer": "C. tsconfig.json",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0255",
+    "topic": "JavaScript",
+    "question": "When dealing with asynchronous functions, what type of generic must your return type be?",
+    "options": [
+      "A. Async",
+      "B. Promise",
+      "C. Array",
+      "D. AsyncAwait"
+    ],
+    "answer_index": 1,
+    "explanation": "Asynchronous functions always return a Promise object, since await simply unwraps the resolved value from that Promise. Therefore, the return type must be generically typed as Promise<T>, where T represents the actual resolved value's type.",
+    "corrected": false,
+    "answer": "B. Promise",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0256",
+    "topic": "JavaScript",
+    "question": "What tool installs type declaration files?",
+    "options": [
+      "A. Duck",
+      "B. npm",
+      "C. Ruby",
+      "D. NuGet"
+    ],
+    "answer_index": 1,
+    "explanation": "npm installs TypeScript type declaration files (.d.ts) from repositories like DefinitelyTyped using packages prefixed with @types, such as @types/react or @types/node. This allows developers to add type information for JavaScript libraries that lack built-in TypeScript support directly through the npm package manager.",
+    "corrected": false,
+    "answer": "B. npm",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0257",
+    "topic": "JavaScript",
+    "question": "What should appear to the left of the arrow in an arrow function?",
+    "options": [
+      "A. Function name",
+      "B. Function parameters",
+      "C. Curly braces",
+      "D. Function return value"
+    ],
+    "answer_index": 1,
+    "explanation": "In an arrow function, the parameters are placed inside parentheses immediately before the arrow symbol, such as (x, y) => x + y. This syntax tells JavaScript which inputs the function accepts before defining the logic that follows the arrow.",
+    "corrected": false,
+    "answer": "B. Function parameters",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0258",
+    "topic": "Java OOP",
+    "question": "What character separates a variable from its type annotation in a declaration?",
+    "options": [
+      "A. #",
+      "B. $",
+      "C. %",
+      "D. :"
+    ],
+    "answer_index": 3,
+    "explanation": "In most typed languages, a colon (:) is the conventional syntax used to separate a variable name from its declared type, such as in \"x: int\". This notation clearly distinguishes the identifier from its type annotation, making the code readable and unambiguous to both compilers and developers.",
+    "corrected": false,
+    "answer": "D. :",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0260",
+    "topic": "JavaScript",
+    "question": "What keyword requires a variable to be declared before it's used?",
+    "options": [
+      "A. let",
+      "B. dim",
+      "C. declare",
+      "D. set"
+    ],
+    "answer_index": 0,
+    "explanation": "The `let` keyword explicitly declares a variable and its scope before it can be assigned a value or used in code. Attempting to use a variable declared with `let` before its declaration triggers a reference error, enforcing declare-before-use behavior.",
+    "corrected": false,
+    "answer": "A. let",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0261",
+    "topic": "Java OOP",
+    "question": "What keyword declares a class member in the class rather than an instance of the class?",
+    "options": [
+      "A. enum",
+      "B. static",
+      "C. intersection",
+      "D. function"
+    ],
+    "answer_index": 1,
+    "explanation": "The static keyword binds a member directly to the class itself, meaning only one copy exists regardless of how many instances are created. This differs from instance members, which are allocated separately for each object created from the class.",
+    "corrected": false,
+    "answer": "B. static",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0262",
+    "topic": "JavaScript",
+    "question": "Within which function scope would a variable that you declare using the keyword var cover?",
+    "options": [
+      "A. Within the entire function scope",
+      "B. Within an if statement scope",
+      "C. Within a for loop scope",
+      "D. Within a while loop scope"
+    ],
+    "answer_index": 0,
+    "explanation": "Variables declared with var are function-scoped, meaning they are accessible anywhere within the entire function in which they are declared, regardless of nested blocks. Unlike let or const, var ignores block boundaries such as if statements, for loops, or while loops, effectively hoisting the declaration to the top of the enclosing function.",
+    "corrected": false,
+    "answer": "A. Within the entire function scope",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0263",
+    "topic": "Java OOP",
+    "question": "What keyword lets you derive a subclass from a superclass?",
+    "options": [
+      "A. stretches",
+      "B. extends",
+      "C. sub",
+      "D. follows"
+    ],
+    "answer_index": 1,
+    "explanation": "The \"extends\" keyword establishes inheritance, allowing a subclass to acquire fields and methods from its superclass. This creates an \"is-a\" relationship, enabling code reuse and polymorphism in object-oriented programming languages like Java.",
+    "corrected": false,
+    "answer": "B. extends",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0264",
+    "topic": "Java OOP",
+    "question": "EventEmitter class's simple interface, which basically encompasses two methods, can be used to trigger custom events and listen to events as well.",
+    "options": [
+      "A. exit()",
+      "B. superscript()",
+      "C. subscribe()",
+      "D. emit()"
+    ],
+    "answer_index": 3,
+    "explanation": "I believe there's an error in the provided answer key. The correct answer should be D. emit(), not C. subscribe(). The EventEmitter class's two core methods are `emit()` (to trigger custom events) and `on()` or `once()` (to listen to events), not `subscribe()`. While some event systems use `subscribe()`, Node.js's EventEmitter specifically uses `emit()` as its standard method for triggering events.",
+    "corrected": false,
+    "answer": "D. emit()",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0266",
+    "topic": "JavaScript",
+    "question": "A promise represents the final result of an ______ operation.",
+    "options": [
+      "A. asynchronous",
+      "B. synchronous",
+      "C. sequential",
+      "D. recursive"
+    ],
+    "answer_index": 0,
+    "explanation": "A promise represents the eventual completion (or failure) of a single asynchronous operation and its resulting value.",
+    "corrected": false,
+    "answer": "A. asynchronous",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0270",
+    "topic": "HTML/CSS",
+    "question": "Data bindings are applied as ______ or as special sequences of characters in strings.",
+    "options": [
+      "A. expressions",
+      "B. attributes on HTML elements",
+      "C. elements itself",
+      "D. none of above"
+    ],
+    "answer_index": 1,
+    "explanation": "Data bindings are typically applied directly on HTML elements as special attributes, such as ng-bind or v-model, which instruct the framework to link element properties to underlying data. This attribute-based approach allows the binding syntax to remain embedded within the HTML markup itself, enabling declarative connections between the view and the data model.",
+    "corrected": false,
+    "answer": "B. attributes on HTML elements",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0271",
+    "topic": "JavaScript",
+    "question": "A data binding has these four parts:",
+    "options": [
+      "A. host element, curly brackets, target, expression",
+      "B. host element, square brackets, target, evaluation",
+      "C. host element, square brackets, target, expression",
+      "D. host element, parentheses, target, expression"
+    ],
+    "answer_index": 2,
+    "explanation": "'host element, square brackets, target, expression' is correct.",
+    "corrected": false,
+    "answer": "C. host element, square brackets, target, expression",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0272",
+    "topic": "JavaScript",
+    "question": "Attribute binding is similar to property binding but is tied to the ______ rather than the DOM property.",
+    "options": [
+      "A. Page attribute",
+      "B. DOM attribute",
+      "C. Root attribute",
+      "D. HTML attribute"
+    ],
+    "answer_index": 3,
+    "explanation": "Attribute binding sets an HTML attribute directly on an element, such as aria-* or colspan, which have no corresponding DOM property. This differs from property binding, which updates the DOM object's property rather than the markup attribute itself.",
+    "corrected": false,
+    "answer": "D. HTML attribute",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0273",
+    "topic": "HTML/CSS",
+    "question": "Using the ______ animation function, the parent animation can allow the child animation to run at the exact correct time.",
+    "options": [
+      "A. animateChild",
+      "B. childAnimate",
+      "C. animateInner",
+      "D. innerChild"
+    ],
+    "answer_index": 0,
+    "explanation": "The animateChild() function is an Angular animation query method that explicitly triggers child animations from within a parent animation sequence. It ensures child animations execute at the precise timing point specified by the parent, rather than running independently or immediately.",
+    "corrected": false,
+    "answer": "A. animateChild",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0275",
+    "topic": "HTML/CSS",
+    "question": "It's always possible to make use of animation input parameters by setting more data via the ______ property.",
+    "options": [
+      "A. options.param",
+      "B. option.params",
+      "C. option.param",
+      "D. options.params"
+    ],
+    "answer_index": 3,
+    "explanation": "The property must be named \"options\" (plural), since it refers to the full options object passed to configure the animation, not a single option. Within that object, \"params\" (plural) is used because it holds multiple parameter values as key-value pairs for passing extra data.",
+    "corrected": false,
+    "answer": "D. options.params",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0276",
+    "topic": "Java OOP",
+    "question": "Which bootstrap styles are used to create a vertical pills navigation?",
+    "options": [
+      "A. .nav, .nav-tabs",
+      "B. .nav, .nav-pills",
+      "C. .nav, .nav-pills, .nav-stacked",
+      "D. .nav, .nav-tabs, .nav-justified"
+    ],
+    "answer_index": 2,
+    "explanation": "The .nav and .nav-pills classes create the basic pill-style navigation, while .nav-stacked forces the pills to display vertically instead of horizontally. Without .nav-stacked, the pills would default to a horizontal layout, so all three classes are required for a vertical pills navigation.",
+    "corrected": false,
+    "answer": "C. .nav, .nav-pills, .nav-stacked",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0277",
+    "topic": "Java OOP",
+    "question": "Which bootstrap styles are used to create a justified tabs navigation?",
+    "options": [
+      "A. .nav, .nav-tabs",
+      "B. .nav, .nav-pills",
+      "C. .nav, .nav-pills, .nav-stacked",
+      "D. .nav, .nav-tabs, .nav-justified"
+    ],
+    "answer_index": 3,
+    "explanation": "The .nav and .nav-tabs classes establish the base tabbed navigation structure with proper styling and borders. Adding .nav-justified stretches the tabs equally across the parent width, creating evenly distributed justified navigation.",
+    "corrected": false,
+    "answer": "D. .nav, .nav-tabs, .nav-justified",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0279",
+    "topic": "HTML/CSS",
+    "question": "Bootstrap's grid system allows up to ______.",
+    "options": [
+      "A. 6 columns across the page",
+      "B. 12 columns across the page",
+      "C. 8 columns across the page",
+      "D. 16 columns across the page"
+    ],
+    "answer_index": 1,
+    "explanation": "Bootstrap's grid system is based on a 12-column layout, dividing the page width into 12 equal fractions for flexible column arrangements. This allows developers to create responsive layouts by combining columns (e.g., 6+6 or 4+4+4) that always sum to 12 within a row.",
+    "corrected": false,
+    "answer": "B. 12 columns across the page",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0280",
+    "topic": "Java OOP",
+    "question": "Which class makes an image automatically adjust to fit the size of the screen?",
+    "options": [
+      "A. .img-res-image",
+      "B. .img-responsive-image",
+      "C. .img-responsive",
+      "D. .img-res"
+    ],
+    "answer_index": 2,
+    "explanation": "The `.img-responsive` class in Bootstrap applies `max-width: 100%` and `height: auto`, allowing images to scale proportionally within their container. This ensures images resize dynamically based on the viewport or parent element's dimensions, maintaining responsiveness across different screen sizes.",
+    "corrected": false,
+    "answer": "C. .img-responsive",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0281",
+    "topic": "Java OOP",
+    "question": "Which class should be used to indicate a button group?",
+    "options": [
+      "A. btn-group-buttons",
+      "B. btn-group",
+      "C. btn-grp",
+      "D. btn-buttons"
+    ],
+    "answer_index": 1,
+    "explanation": "In Bootstrap, the \"btn-group\" class is the official CSS class used to wrap multiple buttons and style them as a cohesive, connected group. This class handles the necessary spacing, border-radius adjustments, and alignment to visually merge individual button elements together.",
+    "corrected": false,
+    "answer": "B. btn-group",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0282",
+    "topic": "JavaScript",
+    "question": "Expression Language is the part of Core Container in Spring Framework.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "explanation": "Spring Expression Language (SpEL) is bundled within the Core Container module, specifically alongside Beans, Core, Context, and Expression sub-modules. It provides a powerful expression language for querying and manipulating object graphs at runtime, integrated directly into the container's configuration metadata processing.",
+    "corrected": false,
+    "answer": "A. True",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0283",
+    "topic": "Java OOP",
+    "question": "AOP is the part of Core Container in Spring Framework.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 1,
+    "explanation": "AOP is a separate module in Spring Framework, distinct from the Core Container which includes Beans, Core, Context, and SpEL modules. The Core Container handles dependency injection and bean management, while AOP provides aspect-oriented programming capabilities like cross-cutting concerns.",
+    "corrected": false,
+    "answer": "B. False",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0284",
+    "topic": "JavaScript",
+    "question": "In which Spring version has Spring Expression Language been supported?",
+    "options": [
+      "A. Spring 2.0",
+      "B. Spring 2.5",
+      "C. Spring 3.0",
+      "D. Spring 4.0"
+    ],
+    "answer_index": 2,
+    "explanation": "Spring Expression Language (SpEL) was introduced as a core feature in Spring 3.0, providing a unified expression language across the entire Spring portfolio. It enabled querying and manipulating object graphs at runtime, supporting bean definitions, annotations, and XML configuration with expression-based syntax.",
+    "corrected": false,
+    "answer": "C. Spring 3.0",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0285",
+    "topic": "Java OOP",
+    "question": "How to get the object of DAO in Spring Framework?",
+    "options": [
+      "A. Using new operator",
+      "B. Using Spring Dependency Injection",
+      "C. Using static factory method",
+      "D. Using reflection API"
+    ],
+    "answer_index": 1,
+    "explanation": "Spring Dependency Injection allows the container to manage and inject DAO objects automatically, eliminating manual instantiation. This promotes loose coupling, as beans are configured via XML or annotations and wired through the IoC container.",
+    "corrected": false,
+    "answer": "B. Using Spring Dependency Injection",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0286",
+    "topic": "Java OOP",
+    "question": "Which is correct for Spring Framework?",
+    "options": [
+      "A. Spring framework is a heavy-weight solution.",
+      "B. Spring framework is a light-weight solution.",
+      "C. Spring framework is only for web applications.",
+      "D. Spring framework does not support dependency injection."
+    ],
+    "answer_index": 1,
+    "explanation": "Spring uses POJOs and lightweight containers, avoiding the heavy overhead of traditional EJB-based enterprise frameworks. It provides modular architecture and minimal footprint through dependency injection, allowing developers to use only the components they need without excessive resource consumption.",
+    "corrected": false,
+    "answer": "B. Spring framework is a light-weight solution.",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0287",
+    "topic": "Java OOP",
+    "question": "In which Spring version were Java 5 features introduced?",
+    "options": [
+      "A. Spring 2.0",
+      "B. Spring 2.5",
+      "C. Spring 3.0",
+      "D. Spring 4.0"
+    ],
+    "answer_index": 0,
+    "explanation": "Spring 2.0 introduced support for Java 5 features such as annotations, generics, and varargs, allowing developers to use annotation-based configuration alongside traditional XML. This release marked Spring's transition toward embracing newer Java language constructs while maintaining backward compatibility with earlier JDK versions.",
+    "corrected": false,
+    "answer": "A. Spring 2.0",
+    "trust": "baseline"
+  }
+]

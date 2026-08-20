@@ -1,0 +1,966 @@
+[
+  {
+    "id": "q0484",
+    "topic": "Java OOP",
+    "question": "Which DevOps principle focuses on product and service thinking?",
+    "options": [
+      "A. Customer-centric action",
+      "B. Continuous improvement",
+      "C. Create with the end in mind",
+      "D. Automate everything you can"
+    ],
+    "answer_index": 2,
+    "explanation": "\"Create with the end in mind\" emphasizes designing products and services by envisioning their final value and purpose before development begins. This directly reflects product and service thinking, as it ensures teams build with the complete lifecycle and end-user outcomes in focus from the start.",
+    "corrected": false,
+    "answer": "C. Create with the end in mind",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0485",
+    "topic": "Java OOP",
+    "question": "In order to minimize risks to the business within DevOps, what is the main goal of version control?",
+    "options": [
+      "A. Ensure the ability to alert when configuration changes from the desired state.",
+      "B. Ensure the ability to re-create the previous state of the test environment.",
+      "C. Ensure the ability to re-create the production environment and build processes.",
+      "D. Ensure the ability to share the source code between different developers teams."
+    ],
+    "answer_index": 2,
+    "explanation": "'Ensure the ability to re-create the previous state of the test environment.' is correct.",
+    "corrected": false,
+    "answer": "C. Ensure the ability to re-create the production environment and build processes.",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0486",
+    "topic": "Java OOP",
+    "question": "What is a continuous build? Select all that apply.",
+    "options": [
+      "A. A build that runs non-stop, over and over again.",
+      "B. A build that has not failed in 10 continuous attempts.",
+      "C. A build that is executed every hour/day by a continuous integration server.",
+      "D. A build that is executed on every commit by a continuous integration server."
+    ],
+    "answer_index": 3,
+    "explanation": "'A build that is executed every hour/day by a continuous integration server.' is correct.",
+    "corrected": false,
+    "answer": "D. A build that is executed on every commit by a continuous integration server.",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0487",
+    "topic": "Java OOP",
+    "question": "DevOps is primarily about:",
+    "options": [
+      "A. Tools and their usage",
+      "B. Processes and adherence",
+      "C. Governance and audit processes",
+      "D. Tools, processes, and culture"
+    ],
+    "answer_index": 3,
+    "explanation": "DevOps combines the right tooling for automation, well-defined processes for consistency, and a collaborative culture that breaks down silos between development and operations teams. Focusing on only one dimension, such as tools or processes alone, misses the cultural shift toward shared responsibility, communication, and continuous feedback that makes DevOps effective.",
+    "corrected": false,
+    "answer": "D. Tools, processes, and culture",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0488",
+    "topic": "Java OOP",
+    "question": "Which statement best describes the relationship between DevOps and Continuous Delivery?",
+    "options": [
+      "A. DevOps and Continuous Delivery are the same thing.",
+      "B. DevOps and Continuous Delivery share a background in Agile methods and LEAN thinking.",
+      "C. DevOps and Continuous Delivery share common processes.",
+      "D. DevOps and Continuous Delivery are not related and are mutually exclusive."
+    ],
+    "answer_index": 1,
+    "explanation": "'DevOps and Continuous Delivery share a background in Agile methods and LEAN thinking.' is correct.",
+    "corrected": false,
+    "answer": "B. DevOps and Continuous Delivery share a background in Agile methods and LEAN thinking.",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0489",
+    "topic": "Java OOP",
+    "question": "How does a DevOps organization act in principle when it comes to financing its work?",
+    "options": [
+      "A. It finances special projects to serve its clients.",
+      "B. It finances products and services to serve its clients.",
+      "C. It finances teams in matrix organizations and these teams are responsible for handling their own budgets.",
+      "D. It finances development and operations teams separately, so they take care of their own business."
+    ],
+    "answer_index": 1,
+    "explanation": "'It finances products and services to serve its clients.' is correct.",
+    "corrected": false,
+    "answer": "B. It finances products and services to serve its clients.",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0490",
+    "topic": "Java OOP",
+    "question": "POM in Maven stands for ________.",
+    "options": [
+      "A. Project Object Model",
+      "B. Process Object Model",
+      "C. Project Object Method",
+      "D. All of the above"
+    ],
+    "answer_index": 0,
+    "explanation": "POM stands for Project Object Model, which is an XML file (pom.xml) that describes a Maven project's configuration, dependencies, plugins, and build settings. It serves as the fundamental unit of work in Maven, providing all the necessary information for building and managing the project.",
+    "corrected": false,
+    "answer": "A. Project Object Model",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0491",
+    "topic": "Java OOP",
+    "question": "In DevOps practices, what is a widely used reusable asset that helps reinforce the information security of software deliverables?",
+    "options": [
+      "A. A security checklist",
+      "B. A build script",
+      "C. A README file",
+      "D. A Dockerfile"
+    ],
+    "answer_index": 0,
+    "explanation": "A security checklist provides a standardized, repeatable set of verification steps that can be applied across multiple projects and pipeline stages, ensuring consistent enforcement of security requirements. Because it's reusable and easily integrated into CI/CD workflows, it helps teams systematically catch vulnerabilities, misconfigurations, and compliance gaps before deployment.",
+    "corrected": false,
+    "answer": "A. A security checklist",
+    "trust": "baseline",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "id": "q0492",
+    "topic": "Java OOP",
+    "question": "DevOps is NOT a set of ______ steps.",
+    "options": [
+      "A. Development",
+      "B. Fixed",
+      "C. Testing",
+      "D. Design"
+    ],
+    "answer_index": 1,
+    "explanation": "DevOps is a continuous, iterative culture and practice, not a rigid sequence of predetermined actions. Its processes are meant to adapt through feedback loops, automation, and collaboration, making \"fixed steps\" contrary to its core philosophy.",
+    "corrected": false,
+    "answer": "B. Fixed",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0493",
+    "topic": "HTML/CSS",
+    "question": "What is the sequence in which Maven looks for the resources?",
+    "options": [
+      "A. Local -> Remote -> Maven Central",
+      "B. Remote -> Maven Central -> Local",
+      "C. Remote -> Local -> Maven Central",
+      "D. Maven Central -> Local -> Remote"
+    ],
+    "answer_index": 0,
+    "explanation": "Maven first checks the local repository (~/.m2) since it's fastest and avoids network calls for already-downloaded dependencies. If not found locally, it queries configured remote repositories before finally falling back to Maven Central as the default public repository.",
+    "corrected": false,
+    "answer": "A. Local -> Remote -> Maven Central",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0494",
+    "topic": "Java OOP",
+    "question": "Why is it recommended that production and development environments should be similar?",
+    "options": [
+      "A. It is easier to manage for the ops team.",
+      "B. It improves the accuracy of testing, eases the task of deployment of software, and reduces chances of major problems when deploying software into production.",
+      "C. People can fix defects directly in the production environment.",
+      "D. Development environments are cheaper, hence it makes sense to make the production environment similar (and cheaper) to the development environments."
+    ],
+    "answer_index": 1,
+    "explanation": "'It improves the accuracy of testing, eases the task of deployment of software, and reduces chances of major problems when deploying software into production.' is correct.",
+    "corrected": false,
+    "answer": "B. It improves the accuracy of testing, eases the task of deployment of software, and reduces chances of major problems when deploying software into production.",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0495",
+    "topic": "Java OOP",
+    "question": "DevOps can be implemented in any _________.",
+    "options": [
+      "A. Process",
+      "B. Environment",
+      "C. Defects",
+      "D. None of the above"
+    ],
+    "answer_index": 1,
+    "explanation": "DevOps is a set of practices and cultural principles that can be applied across various IT environments, including development, testing, staging, and production. Its core focus on automation, collaboration, and continuous delivery makes it adaptable to any environment, regardless of specific technologies or infrastructure used.",
+    "corrected": false,
+    "answer": "B. Environment",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0496",
+    "topic": "Java OOP",
+    "question": "What is continuous deployment? Select all that apply.",
+    "options": [
+      "A. Deployment on every code push/commit",
+      "B. Deployment every hour/day",
+      "C. Local deployment on the developer's laptop",
+      "D. Deployment on IBM Cloud"
+    ],
+    "answer_index": 0,
+    "explanation": "Continuous deployment automatically releases code to production immediately after it passes automated tests, triggered directly by each commit or push to the repository. This eliminates manual intervention and scheduling delays, ensuring changes reach users as soon as they're validated, unlike periodic or platform-specific deployment approaches.",
+    "corrected": false,
+    "answer": "A. Deployment on every code push/commit",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0497",
+    "topic": "HTML/CSS",
+    "question": "In DevOps, one of the significant ROI areas is:",
+    "options": [
+      "A. Zero defects",
+      "B. Faster time to value",
+      "C. Less feedback",
+      "D. Less customer experience"
+    ],
+    "answer_index": 1,
+    "explanation": "DevOps practices like continuous integration and automated deployment pipelines significantly reduce the time between development and production release. This accelerated delivery cycle allows organizations to realize business value from new features faster, directly improving return on investment.",
+    "corrected": false,
+    "answer": "B. Faster time to value",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0498",
+    "topic": "HTML/CSS",
+    "question": "How do you remove local (untracked) files and directories from the current Git working tree?\ni. git clean -f\nii. git delete -f\niii. git remove -f -d\niv. git add --all\nv. git reset --hard HEAD",
+    "options": [
+      "A. Only i",
+      "B. Only ii and iii",
+      "C. Only i and iv",
+      "D. All of the above."
+    ],
+    "answer_index": 0,
+    "explanation": "`git clean -f` specifically removes untracked files from the working directory, and adding `-d` also removes untracked directories. The other commands don't achieve this: `git delete` and `git remove -f -d` aren't valid Git commands, `git add --all` stages files rather than deleting them, and `git reset --hard` only affects tracked files, leaving untracked ones untouched.",
+    "corrected": false,
+    "answer": "A. Only i",
+    "trust": "baseline",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "id": "q0499",
+    "topic": "HTML/CSS",
+    "question": "Which event occurs when the user clicks on the HTML element?",
+    "options": [
+      "A. onmouseover",
+      "B. onchange",
+      "C. onmouseclick",
+      "D. onclick"
+    ],
+    "answer_index": 3,
+    "explanation": "The onclick event fires specifically when a user presses and releases a mouse button on an HTML element, triggering the associated JavaScript handler. Options like onmouseover detect hovering, onchange detects value modifications, and onmouseclick is not a valid DOM event name.",
+    "corrected": false,
+    "answer": "D. onclick",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0500",
+    "topic": "HTML/CSS",
+    "question": "The correct HTML tag to left align the content inside a table cell is:",
+    "options": [
+      "A. <td align=\"left\">",
+      "B. <td align=\"right\">",
+      "C. <td leftAlign>",
+      "D. <table align=\"left\">"
+    ],
+    "answer_index": 0,
+    "explanation": "The align attribute on a <td> tag controls horizontal text alignment within that specific table cell, and \"left\" sets it to left-justified. This attribute directly targets the cell content, unlike table-level alignment or invalid attribute names.",
+    "corrected": false,
+    "answer": "A. <td align=\"left\">",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0501",
+    "topic": "Java OOP",
+    "question": "What is the output of the Java Code Snippet using StringJoiner with delimiter '-' and prefix '(' and suffix ')' after adding A, B, C?",
+    "options": [
+      "A. (A-B-C)",
+      "B. -(B)-(C)",
+      "C. (-A-)(-B-)(-C-)",
+      "D. A-B-C"
+    ],
+    "answer_index": 0,
+    "explanation": "The code produces '(A-B-C)' based on Java execution semantics.",
+    "corrected": false,
+    "answer": "A. (A-B-C)",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0502",
+    "topic": "Java OOP",
+    "question": "What are the Different Modes of Autowiring?",
+    "options": [
+      "A. byName, byType, constructor, autodetect",
+      "B. byName, byType, constructor, autocorrect",
+      "C. byName, byContent, constructor, autodetect",
+      "D. byName, byContent, setter, autodetect"
+    ],
+    "answer_index": 0,
+    "explanation": "Spring Framework supports four autowiring modes: byName (matches bean names with property names), byType (matches bean types with property types), constructor (autowires constructor arguments), and autodetect (automatically chooses between constructor and byType modes). The other options contain invalid modes like \"autocorrect,\" \"byContent,\" and \"setter\" which are not recognized Spring autowiring strategies.",
+    "corrected": false,
+    "answer": "A. byName, byType, constructor, autodetect",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0503",
+    "topic": "Java OOP",
+    "question": "Which of the below API Calls provides you the security information?",
+    "options": [
+      "A. Only HttpServletRequest.isUserInRole()",
+      "B. Only HttpServletRequest.getUserPrincipal()",
+      "C. Both HttpServletRequest.isUserInRole() and HttpServletRequest.getUserPrincipal()",
+      "D. Neither HttpServletRequest.isUserInRole() nor HttpServletRequest.getUserPrincipal()"
+    ],
+    "answer_index": 2,
+    "explanation": "'Both HttpServletRequest.isUserInRole() and HttpServletRequest.getUserPrincipal()' is correct.",
+    "corrected": false,
+    "answer": "C. Both HttpServletRequest.isUserInRole() and HttpServletRequest.getUserPrincipal()",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0504",
+    "topic": "Java OOP",
+    "question": "What does it mean by publishing a REST service in Spring?",
+    "options": [
+      "A. Publishing an application's data as JSON over a REST service",
+      "B. Publishing an application's data as XML over a REST service",
+      "C. Sharing Database within two microservices using Spring Data Access Object (DAO)",
+      "D. All of the above"
+    ],
+    "answer_index": 3,
+    "explanation": "'Publishing an application's data as JSON over a REST service' is correct.",
+    "corrected": false,
+    "answer": "D. All of the above",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0505",
+    "topic": "Concurrency",
+    "question": "In your Data Access Object (DAO) method, you neither need to surround your code with a try/catch block nor declare throwing an exception in the method signature.",
+    "options": [
+      "A. TRUE",
+      "B. FALSE"
+    ],
+    "answer_index": 1,
+    "explanation": "DAO methods typically interact with databases through JDBC or ORM frameworks, which throw checked exceptions like SQLException that must be handled or declared. Ignoring these exceptions would cause compilation errors, since Java enforces handling of checked exceptions at compile time.",
+    "corrected": false,
+    "answer": "B. FALSE",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0506",
+    "topic": "Java OOP",
+    "question": "Which annotation is used as a substitute for the initialization method?",
+    "options": [
+      "A. @PostConstruct",
+      "B. @PreDestroy",
+      "C. @PreConstruct",
+      "D. @Initialize"
+    ],
+    "answer_index": 0,
+    "explanation": "@PostConstruct marks a method that runs automatically after dependency injection completes, effectively replacing traditional constructor-based initialization logic. This lets the container invoke setup code once the bean is fully constructed and injected, ensuring all dependencies are available before initialization runs.",
+    "corrected": false,
+    "answer": "A. @PostConstruct",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0507",
+    "topic": "Java OOP",
+    "question": "A logger location where logging information is sent is called:",
+    "options": [
+      "A. appender",
+      "B. logger",
+      "C. component",
+      "D. handler"
+    ],
+    "answer_index": 0,
+    "explanation": "An appender is a logging component that defines the destination for log output, such as a console, file, or remote server. Frameworks like Log4j use appenders to route formatted log messages to these specific targets for storage or display.",
+    "corrected": false,
+    "answer": "A. appender",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0508",
+    "topic": "Java OOP",
+    "question": "Sharding a MongoDB database across many server instances can be achieved with:",
+    "options": [
+      "A. LAN",
+      "B. SAN",
+      "C. MAN",
+      "D. WAN"
+    ],
+    "answer_index": 0,
+    "explanation": "Sharding distributes data across multiple servers that must communicate with low latency and high bandwidth to synchronize and route queries efficiently. A LAN provides the fast, reliable local connectivity needed between these tightly coupled server instances within a data center.",
+    "corrected": false,
+    "answer": "A. LAN",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0509",
+    "topic": "Java OOP",
+    "question": "In MongoDB, which operation often uses an index and has better performance than those that do not use an index?",
+    "options": [
+      "A. SELECT",
+      "B. UPDATE",
+      "C. DELETE",
+      "D. SORT"
+    ],
+    "answer_index": 3,
+    "explanation": "Sort operations that use an index can retrieve documents already in the required order, avoiding an expensive in-memory sort stage. Without an index, MongoDB must load all matching documents into memory and sort them manually, which is slower and resource-intensive.",
+    "corrected": false,
+    "answer": "D. SORT",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0510",
+    "topic": "Java OOP",
+    "question": "What type of management does 'Capped Collections' provide for inserted documents in MongoDB?",
+    "options": [
+      "A. FIFO",
+      "B. LIFO",
+      "C. LRU",
+      "D. MRU"
+    ],
+    "answer_index": 0,
+    "explanation": "Capped collections maintain insertion order and automatically remove the oldest documents when the fixed size limit is reached, making room for new entries. This behavior is a classic FIFO (First-In-First-Out) pattern, as the earliest inserted documents are the first to be evicted.",
+    "corrected": false,
+    "answer": "A. FIFO",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0512",
+    "topic": "JavaScript",
+    "question": "Redux is an exclusive feature of the React store?",
+    "options": [
+      "A. TRUE",
+      "B. FALSE"
+    ],
+    "answer_index": 1,
+    "explanation": "Redux is a standalone state management library that can be used with any JavaScript framework or library, not just React. While Redux is commonly paired with React, it has been successfully integrated with Angular, Vue, Svelte, and other frameworks, making it framework-agnostic.",
+    "corrected": false,
+    "answer": "B. FALSE",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0515",
+    "topic": "JavaScript",
+    "question": "Which of the following is not a callback method of React?",
+    "options": [
+      "A. render()",
+      "B. componentDidMount()",
+      "C. componentFailedToMount()",
+      "D. componentWillUnmount()"
+    ],
+    "answer_index": 2,
+    "explanation": "'componentFailedToMount()' is the correct answer per language specification.",
+    "corrected": false,
+    "answer": "C. componentFailedToMount()",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0516",
+    "topic": "JavaScript",
+    "question": "How can we render JSX in the browser?",
+    "options": [
+      "A. Only Using Babel and Using Typescript",
+      "B. Only Using Redux",
+      "C. Using Babel, Typescript and Redux",
+      "D. Only Using Flux and Redux"
+    ],
+    "answer_index": 0,
+    "explanation": "Babel and TypeScript both compile JSX syntax into plain JavaScript function calls (like React.createElement) that browsers can natively execute. Since browsers cannot parse JSX directly, a transpilation step using either tool is required before the code runs, unlike Redux or Flux, which are state management libraries unrelated to syntax transformation.",
+    "corrected": false,
+    "answer": "A. Only Using Babel and Using Typescript",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0519",
+    "topic": "Java OOP",
+    "question": "Is the following Java code snippet valid, and what happens when it runs?\n\nOptional<String> opt = Optional.of(\"Hello\");\nif (opt.isPresent()) {\n    System.out.println(opt.get());\n}",
+    "options": [
+      "A. Yes, it compiles and prints \"Hello\"",
+      "B. No, it fails to compile because Optional.of() cannot accept a String argument",
+      "C. No, it throws a NullPointerException at runtime",
+      "D. Yes, it compiles but prints \"null\""
+    ],
+    "answer_index": 0,
+    "explanation": "Optional.of(\"Hello\") creates an Optional containing the non-null String \"Hello\", which is perfectly valid since Optional.of() accepts any non-null object reference. The isPresent() check returns true, so opt.get() executes and prints \"Hello\" to the console.",
+    "corrected": false,
+    "answer": "A. Yes, it compiles and prints \"Hello\"",
+    "trust": "baseline",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "id": "q0520",
+    "topic": "Java OOP",
+    "question": "Service discovery tools help by reducing the problem of how processes and services in a cluster can find and talk to one another.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "explanation": "Service discovery tools maintain a registry that maps service names to their current network locations, automatically updating as instances scale or fail. This eliminates hardcoded IP addresses, allowing processes to dynamically locate and connect to dependent services within a distributed cluster.",
+    "corrected": false,
+    "answer": "A. True",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0521",
+    "topic": "Java OOP",
+    "question": "In Java Optional.ofNullable() method, it returns a non-empty Optional if the given object has a value, otherwise it returns an empty Optional.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "explanation": "Optional.ofNullable() checks if the passed value is null; if it is non-null, it wraps it in an Optional containing that value. If the value is null, it returns Optional.empty(), avoiding a NullPointerException while explicitly representing the absence of a value.",
+    "corrected": false,
+    "answer": "A. True",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0524",
+    "topic": "Java OOP",
+    "question": "Load Balancing improves the distribution of workloads across multiple computing resources.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "explanation": "Load balancing distributes incoming requests or tasks across multiple servers, CPUs, or network links, preventing any single resource from becoming overwhelmed. This optimizes resource utilization, reduces latency, and increases throughput and system reliability by avoiding bottlenecks and single points of failure.",
+    "corrected": false,
+    "answer": "A. True",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0525",
+    "topic": "Java OOP",
+    "question": "What are the core operations of DevOps with applications development and infrastructure?",
+    "options": [
+      "A. Provisioning, Configuration and Orchestration",
+      "B. Code Building, Coverage and Unit Testing",
+      "C. Packaging and Deployment",
+      "D. All of the above"
+    ],
+    "answer_index": 3,
+    "explanation": "DevOps unifies infrastructure and application delivery through provisioning, configuration, and orchestration to manage environments consistently and at scale. It also encompasses code building, coverage, unit testing, packaging, and deployment to ensure reliable, automated software releases across the entire pipeline.",
+    "corrected": false,
+    "answer": "D. All of the above",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0527",
+    "topic": "HTML/CSS",
+    "question": "Which Bootstrap class adds zebra-stripes to a table?",
+    "options": [
+      "A. table-bordered",
+      "B. table-zebra",
+      "C. table-striped",
+      "D. even and odd"
+    ],
+    "answer_index": 2,
+    "explanation": "The `table-striped` class applies alternating background colors to table rows using CSS nth-child selectors, creating the zebra-stripe effect. This differs from `table-bordered`, which adds borders, and `table-zebra`, which isn't a valid Bootstrap class.",
+    "corrected": false,
+    "answer": "C. table-striped",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0528",
+    "topic": "Java OOP",
+    "question": "Which JavaScript method is like the mathematical 'for all' quantifier?",
+    "options": [
+      "A. every()",
+      "B. some()",
+      "C. all()",
+      "D. forall()"
+    ],
+    "answer_index": 0,
+    "explanation": "The every() method returns true only if every element in the array satisfies the provided testing function, mirroring the universal quantifier ∀ in logic. This matches the mathematical \"for all\" concept exactly, since it checks whether a condition holds across all elements without exception.",
+    "corrected": false,
+    "answer": "A. every()",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0529",
+    "topic": "Java OOP",
+    "question": "Which of the following methods CANNOT be used to add array elements in JavaScript?",
+    "options": [
+      "A. push()",
+      "B. splice()",
+      "C. shift()",
+      "D. All can be used."
+    ],
+    "answer_index": 2,
+    "explanation": "'All can be used.' is the correct answer per language specification.",
+    "corrected": false,
+    "answer": "C. shift()",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0530",
+    "topic": "Java OOP",
+    "question": "In JavaScript, which is a comma separated list of colon separated name value pairs enclosed within curly braces?",
+    "options": [
+      "A. An object prototype",
+      "B. A map object",
+      "C. A class",
+      "D. An object literal"
+    ],
+    "answer_index": 3,
+    "explanation": "An object literal uses curly braces to enclose zero or more comma-separated key:value pairs, where each name is separated from its value by a colon. This syntax directly creates an object instance in a single expression, unlike prototypes or classes which involve inheritance or blueprint definitions.",
+    "corrected": false,
+    "answer": "D. An object literal",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0531",
+    "topic": "Java OOP",
+    "question": "In JavaScript, what does the statement `if (!a[i]) continue;` do when used inside a for loop iterating over array `a`?",
+    "options": [
+      "A. It skips the rest of the current loop iteration when a[i] is falsy (e.g., 0, '', null, undefined, NaN, or false)",
+      "B. It terminates the loop entirely when a[i] is falsy",
+      "C. It skips the rest of the current loop iteration when a[i] is truthy",
+      "D. It throws a runtime error if a[i] is undefined"
+    ],
+    "answer_index": 0,
+    "explanation": "The `!` operator negates the truthiness of `a[i]`, so the condition becomes true whenever `a[i]` is falsy (0, '', null, undefined, NaN, false). The `continue` statement then skips the remaining code in that iteration and jumps to the next iteration of the loop, without exiting the loop entirely.",
+    "corrected": false,
+    "answer": "A. It skips the rest of the current loop iteration when a[i] is falsy (e.g., 0, '', null, undefined, NaN, or false)",
+    "trust": "baseline",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "id": "q0532",
+    "topic": "JavaScript",
+    "question": "Which method is the ultimate element selection method in client-side JavaScript?",
+    "options": [
+      "A. querySelectAll()",
+      "B. querySelector()",
+      "C. querySelect()",
+      "D. querySelectorAll()"
+    ],
+    "answer_index": 3,
+    "explanation": "querySelectorAll() accepts any valid CSS selector and returns a static NodeList containing every matching element in the document, making it the most versatile selection method. Unlike querySelector(), which only returns the first match, querySelectorAll() retrieves all matches, giving developers complete control over element selection.",
+    "corrected": false,
+    "answer": "D. querySelectorAll()",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0533",
+    "topic": "HTML/CSS",
+    "question": "Which tag is used to define a clickable image map in HTML5?",
+    "options": [
+      "A. <map>",
+      "B. <area>",
+      "C. <img>",
+      "D. <figure>"
+    ],
+    "answer_index": 0,
+    "explanation": "The `<map>` tag defines a client-side image map by grouping clickable regions, identified via a name attribute linked to an image's usemap attribute. Inside `<map>`, `<area>` elements specify the actual clickable coordinates and shapes, but `<map>` is the container that establishes the map itself.",
+    "corrected": false,
+    "answer": "A. <map>",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0534",
+    "topic": "HTML/CSS",
+    "question": "What is the effect of display: flex; justify-content: space-between;?",
+    "options": [
+      "A. Aligns children vertically with equal spacing",
+      "B. Aligns children horizontally with space between them",
+      "C. Centers children horizontally",
+      "D. Stacks children in a column"
+    ],
+    "answer_index": 1,
+    "explanation": "'Aligns children horizontally with space between them' is correct.",
+    "corrected": false,
+    "answer": "B. Aligns children horizontally with space between them",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0535",
+    "topic": "Java OOP",
+    "question": "What is the output?\nconsole.log(5 + \"5\");",
+    "options": [
+      "A. 10",
+      "B. \"55\"",
+      "C. 25",
+      "D. Error"
+    ],
+    "answer_index": 1,
+    "explanation": "When JavaScript's + operator encounters a number and a string, it coerces the number into a string rather than performing arithmetic. This triggers string concatenation, joining \"5\" and \"5\" together to produce the result \"55\".",
+    "corrected": false,
+    "answer": "B. \"55\"",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0536",
+    "topic": "JavaScript",
+    "question": "Which method is used to add an event listener?",
+    "options": [
+      "A. addEvent()",
+      "B. attachEvent()",
+      "C. addEventListener()",
+      "D. onEvent()"
+    ],
+    "answer_index": 2,
+    "explanation": "addEventListener() is the standard DOM method that registers a function to run when a specified event occurs on an element. It allows multiple listeners for the same event and provides control over capturing versus bubbling phases.",
+    "corrected": false,
+    "answer": "C. addEventListener()",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0537",
+    "topic": "HTML/CSS",
+    "question": "Which property keeps a background image fixed while scrolling?",
+    "options": [
+      "A. background-repeat: no-repeat",
+      "B. background-attachment: fixed",
+      "C. background-position: center",
+      "D. background-size: cover"
+    ],
+    "answer_index": 1,
+    "explanation": "The background-attachment property controls whether a background image scrolls with its container or stays fixed relative to the viewport. Setting it to \"fixed\" locks the image in place, preventing it from moving when the page is scrolled.",
+    "corrected": false,
+    "answer": "B. background-attachment: fixed",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0538",
+    "topic": "Java OOP",
+    "question": "What is the purpose of the useState hook?",
+    "options": [
+      "A. Fetch data from API",
+      "B. Manage state in functional components",
+      "C. Handle side effects",
+      "D. Create context"
+    ],
+    "answer_index": 1,
+    "explanation": "The useState hook returns a stateful value and a setter function, letting functional components hold and update local state across re-renders. Before hooks, only class components could manage state, so useState brought this capability directly into functions without needing classes.",
+    "corrected": false,
+    "answer": "B. Manage state in functional components",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0539",
+    "topic": "Java OOP",
+    "question": "What does this render?\nreturn <h1>{undefined}</h1>;",
+    "options": [
+      "A. Nothing (empty string)",
+      "B. \"undefined\"",
+      "C. Error",
+      "D. null"
+    ],
+    "answer_index": 0,
+    "explanation": "React treats `undefined`, `null`, `boolean` values, and empty strings as non-renderable values and skips them during rendering. Since `undefined` is passed as a child to the `<h1>` element, React renders the heading tag but outputs nothing inside it, resulting in an empty `<h1></h1>` in the DOM.",
+    "corrected": false,
+    "answer": "A. Nothing (empty string)",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0540",
+    "topic": "JavaScript",
+    "question": "Which hook performs side effects?",
+    "options": [
+      "A. useEffect",
+      "B. useReducer",
+      "C. useContext",
+      "D. useCallback"
+    ],
+    "answer_index": 0,
+    "explanation": "useEffect runs code after render to handle side effects like data fetching, subscriptions, or DOM manipulation, and cleans up before the next effect or unmount. Unlike useReducer, useContext, or useCallback, which manage state, shared data, or memoization, useEffect is specifically designed for synchronizing components with external systems.",
+    "corrected": false,
+    "answer": "A. useEffect",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0541",
+    "topic": "Java OOP",
+    "question": "How do you pass data from parent to child?",
+    "options": [
+      "A. Using state",
+      "B. Using props",
+      "C. Using context",
+      "D. Using hooks"
+    ],
+    "answer_index": 1,
+    "explanation": "Props allow a parent component to pass data directly to a child component as arguments, similar to function parameters. The child receives these props and can use them for rendering, but cannot modify them directly, ensuring one-way data flow.",
+    "corrected": false,
+    "answer": "B. Using props",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0542",
+    "topic": "JavaScript",
+    "question": "Correct way to update state?\nconst [user, setUser] = useState({ name:\"John\", age:30 });",
+    "options": [
+      "A. setUser({ name:\"Jane\" })",
+      "B. setUser({ ...user, name:\"Jane\" })",
+      "C. user.name=\"Jane\"",
+      "D. setUser(user.name=\"Jane\")"
+    ],
+    "answer_index": 1,
+    "explanation": "Option B uses the spread operator (`...user`) to preserve existing state properties while only updating the `name` field, which is the correct React pattern. Options A loses the `age` property, C mutates state directly (forbidden in React), and D assigns before spreading, causing incorrect behavior and side effects.",
+    "corrected": false,
+    "answer": "B. setUser({ ...user, name:\"Jane\" })",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0543",
+    "topic": "Java OOP",
+    "question": "Purpose of key prop in a list?",
+    "options": [
+      "A. Styling",
+      "B. Identifying unique elements for efficient rendering",
+      "C. Handling events",
+      "D. Managing state"
+    ],
+    "answer_index": 1,
+    "explanation": "'Identifying unique elements for efficient rendering' is correct.",
+    "corrected": false,
+    "answer": "B. Identifying unique elements for efficient rendering",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0544",
+    "topic": "Java OOP",
+    "question": "Lifecycle method replaced by useEffect?",
+    "options": [
+      "A. componentDidMount",
+      "B. render",
+      "C. constructor",
+      "D. setState"
+    ],
+    "answer_index": 0,
+    "explanation": "useEffect combines the behavior of componentDidMount, componentDidUpdate, and componentWillUnmount into a single hook for function components. By default, code inside useEffect runs after render, mirroring the timing and purpose of componentDidMount for handling side effects.",
+    "corrected": false,
+    "answer": "A. componentDidMount",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0545",
+    "topic": "JavaScript",
+    "question": "What does JSX stand for?",
+    "options": [
+      "A. JavaScript XML",
+      "B. JavaScript Extension",
+      "C. JSON XML",
+      "D. Java Syntax"
+    ],
+    "answer_index": 0,
+    "explanation": "JSX stands for JavaScript XML because it is a syntax extension that allows developers to write XML-like code directly within JavaScript. This XML-like syntax gets transpiled into regular JavaScript function calls (typically `React.createElement()`), enabling a more declarative way to describe UI components. The \"XML\" designation reflects its appearance and structure, which mirrors XML's tag-based syntax.",
+    "corrected": false,
+    "answer": "A. JavaScript XML",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0546",
+    "topic": "JavaScript",
+    "question": "How to create a ref in functional component?",
+    "options": [
+      "A. const ref = useRef();",
+      "B. const ref = createRef();",
+      "C. const ref = useState();",
+      "D. const ref = useEffect();"
+    ],
+    "answer_index": 0,
+    "explanation": "useRef() returns a mutable ref object whose .current property persists across re-renders without triggering a re-render when it changes. This makes it the standard hook for accessing DOM nodes or storing mutable values in functional components, unlike createRef, which recreates the ref on every render.",
+    "corrected": false,
+    "answer": "A. const ref = useRef();",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0547",
+    "topic": "Java OOP",
+    "question": "If count = 0, output?\nuseEffect(() => {\nsetCount(count + 1);\n}, []);",
+    "options": [
+      "A. 0",
+      "B. 1",
+      "C. 2",
+      "D. Infinite loop"
+    ],
+    "answer_index": 1,
+    "explanation": "The empty dependency array [] means the effect runs only once, right after the component's initial render. This single execution calls setCount(count + 1), updating the state from 0 to 1, and the component re-renders displaying 1.",
+    "corrected": false,
+    "answer": "B. 1",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0548",
+    "topic": "Java OOP",
+    "question": "Primary key in MongoDB document?",
+    "options": [
+      "A. _id",
+      "B. id",
+      "C. key",
+      "D. index"
+    ],
+    "answer_index": 0,
+    "explanation": "MongoDB automatically generates a unique \"_id\" field for every document, serving as its primary key within the collection. This field is indexed by default and must be unique, enabling efficient document retrieval and enforcing document identity.",
+    "corrected": false,
+    "answer": "A. _id",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0549",
+    "topic": "JavaScript",
+    "question": "Find users where age > 25?",
+    "options": [
+      "A. db.users.find({ age: { $gt: 25 } })",
+      "B. db.users.find({ age: { $gte: 25 } })",
+      "C. db.users.find({ age: { $lt: 25 } })",
+      "D. db.users.find({ age: 25 })"
+    ],
+    "answer_index": 0,
+    "explanation": "The `$gt` operator in MongoDB specifically matches documents where the field value is strictly greater than the specified value. Since the query requires age > 25, `$gt: 25` correctly excludes users who are exactly 25 years old.",
+    "corrected": false,
+    "answer": "A. db.users.find({ age: { $gt: 25 } })",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0550",
+    "topic": "HTML/CSS",
+    "question": "What does $push do?",
+    "options": [
+      "A. Replace field",
+      "B. Add element to an array",
+      "C. Remove element",
+      "D. Update field"
+    ],
+    "answer_index": 1,
+    "explanation": "$push is a MongoDB update operator that appends a specified value to an array field within a document. If the field doesn't exist, $push creates it as a new array containing the specified value.",
+    "corrected": false,
+    "answer": "B. Add element to an array",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0551",
+    "topic": "Java OOP",
+    "question": "Which index improves query performance?",
+    "options": [
+      "A. Compound index",
+      "B. Text index",
+      "C. Unique index",
+      "D. All of the above"
+    ],
+    "answer_index": 3,
+    "explanation": "Compound, text, and unique indexes each create optimized data structures that let the database engine locate matching documents without scanning entire collections. By reducing the search space through sorted keys, tokenized text, or uniqueness constraints, all three types accelerate query execution and lookup operations.",
+    "corrected": false,
+    "answer": "D. All of the above",
+    "trust": "baseline"
+  }
+]

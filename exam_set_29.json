@@ -1,0 +1,1045 @@
+[
+  {
+    "question": "What gets printed when the following expression is evaluated? Select the one correct answer.\n${(1==2) ? 4 : 5}",
+    "options": [
+      "A. 1",
+      "B. 2",
+      "C. 4",
+      "D. 5"
+    ],
+    "answer_index": 3,
+    "answer": "D. 5",
+    "topic": "SQL & JDBC",
+    "explanation": "The condition (1==2) evaluates to false since 1 does not equal 2. In a ternary expression, when the condition is false, the value after the colon (5) is returned and printed.",
+    "corrected": false,
+    "id": "q1868",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "What is the effect of evaluation of following expression? Select the one correct answer.\n${(5*5) ne 25}",
+    "options": [
+      "A. true",
+      "B. false",
+      "C. 25",
+      "D. The expression does not compile as ne is not a valid operator."
+    ],
+    "answer_index": 1,
+    "answer": "B. false",
+    "topic": "SQL & JDBC",
+    "explanation": "The expression evaluates 5*5, which equals 25, and then compares it to 25 using the \"ne\" (not equal) operator. Since 25 does equal 25, the \"ne\" comparison returns false.",
+    "corrected": false,
+    "id": "q1870",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "How many numbers are printed, when the following JSTL code fragment is executed? Select the one correct answer.\n<%@ taglib uri=\"http://java.sun.com/jsp/jstl/core\" prefix=\"c\" %>\n<c:forEach var=\"item\" begin=\"0\" end=\"10\" step=\"2\">\n${item}\n</c:forEach>",
+    "options": [
+      "A. 1",
+      "B. 5",
+      "C. 6",
+      "D. 11"
+    ],
+    "answer_index": 2,
+    "answer": "C. 6",
+    "topic": "Core Java & OOP",
+    "explanation": "The loop starts at 0 and ends at 10, incrementing by 2 each time, producing the values 0, 2, 4, 6, 8, and 10. This sequence contains exactly 6 numbers, since (10-0)/2 + 1 = 6.",
+    "corrected": false,
+    "id": "q1871",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "How many numbers gets printed when the following JSTL code fragment is executed?\nSelect the one correct answer.\n<%@ taglib uri=\"http://java.sun.com/jsp/jstl/core\" prefix=\"c\" %>\n<c:set var=\"item\" value=\"2\"/>\n<c:choose>\n<c:when test=\"${item>0}\">\n<c:out value=\"1\"/>\n</c:when>\n<c:when test=\"${item==2}\">\n<c:out value=\"2\"/>\n</c:when>\n<c:when test=\"${item<2}\">\n<c:out value=\"3\"/>\n</c:when>\n<c:otherwise>\n<c:out value=\"4\"/>\n</c:otherwise>\n</c:choose>",
+    "options": [
+      "A. No number gets printed.",
+      "B. One number gets printed.",
+      "C. Two numbers gets printed.",
+      "D. Three numbers gets printed."
+    ],
+    "answer_index": 1,
+    "answer": "B. One number gets printed.",
+    "topic": "Core Java & OOP",
+    "explanation": "In a <c:choose> block, only the first <c:when> whose test evaluates to true gets executed, and all subsequent when/otherwise blocks are skipped. Since item>0 is true first, \"1\" is printed and evaluation stops, so only one number outputs.",
+    "corrected": false,
+    "id": "q1873",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "Which number gets printed when the following JSTL code fragment is executed?\n\n<c:forEach var=\"i\" begin=\"1\" end=\"4\">\n  <c:if test=\"${i == 3}\">\n    ${i}\n  </c:if>\n</c:forEach>",
+    "options": [
+      "A. 1",
+      "B. 2",
+      "C. 3",
+      "D. 4"
+    ],
+    "answer_index": 2,
+    "answer": "C. 3",
+    "topic": "SQL & JDBC",
+    "explanation": "The forEach loop iterates through values 1, 2, 3, and 4, checking the condition i==3 on each pass. Only when i equals 3 does the condition evaluate to true, triggering the c:if block to output that value.",
+    "corrected": false,
+    "id": "q1874",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "question": "Which of these represent the correct path for the core JSTL library in JSTL version 1.1?",
+    "options": [
+      "A. http://java.sun.com/jsp/jstl/core",
+      "B. http://java.sun.com/jsp/core",
+      "C. http://java.sun.com/core",
+      "D. http://java.sun.com/jsp/jstl1.1/core"
+    ],
+    "answer_index": 0,
+    "answer": "A. http://java.sun.com/jsp/jstl/core",
+    "topic": "Core Java & OOP",
+    "explanation": "The URI namespace `http://java.sun.com/jsp/jstl/core` is the standardized taglib declaration for JSTL 1.1 core tags, following Sun's official namespace convention.\n\nThis path explicitly identifies the core library within the JSTL framework, enabling JSP containers to correctly locate and load the appropriate tag definitions.",
+    "corrected": false,
+    "id": "q1876",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Fill in the blanks. A tag handler class must implement the",
+    "options": [
+      "A. IterationTag",
+      "B. TagClass",
+      "C. BodyTag",
+      "D. BodyTagSupport"
+    ],
+    "answer_index": 0,
+    "answer": "A. IterationTag",
+    "topic": "Core Java & OOP",
+    "explanation": "A tag handler class must implement one of the Tag interfaces. IterationTag is the standard interface that tag handlers implement to support iteration and body tag functionality.\n\nBodyTag is an interface that IterationTag extends, so implementing IterationTag provides all necessary tag handling capabilities including body evaluation and iteration control.",
+    "corrected": false,
+    "id": "q1877",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "A JSP file that uses a tag library must declare the tag library first. The tag library is defined using the taglib directive - <%= taglib uri=\"...\" prefix=\"...\"%>\nWhich of the following specifies the correct purpose of prefix attribute. Select the one correct answer.",
+    "options": [
+      "A. The prefix defines the name of the tag that may be used for a tag library.",
+      "B. The prefix attribute defines the location of the tag library descriptor file.",
+      "C. The prefix attribute should refer to the short name attribute of the tag library file that is defined by the uri attribute of taglib directive.",
+      "D. The prefix attribute is used in front of a tagname of a tag defined within the tag library."
+    ],
+    "answer_index": 3,
+    "answer": "D. The prefix attribute is used in front of a tagname of a tag defined within the tag library.",
+    "topic": "Core Java & OOP",
+    "explanation": "The prefix attribute creates a namespace that must be prepended to tag names when invoking custom tags in a JSP page, distinguishing them from HTML or other library tags. For example, with prefix=\"c\", tags are called as <c:forEach> or <c:if>, linking the tag invocation to its source library.",
+    "corrected": false,
+    "id": "q1878",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "A JSP file uses a tag as <myTaglib:myTag>. The myTag element here should be defined",
+    "options": [
+      "A. tagname",
+      "B. name",
+      "C. tag",
+      "D. prefix"
+    ],
+    "answer_index": 1,
+    "answer": "B. name",
+    "topic": "Core Java & OOP",
+    "explanation": "In JSP tag libraries, the `<tag>` element's `<name>` child defines what appears after the prefix in usage like `<myTaglib:myTag>`. The \"myTag\" portion is the tag name that must match the `<name>` declaration in the TLD file.",
+    "corrected": false,
+    "id": "q1879",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "In a JSP Tag Library Descriptor (TLD) file, which of the following elements is defined directly as a child of the <taglib> element?",
+    "options": [
+      "A. validator",
+      "B. tag-class",
+      "C. attribute",
+      "D. listener-class"
+    ],
+    "answer_index": 0,
+    "answer": "A. validator",
+    "topic": "Core Java & OOP",
+    "explanation": "The <validator> element is a direct child of <taglib>, used to specify a TagLibraryValidator class for validating tag usage within the JSP page. In contrast, <tag-class> and <attribute> are nested within <tag>, while <listener-class> is nested within <listener>, not directly under <taglib>.",
+    "corrected": false,
+    "id": "q1880",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "question": "Name the element within the tag element that defines the name of the class that implements the functionality of tag. Select the one correct answer.",
+    "options": [
+      "A. class-name",
+      "B. tag",
+      "C. class",
+      "D. tag-class"
+    ],
+    "answer_index": 3,
+    "answer": "D. tag-class",
+    "topic": "Core Java & OOP",
+    "explanation": "In a Tag Library Descriptor (TLD), each <tag> element uses a nested <tag-class> element to specify the fully qualified Java class implementing the tag handler. This element tells the JSP container which class to instantiate when the tag is invoked in a JSP page.",
+    "corrected": false,
+    "id": "q1881",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "Which of these are legal return types of the doStartTag method defined in a class that",
+    "options": [
+      "A. EVAL_PAGE",
+      "B. EVAL_BODY",
+      "C. EVAL_PAGE_INCLUDE",
+      "D. EVAL_BODY_INCLUDE"
+    ],
+    "answer_index": 3,
+    "answer": "D. EVAL_BODY_INCLUDE",
+    "topic": "Core Java & OOP",
+    "explanation": "The doStartTag() method in a Tag interface returns int values indicating how to proceed with tag processing. EVAL_PAGE is the only valid return type that tells the container to continue evaluating the page after the tag.",
+    "corrected": false,
+    "id": "q1882",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which of these are legal return types of the doAfterBody method defined in a class",
+    "options": [
+      "A. EVAL_PAGE",
+      "B. EVAL_BODY",
+      "C. EVAL_PAGE_AGAIN",
+      "D. EVAL_BODY_AGAIN"
+    ],
+    "answer_index": 3,
+    "answer": "D. EVAL_BODY_AGAIN",
+    "topic": "Core Java & OOP",
+    "explanation": "The `doAfterBody` method in tag handler classes can only return `EVAL_PAGE`, which controls whether the page continues processing after the body evaluation completes.\n\n`EVAL_BODY` and `EVAL_BODY_AGAIN` are used by `doStartTag`, while `EVAL_PAGE_AGAIN` is not a valid return constant in JSP tag APIs.",
+    "corrected": false,
+    "id": "q1883",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "In a JSP custom tag handler class that implements the Tag interface, which of the following is a legal return value for the doEndTag() method?",
+    "options": [
+      "A. EVAL_PAGE",
+      "B. EVAL_BODY",
+      "C. EVAL_PAGE_INCLUDE",
+      "D. EVAL_BODY_INCLUDE"
+    ],
+    "answer_index": 0,
+    "answer": "A. EVAL_PAGE",
+    "topic": "Core Java & OOP",
+    "explanation": "The Tag interface's doEndTag() method returns either EVAL_PAGE or SKIP_PAGE, which are constants defined in the Tag interface itself. EVAL_PAGE signals the JSP engine to continue evaluating the rest of the page after the tag completes.",
+    "corrected": false,
+    "id": "q1884",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "question": "A JSP page called test.jsp is passed a parameter name in the URL using http://localhost/test.jsp?name=\"John\". The test.jsp contains the following code.\n<%! String myName=request.getParameter();%>\n<% String test= \"welcome\" + myName; %>\n<%= test%>",
+    "options": [
+      "A. The program prints \"Welcome John\"",
+      "B. The program gives a syntax error because of the statement <%! String myName=request.getParameter();%>",
+      "C. The program gives a syntax error because of the statement <% String test= \"welcome\" + myName; %>",
+      "D. The program gives a syntax error because of the statement <%= test%>"
+    ],
+    "answer_index": 1,
+    "answer": "B. The program gives a syntax error because of the statement <%! String myName=request.getParameter();%>",
+    "topic": "React",
+    "explanation": "The declaration tag <%! %> creates instance-level members and lacks access to the implicit \"request\" object, since request is only available within the _jspService method context. Additionally, getParameter() requires a String argument (the parameter name) but none is provided, causing a compilation error.",
+    "corrected": false,
+    "id": "q1886",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "Which of the following correctly represents the following JSP statement. Select the one correct answer.\n<%=x%>",
+    "options": [
+      "A. <jsp:expression>x</jsp:expression>",
+      "B. <jsp:expression=x/>",
+      "C. <jsp:statement>x</jsp:statement>",
+      "D. <jsp:declaration>x</jsp:declaration>"
+    ],
+    "answer_index": 0,
+    "answer": "A. <jsp:expression>x</jsp:expression>",
+    "topic": "React",
+    "explanation": "The `<%=x%>` syntax is JSP's scriptlet shorthand for an expression tag, which evaluates x and outputs its value directly into the response. The XML-equivalent tag form for this expression syntax is `<jsp:expression>x</jsp:expression>`, matching the standard JSP action element naming convention.",
+    "corrected": false,
+    "id": "q1887",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "Which of the following are correct. Select the one correct answer.",
+    "options": [
+      "A. JSP scriptlets and declarations result in code that is inserted inside the _jspService method.",
+      "B. The JSP statement <%! int x; %> is equivalent to the statement <jsp:scriptlet>int x;</jsp:scriptlet%>.",
+      "C. The following are some of the predefined variables that maybe used in JSP expression - httpSession, context.",
+      "D. To use the character %> inside a scriptlet, you may use %\\> instead."
+    ],
+    "answer_index": 3,
+    "answer": "D. To use the character %> inside a scriptlet, you may use %\\> instead.",
+    "topic": "React",
+    "explanation": "In JSP, the sequence %> normally terminates a scriptlet, so writing it literally inside code would prematurely close the tag. The escape sequence %\\> allows the parser to interpret %> as literal text rather than a tag delimiter, letting it appear safely within scriptlet code.",
+    "corrected": false,
+    "id": "q1889",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "Which of the following JSP variables are not available within a JSP expression.",
+    "options": [
+      "A. out",
+      "B. session",
+      "C. request",
+      "D. response"
+    ],
+    "answer_index": 0,
+    "answer": "A. out",
+    "topic": "Node.js & Express",
+    "explanation": "The `out` variable is an implicit object that writes directly to the output stream and cannot be used within JSP expressions, which require return values.\n\nJSP expressions use `<%=` syntax that evaluates to a value; `out` performs actions rather than returning evaluable content.",
+    "corrected": false,
+    "id": "q1891",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "A bean with a property color is loaded using the following statement",
+    "options": [
+      "A. <jsp:setColor id=\"fruit\" property=\"color\" value=\"white\"/>",
+      "B. <jsp:setColor name=\"fruit\" property=\"color\" value=\"white\"/>",
+      "C. <jsp:setValue name=\"fruit\" property=\"color\" value=\"white\"/>",
+      "D. <jsp:setProperty name=\"fruit\" property=\"color\" value=\"white\">"
+    ],
+    "answer_index": 3,
+    "answer": "D. <jsp:setProperty name=\"fruit\" property=\"color\" value=\"white\">",
+    "topic": "React",
+    "explanation": "The `<jsp:setColor>` action is the standard JSP tag specifically designed to set bean properties with color values using the id attribute to reference the bean object.\n\nThis syntax follows JSP standard conventions where `setColor` is the proper action name and `id` correctly identifies the bean instance for property assignment.",
+    "corrected": false,
+    "id": "q1892",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which of the following represents correct syntax for the JSP <jsp:useBean> action?",
+    "options": [
+      "A. <jsp:useBean id=\"fruit\" class=\"Fruit\"/>",
+      "B. <jsp:useBean id=\"fruit\" scope=\"page\"/>",
+      "C. <jsp:useBean class=\"Fruit\"/>",
+      "D. <jsp:useBean id=\"fruit\" type=\"Fruit\"/>"
+    ],
+    "answer_index": 0,
+    "answer": "A. <jsp:useBean id=\"fruit\" class=\"Fruit\"/>",
+    "topic": "SQL & JDBC",
+    "explanation": "The <jsp:useBean> action requires both an \"id\" attribute to name the bean instance and a \"class\" attribute specifying the fully qualified class to instantiate. Without \"id\", the bean cannot be referenced later; without \"class\" (or \"beanName\" with \"type\"), the container cannot instantiate the object.",
+    "corrected": false,
+    "id": "q1893",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "question": "Name the default value of the scope atribute of <jsp:usebean>.",
+    "options": [
+      "A. page",
+      "B. application",
+      "C. session",
+      "D. request"
+    ],
+    "answer_index": 0,
+    "answer": "A. page",
+    "topic": "Core Java & OOP",
+    "explanation": "The scope attribute of `<jsp:useBean>` defaults to \"page\" when not explicitly specified, meaning the bean exists only within the current JSP page.\n\nPage scope is the most restrictive scope, making it the conservative default choice that limits bean visibility to prevent unintended object sharing across requests.",
+    "corrected": false,
+    "id": "q1894",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which of the following statements are true for <jsp:usebean>. Select the two",
+    "options": [
+      "A. The id attribute must be defined for <jsp:usebean>.",
+      "B. The scope attribute must be defined for <jsp:usebean>.",
+      "C. The class attribute must be defined for <jsp:usebean>.",
+      "D. The <jsp:usebean> must include either type or class attribute or both."
+    ],
+    "answer_index": 3,
+    "answer": "D. The <jsp:usebean> must include either type or class attribute or both.",
+    "topic": "React",
+    "explanation": "The id attribute uniquely identifies the bean object in the specified scope and is required to reference it throughout the JSP page.\n\nWithout id, the container cannot instantiate or manage the bean, making it impossible to access or manipulate the bean in subsequent code.",
+    "corrected": false,
+    "id": "q1895",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Assume that you need to write a JSP page that adds numbers from one to ten,",
+    "options": [
+      "A. <% sum = sum + j %>",
+      "B. <% sum = sum + j; %>",
+      "C. <%= sum = sum + j %>",
+      "D. <%= sum = sum + j; %>"
+    ],
+    "answer_index": 1,
+    "answer": "B. <% sum = sum + j; %>",
+    "topic": "Core Java & OOP",
+    "explanation": "Scriptlet tags `<% %>` execute Java code but don't output results, making them ideal for assignments without displaying values.\n\nSemicolons are optional in JSP scriptlets since they're embedded Java fragments, not complete statements requiring termination.",
+    "corrected": false,
+    "id": "q1896",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Now consider the same JSP example as last question. What must be added at the location YYY to print the sum of ten numbers. Select the one correct statement",
+    "options": [
+      "A. <% sum %>",
+      "B. <% sum; %>",
+      "C. <%= sum %>",
+      "D. <%= sum; %>"
+    ],
+    "answer_index": 2,
+    "answer": "C. <%= sum %>",
+    "topic": "Core Java & OOP",
+    "explanation": "JSP expression tags `<%= %>` output the evaluated value directly into the response, so `<%= sum %>` prints the variable's value without a semicolon. Scriptlet tags `<% %>` execute Java code but don't produce output, and adding a semicolon inside `<%= %>` causes a syntax error since it's treated as an expression, not a statement.",
+    "corrected": false,
+    "id": "q1897",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "JSP pages have access to implicit objects that are exposed automatically. One",
+    "options": [
+      "A. HttpRequest",
+      "B. ServletRequest",
+      "C. Request",
+      "D. HttpServletRequest"
+    ],
+    "answer_index": 2,
+    "answer": "C. Request",
+    "topic": "Core Java & OOP",
+    "explanation": "The implicit object is named \"request\" in JSP, and it is typed as HttpServletRequest, but the identifier itself is simply \"request\". JSP exposes it automatically without any declaration, so scriptlets and expressions can reference it directly by that name.",
+    "corrected": false,
+    "id": "q1898",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "A Java bean with a property color is loaded using the following statement\n<jsp:usebean id=\"fruit\" class=\"Fruit\"/>\nWhat is the effect of the following statement.\n<jsp:setproperty name=\"fruit\" property=\"color\"/>\nSelect the one correct answer.",
+    "options": [
+      "A. An error gets generated because the value attribute of setAttribute is not defined.",
+      "B. The color attribute is assigned a value null.",
+      "C. The color attribute is assigned a value \"\".",
+      "D. If there is a non-null request parameter with name color, then its value gets assigned to color property of Java Bean fruit."
+    ],
+    "answer_index": 3,
+    "answer": "D. If there is a non-null request parameter with name color, then its value gets assigned to color property of Java Bean fruit.",
+    "topic": "React",
+    "explanation": "When only \"name\" and \"property\" are specified without \"value\" or \"param\", jsp:setProperty automatically matches the property name to a request parameter with the same name. If a non-null request parameter named \"color\" exists, its value is retrieved and assigned to the bean's color property using the setter method.",
+    "corrected": false,
+    "id": "q1900",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "Is the following JSP code legal? Select the one correct statement.\n<%@page info=\"test page\" session=\"false\"%>\n<%@page session=\"false\"%>",
+    "options": [
+      "A. Yes. This is legal JSP syntax.",
+      "B. No. This code will generate syntax errors."
+    ],
+    "answer_index": 0,
+    "answer": "A. Yes. This is legal JSP syntax.",
+    "topic": "React",
+    "explanation": "JSP allows multiple page directives in a single translation unit, provided repeated attributes have identical values across all occurrences. Here, \"session\" is set to \"false\" in both directives, so there's no conflict, making the code legal.",
+    "corrected": false,
+    "id": "q1901",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "A JSP page uses the java.util.ArrayList class many times. Instead of referring",
+    "options": [
+      "A. extends",
+      "B. import",
+      "C. include",
+      "D. package"
+    ],
+    "answer_index": 1,
+    "answer": "B. import",
+    "topic": "Core Java & OOP",
+    "explanation": "The `import` statement (Option B) is actually the correct way to use ArrayList multiple times in JSP—it allows direct class references without the full package path.\n\nNote: The provided answer key appears incorrect; Option B (import) is the standard solution for avoiding repeated `java.util.ArrayList` references in JSP pages.",
+    "corrected": false,
+    "id": "q1902",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which of the following are examples of JSP directive. Select the two correct",
+    "options": [
+      "A. include",
+      "B. exclude",
+      "C. import",
+      "D. taglibrary"
+    ],
+    "answer_index": 3,
+    "answer": "D. taglibrary",
+    "topic": "JavaScript",
+    "explanation": "The `<%@ include %>` directive is a JSP standard directive that includes external files at translation time, embedding their content into the current JSP page.\n\nJSP directives use `<%@ %>` syntax; only `include` and `import` (option C) are valid directives, but the question asks for one correct answer from the options provided.",
+    "corrected": false,
+    "id": "q1903",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Name the implicit variable available to JSP pages that may be used to access all the other implicit objects.",
+    "options": [
+      "A. page",
+      "B. pageContext",
+      "C. context",
+      "D. object"
+    ],
+    "answer_index": 1,
+    "answer": "B. pageContext",
+    "topic": "Core Java & OOP",
+    "explanation": "The pageContext object encapsulates references to nearly all other implicit objects, such as request, response, session, and application, providing a unified access point. This allows JSP developers to retrieve or manipulate these objects dynamically through methods like getRequest() or getSession() without needing separate direct references.",
+    "corrected": false,
+    "id": "q1904",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "Which of the following files is the correct name and location of deployment",
+    "options": [
+      "A. \\doc-root\\dd.xml",
+      "B. \\doc-root\\web.xml",
+      "C. \\doc-root\\WEB-INF\\web.xml",
+      "D. \\doc-root\\WEB_INF\\dd.xml"
+    ],
+    "answer_index": 2,
+    "answer": "C. \\doc-root\\WEB-INF\\web.xml",
+    "topic": "Core Java & OOP",
+    "explanation": "The deployment descriptor file must be named `web.xml` and located in the `WEB-INF` directory, making option C the standard Java web application structure.\n\nThe provided answer A is incorrect; the correct answer should be C, which follows the J2EE specification for web application deployment descriptors.",
+    "corrected": false,
+    "id": "q1905",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which element of the servlet element in the deployment descriptor is used to specify the parameters for the ServletConfig object. Select the one correct answer.",
+    "options": [
+      "A. servlet-config",
+      "B. init-param",
+      "C. load-on-startup",
+      "D. filter"
+    ],
+    "answer_index": 1,
+    "answer": "B. init-param",
+    "topic": "JavaScript",
+    "explanation": "The init-param element defines name-value pairs within the servlet element, which the container uses to populate the ServletConfig object accessible via getInitParameter(). Each init-param specifies a param-name and param-value that becomes available as initialization parameters for that specific servlet instance.",
+    "corrected": false,
+    "id": "q1906",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "Which of the following statements about a Java EE web application deployment descriptor (web.xml) is correct?",
+    "options": [
+      "A. The elements of the deployment descriptor are case-sensitive.",
+      "B. The elements of the deployment descriptor are case-insensitive.",
+      "C. The order of elements in the deployment descriptor never matters.",
+      "D. The servlet-mapping element must be nested inside the servlet element."
+    ],
+    "answer_index": 0,
+    "answer": "A. The elements of the deployment descriptor are case-sensitive.",
+    "topic": "JavaScript",
+    "explanation": "XML-based deployment descriptors like web.xml are governed by XML syntax rules, which treat element names as case-sensitive by definition. Writing `<Servlet>` instead of `<servlet>` would cause the parser to fail or ignore the element, since the tags must exactly match the schema-defined names.",
+    "corrected": false,
+    "id": "q1907",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "question": "The exception-type element specifies an exception type and is used to handle exceptions generated from a servlet. Which element of the deployment descriptor includes the exception-type as a sub-element. Select the one correct answer.",
+    "options": [
+      "A. error-page",
+      "B. servlet",
+      "C. exception",
+      "D. error-handling"
+    ],
+    "answer_index": 0,
+    "answer": "A. error-page",
+    "topic": "JavaScript",
+    "explanation": "The error-page element in the deployment descriptor maps specific exception types or HTTP error codes to designated resources, using exception-type as its sub-element to specify the Java exception class. This allows the container to invoke a custom error page whenever the specified exception is thrown during request processing.",
+    "corrected": false,
+    "id": "q1908",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "Which of these is a correct fragment within the web-app element of deployment descriptor. Select the one correct answer.",
+    "options": [
+      "A. <error-page> <exception-type> mypackage.MyException</exception-type> <location> /error.jsp</location> </error-page>",
+      "B. <exception> <exception-type> mypackage.MyException</exception-type> <location> /error.jsp</location> </exception>",
+      "C. <error-page> <exception> mypackage.MyException </exception-type> <location> /error.jsp </location> </error-page>",
+      "D. <error-page> <exception-type> mypackage.MyException</exception-type> </error-page>"
+    ],
+    "answer_index": 0,
+    "answer": "A. <error-page> <exception-type> mypackage.MyException</exception-type> <location> /error.jsp</location> </error-page>",
+    "topic": "Core Java & OOP",
+    "explanation": "The error-page element correctly requires both exception-type and location as child elements to define an error handler in the deployment descriptor. This matches the correct XML schema structure, mapping a specific Java exception class to a corresponding error page resource.",
+    "corrected": false,
+    "id": "q1909",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "Which element of the deployment descriptor of a web application includes the welcome-file-list element as a subelement? Select the one correct answer.",
+    "options": [
+      "A. web-app",
+      "B. welcome-file",
+      "C. servlet",
+      "D. file-list"
+    ],
+    "answer_index": 0,
+    "answer": "A. web-app",
+    "topic": "JavaScript",
+    "explanation": "The web-app element is the root element of the deployment descriptor (web.xml), containing all configuration elements as direct children. Since welcome-file-list must be defined at the top level of the descriptor, it is placed directly within web-app, not nested inside servlet or other elements.",
+    "corrected": false,
+    "id": "q1910",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "Which of these is a correct example of specifying a listener element represented by MyClass class. Assume myServlet element is defined correctly. Select the one correct answer.",
+    "options": [
+      "A. <listener>MyClass</listener>",
+      "B. <listener> <listener-class>MyClass</listener-class></listener>",
+      "C. <listener> <listener-name>aListener</listener-name> <listener-class>MyClass</listener-class> </listener>",
+      "D. <listener> <servlet-name>myServlet</servlet-name> <listener-class>MyClass</listener-class> </listener>"
+    ],
+    "answer_index": 1,
+    "answer": "B. <listener> <listener-class>MyClass</listener-class></listener>",
+    "topic": "Core Java & OOP",
+    "explanation": "The <listener> element in web.xml only requires a <listener-class> child element specifying the fully qualified class name that implements a listener interface. Unlike <servlet>, listeners do not use a <listener-name> element since they are not referenced elsewhere in the deployment descriptor.",
+    "corrected": false,
+    "id": "q1911",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "The root of the deployment descriptor is named as",
+    "options": [
+      "A. web",
+      "B. web-app",
+      "C. name",
+      "D. display-name"
+    ],
+    "answer_index": 1,
+    "answer": "B. web-app",
+    "topic": "Core Java & OOP",
+    "explanation": "The root element of a deployment descriptor (web.xml) in Java web applications is `<web-app>`, not `<web>`. The correct answer should be B, not A as stated.",
+    "corrected": false,
+    "id": "q1912",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which of these is not a valid top level element in web-app",
+    "options": [
+      "A. icon",
+      "B. listener",
+      "C. eror-page",
+      "D. security-constraint"
+    ],
+    "answer_index": 0,
+    "answer": "A. icon",
+    "topic": "Core Java & OOP",
+    "explanation": "The `icon` element is not a valid top-level element in web-app; it only exists within the `display-name` context. Valid top-level elements include `listener`, `error-page`, and `security-constraint`.",
+    "corrected": false,
+    "id": "q1914",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which of the follwing are mandatory elements within the filter element. Select",
+    "options": [
+      "A. filter-name",
+      "B. name",
+      "C. value",
+      "D. filter-class"
+    ],
+    "answer_index": 0,
+    "answer": "A. filter-name",
+    "topic": "SQL & JDBC",
+    "explanation": "The `<filter-name>` element uniquely identifies a filter within the deployment descriptor and is required by the servlet specification schema.\n\nAll other elements like `<filter-class>` are mandatory too, but the question specifically asks which is mandatory, making `<filter-name>` the primary identifying element.",
+    "corrected": false,
+    "id": "q1915",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which of these is not correct about the filter-mapping element of web-app.",
+    "options": [
+      "A. filter-name element must be present in the filter-mapping element.",
+      "B. Either url-pattern or servlet-name must be present in the filter-mapping",
+      "C. dispatcher element can be declared zero to three times in the filter-mapping",
+      "D. filter-name element in the filter-mapping should be same as the corresponding"
+    ],
+    "answer_index": 2,
+    "answer": "C. dispatcher element can be declared zero to three times in the filter-mapping",
+    "topic": "TypeScript",
+    "explanation": "The filter-name element is mandatory in filter-mapping to link the filter definition to its URL or servlet mapping. Without it, the container cannot identify which filter to apply to the specified resource.",
+    "corrected": false,
+    "id": "q1917",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "What is the evaluated result of the expression \"/${3+2-1}:${3+2-1}\" (where ${...} denotes evaluation of the enclosed arithmetic expression)?",
+    "options": [
+      "A. /4:4",
+      "B. 4:4",
+      "C. /3:3",
+      "D. /5:5"
+    ],
+    "answer_index": 0,
+    "answer": "A. /4:4",
+    "topic": "Core Java & OOP",
+    "explanation": "The expression 3+2-1 evaluates to 4, and this result replaces each ${3+2-1} occurrence in the string. Since the literal characters \"/\" and \":\" remain unchanged around the substitutions, the final output is /4:4.",
+    "corrected": false,
+    "id": "q1919",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "derived",
+    "options_synthesized": true
+  },
+  {
+    "question": "Which diagram in UML shows a complete or partial view of the structure of a modeled system at a specific time?",
+    "options": [
+      "A. Sequence Diagram",
+      "B. Collaboration Diagram",
+      "C. Class Diagram",
+      "D. Object Diagram"
+    ],
+    "answer_index": 3,
+    "answer": "D. Object Diagram",
+    "topic": "Core Java & OOP",
+    "explanation": "An object diagram depicts instances of classes with actual data values and links at a particular moment, capturing a snapshot of the system. This differs from a class diagram, which shows the static, general structure of classes regardless of time.",
+    "corrected": false,
+    "id": "q1922",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "In Java, if an exception occurring in a program is not caught by any catch block written by the programmer, which entity handles the exception?",
+    "options": [
+      "A. Default handler",
+      "B. Finally block",
+      "C. Throw handler",
+      "D. Java run time system"
+    ],
+    "answer_index": 3,
+    "answer": "D. Java run time system",
+    "topic": "Core Java & OOP",
+    "explanation": "If none of the programmer-defined catch blocks handle an exception, it propagates up through the method call stack until it reaches the Java run-time system. The run-time system then terminates the program abnormally, printing the exception's type, message, and stack trace to indicate where the error occurred.",
+    "corrected": false,
+    "id": "q1925",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "question": "class exception_handling {\npublic static void main(String args[]) {\ntry {\nint a, b;\nb = 0;\na = 5 / b;\nSystem.out.print(\"A\");\n}\ncatch(ArithmeticException e) {\nSystem.out.print(\"B\");\n}\nfinally {\nSystem.out.print(\"C\");\n}\n}\n}",
+    "options": [
+      "A. A",
+      "B. B",
+      "C. AC",
+      "D. BC"
+    ],
+    "answer_index": 3,
+    "answer": "D. BC",
+    "topic": "Core Java & OOP",
+    "explanation": "Dividing 5 by 0 (an int) throws an ArithmeticException, which is caught by the catch block, printing \"B\" instead of executing \"A\". The finally block always executes regardless of whether an exception occurred, so \"C\" is printed after \"B\", resulting in \"BC\".",
+    "corrected": false,
+    "id": "q1926",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "In JDBC, what is a key benefit of using PreparedStatement instead of Statement for executing SQL queries?",
+    "options": [
+      "A. They are precompiled by the database, improving performance for repeated execution and helping prevent SQL injection",
+      "B. They automatically convert SQL queries into NoSQL queries",
+      "C. They eliminate the need for a database connection",
+      "D. They can only be used with stored procedures, not regular queries"
+    ],
+    "answer_index": 0,
+    "answer": "A. They are precompiled by the database, improving performance for repeated execution and helping prevent SQL injection",
+    "topic": "React",
+    "explanation": "PreparedStatement objects are precompiled by the database, so the SQL execution plan is cached and reused, boosting performance for repeated queries. They also use parameterized inputs instead of string concatenation, preventing malicious input from altering the query structure and thus blocking SQL injection attacks.",
+    "corrected": false,
+    "id": "q1934",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "question": "Given:\n5. import java.util.Date;\n6. import java.text.DateFormat;\n21. DateFormat df;\n22. Date date = new Date();\n23. // insert code here\n24. String s = df.format(date);\nWhich code fragment, inserted at line 23, allows the code to compile?",
+    "options": [
+      "A. df = new DateFormat();",
+      "B. df = Date.getFormat();",
+      "C. df = DateFormat.getFormat();",
+      "D. df = DateFormat.getInstance();"
+    ],
+    "answer_index": 3,
+    "answer": "D. df = DateFormat.getInstance();",
+    "topic": "Core Java & OOP",
+    "explanation": "DateFormat is an abstract class, so it cannot be instantiated directly with \"new,\" eliminating option A. DateFormat.getInstance() is a valid static factory method that returns a concrete DateFormat instance, unlike the nonexistent getFormat() methods in options B and C.",
+    "corrected": false,
+    "id": "q1940",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "In Java, a subclass declares a static method with the same name and signature as a static method in its superclass. What is this relationship called?",
+    "options": [
+      "A. Method hiding",
+      "B. Method overriding",
+      "C. Method overloading",
+      "D. Compilation error"
+    ],
+    "answer_index": 0,
+    "answer": "A. Method hiding",
+    "topic": "Core Java & OOP",
+    "explanation": "Static methods are resolved at compile time based on the reference type, not dynamically dispatched based on the actual object type like instance methods. When a subclass defines a static method matching the superclass's signature, it hides rather than overrides it, since no polymorphic dispatch occurs.",
+    "corrected": false,
+    "id": "q1941",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "question": "Given the following Java code:\n\nclass Animal {\n    public String noise() {\n        return \"peep\";\n    }\n}\n\nclass Dog extends Animal {\n    public String noise() {\n        return \"woof\";\n    }\n}\n\npublic class Main {\n    public static void main(String[] args) {\n        Animal a = new Dog();\n        System.out.println(a.noise());\n    }\n}\n\nWhat is printed to the console?",
+    "options": [
+      "A. woof",
+      "B. peep",
+      "C. peepwoof",
+      "D. Compilation error"
+    ],
+    "answer_index": 0,
+    "answer": "A. woof",
+    "topic": "Core Java & OOP",
+    "explanation": "Java uses dynamic (runtime) method dispatch for overridden instance methods, meaning the actual object's type—not the reference type—determines which method executes. Since `a` references a `Dog` object, calling `noise()` invokes `Dog`'s overridden version, printing \"woof\".",
+    "corrected": false,
+    "id": "q1943",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "question": "Given the interface:\n\ninterface Data {\n    void load();\n}\n\nWhich class correctly implements this interface?",
+    "options": [
+      "A. public class Employee implements Data { public void load(){ /* do something */ } }",
+      "B. public class Employee extends Data { public void load(){ /* do something */ } }",
+      "C. public class Employee implements Data { private void load(){ /* do something */ } }",
+      "D. public class Employee implements Data { }"
+    ],
+    "answer_index": 0,
+    "answer": "A. public class Employee implements Data { public void load(){ /* do something */ } }",
+    "topic": "Core Java & OOP",
+    "explanation": "Option A correctly uses \"implements\" to inherit the interface and provides a public \"load()\" method matching the interface's access level and signature. Interface methods are implicitly public, so overriding them with a private or non-existent implementation, or using \"extends\" instead of \"implements,\" violates Java's contract.",
+    "corrected": false,
+    "id": "q1947",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "question": "What does a simple name in UML Class and objects consists of ?",
+    "options": [
+      "A. Letters",
+      "B. Digits",
+      "C. Punctuation Characters",
+      "D. All of the mentioned"
+    ],
+    "answer_index": 3,
+    "answer": "D. All of the mentioned",
+    "topic": "Core Java & OOP",
+    "explanation": "A simple name in UML can contain letters, digits, and punctuation characters like underscores, enabling flexible identifier creation for classes and objects.\n\nUML naming conventions allow all three character types to construct valid names, following standard programming language identifier rules and best practices.",
+    "corrected": false,
+    "id": "q1950",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "What Does a Composite name consists of in a UML Class and object diagram ?",
+    "options": [
+      "A. Delimiter",
+      "B. Simple names",
+      "C. Digits",
+      "D. All of the mentioned"
+    ],
+    "answer_index": 3,
+    "answer": "D. All of the mentioned",
+    "topic": "Core Java & OOP",
+    "explanation": "A composite name in UML combines simple names separated by delimiters (like dots) to create qualified names for nested classes and objects. These components can include digits as part of the naming convention for complex hierarchical structures.",
+    "corrected": false,
+    "id": "q1951",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "A Class consists of which of these abstractions?",
+    "options": [
+      "A. Set of the objects",
+      "B. Operations",
+      "C. Attributes",
+      "D. All of the mentioned"
+    ],
+    "answer_index": 3,
+    "answer": "D. All of the mentioned",
+    "topic": "Core Java & OOP",
+    "explanation": "A class encapsulates data through attributes, behavior through operations/methods, and represents a set of objects sharing these characteristics.\n\nTogether, attributes, operations, and objects form the complete abstraction that defines a class in object-oriented programming.",
+    "corrected": false,
+    "id": "q1952",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "A class is divided into which of these compartments ?",
+    "options": [
+      "A. Name Compartment",
+      "B. Attribute Compartment",
+      "C. Operation Compartment",
+      "D. All of the mentioned"
+    ],
+    "answer_index": 3,
+    "answer": "D. All of the mentioned",
+    "topic": "Core Java & OOP",
+    "explanation": "A class in UML is structured into three distinct compartments: the name compartment at the top identifies the class, the attribute compartment lists member variables, and the operation compartment displays methods.\n\nEach compartment serves a specific purpose in documenting class structure, making all three essential for complete class representation in object-oriented design.",
+    "corrected": false,
+    "id": "q1953",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "An attribute is a data item held by which of the following ?",
+    "options": [
+      "A. Class",
+      "B. Object",
+      "C. All of the mentioned",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 1,
+    "answer": "B. Object",
+    "topic": "Core Java & OOP",
+    "explanation": "An attribute is a data item that exists at both the class level (as a template definition) and the object level (as an instance with actual values). Both classes and objects hold attributes in object-oriented programming.",
+    "corrected": false,
+    "id": "q1954",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "What should be mentioned as attributes for conceptual modelling ?",
+    "options": [
+      "A. Initial Values",
+      "B. Names",
+      "C. All of the mentioned",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 2,
+    "answer": "C. All of the mentioned",
+    "topic": "Core Java & OOP",
+    "explanation": "In conceptual modeling, attributes must include names to identify properties, initial values to define starting states, and their data types to specify constraints.\n\nComplete attribute definition requires all components: names for identification, initial values for state initialization, and type information for proper representation and validation.",
+    "corrected": false,
+    "id": "q1955",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "An operation can be described as?",
+    "options": [
+      "A. Object behavior",
+      "B. Class behavior",
+      "C. Functions",
+      "D. a,b"
+    ],
+    "answer_index": 3,
+    "answer": "D. a,b",
+    "topic": "Core Java & OOP",
+    "explanation": "An operation represents both how individual objects behave when called upon and how the class defines that behavior collectively through its interface.\n\nOperations encompass functions as methods within classes, making them inseparable from both object and class behavioral definitions in object-oriented programming.",
+    "corrected": false,
+    "id": "q1956",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which of these are part of class operation specification format ?",
+    "options": [
+      "A. name",
+      "B. parameter list",
+      "C. return-type list",
+      "D. All of the mentioned"
+    ],
+    "answer_index": 3,
+    "answer": "D. All of the mentioned",
+    "topic": "Core Java & OOP",
+    "explanation": "A class operation specification requires a name to identify the operation, a parameter list defining inputs, and a return-type list specifying output types.\n\nTogether, these three components form the complete signature and interface contract for any class operation in object-oriented design.",
+    "corrected": false,
+    "id": "q1957",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "What among these is true ?",
+    "options": [
+      "A. Associations may also correspond to relation between instances of three or more classes",
+      "B. Association lines may be unlabeled or they may show association name",
+      "C. All of the mentioned",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 2,
+    "answer": "C. All of the mentioned",
+    "topic": "Core Java & OOP",
+    "explanation": "Associations in UML can involve multiple classes simultaneously (n-ary associations), not just two classes, and association lines support optional naming conventions for clarity and documentation purposes.",
+    "corrected": false,
+    "id": "q1958",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "What is multiplicity for an association?",
+    "options": [
+      "A. The multiplicity at the target class end of an association is the number of instances that can be associated with a single instance of source",
+      "B. The multiplicity at the target class end of an association is the number of instances that can be associated with a number instance of source",
+      "C. All of the mentioned",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 0,
+    "answer": "A. The multiplicity at the target class end of an association is the number of instances that can be associated with a single instance of source",
+    "topic": "Core Java & OOP",
+    "explanation": "Multiplicity defines the cardinality relationship between classes, specifying how many target instances can relate to one source instance. Option A correctly captures this definition, while option B contains grammatical errors and lacks precision in describing the association cardinality.",
+    "corrected": false,
+    "id": "q1959",
+    "trust": "unverified-source"
+  }
+]

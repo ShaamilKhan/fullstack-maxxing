@@ -1,0 +1,986 @@
+[
+  {
+    "id": "q0971",
+    "topic": "Java OOP",
+    "question": "System.out.println(cat.noise()); What is the result?",
+    "options": [
+      "A. peep",
+      "B. bark",
+      "C. meow",
+      "D. Compilation fails."
+    ],
+    "answer_index": 2,
+    "explanation": "The `cat` object is an instance of a class that overrides the `noise()` method to return `\"peep\"`, likely due to polymorphism where the actual runtime type differs from the declared type. When `noise()` is invoked, Java calls the overridden method in the actual object's class rather than the declared type's method, resulting in `\"peep\"` being printed.",
+    "corrected": false,
+    "answer": "C. meow",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0972",
+    "topic": "Java OOP",
+    "question": "Given the following code, what is the result?\n\n1. class A {\n2.     public void foo() {\n3.         System.out.println(\"A\");\n4.     }\n5. }\n6. class B extends A {\n7.     public void foo() {\n8.         System.out.println(\"B\");\n9.     }\n10.    public static void main(String[] args) {\n11.        A a = new B();\n12.        a.foo();\n13.    }\n14. }",
+    "options": [
+      "A. B",
+      "B. B, followed by an Exception.",
+      "C. Compilation fails due to an error on line 9.",
+      "D. Compilation fails due to an error on line 15."
+    ],
+    "answer_index": 0,
+    "explanation": "Since `a` is declared as type `A` but references an object of type `B`, Java uses dynamic method dispatch to call the overridden `foo()` method based on the actual object type at runtime. Because `B` overrides `foo()` to print \"B\", that version executes instead of `A`'s version, so the output is simply \"B\".",
+    "corrected": false,
+    "answer": "A. B",
+    "trust": "baseline",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "id": "q0973",
+    "topic": "Java OOP",
+    "question": "Given the following code:\n\nclass Mammal {\n}\n\nclass Raccoon extends Mammal {\n    Mammal m = new Mammal();\n}\n\nclass BabyRaccoon extends Mammal {\n}\n\nWhich statement about the relationships between these classes is true?",
+    "options": [
+      "A. Raccoon is-a Mammal.",
+      "B. BabyRaccoon is-a Raccoon.",
+      "C. Mammal is-a Raccoon.",
+      "D. Raccoon extends BabyRaccoon."
+    ],
+    "answer_index": 0,
+    "explanation": "Raccoon extends Mammal, which establishes an inheritance relationship, meaning Raccoon is-a Mammal by definition. The other options are incorrect because BabyRaccoon and Raccoon both extend Mammal independently, with no inheritance link between them, and Mammal does not extend Raccoon.",
+    "corrected": false,
+    "answer": "A. Raccoon is-a Mammal.",
+    "trust": "baseline",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "id": "q0974",
+    "topic": "Java OOP",
+    "question": "\n[CODE]\nclass output {\n    public static void main(String args[]) {\n        StringBuffer s1 = new StringBuffer(\"Hello World\");\n        s1.insert(6, \"Good \");\n        System.out.println(s1);\n    }\n}\n[/CODE]",
+    "options": [
+      "A. HelloGoodWorld",
+      "B. HellGoodoWorld",
+      "C. HellGood oWorld",
+      "D. Hello Good World"
+    ],
+    "answer_index": 3,
+    "explanation": "The `insert(6, \"Good \")` method inserts the string \"Good \" at index 6 of the StringBuffer. Since indexing is zero-based, index 6 points to the 7th character, which is the space after \"Hello\". This places \"Good \" before the space, resulting in \"Hello Good World\".",
+    "corrected": false,
+    "answer": "D. Hello Good World",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0975",
+    "topic": "Java OOP",
+    "question": "Which of these keywords cannot be used for a class which has been declared final?",
+    "options": [
+      "A. abstract",
+      "B. extends",
+      "C. abstract and extends",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 0,
+    "explanation": "A `final` class cannot be declared `abstract` because `abstract` classes are designed to be subclassed and completed by child classes, while `final` classes explicitly prevent any subclassing. However, a `final` class can still use `extends` to inherit from a parent class—the `final` modifier only restricts what can inherit from it, not what it can inherit from.",
+    "corrected": false,
+    "answer": "A. abstract",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0976",
+    "topic": "Java OOP",
+    "question": "What gets printed when the following JSTL code fragment is executed? Select the one",
+    "options": [
+      "A. The JSTL code does not compile as attribute for if tag are not correct.",
+      "B. true",
+      "C. false",
+      "D. Nothing gets printed."
+    ],
+    "answer_index": 3,
+    "explanation": "The `<c:if>` tag does not support `var` and `scope` attributes. The `<c:if>` tag only accepts `test` and optional `var` attribute (in some JSTL versions for storing the test result), but the combination used here is syntactically invalid. Additionally, the expression `${var==1}` references an undefined variable \"var\" instead of the previously set \"item\" variable, compounding the error. This causes a compilation failure.",
+    "corrected": false,
+    "answer": "D. Nothing gets printed.",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0977",
+    "topic": "Java OOP",
+    "question": "ideal removin loop -operations",
+    "options": [
+      "A. idea",
+      "B. deal",
+      "C. lead",
+      "D. idle"
+    ],
+    "answer_index": 0,
+    "explanation": "When you remove the letters \"l\" and \"o\" from \"ideal\" and \"removin loop,\" the remaining letters spell \"idea.\" The other options require removing different letter combinations that don't cleanly match the \"removin loop\" instruction, making them incorrect.",
+    "corrected": false,
+    "answer": "A. idea",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0979",
+    "topic": "Java OOP",
+    "question": "The sendRedirect method defined The sendRedirect method defined in the HttpServlet class is equivalent to invoking the setStatus method with the following parameter and a Location header in the URL. Select the one",
+    "options": [
+      "A. SC_OK",
+      "B. SC_MOVED_TEMPORARILY",
+      "C. SC_NOT_FOUND",
+      "D. SC_INTERNAL_SERVER_ERROR"
+    ],
+    "answer_index": 1,
+    "explanation": "The correct answer is B. SC_MOVED_TEMPORARILY, not A.\n\nThe `sendRedirect()` method sends an HTTP 302 response status code (SC_MOVED_TEMPORARILY) along with a Location header to redirect the client to a new URL. SC_OK (200) indicates successful request completion without redirection, making it incorrect for this use case.\n\nNote: The provided \"Correct answer: A\" appears to be an error in the question materials.",
+    "corrected": false,
+    "answer": "B. SC_MOVED_TEMPORARILY",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0980",
+    "topic": "Java OOP",
+    "question": "What is the output of this program?\n[CODE]\nimport java.util.*;\n\nclass vector {\n    public static void main(String args[]) {\n        Vector obj = new Vector(4, 2);\n        obj.addElement(new Integer(3));\n        obj.addElement(new Integer(2));\n        obj.addElement(new Integer(5));\n        obj.removeAll(obj);\n        System.out.println(obj.isEmpty());\n    }\n}\n[/CODE]",
+    "options": [
+      "A. 0",
+      "B. 1",
+      "C. true",
+      "D. false"
+    ],
+    "answer_index": 2,
+    "explanation": "After three Integer elements are added to the Vector, the `removeAll(obj)` method removes all elements by passing the Vector itself as the collection to remove. Since all elements are removed, the Vector becomes empty, and `isEmpty()` returns `true` (a boolean value, not the integer 0 or 1).",
+    "corrected": false,
+    "answer": "C. true",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0981",
+    "topic": "Java OOP",
+    "question": "What is the output of this program?\n[CODE]\nimport java.util.*;\n\nclass Maps {\n    public static void main(String args[]) {\n        TreeMap obj = new TreeMap();\n        obj.put(\"A\", new Integer(1));\n        obj.put(\"B\", new Integer(2));\n        obj.put(\"C\", new Integer(3));\n        System.out.println(obj.entrySet());\n    }\n}\n[/CODE]",
+    "options": [
+      "A. [A, B, C]",
+      "B. [1, 2, 3]",
+      "C. {A=1, B=2, C=3}",
+      "D. [A=1, B=2, C=3]"
+    ],
+    "answer_index": 3,
+    "explanation": "The code produces '[A=1, B=2, C=3]' based on Java execution semantics.",
+    "corrected": false,
+    "answer": "D. [A=1, B=2, C=3]",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0982",
+    "topic": "Java OOP",
+    "question": "What is the output of this program?\n[CODE]\nimport java.util.*;\n\nclass Bitset {\n    public static void main(String args[]) {\n        BitSet obj = new BitSet(5);\n        for (int i = 0; i < 5; ++i)\n            obj.set(i);\n        obj.clear(2);\n        System.out.print(obj);\n    }\n}\n[/CODE]",
+    "options": [
+      "A. {0, 1, 3, 4}",
+      "B. {0, 1, 2, 4}",
+      "C. {0, 1, 2, 3, 4}",
+      "D. {0, 0, 0, 3, 4}"
+    ],
+    "answer_index": 0,
+    "explanation": "The code produces '{0, 1, 3, 4}' based on Java execution semantics.",
+    "corrected": false,
+    "answer": "A. {0, 1, 3, 4}",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0983",
+    "topic": "Java OOP",
+    "question": "What is the output of this program?\n[CODE]\nimport java.util.*;\n\nclass Array {\n    public static void main(String args[]) {\n        int array[] = new int[5];\n        for (int i = 5; i > 0; i--)\n            array[5 - i] = i;\n        Arrays.fill(array, 1, 4, 8);\n        for (int i = 0; i < 5; i++)\n            System.out.print(array[i]);\n    }\n}\n[/CODE]",
+    "options": [
+      "A. 12885",
+      "B. 12845",
+      "C. 58881",
+      "D. 54881"
+    ],
+    "answer_index": 2,
+    "explanation": "The code produces '58881' based on Java execution semantics.",
+    "corrected": false,
+    "answer": "C. 58881",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0984",
+    "topic": "Java OOP",
+    "question": "What is the output of this program?\n[CODE]\nimport java.util.*;\n\nclass Collection_Algos {\n    public static void main(String args[]) {\n        LinkedList list = new LinkedList();\n        list.add(new Integer(2));\n        list.add(new Integer(8));\n        list.add(new Integer(5));\n        list.add(new Integer(1));\n        Iterator i = list.iterator();\n        Collections.reverse(list);\n        Collections.shuffle(list);\n        while (i.hasNext())\n            System.out.print(i.next() + \" \");\n    }\n}\n[/CODE]",
+    "options": [
+      "A. 2 8 5 1",
+      "B. 1 5 8 2",
+      "C. 1 2 5 8",
+      "D. Any random order"
+    ],
+    "answer_index": 3,
+    "explanation": "The code produces 'Any random order' based on Java execution semantics.",
+    "corrected": false,
+    "answer": "D. Any random order",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0986",
+    "topic": "Java OOP",
+    "question": "For a URL from a remote location, which protocol can be used?",
+    "options": [
+      "A. http",
+      "B. https",
+      "C. both",
+      "D. none"
+    ],
+    "answer_index": 2,
+    "explanation": "The `<c:forEach>` loop executes only when `begin <= end`. Here, `begin=\"0\"` and `end=\"0\"` means the loop runs exactly once (iteration 0), so the loop body executes with `item=0`. The `<c:out>` then outputs `${item}`, which evaluates to `0`, not the default value \"abc\" since a value exists. The step attribute doesn't prevent execution in this case—it only affects the increment between iterations.",
+    "corrected": false,
+    "answer": "C. both",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0987",
+    "topic": "Java OOP",
+    "question": "What is the output of this program?\n[CODE]\nimport java.util.*;\n\npublic class genericstack <E> {\n    Stack <E> stk = new Stack <E>();\n\n    public void push(E obj) {\n        stk.push(obj);\n    }\n\n    public E pop() {\n        E obj = stk.pop();\n        return obj;\n    }\n}\n\nclass Output {\n    public static void main(String args[]) {\n        genericstack <String> gs = new genericstack<String>();\n        gs.push(\"Hello\");\n        System.out.print(gs.pop() + \" \");\n        genericstack <Integer> gs = new genericstack<Integer>();\n        gs.push(36);\n        System.out.println(gs.pop());\n    }\n}\n[/CODE]",
+    "options": [
+      "A. Error",
+      "B. Hello",
+      "C. 36",
+      "D. Hello 36"
+    ],
+    "answer_index": 0,
+    "explanation": "The code produces 'Hello 36' based on Java execution semantics.",
+    "corrected": false,
+    "answer": "A. Error",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0988",
+    "topic": "Java OOP",
+    "question": "class output {\n    public static void main(String args[]) {\n        StringBuffer c = new StringBuffer(\"Hello\");\n        StringBuffer c1 = new StringBuffer(\"World\");\n        c.append(c1);\n        System.out.print(c);\n    }\n}\nWhat is the output of the above code?",
+    "options": [
+      "A. Hello",
+      "B. World",
+      "C. Helloworld",
+      "D. WorldHello"
+    ],
+    "answer_index": 2,
+    "explanation": "The append() method concatenates the contents of StringBuffer c1 (\"World\") onto the end of StringBuffer c (\"Hello\"), modifying c in place. When printed, c now contains \"HelloWorld\", the combined result of both strings joined together.",
+    "corrected": false,
+    "answer": "C. Helloworld",
+    "trust": "baseline",
+    "recovered": true,
+    "repair_origin": "source",
+    "options_synthesized": true
+  },
+  {
+    "id": "q0989",
+    "topic": "Java OOP",
+    "question": "What is the output?\n[CODE]\nclass output {\n    public static void main(String args[]) {\n        StringBuffer s1 = new StringBuffer(\"Hello\");\n        s1.setCharAt(1, 'x');\n        System.out.println(s1);\n    }\n}\n[/CODE]",
+    "options": [
+      "A. xello",
+      "B. xxxxx",
+      "C. Hxllo",
+      "D. Hexlo"
+    ],
+    "answer_index": 2,
+    "explanation": "The `setCharAt(int index, char ch)` method replaces the character at the specified index with the given character. Since index 1 refers to the second character in \"Hello\" (indexing starts at 0), the 'e' at position 1 is replaced with 'x', resulting in \"Hxllo\".",
+    "corrected": false,
+    "answer": "C. Hxllo",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0990",
+    "topic": "Java OOP",
+    "question": "What is the output?\n[CODE]\nclass output {\n    public static void main(String args[]) {\n        String s1 = \"one\";\n        String s2 = s1 + \" two\";\n        System.out.println(s2);\n    }\n}\n[/CODE]",
+    "options": [
+      "A. one",
+      "B. two",
+      "C. one two",
+      "D. compilation error"
+    ],
+    "answer_index": 2,
+    "explanation": "In Java, the `+` operator performs string concatenation when used with String objects. Since `s1` contains `\"one\"`, the expression `s1 + \" two\"` concatenates these two strings together, resulting in `\"one two\"` being assigned to `s2` and printed to the output.",
+    "corrected": false,
+    "answer": "C. one two",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0991",
+    "topic": "Java OOP",
+    "question": "\n[CODE]\nclass exception_handling {\n    public static void main(String args[]) {\n        try {\n            System.out.print(\"Hello\" + \" \" + 1 / 0);\n        } catch (ArithmeticException e) {\n            System.out.print(\"World\");\n        }\n    }\n}\n[/CODE]",
+    "options": [
+      "A. Hello",
+      "B. World",
+      "C. HelloWorld",
+      "D. Hello World"
+    ],
+    "answer_index": 1,
+    "explanation": "When the code executes `1 / 0`, it throws an `ArithmeticException` before the string concatenation completes, so \"Hello\" is never printed. The catch block then executes and prints \"World\", making B the correct answer.",
+    "corrected": false,
+    "answer": "B. World",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0992",
+    "topic": "Java OOP",
+    "question": "What is the output?\n[CODE]\nclass output {\n    public static void main(String args[]) {\n        char c[] = {'a', '1', 'b', ' ', 'A', '0'};\n        for (int i = 0; i < 5; ++i) {\n            if (Character.isDigit(c[i]))\n                System.out.println(c[i] + \" is a digit\");\n            if (Character.isWhitespace(c[i]))\n                System.out.println(c[i] + \" is a Whitespace character\");\n            if (Character.isUpperCase(c[i]))\n                System.out.println(c[i] + \" is an Upper case Letter\");\n            if (Character.isLowerCase(c[i]))\n                System.out.println(c[i] + \" is a lower case Letter\");\n            i = i + 3;\n        }\n    }\n}\n[/CODE]",
+    "options": [
+      "A. a is a lower case Letter is White space character",
+      "B. b is a lower case Letter is White space character",
+      "C. a is a lower case Letter A is a upper case Letter",
+      "D. a is a lower case Letter"
+    ],
+    "answer_index": 2,
+    "explanation": "The loop starts at `i=0` (character 'a'), prints \"a is a lower case Letter\", then executes `i=i+3` making `i=3`. On the next iteration, it checks `c[3]` which is a space character, prints \"is a Whitespace character\", then increments `i` to 6, which exceeds the loop condition (`i < 5`), so the loop terminates. The output combines both print statements from these two iterations.",
+    "corrected": false,
+    "answer": "C. a is a lower case Letter A is a upper case Letter",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0993",
+    "topic": "Java OOP",
+    "question": "Note: inputoutput.java is stored in the disk.\n[CODE]\nimport java.io.*;\n\nclass filesinputoutput {\n    public static void main(String args[]) {\n        InputStream obj = new FileInputStream(\"inputoutput.java\");\n        System.out.print(obj.available());\n    }\n}\n[/CODE]",
+    "options": [
+      "A. true",
+      "B. false",
+      "C. prints number of bytes in file",
+      "D. prints number of characters in the file"
+    ],
+    "answer_index": 2,
+    "explanation": "The `available()` method of `InputStream` returns an `int` representing the number of bytes that can be read from the input stream without blocking. Since `FileInputStream` is reading from \"inputoutput.java\" stored on disk, `available()` returns the file size in bytes, which is then printed by `System.out.print()`.",
+    "corrected": false,
+    "answer": "C. prints number of bytes in file",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0997",
+    "topic": "Java OOP",
+    "question": "\n[CODE]\npackage pkg;\n\nclass output {\n    public static void main(String args[]) {\n        StringBuffer s1 = new StringBuffer(\"Hello\");\n        s1.setCharAt(1, x);\n        System.out.println(s1);\n    }\n}\n[/CODE]",
+    "options": [
+      "A. xello",
+      "B. xxxxx",
+      "C. Hxllo",
+      "D. Hexlo"
+    ],
+    "answer_index": 2,
+    "explanation": "The `setCharAt(int index, char c)` method replaces the character at the specified index with the given character. Since `setCharAt(1, x)` is called on the StringBuffer \"Hello\", it replaces the character at index 1 (which is 'e', using 0-based indexing) with 'x', resulting in \"Hxllo\". The character at index 0 ('H') remains unchanged.",
+    "corrected": false,
+    "answer": "C. Hxllo",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0998",
+    "topic": "Java OOP",
+    "question": "Which of these is not a valid value for dispatcher element of filtermapping. Select the one",
+    "options": [
+      "A. FORWARD",
+      "B. RESPONSE",
+      "C. INCLUDE",
+      "D. ERROR"
+    ],
+    "answer_index": 1,
+    "explanation": "The valid dispatcher values for `<dispatcher>` in a filter mapping are REQUEST, FORWARD, INCLUDE, and ERROR. However, the question states the correct answer is A. FORWARD, which contradicts standard servlet specification. The valid dispatcher values are actually FORWARD, INCLUDE, ERROR, and REQUEST—so RESPONSE (option B) is the invalid value as it is not a recognized dispatcher type in the FilterMapping element of web.xml.",
+    "corrected": false,
+    "answer": "B. RESPONSE",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0999",
+    "topic": "Java OOP",
+    "question": "Which of the following is legal JSP syntax to print the value of i. Select the one",
+    "options": [
+      "A. <%int i = 1;%> <%= i; %>",
+      "B. <%int i = 1; i; %>",
+      "C. <%int i = 1%> <%= i %>",
+      "D. <%int i = 1;%> <%= i %>"
+    ],
+    "answer_index": 3,
+    "explanation": "Option A is correct because it properly separates the scriptlet declaration (`<%int i = 1;%>`) from the expression tag (`<%= i; %>`). The scriptlet declares and initializes the variable, while the expression tag outputs its value. All other options either lack proper tag closure (`<%int i = 1%>` is missing the closing `%>`), omit the expression tag entirely, or include semicolons in the expression tag where they're unnecessary (`<%= i; %>` works but options B and C have structural errors).",
+    "corrected": false,
+    "answer": "D. <%int i = 1;%> <%= i %>",
+    "trust": "baseline"
+  },
+  {
+    "id": "q1000",
+    "topic": "Java OOP",
+    "question": "Which number gets printed when the following JSTL code fragment is executed? Select the one correct",
+    "options": [
+      "A. 1",
+      "B. 2",
+      "C. 3",
+      "D. 4"
+    ],
+    "answer_index": 0,
+    "explanation": "The `varStatus.index` in JSTL's `<c:forEach>` is zero-based, so it starts at 0 for the first iteration. The `status.first` condition is true only on the first iteration, and at that point `status.index` equals 0, which outputs as \"0\" (not 1). \n\nHowever, if the correct answer key states \"A. 1\", this suggests either the question uses `varStatus.count` (which is one-based and equals 1 on first iteration) instead of `status.index`, or there's an error in the provided answer key. As written with `status.index`, the actual output should be 0, not 1.",
+    "corrected": false,
+    "answer": "A. 1",
+    "trust": "baseline"
+  },
+  {
+    "id": "q1001",
+    "topic": "Java OOP",
+    "question": "Which of the following is not a valid HTTP/1.1 method. Select the one",
+    "options": [
+      "A. CONNECT method",
+      "B. COMPARE method",
+      "C. OPTIONS method",
+      "D. TRACE method Name the http method used"
+    ],
+    "answer_index": 1,
+    "explanation": "'COMPARE method' is the correct answer per language specification.",
+    "corrected": false,
+    "answer": "B. COMPARE method",
+    "trust": "baseline"
+  },
+  {
+    "id": "q1002",
+    "topic": "Java OOP",
+    "question": "Name the location of compiled class files within a war file? Select the one",
+    "options": [
+      "A. /META-INF/classes",
+      "B. /classes",
+      "C. /WEB-INF/classes",
+      "D. /root/classes Answers- web inf"
+    ],
+    "answer_index": 2,
+    "explanation": "The correct answer is C. /WEB-INF/classes, not A as stated in your prompt.\n\nIn a WAR (Web Application Archive) file structure, compiled Java class files are placed in the `/WEB-INF/classes` directory, which is the standard location for application classes that are kept private from direct web access. The `/META-INF` directory is reserved for manifest files and metadata, not compiled classes.",
+    "corrected": false,
+    "answer": "C. /WEB-INF/classes",
+    "trust": "baseline"
+  },
+  {
+    "id": "q1003",
+    "topic": "Concurrency",
+    "question": "What get printed when the following JSTL code fragment is executed? <%@ taglib uri=\"http://java.sun.com/jsp/jstl/core\" prefix=\"c\" %> <c:forEach var=\"item\" begin=\"0\" end=\"12\" step=\"3\"> ${item} </c:forEach>",
+    "options": [
+      "A. 0,3,6,9,12",
+      "B. 3,6,9,12",
+      "C. 0,6,9,12",
+      "D. 0,3,6,9"
+    ],
+    "answer_index": 0,
+    "explanation": "The forEach loop starts at 0 and continues while the counter is less than or equal to 12, incrementing by 3 each iteration. This produces the sequence 0, 3, 6, 9, 12, since 12 is included as it satisfies the end condition.",
+    "corrected": false,
+    "answer": "A. 0,3,6,9,12",
+    "trust": "baseline",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "id": "q1004",
+    "topic": "Concurrency",
+    "question": "Assume the following method is properly synchronized and called from a thread A on an object B: wait(2000); After calling this method, when will the thread A become a candidate to get another turn at the CPU?",
+    "options": [
+      "A. After thread A is notified, or after two seconds.",
+      "B. After the lock on B is released, or after two seconds.",
+      "C. Two seconds after thread A is notified.",
+      "D. Two seconds after lock B is released."
+    ],
+    "answer_index": 0,
+    "explanation": "The `wait(2000)` method causes thread A to release the lock on object B and enter a timed wait state. Thread A becomes a runnable candidate again either when another thread calls `notify()`/`notifyAll()` on B (whichever happens first), or when the 2-second timeout expires—both conditions allow it to reacquire the lock and resume execution.",
+    "corrected": false,
+    "answer": "A. After thread A is notified, or after two seconds.",
+    "trust": "baseline"
+  },
+  {
+    "id": "q1005",
+    "topic": "Java OOP",
+    "question": "What is the result?\n\npublic class Test {\n    public static void main(String[] args) {\n        Object obj = new Object() {\n            public String toString() {\n                return \"test\";\n            }\n        };\n        System.out.println(obj);\n    }\n}",
+    "options": [
+      "A. test",
+      "B. null",
+      "C. An exception is thrown at runtime.",
+      "D. Compilation fails because of an error."
+    ],
+    "answer_index": 0,
+    "explanation": "An anonymous class overriding toString() is created and assigned to obj, so println(obj) calls this overridden method instead of Object's default implementation. Since the overridden toString() returns the string \"test\", that value is printed to the console.",
+    "corrected": false,
+    "answer": "A. test",
+    "trust": "baseline",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "id": "q1006",
+    "topic": "Java OOP",
+    "question": "in javabean reference id define?",
+    "options": [
+      "A. Classname",
+      "B. Package",
+      "C. Instance",
+      "D. None"
+    ],
+    "answer_index": 2,
+    "explanation": "In JavaBean, the reference ID is defined by the Classname because the class name serves as the unique identifier for the bean type in the container/framework. When a JavaBean is instantiated or referenced, it's the fully qualified class name that the framework uses to locate, instantiate, and manage that specific bean component. The package is just part of the fully qualified name, but the classname itself is what uniquely identifies the bean reference within its scope.",
+    "corrected": false,
+    "answer": "C. Instance",
+    "trust": "baseline"
+  },
+  {
+    "id": "q1007",
+    "topic": "Java OOP",
+    "question": "A: unit testing is the testing of single entity B: unit testing is the process of checking the functionality of the application whether it is working as per requirements",
+    "options": [
+      "A. A is true",
+      "B. B is true",
+      "C. Both are true",
+      "D. None of the above What will be the output of this -"
+    ],
+    "answer_index": 0,
+    "explanation": "Unit testing specifically focuses on testing individual, isolated components or functions in isolation (statement A), whereas statement B describes functional or acceptance testing, which validates the entire application's behavior against requirements. Unit tests are deliberately narrow in scope and test single entities with mocked dependencies, making A the technically accurate definition.",
+    "corrected": false,
+    "answer": "A. A is true",
+    "trust": "baseline"
+  },
+  {
+    "id": "q1008",
+    "topic": "Concurrency",
+    "question": "Which of these keywords must be used to monitor for exceptions?",
+    "options": [
+      "A. try",
+      "B. finally",
+      "C. throw",
+      "D. catch"
+    ],
+    "answer_index": 0,
+    "explanation": "The `try` keyword is essential for monitoring exceptions because it defines the block of code where exceptions may occur. Without `try`, you cannot establish an exception handling mechanism—`catch` blocks only function when paired with a `try` block, and `finally` executes only after a `try`/`catch` sequence completes. The `throw` keyword is used to raise exceptions, not monitor them.",
+    "corrected": false,
+    "answer": "A. try",
+    "trust": "baseline"
+  },
+  {
+    "id": "q1009",
+    "topic": "Java OOP",
+    "question": "Consider the following Java code:\n\npublic class Student {\n    private String name;\n    public Student(String name) {\n        this.name = name;\n    }\n    public String getName() {\n        return name;\n    }\n}\n\npublic class Test {\n    public static void main(String[] args) {\n        Student s1 = new Student(\"Amit Gupta\");\n        Student s2 = new Student(\"Ravi Kumar\");\n        System.out.println(s1.getName().equals(s2.getName()));\n    }\n}\n\nWhat is the output of this program?",
+    "options": [
+      "A. false",
+      "B. true",
+      "C. NullPointerException",
+      "D. Compilation error"
+    ],
+    "answer_index": 3,
+    "explanation": "In Java, a single source file can contain only one public top-level class, but this code defines two public classes, Student and Test, in the same file. This violates Java's compilation rules, causing a compilation error before the program can even run.",
+    "corrected": false,
+    "answer": "D. Compilation error",
+    "trust": "baseline",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "id": "q1011",
+    "topic": "Java OOP",
+    "question": "What is the output?\n[CODE]\nclass exception_handling {\n    public static void main(String args[]) {\n        try {\n            int a, b;\n            b = 0;\n            a = 5 / b;\n            System.out.print(\"A\");\n        } catch (ArithmeticException e) {\n            System.out.print(\"B\");\n        } finally {\n            System.out.print(\"C\");\n        }\n    }\n}\n[/CODE]",
+    "options": [
+      "A. A",
+      "B. B",
+      "C. AC",
+      "D. BC"
+    ],
+    "answer_index": 3,
+    "explanation": "When `a = 5 / b` executes with `b = 0`, an `ArithmeticException` is thrown, which prevents \"A\" from printing. The catch block catches this exception and prints \"B\". However, the finally block does not execute in this case because the program terminates after the catch block completes without encountering a return statement or another exception. Therefore, only \"B\" is printed.\n\nNote: The correct answer should actually be BC (Option D), as finally blocks always execute regardless of whether an exception occurs or is caught.",
+    "corrected": false,
+    "answer": "D. BC",
+    "trust": "baseline"
+  },
+  {
+    "id": "q1013",
+    "topic": "Java OOP",
+    "question": "Which of the following values are accepted by the float Property?a) leftb) rightc) noned) all of the mentioned",
+    "options": [
+      "A. left",
+      "B. right",
+      "C. none",
+      "D. all of the above"
+    ],
+    "answer_index": 3,
+    "explanation": "The CSS float property accepts left, right, none, and inherit as values.",
+    "corrected": false,
+    "answer": "D. all of the above",
+    "trust": "baseline"
+  },
+  {
+    "id": "q1016",
+    "topic": "HTML/CSS",
+    "question": "Which of the following media queries would apply to a tabletreporting a screen width of 768px?",
+    "options": [
+      "A. @media only screen and (min-width: 1140px){}",
+      "B. @media only screen and (min-width: 641px){}",
+      "C. @media only screen and (max-width: 1140px){}",
+      "D. @media only screen and (min-width: 769px){}"
+    ],
+    "answer_index": 2,
+    "explanation": "Since 768px is less than or equal to 1140px, the max-width: 1140px condition is satisfied, making the media query apply. Options A and D fail because 768px doesn't meet their minimum width thresholds of 1140px and 769px respectively, though B would also technically match.",
+    "corrected": false,
+    "answer": "C. @media only screen and (max-width: 1140px){}",
+    "trust": "baseline"
+  },
+  {
+    "id": "q1018",
+    "topic": "HTML/CSS",
+    "question": "I have a <p> which is the child of a <div> which is the child of a <section>, does the style in the section affect the p tag?",
+    "options": [
+      "A. Yes, inheritance accumulates",
+      "B. No, only the immediate parent's style is inherited",
+      "C. Yes, but only if the div has no conflicting styles defined",
+      "D. No, CSS styles only apply to direct children, not nested descendants"
+    ],
+    "answer_index": 0,
+    "explanation": "CSS inheritance flows down through the entire document tree, not just to immediate children. Inheritable properties (like `color`, `font-family`, `font-size`) cascade from the `<section>` through the `<div>` to the `<p>` tag, with each level potentially modifying the inherited value. This hierarchical accumulation allows styles defined on ancestor elements to affect deeply nested descendants unless explicitly overridden by more specific rules.",
+    "corrected": false,
+    "answer": "A. Yes, inheritance accumulates",
+    "trust": "baseline"
+  },
+  {
+    "id": "q1020",
+    "topic": "Java OOP",
+    "question": "What built-in functions allows you to convert a string into an integer?",
+    "options": [
+      "A. toInt()",
+      "B. parseInt()",
+      "C. toInteger()",
+      "D. parseString()"
+    ],
+    "answer_index": 1,
+    "explanation": "`parseInt()` is the standard built-in function in JavaScript that parses a string argument and returns an integer. The other options are either non-existent functions (toInt, toInteger, parseString) or incorrect naming conventions in JavaScript's standard library.",
+    "corrected": false,
+    "answer": "B. parseInt()",
+    "trust": "baseline"
+  },
+  {
+    "id": "q1026",
+    "topic": "JavaScript",
+    "question": "What is blog.name?var blog = { name: 'Ski Utah'};var updatedBlog = blog;updatedBlog.name = 'Rocky Mountain Skiing' }",
+    "options": [
+      "A. Ski Utah",
+      "B. undefined",
+      "C. blog",
+      "D. Rocky Mountain Skiing"
+    ],
+    "answer_index": 3,
+    "explanation": "When `updatedBlog = blog` is executed, both variables reference the same object in memory rather than creating a copy. Therefore, modifying `updatedBlog.name` to 'Rocky Mountain Skiing' also changes the `name` property of the original `blog` object, since they point to the same location. When `blog.name` is accessed, it returns the updated value 'Rocky Mountain Skiing'.",
+    "corrected": false,
+    "answer": "D. Rocky Mountain Skiing",
+    "trust": "baseline"
+  },
+  {
+    "id": "q1028",
+    "topic": "Java OOP",
+    "question": "What will show in the console when this code runs?var value = \"no value\";console.log(!!value );",
+    "options": [
+      "A. false",
+      "B. (an empty string)",
+      "C. true",
+      "D. no value"
+    ],
+    "answer_index": 2,
+    "explanation": "The double negation operator `!!` converts a value to its boolean equivalent. Since `\"no value\"` is a non-empty string (a truthy value in JavaScript), the first `!` converts it to `false`, and the second `!` converts it back to `true`. Empty strings, `0`, `null`, `undefined`, and `NaN` are falsy; all other values are truthy.",
+    "corrected": false,
+    "answer": "C. true",
+    "trust": "baseline"
+  },
+  {
+    "id": "q1029",
+    "topic": "JavaScript",
+    "question": "What is the output of the following?function display(num1, num2) { console.log(num1, num2);}let nums = \"12345\";display(...nums);",
+    "options": [
+      "A. 1 2",
+      "B. 21",
+      "C. 12345",
+      "D. 45"
+    ],
+    "answer_index": 0,
+    "explanation": "The spread operator (`...`) expands the string `\"12345\"` into individual characters, passing them as separate arguments to the function. Since `display()` only accepts two parameters, `num1` receives `\"1\"` and `num2` receives `\"2\"`, while the remaining characters are ignored, resulting in `1 2` being logged.",
+    "corrected": false,
+    "answer": "A. 1 2",
+    "trust": "baseline"
+  },
+  {
+    "id": "q1033",
+    "topic": "JavaScript",
+    "question": "What does the \"webpack\" command do ?",
+    "options": [
+      "A. Runs React Local Development Server.",
+      "B. Transpiles all the Javascript down into one file.",
+      "C. Both A and B.",
+      "D. Installs all the npm dependencies listed in package.json."
+    ],
+    "answer_index": 1,
+    "explanation": "The `webpack` command bundles all JavaScript modules and assets into one or more optimized files for production, while `webpack-dev-server` (often aliased as `webpack` in development scripts) runs a local development server with hot module replacement. Modern React project configurations typically combine both functionalities, allowing developers to transpile and bundle code while simultaneously serving it locally for testing.",
+    "corrected": false,
+    "answer": "B. Transpiles all the Javascript down into one file.",
+    "trust": "baseline"
+  },
+  {
+    "id": "q1036",
+    "topic": "Concurrency",
+    "question": "What value will be output at the end of the following code block?\nenum Color { Red = 5, Green = 10, Blue = 15 };\nconsole.log(Color.Green);",
+    "options": [
+      "A. 10",
+      "B. 2",
+      "C. Color.Green",
+      "D. 1"
+    ],
+    "answer_index": 0,
+    "explanation": "The enum explicitly assigns Red = 5, so subsequent members increment by 1, making Green equal to 6... but since Green is explicitly assigned 10, it directly holds that value. Accessing Color.Green retrieves this assigned numeric value, so the console outputs 10.",
+    "corrected": false,
+    "answer": "A. 10",
+    "trust": "baseline",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "id": "q1039",
+    "topic": "Java OOP",
+    "question": "What access modifier limits the accessibility of a class member to its own class and subclasses?",
+    "options": [
+      "A. export",
+      "B. internal",
+      "C. protected",
+      "D. private E.sensitive"
+    ],
+    "answer_index": 2,
+    "explanation": "The `protected` access modifier allows a class member to be accessed within its own class and by any subclasses that inherit from it, making it the only modifier that specifically enables inheritance-based access. `private` restricts access to only the declaring class, while `public` allows unrestricted access; the other options (`export`, `internal`, `sensitive`) are either not standard access modifiers or serve different purposes in specific languages.",
+    "corrected": false,
+    "answer": "C. protected",
+    "trust": "baseline"
+  },
+  {
+    "id": "q1041",
+    "topic": "JavaScript",
+    "question": "Which TypeScript compiler options lets you specify the location of the tsconfig.json file to be used for the compilation?",
+    "options": [
+      "A. --project",
+      "B. --json",
+      "C. --outDir",
+      "D. --input"
+    ],
+    "answer_index": 0,
+    "explanation": "The --project flag (or -p) tells the TypeScript compiler where to find the tsconfig.json file, either by pointing to its directory or the file path directly. This allows developers to compile projects using configuration files located outside the current working directory.",
+    "corrected": false,
+    "answer": "A. --project",
+    "trust": "baseline",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "id": "q1045",
+    "topic": "JavaScript",
+    "question": "In typescript, it calls an javascript internally and then performs validations",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "explanation": "TypeScript is a superset of JavaScript that compiles to JavaScript at runtime. Since TypeScript code is ultimately transformed into JavaScript and executed in a JavaScript environment, it inherently calls JavaScript internally while also adding static type checking and validation during the compilation phase.",
+    "corrected": false,
+    "answer": "A. True",
+    "trust": "baseline"
+  },
+  {
+    "id": "q1049",
+    "topic": "Java OOP",
+    "question": "Default access modifier typescript?",
+    "options": [
+      "A. public",
+      "B. private",
+      "C. protected",
+      "D. readonly"
+    ],
+    "answer_index": 0,
+    "explanation": "In TypeScript, when no access modifier is explicitly specified on a class member, it defaults to `public`, making it accessible from anywhere both inside and outside the class. This is consistent with JavaScript's default behavior of exposing properties and methods unless explicitly restricted. The other modifiers (`private`, `protected`, `readonly`) must be explicitly declared to enforce their respective access restrictions.",
+    "corrected": false,
+    "answer": "A. public",
+    "trust": "baseline"
+  },
+  {
+    "id": "q1055",
+    "topic": "JavaScript",
+    "question": "The . . . . . . . filter waits for a promise and returns the most recent value received. It then updates the view.",
+    "options": [
+      "A. sync",
+      "B. async",
+      "C. promise",
+      "D. custom"
+    ],
+    "answer_index": 1,
+    "explanation": "The `async` filter in Angular is specifically designed to handle asynchronous operations by subscribing to promises and observables, automatically updating the view whenever a new value is emitted. It unwraps the promise and displays the most recent resolved value, while also managing unsubscription to prevent memory leaks. The other options don't provide this automatic promise-handling and view-update functionality.",
+    "corrected": false,
+    "answer": "B. async",
+    "trust": "baseline"
+  },
+  {
+    "id": "q1058",
+    "topic": "JavaScript",
+    "question": "Animations are fired using animation property bindings which are prefixed with an . . . . symbol.",
+    "options": [
+      "A. &",
+      "B. #",
+      "C. $",
+      "D. @"
+    ],
+    "answer_index": 3,
+    "explanation": "In Angular, the `@` symbol is used as a prefix for animation property bindings, following Angular's special binding syntax conventions. This distinguishes animation bindings from standard property bindings (using `[property]`), event bindings (using `(event)`), and two-way bindings (using `[(ngModel)]`), allowing Angular to identify and trigger animations through the animation API.",
+    "corrected": false,
+    "answer": "D. @",
+    "trust": "baseline"
+  },
+  {
+    "id": "q1059",
+    "topic": "Java OOP",
+    "question": "Which of the following bootstrap styles are used to create a vertical pills navigation?",
+    "options": [
+      "A. .nav, .nav-tabs",
+      "B. .nav, .nav-pills",
+      "C. .nav, .nav-pills, .nav-stacked",
+      "D. .nav, .nav-tabs, .nav-justified"
+    ],
+    "answer_index": 2,
+    "explanation": "'.nav, .nav-pills, .nav-stacked' is the correct answer per language specification.",
+    "corrected": false,
+    "answer": "C. .nav, .nav-pills, .nav-stacked",
+    "trust": "baseline"
+  },
+  {
+    "id": "q1060",
+    "topic": "Java OOP",
+    "question": "Which of the following bootstrap styles are used to create a justified tabs navigation?",
+    "options": [
+      "A. nav, .nav-tabs",
+      "B. nav, .nav-pills",
+      "C. nav, .nav-pills, .nav-stacked",
+      "D. nav, .nav-tabs, .nav-justified"
+    ],
+    "answer_index": 3,
+    "explanation": "'nav, .nav-tabs, .nav-justified' is the correct answer per language specification.",
+    "corrected": false,
+    "answer": "D. nav, .nav-tabs, .nav-justified",
+    "trust": "baseline"
+  },
+  {
+    "id": "q1061",
+    "topic": "HTML/CSS",
+    "question": "Ques. Bootstrap's grid system allows up to",
+    "options": [
+      "A. 6 columns across the page",
+      "B. 12 columns across the page",
+      "C. columns across the page",
+      "D. 24 columns across the page"
+    ],
+    "answer_index": 1,
+    "explanation": "Bootstrap's grid system divides the page horizontally into 12 equal-width columns, allowing developers to create flexible, responsive layouts. Elements can span multiple columns (e.g., col-6 for half-width) by combining these 12 units in various ratios.",
+    "corrected": false,
+    "answer": "B. 12 columns across the page",
+    "trust": "baseline",
+    "recovered": true,
+    "repair_origin": "source",
+    "options_synthesized": true
+  },
+  {
+    "id": "q1062",
+    "topic": "Java OOP",
+    "question": "How could you externalize constants from a Spring configuration file or a Spring annotation into a .properties file? Select one or more",
+    "options": [
+      "A. By using the <context:property-placeholder /> tag",
+      "B. By using the <util:constant /> tag",
+      "C. By declaring the ConstantPlaceholderConfigurer bean post processor",
+      "D. By using the c: namespace"
+    ],
+    "answer_index": 0,
+    "explanation": "'By using the <context:property-placeholder /> tag' is correct.",
+    "corrected": false,
+    "answer": "A. By using the <context:property-placeholder /> tag",
+    "trust": "baseline"
+  },
+  {
+    "id": "q1063",
+    "topic": "Java OOP",
+    "question": "To validate Java beans in a web application using annotations.",
+    "options": [
+      "A. XML",
+      "B. Java Based",
+      "C. JAR-303 standard",
+      "D. All of the mentioned"
+    ],
+    "answer_index": 3,
+    "explanation": "Java bean validation supports multiple approaches: XML-based configuration files (Option A), Java-based annotations like @NotNull and @Valid (Option B), and the JAR-303 standard (now JSR-380 for Bean Validation 2.0) which formally defines annotation-driven validation (Option C). All three methods can be used individually or combined in modern Java web applications to validate beans.",
+    "corrected": false,
+    "answer": "D. All of the mentioned",
+    "trust": "baseline"
+  },
+  {
+    "id": "q1064",
+    "topic": "Java OOP",
+    "question": "SpEL statements are recognizable.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "explanation": "SpEL (Spring Expression Language) statements are recognizable because they follow a distinctive syntax with characteristic markers: they are typically enclosed in `#{}` or `${}` delimiters and use a Unified EL-like syntax with property accessors, method invocations, and operators that make them syntactically distinguishable from regular code. This standardized format allows developers and tools to easily identify and parse SpEL expressions within configuration files, annotations, and Spring framework components.",
+    "corrected": false,
+    "answer": "A. True",
+    "trust": "baseline"
+  },
+  {
+    "id": "q1065",
+    "topic": "Java OOP",
+    "question": "General-purpose class that allows a response to be rendered using a marshaller.",
+    "options": [
+      "A. MarshallingView",
+      "B. Marshaling",
+      "C. View",
+      "D. All of the mentioned"
+    ],
+    "answer_index": 0,
+    "explanation": "`MarshallingView` is a Spring Framework class specifically designed to render responses by serializing model objects using a marshaller (typically for XML or JSON output). While `View` is the parent interface and `Marshaling` refers to the serialization process itself, only `MarshallingView` encapsulates the complete, ready-to-use implementation for marshalling-based response rendering in a Spring application.",
+    "corrected": false,
+    "answer": "A. MarshallingView",
+    "trust": "baseline"
+  },
+  {
+    "id": "q1066",
+    "topic": "Java OOP",
+    "question": "Annotation which allows the Jaxb2Marshaller marshaller to detect a class's (i.e., object's) fields.",
+    "options": [
+      "A. @XmlRootElement",
+      "B. @XmlRoot",
+      "C. @NotNull",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 0,
+    "explanation": "The `@XmlRootElement` annotation marks a class as an XML root element, enabling Jaxb2Marshaller to recognize and process the class's fields during XML serialization and deserialization. This annotation is essential for JAXB to map Java objects to XML structures, as it identifies which class represents the top-level XML element. Without it, JAXB cannot properly detect and marshal the object's fields.",
+    "corrected": false,
+    "answer": "A. @XmlRootElement",
+    "trust": "baseline"
+  },
+  {
+    "id": "q1067",
+    "topic": "Java OOP",
+    "question": "Considering 2 classes AccountServiceImpl and ClientServiceImpl. Any of these 2 classes inherits from each other. What is the result of the following pointcut expression? execution(* *..AccountServiceImpl.update(..)) && execution(* *..ClientServiceImpl.update(..))",
+    "options": [
+      "A. No joint point is defined",
+      "B. Matches public update methods of the 2 classes, whatever the arguments",
+      "C. Matches any update methods of the 2 classes, whatever the arguments and method visibility",
+      "D. Matches any update methods of the 2 classes, with one more arguments and whatever method visibility"
+    ],
+    "answer_index": 0,
+    "explanation": "The pointcut uses the AND operator (&&) to combine two execution expressions, which requires a single join point to satisfy both conditions simultaneously. Since a join point can only belong to either `AccountServiceImpl` or `ClientServiceImpl` but not both at the same time, no join point can ever match both conditions, resulting in zero matching join points.",
+    "corrected": false,
+    "answer": "A. No joint point is defined",
+    "trust": "baseline"
+  },
+  {
+    "id": "q1068",
+    "topic": "Java OOP",
+    "question": "Select the right statement about referring a Spring configuration file inside the package com.example.myapp in the below example? ApplicationContext context = new ClassPathXmlApplicationContext(\"classpath:/com.example.myapp.config.xml\");",
+    "options": [
+      "A. all of the above",
+      "B. The classpath: prefix could be omitted",
+      "C. Package name using the dot character is not well formatted",
+      "D. The slash character preceding com.example could be omit"
+    ],
+    "answer_index": 0,
+    "explanation": "The correct answer is A. all of the above because:\n\n1. Option B is true: The `classpath:` prefix is optional for `ClassPathXmlApplicationContext` since it defaults to classpath resources.\n\n2. Option C is true: The package path should use forward slashes (`classpath:/com/example/myapp/config.xml`), not dots, as dots are only used in Java package naming conventions, not file paths.\n\n3. Option D is true: The leading slash after `classpath:` is optional; `classpath:com/example/myapp/config.xml` works equally well.\n\nSince all three individual statements are correct, option A is the right answer.",
+    "corrected": false,
+    "answer": "A. all of the above",
+    "trust": "baseline"
+  }
+]

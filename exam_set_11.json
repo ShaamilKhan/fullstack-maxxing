@@ -1,0 +1,964 @@
+[
+  {
+    "id": "q0680",
+    "topic": "Java OOP",
+    "question": "What is the Docker command to add or update a published port?",
+    "options": [
+      "A. docker service port-update",
+      "B. docker service expose",
+      "C. docker service update --publish-add",
+      "D. docker service publish"
+    ],
+    "answer_index": 2,
+    "explanation": "Why Option C is Correct\n\nThe `docker service update` command is the standard way to modify an existing service's configuration in Docker Swarm, and the `--publish-add` flag specifically adds or updates port mappings without disrupting the running service. Options A, B, and D are not valid Docker commands—Docker doesn't have dedicated `port-update`, `expose`, or `publish` subcommands for services.",
+    "corrected": false,
+    "answer": "C. docker service update --publish-add",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0681",
+    "topic": "Java OOP",
+    "question": "What service mode is used to deploy a single task of a service to each node?",
+    "options": [
+      "A. Replicated",
+      "B. Global",
+      "C. Cluster",
+      "D. Distributed"
+    ],
+    "answer_index": 1,
+    "explanation": "Global service mode automatically deploys exactly one task of a service to every node in the Docker Swarm cluster, ensuring uniform distribution across all available nodes. In contrast, Replicated mode (the default) allows you to specify an arbitrary number of task replicas that may be distributed unevenly across nodes. Cluster and Distributed are not valid Docker Swarm service modes.",
+    "corrected": false,
+    "answer": "B. Global",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0682",
+    "topic": "Java OOP",
+    "question": "Which description best fits a DaemonSet?",
+    "options": [
+      "A. A controller that manages deployments",
+      "B. A way to run a copy of a pod on all or some nodes",
+      "C. A service that balances traffic between pods",
+      "D. A pod that runs only once"
+    ],
+    "answer_index": 1,
+    "explanation": "'A way to run a copy of a pod on all or some nodes' is correct.",
+    "corrected": false,
+    "answer": "B. A way to run a copy of a pod on all or some nodes",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0683",
+    "topic": "Java OOP",
+    "question": "Docker command to connect a running container to an existing user-defined bridge network?",
+    "options": [
+      "A. docker network attach",
+      "B. docker network connect",
+      "C. docker container network",
+      "D. docker network add"
+    ],
+    "answer_index": 1,
+    "explanation": "The `docker network connect` command is the correct Docker syntax for attaching a running container to an existing network. This command takes the network name and container ID/name as arguments and dynamically connects them without requiring container restart. The other options either don't exist as valid Docker commands (A, C, D) or use incorrect syntax.",
+    "corrected": false,
+    "answer": "B. docker network connect",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0684",
+    "topic": "Java OOP",
+    "question": "Docker command to display detailed information on one or more networks?",
+    "options": [
+      "A. docker network inspect",
+      "B. docker network info",
+      "C. docker inspect network",
+      "D. docker network show"
+    ],
+    "answer_index": 0,
+    "explanation": "The `docker network inspect` command is the correct Docker CLI syntax for querying detailed information about one or more networks. Docker follows the pattern `docker [resource] [action]`, where \"network\" is the resource and \"inspect\" is the action, making this the standard and officially supported command for retrieving network configuration details, connected containers, and other metadata.",
+    "corrected": false,
+    "answer": "A. docker network inspect",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0686",
+    "topic": "Java OOP",
+    "question": "What is the default format of docker inspect output?",
+    "options": [
+      "A. XML",
+      "B. YAML",
+      "C. JSON",
+      "D. TXT"
+    ],
+    "answer_index": 2,
+    "explanation": "The `docker inspect` command outputs data in JSON format by default because JSON is a structured, machine-readable format that allows easy parsing and integration with other tools and scripts. Docker chose JSON as the standard output format across its CLI to maintain consistency and provide developers with a universally supported data serialization format.",
+    "corrected": false,
+    "answer": "C. JSON",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0687",
+    "topic": "Java OOP",
+    "question": "What is a label in Kubernetes?",
+    "options": [
+      "A. A security rule for pods",
+      "B. A way to group related things using key/value pairs",
+      "C. A network configuration",
+      "D. A container runtime setting"
+    ],
+    "answer_index": 1,
+    "explanation": "'A way to group related things using key/value pairs' is correct.",
+    "corrected": false,
+    "answer": "B. A way to group related things using key/value pairs",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0688",
+    "topic": "Java OOP",
+    "question": "Docker command to find the current logging driver for a running container?",
+    "options": [
+      "A. docker logs",
+      "B. docker inspect",
+      "C. docker info",
+      "D. docker container info"
+    ],
+    "answer_index": 1,
+    "explanation": "The `docker inspect` command returns detailed configuration metadata for a container in JSON format, including the logging driver specified under the \"LogConfig\" section. While `docker logs` displays container output and `docker info` shows system-wide daemon information, neither provides container-specific logging driver configuration. `docker container info` is not a valid Docker command.",
+    "corrected": false,
+    "answer": "B. docker inspect",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0689",
+    "topic": "HTML/CSS",
+    "question": "Docker command to see the storage driver Docker is currently using?",
+    "options": [
+      "A. docker storage",
+      "B. docker inspect",
+      "C. docker system df",
+      "D. docker info"
+    ],
+    "answer_index": 3,
+    "explanation": "The `docker info` command displays comprehensive Docker daemon configuration details, including the storage driver in use (shown in the \"Storage Driver\" field). While `docker inspect` shows object-specific metadata and `docker system df` reports disk usage, neither outputs storage driver information. `docker storage` is not a valid Docker command.",
+    "corrected": false,
+    "answer": "D. docker info",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0690",
+    "topic": "HTML/CSS",
+    "question": "What does docker image prune do?",
+    "options": [
+      "A. Removes all images",
+      "B. Removes unused images",
+      "C. Removes running containers",
+      "D. Removes unused volumes"
+    ],
+    "answer_index": 1,
+    "explanation": "`docker image prune` specifically targets dangling and unused images—those not tagged and not referenced by any container. It does not remove all images indiscriminately (A), nor does it affect containers (C) or volumes (D), which have their own separate prune commands. This command helps reclaim disk space by cleaning up orphaned image layers while preserving images actively in use.",
+    "corrected": false,
+    "answer": "B. Removes unused images",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0691",
+    "topic": "Java OOP",
+    "question": "What manages assigning nodes to pods depending on resource availability?",
+    "options": [
+      "A. Controller Manager",
+      "B. Scheduler",
+      "C. API Server",
+      "D. Kubelet"
+    ],
+    "answer_index": 1,
+    "explanation": "The Scheduler is responsible for watching for newly created pods without node assignments and selecting appropriate nodes based on resource requirements (CPU, memory), constraints, and availability. It evaluates each node's capacity and runs filter and scoring algorithms to make optimal placement decisions. The other components (Controller Manager manages workloads, API Server handles requests, Kubelet executes on nodes) do not perform this scheduling function.",
+    "corrected": false,
+    "answer": "B. Scheduler",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0692",
+    "topic": "Java OOP",
+    "question": "What can you deploy on Kubernetes?",
+    "options": [
+      "A. Virtual Machines",
+      "B. Containers",
+      "C. Operating Systems",
+      "D. Drivers"
+    ],
+    "answer_index": 1,
+    "explanation": "Kubernetes is a container orchestration platform designed specifically to manage containerized applications at scale. Containers are lightweight, portable units that package applications with their dependencies, which Kubernetes deploys, schedules, and manages across a cluster of machines. Virtual machines, operating systems, and drivers operate at different abstraction levels and cannot be directly deployed as Kubernetes workloads.",
+    "corrected": false,
+    "answer": "B. Containers",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0693",
+    "topic": "Java OOP",
+    "question": "Which command is used to create a service in Kubernetes?",
+    "options": [
+      "A. kubectl service create",
+      "B. kubectl expose",
+      "C. kubectl create service",
+      "D. kubectl deploy service"
+    ],
+    "answer_index": 1,
+    "explanation": "The `kubectl expose` command is the primary method to create a Kubernetes Service by exposing an existing Pod or Deployment. While `kubectl create service` (option C) is also valid in newer Kubernetes versions, `kubectl expose` is the standard and most commonly used approach, as it automatically handles port mapping and selector configuration based on the source resource.",
+    "corrected": false,
+    "answer": "B. kubectl expose",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0694",
+    "topic": "Java OOP",
+    "question": "Which command is used to create a service?",
+    "options": [
+      "A. kubectl service create",
+      "B. kubectl expose",
+      "C. kubectl create service",
+      "D. kubectl deploy service"
+    ],
+    "answer_index": 1,
+    "explanation": "The `kubectl expose` command is the primary method to create a Kubernetes Service by exposing an existing resource (Pod, Deployment, ReplicaSet, etc.) and mapping it to a port. While `kubectl create service` (option C) can also create services directly, `kubectl expose` is the standard and most commonly used approach for exposing applications within Kubernetes clusters.",
+    "corrected": false,
+    "answer": "B. kubectl expose",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0695",
+    "topic": "Java OOP",
+    "question": "What is the function of a node?",
+    "options": [
+      "A. To manage the control plane",
+      "B. To run pods according to master components",
+      "C. To store container images",
+      "D. To configure network policies"
+    ],
+    "answer_index": 1,
+    "explanation": "A node is a worker machine in Kubernetes that executes the actual containerized workloads. The control plane (master components) makes scheduling decisions and manages the cluster, while nodes receive these instructions and run the pods as directed. Nodes host the kubelet agent, container runtime, and kube-proxy to facilitate pod execution and networking.",
+    "corrected": false,
+    "answer": "B. To run pods according to master components",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0696",
+    "topic": "Java OOP",
+    "question": "OpenShift is based on which container orchestration platform?",
+    "options": [
+      "A. Docker Swarm",
+      "B. Kubernetes",
+      "C. Mesos",
+      "D. Nomad"
+    ],
+    "answer_index": 1,
+    "explanation": "OpenShift is Red Hat's enterprise-grade container platform built directly on top of Kubernetes, using it as the underlying orchestration engine. OpenShift extends Kubernetes with additional enterprise features such as integrated CI/CD, developer tools, security enhancements, and simplified deployment mechanisms while maintaining full Kubernetes API compatibility.",
+    "corrected": false,
+    "answer": "B. Kubernetes",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0697",
+    "topic": "Java OOP",
+    "question": "What is a Pod?",
+    "options": [
+      "A. A single container instance",
+      "B. A group of one or more application containers with shared volumes and IP address",
+      "C. A Kubernetes service object",
+      "D. A container image repository"
+    ],
+    "answer_index": 1,
+    "explanation": "'A group of one or more application containers with shared volumes and IP address' is correct.",
+    "corrected": false,
+    "answer": "B. A group of one or more application containers with shared volumes and IP address",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0698",
+    "topic": "Java OOP",
+    "question": "A ______ ensures that all nodes run a copy of a pod.",
+    "options": [
+      "A. ReplicaSet",
+      "B. Deployment",
+      "C. DaemonSet",
+      "D. StatefulSet"
+    ],
+    "answer_index": 2,
+    "explanation": "A DaemonSet is specifically designed to run a single pod replica on every node in a Kubernetes cluster, making it ideal for node-level services like logging agents, monitoring daemons, or network plugins. In contrast, ReplicaSets and Deployments maintain a fixed number of pod replicas across the cluster, and StatefulSets manage stateful applications with ordered pod identities—none guarantee one pod per node.",
+    "corrected": false,
+    "answer": "C. DaemonSet",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0699",
+    "topic": "Java OOP",
+    "question": "What is a Kubernetes volume?",
+    "options": [
+      "A. A storage driver for Docker",
+      "B. A directory for data accessible to containers in a pod",
+      "C. A network configuration for pods",
+      "D. A backup container"
+    ],
+    "answer_index": 1,
+    "explanation": "'A directory for data accessible to containers in a pod' is correct.",
+    "corrected": false,
+    "answer": "B. A directory for data accessible to containers in a pod",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0700",
+    "topic": "HTML/CSS",
+    "question": "Which command removes the cluster-admin role from a user?",
+    "options": [
+      "A. oc adm policy remove-role-from-user",
+      "B. oc adm policy remove-cluster-role-from-user",
+      "C. kubectl remove cluster-role",
+      "D. kubectl delete cluster-admin"
+    ],
+    "answer_index": 1,
+    "explanation": "Option B is correct because `oc adm policy remove-cluster-role-from-user` is the OpenShift-specific command designed to remove cluster-level roles from users, and cluster-admin is a cluster role that requires the cluster-role variant (not the role variant). Option A removes regular namespaced roles, while options C and D use kubectl syntax that doesn't support this operation correctly.",
+    "corrected": false,
+    "answer": "B. oc adm policy remove-cluster-role-from-user",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0701",
+    "topic": "Java OOP",
+    "question": "What is a kubelet?",
+    "options": [
+      "A. A Kubernetes scheduler component",
+      "B. A node agent that manages pods and their containers",
+      "C. A container runtime engine",
+      "D. A Kubernetes network plugin"
+    ],
+    "answer_index": 1,
+    "explanation": "'A node agent that manages pods and their containers' is correct.",
+    "corrected": false,
+    "answer": "B. A node agent that manages pods and their containers",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0702",
+    "topic": "Java OOP",
+    "question": "What is the intended use of etcd?",
+    "options": [
+      "A. To run container workloads",
+      "B. To store all cluster data and maintain cluster state",
+      "C. To manage container networking",
+      "D. To schedule pods on nodes"
+    ],
+    "answer_index": 1,
+    "explanation": "'To store all cluster data and maintain cluster state' is correct.",
+    "corrected": false,
+    "answer": "B. To store all cluster data and maintain cluster state",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0703",
+    "topic": "Java OOP",
+    "question": "Docker command to increase the number of replicas?",
+    "options": [
+      "A. docker service scale",
+      "B. docker service update",
+      "C. docker container scale",
+      "D. docker scale service"
+    ],
+    "answer_index": 0,
+    "explanation": "The `docker service scale` command is the correct and direct way to adjust the number of replicas for a Docker Swarm service. This command accepts the syntax `docker service scale <service-name>=<number-of-replicas>` and immediately updates the desired replica count. While `docker service update` can also modify replicas, it's a more general update command; `docker service scale` is purpose-built for this specific operation.",
+    "corrected": false,
+    "answer": "A. docker service scale",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0704",
+    "topic": "Java OOP",
+    "question": "Docker command to display layers of a Docker image?",
+    "options": [
+      "A. docker image layers",
+      "B. docker inspect image",
+      "C. docker history",
+      "D. docker image show"
+    ],
+    "answer_index": 2,
+    "explanation": "The `docker history` command displays all the layers of a Docker image in chronological order, showing each instruction from the Dockerfile along with its size and creation timestamp. While `docker inspect` provides metadata about an image, it does not display the layered structure; only `docker history` specifically visualizes how the image was built layer-by-layer. The other options are either non-existent commands or don't serve this specific purpose.",
+    "corrected": false,
+    "answer": "C. docker history",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0705",
+    "topic": "Java OOP",
+    "question": "What is the result of \"kubectl exec -ti my-pod-name bash\"?",
+    "options": [
+      "A. Restarts the pod",
+      "B. Opens a console on the first container inside the pod",
+      "C. Deletes the pod",
+      "D. Shows pod logs"
+    ],
+    "answer_index": 1,
+    "explanation": "'Opens a console on the first container inside the pod' is correct.",
+    "corrected": false,
+    "answer": "B. Opens a console on the first container inside the pod",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0706",
+    "topic": "Java OOP",
+    "question": "Which Docker commands can be used to find all port mappings?",
+    "options": [
+      "A. docker inspect, docker ps, docker port",
+      "B. docker network inspect, docker ps",
+      "C. docker ports, docker inspect",
+      "D. docker container ports, docker list"
+    ],
+    "answer_index": 0,
+    "explanation": "The correct answer is A. docker inspect, docker ps, docker port because these three commands provide different ways to view port mappings:\ndocker ps displays running containers with their port mappings in the PORTS column\ndocker port shows all port mappings for a specific container\ndocker inspect provides detailed container configuration including all exposed and mapped ports in JSON format\n\nThe other options are incorrect because `docker ports`, `docker network inspect`, and `docker container ports` are either non-existent or don't primarily serve the purpose of finding port mappings.",
+    "corrected": false,
+    "answer": "A. docker inspect, docker ps, docker port",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0707",
+    "topic": "Java OOP",
+    "question": "What does Dockerfile LABEL do?",
+    "options": [
+      "A. Adds metadata to an image",
+      "B. Creates a new container",
+      "C. Defines container entrypoint",
+      "D. Specifies exposed ports"
+    ],
+    "answer_index": 0,
+    "explanation": "Why A is Correct\n\nThe LABEL instruction adds key-value metadata pairs to Docker images, which can be used for organization, versioning, documentation, and automation purposes. This metadata is stored in the image configuration and can be inspected with `docker inspect`, but does not affect the runtime behavior of containers. The other options describe different Dockerfile instructions (ENTRYPOINT, EXPOSE, etc.) or operations (container creation) rather than LABEL's actual function.",
+    "corrected": false,
+    "answer": "A. Adds metadata to an image",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0708",
+    "topic": "Java OOP",
+    "question": "At its core Kubernetes is a platform for:",
+    "options": [
+      "A. Running and scheduling container applications on a cluster",
+      "B. Managing virtual machines",
+      "C. Building Docker images",
+      "D. Storing container registries"
+    ],
+    "answer_index": 0,
+    "explanation": "'Running and scheduling container applications on a cluster' is correct.",
+    "corrected": false,
+    "answer": "A. Running and scheduling container applications on a cluster",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0709",
+    "topic": "Java OOP",
+    "question": "Which command shows volumes for a specific container?",
+    "options": [
+      "A. docker volume list",
+      "B. docker inspect",
+      "C. docker container volume",
+      "D. docker volume inspect"
+    ],
+    "answer_index": 1,
+    "explanation": "The `docker inspect` command displays detailed configuration metadata for a container, including its mounted volumes, mount points, and their source paths. While `docker volume list` shows all volumes on the system, `docker inspect` specifically retrieves volume information tied to a particular container instance. The other options don't exist as valid Docker commands.",
+    "corrected": false,
+    "answer": "B. docker inspect",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0710",
+    "topic": "Java OOP",
+    "question": "Docker command to update an existing service?",
+    "options": [
+      "A. docker service update",
+      "B. docker update service",
+      "C. docker service modify",
+      "D. docker container update"
+    ],
+    "answer_index": 0,
+    "explanation": "The correct Docker command syntax for managing services in swarm mode follows the pattern `docker service <action>`, where `docker service update` is the designated command to modify existing service configurations such as image, replicas, environment variables, and resource limits. Options B and C use incorrect command structures, while option D targets containers rather than services, which operate under different management paradigms in Docker.",
+    "corrected": false,
+    "answer": "A. docker service update",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0712",
+    "topic": "Java OOP",
+    "question": "What runs on each node to ensure containers are running in a pod?",
+    "options": [
+      "A. kube-proxy",
+      "B. kubelet",
+      "C. etcd",
+      "D. kubectl"
+    ],
+    "answer_index": 1,
+    "explanation": "The kubelet is a node-level agent that runs on every node in a Kubernetes cluster and is responsible for ensuring containers are running in their assigned pods. It communicates with the container runtime to start, stop, and monitor containers, and reports the pod status back to the control plane. While kube-proxy handles networking, etcd stores cluster data, and kubectl is a CLI tool, only the kubelet has the direct responsibility of container lifecycle management on each node.",
+    "corrected": false,
+    "answer": "B. kubelet",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0713",
+    "topic": "Java OOP",
+    "question": "What does Dockerfile EXPOSE do?",
+    "options": [
+      "A. Opens the port on host automatically",
+      "B. Publishes container port to internet",
+      "C. Informs Docker that the container listens on the specified port",
+      "D. Creates a new network port"
+    ],
+    "answer_index": 2,
+    "explanation": "'Informs Docker that the container listens on the specified port' is correct.",
+    "corrected": false,
+    "answer": "C. Informs Docker that the container listens on the specified port",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0714",
+    "topic": "JavaScript",
+    "question": "What is true about using -P option in Docker?",
+    "options": [
+      "A. Binds container port to fixed host port",
+      "B. Docker binds each exposed container port to a random host port",
+      "C. Disables exposed ports",
+      "D. Publishes only port 80"
+    ],
+    "answer_index": 1,
+    "explanation": "'Docker binds each exposed container port to a random host port' is correct.",
+    "corrected": false,
+    "answer": "B. Docker binds each exposed container port to a random host port",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0715",
+    "topic": "HTML/CSS",
+    "question": "Difference between ADD and COPY in Dockerfile?",
+    "options": [
+      "A. ADD supports remote URL handling, COPY does not",
+      "B. COPY supports remote URL handling, ADD does not",
+      "C. Both are exactly the same",
+      "D. COPY automatically extracts files"
+    ],
+    "answer_index": 0,
+    "explanation": "'ADD supports remote URL handling, COPY does not' is correct.",
+    "corrected": false,
+    "answer": "A. ADD supports remote URL handling, COPY does not",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0716",
+    "topic": "HTML/CSS",
+    "question": "What is a cluster?",
+    "options": [
+      "A. A single container system",
+      "B. A single system made up of several other resources",
+      "C. A network port collection",
+      "D. A container image repository"
+    ],
+    "answer_index": 1,
+    "explanation": "'A single system made up of several other resources' is correct.",
+    "corrected": false,
+    "answer": "B. A single system made up of several other resources",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0717",
+    "topic": "Java OOP",
+    "question": "Command to display Docker configuration on host?",
+    "options": [
+      "A. docker config",
+      "B. docker host info",
+      "C. docker info",
+      "D. docker status"
+    ],
+    "answer_index": 2,
+    "explanation": "Why C is Correct\n\nThe `docker info` command displays comprehensive Docker daemon configuration and system information on the host, including storage driver, runtime details, container/image counts, and resource metrics. Options A, B, and D either don't exist as Docker commands or don't serve this specific purpose—`docker config` manages secrets/configs in Swarm mode, while `docker status` and `docker host info` are not valid Docker CLI commands.",
+    "corrected": false,
+    "answer": "C. docker info",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0718",
+    "topic": "Java OOP",
+    "question": "Function of a node in Kubernetes?",
+    "options": [
+      "A. To store container images",
+      "B. To run pods according to master components",
+      "C. To manage user authentication",
+      "D. To store cluster configuration"
+    ],
+    "answer_index": 1,
+    "explanation": "A node is a worker machine in Kubernetes that executes containerized workloads (pods) as directed by the control plane components. The kubelet agent on each node receives scheduling decisions from the API server and ensures pods are running with the correct resource allocation. Options A, C, and D describe functions of the container registry, API server/authentication layer, and etcd respectively, not nodes.",
+    "corrected": false,
+    "answer": "B. To run pods according to master components",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0719",
+    "topic": "Java OOP",
+    "question": "Which command provides users edit access to developers group?",
+    "options": [
+      "A. oc adm policy add-role-to-group edit developers -n develop",
+      "B. oc adm grant edit developers",
+      "C. oc role add developers edit",
+      "D. kubectl role add developers"
+    ],
+    "answer_index": 0,
+    "explanation": "'oc adm policy add-role-to-group edit developers -n develop' is correct.",
+    "corrected": false,
+    "answer": "A. oc adm policy add-role-to-group edit developers -n develop",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0720",
+    "topic": "Java OOP",
+    "question": "Default port to access WebSphere Application Server console?",
+    "options": [
+      "A. 8080",
+      "B. 7001",
+      "C. 9080",
+      "D. 9443"
+    ],
+    "answer_index": 2,
+    "explanation": "WebSphere Application Server uses port 9080 as the default HTTP port for administrative console access and application deployment. While 8080 is a common default for other application servers like Tomcat, and 7001 is used by Oracle WebLogic, WebSphere specifically reserves 9080 for HTTP communications and 9443 for HTTPS/SSL communications on the administrative console.",
+    "corrected": false,
+    "answer": "C. 9080",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0721",
+    "topic": "Java OOP",
+    "question": "What is proxy service used for?",
+    "options": [
+      "A. To store containers",
+      "B. To act as an intermediary between endpoint servers",
+      "C. To manage images",
+      "D. To deploy pods"
+    ],
+    "answer_index": 1,
+    "explanation": "'To act as an intermediary between endpoint servers' is correct.",
+    "corrected": false,
+    "answer": "B. To act as an intermediary between endpoint servers",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0722",
+    "topic": "Java OOP",
+    "question": "Which servers run Kubernetes control components in OpenShift?",
+    "options": [
+      "A. Workers",
+      "B. Masters",
+      "C. Nodes",
+      "D. Agents"
+    ],
+    "answer_index": 1,
+    "explanation": "Master nodes in OpenShift are dedicated servers that host the Kubernetes control plane components, including the API server, controller manager, and etcd database. These components manage cluster state, orchestrate workloads, and make scheduling decisions for all worker nodes. Workers, nodes, and agents are terms referring to compute resources that run application workloads, not control plane infrastructure.",
+    "corrected": false,
+    "answer": "B. Masters",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0723",
+    "topic": "Java OOP",
+    "question": "Which resource sets default request/limit for containers?",
+    "options": [
+      "A. ResourceQuota",
+      "B. LimitRange",
+      "C. PodLimit",
+      "D. ContainerPolicy"
+    ],
+    "answer_index": 1,
+    "explanation": "LimitRange is a Kubernetes resource that enforces minimum and maximum compute resource constraints at the container, pod, and namespace levels. It automatically applies default CPU and memory requests/limits to containers that don't explicitly specify them, whereas ResourceQuota only tracks aggregate resource consumption across a namespace without setting individual container defaults.",
+    "corrected": false,
+    "answer": "B. LimitRange",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0724",
+    "topic": "Java OOP",
+    "question": "Docker command to create a bridge network?",
+    "options": [
+      "A. docker network create",
+      "B. docker create network",
+      "C. docker bridge create",
+      "D. docker network add"
+    ],
+    "answer_index": 0,
+    "explanation": "The correct Docker command syntax is `docker network create`, which is the primary command for creating networks of any type, including bridge networks (the default type). Options B, C, and D use incorrect syntax—Docker CLI commands follow the pattern of `docker [object] [action]`, not `docker [action] [object]`, and \"add\" is not a valid subcommand for network operations.",
+    "corrected": false,
+    "answer": "A. docker network create",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0725",
+    "topic": "Java OOP",
+    "question": "Purpose of ReplicaSet?",
+    "options": [
+      "A. To delete pods",
+      "B. To duplicate pods",
+      "C. To build images",
+      "D. To create networks"
+    ],
+    "answer_index": 1,
+    "explanation": "A ReplicaSet ensures a specified number of pod replicas are running at all times by creating, scaling, and replacing pods as needed. It maintains desired state by duplicating pods across nodes and automatically recreating failed pods to meet the replica count. This provides high availability and load distribution for applications in Kubernetes.",
+    "corrected": false,
+    "answer": "B. To duplicate pods",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0726",
+    "topic": "Java OOP",
+    "question": "Which is NOT a valid way to tag a Docker image?",
+    "options": [
+      "A. Tag by repository name",
+      "B. Tag by version",
+      "C. Tag by image ID",
+      "D. Tag using latest"
+    ],
+    "answer_index": 2,
+    "explanation": "Docker tags are human-readable labels assigned to images and must follow naming conventions (repository:tag format), whereas image IDs are immutable SHA256 hashes that uniquely identify images. You cannot use an image ID as a tag because tags are distinct metadata separate from the ID—they serve as aliases for easy reference, while IDs are the actual image identifiers. Options A, B, and D are all valid tagging practices (e.g., `myrepo:v1.0`, `myimage:latest`).",
+    "corrected": false,
+    "answer": "C. Tag by image ID",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0727",
+    "topic": "Java OOP",
+    "question": "Mission of control plane in Kubernetes?",
+    "options": [
+      "A. Regulate communication between Kubernetes clusters",
+      "B. Run application containers",
+      "C. Store container images",
+      "D. Monitor host hardware"
+    ],
+    "answer_index": 0,
+    "explanation": "'Regulate communication between Kubernetes clusters' is correct.",
+    "corrected": false,
+    "answer": "A. Regulate communication between Kubernetes clusters",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0728",
+    "topic": "Java OOP",
+    "question": "Service mode used to deploy a single task to each node?",
+    "options": [
+      "A. Replicated",
+      "B. Global",
+      "C. Node",
+      "D. Distributed"
+    ],
+    "answer_index": 1,
+    "explanation": "In Docker Swarm, Global mode ensures a service deploys exactly one task per node in the cluster, making it ideal for system-level services like monitoring agents or log collectors. Replicated mode (the default) allows you to specify an arbitrary number of task replicas distributed across nodes, whereas Global automatically scales to every node regardless of cluster size.",
+    "corrected": false,
+    "answer": "B. Global",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0729",
+    "topic": "HTML/CSS",
+    "question": "After you initialize a new Git repository and create a file named git-quiz.html, which command will NOT work if issued?",
+    "options": [
+      "A. git add git-quiz.html",
+      "B. git status",
+      "C. git add .",
+      "D. git commit -m \"git quiz web file added\""
+    ],
+    "answer_index": 3,
+    "explanation": "After initializing a Git repository and creating a file, you must stage the file with `git add` before committing. Option D fails because it attempts to commit without first staging the file—Git has nothing to commit since the file exists in the working directory but not in the staging area. Options A, B, and C all work: A and C stage the file, and B displays the repository status regardless of whether files are staged.",
+    "corrected": false,
+    "answer": "D. git commit -m \"git quiz web file added\"",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0730",
+    "topic": "Java OOP",
+    "question": "Which of the following are the benefits of using Gradle over Maven?",
+    "options": [
+      "A. Gradle supports more languages than Maven",
+      "B. Gradle incorporates Maven features as well as additional functionality",
+      "C. Gradle builds are successful more often than Maven builds",
+      "D. A Gradle build is 1000 times faster than a Maven build"
+    ],
+    "answer_index": 1,
+    "explanation": "'Gradle supports more languages than Maven' is the correct answer per language specification.",
+    "corrected": false,
+    "answer": "B. Gradle incorporates Maven features as well as additional functionality",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0731",
+    "topic": "Java OOP",
+    "question": "Adopting Agile is necessary prior to embracing DevOps practices.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 1,
+    "explanation": "DevOps and Agile are independent practices that address different concerns—DevOps focuses on collaboration between development and operations with continuous delivery, while Agile addresses software development methodology. Organizations can implement DevOps practices (infrastructure automation, CI/CD pipelines, monitoring) without adopting Agile frameworks, and vice versa, though they often complement each other effectively when combined.",
+    "corrected": false,
+    "answer": "B. False",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0732",
+    "topic": "Java OOP",
+    "question": "Adopting DevOps requires planning that spans which of the following?",
+    "options": [
+      "A. People",
+      "B. Efforts",
+      "C. Process",
+      "D. Tools/Technology"
+    ],
+    "answer_index": 0,
+    "explanation": "While DevOps does involve process, tools, and efforts, people is the foundational element that DevOps adoption planning must span because cultural transformation and organizational restructuring are prerequisites for success. DevOps fundamentally requires breaking down silos between development and operations teams, which demands changes in roles, responsibilities, collaboration practices, and mindsets—all people-centric concerns. Without addressing the human and organizational aspects first, tools and processes will fail to deliver the intended benefits.",
+    "corrected": false,
+    "answer": "A. People",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0734",
+    "topic": "Java OOP",
+    "question": "In DevOps, what is the main goal of version control?",
+    "options": [
+      "A. Ensure the ability to alert when configuration changes from the desired state",
+      "B. Ensure the ability to re-create the previous state of the test environment",
+      "C. Ensure the ability to re-create the production environment and build processes",
+      "D. Ensure the ability to share the source code between different developer teams"
+    ],
+    "answer_index": 2,
+    "explanation": "'Ensure the ability to re-create the previous state of the test environment' is correct.",
+    "corrected": false,
+    "answer": "C. Ensure the ability to re-create the production environment and build processes",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0735",
+    "topic": "Java OOP",
+    "question": "What is a continuous build?",
+    "options": [
+      "A. A build that runs non-stop over and over again",
+      "B. A build that has not failed in 10 continuous attempts",
+      "C. A build executed every hour/day by a CI server",
+      "D. A build executed on every commit by a CI server"
+    ],
+    "answer_index": 3,
+    "explanation": "'A build executed every hour/day by a CI server' is correct.",
+    "corrected": false,
+    "answer": "D. A build executed on every commit by a CI server",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0737",
+    "topic": "Java OOP",
+    "question": "How does a DevOps organization act when financing its work?",
+    "options": [
+      "A. It finances special projects to serve its clients",
+      "B. It finances products and services to serve its clients",
+      "C. It finances teams in matrix organizations",
+      "D. It finances development and operations teams separately"
+    ],
+    "answer_index": 1,
+    "explanation": "'It finances products and services to serve its clients' is correct.",
+    "corrected": false,
+    "answer": "B. It finances products and services to serve its clients",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0740",
+    "topic": "Java OOP",
+    "question": "In DevOps, which of the following is a widely used reusable asset designed to reinforce the information security of software deliverables?",
+    "options": [
+      "A. Security patterns",
+      "B. Data storage systems",
+      "C. Continuous integration pipelines",
+      "D. Version control repositories"
+    ],
+    "answer_index": 0,
+    "explanation": "Security patterns are reusable, well-documented solutions to recurring security problems, allowing teams to embed proven defenses like authentication or encryption schemes consistently across deliverables. Unlike storage systems, CI pipelines, or version control—which are infrastructure or process tools—security patterns directly encode security expertise into reusable design templates.",
+    "corrected": false,
+    "answer": "A. Security patterns",
+    "trust": "baseline",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "id": "q0741",
+    "topic": "HTML/CSS",
+    "question": "What is the sequence in which Maven looks for resources?",
+    "options": [
+      "A. Local → Remote → Maven Central",
+      "B. Remote → Maven Central → Local",
+      "C. Remote → Local → Maven Central",
+      "D. Maven Central → Local → Remote"
+    ],
+    "answer_index": 0,
+    "explanation": "Maven Resource Lookup Sequence\n\nMaven checks the local repository first (typically `~/.m2/repository`) to avoid redundant downloads. If the resource isn't found locally, it queries configured remote repositories in the order they're defined in `pom.xml` or `settings.xml`. Maven Central serves as the default fallback remote repository when no other remote repositories are specified or when the artifact isn't found in them.",
+    "corrected": false,
+    "answer": "A. Local → Remote → Maven Central",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0742",
+    "topic": "Java OOP",
+    "question": "Why should production and development environments be similar?",
+    "options": [
+      "A. It is easier for the ops team",
+      "B. It improves testing accuracy and reduces deployment problems",
+      "C. People can fix defects directly in production",
+      "D. Development environments are cheaper"
+    ],
+    "answer_index": 1,
+    "explanation": "'It improves testing accuracy and reduces deployment problems' is correct.",
+    "corrected": false,
+    "answer": "B. It improves testing accuracy and reduces deployment problems",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0744",
+    "topic": "Java OOP",
+    "question": "What is continuous deployment?",
+    "options": [
+      "A. Deployment on every code push/commit",
+      "B. Deployment every hour/day",
+      "C. Local deployment on developer laptop",
+      "D. Deployment on IBM Cloud"
+    ],
+    "answer_index": 0,
+    "explanation": "Continuous deployment (CD) is an automated process where code changes are automatically deployed to production immediately after passing automated tests, with each commit triggering a deployment pipeline. This differs from continuous delivery, which prepares code for release but requires manual approval, and from scheduled or local deployments which are neither continuous nor production-focused. The \"continuous\" aspect specifically refers to the frequency of deployments tied directly to code changes, not time-based intervals.",
+    "corrected": false,
+    "answer": "A. Deployment on every code push/commit",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0745",
+    "topic": "HTML/CSS",
+    "question": "In DevOps, one significant ROI area is:",
+    "options": [
+      "A. Zero defects",
+      "B. Faster time to value",
+      "C. Less feedback",
+      "D. Less customer experience"
+    ],
+    "answer_index": 1,
+    "explanation": "DevOps directly reduces time to value by automating CI/CD pipelines, enabling faster deployment cycles, and shortening the feedback loop between development and production. This accelerated delivery translates to measurable ROI through quicker feature releases, faster bug fixes, and earlier revenue generation. While other options may seem desirable, they're either unrealistic (zero defects) or contradict DevOps principles (less feedback and customer experience are detrimental).",
+    "corrected": false,
+    "answer": "B. Faster time to value",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0746",
+    "topic": "HTML/CSS",
+    "question": "How do you remove local untracked files and directories from the Git working tree?",
+    "options": [
+      "A. git clean -f",
+      "B. git delete -f",
+      "C. git remove -f -d",
+      "D. git add --all"
+    ],
+    "answer_index": 0,
+    "explanation": "The `git clean` command is specifically designed to remove untracked files from the working directory, with the `-f` (force) flag required to actually delete them. To remove both files and directories, you'd use `git clean -f -d`, but option A is the standard command for removing untracked files. The other options are either non-existent Git commands (`git delete`, `git remove`) or perform different functions (`git add --all` stages files for commit rather than removing them).",
+    "corrected": false,
+    "answer": "A. git clean -f",
+    "trust": "baseline"
+  }
+]

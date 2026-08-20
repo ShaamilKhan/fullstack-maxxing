@@ -1,0 +1,1039 @@
+[
+  {
+    "question": "React Lifecycle method static getDerivedSateFromProps(props , state) is called when ____",
+    "options": [
+      "A. Component is created for the first time",
+      "B. State of the component is updated",
+      "C. Both of above",
+      "D. None of above"
+    ],
+    "answer_index": 2,
+    "answer": "C. Both of above",
+    "topic": "React",
+    "explanation": "getDerivedStateFromProps runs on initial mount, right before the render method executes, allowing state initialization based on incoming props. It also fires on every subsequent update, including re-renders triggered by state changes, since React invokes it before every render regardless of the cause.",
+    "corrected": false,
+    "id": "q2195",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "componentDidMount lifecycle method is called when____",
+    "options": [
+      "A. Component is created for the first time",
+      "B. Component is updated",
+      "C. Both of above",
+      "D. None of above"
+    ],
+    "answer_index": 0,
+    "answer": "A. Component is created for the first time",
+    "topic": "React",
+    "explanation": "componentDidMount() runs once, immediately after a component is inserted into the DOM for the first time, making it ideal for initial setup tasks. It does not fire again on subsequent re-renders or updates, since componentDidUpdate() handles those cases instead.",
+    "corrected": false,
+    "id": "q2196",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "For controlled components in react",
+    "options": [
+      "A. Source of truth is DOM",
+      "B. Source of truth is component state",
+      "C. Source of truth can be anything",
+      "D. None of above"
+    ],
+    "answer_index": 1,
+    "answer": "B. Source of truth is component state",
+    "topic": "React",
+    "explanation": "In controlled components, the value displayed in the input is always driven by React state via the value prop, not by the DOM itself. Any change triggers an onChange handler that updates state, which then re-renders the input, making state the single source of truth.",
+    "corrected": false,
+    "id": "q2197",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "For uncontrolled components in react",
+    "options": [
+      "A. Source of truth is DOM",
+      "B. Source of truth is component state",
+      "C. Source of truth can be anything",
+      "D. None of above"
+    ],
+    "answer_index": 0,
+    "answer": "A. Source of truth is DOM",
+    "topic": "React",
+    "explanation": "In uncontrolled components, form data is handled by the DOM itself rather than by React state, so input values live directly in the DOM elements. React accesses these values only when needed, typically via refs, instead of tracking them through state updates and re-renders.",
+    "corrected": false,
+    "id": "q2198",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "To upload a file from react component, A developer will require to write",
+    "options": [
+      "A. A controlled component",
+      "B. An uncontrolled component",
+      "C. Can be done from both",
+      "D. None of above"
+    ],
+    "answer_index": 1,
+    "answer": "B. An uncontrolled component",
+    "topic": "React",
+    "explanation": "File inputs are always uncontrolled in React because their value is managed by the browser/DOM, not by React state, for security reasons. Developers must use a ref to access the selected file(s) via the input's files property, rather than setting its value programmatically.",
+    "corrected": false,
+    "id": "q2199",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "Ref in react component is used to assign reference to DOM elements. Ref can be created by",
+    "options": [
+      "A. Calling React.createRef method",
+      "B. Assigning a value to ref attribute in JSX",
+      "C. Both above",
+      "D. None of above"
+    ],
+    "answer_index": 2,
+    "answer": "C. Both above",
+    "topic": "React",
+    "explanation": "Refs can be created explicitly using React.createRef(), which returns a ref object assigned to an instance variable and attached via the ref attribute in JSX. Alternatively, callback refs allow assigning a function directly to the ref attribute, which React invokes with the DOM element as an argument, making both methods valid ways to create refs.",
+    "corrected": false,
+    "id": "q2200",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "In react, Which of following is used to pass data to a component from outside?",
+    "options": [
+      "A. set state",
+      "B. render with argument",
+      "C. props",
+      "D. propTypes"
+    ],
+    "answer_index": 2,
+    "answer": "C. props",
+    "topic": "React",
+    "explanation": "Why This Answer Is Correct\n\nProps are the standard mechanism for passing data from parent to child components in React, enabling unidirectional data flow and component reusability.\n\nState management through setState updates internal component data, while props specifically handle external data passed from outside a component's boundaries.",
+    "corrected": false,
+    "id": "q2201",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "In JavaScript ES6 module syntax, what type of import is demonstrated by the statement `import React from 'react'`?",
+    "options": [
+      "A. Default import",
+      "B. Named import",
+      "C. Namespace import",
+      "D. Dynamic import"
+    ],
+    "answer_index": 0,
+    "answer": "A. Default import",
+    "topic": "React",
+    "explanation": "This syntax imports the module's default export and binds it to the local name React, without curly braces. Named imports use curly braces like `import { useState } from 'react'`, distinguishing them from this default import pattern.",
+    "corrected": false,
+    "id": "q2202",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "question": "What function allows you to render React content in an HTML page?",
+    "options": [
+      "A. React.mount()",
+      "B. ReactDOM.start()",
+      "C. ReactDOM.render()",
+      "D. React.render()"
+    ],
+    "answer_index": 2,
+    "answer": "C. ReactDOM.render()",
+    "topic": "React",
+    "explanation": "ReactDOM.render() is the standard method for mounting React components into DOM elements in React 16 and earlier versions. React.mount() and ReactDOM.start() are not valid React API functions for rendering content to HTML pages.",
+    "corrected": false,
+    "id": "q2203",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Arbitrary inputs of components in React are called",
+    "options": [
+      "A. Keys",
+      "B. Props",
+      "C. Elements",
+      "D. Ref"
+    ],
+    "answer_index": 1,
+    "answer": "B. Props",
+    "topic": "React",
+    "explanation": "Props are the arbitrary data passed into a React component from its parent, allowing customization of rendering and behavior. They are read-only, can be any data type, and are accessed via the component's function parameters or this.props.",
+    "corrected": false,
+    "id": "q2204",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "What create-react-app command do",
+    "options": [
+      "A. Update a react app",
+      "B. Creates new react app",
+      "C. install dependencies",
+      "D. Builds app for production"
+    ],
+    "answer_index": 1,
+    "answer": "B. Creates new react app",
+    "topic": "React",
+    "explanation": "create-react-app is a command-line tool that scaffolds a new React project by generating the initial folder structure, configuration files, and boilerplate code. It sets up build tools like Webpack and Babel automatically, allowing developers to start coding immediately without manual configuration.",
+    "corrected": false,
+    "id": "q2205",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source",
+    "options_synthesized": true
+  },
+  {
+    "question": "How do you access a function fetch() from a h1 element in JSX?",
+    "options": [
+      "A. <h1>{fetch()}</h1>",
+      "B. <h1>${fetch()}</h1>",
+      "C. <h1>{fetch}</h1>",
+      "D. <h1>${fetch}</h1>"
+    ],
+    "answer_index": 0,
+    "answer": "A. <h1>{fetch()}</h1>",
+    "topic": "React",
+    "explanation": "In JSX, curly braces {} embed JavaScript expressions directly into markup, and calling fetch() with parentheses executes the function to produce a value. Using $ syntax like ${} is template literal syntax, not valid inside JSX tags, so only {fetch()} correctly invokes and renders the result.",
+    "corrected": false,
+    "id": "q2206",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "Which method in a React Component should you override to stop the component from updating?",
+    "options": [
+      "A. willComponentUpdate",
+      "B. shouldComponentUpdate",
+      "C. componentDidUpdate",
+      "D. componentDidMount"
+    ],
+    "answer_index": 1,
+    "answer": "B. shouldComponentUpdate",
+    "topic": "React",
+    "explanation": "shouldComponentUpdate is called before rendering when new props or state are received, allowing you to compare current and next values and return false to skip the update. Returning false prevents render, componentDidUpdate, and reconciliation from executing entirely, effectively halting the component's re-render cycle.",
+    "corrected": false,
+    "id": "q2207",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "What's used to pass data to a component from outside?",
+    "options": [
+      "A. setState",
+      "B. render with arguments",
+      "C. PropTypes",
+      "D. props"
+    ],
+    "answer_index": 3,
+    "answer": "D. props",
+    "topic": "React",
+    "explanation": "Props allow data to flow into a component from its parent, making them the standard mechanism for external data injection. Unlike setState, which manages internal component state, props are read-only values passed down through the component tree.",
+    "corrected": false,
+    "id": "q2208",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "Which method in a React Component is called after the component is rendered for the first time?",
+    "options": [
+      "A. componentDidUpdate",
+      "B. componentDidMount",
+      "C. componentMounted",
+      "D. componentUpdated"
+    ],
+    "answer_index": 1,
+    "answer": "B. componentDidMount",
+    "topic": "React",
+    "explanation": "componentDidMount is invoked immediately after a component's initial render and insertion into the DOM, making it the correct lifecycle method. It runs once, ideal for tasks like fetching data or setting up subscriptions after the initial mount.",
+    "corrected": false,
+    "id": "q2209",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "Which of the following is correct syntax for a button click event handler, foo?",
+    "options": [
+      "A. <button onclick={this.foo()}>",
+      "B. <button onclick={this.foo}>"
+    ],
+    "answer_index": 1,
+    "answer": "B. <button onclick={this.foo}>",
+    "topic": "Core Java & OOP",
+    "explanation": "Using `this.foo` passes a reference to the function, allowing React to call it only when the click event actually occurs. Using `this.foo()` invokes the function immediately during rendering, not when the button is clicked.",
+    "corrected": false,
+    "id": "q2210",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "What happens when you call setState() inside render() method?",
+    "options": [
+      "A. Repetitive output appears on the screen",
+      "B. Stack overflow error",
+      "C. Duplicate key error",
+      "D. Nothing happens. Life goes on!"
+    ],
+    "answer_index": 1,
+    "answer": "B. Stack overflow error",
+    "topic": "React",
+    "explanation": "Calling setState() inside render() triggers a re-render, which calls render() again, which calls setState() again, creating an infinite loop. This recursive cycle keeps adding frames to the call stack until it exceeds the stack limit, causing a stack overflow error.",
+    "corrected": false,
+    "id": "q2211",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "What happens when the following render() method executes?\n\nrender(){\nlet langs = [\"Ruby\",\"ES6\",\"Scala\"]\nreturn (<div>\n{langs.map(it => <p>{it}</p>)}\n</div>)\n}",
+    "options": [
+      "A. Displays the list of languages in the array",
+      "B. Error. Cannot use direct JavaScript code in JSX",
+      "C. Displays nothing",
+      "D. Error. Should be replaced with a for..loop for correct output"
+    ],
+    "answer_index": 0,
+    "answer": "A. Displays the list of languages in the array",
+    "topic": "JavaScript",
+    "explanation": "JSX allows embedding JavaScript expressions within curly braces, so `langs.map()` executes and returns an array of `<p>` elements. React renders arrays of elements directly, displaying \"Ruby\", \"ES6\", and \"Scala\" each in their own paragraph tag.",
+    "corrected": false,
+    "id": "q2212",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "How do you write an inline style specifying the font-size:12px and color:red; in JSX",
+    "options": [
+      "A. style={{font-size:12,color:'red'}}",
+      "B. style={{fontSize:'12px',color:'red'}}",
+      "C. style={fontSize:'12px',color:'red'}",
+      "D. style={{font-size:12px,color:'red'}}"
+    ],
+    "answer_index": 1,
+    "answer": "B. style={{fontSize:'12px',color:'red'}}",
+    "topic": "React",
+    "explanation": "In JSX, inline styles must be passed as a JavaScript object, so double curly braces are needed—the outer pair for the JSX expression and the inner pair for the object literal. CSS property names with hyphens, like font-size, must be converted to camelCase (fontSize) since JavaScript object keys cannot contain hyphens.",
+    "corrected": false,
+    "id": "q2213",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "What is a controlled input element?",
+    "options": [
+      "A. An input element with the controlled flag",
+      "B. An input element whose value is being controlled by a component’s state",
+      "C. An input element that can only accept a list of characters",
+      "D. An input element that is controlled by the value of another input element"
+    ],
+    "answer_index": 1,
+    "answer": "B. An input element whose value is being controlled by a component’s state",
+    "topic": "React",
+    "explanation": "A controlled input element has its value managed by React component state, requiring onChange handlers to update that state. This differs from uncontrolled inputs, which manage their own internal DOM state independently.",
+    "corrected": false,
+    "id": "q2214",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "What is the declarative way to render a dynamic list of components based on values in an array",
+    "options": [
+      "A. Using the reduce array method",
+      "B. With a for/while loop",
+      "C. Using the <Each /> component",
+      "D. Using the Array.map() method"
+    ],
+    "answer_index": 3,
+    "answer": "D. Using the Array.map() method",
+    "topic": "Core Java & OOP",
+    "explanation": "The reduce method allows declarative transformation of array values into rendered components by accumulating results in a single pass. This functional approach maintains immutability and state predictability, core principles of declarative UI rendering.",
+    "corrected": false,
+    "id": "q2215",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "When it is recommended to pass this.setState as a function instead of an object?",
+    "options": [
+      "A. When the new state should completely replace the old state",
+      "B. When the new state depends on the old state",
+      "C. When the new state does not depend on the old state",
+      "D. When the component needs to prevent re-rendering entirely"
+    ],
+    "answer_index": 1,
+    "answer": "B. When the new state depends on the old state",
+    "topic": "React",
+    "explanation": "The function form of setState receives the previous state as an argument, allowing you to compute new state based on old state values reliably.\n\nThis prevents race conditions when multiple setState calls occur in succession, ensuring each update uses the most current state rather than stale values.",
+    "corrected": false,
+    "id": "q2216",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "What will happen if you render an input element with disabled = {false}",
+    "options": [
+      "A. It will be rendered as enabled",
+      "B. It will be rendered as disabled",
+      "C. It will not be rendered at all",
+      "D. It will throw a runtime error because disabled must be a string"
+    ],
+    "answer_index": 0,
+    "answer": "A. It will be rendered as enabled",
+    "topic": "Core Java & OOP",
+    "explanation": "In React, the `disabled` attribute accepts boolean values. When `disabled={false}`, the attribute is effectively removed from the DOM, rendering the input as enabled.\n\nBoolean `false` values don't render as HTML attributes. Only truthy values or the string \"disabled\" create the disabled state on form elements.",
+    "corrected": false,
+    "id": "q2217",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "What is a good use case for using a function while rendering a dynamic list of items",
+    "options": [
+      "A. If we need to compute a value based on properties of items in the loop.",
+      "B. None. Functions should not be used while rendering a dynamic list.",
+      "C. To make the code shorter",
+      "D. To directly mutate the state of the parent component during each render cycle."
+    ],
+    "answer_index": 0,
+    "answer": "A. If we need to compute a value based on properties of items in the loop.",
+    "topic": "Core Java & OOP",
+    "explanation": "Functions allow you to compute derived values from item properties without polluting your JSX, keeping logic clean and reusable across list iterations.\n\nThis avoids inline calculations in JSX and enables consistent, testable transformations of data before rendering each list element.",
+    "corrected": false,
+    "id": "q2218",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "What is the second argument for setState useful for?",
+    "options": [
+      "A. To invoke code after the setState operation is done",
+      "B. To replace the state completely instead of the default merge action",
+      "C. To access the previous state before the setState operation",
+      "D. To specify a delay before the state update is applied"
+    ],
+    "answer_index": 0,
+    "answer": "A. To invoke code after the setState operation is done",
+    "topic": "React",
+    "explanation": "The second argument to setState is a callback function executed after the state update completes and the component re-renders, ensuring code runs with updated state.\n\nThis callback is essential for side effects that depend on the new state, like API calls or DOM measurements that require the latest values.",
+    "corrected": false,
+    "id": "q2219",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which of the following below act as the input of a class-based component?",
+    "options": [
+      "A. class and factory",
+      "B. render and mount",
+      "C. props",
+      "D. None of these"
+    ],
+    "answer_index": 2,
+    "answer": "C. props",
+    "topic": "React",
+    "explanation": "Props are the primary input mechanism for class-based components, passed from parent components to customize behavior and display data dynamically.\n\nClass and factory functions are architectural patterns used to structure and instantiate components, not inputs that components receive during execution.",
+    "corrected": false,
+    "id": "q2220",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which of the following lifecycle methods does not get triggered on the component's initial render?",
+    "options": [
+      "A. componentWillMount()",
+      "B. componentWillReceiveProps()",
+      "C. render()",
+      "D. componentDidMount()"
+    ],
+    "answer_index": 1,
+    "answer": "B. componentWillReceiveProps()",
+    "topic": "React",
+    "explanation": "componentWillReceiveProps() only fires when a component receives new props after it has already mounted, typically due to a parent re-rendering. On the initial render there are no \"new\" props being passed in relative to a previous state, so React skips calling this method entirely.",
+    "corrected": false,
+    "id": "q2221",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "Given the below class component: –\nclass Hello extends React.Component {\n  render() {\n    return <div>{this.props.myProp}</div>\n  }\n}\nWhich code snippet below declares “newValue” as the default prop value for this.props.myProp?",
+    "options": [
+      "A. Hello.defaultProps = { myProp: ‘newValue’ };",
+      "B. this.setState({ myProp: “newValue” });",
+      "C. Hello.props.default = { myProp: ‘newValue’ };",
+      "D. Hello.myProp = “newValue”;"
+    ],
+    "answer_index": 0,
+    "answer": "A. Hello.defaultProps = { myProp: ‘newValue’ };",
+    "topic": "React",
+    "explanation": "React uses a static `defaultProps` property on the component class to specify default values for props when they aren't explicitly passed by the parent. Setting `Hello.defaultProps = { myProp: 'newValue' }` ensures `this.props.myProp` falls back to `'newValue'` if no value is provided.",
+    "corrected": false,
+    "id": "q2222",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "How do you stop event propagation in React?",
+    "options": [
+      "A. stopPropagation()",
+      "B. false()",
+      "C. return true",
+      "D. return false"
+    ],
+    "answer_index": 0,
+    "answer": "A. stopPropagation()",
+    "topic": "React",
+    "explanation": "Calling event.stopPropagation() on the synthetic event object prevents the event from bubbling further up the React component tree to parent handlers. This works because React wraps native DOM events in SyntheticEvent, which mirrors the standard DOM API for controlling propagation behavior.",
+    "corrected": false,
+    "id": "q2223",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "How do you define a React pure component?",
+    "options": [
+      "A. extends React.PureComponent",
+      "B. All function components are Pure Components",
+      "C. class PureComponent {}",
+      "D. extends React.Component(Pure)"
+    ],
+    "answer_index": 0,
+    "answer": "A. extends React.PureComponent",
+    "topic": "React",
+    "explanation": "React.PureComponent implements shouldComponentUpdate with a shallow comparison of props and state, automatically skipping unnecessary re-renders. Extending it, rather than React.Component, is the built-in mechanism React provides for creating pure class components without manually defining shouldComponentUpdate.",
+    "corrected": false,
+    "id": "q2224",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "Mixins are not available when defining components with JavaScript classes. What’s the recommended alternative?",
+    "options": [
+      "A. Modules",
+      "B. JavaScript multiple inheritance",
+      "C. Higher Order Components",
+      "D. Decorators"
+    ],
+    "answer_index": 2,
+    "answer": "C. Higher Order Components",
+    "topic": "JavaScript",
+    "explanation": "Higher Order Components (HOCs) work as functions that take a component and return an enhanced component, achieving code reuse without relying on class-based mixin patterns. This approach avoids the naming collisions, hidden dependencies, and complexity issues that made traditional mixins problematic, while remaining fully compatible with ES6 class components.",
+    "corrected": false,
+    "id": "q2225",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "Which lifecycle methods are not triggered if shouldComponentUpdate() returns false?",
+    "options": [
+      "A. componentWillMount(), render(), and componentDidMount()",
+      "B. componentWillReceiveProps() and render()",
+      "C. render()",
+      "D. render(), and componentDidUpdate()"
+    ],
+    "answer_index": 3,
+    "answer": "D. render(), and componentDidUpdate()",
+    "topic": "React",
+    "explanation": "When `shouldComponentUpdate()` returns false, React skips the render phase entirely, preventing `render()` and all subsequent lifecycle methods from executing.\n\n`componentWillMount()` and `componentDidMount()` are only called during initial mounting, which is unaffected by `shouldComponentUpdate()` returning false during updates.",
+    "corrected": false,
+    "id": "q2226",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "What is shallow rendering?",
+    "options": [
+      "A. Rendering the component without needing to pass any props or setting any state.",
+      "B. Rendering just the component and not its children.",
+      "C. Rendering the component with a shallow context object.",
+      "D. Rendering the component without enforcing the prop types."
+    ],
+    "answer_index": 1,
+    "answer": "B. Rendering just the component and not its children.",
+    "topic": "React",
+    "explanation": "Shallow rendering renders a component in isolation without invoking lifecycle methods or rendering child components, simplifying unit tests.\n\nIt's a testing technique that mocks child components, allowing developers to test a component's logic independently of its dependencies.",
+    "corrected": false,
+    "id": "q2227",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Will any lifecycle methods be triggered if the “props” of a component change?",
+    "options": [
+      "A. Yes, but only if props were changed from within the component",
+      "B. No, props cannot be changed",
+      "C. No, only state changes trigger update lifecycle methods",
+      "D. Yes, both props and state change triggers update lifecycle methods"
+    ],
+    "answer_index": 3,
+    "answer": "D. Yes, both props and state change triggers update lifecycle methods",
+    "topic": "React",
+    "explanation": "Props changes trigger lifecycle methods like `componentDidUpdate` and `getDerivedStateFromProps` when parent components re-render and pass new prop values down.\n\nHowever, props must originate from parent component changes; components cannot directly modify their own props, so \"from within\" means parent-initiated updates.",
+    "corrected": false,
+    "id": "q2228",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "What is the way to avoid passing props through intermediate elements in the component tree?",
+    "options": [
+      "A. React.fragment();",
+      "B. React.Component();",
+      "C. React.createContext();",
+      "D. React.createRef();"
+    ],
+    "answer_index": 2,
+    "answer": "C. React.createContext();",
+    "topic": "React",
+    "explanation": "React.createContext() is the correct answer for avoiding prop drilling by creating a context that allows direct data passing to nested components without intermediate props.\n\nReact.Fragment() simply groups elements without adding DOM nodes, but doesn't solve prop drilling—only Context API does.",
+    "corrected": false,
+    "id": "q2229",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which of the following is NOT a good reason for having presentational and container logic separate in a component?",
+    "options": [
+      "A. Shorter code overall",
+      "B. Separating responsibilities",
+      "C. Readability",
+      "D. Testability"
+    ],
+    "answer_index": 0,
+    "answer": "A. Shorter code overall",
+    "topic": "Core Java & OOP",
+    "explanation": "Splitting a component into presentational and container parts typically adds extra files, boilerplate, and prop-passing code, so overall code length increases rather than shrinks. The real benefits are architectural—clearer separation of concerns, easier readability, and simpler unit testing—not a reduction in total lines of code.",
+    "corrected": false,
+    "id": "q2230",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "Why use async/await over simple promise chains?",
+    "options": [
+      "A. They are faster.",
+      "B. Readability",
+      "C. They are required in modern JavaScript.",
+      "D. You cannot alter a components state without them."
+    ],
+    "answer_index": 1,
+    "answer": "B. Readability",
+    "topic": "JavaScript",
+    "explanation": "Async/await compiles to optimized code that the JavaScript engine can better predict and JIT-compile, resulting in faster execution than promise chains with their additional callback overhead.\n\nThe V8 engine and other modern engines apply more aggressive optimizations to async functions, including better stack trace handling and reduced microtask queue processing delays.",
+    "corrected": false,
+    "id": "q2231",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "What is wrong with the key attribute in the below code: –\nfunction ListItem({ value }) {\nreturn <li key={value}>{value}</li>;\n}\nfunction NumberedList(props) {\nreturn (\n<ol>\n{props.numbers.map(number => <ListItem value={number} />)}\n</ol>\n);\n}",
+    "options": [
+      "A. This code will cause a syntax error because value is a reserved property.",
+      "B. The key attribute cannot be used on HTML elements like <li>.",
+      "C. The key attribute should be used on <ListItem /> instead of <li>.",
+      "D. A number cannot be used as a key."
+    ],
+    "answer_index": 2,
+    "answer": "C. The key attribute should be used on <ListItem /> instead of <li>.",
+    "topic": "React",
+    "explanation": "The key must be assigned to the element returned directly from the array's map() call, since React uses it to track that specific array item across renders. Here, `<ListItem />` is the mapped element, so the key belongs on it, not on the internal `<li>` that ListItem returns.",
+    "corrected": false,
+    "id": "q2232",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "Everything in react is : __________\\par",
+    "options": [
+      "A. Dispatcher\\par",
+      "B. Stores\\par",
+      "C. Views (React components)\\par",
+      "D. Action\\par"
+    ],
+    "answer_index": 2,
+    "answer": "C. Views (React components)\\par",
+    "topic": "React",
+    "explanation": "In React's Flux architecture, the Dispatcher is the central hub that manages all data flow, receiving actions and triggering store updates.\n\nComponents and stores depend on the Dispatcher to coordinate state changes, making it the foundational mechanism enabling unidirectional data flow.",
+    "corrected": false,
+    "id": "q2233",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "What is the value of arr[1] after the following code executes?\nvar arr = [1,2,3];",
+    "options": [
+      "A. 1",
+      "B. 2",
+      "C. 3",
+      "D. undefined"
+    ],
+    "answer_index": 1,
+    "answer": "B. 2",
+    "topic": "Spring Core",
+    "explanation": "Array indexing in JavaScript is zero-based, so arr[0] refers to the first element, arr[1] refers to the second element, and so on. Since arr was initialized as [1,2,3], arr[1] accesses the value 2, the second item in the array.",
+    "corrected": false,
+    "id": "q2234",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "derived",
+    "options_synthesized": true
+  },
+  {
+    "question": "What is the HTML <canvas> element primarily used for?",
+    "options": [
+      "A. Drawing graphics and animations dynamically via scripting (e.g., JavaScript)",
+      "B. Playing audio and video files natively",
+      "C. Embedding external web pages via an inline frame",
+      "D. Defining metadata and character encoding for a document"
+    ],
+    "answer_index": 0,
+    "answer": "A. Drawing graphics and animations dynamically via scripting (e.g., JavaScript)",
+    "topic": "Spring Core",
+    "explanation": "The canvas element provides a bitmap drawing surface accessed through JavaScript APIs like the Canvas 2D Context or WebGL, enabling pixel-level graphics rendering. Developers use scripting to draw shapes, images, and animations frame-by-frame, making it ideal for dynamic visualizations, games, and interactive graphics.",
+    "corrected": false,
+    "id": "q2237",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "question": "In HTML5, the <canvas> element is used for?",
+    "options": [
+      "A. Drawing graphics dynamically via JavaScript",
+      "B. Playing embedded audio files",
+      "C. Storing structured data offline in the browser",
+      "D. Defining page layout using CSS grid"
+    ],
+    "answer_index": 0,
+    "answer": "A. Drawing graphics dynamically via JavaScript",
+    "topic": "Spring Core",
+    "explanation": "The canvas element provides a bitmap surface with a scriptable API (getContext(\"2d\") or WebGL) that JavaScript uses to draw shapes, images, and animations dynamically. It renders pixel-based graphics at runtime rather than handling audio, offline storage, or CSS-based layout tasks.",
+    "corrected": false,
+    "id": "q2239",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "derived",
+    "options_synthesized": true
+  },
+  {
+    "question": "Which of the following authentication-related services are supported by Spring Security?",
+    "options": [
+      "A. Form-based login service",
+      "B. Logout Service",
+      "C. HTTP Basic authentication.",
+      "D. All of the mentioned"
+    ],
+    "answer_index": 3,
+    "answer": "D. All of the mentioned",
+    "topic": "Spring Core",
+    "explanation": "Spring Security natively supports form-based login through configurable login pages and authentication filters, along with HTTP Basic authentication via the WWW-Authenticate header mechanism. It also provides built-in logout services that handle session invalidation, cookie clearing, and security context cleanup, confirming all three options are valid features.",
+    "corrected": false,
+    "id": "q2241",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "question": "Which of the following are build automation tools commonly used to build and manage Java projects?",
+    "options": [
+      "A. Maven and Gradle",
+      "B. JUnit and Mockito",
+      "C. Tomcat and Jetty",
+      "D. Hibernate and Spring"
+    ],
+    "answer_index": 0,
+    "answer": "A. Maven and Gradle",
+    "topic": "Core Java & OOP",
+    "explanation": "Maven and Gradle are build automation tools that manage project dependencies, compile source code, run tests, and package Java applications into JARs or WARs. They use configuration files (pom.xml for Maven, build.gradle for Gradle) to define build lifecycles, dependency management, and plugin integration, making them industry standards for Java project builds.",
+    "corrected": false,
+    "id": "q2242",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "question": "Javascript functions can be invoked in which of the following ways: i) as functions ii) as methods iii) as constructors",
+    "options": [
+      "A. i and ii only",
+      "B. ii and iii only",
+      "C. i and iii only",
+      "D. All i, ii and iii"
+    ],
+    "answer_index": 3,
+    "answer": "D. All i, ii and iii",
+    "topic": "Core Java & OOP",
+    "explanation": "JavaScript functions are first-class objects that can be called directly as standalone functions, invoked as methods on objects using dot or bracket notation, or used as constructors with the \"new\" keyword to create instances. Each invocation style determines the value of \"this\" inside the function, but all three are valid and commonly used patterns depending on the intended purpose of the function call.",
+    "corrected": false,
+    "id": "q2243",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "We can subscribe to an observable using the . . . . . . . . The benefit of this is that Angular",
+    "options": [
+      "A. sync pipe",
+      "B. async var",
+      "C. async pipe",
+      "D. syn var"
+    ],
+    "answer_index": 2,
+    "answer": "C. async pipe",
+    "topic": "JavaScript",
+    "explanation": "The `async` pipe automatically subscribes to observables and unsubscribes when components are destroyed, preventing memory leaks. It also triggers change detection automatically when new values arrive from the observable.",
+    "corrected": false,
+    "id": "q2244",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "When you subscribe to an observer, each call of subscribe() will trigger it’s own independent setup for that given observable. Subscribe calls are shared among multiple subscribers to the same observable.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 1,
+    "answer": "B. False",
+    "topic": "Core Java & OOP",
+    "explanation": "Each subscribe() call to a standard observable creates its own independent execution, so subscriptions are not shared by default. Sharing subscriptions between multiple subscribers requires explicit multicasting operators like share() or publish() to convert it into a hot observable.",
+    "corrected": false,
+    "id": "q2245",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "When using TestBed.configureTestingModule to test an Angular component that injects ActivatedRoute, how are route parameters typically supplied to the mocked ActivatedRoute object?",
+    "options": [
+      "A. As a params property",
+      "B. As a parameters property",
+      "C. As part of the path property",
+      "D. As part of the component property"
+    ],
+    "answer_index": 0,
+    "answer": "A. As a params property",
+    "topic": "JavaScript",
+    "explanation": "ActivatedRoute exposes route parameters through a `params` Observable property, which components typically subscribe to for accessing dynamic route values. When mocking ActivatedRoute in tests, providing a `params` property (often as an Observable using `of()`) replicates this API, ensuring the component receives parameter data correctly during testing.",
+    "corrected": false,
+    "id": "q2246",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "question": "Docker Machine manage virtual hosts that use_______",
+    "options": [
+      "A. Command line",
+      "B. Docker Datacenter",
+      "C. Graphical user interface",
+      "D. Any of the above"
+    ],
+    "answer_index": 0,
+    "answer": "A. Command line",
+    "topic": "DevOps & CI/CD",
+    "explanation": "Docker Machine is a CLI tool used to provision and manage virtual hosts running Docker, executed entirely through terminal commands. It automates tasks like creating, starting, stopping, and configuring hosts using command-line instructions rather than any graphical interface.",
+    "corrected": false,
+    "id": "q2249",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "___________ is a specification for storing and retrieving files that exceed the",
+    "options": [
+      "A. FSpec",
+      "B. GridFS",
+      "C. Grid",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 1,
+    "answer": "B. GridFS",
+    "topic": "HTML & CSS",
+    "explanation": "GridFS is MongoDB's specification for handling files larger than the 16MB BSON document size limit by splitting them into chunks.\n\nIt stores file metadata in one collection and the actual data chunks in another, enabling efficient retrieval of massive files.",
+    "corrected": false,
+    "id": "q2250",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "In MongoDB, write operations are atomic at the__________ level.",
+    "options": [
+      "A. collection",
+      "B. document",
+      "C. row",
+      "D. all of the mentioned"
+    ],
+    "answer_index": 1,
+    "answer": "B. document",
+    "topic": "MongoDB",
+    "explanation": "MongoDB guarantees atomicity for all operations within a single document, ensuring that multi-field updates on one document either fully complete or fully rollback together.\n\nAtomicity does not extend across multiple documents or collections; operations affecting multiple documents are not atomic as a group.",
+    "corrected": false,
+    "id": "q2251",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "________ store the relationships between data by including links or references from one",
+    "options": [
+      "A. Capped",
+      "B. Embedded",
+      "C. External",
+      "D. References"
+    ],
+    "answer_index": 3,
+    "answer": "D. References",
+    "topic": "Core Java & OOP",
+    "explanation": "References store relationships by maintaining pointers or IDs linking one document to another, enabling data normalization across separate collections.\n\nThis approach avoids data duplication and allows flexible querying of related data while maintaining referential integrity between distinct data entities.",
+    "corrected": false,
+    "id": "q2252",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "______________ documents capture relationships between data by storing related data in a single document structure",
+    "options": [
+      "A. Capped",
+      "B. Embedded",
+      "C. External",
+      "D. Internal"
+    ],
+    "answer_index": 1,
+    "answer": "B. Embedded",
+    "topic": "Core Java & OOP",
+    "explanation": "Embedded documents nest related data directly within a parent document, storing everything in a single structure rather than using separate collections. This design captures relationships by co-locating associated data, enabling faster reads since no joins or additional queries are needed.",
+    "corrected": false,
+    "id": "q2254",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "Which of the following language is MongoDB written in?",
+    "options": [
+      "A. Javascript",
+      "B. C",
+      "C. C++",
+      "D. All of the mentioned"
+    ],
+    "answer_index": 3,
+    "answer": "D. All of the mentioned",
+    "topic": "JavaScript",
+    "explanation": "MongoDB's core server is written in C++, while its shell and tools use JavaScript, and various components utilize C for system-level operations.\n\nDifferent components serve different purposes: the database engine requires C++ for performance, JavaScript enables the interactive shell, and C handles low-level system integration.",
+    "corrected": false,
+    "id": "q2255",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "MongoDB Queries can return specific fields of documents which also include user-",
+    "options": [
+      "A. Javascript",
+      "B. C",
+      "C. C++",
+      "D. All of the mentioned"
+    ],
+    "answer_index": 0,
+    "answer": "A. Javascript",
+    "topic": "JavaScript",
+    "explanation": "MongoDB queries use JavaScript for field projection and filtering operations. The projection syntax like `{field: 1}` is JavaScript object notation native to MongoDB's query language.",
+    "corrected": false,
+    "id": "q2256",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Initial release of MongoDB was in the year?",
+    "options": [
+      "A. 2000",
+      "B. 2005",
+      "C. 2009",
+      "D. 2011"
+    ],
+    "answer_index": 2,
+    "answer": "C. 2009",
+    "topic": "MongoDB",
+    "explanation": "MongoDB was initially released in 2009 by 10gen (now MongoDB Inc.) as an open-source NoSQL document database for web applications.\n\nThe platform gained adoption throughout the 2010s, becoming one of the most widely-used NoSQL databases for modern application development.",
+    "corrected": false,
+    "id": "q2257",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "MongoDB is a _________ database that provides high performance, high availability,",
+    "options": [
+      "A. graph",
+      "B. key value",
+      "C. document",
+      "D. all of the mentioned"
+    ],
+    "answer_index": 2,
+    "answer": "C. document",
+    "topic": "MongoDB",
+    "explanation": "MongoDB stores data as JSON-like documents in collections, making it a document-oriented database rather than graph or key-value based.\n\nIts document model allows flexible schemas and nested data structures, delivering the high performance and availability MongoDB is known for.",
+    "corrected": false,
+    "id": "q2258",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Dynamic schema in MongoDB makes ____________ easier for applications.",
+    "options": [
+      "A. inheritance",
+      "B. polymorphism",
+      "C. encapsulation",
+      "D. none of the mentioned"
+    ],
+    "answer_index": 1,
+    "answer": "B. polymorphism",
+    "topic": "MongoDB",
+    "explanation": "MongoDB's dynamic schema allows different document structures within the same collection, enabling objects of different types to be treated uniformly—a core principle of polymorphism.\n\nThis flexibility eliminates the need for rigid type definitions, making it simpler to implement polymorphic behavior where different entities share interfaces but have varying internal structures.",
+    "corrected": false,
+    "id": "q2259",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "With ________ MongoDB supports a complete backup solution and full deployment",
+    "options": [
+      "A. MMS",
+      "B. AMS",
+      "C. CMS",
+      "D. DMS"
+    ],
+    "answer_index": 0,
+    "answer": "A. MMS",
+    "topic": "MongoDB",
+    "explanation": "MMS (MongoDB Management Service) is MongoDB's official cloud-based monitoring and backup platform that enables automated backups and complete disaster recovery solutions.\n\nMMS provides centralized management, automated daily backups, point-in-time recovery, and deployment monitoring across MongoDB instances in production environments.",
+    "corrected": false,
+    "id": "q2260",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which of the following is not a NoSQL database?",
+    "options": [
+      "A. SQL Server",
+      "B. MongoDB",
+      "C. Cassandra",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 0,
+    "answer": "A. SQL Server",
+    "topic": "MongoDB",
+    "explanation": "SQL Server is a relational database management system that uses SQL and structured schemas, making it fundamentally different from NoSQL databases.\n\nMongoDB and Cassandra are NoSQL databases designed for unstructured data and horizontal scalability, whereas SQL Server requires predefined schemas and ACID compliance.",
+    "corrected": false,
+    "id": "q2261",
+    "trust": "unverified-source"
+  }
+]

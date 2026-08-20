@@ -1,0 +1,1015 @@
+[
+  {
+    "question": "After Controller has finished handling a render request, it returns:-",
+    "options": [
+      "A. model name",
+      "B. view name",
+      "C. view object",
+      "D. all of the mentioned"
+    ],
+    "answer_index": 1,
+    "answer": "B. view name",
+    "topic": "Core Java & OOP",
+    "explanation": "The controller returns a model name as a string identifier that the framework uses to locate and render the appropriate view template. This allows separation of concerns where the controller doesn't directly handle view rendering logic.",
+    "corrected": false,
+    "id": "q1669",
+    "trust": "legit-source"
+  },
+  {
+    "question": "Which of the following is correct about dependency",
+    "options": [
+      "A. It helps in decoupling application objects from each",
+      "B. It helps in deciding the dependencies of objects.",
+      "C. It stores objects states in database.",
+      "D. It stores object states in file system."
+    ],
+    "answer_index": 0,
+    "answer": "A. It helps in decoupling application objects from each",
+    "topic": "React",
+    "explanation": "Dependency injection decouples objects by injecting dependencies rather than having objects create their own, reducing tight coupling between classes.\n\nThis promotes loose coupling, making components independent and easier to test, maintain, and swap implementations without modifying dependent code.",
+    "corrected": false,
+    "id": "q1681",
+    "trust": "legit-source"
+  },
+  {
+    "question": "Where do you cannot declare Spring MVC controller?",
+    "options": [
+      "A. In a Spring application context XML configuration file",
+      "B. Into the web.xml file of the web application",
+      "C. Into the java code by using annotations",
+      "D. Into the JSP pages"
+    ],
+    "answer_index": 3,
+    "answer": "D. Into the JSP pages",
+    "topic": "Spring Core",
+    "explanation": "Spring MVC controllers are declared using annotations in Java code or as beans in XML configuration files, not in application context XML files alone. Controllers require servlet mapping and DispatcherServlet configuration in web.xml to function properly with Spring MVC.",
+    "corrected": false,
+    "id": "q1682",
+    "trust": "legit-source"
+  },
+  {
+    "question": "In a Spring application, what is the standard way to externalize constants (such as configuration values) from the Spring XML/Java configuration into a separate file?",
+    "options": [
+      "A. Define the values in a .properties file and reference them in the configuration using placeholders like ${propertyName}, loaded via a PropertyPlaceholderConfigurer or <context:property-placeholder/>",
+      "B. Hard-code all values directly inside the bean class constructors",
+      "C. Store the values as static final fields inside the DispatcherServlet class",
+      "D. Embed the values directly in the web.xml servlet mapping definitions"
+    ],
+    "answer_index": 0,
+    "answer": "A. Define the values in a .properties file and reference them in the configuration using placeholders like ${propertyName}, loaded via a PropertyPlaceholderConfigurer or <context:property-placeholder/>",
+    "topic": "Spring Core",
+    "explanation": "Externalizing values into a .properties file decouples configuration from code, allowing environment-specific settings to change without recompiling or editing XML/Java config. The PropertyPlaceholderConfigurer or context:property-placeholder mechanism resolves ${propertyName} tokens at container startup, injecting the correct values into bean definitions dynamically.",
+    "corrected": false,
+    "id": "q1683",
+    "trust": "legit-source",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "question": "Which is the part of Data Access layer in SpringFramework?",
+    "options": [
+      "A. Aspects",
+      "B. JMS",
+      "C. MVC",
+      "D. Web Sockets"
+    ],
+    "answer_index": 1,
+    "answer": "B. JMS",
+    "topic": "Spring Core",
+    "explanation": "Aspects provide cross-cutting concerns like transaction management and exception handling, which are essential infrastructure for data access operations in Spring.\n\nThe Data Access layer uses AOP aspects to manage concerns such as resource management, transaction boundaries, and persistence logic consistently across repositories.",
+    "corrected": false,
+    "id": "q1684",
+    "trust": "legit-source"
+  },
+  {
+    "question": "In which spring version, java 5 features has beenintroduced?",
+    "options": [
+      "A. Spring 2.5",
+      "B. Spring 3.0",
+      "C. Spring 2.0",
+      "D. Spring 4.0"
+    ],
+    "answer_index": 0,
+    "answer": "A. Spring 2.5",
+    "topic": "Core Java & OOP",
+    "explanation": "Spring 2.5 was the first version to fully leverage Java 5 features like generics, annotations, and autoboxing in its core framework.\n\nThis enabled annotation-based configuration, eliminating XML dependency declarations and introducing @Autowired and @Component stereotypes.",
+    "corrected": false,
+    "id": "q1685",
+    "trust": "legit-source"
+  },
+  {
+    "question": "Which class represents the IoC container?",
+    "options": [
+      "A. ApplicationContext",
+      "B. ServletContext",
+      "C. BeanContainer",
+      "D. ContainerFactory"
+    ],
+    "answer_index": 0,
+    "answer": "A. ApplicationContext",
+    "topic": "Spring Core",
+    "explanation": "ApplicationContext is Spring's primary IoC container interface that manages beans, their lifecycle, and dependency injection throughout the application.\n\nIt extends BeanFactory with additional enterprise features like event publishing, internationalization, and resource loading capabilities.",
+    "corrected": false,
+    "id": "q1686",
+    "trust": "legit-source"
+  },
+  {
+    "question": "What is the role of ApplicationContextAware inspring?",
+    "options": [
+      "A. Dependency injection is performed.",
+      "B. Makes a bean aware to the container.",
+      "C. It automatically publishes application events to all registered listeners.",
+      "D. It provides a callback method to inject property values from external configuration files."
+    ],
+    "answer_index": 1,
+    "answer": "B. Makes a bean aware to the container.",
+    "topic": "Spring Core",
+    "explanation": "ApplicationContextAware interface provides a setApplicationContext() callback method that allows beans to receive and store a reference to the ApplicationContext, enabling dependency injection of the container itself.\n\nThis mechanism lets beans access other beans and resources managed by the container, fulfilling the core purpose of dependency injection by injecting the application context dependency.",
+    "corrected": false,
+    "id": "q1688",
+    "trust": "legit-source"
+  },
+  {
+    "question": "What is the scope of stateless bean in spring?",
+    "options": [
+      "A. Singleton scope",
+      "B. Prototype scope",
+      "C. Request scope",
+      "D. Session scope"
+    ],
+    "answer_index": 0,
+    "answer": "A. Singleton scope",
+    "topic": "Spring Core",
+    "explanation": "Stateless beans in Spring default to singleton scope because they maintain no conversational state and can be safely shared across multiple clients without concurrency issues.\n\nA single instance handles all requests efficiently, reducing memory overhead and improving performance since statelessness eliminates the need for instance-per-request creation.",
+    "corrected": false,
+    "id": "q1689",
+    "trust": "legit-source"
+  },
+  {
+    "question": "What is the scope of statefull bean in spring?",
+    "options": [
+      "A. Singleton scope",
+      "B. Prototype scope",
+      "C. Session scope",
+      "D. Request scope"
+    ],
+    "answer_index": 1,
+    "answer": "B. Prototype scope",
+    "topic": "Spring Core",
+    "explanation": "Spring beans are singleton by default, meaning one instance is created per application context and shared across all requests. Stateful beans maintain instance variables, requiring singleton scope to preserve state consistently throughout the application lifecycle.",
+    "corrected": false,
+    "id": "q1690",
+    "trust": "legit-source"
+  },
+  {
+    "question": "In which spring scope is a single bean instancecreated per IoC container?",
+    "options": [
+      "A. Singleton scope",
+      "B. Request scope",
+      "C. Prototype scope",
+      "D. Session scope"
+    ],
+    "answer_index": 0,
+    "answer": "A. Singleton scope",
+    "topic": "Spring Core",
+    "explanation": "Singleton scope creates exactly one bean instance that is shared across the entire IoC container lifecycle and reused for all requests.\n\nThis is the default Spring scope, ensuring memory efficiency and consistent object state throughout the application's runtime.",
+    "corrected": false,
+    "id": "q1691",
+    "trust": "legit-source"
+  },
+  {
+    "question": "In which spring scope can any number of instancesof bean be created?",
+    "options": [
+      "A. Request scope",
+      "B. Prototype scope",
+      "C. Singleton scope",
+      "D. Session scope"
+    ],
+    "answer_index": 1,
+    "answer": "B. Prototype scope",
+    "topic": "Spring Core",
+    "explanation": "In prototype scope, a new instance is created every time the bean is requested, allowing unlimited instances to exist simultaneously in memory.\n\nRequest scope creates one instance per HTTP request, but multiple concurrent requests each get their own instance, enabling any number of instances.",
+    "corrected": false,
+    "id": "q1692",
+    "trust": "legit-source"
+  },
+  {
+    "question": "When a bean has scope limited to only HTTP request,that is called",
+    "options": [
+      "A. Request scope",
+      "B. Session scope",
+      "C. Application scope",
+      "D. Global scope"
+    ],
+    "answer_index": 0,
+    "answer": "A. Request scope",
+    "topic": "Core Java & OOP",
+    "explanation": "Request scope means a bean is instantiated once per HTTP request and destroyed when the request completes. Session scope, conversely, persists across multiple requests within the same user session.",
+    "corrected": false,
+    "id": "q1693",
+    "trust": "legit-source"
+  },
+  {
+    "question": "When a bean has scope limited to HTTP session,that is called",
+    "options": [
+      "A. Request scope",
+      "B. Session scope",
+      "C. Application scope",
+      "D. Global scope"
+    ],
+    "answer_index": 1,
+    "answer": "B. Session scope",
+    "topic": "Core Java & OOP",
+    "explanation": "Session scope means a bean persists for the entire HTTP session duration, not just a single request. This allows the bean to maintain state across multiple user interactions within that session.",
+    "corrected": false,
+    "id": "q1694",
+    "trust": "legit-source"
+  },
+  {
+    "question": "Which bean scope is used in portlet context inspring?",
+    "options": [
+      "A. Session scope",
+      "B. Global session scope",
+      "C. Request scope",
+      "D. Application scope"
+    ],
+    "answer_index": 1,
+    "answer": "B. Global session scope",
+    "topic": "Spring Core",
+    "explanation": "In portlet context, session scope is bound to individual portlet sessions, maintaining state within a single portlet instance across requests.\n\nGlobal session scope applies to entire portal sessions across multiple portlets, making it inappropriate for isolated portlet-specific bean management.",
+    "corrected": false,
+    "id": "q1695",
+    "trust": "legit-source"
+  },
+  {
+    "question": "How to control a bean lifecycle in spring?",
+    "options": [
+      "A. Using init() method only.",
+      "B. Using InitializingBean and DisposableBean or init()method.",
+      "C. Using @Autowired and @Qualifier annotations on the bean class.",
+      "D. Using @Transactional and @Async annotations to manage bean state."
+    ],
+    "answer_index": 1,
+    "answer": "B. Using InitializingBean and DisposableBean or init()method.",
+    "topic": "Core Java & OOP",
+    "explanation": "The init() method is the primary mechanism to control bean initialization in Spring, allowing custom logic execution during bean creation.\n\nSpring's lifecycle management relies on initialization callbacks like init() as the standard approach for managing bean state transitions.",
+    "corrected": false,
+    "id": "q1696",
+    "trust": "legit-source"
+  },
+  {
+    "question": "How before advice works?",
+    "options": [
+      "A. Run advice before a class loads.",
+      "B. Run advice before a method execution.",
+      "C. Run advice before http response is to be returned.",
+      "D. Run advice before http request is to be processed."
+    ],
+    "answer_index": 1,
+    "answer": "B. Run advice before a method execution.",
+    "topic": "Spring Core",
+    "explanation": "Before advice is a type of aspect-oriented programming (AOP) advice that executes prior to a specific join point, typically a method invocation, without altering its execution flow. It allows developers to perform actions like logging, validation, or security checks before the target method runs, independent of HTTP-specific lifecycle events or class loading.",
+    "corrected": false,
+    "id": "q1697",
+    "trust": "legit-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "The . . . . . decorator allows us to define the pipe name that is globally available for use in any",
+    "options": [
+      "A. pipeName",
+      "B. pipeDeco",
+      "C. Pipe",
+      "D. None"
+    ],
+    "answer_index": 2,
+    "answer": "C. Pipe",
+    "topic": "TypeScript",
+    "explanation": "The `@Pipe` decorator includes a `name` property that registers the pipe globally, making it available across templates without explicit imports.\n\nThe `pipeName` option specifies the string identifier used in templates to invoke the custom pipe functionality.",
+    "corrected": false,
+    "id": "q1758",
+    "trust": "legit-source"
+  },
+  {
+    "question": "Observables help you manage . . . . . . . . data.",
+    "options": [
+      "A. synchronous",
+      "B. asynchronous",
+      "C. Both asynchronous & synchronous",
+      "D. None of above"
+    ],
+    "answer_index": 2,
+    "answer": "C. Both asynchronous & synchronous",
+    "topic": "JavaScript",
+    "explanation": "Observables handle both synchronous and asynchronous data streams through a unified reactive pattern, making option C technically more accurate than A.\n\nThe provided answer A is incorrect; observables excel at managing asynchronous operations like HTTP requests and events, not primarily synchronous data.",
+    "corrected": false,
+    "id": "q1759",
+    "trust": "legit-source"
+  },
+  {
+    "question": "Promises are more advanced than Observables.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 1,
+    "answer": "B. False",
+    "topic": "JavaScript",
+    "explanation": "Observables are generally considered more advanced than Promises because they support multiple values over time, cancellation, and operators like map and filter for transformation. Promises only handle a single asynchronous value and lack built-in cancellation, making them simpler but less powerful than Observables.",
+    "corrected": false,
+    "id": "q1762",
+    "trust": "legit-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "NoSQL databases is used mainly for handling large volumes of",
+    "options": [
+      "A. unstructured",
+      "B. structured",
+      "C. semi-structured",
+      "D. all of the mentioned"
+    ],
+    "answer_index": 3,
+    "answer": "D. all of the mentioned",
+    "topic": "MongoDB",
+    "explanation": "NoSQL databases excel at storing unstructured data like documents, images, and logs without requiring predefined schemas or rigid table structures.\n\nTheir flexible data models accommodate varying data formats and evolving requirements, making them ideal for massive volumes of heterogeneous, schema-less information.",
+    "corrected": false,
+    "id": "q1782",
+    "trust": "legit-source"
+  },
+  {
+    "question": "You can also only use tomcat as embedded system in spring?(T/F)",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 1,
+    "answer": "B. False",
+    "topic": "MongoDB",
+    "explanation": "Spring Boot supports multiple embedded servlet containers, not just Tomcat, including Jetty and Undertow as alternatives. Developers can easily switch between these embedded servers by adjusting dependencies in the build configuration, such as excluding Tomcat and including Jetty in Maven or Gradle.",
+    "corrected": false,
+    "id": "q1784",
+    "trust": "legit-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "Three main components of Routing are . . . . . . . . . . .",
+    "options": [
+      "A. RouteObject",
+      "B. RouterOutlet",
+      "C. RouterState",
+      "D. RouterLink"
+    ],
+    "answer_index": 0,
+    "answer": "A. RouteObject",
+    "topic": "JavaScript",
+    "explanation": "RouteObject defines the route configuration structure that maps URLs to components and lazy-loaded modules in Angular routing setup.\n\nRouterOutlet, RouterState, and RouterLink are supporting directives and services, not core routing components themselves.",
+    "corrected": false,
+    "id": "q1786",
+    "trust": "legit-source"
+  },
+  {
+    "question": "We subscribe to the observable ourselves using the actual . . . . . . method. The downside is that you have to",
+    "options": [
+      "A. subscribe()",
+      "B. subs()",
+      "C. subscribed()",
+      "D. None of above"
+    ],
+    "answer_index": 0,
+    "answer": "A. subscribe()",
+    "topic": "JavaScript",
+    "explanation": "The `subscribe()` method is the standard RxJS API for manually subscribing to observables and receiving emitted values. Manual subscription requires manual unsubscription to prevent memory leaks, which is the downside referenced.",
+    "corrected": false,
+    "id": "q1787",
+    "trust": "legit-source"
+  },
+  {
+    "question": "Using the . . . . . . animation function, the parent animation can allow the child animation to run at the exact",
+    "options": [
+      "A. animateChild",
+      "B. childAnimate",
+      "C. animateInner",
+      "D. innerChild"
+    ],
+    "answer_index": 0,
+    "answer": "A. animateChild",
+    "topic": "Core Java & OOP",
+    "explanation": "The `animateChild` function enables parent animations to trigger and synchronize child animations at precise timing intervals. This is the standard Angular animation API method for coordinating nested animation sequences.",
+    "corrected": false,
+    "id": "q1788",
+    "trust": "legit-source"
+  },
+  {
+    "question": "It's always possible to make use of animation input parameters by setting even more data via the . . . . .",
+    "options": [
+      "A. options.param",
+      "B. option.params",
+      "C. option.param",
+      "D. options.params"
+    ],
+    "answer_index": 3,
+    "answer": "D. options.params",
+    "topic": "Core Java & OOP",
+    "explanation": "Animation parameters are accessed through the `options` object using the plural form `params` to store multiple parameter key-value pairs simultaneously.\n\nThe `.params` property follows standard API conventions where configuration objects use plural nouns for collections, maintaining consistency across animation frameworks.",
+    "corrected": false,
+    "id": "q1789",
+    "trust": "legit-source"
+  },
+  {
+    "question": "The . . . . . decorator allows us to define the pipe name that is globally available for use in any template in the",
+    "options": [
+      "A. pipeName",
+      "B. pipeDeco",
+      "C. Pipe",
+      "D. None"
+    ],
+    "answer_index": 2,
+    "answer": "C. Pipe",
+    "topic": "TypeScript",
+    "explanation": "The @Pipe decorator registers a custom pipe in Angular and makes it available globally across all templates when declared in a module. It requires a metadata object with a 'name' property that defines the pipe's identifier for template usage.",
+    "corrected": false,
+    "id": "q1790",
+    "trust": "legit-source"
+  },
+  {
+    "question": "In TypeScript, how do you implement inheritance between classes?",
+    "options": [
+      "A. By using the 'extends' keyword in the class declaration",
+      "B. By using the 'implements' keyword in the class declaration",
+      "C. By declaring the class as 'abstract'",
+      "D. By importing the parent class using 'require'"
+    ],
+    "answer_index": 0,
+    "answer": "A. By using the 'extends' keyword in the class declaration",
+    "topic": "Spring Core",
+    "explanation": "The 'extends' keyword establishes a subclass relationship, allowing a class to inherit properties and methods from a parent class. This enables code reuse and lets the child class override or extend the parent's functionality via the 'super' keyword.",
+    "corrected": false,
+    "id": "q1792",
+    "trust": "legit-source",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "question": "Which of the following statements is false as far as different type of statements is",
+    "options": [
+      "A. Regular Statement",
+      "B. Prepared Statement",
+      "C. Callable Statement",
+      "D. Interim Statement"
+    ],
+    "answer_index": 3,
+    "answer": "D. Interim Statement",
+    "topic": "React",
+    "explanation": "Regular Statement is not a recognized JDBC statement type; the three standard types are Prepared, Callable, and Statement (not \"Regular\").\n\nInterim Statement is a fabricated term, but Regular Statement is specifically false as it misnames the basic Statement interface used in Java database connections.",
+    "corrected": false,
+    "id": "q1816",
+    "trust": "legit-source"
+  },
+  {
+    "question": "To execute a stored procedure “totalStock” in a database server, which of the following",
+    "options": [
+      "A. Statement stmt = connection.createStatement();stmt.execute(\"totalStock()\");",
+      "B. CallableStatement clbstmnt = con.prepareCall(\"{call totalStock}\");cs.executeQuery();",
+      "C. StoreProcedureStatement",
+      "D. PrepareStatement pstmt = connection.prepareStatement(\"totalStock()\");pstmt.execute();"
+    ],
+    "answer_index": 1,
+    "answer": "B. CallableStatement clbstmnt = con.prepareCall(\"{call totalStock}\");cs.executeQuery();",
+    "topic": "React",
+    "explanation": "Statement.execute() can run any SQL command including stored procedures without special syntax. The procedure name in quotes is sufficient for direct execution on the database server.",
+    "corrected": false,
+    "id": "q1817",
+    "trust": "legit-source"
+  },
+  {
+    "question": "All raw data types (including binary documents or images) should be read and",
+    "options": [
+      "A. byte",
+      "B. int",
+      "C. boolean",
+      "D. char"
+    ],
+    "answer_index": 0,
+    "answer": "A. byte",
+    "topic": "Core Java & OOP",
+    "explanation": "A byte is the smallest addressable unit of memory that can represent any value from 0-255, making it the fundamental building block for reading all binary data types. All files, images, and documents are ultimately composed of bytes, which can be combined to represent any data format.",
+    "corrected": false,
+    "id": "q1819",
+    "trust": "legit-source"
+  },
+  {
+    "question": "Which of the following methods finds the maximum number of connections that a",
+    "options": [
+      "A. Database.getMaxConnections",
+      "B. Connection.getMaxConnections",
+      "C. DatabaseMetaData.getMaxConnections",
+      "D. ResultSetMetaData.getMaxConnections"
+    ],
+    "answer_index": 2,
+    "answer": "C. DatabaseMetaData.getMaxConnections",
+    "topic": "SQL & JDBC",
+    "explanation": "The Database class manages connection pooling and resource limits at the database level, making it the appropriate interface for querying maximum connection capacity. Other classes handle individual connections or metadata about query results, not database-wide connection configuration.",
+    "corrected": false,
+    "id": "q1820",
+    "trust": "legit-source"
+  },
+  {
+    "question": "class BabyRaccoon extends Mammal { }",
+    "options": [
+      "A. Raccoon is-a Mammal.",
+      "B. Raccoon has-a Mammal.",
+      "C. BabyRaccoon is-a Mammal.",
+      "D. BabyRaccoon is-a Raccoon."
+    ],
+    "answer_index": 2,
+    "answer": "C. BabyRaccoon is-a Mammal.",
+    "topic": "Core Java & OOP",
+    "explanation": "The `extends` keyword establishes an \"is-a\" relationship through inheritance, making BabyRaccoon a subclass of Mammal. Since BabyRaccoon inherits from Mammal, it is-a Mammal, which also applies to its parent class Raccoon.",
+    "corrected": false,
+    "id": "q1821",
+    "trust": "legit-source"
+  },
+  {
+    "question": "Given:\n\n1. class Base {\n2. public static final String FOO=\"foo\";\n3. public static void main(String[] args) {\n4. Base b = new Base();\n5. Sub s = new Sub();\n6. System.out.print(Base.FOO);\n7. System.out.print(Sub.FOO);\n8. System.out.print(b.FOO);\n9. System.out.print(s.FOO);\n10. System.out.print(((Base)s).FOO);\n11. } }\n12. class Sub extends Base {public static final String FOO=\"bar\";}\n\nWhat is the result?",
+    "options": [
+      "A. foobarfoobarfoo",
+      "B. foofoofoofoofoo",
+      "C. foobarfoobarbar",
+      "D. foobarfoofoofoo"
+    ],
+    "answer_index": 0,
+    "answer": "A. foobarfoobarfoo",
+    "topic": "Core Java & OOP",
+    "explanation": "Static fields are resolved based on the reference's compile-time type, not the runtime object, so field access is never polymorphic like method overriding. Base.FOO and b.FOO resolve to Base's field (\"foo\"), Sub.FOO and s.FOO resolve to Sub's field (\"bar\"), and casting s to (Base) forces the compiler to use Base's FOO (\"foo\").",
+    "corrected": false,
+    "id": "q1824",
+    "trust": "legit-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "What is the output of the following program?\n\nimport java.util.*;\n\npublic class Test {\n    public static void main(String[] args) {\n        Set<Integer> set = new HashSet<>(Arrays.asList(0, 1, 2, 3, 4));\n        set.remove(2);\n        System.out.println(set);\n    }\n}",
+    "options": [
+      "A. {0, 1, 3, 4}",
+      "B. {0, 1, 2, 4}",
+      "C. {0, 1, 2, 3, 4}",
+      "D. {0, 0, 0, 3, 4}"
+    ],
+    "answer_index": 0,
+    "answer": "A. {0, 1, 3, 4}",
+    "topic": "Core Java & OOP",
+    "explanation": "The set is initialized with elements 0, 1, 2, 3, and 4, and calling remove(2) removes the integer value 2 from the set. HashSet does not maintain insertion order but for small Integer values it typically prints in ascending order, yielding {0, 1, 3, 4}.",
+    "corrected": false,
+    "id": "q1832",
+    "trust": "legit-source",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "question": "The sendRedirect method defined in the HttpServlet class is equivalent to invoking the setStatus method with the following parameter and a Location header in the URL. Select the one correct answer.",
+    "options": [
+      "A. SC_MOVED_TEMPORARILY",
+      "B. SC_OK",
+      "C. SC_NOT_FOUND",
+      "D. SC_INTERNAL_SERVER_ERROR"
+    ],
+    "answer_index": 0,
+    "answer": "A. SC_MOVED_TEMPORARILY",
+    "topic": "Core Java & OOP",
+    "explanation": "sendRedirect() sets the response status code to 302 (SC_MOVED_TEMPORARILY), signaling the client to make a new GET request to a different URL. It also sets the Location header to specify the target URL, achieving the same result as manually calling setStatus(SC_MOVED_TEMPORARILY) plus setting that header.",
+    "corrected": false,
+    "id": "q1837",
+    "trust": "legit-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "Consider the following JSP code snippet:\n\n<%@ taglib uri=\"http://java.sun.com/jsp/jstl/core\" prefix=\"c\" %>\n<c:set var=\"count\" value=\"2\"/>\n<c:out value=\"${count}\"/>\n\nWhat is printed when this JSP page is rendered?",
+    "options": [
+      "A. 0",
+      "B. 2",
+      "C. ABC",
+      "D. Nothing gets printed as c:out statement does not support EL expressions"
+    ],
+    "answer_index": 1,
+    "answer": "B. 2",
+    "topic": "React",
+    "explanation": "The c:set tag stores the value \"2\" in the variable \"count\" within the default page scope, making it accessible for later use. The c:out tag then evaluates the EL expression ${count}, retrieves the stored value, and outputs \"2\" to the response.",
+    "corrected": false,
+    "id": "q1840",
+    "trust": "legit-source",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "question": "What number gets printed when the following JavaScript code runs?\n\nfunction counter() {\n  let count = 0;\n  return function() {\n    count++;\n    return count;\n  };\n}\nconst c = counter();\nc();\nc();\nconsole.log(c());",
+    "options": [
+      "A. 1",
+      "B. 2",
+      "C. 3",
+      "D. 4"
+    ],
+    "answer_index": 2,
+    "answer": "C. 3",
+    "topic": "Core Java & OOP",
+    "explanation": "The closure retains a persistent reference to `count` across calls, so each invocation of `c()` increments the same variable rather than resetting it. Since `c()` is called three times total, `count` increases to 1, then 2, then 3, and the third call's return value, 3, is what gets logged.",
+    "corrected": false,
+    "id": "q1847",
+    "trust": "legit-source",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "question": "In the Java Servlet API, the sendRedirect method defined in the HttpServletResponse interface is equivalent to setting which status code (along with a Location header) on the response?",
+    "options": [
+      "A. SC_OK",
+      "B. SC_MOVED_TEMPORARILY",
+      "C. SC_NOT_FOUND",
+      "D. SC_INTERNAL_SERVER_ERROR"
+    ],
+    "answer_index": 1,
+    "answer": "B. SC_MOVED_TEMPORARILY",
+    "topic": "JavaScript",
+    "explanation": "sendRedirect() generates an HTTP response with status code 302, which corresponds to SC_MOVED_TEMPORARILY in the HttpServletResponse interface, along with a Location header pointing to the new URL. This tells the client's browser to make a new GET request to the redirected URL while indicating the original resource has only temporarily moved.",
+    "corrected": false,
+    "id": "q1853",
+    "trust": "legit-source",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "question": "The sendRedirect method defined in the HttpServlet class is equivalent to invoking the",
+    "options": [
+      "A. SC_OK",
+      "B. SC_MOVED_TEMPORARILY",
+      "C. SC_NOT_FOUND",
+      "D. SC_INTERNAL_SERVER_ERROR"
+    ],
+    "answer_index": 1,
+    "answer": "B. SC_MOVED_TEMPORARILY",
+    "topic": "JavaScript",
+    "explanation": "The sendRedirect method sets the response status code to 302, which corresponds to SC_MOVED_TEMPORARILY, and includes a Location header pointing to the new URL. This tells the client browser to automatically issue a new request to the specified location, effectively performing a temporary redirect.",
+    "corrected": false,
+    "id": "q1854",
+    "trust": "legit-source"
+  },
+  {
+    "question": "What is the effect of executing the following JSP statement, assuming a class with name Employee exists in classes package.\n<%@ page import = \"classes.Employee\" %> <jsp:useBean id=\"employee\" class=\"classes.Employee\" scope=\"session\"/> <jsp:setProperty name=\"employee\" property=\"*\"/>",
+    "options": [
+      "A. The code does not compile as there is no property attribute of setProperty tag.",
+      "B. The code does not compile as property attribute cannot take * as a value.",
+      "C. The code sets value of all properties of employee bean to \"*\".",
+      "D. The code sets the values of all properties of employee bean to matching parameters in request object."
+    ],
+    "answer_index": 3,
+    "answer": "D. The code sets the values of all properties of employee bean to matching parameters in request object.",
+    "topic": "React",
+    "explanation": "Using property=\"*\" instructs the JSP engine to iterate through all request parameters and automatically map them to bean properties with matching names. For each matching parameter, the container calls the corresponding setter method on the employee bean, passing the parameter's value.",
+    "corrected": false,
+    "id": "q1869",
+    "trust": "legit-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "Which number gets printed when the following JSTL code fragment is executed?\n\n<c:set var=\"x\" value=\"0\"/>\n<c:forEach var=\"i\" begin=\"1\" end=\"4\">\n  <c:if test=\"${i % 2 == 0}\">\n    <c:set var=\"x\" value=\"${i}\"/>\n  </c:if>\n</c:forEach>\n${x}",
+    "options": [
+      "A. 1",
+      "B. 2",
+      "C. 3",
+      "D. 4"
+    ],
+    "answer_index": 3,
+    "answer": "D. 4",
+    "topic": "SQL & JDBC",
+    "explanation": "The loop iterates i from 1 to 4, and x gets updated to i only when i is even, so x is set to 2 when i=2 and then to 4 when i=4. Since 4 is the last even value encountered before the loop ends, x retains the value 4 after the forEach completes.",
+    "corrected": false,
+    "id": "q1875",
+    "trust": "legit-source",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "question": "Which of these is not a valid value for dispatcher element of filter-mapping.",
+    "options": [
+      "A. FORWARD",
+      "B. RESPONSE",
+      "C. INCLUDE",
+      "D. ERROR"
+    ],
+    "answer_index": 1,
+    "answer": "B. RESPONSE",
+    "topic": "Core Java & OOP",
+    "explanation": "The valid dispatcher values in filter-mapping are REQUEST, FORWARD, INCLUDE, and ERROR. RESPONSE is not a recognized dispatcher type in the Servlet specification.",
+    "corrected": false,
+    "id": "q1916",
+    "trust": "legit-source"
+  },
+  {
+    "question": "To execute a stored procedure \"Total stock\" in a database server which of the following is used?",
+    "options": [
+      "A. Statement",
+      "B. Callable Statement",
+      "C. Stored Procedure Statement",
+      "D. Prepare Statement"
+    ],
+    "answer_index": 1,
+    "answer": "B. Callable Statement",
+    "topic": "React",
+    "explanation": "CallableStatement is the JDBC interface specifically designed to execute stored procedures on a database server, supporting IN, OUT, and INOUT parameters. It extends PreparedStatement and uses the SQL escape syntax \"{call procedureName(parameters)}\" to invoke procedures like \"Total stock\" correctly.",
+    "corrected": false,
+    "id": "q1931",
+    "trust": "legit-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "Consider the following Java source code saved in a file named TestA.java:\n\nclass TestA {\n}\npublic class TestB {\n    public static void main(String args[]) {\n        System.out.println(\"Hello\");\n    }\n}\n\nWhat happens when you attempt to compile this file?",
+    "options": [
+      "A. Compilation fails because the public class name must match the file name",
+      "B. The program compiles and prints Hello",
+      "C. The program compiles but throws an exception at runtime",
+      "D. Compilation fails because a class cannot contain a main method"
+    ],
+    "answer_index": 0,
+    "answer": "A. Compilation fails because the public class name must match the file name",
+    "topic": "Core Java & OOP",
+    "explanation": "In Java, a source file can contain only one public class, and that public class's name must exactly match the file name. Since the file is named TestA.java but the public class is TestB, the compiler rejects it with a mismatch error.",
+    "corrected": false,
+    "id": "q1948",
+    "trust": "legit-source",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "question": "Which of these is not a valid value for dispatcher element of filter-mapping. Select the",
+    "options": [
+      "A. FORWARD",
+      "B. RESPONSE",
+      "C. INCLUDE",
+      "D. ERROR"
+    ],
+    "answer_index": 1,
+    "answer": "B. RESPONSE",
+    "topic": "SQL & JDBC",
+    "explanation": "The valid dispatcher values in filter-mapping are REQUEST, FORWARD, INCLUDE, and ERROR. RESPONSE is not a recognized dispatcher type in the Servlet specification.",
+    "corrected": false,
+    "id": "q1984",
+    "trust": "legit-source"
+  },
+  {
+    "question": "____________ contains the navigation menu, or other navigation functionality for the",
+    "options": [
+      "A. section",
+      "B. header",
+      "C. nav",
+      "D. aside"
+    ],
+    "answer_index": 2,
+    "answer": "C. nav",
+    "topic": "Core Java & OOP",
+    "explanation": "The `<nav>` element is semantically designed to contain navigation links and menus, clearly indicating its purpose in HTML structure. Other elements like `<header>`, `<section>`, and `<aside>` have different semantic purposes and don't specifically denote navigation functionality.",
+    "corrected": false,
+    "id": "q1992",
+    "trust": "legit-source"
+  },
+  {
+    "question": "/* insert code here */ int MY_VALUE = 10;",
+    "options": [
+      "A. final",
+      "B. static",
+      "C. native",
+      "D. public"
+    ],
+    "answer_index": 0,
+    "answer": "A. final",
+    "topic": "SQL & JDBC",
+    "explanation": "The `final` modifier prevents reassignment of the variable after initialization, making the value constant. `static`, `native`, and `public` don't create constants; they modify scope, linkage, or accessibility instead.",
+    "corrected": false,
+    "id": "q2071",
+    "trust": "legit-source"
+  },
+  {
+    "question": "How can you retrieve information from a ResultSet?",
+    "options": [
+      "A. By invoking the method get(..., String type) on the ResultSet, where type is the database type",
+      "B. By invoking the method get(..., Type type) on the ResultSet, where Type is an object which represents a database type.",
+      "C. By invoking the method getValue(...), and cast the result to the desired Java type.",
+      "D. By invoking the special getter methods on the ResultSet: getString(...), getBoolean (...), getClob(...),..."
+    ],
+    "answer_index": 3,
+    "answer": "D. By invoking the special getter methods on the ResultSet: getString(...), getBoolean (...), getClob(...),...",
+    "topic": "SQL & JDBC",
+    "explanation": "ResultSet defines type-specific accessor methods such as getString, getInt, getBoolean, and getClob, each returning the column value converted to the corresponding Java type. This design avoids generic casting and provides compile-time type safety, letting JDBC handle the underlying SQL-to-Java type mapping internally.",
+    "corrected": false,
+    "id": "q2075",
+    "trust": "legit-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "A software module is designed to handle many unrelated responsibilities, such as generating reports, sending emails, validating user input, and managing database connections, all within a single class. This design is an example of which OOP design principle concern?",
+    "options": [
+      "A. Inheritance",
+      "B. Low cohesion",
+      "C. Tight coupling",
+      "D. High cohesion"
+    ],
+    "answer_index": 1,
+    "answer": "B. Low cohesion",
+    "topic": "Core Java & OOP",
+    "explanation": "The class combines many unrelated responsibilities—reporting, emailing, validation, and database management—rather than focusing on a single, well-defined purpose. This lack of functional relatedness among the class's methods and data exemplifies low cohesion, violating the single responsibility principle.",
+    "corrected": false,
+    "id": "q2076",
+    "trust": "legit-source",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "question": "Which of the following statements about JUnit is correct?",
+    "options": [
+      "A. It provides Assertions for testing expected outcomes",
+      "B. It is a build automation tool like Maven",
+      "C. It is a database access framework for Java",
+      "D. It is a web server used to deploy Java applications"
+    ],
+    "answer_index": 0,
+    "answer": "A. It provides Assertions for testing expected outcomes",
+    "topic": "Core Java & OOP",
+    "explanation": "JUnit is a unit testing framework for Java that supplies assertion methods like assertEquals and assertTrue to verify actual results match expected outcomes. These assertions allow developers to automate verification of code behavior, failing tests when conditions aren't met, unlike build tools, databases, or web servers.",
+    "corrected": false,
+    "id": "q2077",
+    "trust": "legit-source",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "question": "Name the location of compiled class files within a war file? Select the one correct",
+    "options": [
+      "A. /META-INF/classes",
+      "B. /classes",
+      "C. /WEB-INF/classes",
+      "D. /root/classes"
+    ],
+    "answer_index": 2,
+    "answer": "C. /WEB-INF/classes",
+    "topic": "SQL & JDBC",
+    "explanation": "In a WAR file, compiled Java class files must reside in /WEB-INF/classes so the servlet container can load them onto the classpath. This structure follows the Java EE web application specification, keeping classes separate from public web resources while remaining accessible to the application's classloader.",
+    "corrected": false,
+    "id": "q2087",
+    "trust": "legit-source"
+  },
+  {
+    "question": "Annotation which allows a controller’s field to be assigned using Spring Expression",
+    "options": [
+      "A. @Value",
+      "B. @After",
+      "C. @Default",
+      "D. @None"
+    ],
+    "answer_index": 0,
+    "answer": "A. @Value",
+    "topic": "Spring Core",
+    "explanation": "The @Value annotation injects values into Spring bean fields using SpEL (Spring Expression Language), supporting dynamic expressions, properties, and literals.\n\n@After, @Default, and @None are not Spring framework annotations for field assignment; they serve different purposes or don't exist in standard Spring.",
+    "corrected": false,
+    "id": "q2089",
+    "trust": "legit-source"
+  },
+  {
+    "question": "Annotation which allows the Jaxb2Marshaller marshaller to detect a class’s (i.e., object’s)",
+    "options": [
+      "A. @XmlRootElement",
+      "B. @XmlRoot",
+      "C. @NotNull",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 0,
+    "answer": "A. @XmlRootElement",
+    "topic": "Spring Core",
+    "explanation": "@XmlRootElement marks a class as an XML root element, enabling Jaxb2Marshaller to automatically detect and marshal it to XML.\n\nThis annotation is the standard JAXB mechanism for identifying top-level classes that can be independently serialized into XML documents.",
+    "corrected": false,
+    "id": "q2090",
+    "trust": "legit-source"
+  },
+  {
+    "question": "What the name of the bean defined in the following configuration class? Select a single answer.\n@Configuration\npublic class ApplicationConfig {\n@Autowired\nprivate DataSource dataSource;\n@Bean\nClientRepository clientRepository() {\nClientRepository accountRepository = new JpaClientRepository();\naccountRepository.setDataSource(dataSource);\nreturn accountRepository;\n}\n}",
+    "options": [
+      "A. clientRepository",
+      "B. JpaClientRepository",
+      "C. Two beans are defined: a data souce and a repository",
+      "D. accountRepository"
+    ],
+    "answer_index": 0,
+    "answer": "A. clientRepository",
+    "topic": "SQL & JDBC",
+    "explanation": "The bean name defaults to the method name unless explicitly specified via the @Bean annotation's name attribute, so it becomes \"clientRepository\". The return type (JpaClientRepository) and the injected DataSource do not affect the bean's registered name in the Spring context.",
+    "corrected": false,
+    "id": "q2093",
+    "trust": "legit-source",
+    "recovered": true,
+    "repair_origin": "source",
+    "options_synthesized": true
+  },
+  {
+    "question": "Using JdbcTemplate, what is the Spring provided class you will use for result set parsing",
+    "options": [
+      "A. ResultSetExtractor",
+      "B. RowMapper",
+      "C. RowCallbackHandler",
+      "D. ResultSetMapper"
+    ],
+    "answer_index": 1,
+    "answer": "B. RowMapper",
+    "topic": "Spring Core",
+    "explanation": "ResultSetExtractor is Spring's primary interface for custom result set parsing, allowing complete control over processing the entire ResultSet object returned by queries.\n\nRowMapper and RowCallbackHandler handle individual rows, not complete result set parsing, making ResultSetExtractor the correct choice for comprehensive result set manipulation.",
+    "corrected": false,
+    "id": "q2095",
+    "trust": "legit-source"
+  },
+  {
+    "question": "Which method is used to gracefully shutdown all the bean processes after closing the spring",
+    "options": [
+      "A. shutdownHook",
+      "B. destory method",
+      "C. none of the mentioned",
+      "D. all of the mentioned"
+    ],
+    "answer_index": 0,
+    "answer": "A. shutdownHook",
+    "topic": "React",
+    "explanation": "A shutdown hook is a JVM mechanism that registers cleanup code to execute when the application terminates, ensuring graceful bean destruction in Spring.\n\nThe `destory` method (typo for `destroy`) only applies to individual beans, while `shutdownHook` handles all beans systematically at application shutdown.",
+    "corrected": false,
+    "id": "q2096",
+    "trust": "legit-source"
+  },
+  {
+    "question": "Which of the following aspect implementation spring supports?",
+    "options": [
+      "A. XML Schema based aspect implementation",
+      "B. @AspectJ based aspect implementation",
+      "C. Both of above.",
+      "D. None of above."
+    ],
+    "answer_index": 2,
+    "answer": "C. Both of above.",
+    "topic": "Spring Core",
+    "explanation": "Spring AOP supports XML-based aspect configuration through `<aop:config>` elements, allowing declarative aspect definition without annotations in XML files.\n\nSpring also supports @AspectJ annotations like @Aspect, @Before, @After, enabling annotation-driven aspect implementation with POJO classes.",
+    "corrected": false,
+    "id": "q2098",
+    "trust": "legit-source"
+  },
+  {
+    "question": "- Core container has AOP as one of its module.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 1,
+    "answer": "B. False",
+    "topic": "Spring Core",
+    "explanation": "AOP (Aspect-Oriented Programming) is a separate module in the Spring Framework, not part of the core container. The core container module consists of Core, Beans, Context, and SpEL components only.",
+    "corrected": false,
+    "id": "q2099",
+    "trust": "legit-source"
+  },
+  {
+    "question": "- How to get object of a service in spring framework?",
+    "options": [
+      "A. Using new keyword",
+      "B. Using dependency injection",
+      "C. Using static factory method calls only",
+      "D. Using reflection API directly in the controller"
+    ],
+    "answer_index": 1,
+    "answer": "B. Using dependency injection",
+    "topic": "Spring Core",
+    "explanation": "Spring Framework manages bean lifecycles and injects dependencies automatically through mechanisms like @Autowired, @Inject, or constructor injection, eliminating manual instantiation.\n\nThis approach ensures loose coupling, enables testing, supports AOP, and allows Spring to handle configuration and lifecycle management centrally.",
+    "corrected": false,
+    "id": "q2100",
+    "trust": "legit-source"
+  }
+]

@@ -1,0 +1,954 @@
+[
+  {
+    "id": "q0288",
+    "topic": "Java OOP",
+    "question": "Can we integrate Spring with Struts?",
+    "options": [
+      "A. Yes",
+      "B. No",
+      "C. Only if both are running on JBoss server",
+      "D. Yes, but only using Spring Boot's auto-configuration"
+    ],
+    "answer_index": 0,
+    "explanation": "Spring can be integrated with Struts using a plugin like the Spring Struts Plugin, which allows Struts actions to be managed as Spring beans. This enables dependency injection and access to Spring's services within Struts-based applications without requiring JBoss or Spring Boot specifically.",
+    "corrected": false,
+    "answer": "A. Yes",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0289",
+    "topic": "Java OOP",
+    "question": "How to use idref in Spring Framework?",
+    "options": [
+      "A. With setter method only",
+      "B. With constructor argument only",
+      "C. With setter method and constructor argument both",
+      "D. Using annotation only"
+    ],
+    "answer_index": 2,
+    "explanation": "'With setter method and constructor argument both' is correct.",
+    "corrected": false,
+    "answer": "C. With setter method and constructor argument both",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0290",
+    "topic": "Java OOP",
+    "question": "Which is the part of the Data Access layer in Spring Framework?",
+    "options": [
+      "A. JDBC",
+      "B. ORM",
+      "C. JMS",
+      "D. All of the above"
+    ],
+    "answer_index": 3,
+    "explanation": "Spring's Data Access layer includes JDBC for direct database interaction, ORM for object-relational mapping through frameworks like Hibernate, and JMS for messaging with message brokers. Each module handles a distinct data access concern, and Spring provides unified abstractions and templates for all three, making them collectively part of this layer.",
+    "corrected": false,
+    "answer": "D. All of the above",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0291",
+    "topic": "Java OOP",
+    "question": "How could you externalize constants from a Spring configuration file or a Spring annotation into a .properties file?",
+    "options": [
+      "A. By using the <context:property-placeholder /> tag",
+      "B. By using the <util:constant /> tag",
+      "C. By declaring the ConstantPlaceholderConfigurer bean post processor",
+      "D. By using the c: namespace"
+    ],
+    "answer_index": 0,
+    "explanation": "'By using the <context:property-placeholder /> tag' is correct.",
+    "corrected": false,
+    "answer": "A. By using the <context:property-placeholder /> tag",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0293",
+    "topic": "Java OOP",
+    "question": "Annotation used to indicate a field has to have a minimum of 2 characters.",
+    "options": [
+      "A. @NotNull",
+      "B. @Size",
+      "C. @MaxSize",
+      "D. @Length"
+    ],
+    "answer_index": 1,
+    "explanation": "The @Size annotation validates that a field's length falls within a specified min and max range, making it suitable for enforcing a minimum of 2 characters. It applies to strings, collections, and arrays, using attributes like @Size(min=2) to set the constraint directly.",
+    "corrected": false,
+    "answer": "B. @Size",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0294",
+    "topic": "Java OOP",
+    "question": "Spring MVC supports generating Excel files using which of the following libraries?",
+    "options": [
+      "A. Apache POI library",
+      "B. JExcelAPI library",
+      "C. All of the mentioned",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 2,
+    "explanation": "'All of the mentioned' is the correct answer per language specification.",
+    "corrected": false,
+    "answer": "C. All of the mentioned",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0295",
+    "topic": "Java OOP",
+    "question": "By default, XmlViewResolver loads view beans from /WEB-INF/views.xml which is final.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 1,
+    "explanation": "The default location /WEB-INF/views.xml is merely a default value, not a fixed or unchangeable setting. It can be overridden by setting the \"location\" property on the XmlViewResolver bean definition to point to a different file.",
+    "corrected": false,
+    "answer": "B. False",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0297",
+    "topic": "Java OOP",
+    "question": "Which of the following statements about using Spring for REST services is correct?",
+    "options": [
+      "A. Spring can only be used for publishing an application's data as a REST service",
+      "B. Spring can only be used for accessing data from third-party REST services",
+      "C. Spring cannot be used for REST services at all",
+      "D. Spring can be used for both publishing and accessing REST services"
+    ],
+    "answer_index": 3,
+    "explanation": "Spring MVC and Spring Boot enable developers to build and publish REST endpoints using annotations like @RestController and @RequestMapping. Simultaneously, Spring provides RestTemplate and WebClient for consuming and accessing third-party REST services, making it versatile for both directions.",
+    "corrected": false,
+    "answer": "D. Spring can be used for both publishing and accessing REST services",
+    "trust": "baseline",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "id": "q0298",
+    "topic": "Java OOP",
+    "question": "Which of the following statements is true regarding the @ResponseStatus annotation?",
+    "options": [
+      "A. @ResponseStatus is detected on nested exceptions",
+      "B. The ExceptionHandlerExceptionResolver uses the @ResponseStatus annotation to map exception to HTTP status code",
+      "C. A controller handler annotated with @ResponseStatus is overridden by RedirectView status",
+      "D. The @ResponseStatus annotation can only be used on methods"
+    ],
+    "answer_index": 0,
+    "explanation": "'@ResponseStatus is detected on nested exceptions' is the correct answer per language specification.",
+    "corrected": false,
+    "answer": "A. @ResponseStatus is detected on nested exceptions",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0299",
+    "topic": "Java OOP",
+    "question": "Default LocaleResolver used by Spring.",
+    "options": [
+      "A. AcceptHeaderLocale",
+      "B. AcceptHeader",
+      "C. AcceptHeaderLocaleResolver",
+      "D. AcceptLocaleResolver"
+    ],
+    "answer_index": 2,
+    "explanation": "Spring's DispatcherServlet uses AcceptHeaderLocaleResolver by default when no explicit LocaleResolver bean is configured in the application context. This resolver determines the client's locale by inspecting the Accept-Language header sent in the HTTP request, requiring no session or cookie storage.",
+    "corrected": false,
+    "answer": "C. AcceptHeaderLocaleResolver",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0300",
+    "topic": "Java OOP",
+    "question": "Alternative way to resolve locales.",
+    "options": [
+      "A. AcceptHeaderLocale",
+      "B. AcceptHeader",
+      "C. AcceptHeaderLocaleResolver",
+      "D. SessionLocaleResolver"
+    ],
+    "answer_index": 2,
+    "explanation": "AcceptHeaderLocaleResolver implements Spring's LocaleResolver interface, determining the client's locale by inspecting the Accept-Language header in the HTTP request. It offers a stateless alternative to SessionLocaleResolver, which instead stores and retrieves locale information from the user's session.",
+    "corrected": false,
+    "answer": "C. AcceptHeaderLocaleResolver",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0301",
+    "topic": "Java OOP",
+    "question": "Annotation which allows the Jaxb2Marshaller marshaller to detect a class's (object's) fields.",
+    "options": [
+      "A. @XmlRootElement",
+      "B. @XmlRoot",
+      "C. @NotNull",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 0,
+    "explanation": "@XmlRootElement marks a Java class so JAXB recognizes it as the root element for XML binding, enabling Jaxb2Marshaller to map its fields during marshalling/unmarshalling. Without this annotation, JAXB has no metadata to identify the class structure, so Jaxb2Marshaller cannot properly serialize or deserialize the object's fields.",
+    "corrected": false,
+    "answer": "A. @XmlRootElement",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0302",
+    "topic": "Java OOP",
+    "question": "Considering two classes AccountServiceImpl and ClientServiceImpl not inheriting from each other, what is the result of the pointcut expression execution(* *..AccountServiceImpl.update(..)) && execution(* *..ClientServiceImpl.update(..))?",
+    "options": [
+      "A. No joint point is defined",
+      "B. Matches public update methods of the two classes",
+      "C. Matches any update methods of the two classes regardless of visibility",
+      "D. Matches update methods with one or more arguments"
+    ],
+    "answer_index": 0,
+    "explanation": "Since AccountServiceImpl and ClientServiceImpl are unrelated classes, no single method execution can simultaneously belong to both classes' update methods. The AND (&&) operator requires both pointcut expressions to match the same join point, which is impossible here, resulting in an empty set of join points.",
+    "corrected": false,
+    "answer": "A. No joint point is defined",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0303",
+    "topic": "Java OOP",
+    "question": "Select the right statement about referring a Spring configuration file inside the package com.example.myapp using ClassPathXmlApplicationContext.",
+    "options": [
+      "A. All of the above",
+      "B. The classpath: prefix could be omitted",
+      "C. Package name using the dot character is not well formatted",
+      "D. The slash character preceding com.example could be omitted"
+    ],
+    "answer_index": 0,
+    "explanation": "ClassPathXmlApplicationContext defaults to classpath resource loading, so the \"classpath:\" prefix is optional, but package paths must use slashes instead of dots, so \"com.example.myapp\" needs conversion to \"com/example/myapp\" for correct resolution. A leading slash is also unnecessary since classpath lookups are inherently relative to the root, making all three statements valid simultaneously.",
+    "corrected": false,
+    "answer": "A. All of the above",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0304",
+    "topic": "Java OOP",
+    "question": "Select method signatures that match the pointcut execution(* com.test.service..*.*(*))",
+    "options": [
+      "A. void com.test.service.MyServiceImpl.transfert(Money amount)",
+      "B. void com.test.service.account.MyServiceImpl.transfert(Money amount)",
+      "C. void com.test.service.MyServiceImpl.transfert(Account account, Money amount)",
+      "D. void com.test.service.account.MyServiceImpl.transfert(Account account, Money amount)"
+    ],
+    "answer_index": 0,
+    "explanation": "'void com.test.service.MyServiceImpl.transfert(Money amount)' is correct.",
+    "corrected": false,
+    "answer": "A. void com.test.service.MyServiceImpl.transfert(Money amount)",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0305",
+    "topic": "Java OOP",
+    "question": "Given the Spring bean configuration with p:bankName=\"NationalBank\", which statement is correct?",
+    "options": [
+      "A. The p namespace has to be declared",
+      "B. NationalBank is a scalar value",
+      "C. Bean id is bankServiceImpl",
+      "D. The BankServiceImpl references a NationalBank bean"
+    ],
+    "answer_index": 1,
+    "explanation": "The p:bankName=\"NationalBank\" syntax sets a literal string property value directly as an attribute, rather than referencing another bean via ref. Since there's no \"-ref\" suffix on the attribute name, Spring treats \"NationalBank\" as a plain scalar (String) value assigned to the bankName property.",
+    "corrected": false,
+    "answer": "B. NationalBank is a scalar value",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0306",
+    "topic": "Java OOP",
+    "question": "Which of the following is correct about dependency injection?",
+    "options": [
+      "A. It helps in decoupling application objects from each other.",
+      "B. It helps in deciding the dependencies of objects.",
+      "C. It stores object states in a database.",
+      "D. It stores object states in the file system."
+    ],
+    "answer_index": 0,
+    "explanation": "'It helps in decoupling application objects from each other.' is the correct answer per language specification.",
+    "corrected": false,
+    "answer": "A. It helps in decoupling application objects from each other.",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0307",
+    "topic": "Java OOP",
+    "question": "Which are the correct implementation classes of ApplicationContext?",
+    "options": [
+      "A. FileSystemXmlApplicationContext, ClassPathXmlApplicationContext, WebXmlApplicationContext",
+      "B. FileSystemApplicationContext, ClassPathApplicationContext, WebApplicationContext",
+      "C. AdvancedApplicationContext, FileApplicationContext",
+      "D. FileSystemApplicationContext, ClassPathApplicationContext"
+    ],
+    "answer_index": 0,
+    "explanation": "'FileSystemXmlApplicationContext, ClassPathXmlApplicationContext, WebXmlApplicationContext' is correct.",
+    "corrected": false,
+    "answer": "A. FileSystemXmlApplicationContext, ClassPathXmlApplicationContext, WebXmlApplicationContext",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0308",
+    "topic": "Java OOP",
+    "question": "What is true about <set> collection configuration elements?",
+    "options": [
+      "A. This helps in wiring a list of values, allowing duplicates.",
+      "B. This helps in wiring a list of values but without any duplicates.",
+      "C. This can inject name-value pairs of any type.",
+      "D. This can inject name-value pairs where both are Strings."
+    ],
+    "answer_index": 1,
+    "explanation": "'This helps in wiring a list of values but without any duplicates.' is correct.",
+    "corrected": false,
+    "answer": "B. This helps in wiring a list of values but without any duplicates.",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0311",
+    "topic": "Java OOP",
+    "question": "What are the different points where weaving can be applied?",
+    "options": [
+      "A. Compile time, load time",
+      "B. Compile time, run time",
+      "C. Run time",
+      "D. Compile time, load time, run time"
+    ],
+    "answer_index": 3,
+    "explanation": "Weaving, the process of integrating aspects into base code in AOP, can occur at three distinct points: compile-time weaving inserts advice directly into source code during compilation, load-time weaving modifies bytecode as classes are loaded into the JVM, and run-time weaving uses dynamic proxies to apply aspects during program execution. Each approach offers different tradeoffs between performance, flexibility, and implementation complexity, making all three valid and commonly used weaving strategies in AOP frameworks like AspectJ and Spring AOP.",
+    "corrected": false,
+    "answer": "D. Compile time, load time, run time",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0313",
+    "topic": "JavaScript",
+    "question": "What is the scope of bean in portlet context?",
+    "options": [
+      "A. session",
+      "B. global-session",
+      "C. prototype",
+      "D. request"
+    ],
+    "answer_index": 1,
+    "explanation": "The global-session scope maps a bean to the portlet's global HttpSession, which is shared across all portlets within the same portal-managed session. This makes it the appropriate portlet-specific scope, distinct from the standard session scope used in servlet-based web applications.",
+    "corrected": false,
+    "answer": "B. global-session",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0314",
+    "topic": "Java OOP",
+    "question": "What is a ContextStartedEvent event?",
+    "options": [
+      "A. This event is published when the Servlet Context is either initialized or refreshed.",
+      "B. This event is published when the HTTP Request is received.",
+      "C. This event is published when the ApplicationContext is started using the start method on the ConfigurableApplicationContext interface.",
+      "D. This event is published when the HTTP Response is returned."
+    ],
+    "answer_index": 2,
+    "explanation": "'This event is published when the ApplicationContext is started using the start method on the ConfigurableApplicationContext interface.' is correct.",
+    "corrected": false,
+    "answer": "C. This event is published when the ApplicationContext is started using the start method on the ConfigurableApplicationContext interface.",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0315",
+    "topic": "Java OOP",
+    "question": "What is ContextStoppedEvent event?",
+    "options": [
+      "A. This event is published when the Servlet Context is either initialized or refreshed.",
+      "B. This event is published when the ApplicationContext is stopped using the stop method on the ConfigurableApplicationContext interface.",
+      "C. This event is published when the HTTP Request is received.",
+      "D. This event is published when the HTTP Response is returned."
+    ],
+    "answer_index": 1,
+    "explanation": "'This event is published when the ApplicationContext is stopped using the stop method on the ConfigurableApplicationContext interface.' is correct.",
+    "corrected": false,
+    "answer": "B. This event is published when the ApplicationContext is stopped using the stop method on the ConfigurableApplicationContext interface.",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0316",
+    "topic": "Java OOP",
+    "question": "What is RequestHandledEvent event?",
+    "options": [
+      "A. This event is published when the Servlet Context is either initialized or refreshed.",
+      "B. This event is published when the HTTP Request is received.",
+      "C. This event is published when the HTTP session is initialized or refreshed.",
+      "D. This event is published when the HTTP Request is serviced."
+    ],
+    "answer_index": 3,
+    "explanation": "'This event is published when the HTTP session is initialized or refreshed.' is correct.",
+    "corrected": false,
+    "answer": "D. This event is published when the HTTP Request is serviced.",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0317",
+    "topic": "JavaScript",
+    "question": "What is the prototype scope?",
+    "options": [
+      "A. This scopes a single bean definition to have any number of object instances.",
+      "B. This scopes the bean definition to a single instance per HTTP Request.",
+      "C. This scopes the bean definition to a single instance per HTTP Session.",
+      "D. This scopes the bean definition to a single instance per HTTP Application/Global session."
+    ],
+    "answer_index": 0,
+    "explanation": "'This scopes a single bean definition to have any number of object instances.' is correct.",
+    "corrected": false,
+    "answer": "A. This scopes a single bean definition to have any number of object instances.",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0318",
+    "topic": "Java OOP",
+    "question": "What is true about <props> collection configuration elements?",
+    "options": [
+      "A. This helps in wiring a list of values, allowing duplicates.",
+      "B. This helps in wiring a list of values but without any duplicates.",
+      "C. This can be used to inject a collection of name-value pairs where name and value can be of any type.",
+      "D. This can be used to inject a collection of name-value pairs where the name and value are both Strings."
+    ],
+    "answer_index": 3,
+    "explanation": "'This can be used to inject a collection of name-value pairs where the name and value are both Strings.' is correct.",
+    "corrected": false,
+    "answer": "D. This can be used to inject a collection of name-value pairs where the name and value are both Strings.",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0319",
+    "topic": "Java OOP",
+    "question": "How to handle shut down of IoC containers?",
+    "options": [
+      "A. Using shutdownHook()",
+      "B. Using shutdownHandler()",
+      "C. Using registerHook()",
+      "D. Using registerShutdownHook()"
+    ],
+    "answer_index": 3,
+    "explanation": "Spring's `AbstractApplicationContext` provides a `registerShutdownHook()` method that registers a JVM shutdown hook, ensuring the IoC container closes gracefully on JVM exit. This properly releases resources like beans and connections by triggering `destroy()` callbacks before the application terminates.",
+    "corrected": false,
+    "answer": "D. Using registerShutdownHook()",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0320",
+    "topic": "Java OOP",
+    "question": "By default a bean is eagerly loaded.",
+    "options": [
+      "A. False",
+      "B. True"
+    ],
+    "answer_index": 1,
+    "explanation": "By default, Spring's IoC container creates and initializes all singleton-scoped beans eagerly at application context startup, not on-demand. This eager instantiation allows configuration errors to surface immediately, unless a bean is explicitly marked with lazy-init=\"true\".",
+    "corrected": false,
+    "answer": "B. True",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0321",
+    "topic": "Java OOP",
+    "question": "What is true about BeanPostProcessor?",
+    "options": [
+      "A. It is a concrete class.",
+      "B. It is an interface.",
+      "C. It is an abstract class.",
+      "D. None of the above."
+    ],
+    "answer_index": 1,
+    "explanation": "BeanPostProcessor is defined in the Spring framework as an interface with two callback methods: postProcessBeforeInitialization and postProcessAfterInitialization. Developers implement this interface in their own classes to hook into the bean lifecycle, rather than extending a concrete or abstract class.",
+    "corrected": false,
+    "answer": "B. It is an interface.",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0322",
+    "topic": "Java OOP",
+    "question": "How can you inject Java Collection in Spring?",
+    "options": [
+      "A. Using list, set, map or props tag.",
+      "B. Using lit, set, map or collection tag.",
+      "C. Using list, set, props or collection tag.",
+      "D. Using list, collection, map or props tag."
+    ],
+    "answer_index": 0,
+    "explanation": "Spring's XML configuration provides four dedicated tags—<list>, <set>, <map>, and <props>—to inject Java Collection types like List, Set, Map, and Properties into beans. Each tag directly maps to its corresponding Java collection interface, allowing the Spring container to instantiate and populate the appropriate collection during dependency injection.",
+    "corrected": false,
+    "answer": "A. Using list, set, map or props tag.",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0323",
+    "topic": "Java OOP",
+    "question": "Which class is used to map a database row to a Java object in Spring?",
+    "options": [
+      "A. ResultSet",
+      "B. RowMapper",
+      "C. RowSetMapper",
+      "D. ResultSetMapper"
+    ],
+    "answer_index": 1,
+    "explanation": "RowMapper is a functional interface in Spring's JDBC framework that defines a mapRow method to convert each ResultSet row into a Java object. It's used with JdbcTemplate methods like query() to handle the manual mapping logic, keeping data access code clean and reusable.",
+    "corrected": false,
+    "answer": "B. RowMapper",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0324",
+    "topic": "Java OOP",
+    "question": "How can the bean life cycle be controlled?",
+    "options": [
+      "A. Using init() only",
+      "B. Using InitializingBean class only",
+      "C. Using DisposableBean class only",
+      "D. All of the above"
+    ],
+    "answer_index": 3,
+    "explanation": "Spring allows bean lifecycle control through multiple mechanisms: custom init() and destroy() methods specified via configuration, the InitializingBean interface for post-initialization logic, and the DisposableBean interface for cleanup before destruction. Each approach hooks into the container's bean lifecycle callbacks, so all three are valid and can be used individually or together to manage bean creation and destruction.",
+    "corrected": false,
+    "answer": "D. All of the above",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0325",
+    "topic": "Java OOP",
+    "question": "What is a ContextStoppedEvent event?",
+    "options": [
+      "A. This event is published when the Servlet Context is either initialized or refreshed.",
+      "B. This event is published when the ApplicationContext is stopped using the stop() method on the ConfigurableApplicationContext interface.",
+      "C. This event is published when the HTTP Request is received.",
+      "D. This event is published when the HTTP Response is returned."
+    ],
+    "answer_index": 1,
+    "explanation": "'This event is published when the ApplicationContext is stopped using the stop() method on the ConfigurableApplicationContext interface.' is correct.",
+    "corrected": false,
+    "answer": "B. This event is published when the ApplicationContext is stopped using the stop() method on the ConfigurableApplicationContext interface.",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0327",
+    "topic": "Java OOP",
+    "question": "What is true about <map> collection configuration elements?",
+    "options": [
+      "A. This helps in wiring a list of values, allowing duplicates.",
+      "B. This helps in wiring a list of values but without any duplicates.",
+      "C. This can be used to inject a collection of name-value pairs where name and value can be of any type.",
+      "D. This tag is not supported."
+    ],
+    "answer_index": 2,
+    "explanation": "'This can be used to inject a collection of name-value pairs where name and value can be of any type.' is correct.",
+    "corrected": false,
+    "answer": "C. This can be used to inject a collection of name-value pairs where name and value can be of any type.",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0328",
+    "topic": "Java OOP",
+    "question": "Core container has AOP as one of its modules.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 1,
+    "explanation": "In the Spring Framework architecture, AOP is a separate module distinct from the Core Container, which itself comprises Beans, Core, Context, and SpEL sub-modules. The Core Container focuses on IoC and dependency injection, while AOP provides aspect-oriented programming capabilities as an independent module.",
+    "corrected": false,
+    "answer": "B. False",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0329",
+    "topic": "Java OOP",
+    "question": "Can you inject null and empty string values in Spring?",
+    "options": [
+      "A. Yes",
+      "B. No",
+      "C. Only null values can be injected, not empty strings",
+      "D. Only in XML configuration, not with annotations"
+    ],
+    "answer_index": 0,
+    "explanation": "Spring's `<value></value>` element treats an empty tag as an empty string, while `<null/>` explicitly injects a null value into a bean property. This behavior works both for XML-based configuration and for properties set via setter injection or constructor arguments, giving developers explicit control over both cases.",
+    "corrected": false,
+    "answer": "A. Yes",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0330",
+    "topic": "Java OOP",
+    "question": "What stands true for the Spring framework?",
+    "options": [
+      "A. Spring framework is a lightweight framework.",
+      "B. Spring framework is a heavy weight framework.",
+      "C. Spring framework can only be used for web applications.",
+      "D. Spring framework requires an application server to run."
+    ],
+    "answer_index": 0,
+    "explanation": "Spring uses POJOs and dependency injection rather than heavy container-managed components, minimizing overhead and complexity. It can run in simple servlet containers without requiring a full-fledged application server, making it lightweight compared to frameworks like EJB.",
+    "corrected": false,
+    "answer": "A. Spring framework is a lightweight framework.",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0331",
+    "topic": "Java OOP",
+    "question": "What is the scope of stateless bean?",
+    "options": [
+      "A. global-session",
+      "B. singleton",
+      "C. prototype",
+      "D. request"
+    ],
+    "answer_index": 1,
+    "explanation": "A stateless session bean has no client-specific state, so a single instance can be pooled and shared across multiple client requests without conflict. This shared, single-instance-pool behavior aligns with the singleton scope, as no per-client or per-request instantiation is required.",
+    "corrected": false,
+    "answer": "B. singleton",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0332",
+    "topic": "Java OOP",
+    "question": "Annotations work as metadata for classes and Spring uses annotations as an alternative to XML for declarative configuration. Is it true or false?",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "explanation": "Annotations attach metadata directly to classes, methods, or fields, allowing Spring to read configuration information without separate files. This enables developers to use annotation-driven configuration like @Component or @Autowired instead of writing verbose XML bean definitions.",
+    "corrected": false,
+    "answer": "A. True",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0333",
+    "topic": "Java OOP",
+    "question": "Which of the following layers is the @Controller annotation used in?",
+    "options": [
+      "A. Service layer.",
+      "B. Presentation layer.",
+      "C. Session layer.",
+      "D. Business layer."
+    ],
+    "answer_index": 1,
+    "explanation": "'Presentation layer.' is the correct answer per language specification.",
+    "corrected": false,
+    "answer": "B. Presentation layer.",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0335",
+    "topic": "Java OOP",
+    "question": "What is true about collection configuration elements?",
+    "options": [
+      "A. This helps in wiring a list of values, allowing duplicates.",
+      "B. This helps in wiring a list of values but without any duplicates.",
+      "C. This can be used to inject a collection of name-value pairs where name and value can be of any type.",
+      "D. This can be used to inject a collection of name-value pairs where the name and value are both Strings."
+    ],
+    "answer_index": 3,
+    "explanation": "'This can be used to inject a collection of name-value pairs where name and value can be of any type.' is correct.",
+    "corrected": false,
+    "answer": "D. This can be used to inject a collection of name-value pairs where the name and value are both Strings.",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0336",
+    "topic": "Java OOP",
+    "question": "What is the Join point?",
+    "options": [
+      "A. This represents a point in your application which joins two objects.",
+      "B. This represents a point in your object where you join values.",
+      "C. This represents a point in your object where you join injected values.",
+      "D. This represents a point in your application where you can plug-in the AOP aspect."
+    ],
+    "answer_index": 3,
+    "explanation": "'This represents a point in your application where you can plug-in the AOP aspect.' is correct.",
+    "corrected": false,
+    "answer": "D. This represents a point in your application where you can plug-in the AOP aspect.",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0337",
+    "topic": "Java OOP",
+    "question": "Which of the following aspects implementation Spring supports?",
+    "options": [
+      "A. XML Schema based aspect implementation",
+      "B. @AspectJ based aspect implementation",
+      "C. Both of the above.",
+      "D. None of the above."
+    ],
+    "answer_index": 2,
+    "explanation": "'Both of the above.' is the correct answer per language specification.",
+    "corrected": false,
+    "answer": "C. Both of the above.",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0338",
+    "topic": "Java OOP",
+    "question": "What are the types of transaction management Spring supports?",
+    "options": [
+      "A. Programmatic transaction management",
+      "B. Declarative transaction management",
+      "C. Both of the above.",
+      "D. None of the above."
+    ],
+    "answer_index": 2,
+    "explanation": "Spring supports programmatic transaction management, where developers explicitly control transactions in code using TransactionTemplate or PlatformTransactionManager APIs. It also supports declarative transaction management, using annotations like @Transactional or XML configuration, allowing transactions to be managed via AOP without cluttering business logic.",
+    "corrected": false,
+    "answer": "C. Both of the above.",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0339",
+    "topic": "Java OOP",
+    "question": "What is a DispatcherServlet?",
+    "options": [
+      "A. DispatcherServlet is used for transaction management.",
+      "B. DispatcherServlet is used for AOP.",
+      "C. DispatcherServlet handles all the HTTP requests and responses.",
+      "D. DispatcherServlet is used for Dependency injection."
+    ],
+    "answer_index": 2,
+    "explanation": "'DispatcherServlet handles all the HTTP requests and responses.' is correct.",
+    "corrected": false,
+    "answer": "C. DispatcherServlet handles all the HTTP requests and responses.",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0340",
+    "topic": "Concurrency",
+    "question": "What is ACID in transactional management?",
+    "options": [
+      "A. Accurate, Controlled, Isolation, Durability",
+      "B. Atomicity, Consistency, Independent, Done",
+      "C. Atomicity, Consistency, Isolation, Durability",
+      "D. Accurate, Controlled, Independent, Done"
+    ],
+    "answer_index": 2,
+    "explanation": "ACID guarantees reliable database transactions: Atomicity ensures all-or-nothing execution, Consistency maintains valid data states, Isolation prevents concurrent transactions from interfering, and Durability ensures committed changes persist despite failures. These four properties together form the standard framework for transactional integrity in database systems.",
+    "corrected": false,
+    "answer": "C. Atomicity, Consistency, Isolation, Durability",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0341",
+    "topic": "Java OOP",
+    "question": "Where do you define DispatcherServlet?",
+    "options": [
+      "A. In Beans configuration file.",
+      "B. Web.xml file",
+      "C. Meta-inf/dispatcher.xml",
+      "D. Web-inf/dispatcher.xml"
+    ],
+    "answer_index": 1,
+    "explanation": "DispatcherServlet is the front controller for a Spring MVC application, and it must be registered as a servlet with its URL mapping in web.xml so the servlet container knows to route incoming HTTP requests to it. This registration follows standard Java EE servlet configuration conventions, making web.xml the appropriate deployment descriptor for declaring servlets and their mappings.",
+    "corrected": false,
+    "answer": "B. Web.xml file",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0342",
+    "topic": "Java OOP",
+    "question": "What does BeanPostProcessor do?",
+    "options": [
+      "A. It processes beans once a bean is initialized.",
+      "B. It defines callback methods that you can implement to provide your own instantiation logic and dependency-resolution logic.",
+      "C. It processes beans once a bean is loaded.",
+      "D. It processes beans once a bean exits."
+    ],
+    "answer_index": 0,
+    "explanation": "'It defines callback methods that you can implement to provide your own instantiation logic and dependency-resolution logic.' is correct.",
+    "corrected": false,
+    "answer": "A. It processes beans once a bean is initialized.",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0343",
+    "topic": "Java OOP",
+    "question": "Can a bean be configured to have an inner bean?",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "explanation": "In Spring, a bean property or constructor argument can be defined using an inner bean, which is an anonymous bean declared directly within another bean's definition. This inner bean has no independent existence outside the containing bean and is scoped solely to that reference, similar to an anonymous inner class in Java.",
+    "corrected": false,
+    "answer": "A. True",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0344",
+    "topic": "Java OOP",
+    "question": "Can we inject value and ref both together in a bean?",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "explanation": "A Spring bean's property tag can contain both a ref attribute for referencing another bean and value attributes for primitive or string properties simultaneously. Each property element is independent, so mixing dependency injection types within the same bean definition works without conflict.",
+    "corrected": false,
+    "answer": "A. True",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0345",
+    "topic": "Java OOP",
+    "question": "Following class can be extended to create custom events in Spring.",
+    "options": [
+      "A. SpringEvent",
+      "B. Event",
+      "C. ApplicationEvent",
+      "D. None of above"
+    ],
+    "answer_index": 2,
+    "explanation": "ApplicationEvent is the abstract base class provided by Spring's context package that all custom events must extend to be published through the ApplicationEventPublisher. Extending it allows Spring's event mechanism to recognize, dispatch, and handle the event via registered ApplicationListener beans.",
+    "corrected": false,
+    "answer": "C. ApplicationEvent",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0346",
+    "topic": "Java OOP",
+    "question": "Which of the following is the correct assertion about Spring?",
+    "options": [
+      "A. Spring enables developers to develop enterprise-class applications using POJOs.",
+      "B. Spring is organized in a modular fashion.",
+      "C. Testing an application written with Spring is simple because environment-dependent code is moved into this framework.",
+      "D. All of the above."
+    ],
+    "answer_index": 3,
+    "explanation": "'All of the above.' is the correct answer per language specification.",
+    "corrected": false,
+    "answer": "D. All of the above.",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0347",
+    "topic": "Java OOP",
+    "question": "What does AOP stand for?",
+    "options": [
+      "A. Aspect Oriented Programming",
+      "B. Any Object Programming",
+      "C. Asset Oriented Programming",
+      "D. Asset Oriented Protocol"
+    ],
+    "answer_index": 0,
+    "explanation": "AOP is a programming paradigm that increases modularity by allowing the separation of cross-cutting concerns, such as logging or security, from core business logic. It achieves this through \"aspects,\" which encapsulate behaviors that would otherwise be scattered across multiple modules.",
+    "corrected": false,
+    "answer": "A. Aspect Oriented Programming",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0348",
+    "topic": "Java OOP",
+    "question": "What is true about cross-cutting concerns?",
+    "options": [
+      "A. The functions that span multiple points of an application are called cross cutting concerns.",
+      "B. Cross-cutting concerns are conceptually separate from the application's business logic.",
+      "C. Logging is one of the examples of cross cutting concerns.",
+      "D. All of the above."
+    ],
+    "answer_index": 3,
+    "explanation": "'The functions that span multiple points of an application are called cross cutting concerns.' is correct.",
+    "corrected": false,
+    "answer": "D. All of the above.",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0349",
+    "topic": "Java OOP",
+    "question": "Which are the modules of the Data Access/Integration layer?",
+    "options": [
+      "A. JDBC, ORM, OXM, JMS, Transactions",
+      "B. JDBC, ORM, OXM, JMS",
+      "C. JDBC, ORM, Web, Beans",
+      "D. JDBC, ORM, OXM"
+    ],
+    "answer_index": 0,
+    "explanation": "The Data Access/Integration layer in the Spring Framework includes JDBC and ORM modules for database access, OXM for object-to-XML mapping, and JMS for messaging support. It also incorporates the Transactions module, which provides transaction management across these various data access technologies.",
+    "corrected": false,
+    "answer": "A. JDBC, ORM, OXM, JMS, Transactions",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0350",
+    "topic": "Java OOP",
+    "question": "Which are the modules of the Web layer?",
+    "options": [
+      "A. WebSocket, Servlet, Web, Portlet",
+      "B. WebSocket, Servlet, Web-MVC, Web",
+      "C. HTML, JSP, Web, Portlet",
+      "D. HTML, Servlet, Web, Portlet"
+    ],
+    "answer_index": 0,
+    "explanation": "The Web layer in the Spring Framework consists of the WebSocket module for SockJS-based messaging, the Servlet module for Spring MVC, the Web module providing core web-oriented integration features, and the Portlet module for portlet environments. These four modules together handle HTTP, WebSocket, and portlet-based communication, distinguishing this layer from persistence or core container layers.",
+    "corrected": false,
+    "answer": "A. WebSocket, Servlet, Web, Portlet",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0351",
+    "topic": "Java OOP",
+    "question": "Which of the statements is correct?",
+    "options": [
+      "A. The JDBC module provides a JDBC-abstraction layer that removes the need to do tedious JDBC related coding.",
+      "B. The ORM module provides integration layers for popular object relational mapping APIs, including JPA, JDO, Hibernate, and iBatis.",
+      "C. The Java Messaging Service (JMS) module contains features for producing and consuming messages.",
+      "D. All of the above."
+    ],
+    "answer_index": 3,
+    "explanation": "Spring's JDBC module simplifies database access by handling boilerplate code like connection management and exception handling. Similarly, its ORM module integrates with JPA, Hibernate, JDO, and iBatis, while the JMS module supports message production and consumption, making all three statements accurate.",
+    "corrected": false,
+    "answer": "D. All of the above.",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0352",
+    "topic": "Java OOP",
+    "question": "What types of Dependency Injection does Spring support?",
+    "options": [
+      "A. Constructor based, Setter based",
+      "B. Constructor based, Setter based, Getter based",
+      "C. Setter based, Getter based, Properties based",
+      "D. Constructor based, Setter based, Properties based"
+    ],
+    "answer_index": 0,
+    "explanation": "Spring's IoC container instantiates beans and injects dependencies either through the class's constructor arguments or via setter methods defined in the bean's class. These two mechanisms cover all injection scenarios, as getters merely retrieve values and properties files only supply configuration data, not injection logic.",
+    "corrected": false,
+    "answer": "A. Constructor based, Setter based",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0353",
+    "topic": "Java OOP",
+    "question": "Which of the following stands true for Spring beans?",
+    "options": [
+      "A. Spring beans are managed by the Spring IoC container.",
+      "B. Spring beans are instantiated, assembled, and otherwise managed by a Spring IoC container.",
+      "C. Spring beans are simple POJOs.",
+      "D. All of the above."
+    ],
+    "answer_index": 3,
+    "explanation": "'All of the above.' is the correct answer per language specification.",
+    "corrected": false,
+    "answer": "D. All of the above.",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0354",
+    "topic": "Java OOP",
+    "question": "Which is the way to provide configuration metadata to Spring?",
+    "options": [
+      "A. XML based configuration file.",
+      "B. Annotation based configuration.",
+      "C. Java based configuration.",
+      "D. All of the above."
+    ],
+    "answer_index": 3,
+    "explanation": "Spring supports multiple ways to define beans and their dependencies: XML files using `<bean>` tags, annotations like `@Component` and `@Autowired`, and Java classes with `@Configuration` and `@Bean` methods. All three approaches produce equivalent metadata that the Spring container reads to instantiate and wire objects, making them interchangeable configuration mechanisms.",
+    "corrected": false,
+    "answer": "D. All of the above.",
+    "trust": "baseline"
+  }
+]

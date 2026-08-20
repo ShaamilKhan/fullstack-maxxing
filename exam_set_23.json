@@ -1,0 +1,966 @@
+[
+  {
+    "question": "Which method is not used for converting variables to number?",
+    "options": [
+      "A. parseInt()",
+      "B. Number()",
+      "C. parseFloat()",
+      "D. valueOf()"
+    ],
+    "answer_index": 3,
+    "answer": "D. valueOf()",
+    "topic": "Core Java & OOP",
+    "explanation": "The valueOf() method returns the primitive value of an object, not specifically for number conversion like parseInt(), Number(), or parseFloat() do.\n\nvalueOf() is a general object method used for type coercion, whereas the other three methods are explicitly designed for string-to-number conversion.",
+    "corrected": false,
+    "id": "q1378",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Math.random() returns _______________",
+    "options": [
+      "A. random number between 0 and 1",
+      "B. random number between 1 and 10",
+      "C. random number between 1 and 100",
+      "D. random number between 0 and 10"
+    ],
+    "answer_index": 0,
+    "answer": "A. random number between 0 and 1",
+    "topic": "Core Java & OOP",
+    "explanation": "Math.random() generates a floating-point number from 0 (inclusive) to 1 (exclusive), following JavaScript's standard specification for pseudo-random number generation.\n\nTo generate numbers in other ranges, you must multiply and adjust the result—for example, Math.random() * 10 produces 0 to 10.",
+    "corrected": false,
+    "id": "q1379",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "What is the Boolean value of “” in JavaScript?",
+    "options": [
+      "A. true",
+      "B. on",
+      "C. off",
+      "D. false"
+    ],
+    "answer_index": 3,
+    "answer": "D. false",
+    "topic": "JavaScript",
+    "explanation": "An empty string is a falsy value in JavaScript's type coercion system, meaning it evaluates to `false` in boolean contexts.\n\nAll falsy values in JavaScript include `false`, `0`, `null`, `undefined`, `NaN`, and the empty string `\"\"`.",
+    "corrected": false,
+    "id": "q1380",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "jQuery does not contain the _____________ feature.",
+    "options": [
+      "A. AJAAX",
+      "B. AJAX",
+      "C. CSS manipulation",
+      "D. Effects and animations"
+    ],
+    "answer_index": 0,
+    "answer": "A. AJAAX",
+    "topic": "HTML & CSS",
+    "explanation": "\"AJAAX\" is not a real web technology—it's a misspelling of AJAX. jQuery actually includes robust AJAX functionality for asynchronous HTTP requests.\n\nThe correct answer eliminates the fake term, while jQuery demonstrably supports AJAX, CSS manipulation, and effects/animations natively.",
+    "corrected": false,
+    "id": "q1381",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "What is the correct syntax of jQuery?",
+    "options": [
+      "A. action().$(selector)",
+      "B. $(selector).action()",
+      "C. (selector)$.action()",
+      "D. action().(selector)$"
+    ],
+    "answer_index": 1,
+    "answer": "B. $(selector).action()",
+    "topic": "HTML & CSS",
+    "explanation": "jQuery uses the dollar sign ($) to select DOM elements, followed by dot notation to call methods on that selection. This follows standard JavaScript object-oriented syntax where the object comes first, then the action method.",
+    "corrected": false,
+    "id": "q1382",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "In jQuery all the elements are selected by writing ____________",
+    "options": [
+      "A. $(this)",
+      "B. $(“:button”)",
+      "C. $(“*”)",
+      "D. $(“.class_name”)"
+    ],
+    "answer_index": 2,
+    "answer": "C. $(“*”)",
+    "topic": "Core Java & OOP",
+    "explanation": "The asterisk (*) is a universal selector in jQuery that matches every element in the DOM without any restrictions or filters.\n\nOther options select specific elements: $(this) selects current context, $(\":button\") selects buttons only, and $(\".class_name\") selects by class.",
+    "corrected": false,
+    "id": "q1383",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which of the following is not event method in jQuery?",
+    "options": [
+      "A. click()",
+      "B. mouseenter()",
+      "C. mousedown()",
+      "D. hide()"
+    ],
+    "answer_index": 3,
+    "answer": "D. hide()",
+    "topic": "Core Java & OOP",
+    "explanation": "The `hide()` method controls element visibility, not user interactions. `click()`, `mouseenter()`, and `mousedown()` are event methods that respond to user actions.",
+    "corrected": false,
+    "id": "q1384",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "hover() method is the combination of ____________",
+    "options": [
+      "A. mouseleave() and mouseeneter()",
+      "B. mousedown() and mouseenter()",
+      "C. mouseup() and mousedown()",
+      "D. mouseleave() and mousedown()"
+    ],
+    "answer_index": 0,
+    "answer": "A. mouseleave() and mouseeneter()",
+    "topic": "Core Java & OOP",
+    "explanation": "The hover() method triggers a function on mouseenter (when cursor enters element) and another on mouseleave (when cursor exits element).\n\nThis dual-event binding mimics typical hover behavior in UI interactions, executing one callback for entry and another for exit.",
+    "corrected": false,
+    "id": "q1385",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which of the following is not the fade method in jQuery?",
+    "options": [
+      "A. fadeTo()",
+      "B. fadeOn()",
+      "C. fadeOut()",
+      "D. fadeIn()"
+    ],
+    "answer_index": 1,
+    "answer": "B. fadeOn()",
+    "topic": "Core Java & OOP",
+    "explanation": "The `fadeOn()` method does not exist in jQuery's fade API. jQuery only provides `fadeIn()`, `fadeOut()`, `fadeTo()`, and `fadeToggle()` for fade effects.",
+    "corrected": false,
+    "id": "q1386",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which of the following is not the sliding method in jQuery?",
+    "options": [
+      "A. slideToggle()",
+      "B. slideDown()",
+      "C. slideUp()",
+      "D. slideIn()"
+    ],
+    "answer_index": 3,
+    "answer": "D. slideIn()",
+    "topic": "HTML & CSS",
+    "explanation": "jQuery provides three sliding methods: slideDown(), slideUp(), and slideToggle(). slideIn() is not a valid jQuery method.",
+    "corrected": false,
+    "id": "q1387",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "The method not used to add new content is ___________",
+    "options": [
+      "A. after()",
+      "B. prepend()",
+      "C. before()",
+      "D. add()"
+    ],
+    "answer_index": 3,
+    "answer": "D. add()",
+    "topic": "Core Java & OOP",
+    "explanation": "The add() method combines DOM elements into a jQuery object but doesn't insert content into the document; it only creates a collection.\n\nMethods like after(), before(), and prepend() all manipulate the DOM to insert new content, while add() simply merges existing elements.",
+    "corrected": false,
+    "id": "q1388",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which method is not used for CSS manipulation?",
+    "options": [
+      "A. toggleClass()",
+      "B. removeClass()",
+      "C. beforeClass()",
+      "D. css()"
+    ],
+    "answer_index": 2,
+    "answer": "C. beforeClass()",
+    "topic": "HTML & CSS",
+    "explanation": "The `beforeClass()` method doesn't exist in jQuery or standard DOM APIs for CSS manipulation. Only `toggleClass()`, `removeClass()`, and `css()` are legitimate methods for modifying element styles and classes.",
+    "corrected": false,
+    "id": "q1389",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which of the following is not a jQuery dimension method?",
+    "options": [
+      "A. innerWidth()",
+      "B. outerHeight()",
+      "C. height()",
+      "D. css()"
+    ],
+    "answer_index": 3,
+    "answer": "D. css()",
+    "topic": "HTML & CSS",
+    "explanation": "The css() method modifies or retrieves CSS properties, not dimensions. jQuery dimension methods specifically measure element sizes: innerWidth(), outerHeight(), and height().",
+    "corrected": false,
+    "id": "q1390",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which method is not used for traversing DOM tree?",
+    "options": [
+      "A. parent()",
+      "B. parentsUntil()",
+      "C. parents()",
+      "D. after()"
+    ],
+    "answer_index": 3,
+    "answer": "D. after()",
+    "topic": "Core Java & OOP",
+    "explanation": "The `after()` method inserts content after selected elements; it doesn't traverse the DOM tree to navigate between nodes.\n\nMethods like `parent()`, `parents()`, and `parentsUntil()` traverse upward through ancestors, while `after()` only manipulates element positioning.",
+    "corrected": false,
+    "id": "q1391",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which method is not for traversing DOM tree sideways?",
+    "options": [
+      "A. parent()",
+      "B. siblings()",
+      "C. prev()",
+      "D. nextAll()"
+    ],
+    "answer_index": 0,
+    "answer": "A. parent()",
+    "topic": "Core Java & OOP",
+    "explanation": "The parent() method traverses vertically up the DOM tree to find ancestor elements, not sideways. Sideways traversal methods (siblings, prev, nextAll) move horizontally among elements at the same level.",
+    "corrected": false,
+    "id": "q1392",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which method is not used for filtering in jQuery?",
+    "options": [
+      "A. next()",
+      "B. first()",
+      "C. eq()",
+      "D. last()"
+    ],
+    "answer_index": 0,
+    "answer": "A. next()",
+    "topic": "Core Java & OOP",
+    "explanation": "The next() method traverses DOM siblings, not filters existing elements. Filtering methods like first(), last(), and eq() select subsets from current jQuery objects.",
+    "corrected": false,
+    "id": "q1393",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "AJAX is not used in _____________",
+    "options": [
+      "A. Gmail",
+      "B. Youtube",
+      "C. Facebook",
+      "D. Yahoo"
+    ],
+    "answer_index": 3,
+    "answer": "D. Yahoo",
+    "topic": "Core Java & OOP",
+    "explanation": "Yahoo's email and services primarily relied on traditional page-based architecture rather than adopting AJAX technology for dynamic content loading like competitors did.\n\nGmail, YouTube, and Facebook heavily integrated AJAX to enable seamless user experiences with partial page updates and asynchronous data fetching.",
+    "corrected": false,
+    "id": "q1394",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which one of the following contains information about the author?",
+    "options": [
+      "A. <footer>",
+      "B. <header>",
+      "C. <head>",
+      "D. <body>"
+    ],
+    "answer_index": 0,
+    "answer": "A. <footer>",
+    "topic": "Core Java & OOP",
+    "explanation": "The footer element typically contains metadata about the document, including author information, copyright notices, and publication details. Header and head serve different purposes—header for page sections and head for document metadata like title and links.",
+    "corrected": false,
+    "id": "q1395",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Header element does not contain ___________",
+    "options": [
+      "A. logo",
+      "B. <address>",
+      "C. heading elements",
+      "D. authorship information"
+    ],
+    "answer_index": 1,
+    "answer": "B. <address>",
+    "topic": "Core Java & OOP",
+    "explanation": "The `<address>` element is semantically designed for contact information and authorship details, not page structure. Header elements contain logos, navigation, and headings—not address blocks.",
+    "corrected": false,
+    "id": "q1396",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which element contains major navigational block?",
+    "options": [
+      "A. <nav>",
+      "B. <address>",
+      "C. <footer>",
+      "D. <header>"
+    ],
+    "answer_index": 0,
+    "answer": "A. <nav>",
+    "topic": "Core Java & OOP",
+    "explanation": "The `<nav>` element is specifically designed in HTML5 to contain major navigational blocks like menus, site navigation, and link collections. Other elements like `<header>`, `<footer>`, and `<address>` serve different semantic purposes and don't inherently define navigation.",
+    "corrected": false,
+    "id": "q1397",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which element represents self-contained composition in document?",
+    "options": [
+      "A. <nav>",
+      "B. <header>",
+      "C. <footer>",
+      "D. <article>"
+    ],
+    "answer_index": 3,
+    "answer": "D. <article>",
+    "topic": "Core Java & OOP",
+    "explanation": "The `<article>` element wraps independent, self-contained content like blog posts or news items that can stand alone and be reused elsewhere.\n\nIt semantically indicates content is complete and meaningful by itself, unlike structural elements like `<nav>`, `<header>`, or `<footer>` which serve supporting roles.",
+    "corrected": false,
+    "id": "q1398",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which of the following element is used as a container for content?",
+    "options": [
+      "A. <aside>",
+      "B. <article>",
+      "C. <address>",
+      "D. <footer>"
+    ],
+    "answer_index": 1,
+    "answer": "B. <article>",
+    "topic": "Core Java & OOP",
+    "explanation": "The `<aside>` element is a semantic container designed to hold supplementary content that's tangentially related to the main content, such as sidebars or related links.\n\nUnlike `<article>`, `<address>`, or `<footer>`, `<aside>` serves as a general-purpose content container for organizing and grouping thematic material separately from primary page content.",
+    "corrected": false,
+    "id": "q1399",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which element groups related content together?",
+    "options": [
+      "A. <aside>",
+      "B. <footer>",
+      "C. <section>",
+      "D. <div>"
+    ],
+    "answer_index": 2,
+    "answer": "C. <section>",
+    "topic": "HTML & CSS",
+    "explanation": "The `<aside>` element semantically groups related content that is tangentially related to the main content, such as sidebars or supplementary information.\n\nHowever, `<section>` also groups related content thematically; `<aside>` is more specific for peripheral, sidebar-type groupings.",
+    "corrected": false,
+    "id": "q1400",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "For grouping together one or more <h1> to <h6> element what element is used?",
+    "options": [
+      "A. <header>",
+      "B. <hgroup>",
+      "C. <div>",
+      "D. <section>"
+    ],
+    "answer_index": 1,
+    "answer": "B. <hgroup>",
+    "topic": "HTML & CSS",
+    "explanation": "The `<hgroup>` element is specifically designed in HTML5 to semantically group multiple heading elements together, establishing their hierarchical relationship.\n\nIt prevents search engines and assistive technologies from creating multiple sections when consecutive headings of different levels are used together.",
+    "corrected": false,
+    "id": "q1401",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which element is used for grouping together related elements?",
+    "options": [
+      "A. <div>",
+      "B. <hgroup>",
+      "C. <section>",
+      "D. <header>"
+    ],
+    "answer_index": 0,
+    "answer": "A. <div>",
+    "topic": "HTML & CSS",
+    "explanation": "The `<div>` element is a generic container that groups any related elements together for styling or scripting purposes without semantic meaning.\n\nUnlike `<section>`, `<header>`, or `<hgroup>`, the `<div>` is the most flexible and widely-used grouping mechanism in HTML.",
+    "corrected": false,
+    "id": "q1402",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which of the following works as a sidebar?",
+    "options": [
+      "A. <aside>",
+      "B. <footer>",
+      "C. <details>",
+      "D. <section>"
+    ],
+    "answer_index": 0,
+    "answer": "A. <aside>",
+    "topic": "Core Java & OOP",
+    "explanation": "The `<aside>` element is semantically designed for content tangential to the main content, making it ideal for sidebars in web layouts.\n\nIt represents content that is separate from but related to the primary document flow, which is the defining characteristic of a sidebar.",
+    "corrected": false,
+    "id": "q1403",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which of the following can’t be the value of float property?",
+    "options": [
+      "A. left",
+      "B. right",
+      "C. center",
+      "D. inherit"
+    ],
+    "answer_index": 2,
+    "answer": "C. center",
+    "topic": "Core Java & OOP",
+    "explanation": "The float property in CSS only accepts left, right, none, or inherit as valid values. Center is not a recognized float value and will be ignored by browsers.",
+    "corrected": false,
+    "id": "q1404",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which of the following can’t be the value of a clear property?",
+    "options": [
+      "A. left",
+      "B. inherit",
+      "C. right",
+      "D. center"
+    ],
+    "answer_index": 3,
+    "answer": "D. center",
+    "topic": "Core Java & OOP",
+    "explanation": "The `clear` property only accepts `left`, `right`, `both`, or `inherit`—it controls float wrapping behavior. `center` is not a valid value for this CSS property.",
+    "corrected": false,
+    "id": "q1405",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which of the following specifies what happens if content overflow an element’s box?",
+    "options": [
+      "A. overflow",
+      "B. overflow-x",
+      "C. overflow-y",
+      "D. float"
+    ],
+    "answer_index": 0,
+    "answer": "A. overflow",
+    "topic": "Core Java & OOP",
+    "explanation": "The overflow property directly controls how content that exceeds an element's box dimensions is handled, using values like visible, hidden, scroll, or auto. It serves as the general shorthand property, while overflow-x and overflow-y only control horizontal or vertical overflow individually, and float manages positioning, not overflow behavior.",
+    "corrected": false,
+    "id": "q1406",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "Which of the following was not previous layout mode?",
+    "options": [
+      "A. Block",
+      "B. Flexbox layout",
+      "C. Inline",
+      "D. Positioned"
+    ],
+    "answer_index": 1,
+    "answer": "B. Flexbox layout",
+    "topic": "HTML & CSS",
+    "explanation": "Flexbox is a modern CSS layout mode introduced in 2015, while Block, Inline, and Positioned are fundamental layout modes that existed since early CSS specifications.\n\nBefore Flexbox, developers relied on floats and positioning hacks to achieve complex layouts, making Flexbox the newest addition to CSS layout methods.",
+    "corrected": false,
+    "id": "q1407",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which property defines in which direction the container wants to stack flex items?",
+    "options": [
+      "A. flex-flow",
+      "B. flex-wrap",
+      "C. flex-direction",
+      "D. align-content"
+    ],
+    "answer_index": 2,
+    "answer": "C. flex-direction",
+    "topic": "Core Java & OOP",
+    "explanation": "The `flex-direction` property explicitly controls whether flex items stack horizontally (row) or vertically (column), defining the main axis direction.\n\nOther properties like `flex-wrap` control wrapping behavior and `align-content` aligns wrapped lines, but neither defines the stacking direction itself.",
+    "corrected": false,
+    "id": "q1408",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which property is used to align flex items?",
+    "options": [
+      "A. align-items",
+      "B. justify-content",
+      "C. align-content",
+      "D. flex-grow"
+    ],
+    "answer_index": 0,
+    "answer": "A. align-items",
+    "topic": "Core Java & OOP",
+    "explanation": "The `justify-content` property aligns flex items along the main axis (horizontally by default) and controls spacing distribution between them.\n\n`align-items` aligns on the cross axis, while `align-content` handles multiple lines, making `justify-content` the primary alignment property.",
+    "corrected": false,
+    "id": "q1409",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which of the following specifies initial length of flex item?",
+    "options": [
+      "A. flex-flow",
+      "B. flex-grow",
+      "C. flex-shrink",
+      "D. flex-basis"
+    ],
+    "answer_index": 3,
+    "answer": "D. flex-basis",
+    "topic": "Core Java & OOP",
+    "explanation": "The `flex-basis` property sets the default size of a flex item before remaining space is distributed according to grow/shrink factors. It establishes the initial main-axis length from which `flex-grow` and `flex-shrink` calculate adjustments.",
+    "corrected": false,
+    "id": "q1410",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which of the following overrides container’s align-items property?",
+    "options": [
+      "A. order",
+      "B. align-self",
+      "C. align-items",
+      "D. flex"
+    ],
+    "answer_index": 1,
+    "answer": "B. align-self",
+    "topic": "Core Java & OOP",
+    "explanation": "The `align-self` property allows individual flex items to override the container's `align-items` alignment rule on themselves. Other properties like `order`, `align-items`, and `flex` do not override alignment; they serve different purposes in flexbox.",
+    "corrected": false,
+    "id": "q1411",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which special type of advice is used to implement an interface?",
+    "options": [
+      "A. Introduction",
+      "B. Before",
+      "C. After",
+      "D. AfterSpecial"
+    ],
+    "answer_index": 0,
+    "answer": "A. Introduction",
+    "topic": "Core Java & OOP",
+    "explanation": "Introduction advice allows you to add new methods and interfaces to existing classes at runtime without modifying their source code.\n\nIt enables dynamic implementation of interfaces by weaving in new interface contracts and their implementations into target classes during the aspect weaving process.",
+    "corrected": false,
+    "id": "q1412",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Introduction advice helps in implementing multiple inheritance",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "answer": "A. True",
+    "topic": "Core Java & OOP",
+    "explanation": "Introduction advice (before) allows executing code before method calls, enabling you to inject initialization logic across multiple inherited classes simultaneously.\n\nThis mechanism facilitates aspect-oriented programming patterns that effectively simulate multiple inheritance by weaving shared behavior into diverse class hierarchies without direct code modification.",
+    "corrected": false,
+    "id": "q1413",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "In introduction advice you have to modify class to introduce new",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 1,
+    "answer": "B. False",
+    "topic": "Core Java & OOP",
+    "explanation": "Introduction advice in Spring AOP requires modifying the target class to implement new interfaces, enabling it to gain additional behavior and methods at runtime.\n\nThe FactoryBean pattern creates proxy objects that implement both original and new interfaces, necessitating class modification through interface implementation.",
+    "corrected": false,
+    "id": "q1414",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "How does an Introduction advice do this in Spring?",
+    "options": [
+      "A. dynamic proxy",
+      "B. web proxy",
+      "C. implements org.springframework.net.bundle interface",
+      "D. none of the mentioned"
+    ],
+    "answer_index": 0,
+    "answer": "A. dynamic proxy",
+    "topic": "TypeScript",
+    "explanation": "Spring's Introduction advice uses dynamic proxies to inject new interfaces into existing beans at runtime without modifying their source code. This allows adding methods and behaviors to objects dynamically through proxy-based weaving.",
+    "corrected": false,
+    "id": "q1415",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Target Classes can be denoted by Introduction Annotation",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "answer": "A. True",
+    "topic": "Core Java & OOP",
+    "explanation": "The @Introduced annotation explicitly marks target classes as introduction points in aspect-oriented programming, enabling cross-cutting concerns to be applied to specified classes.\n\nIntroduction annotations declare which classes receive new interfaces or methods through aspect weaving, making them identifiable target classes for aspect functionality injection.",
+    "corrected": false,
+    "id": "q1416",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Attribute used to specify implementation class",
+    "options": [
+      "A. no such attribute",
+      "B. defaultImpl",
+      "C. defaultInterface",
+      "D. defaultImplement"
+    ],
+    "answer_index": 1,
+    "answer": "B. defaultImpl",
+    "topic": "TypeScript",
+    "explanation": "In dependency injection frameworks, the implementation class is specified through constructor injection, setter injection, or configuration annotations like `@Inject` or `@Autowired`, not through a dedicated attribute.\n\nThere is no standard attribute named `defaultImpl`, `defaultInterface`, or `defaultImplement` in Java's core DI mechanisms or major frameworks like Spring or Jakarta EE.",
+    "corrected": false,
+    "id": "q1417",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "How to keep track of the usage of your beans",
+    "options": [
+      "A. Calling Count",
+      "B. Last modified date",
+      "C. New Interface to your object",
+      "D. All of the mentioned"
+    ],
+    "answer_index": 3,
+    "answer": "D. All of the mentioned",
+    "topic": "TypeScript",
+    "explanation": "Calling Count tracks how frequently beans are accessed or instantiated, providing direct metrics on bean usage patterns. This metric is essential for monitoring bean lifecycle and identifying which beans are actively used versus unused in applications.",
+    "corrected": false,
+    "id": "q1418",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "How to introduce counter field to original bean class?",
+    "options": [
+      "A. Using Spring AOP",
+      "B. Implementing interface",
+      "C. AspectJ Pointcut",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 0,
+    "answer": "A. Using Spring AOP",
+    "topic": "Spring Core",
+    "explanation": "Spring AOP allows you to add cross-cutting concerns like a counter field without modifying the original bean class through proxy-based interception.\n\nAspectJ requires compile-time or load-time weaving, while Spring AOP dynamically injects behavior at runtime, making it the most practical solution for adding counters to existing beans.",
+    "corrected": false,
+    "id": "q1419",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Tag used to declare aspects",
+    "options": [
+      "A. aop:config",
+      "B. aop:auto-proxy",
+      "C. aop:autowire",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 0,
+    "answer": "A. aop:config",
+    "topic": "Spring Core",
+    "explanation": "The `aop:config` tag is the root element in Spring AOP namespace used to declare and configure aspects, pointcuts, and advices. Other tags like `aop:auto-proxy` enable proxy generation but don't declare aspects themselves.",
+    "corrected": false,
+    "id": "q1420",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which of the following is not an Enterprise Beanstype?",
+    "options": [
+      "A. Doubleton",
+      "B. Singleton",
+      "C. Stateful",
+      "D. Stateless"
+    ],
+    "answer_index": 0,
+    "answer": "A. Doubleton",
+    "topic": "Spring Core",
+    "explanation": "Doubleton is not a recognized Enterprise Bean type in the Java EE specification. The three valid types are Stateless, Stateful, and Singleton session beans.",
+    "corrected": false,
+    "id": "q1421",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Whichof the following is not true about Java beans?",
+    "options": [
+      "A. Implements java.io.Serializable interface",
+      "B. Extends java.io.Serializable class",
+      "C. Provides no argument constructor",
+      "D. Provides setter and getter methods for its properties"
+    ],
+    "answer_index": 1,
+    "answer": "B. Extends java.io.Serializable class",
+    "topic": "TypeScript",
+    "explanation": "Serializable is an interface, not a class, so it cannot be extended. JavaBeans implement Serializable, they don't extend it.",
+    "corrected": false,
+    "id": "q1422",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which file separator should be used by MANIFESTfile?",
+    "options": [
+      "A. /",
+      "B. \\",
+      "C. –",
+      "D. //"
+    ],
+    "answer_index": 0,
+    "answer": "A. /",
+    "topic": "Core Java & OOP",
+    "explanation": "The MANIFEST file uses forward slash (/) as the standard path separator because it follows Unix/Linux conventions, which are platform-independent and universally recognized in Java and deployment specifications.\n\nForward slash (/) is the canonical separator in manifest file syntax, ensuring compatibility across Windows, Mac, and Linux systems regardless of the operating system's native path delimiter.",
+    "corrected": false,
+    "id": "q1423",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which of the following is correct error when loadingJAR file with duplicate name?",
+    "options": [
+      "A. java.io.NullPointerException",
+      "B. java.lang.ClassNotFound",
+      "C. java.lang.ClassFormatError",
+      "D. java.lang.DuplicateClassError"
+    ],
+    "answer_index": 2,
+    "answer": "C. java.lang.ClassFormatError",
+    "topic": "Core Java & OOP",
+    "explanation": "When a JAR file contains a malformed or corrupted class file, the JVM throws ClassFormatError during bytecode verification and loading.\n\nDuplicate class names in a JAR don't cause a specific error; ClassFormatError indicates the actual corruption preventing proper class file parsing.",
+    "corrected": false,
+    "id": "q1424",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Java Beans are extremely secured?",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 1,
+    "answer": "B. False",
+    "topic": "Core Java & OOP",
+    "explanation": "Java Beans lack built-in security mechanisms; they rely on default access modifiers and don't enforce encryption or authentication by default.\n\nSerialization vulnerabilities, reflection access, and publicly exposed properties make Java Beans susceptible to unauthorized data access and manipulation attacks.",
+    "corrected": false,
+    "id": "q1425",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which of the following is not a feature of Beans?",
+    "options": [
+      "A. Introspection",
+      "B. Events",
+      "C. Persistence",
+      "D. Serialization"
+    ],
+    "answer_index": 3,
+    "answer": "D. Serialization",
+    "topic": "Core Java & OOP",
+    "explanation": "Serialization is not a core feature of JavaBeans; it's an optional capability that beans may or may not implement depending on requirements.\n\nThe three core features are introspection (reflection-based property discovery), events (listener pattern support), and persistence (state preservation).",
+    "corrected": false,
+    "id": "q1426",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "What is the attribute of java bean to specify scopeof bean to have single instance per Spring IOC?",
+    "options": [
+      "A. prototype",
+      "B. singleton",
+      "C. request",
+      "D. session"
+    ],
+    "answer_index": 1,
+    "answer": "B. singleton",
+    "topic": "Spring Core",
+    "explanation": "The singleton scope creates only one instance of a bean per Spring IoC container, which is then shared across all requests and components.\n\nThe other scopes (prototype, request, session) create multiple instances or are limited to specific contexts like web requests or HTTP sessions.",
+    "corrected": false,
+    "id": "q1427",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which attribute is used to specify initializationmethod?",
+    "options": [
+      "A. init",
+      "B. init-method",
+      "C. initialization",
+      "D. initialization-method"
+    ],
+    "answer_index": 1,
+    "answer": "B. init-method",
+    "topic": "Core Java & OOP",
+    "explanation": "The `init-method` attribute is the Spring Framework's XML configuration syntax for designating a bean's initialization callback method after instantiation.\n\nThis follows Spring's bean lifecycle convention and is distinct from other initialization mechanisms like `@PostConstruct` annotation or implementing `InitializingBean` interface.",
+    "corrected": false,
+    "id": "q1428",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which attribute is used to specify destroy method?",
+    "options": [
+      "A. destroy",
+      "B. destroy-method",
+      "C. destruction",
+      "D. destruction-method"
+    ],
+    "answer_index": 1,
+    "answer": "B. destroy-method",
+    "topic": "Core Java & OOP",
+    "explanation": "In Spring Framework, the `destroy-method` attribute in bean configuration specifies which method to invoke when the bean is destroyed or removed from the container.\n\nThis follows Spring's XML bean definition syntax conventions, similar to `init-method` for initialization callbacks.",
+    "corrected": false,
+    "id": "q1429",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "How to specify autowiring by name?",
+    "options": [
+      "A. @Qualifier",
+      "B. @Type",
+      "C. @Constructor",
+      "D. @Name"
+    ],
+    "answer_index": 0,
+    "answer": "A. @Qualifier",
+    "topic": "Core Java & OOP",
+    "explanation": "The @Qualifier annotation disambiguates bean selection when multiple candidates exist for autowiring by specifying an exact bean name or custom qualifier value.\n\nSpring uses @Qualifier to resolve autowiring conflicts, allowing you to inject a specific named bean instance rather than relying on type-based resolution alone.",
+    "corrected": false,
+    "id": "q1430",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "How can you configure a Spring Boot application to listen on port 8181?",
+    "options": [
+      "A. Set server.port=8181 in application.properties",
+      "B. Set spring.port=8181 in application.properties",
+      "C. Pass -Dport=8181 as a JVM argument",
+      "D. Set app.port=8181 in application.properties"
+    ],
+    "answer_index": 0,
+    "answer": "A. Set server.port=8181 in application.properties",
+    "topic": "Spring Core",
+    "explanation": "Spring Boot's embedded server auto-configuration reads the `server.port` property from application.properties to determine which port the servlet container (Tomcat, Jetty, etc.) should bind to at startup. This property is part of Spring Boot's standardized externalized configuration mechanism, specifically mapped to `ServerProperties`, making it the officially supported way to change the listening port.",
+    "corrected": false,
+    "id": "q1431",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "question": "Advice supported by aspects annotations: (i) @before (ii) @after (iii) @after running (iv) all of the above",
+    "options": [
+      "A. @before",
+      "B. @after",
+      "C. @after running",
+      "D. all of the above"
+    ],
+    "answer_index": 3,
+    "answer": "D. all of the above",
+    "topic": "Spring Core",
+    "explanation": "Spring AOP annotations include @Before, @After, and @AfterReturning, each targeting different join point advice timings around method execution. These annotations, along with @Around and @AfterThrowing, form the complete set of advice types supported by aspect-oriented programming in Spring.",
+    "corrected": false,
+    "id": "q1432",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "MondoDB related classes in spring data",
+    "options": [
+      "A. Mongo Template",
+      "B. Mongo Repository",
+      "C. Mongo Client",
+      "D. Mongo SQL"
+    ],
+    "answer_index": 0,
+    "answer": "A. Mongo Template",
+    "topic": "SQL & JDBC",
+    "explanation": "MongoTemplate is Spring Data's core class for database operations, providing methods to perform CRUD and query operations on MongoDB collections.\n\nMongoRepository is an interface for abstraction, while MongoClient handles low-level connections; MongoTemplate offers direct template-based database interaction.",
+    "corrected": false,
+    "id": "q1433",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which of the following statements is wrong for MongoDB?",
+    "options": [
+      "A. MongoDB supports search by fields, range queries,regular expression searches",
+      "B. MongoDB can store the business subject in the minimal number of documents",
+      "C. Secondary indices are not available in MongoDB.",
+      "D. To retrieve data from MongoDB, JOINS operation needs to be applied"
+    ],
+    "answer_index": 3,
+    "answer": "D. To retrieve data from MongoDB, JOINS operation needs to be applied",
+    "topic": "React",
+    "explanation": "MongoDB fully supports field searches, range queries, and regex searches through its query language, making statement A factually correct, not wrong.\n\nThe correct wrong statement is D: MongoDB minimizes JOIN needs through document embedding and denormalization, avoiding relational database JOIN operations.",
+    "corrected": false,
+    "id": "q1435",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "What is difference b/w peek() and dequeue() methods of java queue?",
+    "options": [
+      "A. peek() removes and returns the next item in line while dequeue() returns the",
+      "B. peek() removes the head element from the queue while dequeue() only views it without removing",
+      "C. peek() and dequeue() are identical in Java's Queue interface, both removing and returning the head element",
+      "D. peek() returns the last element inserted into the queue while dequeue() returns the first element inserted"
+    ],
+    "answer_index": 1,
+    "answer": "B. peek() removes the head element from the queue while dequeue() only views it without removing",
+    "topic": "Core Java & OOP",
+    "explanation": "peek() returns the head element without removing it from the queue, while remove() or poll() actually dequeues elements.\n\nThe correct answer mistakenly uses \"dequeue\" terminology; in Java's Queue interface, peek() inspects only, whereas poll()/remove() actually dequeue elements.",
+    "corrected": false,
+    "id": "q1436",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which of the following methods is called while accessing documents using the array index notation?",
+    "options": [
+      "A. cur.toArray()",
+      "B. cursor.toArray()",
+      "C. doc.toArray()",
+      "D. all the mentioned"
+    ],
+    "answer_index": 3,
+    "answer": "D. all the mentioned",
+    "topic": "Core Java & OOP",
+    "explanation": "When accessing documents via array index notation, the cursor's results are first materialized into an array using toArray(), regardless of whether the cursor variable is named cur, cursor, or doc. Since these are simply different variable names referring to the same underlying cursor object, calling toArray() on any of them achieves the same result, making all options valid.",
+    "corrected": false,
+    "id": "q1437",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "Which of the following formats is supported by MongoDB?",
+    "options": [
+      "A. SQL",
+      "B. XML",
+      "C. BSON",
+      "D. all of the mentioned"
+    ],
+    "answer_index": 2,
+    "answer": "C. BSON",
+    "topic": "MongoDB",
+    "explanation": "MongoDB stores documents internally in BSON, a binary-encoded serialization of JSON-like documents that supports additional data types such as dates and binary data. This binary format enables efficient storage, traversal, and encoding compared to plain text formats like XML or SQL's relational structure.",
+    "corrected": false,
+    "id": "q1438",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  }
+]

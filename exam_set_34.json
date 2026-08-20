@@ -1,0 +1,968 @@
+[
+  {
+    "question": "Which of the following is a NoSQL Database Type?",
+    "options": [
+      "A. SQL",
+      "B. Document databases",
+      "C. JSON",
+      "D. All of the mentioned"
+    ],
+    "answer_index": 1,
+    "answer": "B. Document databases",
+    "topic": "MongoDB",
+    "explanation": "Document databases like MongoDB store data in flexible, schema-less formats, making them a core NoSQL database type that handles unstructured data efficiently.\n\nSQL is relational and not NoSQL; JSON is a data format, not a database type itself.",
+    "corrected": false,
+    "id": "q2262",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which of the following is a wide-column store?",
+    "options": [
+      "A. Cassandra",
+      "B. Riak",
+      "C. MongoDB",
+      "D. Redis"
+    ],
+    "answer_index": 0,
+    "answer": "A. Cassandra",
+    "topic": "MongoDB",
+    "explanation": "Cassandra is a wide-column store that organizes data into column families with flexible schemas, allowing rows to contain varying columns dynamically.\n\nOther options are key-value stores: Riak and Redis store simple key-value pairs, while MongoDB is a document database storing JSON-like documents.",
+    "corrected": false,
+    "id": "q2263",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Point out the wrong statement.",
+    "options": [
+      "A. Non Relational databases require that schemas be defined before you can add data",
+      "B. NoSQL databases are built to allow the insertion of data without a predefined schema",
+      "C. NewSQL databases are built to allow the insertion of data without a predefined",
+      "D. All of the mentioned"
+    ],
+    "answer_index": 0,
+    "answer": "A. Non Relational databases require that schemas be defined before you can add data",
+    "topic": "React",
+    "explanation": "Non-relational (NoSQL) databases are schema-flexible, allowing data insertion without predefined schemas, unlike traditional relational databases.\n\nRelational databases require schemas first; non-relational databases don't, making statement A factually incorrect about how non-relational systems operate.",
+    "corrected": false,
+    "id": "q2264",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Most NoSQL databases support automatic __________ meaning that you get high availability and disaster recovery.",
+    "options": [
+      "A. processing",
+      "B. scalability",
+      "C. replication",
+      "D. all of the mentioned"
+    ],
+    "answer_index": 2,
+    "answer": "C. replication",
+    "topic": "MongoDB",
+    "explanation": "Automatic replication copies data across multiple nodes or servers, ensuring that if one node fails, others still hold accessible copies. This redundancy directly enables high availability and disaster recovery, since data remains accessible even during hardware failures or outages.",
+    "corrected": false,
+    "id": "q2265",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "Which of the following are the simplest NoSQL databases?",
+    "options": [
+      "A. Key-value",
+      "B. Wide-column",
+      "C. Document",
+      "D. All of the mentioned"
+    ],
+    "answer_index": 0,
+    "answer": "A. Key-value",
+    "topic": "MongoDB",
+    "explanation": "Key-value databases store data as simple key-value pairs with minimal structure, requiring no schema or complex queries, making them the most basic NoSQL type.\n\nOther NoSQL types like document and wide-column databases add organizational complexity through nested structures, collections, and column families respectively.",
+    "corrected": false,
+    "id": "q2266",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "________ stores are used to store information about networks, such as social",
+    "options": [
+      "A. Key-value",
+      "B. Wide-column",
+      "C. Document",
+      "D. Graph"
+    ],
+    "answer_index": 3,
+    "answer": "D. Graph",
+    "topic": "Core Java & OOP",
+    "explanation": "Graph databases excel at storing and querying interconnected data like social networks through nodes and edges representing entities and relationships.\n\nThey efficiently handle complex relationship traversals and pattern matching operations that would be computationally expensive in other database types.",
+    "corrected": false,
+    "id": "q2267",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "_______ filters the document stream to allow only matching documents to pass",
+    "options": [
+      "A. $regex",
+      "B. $reg",
+      "C. $match",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 2,
+    "answer": "C. $match",
+    "topic": "MongoDB",
+    "explanation": "$match is a MongoDB aggregation pipeline stage that filters documents based on specified conditions, allowing only those meeting the criteria to proceed downstream.\n\nIt functions similarly to the find() method's query filter, enabling selection of documents before applying other pipeline operations like grouping or sorting.",
+    "corrected": false,
+    "id": "q2268",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which of the following can be used to implement field level redaction?",
+    "options": [
+      "A. $skip",
+      "B. $limit",
+      "C. $match",
+      "D. $redact"
+    ],
+    "answer_index": 3,
+    "answer": "D. $redact",
+    "topic": "MongoDB",
+    "explanation": "The $redact operator evaluates document fields against a condition and either includes, excludes, or recurses through nested documents based on access levels.\n\nIt's specifically designed for field-level security by selectively exposing or hiding data within documents during aggregation pipeline processing.",
+    "corrected": false,
+    "id": "q2269",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "_______ reorders the document stream by a specified sort key.",
+    "options": [
+      "A. $skip",
+      "B. $limit",
+      "C. $sort",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 2,
+    "answer": "C. $sort",
+    "topic": "Core Java & OOP",
+    "explanation": "The $sort stage arranges documents in ascending or descending order based on specified fields. It processes the document stream before limiting or skipping, enabling ordered output in aggregation pipelines.",
+    "corrected": false,
+    "id": "q2270",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "________ deconstructs an array field from the input documents to output a document",
+    "options": [
+      "A. $unwindelem",
+      "B. $unwind",
+      "C. $unwin",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 1,
+    "answer": "B. $unwind",
+    "topic": "Core Java & OOP",
+    "explanation": "The $unwind operator in MongoDB's aggregation pipeline takes an array field and outputs one separate document for each element in that array. This deconstruction allows subsequent pipeline stages to process each array element individually rather than as a single array value.",
+    "corrected": false,
+    "id": "q2271",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which of the following operator is related to geography of data?",
+    "options": [
+      "A. $geoSpatial",
+      "B. $geoNear",
+      "C. $geoRear",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 1,
+    "answer": "B. $geoNear",
+    "topic": "Core Java & OOP",
+    "explanation": "The $geoNear operator queries documents based on proximity to geographic coordinates, returning results ordered by distance. It's MongoDB's primary geospatial query operator for location-based searches near specified points.",
+    "corrected": false,
+    "id": "q2272",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "By default GridFS limits chunk size to ______ k.",
+    "options": [
+      "A. 225",
+      "B. 255",
+      "C. 256",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 2,
+    "answer": "C. 256",
+    "topic": "HTML & CSS",
+    "explanation": "GridFS uses 255KB as the default chunk size to balance storage efficiency and performance while staying within MongoDB's 16MB document size limit.\n\nThis 255KB value allows multiple chunks per file while maintaining optimal retrieval speed and minimizing overhead from excessive fragmentation.",
+    "corrected": false,
+    "id": "q2273",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "When you query a GridFS store for a file, the _______ will reassemble the chunks as",
+    "options": [
+      "A. client",
+      "B. Server",
+      "C. Agent",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 0,
+    "answer": "A. client",
+    "topic": "HTML & CSS",
+    "explanation": "The client retrieves individual chunks from GridFS and possesses the necessary logic to reassemble them into the original file in correct sequence.\n\nGridFS is designed as a client-side operation where the driver handles chunk ordering and concatenation before presenting the complete file to the application.",
+    "corrected": false,
+    "id": "q2274",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "MongoDB represents queries as ___________ objects.",
+    "options": [
+      "A. BSON",
+      "B. JSON",
+      "C. GSON",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 0,
+    "answer": "A. BSON",
+    "topic": "MongoDB",
+    "explanation": "MongoDB stores and transmits all data, including queries, in BSON (Binary JSON) format, which is a binary-encoded serialization of JSON-like documents.\n\nBSON provides efficient storage, faster processing, and supports additional data types beyond standard JSON that MongoDB queries require.",
+    "corrected": false,
+    "id": "q2275",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Each document in the __________ collection represents a distinct chunk of a file as",
+    "options": [
+      "A. chunks",
+      "B. files",
+      "C. bson",
+      "D. none of the mentioned"
+    ],
+    "answer_index": 0,
+    "answer": "A. chunks",
+    "topic": "MongoDB",
+    "explanation": "In MongoDB's GridFS, the chunks collection stores file data divided into smaller segments, with each document representing one distinct chunk of a file.\n\nEach chunk document contains the file ID, sequence number, and binary data, enabling efficient storage and retrieval of large files exceeding BSON's 16MB document size limit.",
+    "corrected": false,
+    "id": "q2276",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "GridFS uses a _________ index on the chunks collection for the files_id and n fields.",
+    "options": [
+      "A. unique",
+      "B. single",
+      "C. non unique",
+      "D. none of the mentioned"
+    ],
+    "answer_index": 0,
+    "answer": "A. unique",
+    "topic": "HTML & CSS",
+    "explanation": "GridFS creates a unique index on the chunks collection's (files_id, n) compound key to ensure each chunk has a distinct sequence number per file, preventing duplicate chunks.\n\nThis uniqueness enforces data integrity by guaranteeing that every file's chunks are stored exactly once in sequential order without gaps or duplicates.",
+    "corrected": false,
+    "id": "q2277",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "The ___ field contains the sequence number of the chunk.",
+    "options": [
+      "A. x",
+      "B. array",
+      "C. field",
+      "D. n"
+    ],
+    "answer_index": 3,
+    "answer": "D. n",
+    "topic": "Core Java & OOP",
+    "explanation": "The `n` field is a standard naming convention in networking protocols and data structures that explicitly denotes sequence or chunk numbering. This field tracks the ordinal position of each chunk in a sequence for reassembly or processing purposes.",
+    "corrected": false,
+    "id": "q2278",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "The GridFS index allows efficient retrieval of __________ using the files_id and n values.",
+    "options": [
+      "A. chunks",
+      "B. files",
+      "C. bson",
+      "D. none of the mentioned"
+    ],
+    "answer_index": 0,
+    "answer": "A. chunks",
+    "topic": "HTML & CSS",
+    "explanation": "GridFS stores large files as chunks, with each chunk indexed by files_id and n (chunk number) for efficient retrieval and reassembly.\n\nThe index enables the system to quickly locate specific chunks belonging to a file without scanning entire collections.",
+    "corrected": false,
+    "id": "q2279",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "A ____________ data modelwith embedded data combines all related data for a",
+    "options": [
+      "A. normalized",
+      "B. denormalized",
+      "C. non relational",
+      "D. relational"
+    ],
+    "answer_index": 1,
+    "answer": "B. denormalized",
+    "topic": "Core Java & OOP",
+    "explanation": "A denormalized data model combines related data into single documents or records to reduce joins and improve query performance. This embedding approach sacrifices normalization principles to optimize read operations and data locality.",
+    "corrected": false,
+    "id": "q2280",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "For the __________ storage engine, if the document size exceeds the allocated space for that document, MongoDB relocates the document on disk.",
+    "options": [
+      "A. MMAPv1",
+      "B. MMAPv2",
+      "C. MMAPv3",
+      "D. MMAPv4"
+    ],
+    "answer_index": 0,
+    "answer": "A. MMAPv1",
+    "topic": "Core Java & OOP",
+    "explanation": "MMAPv1 preallocates a fixed-size record for each document, and when an update causes the document to grow beyond that allocated space, it must be moved to a new location with more room. This behavior is specific to MMAPv1's storage design; MongoDB's other engine, WiredTiger, does not work this way, and \"MMAPv2/v3/v4\" are not actual MongoDB storage engines.",
+    "corrected": false,
+    "id": "q2281",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "With MongoDB 3.0.0, the default use of the Power of _________ Allocations minimizes",
+    "options": [
+      "A. 2 Sized",
+      "B. 3 Sized",
+      "C. 4 Sized",
+      "D. 5 Sized"
+    ],
+    "answer_index": 0,
+    "answer": "A. 2 Sized",
+    "topic": "MongoDB",
+    "explanation": "MongoDB 3.0.0 uses power-of-2 sized allocations for documents to reduce fragmentation and wasted space. This allocation strategy aligns document sizes to powers of 2, optimizing storage efficiency and minimizing padding overhead.",
+    "corrected": false,
+    "id": "q2282",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "___________ strategy is used to explicitly avoid document growth.",
+    "options": [
+      "A. deallocation",
+      "B. allocation",
+      "C. pre-allocation",
+      "D. none of the mentioned"
+    ],
+    "answer_index": 2,
+    "answer": "C. pre-allocation",
+    "topic": "Core Java & OOP",
+    "explanation": "Pre-allocation reserves memory space upfront before documents grow, preventing dynamic resizing and fragmentation that occurs with gradual allocation.\n\nThis strategy avoids the performance overhead and unpredictable delays associated with reallocating memory as documents expand during runtime.",
+    "corrected": false,
+    "id": "q2283",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Each index in MongoDB requires at least _________ of data space.",
+    "options": [
+      "A. 8KB",
+      "B. 28KB",
+      "C. 68KB",
+      "D. 108KB"
+    ],
+    "answer_index": 0,
+    "answer": "A. 8KB",
+    "topic": "MongoDB",
+    "explanation": "MongoDB allocates a minimum of 8KB for each index to store index metadata and initial btree structures efficiently.\n\nThis 8KB minimum overhead ensures indexes have sufficient space for root nodes and basic operations regardless of collection size.",
+    "corrected": false,
+    "id": "q2284",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "mongo looks for a database server listening on port 27017 on the ________ interface.",
+    "options": [
+      "A. web",
+      "B. localhost",
+      "C. web host",
+      "D. all of the mentioned"
+    ],
+    "answer_index": 1,
+    "answer": "B. localhost",
+    "topic": "Core Java & OOP",
+    "explanation": "MongoDB's default connection string connects to `localhost:27017`, which is the loopback interface on the same machine where the client runs.\n\nThe localhost interface (127.0.0.1) enables local connections without requiring network accessibility, making it the secure default for development environments.",
+    "corrected": false,
+    "id": "q2285",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "After starting the mongo shell, your session will use the ________ databaseby default.",
+    "options": [
+      "A. mongo",
+      "B. master",
+      "C. test",
+      "D. primary"
+    ],
+    "answer_index": 2,
+    "answer": "C. test",
+    "topic": "Core Java & OOP",
+    "explanation": "When you launch the MongoDB shell without specifying a database, it automatically connects to the default \"test\" database for user operations and queries.\n\nThe \"test\" database is MongoDB's designated default workspace, providing a sandbox environment for developers to practice commands before using production databases.",
+    "corrected": false,
+    "id": "q2286",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "___________ command display the list of databases.",
+    "options": [
+      "A. show db",
+      "B. show dbs",
+      "C. show data",
+      "D. display dbs"
+    ],
+    "answer_index": 1,
+    "answer": "B. show dbs",
+    "topic": "Core Java & OOP",
+    "explanation": "The `show dbs` command is the correct MongoDB syntax for listing all available databases in the current connection. \"dbs\" is the abbreviated plural form that MongoDB's shell recognizes for this operation.",
+    "corrected": false,
+    "id": "q2287",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which of the following operation is used toswitch to new database mydb?",
+    "options": [
+      "A. use dbs",
+      "B. use db",
+      "C. use mydb",
+      "D. use mydbs"
+    ],
+    "answer_index": 2,
+    "answer": "C. use mydb",
+    "topic": "Core Java & OOP",
+    "explanation": "The `use` command in MongoDB/SQL is followed by the exact database name you want to switch to. Since the target database is named \"mydb\", the correct syntax is `use mydb`.",
+    "corrected": false,
+    "id": "q2288",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which of the following also returns a list of databases?",
+    "options": [
+      "A. show databases",
+      "B. show database",
+      "C. display dbs",
+      "D. all of the mentioned"
+    ],
+    "answer_index": 0,
+    "answer": "A. show databases",
+    "topic": "Core Java & OOP",
+    "explanation": "The `SHOW DATABASES` command is the standard SQL syntax supported by most database management systems to list all available databases in a server.\n\nOptions B, C, and D use incorrect or non-standard syntax that database engines do not recognize or support.",
+    "corrected": false,
+    "id": "q2289",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Command to check existence of collection is _____________",
+    "options": [
+      "A. show collection",
+      "B. show collections",
+      "C. show collect",
+      "D. none of the mentioned"
+    ],
+    "answer_index": 1,
+    "answer": "B. show collections",
+    "topic": "MongoDB",
+    "explanation": "The command `show collections` is the correct MongoDB syntax to display all existing collections in the current database. Other options contain incorrect spelling or syntax that MongoDB does not recognize.",
+    "corrected": false,
+    "id": "q2290",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which of the following method is used to query documents in collections?",
+    "options": [
+      "A. find",
+      "B. move",
+      "C. shell",
+      "D. replace"
+    ],
+    "answer_index": 0,
+    "answer": "A. find",
+    "topic": "MongoDB",
+    "explanation": "The `find()` method is the standard MongoDB operation for querying and retrieving documents from collections based on specified criteria.\n\nOther options serve different purposes: `move` isn't a valid method, `shell` is an interface tool, and `replace` modifies existing documents rather than querying them.",
+    "corrected": false,
+    "id": "q2291",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "A query may include a ___________ that specifies the fields from the matching",
+    "options": [
+      "A. selection",
+      "B. projection",
+      "C. union",
+      "D. none of the mentioned"
+    ],
+    "answer_index": 1,
+    "answer": "B. projection",
+    "topic": "Core Java & OOP",
+    "explanation": "A projection specifies which fields or columns to retrieve from matching records, filtering the output to only necessary attributes rather than returning entire rows.\n\nIn database queries, projection is the operation that selects specific columns from a result set, distinct from selection which filters rows based on conditions.",
+    "corrected": false,
+    "id": "q2292",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "MongoDB stores all documents in _____________",
+    "options": [
+      "A. tables",
+      "B. collections",
+      "C. rows",
+      "D. all of the mentioned"
+    ],
+    "answer_index": 1,
+    "answer": "B. collections",
+    "topic": "MongoDB",
+    "explanation": "MongoDB is a NoSQL document database that organizes data into collections rather than relational tables, each containing multiple JSON-like documents.\n\nCollections are the MongoDB equivalent of tables, serving as containers for related documents that share similar structure and purpose.",
+    "corrected": false,
+    "id": "q2293",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which of the following operation adds a new document to the users collection?",
+    "options": [
+      "A. add",
+      "B. insert",
+      "C. truncate",
+      "D. drop"
+    ],
+    "answer_index": 1,
+    "answer": "B. insert",
+    "topic": "MongoDB",
+    "explanation": "The `insert` operation adds new documents to a collection in databases like MongoDB. The `add` method is specific to certain libraries, while `truncate` and `drop` remove data rather than adding it.",
+    "corrected": false,
+    "id": "q2294",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which of the following preference determines how the client direct read operations to the set?",
+    "options": [
+      "A. read",
+      "B. write",
+      "C. update",
+      "D. delete"
+    ],
+    "answer_index": 0,
+    "answer": "A. read",
+    "topic": "SQL & JDBC",
+    "explanation": "The read preference setting specifically controls how a client routes read operations to members of a replica set, such as the primary or secondaries. Write, update, and delete are unrelated since they pertain to modifying data, not directing queries for retrieval.",
+    "corrected": false,
+    "id": "q2295",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "Applications can also control the behavior of write operations using _______ concern.",
+    "options": [
+      "A. read",
+      "B. write",
+      "C. truncate",
+      "D. all of the mentioned"
+    ],
+    "answer_index": 1,
+    "answer": "B. write",
+    "topic": "Core Java & OOP",
+    "explanation": "Write concern controls how MongoDB acknowledges write operations, determining durability levels and replication requirements before returning success to the application.\n\nIt allows applications to specify whether writes should be acknowledged by a single server, multiple replicas, or persisted to disk before confirmation.",
+    "corrected": false,
+    "id": "q2296",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "MongoDB process collection of documents using _________ operations.",
+    "options": [
+      "A. Hbase",
+      "B. Hive",
+      "C. Map-reduce",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 2,
+    "answer": "C. Map-reduce",
+    "topic": "MongoDB",
+    "explanation": "MongoDB uses map-reduce operations to process large collections of documents across distributed systems, allowing data aggregation and transformation at scale.\n\nMap-reduce breaks down complex queries into map and reduce functions, enabling parallel processing of document batches for efficient data analysis.",
+    "corrected": false,
+    "id": "q2297",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which of the following method returns true if the cursor has documents?",
+    "options": [
+      "A. hasMethod()",
+      "B. hasNext()",
+      "C. hasDoc()",
+      "D. all of the mentioned"
+    ],
+    "answer_index": 1,
+    "answer": "B. hasNext()",
+    "topic": "Core Java & OOP",
+    "explanation": "The `hasNext()` method is the standard cursor method that checks if additional documents exist in the result set. It returns true when the cursor can iterate to the next document, false when all documents have been consumed.",
+    "corrected": false,
+    "id": "q2298",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "____________ method renders the document in a JSON-like format.",
+    "options": [
+      "A. displayjson",
+      "B. print",
+      "C. printjson",
+      "D. printdoc"
+    ],
+    "answer_index": 2,
+    "answer": "C. printjson",
+    "topic": "Core Java & OOP",
+    "explanation": "The `printjson()` method is a MongoDB shell utility that formats and displays documents in a readable JSON structure. It's specifically designed for JSON output, distinguishing it from generic print methods.",
+    "corrected": false,
+    "id": "q2299",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "The mongo shell and the drivers provide several cursor methods that call on the cursor returned by the _______ method to modify its behavior.",
+    "options": [
+      "A. cursor()",
+      "B. find()",
+      "C. findc()",
+      "D. none of the mentioned"
+    ],
+    "answer_index": 1,
+    "answer": "B. find()",
+    "topic": "Core Java & OOP",
+    "explanation": "The find() method returns a cursor object representing the query results without immediately executing or returning the actual documents. This cursor object can then be chained with additional methods like sort(), limit(), or skip() to modify its behavior before iteration.",
+    "corrected": false,
+    "id": "q2300",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "Which of the following method corresponds to Order by clause in SQL?",
+    "options": [
+      "A. sort()",
+      "B. order()",
+      "C. orderby()",
+      "D. all of the mentioned"
+    ],
+    "answer_index": 0,
+    "answer": "A. sort()",
+    "topic": "SQL & JDBC",
+    "explanation": "The `sort()` method in LINQ orders query results by specified criteria, directly mapping to SQL's ORDER BY clause functionality.\n\nLINQ uses `sort()` and `OrderBy()` (case-sensitive) for sorting; however, `sort()` is the primary collection method that corresponds to ORDER BY operations.",
+    "corrected": false,
+    "id": "q2301",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "The __________ method limits the number of documents in the result set.",
+    "options": [
+      "A. limit()",
+      "B. limitOf()",
+      "C. limitBy()",
+      "D. none of the mentioned"
+    ],
+    "answer_index": 0,
+    "answer": "A. limit()",
+    "topic": "Core Java & OOP",
+    "explanation": "The `limit()` method is a standard database query function that restricts the number of returned documents from a query result set. Other options like `limitOf()` and `limitBy()` are non-existent methods in common database frameworks like MongoDB or SQL.",
+    "corrected": false,
+    "id": "q2302",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which of the following line skips the first 5 documents in the bios collection and returns all remaining documents?",
+    "options": [
+      "A. db.bios.find().limit( 5 )",
+      "B. db.bios.find().skip( 1 )",
+      "C. db.bios.find().skip( 5 )",
+      "D. db.bios.find().sort( 5 )"
+    ],
+    "answer_index": 2,
+    "answer": "C. db.bios.find().skip( 5 )",
+    "topic": "MongoDB",
+    "explanation": "The skip() method in MongoDB tells the query to omit a specified number of documents from the beginning of the result set before returning results. Passing 5 to skip() therefore bypasses the first 5 documents and returns all remaining ones.",
+    "corrected": false,
+    "id": "q2303",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "Spring’s transaction support offers a set of technology-independent facilities,",
+    "options": [
+      "A. org.springframework.transaction.PlatformTransactionManager",
+      "B. org.springframework.transaction.support.TransactionTemplate",
+      "C. all of the mentioned",
+      "D. none of the mentioned"
+    ],
+    "answer_index": 2,
+    "answer": "C. all of the mentioned",
+    "topic": "Core Java & OOP",
+    "explanation": "Both PlatformTransactionManager and TransactionTemplate are core abstractions that provide technology-independent transaction management across different persistence frameworks.\n\nTogether they form Spring's complete transaction support infrastructure, allowing developers to switch between JPA, Hibernate, JDBC, and other technologies without changing transaction handling code.",
+    "corrected": false,
+    "id": "q2304",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "The PlatformTransactionManager interface provides methods for working with",
+    "options": [
+      "A. getTransaction(TransactionDefinition definition)",
+      "B. commit(TransactionStatus status)",
+      "C. rollback(TransactionStatus status)",
+      "D. all of the mentioned"
+    ],
+    "answer_index": 3,
+    "answer": "D. all of the mentioned",
+    "topic": "TypeScript",
+    "explanation": "The PlatformTransactionManager interface is Spring's abstraction for transaction management, requiring implementations to provide all three methods for complete transaction lifecycle control.\n\nThese methods handle transaction creation, successful completion, and failure scenarios respectively, making them all essential for any transaction manager implementation.",
+    "corrected": false,
+    "id": "q2305",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Spring has several built-in implementations of PlatformTransactionManager interface",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "answer": "A. True",
+    "topic": "TypeScript",
+    "explanation": "Spring provides multiple PlatformTransactionManager implementations for different persistence technologies like DataSourceTransactionManager, HibernateTransactionManager, and JpaTransactionManager.\n\nEach implementation handles transaction management specific to its underlying data access framework, allowing developers to choose the appropriate one based on their application's persistence layer.",
+    "corrected": false,
+    "id": "q2306",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Method that allows you to start a new transaction (or obtain the currently active",
+    "options": [
+      "A. getTransaction()",
+      "B. commit()",
+      "C. rollback()",
+      "D. all of the mentioned"
+    ],
+    "answer_index": 0,
+    "answer": "A. getTransaction()",
+    "topic": "Core Java & OOP",
+    "explanation": "The `getTransaction()` method retrieves or initiates a transaction object, enabling control over transaction lifecycle and operations.\n\n`commit()` and `rollback()` finalize transactions but don't start or obtain active ones; they're completion operations, not initiation methods.",
+    "corrected": false,
+    "id": "q2307",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "You just have to encapsulate your code block in a callback class that implements the TransactionCallback interface and pass it to the TransactionTemplate execute method for execution. In this way, you don’t need to repeat the boilerplate transaction management code for this block.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "answer": "A. True",
+    "topic": "JavaScript",
+    "explanation": "TransactionTemplate applies the template design pattern, handling transaction begin, commit, and rollback internally while delegating only the business logic to the callback's doInTransaction method. This eliminates repetitive try-catch-finally blocks for transaction demarcation across multiple methods, centralizing that logic in the template itself.",
+    "corrected": false,
+    "id": "q2309",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "Spring (since version 2.0) offers a transaction advice that can be easily configured via",
+    "options": [
+      "A. rx:advice",
+      "B. bx:advice",
+      "C. tx:advice",
+      "D. none of the mentioned"
+    ],
+    "answer_index": 2,
+    "answer": "C. tx:advice",
+    "topic": "Core Java & OOP",
+    "explanation": "Spring's `tx:advice` element is part of the transaction management namespace and specifically handles declarative transaction configuration through XML. The \"tx\" prefix stands for \"transaction,\" making it the standard Spring mechanism for applying transactional behavior to methods.",
+    "corrected": false,
+    "id": "q2310",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "You can omit the transaction-manager attribute in the element if your transaction manager has the name transactionManager.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "answer": "A. True",
+    "topic": "Core Java & OOP",
+    "explanation": "Spring's default value for the transaction-manager attribute on elements like `<tx:annotation-driven>` is \"transactionManager\". This means Spring automatically looks for a bean with that exact id or name, so explicit configuration is unnecessary when using the default name.",
+    "corrected": false,
+    "id": "q2311",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "There is no need to write try/catch block or exception in method signature.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 1,
+    "answer": "B. False",
+    "topic": "Spring Core",
+    "explanation": "Checked exceptions in Java must either be caught in a try/catch block or declared in the method signature using the throws keyword. Failing to handle them either way results in a compilation error, making exception handling mandatory for such cases.",
+    "corrected": false,
+    "id": "q2312",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "Spring HibernateTemplate can simplify your DAO implementation by managing sessions and transactions for you.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "answer": "A. True",
+    "topic": "Spring Core",
+    "explanation": "HibernateTemplate handles session creation, opening, closing, and exception translation internally, freeing developers from writing boilerplate session-management code. It also integrates with Spring's transaction management, ensuring proper commit or rollback behavior without explicit coding in the DAO layer.",
+    "corrected": false,
+    "id": "q2313",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "An alternative to Spring HibernateTemplate is:-",
+    "options": [
+      "A. HibernateContext",
+      "B. Hibernate contextual sessions",
+      "C. All of the mentioned",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 1,
+    "answer": "B. Hibernate contextual sessions",
+    "topic": "Spring Core",
+    "explanation": "HibernateTemplate is a Spring wrapper that handles session management and exception translation. Hibernate contextual sessions provide native session management through ThreadLocal, offering a cleaner alternative without Spring dependency.",
+    "corrected": false,
+    "id": "q2314",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Sessionfactory can manage contextual sessions for you and allows you to retrieve",
+    "options": [
+      "A. getSession() method",
+      "B. getCurrent() method",
+      "C. getCurrentSession() method",
+      "D. none of the mentioned"
+    ],
+    "answer_index": 2,
+    "answer": "C. getCurrentSession() method",
+    "topic": "Core Java & OOP",
+    "explanation": "SessionFactory's getCurrentSession() method retrieves the current session bound to the thread-local context, managing its lifecycle automatically without manual closure.\n\nThis method enables contextual session management by maintaining session association with the current thread, simplifying transaction handling and resource management.",
+    "corrected": false,
+    "id": "q2315",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "DAO methods must be made transactional.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 1,
+    "answer": "B. False",
+    "topic": "Core Java & OOP",
+    "explanation": "DAO methods should be transactional to ensure data consistency and atomicity. Transactions maintain ACID properties, preventing partial updates and data corruption during database operations.",
+    "corrected": false,
+    "id": "q2316",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Annotation to find a transaction and then fail, complaining that no Hibernate session",
+    "options": [
+      "A. @Transaction",
+      "B. @Transactional",
+      "C. @Transactions",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 1,
+    "answer": "B. @Transactional",
+    "topic": "Spring Core",
+    "explanation": "@Transactional manages Hibernate session lifecycle automatically, ensuring a session exists for lazy-loaded entity access within transaction scope. Without it, accessing unmapped associations outside session context throws \"no session\" errors.",
+    "corrected": false,
+    "id": "q2317",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "HibernateTemplate will translate the native Hibernate exceptions into exceptions in Spring DataAccessException hierarchy.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "answer": "A. True",
+    "topic": "Spring Core",
+    "explanation": "HibernateTemplate wraps Hibernate operations and catches HibernateException instances thrown internally, converting them via SessionFactoryUtils.convertHibernateAccessException() into corresponding DataAccessException subclasses. This allows application code to handle persistence errors generically without depending on Hibernate-specific exception types, supporting Spring's ORM abstraction goals.",
+    "corrected": false,
+    "id": "q2319",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "Annotation for Hibernate exceptions to be translated into Spring DataAccessException",
+    "options": [
+      "A. @Translation",
+      "B. @Repo",
+      "C. @Repository",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 2,
+    "answer": "C. @Repository",
+    "topic": "Spring Core",
+    "explanation": "The @Repository annotation enables Spring's exception translation mechanism, automatically converting Hibernate exceptions into Spring's uniform DataAccessException hierarchy. This provides consistent exception handling across the data access layer regardless of the underlying persistence technology.",
+    "corrected": false,
+    "id": "q2320",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Instance to translate the native Hibernate exceptions into data access exceptions in",
+    "options": [
+      "A. PersistenceExceptionPostProcessor",
+      "B. PersistenceExceptionTranslation",
+      "C. PersistenceException",
+      "D. PersistenceExceptionTranslationPostProcessor"
+    ],
+    "answer_index": 3,
+    "answer": "D. PersistenceExceptionTranslationPostProcessor",
+    "topic": "Spring Core",
+    "explanation": "PersistenceExceptionTranslationPostProcessor is a Spring bean post-processor that intercepts Hibernate exceptions and converts them into Spring's DataAccessException hierarchy for consistent error handling.\n\nIt automatically translates vendor-specific persistence exceptions into platform-agnostic Spring exceptions, enabling uniform exception handling across different ORM frameworks.",
+    "corrected": false,
+    "id": "q2321",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "You can assign a component name in this annotation and have the session factory autowired by the Spring IoC container with @Autowired.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "answer": "A. True",
+    "topic": "Core Java & OOP",
+    "explanation": "Annotating a class with a component name (e.g., using @Component or @Repository) registers it as a Spring-managed bean within the application context. Once registered, its SessionFactory dependency can be injected automatically by declaring @Autowired on the corresponding field or setter.",
+    "corrected": false,
+    "id": "q2322",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "Spring provides to simplify your DAO implementation by managing entitymanagers",
+    "options": [
+      "A. HibernateTemplate",
+      "B. JpaTemplate",
+      "C. SpringTemplate",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 1,
+    "answer": "B. JpaTemplate",
+    "topic": "Spring Core",
+    "explanation": "JpaTemplate is a Spring utility class that handles EntityManager lifecycle management, transaction handling, and exception translation for JPA-based DAOs.\n\nIt eliminates boilerplate code by wrapping common JPA operations and automatically managing resource cleanup and persistence context scope.",
+    "corrected": false,
+    "id": "q2323",
+    "trust": "unverified-source"
+  }
+]

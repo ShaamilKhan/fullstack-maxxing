@@ -1,0 +1,956 @@
+[
+  {
+    "id": "q0747",
+    "topic": "Java OOP",
+    "question": "Spring-WS provides various abstract endpoint classes for you to process the request.",
+    "options": [
+      "A. org.springframework.ws.server.endpoint",
+      "B. org.springframework.ws.server",
+      "C. org.springframework.*",
+      "D. none of the mentioned"
+    ],
+    "answer_index": 0,
+    "explanation": "The package `org.springframework.ws.server.endpoint` specifically contains abstract endpoint classes like `AbstractDomPayloadEndpoint`, `AbstractJaxb2PayloadEndpoint`, and `AbstractStaxPayloadEndpoint` that developers extend to handle SOAP/XML-RPC requests in Spring-WS applications. While `org.springframework.ws.server` is a parent package, the endpoint-specific abstractions are organized under the more granular `endpoint` subpackage. Option C is too broad, and Option D is incorrect since Spring-WS does provide these classes.",
+    "corrected": false,
+    "answer": "A. org.springframework.ws.server.endpoint",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0748",
+    "topic": "Java OOP",
+    "question": "Which method is used to gracefully shutdown all the bean processes after closing the spring container?",
+    "options": [
+      "A. shutdownHook",
+      "B. destroy method",
+      "C. none of the mentioned",
+      "D. all of the mentioned"
+    ],
+    "answer_index": 0,
+    "explanation": "The `shutdownHook` is the correct method because it registers a JVM shutdown hook with Spring's `ConfigurableApplicationContext` that ensures all bean destruction methods are invoked gracefully when the application terminates, even if the container isn't explicitly closed. While the `destroy` method handles bean-level cleanup, it requires the container to be actively closed, whereas `shutdownHook` operates at the JVM level and guarantees proper shutdown sequencing regardless of how the application exits.",
+    "corrected": false,
+    "answer": "A. shutdownHook",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0749",
+    "topic": "Java OOP",
+    "question": "Which one is the default scope of the beans?",
+    "options": [
+      "A. Prototype",
+      "B. Session",
+      "C. Request",
+      "D. Singleton"
+    ],
+    "answer_index": 3,
+    "explanation": "In Spring Framework, the default scope is Singleton because the container creates only one instance of the bean per application context and reuses it for all subsequent requests. This approach optimizes memory usage and performance by avoiding unnecessary object instantiation, making it the most efficient default for stateless beans.",
+    "corrected": false,
+    "answer": "D. Singleton",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0750",
+    "topic": "Java OOP",
+    "question": "Declaring bean from object properties can be done using:",
+    "options": [
+      "A. PropertyPathFactoryBean",
+      "B. util:constant",
+      "C. None of the mentioned",
+      "D. All of the mentioned"
+    ],
+    "answer_index": 0,
+    "explanation": "PropertyPathFactoryBean is a Spring FactoryBean that evaluates a property path on an object and exposes the resulting value as a bean. It allows you to extract and declare a bean from nested object properties using property path expressions. While util:constant is used for declaring constant values, not object properties, making PropertyPathFactoryBean the correct and specific answer for this use case.",
+    "corrected": false,
+    "answer": "A. PropertyPathFactoryBean",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0751",
+    "topic": "Java OOP",
+    "question": "What are the ways to create custom Property Editors?",
+    "options": [
+      "A. implement PropertyEditor interface",
+      "B. extend PropertyEditorSupport Class",
+      "C. none of the mentioned",
+      "D. all of the mentioned"
+    ],
+    "answer_index": 3,
+    "explanation": "Both approaches are valid for creating custom Property Editors in Java. Implementing the `PropertyEditor` interface directly gives you full control by requiring you to implement all interface methods, while extending `PropertyEditorSupport` provides a convenient abstract base class with default implementations that you can selectively override. Therefore, developers have two legitimate options, making \"all of the mentioned\" the correct answer.",
+    "corrected": false,
+    "answer": "D. all of the mentioned",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0752",
+    "topic": "Java OOP",
+    "question": "Spring Web MVC follows the 'Open for extension, closed for modification' principle. Many methods in core classes are marked final.",
+    "options": [
+      "A. true",
+      "B. false"
+    ],
+    "answer_index": 1,
+    "explanation": "Spring Web MVC marks many core class methods as `final` to prevent unintended overrides that could break the framework's internal contracts and expected behavior patterns. This design enforces extension through composition and dependency injection (Spring's preferred mechanisms) rather than inheritance, adhering to the Open/Closed Principle by allowing framework extension via configuration and custom beans while protecting critical implementation details from modification.",
+    "corrected": false,
+    "answer": "B. false",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0754",
+    "topic": "Java OOP",
+    "question": "How does the Spring DispatcherServlet support returning the last modification date as specified by the Servlet API?",
+    "options": [
+      "A. By implementing the LastModified interface",
+      "B. By implementing the LastSessionModified interface",
+      "C. By implementing the LastDateModified interface",
+      "D. By implementing the LastModifiedDate interface"
+    ],
+    "answer_index": 0,
+    "explanation": "The `LastModified` interface is part of the Servlet API and provides the `getLastModified()` method that handlers can implement to return the last modification time of a resource. Spring's `DispatcherServlet` checks if a handler implements this interface and uses the returned timestamp to set the `Last-Modified` HTTP response header, enabling HTTP caching mechanisms like conditional GET requests (304 Not Modified responses). The other options are not part of the standard Servlet API.",
+    "corrected": false,
+    "answer": "A. By implementing the LastModified interface",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0755",
+    "topic": "Java OOP",
+    "question": "@RequestMapping annotation is used to map an HTTP request method (GET or POST) to a specific controller class or method.",
+    "options": [
+      "A. false",
+      "B. true"
+    ],
+    "answer_index": 1,
+    "explanation": "The @RequestMapping annotation in Spring Framework explicitly maps HTTP requests to handler methods or controller classes by specifying the URL path and HTTP method (GET, POST, PUT, DELETE, etc.). When a request matches the specified path and method criteria, Spring routes it to the annotated controller method for processing. This is a core Spring MVC mechanism for routing incoming HTTP requests.",
+    "corrected": false,
+    "answer": "B. true",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0756",
+    "topic": "Java OOP",
+    "question": "Which exception class is related to all exceptions thrown in Spring applications?",
+    "options": [
+      "A. DataAccessException",
+      "B. ArrayIndexOutOfBound",
+      "C. NullPointerException",
+      "D. SpringException"
+    ],
+    "answer_index": 0,
+    "explanation": "DataAccessException is the root exception class for all data access-related exceptions in Spring's data access framework. It serves as a checked exception hierarchy that wraps vendor-specific database exceptions, providing a consistent and database-agnostic way to handle data access errors across Spring applications. This abstraction allows developers to catch Spring-specific data access issues without coupling to underlying persistence technologies.",
+    "corrected": false,
+    "answer": "A. DataAccessException",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0757",
+    "topic": "Java OOP",
+    "question": "Which of the following is true for Controllers in Spring?",
+    "options": [
+      "A. An abstract class",
+      "B. An interface",
+      "C. Concrete class",
+      "D. Final class"
+    ],
+    "answer_index": 2,
+    "explanation": "'An interface' is the correct answer per language specification.",
+    "corrected": false,
+    "answer": "C. Concrete class",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0758",
+    "topic": "Java OOP",
+    "question": "Annotations work as metadata for classes and Spring uses annotations as an alternative to XML for declarative configuration.",
+    "options": [
+      "A. false",
+      "B. true"
+    ],
+    "answer_index": 1,
+    "explanation": "Annotations in Spring serve as metadata markers that provide configuration information directly within Java code. Spring's annotation-driven configuration (such as `@Component`, `@Autowired`, `@Bean`, etc.) eliminates the need for XML-based bean definitions and wiring, offering a more modern and less verbose alternative to traditional XML configuration files.",
+    "corrected": false,
+    "answer": "B. true",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0759",
+    "topic": "Java OOP",
+    "question": "Which of the following specify the points where weaving can be applied?",
+    "options": [
+      "A. Compile Time , Classload Time , load time",
+      "B. Compile Time , Classload Time , Runtime",
+      "C. Compile Time and Runtime",
+      "D. Compile Time and Classload Time"
+    ],
+    "answer_index": 1,
+    "explanation": "'Compile Time , Classload Time , Runtime' is the correct answer per language specification.",
+    "corrected": false,
+    "answer": "B. Compile Time , Classload Time , Runtime",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0760",
+    "topic": "Java OOP",
+    "question": "In which layer is the @Controller annotation used?",
+    "options": [
+      "A. Business layer",
+      "B. Service layer",
+      "C. Presentation layer",
+      "D. Session layer"
+    ],
+    "answer_index": 2,
+    "explanation": "The `@Controller` annotation is used in the presentation layer because it marks classes that handle HTTP requests and prepare responses for the user interface. Controllers act as the entry point between the client and the application, directly managing request routing and view rendering. This separates user-facing concerns from business logic, which resides in service and business layers.",
+    "corrected": false,
+    "answer": "C. Presentation layer",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0762",
+    "topic": "Java OOP",
+    "question": "Which of the following correctly mentions the Autowire types?",
+    "options": [
+      "A. None of these",
+      "B. byName , byMethod , constructor and autodetect",
+      "C. byName , byType , destructor and autodetect",
+      "D. byName , byType , constructor and autodetect"
+    ],
+    "answer_index": 3,
+    "explanation": "'byName , byType , constructor and autodetect' is the correct answer per language specification.",
+    "corrected": false,
+    "answer": "D. byName , byType , constructor and autodetect",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0763",
+    "topic": "Java OOP",
+    "question": "Which advice is executed only when joint point returns or throws an exception?",
+    "options": [
+      "A. @Before",
+      "B. @After",
+      "C. @AfterReturning",
+      "D. @AfterThrowing"
+    ],
+    "answer_index": 1,
+    "explanation": "Correction Needed\n\nThe correct answer should be D. @AfterThrowing, not C.\n\nExplanation: @AfterThrowing advice executes only when a joint point throws an exception. @AfterReturning executes only when a method returns normally without throwing an exception. @After runs regardless of whether an exception occurs or the method returns normally.",
+    "corrected": false,
+    "answer": "B. @After",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0764",
+    "topic": "Java OOP",
+    "question": "Special compiler used during weaving.",
+    "options": [
+      "A. jvm",
+      "B. gcc",
+      "C. ajc",
+      "D. none of the mentioned"
+    ],
+    "answer_index": 2,
+    "explanation": "AJC (AspectJ Compiler) is the specialized compiler used during the weaving process in AspectJ, which is a framework for aspect-oriented programming on top of Java. AJC compiles aspect code and weaves it into Java classes by transforming bytecode or source code, integrating cross-cutting concerns like logging, security, and transactions. JVM and GCC are general-purpose runtime environments and compilers respectively, making them unsuitable for the specific task of aspect weaving.",
+    "corrected": false,
+    "answer": "C. ajc",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0765",
+    "topic": "Java OOP",
+    "question": "How to inject Spring bean into domain objects?",
+    "options": [
+      "A. AOP",
+      "B. XML",
+      "C. AspectJ",
+      "D. Java Based"
+    ],
+    "answer_index": 2,
+    "explanation": "Java-based configuration (using `@Component`, `@Autowired`, and `@Configuration` annotations) is the most direct and practical method for injecting Spring beans into domain objects. While AOP and AspectJ can technically facilitate injection through aspect-oriented techniques, they are indirect approaches; Java-based configuration provides explicit, type-safe dependency injection that is the standard Spring practice for this use case. XML configuration is also viable but less modern compared to Java-based approaches in contemporary Spring applications.",
+    "corrected": false,
+    "answer": "C. AspectJ",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0766",
+    "topic": "Java OOP",
+    "question": "Method used to process bean before initialization callback.",
+    "options": [
+      "A. scope",
+      "B. postProcessAfterInitialization()",
+      "C. postProcessBeforeInitialization()",
+      "D. its own constructor"
+    ],
+    "answer_index": 2,
+    "explanation": "The `postProcessBeforeInitialization()` method is part of the `BeanPostProcessor` interface and is explicitly invoked by the Spring container before any initialization callbacks (like `@PostConstruct` or `InitializingBean.afterPropertiesSet()`) are executed on a bean. This allows custom processing logic to modify the bean instance right before initialization occurs, making it the correct method for pre-initialization processing. The other options either occur at different lifecycle stages (scope defines bean lifecycle, constructor is before dependency injection, and `postProcessAfterInitialization()` runs after initialization).",
+    "corrected": false,
+    "answer": "C. postProcessBeforeInitialization()",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0767",
+    "topic": "Java OOP",
+    "question": "Which attribute is used to set the scope of the bean?",
+    "options": [
+      "A. setScope",
+      "B. scope",
+      "C. getScope",
+      "D. none of the mentioned"
+    ],
+    "answer_index": 1,
+    "explanation": "The `scope` attribute is used in bean configuration (typically in XML or annotations) to define the lifecycle and visibility of a bean instance. Methods like `setScope()` and `getScope()` are programmatic accessors, but the actual configuration attribute recognized by Spring or other bean frameworks is `scope`. This attribute accepts values like \"singleton,\" \"prototype,\" \"request,\" \"session,\" etc., which determine how and when the bean is instantiated and shared.",
+    "corrected": false,
+    "answer": "B. scope",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0768",
+    "topic": "Java OOP",
+    "question": "Which attribute is used to specify classname of the bean?",
+    "options": [
+      "A. name",
+      "B. id",
+      "C. class",
+      "D. constructor-args"
+    ],
+    "answer_index": 2,
+    "explanation": "The `class` attribute in a Spring bean definition specifies the fully qualified Java class name that will be instantiated by the container. The `id` and `name` attributes only identify the bean instance, while `constructor-args` defines constructor parameters, neither of which specifies the actual class type.",
+    "corrected": false,
+    "answer": "C. class",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0769",
+    "topic": "Java OOP",
+    "question": "Which tag is allowed for static field?",
+    "options": [
+      "A. util:constant",
+      "B. list",
+      "C. set",
+      "D. constructor-args"
+    ],
+    "answer_index": 0,
+    "explanation": "The `util:constant` tag is specifically designed in Spring to inject static field values into bean properties. It retrieves the value of a public static final field and assigns it to the target property, making it the dedicated mechanism for static field initialization in Spring XML configuration. The other options (list, set, constructor-args) are used for collection types or constructor parameters, not for accessing static fields.",
+    "corrected": false,
+    "answer": "A. util:constant",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0770",
+    "topic": "Java OOP",
+    "question": "Element used to specify access attributes for bean methods.",
+    "options": [
+      "A. security:protect",
+      "B. security:intercept",
+      "C. security:intercept-security",
+      "D. none of the mentioned"
+    ],
+    "answer_index": 0,
+    "explanation": "The `security:protect` element is the standard Spring Security XML namespace configuration used to specify access control attributes and authorization rules for bean methods. It defines which roles or permissions are required to invoke specific methods, integrating method-level security into the Spring bean configuration. The other options (`security:intercept` and `security:intercept-security`) are not valid Spring Security namespace elements.",
+    "corrected": false,
+    "answer": "A. security:protect",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0771",
+    "topic": "Java OOP",
+    "question": "States related to Spring Web flows.",
+    "options": [
+      "A. view",
+      "B. action",
+      "C. decision",
+      "D. all of the mentioned"
+    ],
+    "answer_index": 3,
+    "explanation": "Spring Web Flow defines three core state types that represent different phases of a flow: view states display user interfaces, action states execute business logic or method invocations, and decision states evaluate conditions to determine flow routing. Together, these three state types form the complete set of possible states in Spring Web Flow applications.",
+    "corrected": false,
+    "answer": "D. all of the mentioned",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0772",
+    "topic": "Java OOP",
+    "question": "To enable Spring security for web flows.",
+    "options": [
+      "A. SecurityFlowExecutionListener",
+      "B. SecurityFlowExecution",
+      "C. FlowSecurity",
+      "D. SecurityFlowListener"
+    ],
+    "answer_index": 0,
+    "explanation": "`SecurityFlowExecutionListener` is the correct Spring Security listener component that intercepts and secures web flow executions by implementing the `FlowExecutionListener` interface. It integrates Spring Security's authentication and authorization checks into the Web Flow lifecycle, enabling security context propagation across flow transitions and state changes. The other options are either non-existent classes or incorrectly named components that don't follow Spring Web Flow's naming conventions for security integration.",
+    "corrected": false,
+    "answer": "A. SecurityFlowExecutionListener",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0773",
+    "topic": "Java OOP",
+    "question": "How could you externalize constants from a Spring configuration file or annotation into a .properties file?",
+    "options": [
+      "A. By using the <context:property-placeholder /> tag",
+      "B. By using the <util:constant /> tag",
+      "C. By declaring the ConstantPlaceholderConfigurer bean post processor",
+      "D. By using the c: namespace"
+    ],
+    "answer_index": 0,
+    "explanation": "'By using the <context:property-placeholder /> tag' is correct.",
+    "corrected": false,
+    "answer": "A. By using the <context:property-placeholder /> tag",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0776",
+    "topic": "Java OOP",
+    "question": "By default, XmlViewResolver loads view beans from /WEB-INF/views.xml.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "explanation": "By default, XmlViewResolver loads view beans from `/WEB-INF/views.xml` only if explicitly configured with that location. Without configuration, XmlViewResolver has no default location and requires the `location` property to be explicitly set to specify which XML file to load view bean definitions from. Therefore, the statement is false.",
+    "corrected": false,
+    "answer": "A. True",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0777",
+    "topic": "Java OOP",
+    "question": "Views that can't be resolved by InternalResourceViewResolver.",
+    "options": [
+      "A. redirect",
+      "B. redirect:prefix",
+      "C. redirect:suffix",
+      "D. all of the mentioned"
+    ],
+    "answer_index": 1,
+    "explanation": "InternalResourceViewResolver cannot resolve views prefixed with \"redirect:\" because the redirect prefix is a special instruction to Spring MVC that bypasses the normal view resolution process and instead returns a RedirectView object. The resolver only handles internal resource paths (JSP files, etc.), not redirect directives, making \"redirect\" the only view type it cannot resolve from the given options.",
+    "corrected": false,
+    "answer": "B. redirect:prefix",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0778",
+    "topic": "Java OOP",
+    "question": "To publish a REST service with Spring.",
+    "options": [
+      "A. publishing an application's data as a REST service",
+      "B. accessing data from third-party REST services",
+      "C. none of the mentioned",
+      "D. all of the mentioned"
+    ],
+    "answer_index": 0,
+    "explanation": "'publishing an application's data as a REST service' is correct.",
+    "corrected": false,
+    "answer": "A. publishing an application's data as a REST service",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0781",
+    "topic": "Java OOP",
+    "question": "Annotation which allows the Jaxb2Marshaller to detect a class's fields.",
+    "options": [
+      "A. @XmlRootElement",
+      "B. @XmlRoot",
+      "C. @NotNull",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 0,
+    "explanation": "The `@XmlRootElement` annotation marks a class as the root element of an XML document, enabling Jaxb2Marshaller to recognize and process the class's fields during XML marshalling and unmarshalling operations. Without this annotation, JAXB cannot properly serialize/deserialize the class structure. `@XmlRoot` is not a valid JAXB annotation, and `@NotNull` is a validation annotation unrelated to XML binding.",
+    "corrected": false,
+    "answer": "A. @XmlRootElement",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0782",
+    "topic": "Java OOP",
+    "question": "Considering classes AccountServiceImpl and ClientServiceImpl. What is the result of the pointcut expression execution(* *..AccountServiceImpl.update(..)) && execution(* *..ClientServiceImpl.update(..))?",
+    "options": [
+      "A. No joint point is defined",
+      "B. Matches public update methods of both classes",
+      "C. Matches any update methods of both classes",
+      "D. Matches update methods with one or more arguments"
+    ],
+    "answer_index": 0,
+    "explanation": "The pointcut uses the AND operator (&&) to combine two execution expressions, requiring a single join point to simultaneously match both conditions. Since a method execution can only be from either AccountServiceImpl OR ClientServiceImpl, but not both at the same time, no join point can satisfy both conditions concurrently, resulting in zero matches.",
+    "corrected": false,
+    "answer": "A. No joint point is defined",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0784",
+    "topic": "Java OOP",
+    "question": "What is the name of the bean defined in the following configuration class? Select a single answer.\n@Configuration\npublic class ApplicationConfig {\n@Autowired\nprivate DataSource dataSource;\n@Bean\nClientRepository clientRepository() {\nClientRepository accountRepository = new JpaClientRepository();\naccountRepository.setDataSource(dataSource);\nreturn accountRepository;\n}\n}",
+    "options": [
+      "A. clientRepository",
+      "B. JpaClientRepository",
+      "C. Two beans are defined: a data souce and a repository",
+      "D. accountRepository"
+    ],
+    "answer_index": 0,
+    "explanation": "The @Bean annotation registers a bean using the method name as its default identifier, so the bean is named \"clientRepository\" after the method. The DataSource is injected via @Autowired but is not itself defined as a bean in this class, ruling out option C.",
+    "corrected": false,
+    "answer": "A. clientRepository",
+    "trust": "baseline",
+    "recovered": true,
+    "repair_origin": "source",
+    "options_synthesized": true
+  },
+  {
+    "id": "q0785",
+    "topic": "Java OOP",
+    "question": "Select method signatures that match with the pointcut execution(* com.test.service..*.*(*))",
+    "options": [
+      "A. void com.test.service.MyServiceImpl#transfert(Money amount)",
+      "B. void com.test.service.account.MyServiceImpl#transfert(Money amount)",
+      "C. void com.test.service.MyServiceImpl#transfert(Account account, Money amount)",
+      "D. void com.test.service.account.MyServiceImpl#transfert(Account account, Money amount)"
+    ],
+    "answer_index": 0,
+    "explanation": "'void com.test.service.MyServiceImpl#transfert(Money amount)' is correct.",
+    "corrected": false,
+    "answer": "A. void com.test.service.MyServiceImpl#transfert(Money amount)",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0786",
+    "topic": "Java OOP",
+    "question": "Given the Spring configuration <bean class=\"com.spring.service.BankServiceImpl\" p:bankName=\"NationalBank\">, which statement is correct?",
+    "options": [
+      "A. The p namespace has to be declared",
+      "B. NationalBank is a scalar value",
+      "C. Bean id is bankServiceImpl",
+      "D. The BankServiceImpl references a NationalBank bean"
+    ],
+    "answer_index": 0,
+    "explanation": "The `p:` namespace is a Spring XML shorthand for property injection that must be explicitly declared in the XML schema declarations (typically `xmlns:p=\"http://www.springframework.org/schema/p\"`). Without this declaration, the XML parser cannot recognize and process the `p:bankName` attribute syntax, causing a parsing error.",
+    "corrected": false,
+    "answer": "A. The p namespace has to be declared",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0787",
+    "topic": "Java OOP",
+    "question": "To load root application context at the startup.",
+    "options": [
+      "A. ContextListener",
+      "B. ContextLoader",
+      "C. ContextLoaderListener",
+      "D. ContextEventListener"
+    ],
+    "answer_index": 2,
+    "explanation": "`ContextLoaderListener` is a ServletContextListener that bootstraps the root WebApplicationContext when the web application starts up. It reads the Spring configuration file (typically specified via `contextConfigLocation` in web.xml) and initializes the application context before any servlets are loaded. The other options either don't exist as Spring classes (`ContextListener`, `ContextEventListener`) or serve different purposes (`ContextLoader` is a utility class, not a listener).",
+    "corrected": false,
+    "answer": "C. ContextLoaderListener",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0788",
+    "topic": "Java OOP",
+    "question": "ActionSupport class provides a method to access Spring's application context.",
+    "options": [
+      "A. getWebApplicationContext()",
+      "B. getWebApplication()",
+      "C. getApplicationContext()",
+      "D. contextEventListener()"
+    ],
+    "answer_index": 0,
+    "explanation": "ActionSupport is a Struts 2 class that implements ApplicationContextAware, allowing it to access Spring's WebApplicationContext through the `getWebApplicationContext()` method. This method is specifically designed to return the web-aware Spring application context, distinguishing it from the generic `getApplicationContext()` which would not be available in ActionSupport. The \"Web\" prefix in the method name correctly indicates it handles Spring's web application context rather than a generic application context.",
+    "corrected": false,
+    "answer": "A. getWebApplicationContext()",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0789",
+    "topic": "Java OOP",
+    "question": "XML element to specify property values for scripting bean.",
+    "options": [
+      "A. lang:property",
+      "B. bean:property",
+      "C. script:property",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 0,
+    "explanation": "The `lang:property` element is the correct XML namespace prefix used in scripting frameworks (particularly in Spring Framework's scripting support) to define and inject property values into scripting beans. The `lang:` prefix specifically denotes language-level bean configuration, whereas `bean:property` and `script:property` are non-standard namespace conventions that don't correspond to actual XML schema definitions used in bean property declaration.",
+    "corrected": false,
+    "answer": "A. lang:property",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0790",
+    "topic": "Java OOP",
+    "question": "Annotation used to declare an introduction in Spring AOP.",
+    "options": [
+      "A. Before",
+      "B. After",
+      "C. @DeclareParents",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 2,
+    "explanation": "@DeclareParents is used in Spring AOP to introduce new methods and interfaces to existing classes at runtime, effectively declaring parent types for a target class. The other options (@Before and @After) are advice annotations that define when to apply cross-cutting concerns, not what to introduce. This annotation enables aspect-oriented introduction of new functionality without modifying the original class definition.",
+    "corrected": false,
+    "answer": "C. @DeclareParents",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0791",
+    "topic": "Java OOP",
+    "question": "Is the following pointcut expression correct? execution(* ArithmeticCalculator.*(..))",
+    "options": [
+      "A. Yes",
+      "B. No",
+      "C. If every target class is in same package",
+      "D. Depends where target class is located"
+    ],
+    "answer_index": 3,
+    "explanation": "The pointcut `execution(* ArithmeticCalculator.*(..))` lacks a package qualifier, so it assumes `ArithmeticCalculator` is in the same package as the class where the pointcut is declared. If `ArithmeticCalculator` is in a different package, the expression will fail to resolve correctly unless the fully qualified class name (e.g., `com.example.ArithmeticCalculator`) is used. Therefore, the expression is only correct when the target class shares the same package as the declaring class.",
+    "corrected": false,
+    "answer": "D. Depends where target class is located",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0792",
+    "topic": "Java OOP",
+    "question": "DAO methods require access to the session factory, which can be injected by:",
+    "options": [
+      "A. a setter method",
+      "B. constructor argument",
+      "C. none of the mentioned",
+      "D. all of the mentioned"
+    ],
+    "answer_index": 3,
+    "explanation": "The session factory can be injected into DAO methods through multiple dependency injection mechanisms: constructor injection (B) establishes the dependency at object creation time ensuring it's always available, setter injection (A) allows flexible configuration after instantiation, and both approaches are valid design patterns in Spring and similar frameworks. Therefore, all mentioned options (D) represent legitimate ways to provide the session factory to DAO instances.",
+    "corrected": false,
+    "answer": "D. all of the mentioned",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0793",
+    "topic": "Java OOP",
+    "question": "Which Java Collection types can be injected in a Spring application?",
+    "options": [
+      "A. None of these",
+      "B. Using list, set, map or collection tag",
+      "C. Using list, set, props or collection tag",
+      "D. Using list, set, map or props tag"
+    ],
+    "answer_index": 3,
+    "explanation": "Spring XML configuration provides four dedicated tags for injecting Java Collection types: `<list>` for List implementations, `<set>` for Set implementations, `<map>` for Map implementations, and `<props>` for Properties (a special case of Map with String keys/values). The `<props>` tag is specifically designed for injecting java.util.Properties objects, which is why it appears in the correct answer instead of a generic \"collection\" tag.",
+    "corrected": false,
+    "answer": "D. Using list, set, map or props tag",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0794",
+    "topic": "Java OOP",
+    "question": "What are the different types of AutoProxying?",
+    "options": [
+      "A. BeanNameAutoProxyCreator",
+      "B. DefaultAdvisorAutoProxyCreator",
+      "C. Metadata autoproxying",
+      "D. All of the above"
+    ],
+    "answer_index": 3,
+    "explanation": "AutoProxying Types Explanation\n\nSpring Framework provides three distinct autoproxying mechanisms: BeanNameAutoProxyCreator matches bean names to apply advisors, DefaultAdvisorAutoProxyCreator automatically applies all registered advisors to matching beans, and Metadata autoproxying uses annotations or other metadata to determine proxy candidates. Since all three are valid and distinct approaches within Spring's autoproxying architecture, the answer encompasses all available options.",
+    "corrected": false,
+    "answer": "D. All of the above",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0795",
+    "topic": "Java OOP",
+    "question": "What are the various editors used in Spring?",
+    "options": [
+      "A. PropertyEditor , URLEditor",
+      "B. ClassEditor, CustomDateEditor, StringTrimmerEditor",
+      "C. FileEditor, LocaleEditor, StringArrayPropertyEditor",
+      "D. All of the above"
+    ],
+    "answer_index": 3,
+    "explanation": "Spring provides multiple built-in PropertyEditor implementations for type conversion and data binding across different data types. All the editors listed in options A, B, and C (PropertyEditor, URLEditor, ClassEditor, CustomDateEditor, StringTrimmerEditor, FileEditor, LocaleEditor, and StringArrayPropertyEditor) are actual Spring framework components used to convert string values to their respective object types during property binding. Therefore, option D is correct as it encompasses all available Spring editors.",
+    "corrected": false,
+    "answer": "D. All of the above",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0796",
+    "topic": "Java OOP",
+    "question": "How to use <ref> in Spring framework?",
+    "options": [
+      "A. <ref> is used with bean id",
+      "B. <ref> is used with string values",
+      "C. <ref> is used to inject property values directly without bean lookup",
+      "D. <ref> is used to define a new bean class inline within the parent bean"
+    ],
+    "answer_index": 0,
+    "explanation": "Why Option A is Correct\n\nThe `<ref>` element in Spring XML configuration is specifically designed to reference an existing bean by its `id` or `name` attribute, establishing a dependency injection relationship between beans. It performs a bean lookup in the container and injects the resolved bean instance into the target property, which is fundamentally different from the other options—`<value>` handles string literals (B), `<ref>` doesn't bypass bean lookup (C), and `<bean>` is used for inline bean definitions, not `<ref>` (D).",
+    "corrected": false,
+    "answer": "A. <ref> is used with bean id",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0797",
+    "topic": "Java OOP",
+    "question": "How to define Inner bean in Spring?",
+    "options": [
+      "A. Use <property/> only",
+      "B. Use <property/> or <constructor-arg/>",
+      "C. Use <bean-ref/> only",
+      "D. Use <inner-bean/> tag explicitly"
+    ],
+    "answer_index": 1,
+    "explanation": "An inner bean in Spring is defined by declaring a `<bean>` element directly within either a `<property/>` or `<constructor-arg/>` tag, rather than as a top-level bean with an id attribute. This allows the bean to be instantiated and injected inline without needing a separate bean definition or reference, making it useful for beans that are only used in one place.",
+    "corrected": false,
+    "answer": "B. Use <property/> or <constructor-arg/>",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0798",
+    "topic": "Java OOP",
+    "question": "Which property is replaced by c-namespace in Spring?",
+    "options": [
+      "A. <property/>",
+      "B. <constructor-arg>",
+      "C. <property-namespace/>",
+      "D. <bean-arg/>"
+    ],
+    "answer_index": 1,
+    "explanation": "The c-namespace is a shorthand syntax introduced in Spring 3.1 for constructor injection that replaces the verbose `<constructor-arg>` XML element. It allows you to specify constructor arguments more concisely using attribute notation (e.g., `c:propertyName=\"value\"`) instead of nested `<constructor-arg>` tags. This makes XML configuration cleaner while maintaining the same constructor-based dependency injection functionality.",
+    "corrected": false,
+    "answer": "B. <constructor-arg>",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0799",
+    "topic": "Java OOP",
+    "question": "By default a bean is eagerly initialized in Spring.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "explanation": "By default, Spring instantiates singleton beans eagerly during application startup (when the ApplicationContext is created) rather than waiting until they're first requested. This allows Spring to detect configuration errors and dependency issues immediately at startup time, rather than later at runtime when a bean is actually needed.",
+    "corrected": false,
+    "answer": "A. True",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0800",
+    "topic": "Java OOP",
+    "question": "By default a bean is not autowired.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "explanation": "By default, beans in Spring are autowired when the `@Autowired` annotation is applied to a field, constructor, or setter method, or when using component scanning with `@Component`, `@Service`, `@Repository`, etc. Spring's default behavior is to perform autowiring for annotated beans, making the statement false.",
+    "corrected": false,
+    "answer": "A. True",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0802",
+    "topic": "Java OOP",
+    "question": "InitializingBean and DisposableBean are used to customize the nature of bean in Spring.",
+    "options": [
+      "A. Yes",
+      "B. No",
+      "C. Only DisposableBean customizes bean nature; InitializingBean is unrelated to lifecycle",
+      "D. Yes, but only when using Spring Boot auto-configuration"
+    ],
+    "answer_index": 0,
+    "explanation": "InitializingBean and DisposableBean are Spring lifecycle interfaces that allow beans to customize their initialization and destruction behavior respectively. InitializingBean's `afterPropertiesSet()` method executes after dependency injection, while DisposableBean's `destroy()` method executes during container shutdown, making both essential for controlling bean lifecycle behavior.",
+    "corrected": false,
+    "answer": "A. Yes",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0803",
+    "topic": "Java OOP",
+    "question": "How to shutdown the Spring IoC container gracefully in non-web applications?",
+    "options": [
+      "A. Using shutdownNow()",
+      "B. registerShutdownHook()",
+      "C. Using close()",
+      "D. Using destroyBean()"
+    ],
+    "answer_index": 1,
+    "explanation": "`registerShutdownHook()` is the recommended approach because it registers a JVM shutdown hook that ensures the Spring container gracefully closes when the application terminates, properly invoking all bean destruction callbacks and resource cleanup. While `close()` works, it requires manual invocation, and `shutdownNow()` and `destroyBean()` are either not Spring-specific container methods or don't provide full container shutdown semantics in non-web applications.",
+    "corrected": false,
+    "answer": "B. registerShutdownHook()",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0805",
+    "topic": "Java OOP",
+    "question": "How to reload changes on Spring Boot without restarting the server?",
+    "options": [
+      "A. spring-boot-devtools dependency",
+      "B. spring-boot-test dependency",
+      "C. spring-boot-web dependency",
+      "D. spring-boot-jasper dependency"
+    ],
+    "answer_index": 0,
+    "explanation": "The spring-boot-devtools dependency enables automatic application restarts by monitoring classpath resources for changes during development. When files are modified, DevTools triggers a fast restart of the application context, allowing developers to see changes immediately without manually stopping and restarting the server. The other dependencies serve different purposes: spring-boot-test is for testing, spring-boot-web provides web capabilities, and spring-boot-jasper handles JSP compilation.",
+    "corrected": false,
+    "answer": "A. spring-boot-devtools dependency",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0807",
+    "topic": "Java OOP",
+    "question": "LoggerInterceptor implementing HandlerInterceptor overrides which methods?",
+    "options": [
+      "A. preHandle(), postHandle(), afterCompletion()",
+      "B. preHandlerBean(), postHandlerBean(), afterCompletion()",
+      "C. PreProcessHandler(), PostProcessHandler(), afterCompletion()",
+      "D. PreHandler(), PostHandler(), afterCompletion()"
+    ],
+    "answer_index": 0,
+    "explanation": "The HandlerInterceptor interface in Spring MVC defines exactly three methods: preHandle(), postHandle(), and afterCompletion(), which control request lifecycle stages. LoggerInterceptor must override these specific method signatures to properly hook into the request processing pipeline before, after, and upon completion of handler execution.",
+    "corrected": false,
+    "answer": "A. preHandle(), postHandle(), afterCompletion()",
+    "trust": "baseline",
+    "recovered": true,
+    "repair_origin": "derived",
+    "options_synthesized": true
+  },
+  {
+    "id": "q0808",
+    "topic": "Java OOP",
+    "question": "Which annotation represents an advice to be executed after the method execution only if method exits by throwing an exception?",
+    "options": [
+      "A. @Before",
+      "B. @After",
+      "C. @Around",
+      "D. @AfterThrowing"
+    ],
+    "answer_index": 3,
+    "explanation": "The `@AfterThrowing` annotation is specifically designed to intercept method execution when an exception is thrown, allowing advice to execute only in that exceptional scenario. Unlike `@After` which runs regardless of how a method exits, `@AfterThrowing` provides targeted exception handling within the AOP framework, enabling cross-cutting concerns like logging or exception translation.",
+    "corrected": false,
+    "answer": "D. @AfterThrowing",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0809",
+    "topic": "Java OOP",
+    "question": "What attribute is added in the bean.xml to reduce or eliminate the need of <property> and <constructor-arg>?",
+    "options": [
+      "A. Autodiscovery",
+      "B. Autowire",
+      "C. Scope",
+      "D. Auto-detect"
+    ],
+    "answer_index": 1,
+    "explanation": "The `autowire` attribute in Spring's bean.xml enables automatic dependency injection by allowing the container to resolve and inject bean dependencies without explicitly declaring them via `<property>` or `<constructor-arg>` elements. When autowire is configured (e.g., `autowire=\"byType\"` or `autowire=\"byName\"`), Spring automatically matches and injects dependencies based on type or name matching, significantly reducing XML configuration boilerplate.",
+    "corrected": false,
+    "answer": "B. Autowire",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0810",
+    "topic": "Java OOP",
+    "question": "Which of the following examples summarizes Program to an interface rather than an implementation?",
+    "options": [
+      "A. Map m = new HashMap();",
+      "B. ArrayList list = new ArrayList();",
+      "C. ArrayList<Integer> = new ArrayList<Integer>();",
+      "D. String s = \"HelloWorld\";"
+    ],
+    "answer_index": 0,
+    "explanation": "'ArrayList<Integer> = new ArrayList<Integer>();' is the correct answer per language specification.",
+    "corrected": false,
+    "answer": "A. Map m = new HashMap();",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0811",
+    "topic": "Java OOP",
+    "question": "If any of the beans implements the BeanPostProcessor interface, Spring will call which of these methods?",
+    "options": [
+      "A. processBeforeInitialization()",
+      "B. BeanPostProcessor()",
+      "C. postProcessInterface()",
+      "D. postProcessBeforeInitialization()"
+    ],
+    "answer_index": 3,
+    "explanation": "The `BeanPostProcessor` interface defines two callback methods that Spring invokes during bean lifecycle: `postProcessBeforeInitialization()` (called before `@PostConstruct` or `init-method`) and `postProcessAfterInitialization()` (called after). Option D uses the correct method name with the proper naming convention; the other options are either non-existent methods (A, C) or refer to the interface itself rather than a method (B).",
+    "corrected": false,
+    "answer": "D. postProcessBeforeInitialization()",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0812",
+    "topic": "Java OOP",
+    "question": "Which Collections elements does Spring support?",
+    "options": [
+      "A. List, hashmap, arraylist, and set",
+      "B. List, props, hashmaps, and arraylist",
+      "C. List, set, map, and props",
+      "D. Hashmaps, arraylist, list, and treemap"
+    ],
+    "answer_index": 2,
+    "explanation": "Spring's dependency injection container supports the four core Java collection interfaces: List (ordered collections), Set (unique elements), Map (key-value pairs), and Properties (a specialized Map for string key-value pairs commonly used in configuration). Options A, B, and D incorrectly include concrete implementations (HashMap, ArrayList) rather than the abstract collection types that Spring actually configures, and they omit or misname Properties as \"props.\"",
+    "corrected": false,
+    "answer": "C. List, set, map, and props",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0813",
+    "topic": "Java OOP",
+    "question": "What will be the result if you use Web-aware Spring Application Context scopes in a regular Spring IoC container?",
+    "options": [
+      "A. It will return nothing.",
+      "B. It will return a NullPointer Exception",
+      "C. It will return a IllegalStateException",
+      "D. It will work correctly."
+    ],
+    "answer_index": 2,
+    "explanation": "Web-aware scopes (request, session, application) rely on `RequestContextHolder` to access the current HTTP request context, which is only populated by Spring's web infrastructure (DispatcherServlet). In a regular IoC container without this context, the framework silently falls back to singleton scope behavior, effectively returning the bean without raising an error, though the web-scoping directives are ignored.",
+    "corrected": false,
+    "answer": "C. It will return a IllegalStateException",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0814",
+    "topic": "Java OOP",
+    "question": "Which Bean scopes are valid only in the context of a web-aware Spring Application Context?",
+    "options": [
+      "A. Singleton and Prototype",
+      "B. Session, Global Session, and Request",
+      "C. Singleton, Prototype, Request, and Session",
+      "D. Session, Singleton, and Global Session"
+    ],
+    "answer_index": 1,
+    "explanation": "Session, Global Session, and Request scopes are web-specific because they depend on HTTP request/session lifecycle concepts that only exist within a web application context. Singleton and Prototype scopes are general-purpose and work in any Spring application context (web or non-web), making them universally valid regardless of the container type.",
+    "corrected": false,
+    "answer": "B. Session, Global Session, and Request",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0815",
+    "topic": "Java OOP",
+    "question": "To use java.util.List, what is the Spring Collections element that you need?",
+    "options": [
+      "A. <list>",
+      "B. <lists>",
+      "C. util:list",
+      "D. <array>"
+    ],
+    "answer_index": 0,
+    "explanation": "The `<list>` element is the correct Spring XML configuration element for injecting `java.util.List` dependencies. Spring's bean definition language uses lowercase XML tags (like `<list>`, `<map>`, `<set>`) to define collection types, following XML naming conventions and Spring's established schema. The `util:list` namespace would require an additional namespace declaration and is used for defining standalone list beans, not for direct injection into bean properties.",
+    "corrected": false,
+    "answer": "A. <list>",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0816",
+    "topic": "HTML/CSS",
+    "question": "Which of the below are benefits of using DI?",
+    "options": [
+      "A. Tight coupling",
+      "B. Loose coupling",
+      "C. Easy testing",
+      "D. Removing run time error"
+    ],
+    "answer_index": 1,
+    "explanation": "Why B is Correct\n\nDependency Injection removes hard dependencies by injecting required objects rather than having classes create them internally, resulting in loose coupling between components. This allows classes to depend on abstractions (interfaces) instead of concrete implementations, making the system more flexible and maintainable. While DI also facilitates easy testing (option C), loose coupling is its primary and most fundamental benefit.",
+    "corrected": false,
+    "answer": "B. Loose coupling",
+    "trust": "baseline"
+  }
+]

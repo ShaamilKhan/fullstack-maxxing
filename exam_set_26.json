@@ -1,0 +1,980 @@
+[
+  {
+    "question": "Method used to process bean after initialization callback a) scope",
+    "options": [
+      "A. getBean",
+      "B. postProcessAfterInitialization()",
+      "C. it’s own constructor",
+      "D. postProcessBeforeInitialization()"
+    ],
+    "answer_index": 1,
+    "answer": "B. postProcessAfterInitialization()",
+    "topic": "JavaScript",
+    "explanation": "After a bean's initialization callback completes, Spring invokes `postProcessAfterInitialization()` on registered `BeanPostProcessor` instances to allow further processing before the bean enters service.\n\nThe constructor is called during bean instantiation, not after initialization callbacks, making it the wrong answer despite being listed as correct.",
+    "corrected": false,
+    "id": "q1602",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "It’s possible to replace the original bean instance with a brand-new instance in your bean post processor",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "answer": "A. True",
+    "topic": "Core Java & OOP",
+    "explanation": "A BeanPostProcessor's postProcessBeforeInitialization and postProcessAfterInitialization methods return an Object, allowing you to return a completely different instance than the one passed in. Spring's container simply uses whatever object these methods return as the bean reference for subsequent processing, registration, and injection into other beans.",
+    "corrected": false,
+    "id": "q1603",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "In application context, BeanPost Processors are registered using addBeanPostProcessors method",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 1,
+    "answer": "B. False",
+    "topic": "Core Java & OOP",
+    "explanation": "BeanPostProcessors are registered via the addBeanPostProcessor (singular) method on the ConfigurableBeanFactory interface, not addBeanPostProcessors. This method is typically invoked internally by the container during context refresh, rather than through a plural-named API.",
+    "corrected": false,
+    "id": "q1604",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "1. Which version of Java introduced annotation?",
+    "options": [
+      "A. Java 5",
+      "B. Java 6",
+      "C. Java 7",
+      "D. Java 8"
+    ],
+    "answer_index": 0,
+    "answer": "A. Java 5",
+    "topic": "Core Java & OOP",
+    "explanation": "Annotations were introduced as a feature in Java 5 (2004) to provide metadata that doesn't directly affect code execution but informs the compiler and runtime.\n\nJava 5 also introduced generics and enums alongside annotations, marking a major language enhancement that modernized Java's type system and metadata capabilities.",
+    "corrected": false,
+    "id": "q1605",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Java-based configuration lets you configure Spring without ___. A) Annotations",
+    "options": [
+      "A. Xml",
+      "B. Both A and B.",
+      "C. None of the above",
+      "D. Java classes"
+    ],
+    "answer_index": 0,
+    "answer": "A. Xml",
+    "topic": "Core Java & OOP",
+    "explanation": "Java-based configuration uses @Configuration and @Bean annotations to define Spring beans programmatically instead of XML files. This approach replaces XML configuration entirely while still using annotations.",
+    "corrected": false,
+    "id": "q1606",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Choose the correct syntax to access base package location to scan classes.",
+    "options": [
+      "A. <context:component-scan base package/>",
+      "B. <context:annotation-config>",
+      "C. <tx:annotation driven>",
+      "D. <mvc:annotation-driven>"
+    ],
+    "answer_index": 0,
+    "answer": "A. <context:component-scan base package/>",
+    "topic": "Spring Core",
+    "explanation": "The `<context:component-scan>` element with the `base-package` attribute tells Spring where to scan for annotated components like @Component, @Service, and @Repository.\n\nOther options configure different features: annotation-config enables processing of annotations, while tx and mvc options handle transactions and MVC specifically, not classpath scanning.",
+    "corrected": false,
+    "id": "q1607",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "A bean can have more than one name using multiple id attributes?",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "answer": "A. True",
+    "topic": "Core Java & OOP",
+    "explanation": "In Spring, a single bean can be registered with multiple identifiers using the `id` and `name` attributes, allowing multiple ways to reference the same bean instance.\n\nThe `name` attribute accepts comma or semicolon-separated values, enabling aliases that point to one bean definition for flexible dependency injection.",
+    "corrected": false,
+    "id": "q1609",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "In Spring, when a bean name is not explicitly specified (e.g., using @Component without a value), what is the default naming convention used for the bean?",
+    "options": [
+      "A. The class name with the first letter converted to lowercase (camelCase)",
+      "B. The fully qualified class name including package",
+      "C. The class name in all uppercase letters",
+      "D. A randomly generated UUID string"
+    ],
+    "answer_index": 0,
+    "answer": "A. The class name with the first letter converted to lowercase (camelCase)",
+    "topic": "Spring Core",
+    "explanation": "Spring's default bean naming strategy takes the simple class name and decapitalizes the first letter, so \"UserService\" becomes \"userService\". This behavior is implemented in the AnnotationBeanNameGenerator class, which Spring uses during component scanning to derive bean names when no explicit name is provided.",
+    "corrected": false,
+    "id": "q1610",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "question": "What are the following things we don't need to perform in Spring JDBC Template?",
+    "options": [
+      "A. We need to write a lot of code before and after executing the query,such as creating",
+      "B. need to perform exception handling on the database logic.",
+      "C. Need to handle transaction",
+      "D. All of the Above."
+    ],
+    "answer_index": 3,
+    "answer": "D. All of the Above.",
+    "topic": "Spring Core",
+    "explanation": "Spring JdbcTemplate abstracts away boilerplate code like connection creation, statement preparation, and resource cleanup automatically.\n\nException handling and transaction management are still necessary responsibilities that developers must implement when using JdbcTemplate.",
+    "corrected": false,
+    "id": "q1611",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "SimpleJdbcTemplate class wraps the JdbcTemplate class and provides the update",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "answer": "A. True",
+    "topic": "Spring Core",
+    "explanation": "SimpleJdbcTemplate is a Spring wrapper around JdbcTemplate that simplifies JDBC operations by using varargs and generics for cleaner code.\n\nIt provides convenience methods for update operations, including simplified parameter handling and reduced boilerplate compared to raw JdbcTemplate usage.",
+    "corrected": false,
+    "id": "q1612",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "What is Spring MVC framework?",
+    "options": [
+      "A. Spring MVC framework is Model-Value-Class architecture and used to bind model data with values.",
+      "B. The Spring web MVC framework provides model-view-controller architecture and ready components that can be used to develop flexible and loosely coupled web applications.",
+      "C. Spring MVC framework is used for Transaction management for Web Applications.",
+      "D. Spring MVC framework is used for AOP for Web Applications."
+    ],
+    "answer_index": 1,
+    "answer": "B. The Spring web MVC framework provides model-view-controller architecture and ready components that can be used to develop flexible and loosely coupled web applications.",
+    "topic": "Spring Core",
+    "explanation": "Spring MVC implements the Model-View-Controller design pattern, separating application logic, presentation, and user input handling for cleaner web application architecture. It provides pre-built components like DispatcherServlet, controllers, and view resolvers that enable developers to build flexible, loosely coupled, and easily testable web applications.",
+    "corrected": false,
+    "id": "q1628",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "derived",
+    "options_synthesized": true
+  },
+  {
+    "question": "Design pattern implemented by Dispatcher Servlet.",
+    "options": [
+      "A. jsp",
+      "B. tiles",
+      "C. front controller",
+      "D. none of the mentioned"
+    ],
+    "answer_index": 2,
+    "answer": "C. front controller",
+    "topic": "Core Java & OOP",
+    "explanation": "DispatcherServlet acts as a single entry point that receives all incoming HTTP requests before delegating them to appropriate handlers, controllers, or views. This centralized request-handling behavior is the defining characteristic of the Front Controller pattern in web application architectures like Spring MVC.",
+    "corrected": false,
+    "id": "q1630",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Class used to give a class behavior of a Dispatcher Servlet.",
+    "options": [
+      "A. AbstractController",
+      "B. Controller",
+      "C. Abstract Class",
+      "D. AbstractAction"
+    ],
+    "answer_index": 0,
+    "answer": "A. AbstractController",
+    "topic": "Core Java & OOP",
+    "explanation": "AbstractController is the base class in Spring MVC that provides core dispatcher servlet behavior and request handling mechanisms for all controllers.\n\nIt implements the Controller interface and handles common tasks like request mapping, exception handling, and view resolution centrally.",
+    "corrected": false,
+    "id": "q1631",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Annotation for Controller Class.",
+    "options": [
+      "A. @Before",
+      "B. @Controller",
+      "C. @After",
+      "D. @Exception"
+    ],
+    "answer_index": 1,
+    "answer": "B. @Controller",
+    "topic": "Spring Core",
+    "explanation": "The @Controller annotation marks a class as a Spring MVC controller, enabling it to handle HTTP requests and return responses or views.\n\n@Before, @After, and @Exception are used for aspect-oriented programming or testing, not for designating request handler classes.",
+    "corrected": false,
+    "id": "q1632",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Handler method annotation.",
+    "options": [
+      "A. @Before",
+      "B. @Controller",
+      "C. @After",
+      "D. @RequestMapping"
+    ],
+    "answer_index": 3,
+    "answer": "D. @RequestMapping",
+    "topic": "Spring Core",
+    "explanation": "@RequestMapping maps HTTP requests to handler methods in Spring controllers, defining the URL path and HTTP method for request routing.\n\n@Before, @After are test annotations; @Controller marks a class but doesn't map requests—only @RequestMapping performs handler method annotation.",
+    "corrected": false,
+    "id": "q1633",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Method arguments that can be used in handler methods using the @RequestMapping annotation.",
+    "options": [
+      "A. HttpServletRequest or HttpServleResponse",
+      "B. @RequestParam",
+      "C. @ModelAttribute",
+      "D. All of the mentioned"
+    ],
+    "answer_index": 3,
+    "answer": "D. All of the mentioned",
+    "topic": "Spring Core",
+    "explanation": "Spring's @RequestMapping handler methods support multiple argument types including HttpServletRequest/Response for direct servlet access, @RequestParam for query parameters, and @ModelAttribute for object binding.\n\nAll these argument types are valid method parameters that Spring automatically resolves and injects during request processing.",
+    "corrected": false,
+    "id": "q1634",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Annotation which represents cookie values of requests.",
+    "options": [
+      "A. HttpServletRequest or HttpServleResponse",
+      "B. @RequestParam",
+      "C. @Cookie",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 3,
+    "answer": "D. None of the mentioned",
+    "topic": "Core Java & OOP",
+    "explanation": "The correct annotation for cookie values is `@CookieValue`, not `@Cookie`. Options A, B, and C don't represent cookie value annotations in Spring.",
+    "corrected": false,
+    "id": "q1635",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "To add attributes to the model.",
+    "options": [
+      "A. Map",
+      "B. ModelMap",
+      "C. All of the mentioned",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 2,
+    "answer": "C. All of the mentioned",
+    "topic": "Core Java & OOP",
+    "explanation": "Both Map and ModelMap are valid approaches to add attributes to a model in Spring MVC controllers. They serve the same purpose of passing data to views.",
+    "corrected": false,
+    "id": "q1636",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "To access the binding and validation result for the command object.",
+    "options": [
+      "A. Errors",
+      "B. BindingResult",
+      "C. All of the mentioned",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 2,
+    "answer": "C. All of the mentioned",
+    "topic": "Core Java & OOP",
+    "explanation": "Both `Errors` and `BindingResult` are used to access binding and validation results; `BindingResult` is the modern interface while `Errors` is its parent interface.\n\nIn Spring, `BindingResult` wraps validation errors and provides methods to check field errors, making both options valid for accessing binding results.",
+    "corrected": false,
+    "id": "q1637",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "To notify its completion of session processing.",
+    "options": [
+      "A. Errors",
+      "B. BindingResult",
+      "C. SessionStatus",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 2,
+    "answer": "C. SessionStatus",
+    "topic": "Core Java & OOP",
+    "explanation": "SessionStatus is a Spring interface specifically designed to mark a session as complete, signaling the framework to clean up session attributes after request processing finishes.\n\nIt provides the `setComplete()` method that explicitly notifies the DispatcherServlet that session processing is done and persistent session storage should be cleared.",
+    "corrected": false,
+    "id": "q1638",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Controller Class renders the objects passed by the controller’s handler method.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 1,
+    "answer": "B. False",
+    "topic": "Core Java & OOP",
+    "explanation": "The View layer, not the Controller, is responsible for rendering objects. The Controller passes data to the View, which then renders it for display to the user.",
+    "corrected": false,
+    "id": "q1639",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Parameter used to specify a configuration file.",
+    "options": [
+      "A. contextConfigLocation",
+      "B. contextConfigure",
+      "C. contextLocation",
+      "D. none of these"
+    ],
+    "answer_index": 0,
+    "answer": "A. contextConfigLocation",
+    "topic": "Core Java & OOP",
+    "explanation": "The parameter `contextConfigLocation` is the standard Spring framework parameter used in web.xml to specify the path to the application context configuration file.\n\nIt tells the ContextLoaderListener where to load Spring bean definitions and application configuration during servlet container initialization.",
+    "corrected": false,
+    "id": "q1640",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "The @RequestMapping annotation can be applied to the class level only.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 1,
+    "answer": "B. False",
+    "topic": "Spring Core",
+    "explanation": "The @RequestMapping annotation can be applied to both class and method levels in Spring. Class-level mappings define base URL paths, while method-level mappings specify individual endpoint routes.",
+    "corrected": false,
+    "id": "q1641",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Bean classes pre-registered in the web application context by default.",
+    "options": [
+      "A. DefaultAnnotationHandlerMapping",
+      "B. AnnotationMethodHandlerAdapter",
+      "C. All of the mentioned",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 2,
+    "answer": "C. All of the mentioned",
+    "topic": "Core Java & OOP",
+    "explanation": "Both DefaultAnnotationHandlerMapping and AnnotationMethodHandlerAdapter are automatically registered as bean classes in the web application context when using Spring's annotation-based configuration.\n\nThese handler mapping and adapter classes are essential infrastructure beans that enable Spring MVC to process annotated controller methods without explicit configuration.",
+    "corrected": false,
+    "id": "q1642",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "By default, @RequestMapping gets all the POST Requests.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 1,
+    "answer": "B. False",
+    "topic": "Spring Core",
+    "explanation": "By default, @RequestMapping accepts all HTTP methods (GET, POST, PUT, DELETE, etc.), not just POST requests.\n\nTo restrict to POST only, you must explicitly specify method=RequestMethod.POST or use @PostMapping annotation.",
+    "corrected": false,
+    "id": "q1643",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Callback methods provided by HandlerInterceptor to implement.",
+    "options": [
+      "A. preHandle()",
+      "B. postHandle()",
+      "C. afterCompletion()",
+      "D. all of the mentioned"
+    ],
+    "answer_index": 3,
+    "answer": "D. all of the mentioned",
+    "topic": "Spring Core",
+    "explanation": "HandlerInterceptor requires implementing all three callback methods to intercept requests at different execution stages: before handling, after handling, and after completion.\n\nThese methods enable comprehensive request/response processing, logging, and resource cleanup throughout the entire request lifecycle in Spring applications.",
+    "corrected": false,
+    "id": "q1644",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "All of spring’s various Controller inherit from AbstractControllor?",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 1,
+    "answer": "B. False",
+    "topic": "Core Java & OOP",
+    "explanation": "Spring's controller classes like DispatcherServlet and handler methods use AbstractController as a base class providing common HTTP request handling functionality.\n\nAll Spring MVC controllers ultimately inherit from AbstractController or implement Controller interface, establishing a unified hierarchy for request processing.",
+    "corrected": false,
+    "id": "q1645",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Where we use Repository annotation?",
+    "options": [
+      "A. test class",
+      "B. dao class",
+      "C. bean class",
+      "D. controller class"
+    ],
+    "answer_index": 1,
+    "answer": "B. dao class",
+    "topic": "Core Java & OOP",
+    "explanation": "The @Repository annotation marks a DAO class as a Spring component for data access, enabling exception translation and dependency injection.\n\nIt's used in DAO/persistence layer classes, not test classes—the given correct answer appears incorrect based on standard Spring conventions.",
+    "corrected": false,
+    "id": "q1648",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which methods are invoked in controller before @RequestMapping methods in same controller?",
+    "options": [
+      "A. @RequestParam",
+      "B. @ModelAttribute",
+      "C. all of the above",
+      "D. None of the above"
+    ],
+    "answer_index": 1,
+    "answer": "B. @ModelAttribute",
+    "topic": "Spring Core",
+    "explanation": "Methods annotated with @ModelAttribute in a controller are invoked before any @RequestMapping handler method executes, populating the model with data. This allows shared attributes to be available across all request handlers, whereas @RequestParam simply binds a request parameter to a method argument and doesn't run independently beforehand.",
+    "corrected": false,
+    "id": "q1650",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "Which feature of spring gives us annotation?",
+    "options": [
+      "A. Transaction management.",
+      "B. Inversion of control container (dependency injection)",
+      "C. autodetection",
+      "D. Data access framework."
+    ],
+    "answer_index": 2,
+    "answer": "C. autodetection",
+    "topic": "Spring Core",
+    "explanation": "Spring's @Transactional annotation enables declarative transaction management, allowing developers to manage transactions through metadata rather than programmatic code.\n\nAnnotations like @Transactional, @Propagation, and @Isolation provide the core feature that Spring uses to offer annotation-based transaction management capabilities.",
+    "corrected": false,
+    "id": "q1651",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "What is the use of ModelAttribute annotation?",
+    "options": [
+      "A. injects data objects the model before jsp loads",
+      "B. read data from an existing model assigning it to handler method parameters",
+      "C. both a and b",
+      "D. none of above"
+    ],
+    "answer_index": 2,
+    "answer": "C. both a and b",
+    "topic": "Core Java & OOP",
+    "explanation": "The @ModelAttribute annotation executes before the handler method, populating the model with objects that JSP pages can access. It prepares data availability in the model scope prior to view rendering.",
+    "corrected": false,
+    "id": "q1652",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Identify which annotation can be used with @Controller?",
+    "options": [
+      "A. @RequestMapping",
+      "B. @ModelAttribute",
+      "C. @PathVariable",
+      "D. @Repository"
+    ],
+    "answer_index": 0,
+    "answer": "A. @RequestMapping",
+    "topic": "Spring Core",
+    "explanation": "@RequestMapping maps HTTP requests to controller methods, enabling URL routing and request handling within @Controller classes.\n\n@Repository, @PathVariable, and @ModelAttribute serve different purposes—data access, URL parameters, and model binding—not controller-level request mapping.",
+    "corrected": false,
+    "id": "q1653",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which package is used for Controller annotation?",
+    "options": [
+      "A. import org.springframework.be",
+      "B. import org.springframework.stereotype.Controller",
+      "C. import org.stereotype.Controller",
+      "D. import springframework.stereotype.Controller"
+    ],
+    "answer_index": 1,
+    "answer": "B. import org.springframework.stereotype.Controller",
+    "topic": "Core Java & OOP",
+    "explanation": "The @Controller annotation is part of Spring's stereotype annotations, which are defined in the org.springframework.stereotype package for component scanning and bean registration.\n\nOption A is incorrect in the answer key; the correct import is actually org.springframework.stereotype.Controller, making option B the right answer.",
+    "corrected": false,
+    "id": "q1654",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Beans can be created by which of the following properties?",
+    "options": [
+      "A. Static factory-method",
+      "B. Instance Factory-Method",
+      "C. All of the mentioned",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 2,
+    "answer": "C. All of the mentioned",
+    "topic": "Spring Core",
+    "explanation": "Spring IoC container supports creating beans through static factory methods, instance factory methods, and traditional constructors, providing multiple instantiation strategies.\n\nBoth factory method approaches allow flexible object creation by delegating instantiation logic to dedicated methods rather than direct constructor invocation.",
+    "corrected": false,
+    "id": "q1655",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Consider the following Spring-managed bean:\n\n@Component\npublic class MyService {\n    public MyService() {\n        throw new RuntimeException(\"Initialization failed\");\n    }\n}\n\nWhen the Spring ApplicationContext tries to create an instance of MyService during startup, what will be the result?",
+    "options": [
+      "A. BeanCreationException",
+      "B. Bean Created",
+      "C. ClassPathException",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 0,
+    "answer": "A. BeanCreationException",
+    "topic": "Core Java & OOP",
+    "explanation": "Spring wraps any exception thrown during bean instantiation—including constructor exceptions—into a BeanCreationException to signal container-level failure. This wrapping provides context about which bean failed and why, aiding debugging during ApplicationContext startup.",
+    "corrected": false,
+    "id": "q1656",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "question": "Alternate way of initialization method is:-",
+    "options": [
+      "A. init-method attribute",
+      "B. afterPropertiesSet",
+      "C. destroy-method attribute",
+      "D. none of the mentioned"
+    ],
+    "answer_index": 1,
+    "answer": "B. afterPropertiesSet",
+    "topic": "Core Java & OOP",
+    "explanation": "The init-method attribute in Spring XML configuration allows specifying a custom initialization method to invoke after bean properties are set, providing an alternative to implementing InitializingBean interface.\n\nThe afterPropertiesSet method requires implementing InitializingBean interface, making init-method attribute the alternate, more flexible approach for initialization.",
+    "corrected": false,
+    "id": "q1657",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Is this bean configuration metadata correct?\n<beans ...>\nbean id=\"com.shop.Product.AAA\"\nclass=\"org.springframework.beans.factory.config.FieldRetrievingFactoryBean\" /\nbean id=\"com.shop.Product.CDRW\"\nclass=\"org.springframework.beans.factory.config.FieldRetrievingFactoryBean\" /\n</beans>",
+    "options": [
+      "A. Yes",
+      "B. No"
+    ],
+    "answer_index": 0,
+    "answer": "A. Yes",
+    "topic": "Core Java & OOP",
+    "explanation": "The bean id itself follows the convention \"className.FIELD_NAME,\" which FieldRetrievingFactoryBean uses to automatically infer the static field to retrieve, since no explicit \"staticField\" property is set. Spring resolves the target class and field name directly from the bean id, making this a valid shorthand configuration for referencing static fields like constants.",
+    "corrected": false,
+    "id": "q1658",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "By default, when the DispatcherServlet class is loaded, it loads the_______ from the XML file.",
+    "options": [
+      "A. SpringApplicationContext",
+      "B. SpringDispatcher",
+      "C. SpringController",
+      "D. ApplicationContext"
+    ],
+    "answer_index": 3,
+    "answer": "D. ApplicationContext",
+    "topic": "Spring Core",
+    "explanation": "When DispatcherServlet initializes, it creates a WebApplicationContext, a specialized type of ApplicationContext, by reading bean definitions from an XML configuration file. This ApplicationContext holds and manages the beans, such as controllers and view resolvers, needed to handle web requests.",
+    "corrected": false,
+    "id": "q1659",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "ViewResolver which maps each view name tol an application’s directory.",
+    "options": [
+      "A. InternalViewResolver",
+      "B. InternalResourceViewResolver",
+      "C. InternalResolver",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 1,
+    "answer": "B. InternalResourceViewResolver",
+    "topic": "Spring Core",
+    "explanation": "InternalViewResolver is Spring's ViewResolver interface implementation that maps logical view names to physical view resources located in the application's directory structure.\n\nIt resolves view names by combining a prefix and suffix with the view name to construct the final resource path for rendering.",
+    "corrected": false,
+    "id": "q1660",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "InternalResourceViewResolver resolves view names into view objects of type.",
+    "options": [
+      "A. JstlView",
+      "B. Jst Library",
+      "C. View",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 0,
+    "answer": "A. JstlView",
+    "topic": "Spring Core",
+    "explanation": "InternalResourceViewResolver specifically resolves JSP view names to JstlView objects, which provide JSTL (JavaServer Pages Standard Tag Library) support for dynamic web pages.\n\nJstlView is the default view type returned by InternalResourceViewResolver when configured for JSP-based views in Spring MVC applications.",
+    "corrected": false,
+    "id": "q1661",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "View beans from a resource bundle is loaded by.",
+    "options": [
+      "A. ResourceBundleViewResolver",
+      "B. ResourceBundleView",
+      "C. ResourceViewResolver",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 0,
+    "answer": "A. ResourceBundleViewResolver",
+    "topic": "Core Java & OOP",
+    "explanation": "ResourceBundleViewResolver is a Spring ViewResolver that loads view beans from resource bundles by mapping logical view names to bean definitions stored in properties files.\n\nIt resolves view names by looking up bean references in ResourceBundle files, allowing externalized view configuration without requiring XML or Java bean definitions.",
+    "corrected": false,
+    "id": "q1663",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Inspection of header is done by which of the following.",
+    "options": [
+      "A. InternalViewResolver",
+      "B. ContentNegotiatingViewResolver",
+      "C. ContentNegotiating",
+      "D. InternalResolver"
+    ],
+    "answer_index": 1,
+    "answer": "B. ContentNegotiatingViewResolver",
+    "topic": "Core Java & OOP",
+    "explanation": "InternalViewResolver inspects HTTP request headers to determine the appropriate view technology (JSP, Velocity, etc.) for rendering responses.\n\nThis resolver matches content types and Accept headers against configured view mappings to select the correct view implementation.",
+    "corrected": false,
+    "id": "q1664",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "ContentNegotiatingViewResolver resolver configuration sets up the resolver to have the highest priority among all resolvers.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "answer": "A. True",
+    "topic": "Core Java & OOP",
+    "explanation": "ContentNegotiatingViewResolver typically sets its \"order\" property to a low value (often 0 or Ordered.HIGHEST_PRECEDENCE) so Spring evaluates it before other registered ViewResolvers. This ensures it can select the correct view based on requested media type before falling back to other resolution strategies.",
+    "corrected": false,
+    "id": "q1665",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "The ContentNegotiatingViewResolver resolver first determines the media type for a request based on which of the following criteria?",
+    "options": [
+      "A. It checks a request path extension",
+      "B. If a request path has an extension but no match can be found in the default mediaTypes section of the ContentNegotiatingViewResolver bean",
+      "C. If no extension is present in a request path, the HTTP Accept header of the request is used",
+      "D. All of the mentioned"
+    ],
+    "answer_index": 3,
+    "answer": "D. All of the mentioned",
+    "topic": "Core Java & OOP",
+    "explanation": "ContentNegotiatingViewResolver determines media type by first checking the request path's file extension (e.g., .json, .xml) against configured mediaTypes mappings. If no extension exists or no mapping matches, it falls back to parsing the HTTP Accept header to negotiate the appropriate content type.",
+    "corrected": false,
+    "id": "q1666",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "To configure the exception mappings in the web application context.",
+    "options": [
+      "A. SimpleMappingExceptionResolver",
+      "B. ExceptionResolver",
+      "C. ExceptionViewResolver",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 0,
+    "answer": "A. SimpleMappingExceptionResolver",
+    "topic": "Core Java & OOP",
+    "explanation": "SimpleMappingExceptionResolver is a Spring class that maps exception types to view names, allowing centralized exception handling configuration in the web application context.\n\nExceptionResolver is a generic interface; SimpleMappingExceptionResolver is the concrete implementation specifically designed for exception-to-view mapping in Spring MVC.",
+    "corrected": false,
+    "id": "q1667",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "import javax.servlet.http.HttpServletRequest;\nimport javax.servlet.http.HttpServletResponse;\nimport org.springframework.web.servlet.ModelAndView;\nimport org.springframework.web.servlet.mvc.AbstractController;\npublic class BigController extends AbstractController\n{\n@Override\nprotected ModelAndView handleRequestInternal(HttpServletRequest request, HttpServletResponse response) throws Exception\n{\nSystem.out.println(\"You're big!\");\nreturn new ModelAndView(\"big\");\n}\n}\nThis above code creates a single-action controller with configurations regarding supported methods, session and caching can be specified in the bean declaration of the controller.\n<bean name=\"/big\" class=\"net.codejava.spring.BigController\"\n<property name=\"supportedMethods\" value=\"POST\"/>\n</bean>\nThis configuration supports which method that is supported by this controller handler method",
+    "options": [
+      "A. Only GET method",
+      "B. Only POST method",
+      "C. Both a and b",
+      "D. Only PUT method"
+    ],
+    "answer_index": 1,
+    "answer": "B. Only POST method",
+    "topic": "Core Java & OOP",
+    "explanation": "The bean declaration explicitly sets the supportedMethods property to \"POST\", restricting the controller to accept only HTTP POST requests. Since AbstractController checks this property and rejects requests with unsupported methods, GET requests would be denied with an HTTP 405 error.",
+    "corrected": false,
+    "id": "q1668",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source",
+    "options_synthesized": true
+  },
+  {
+    "question": "Method arguments that can be used in handler methods using the @RequestMapping",
+    "options": [
+      "A. HttpServletRequest or HttpServleResponse",
+      "B. @RequestParam",
+      "C. @ModelAttribute",
+      "D. All of the mentioned"
+    ],
+    "answer_index": 3,
+    "answer": "D. All of the mentioned",
+    "topic": "Spring Core",
+    "explanation": "HttpServletRequest and HttpServletResponse are always injectable parameters in @RequestMapping handlers as they're core servlet objects automatically available in Spring's request handling pipeline.\n\n@RequestParam and @ModelAttribute are optional annotations requiring explicit declaration, whereas servlet request/response objects are implicitly available without additional configuration.",
+    "corrected": false,
+    "id": "q1670",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "___________is a specific type of component, used in MVC applications and mostly used with RequestMapping annotation.",
+    "options": [
+      "A. @Controller",
+      "B. @Component",
+      "C. @Repository",
+      "D. @Service"
+    ],
+    "answer_index": 0,
+    "answer": "A. @Controller",
+    "topic": "Spring Core",
+    "explanation": "@Controller marks a class as a Spring MVC web controller that handles HTTP requests and returns views or response data. It is typically combined with @RequestMapping to map specific URLs to handler methods within that controller.",
+    "corrected": false,
+    "id": "q1671",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "Which handler to use, when this handler mapping does not result in a matching handler.",
+    "options": [
+      "A. default Handler",
+      "B. HandlerExecutionChain",
+      "C. DispatcherServlet",
+      "D. HandlerAdapter"
+    ],
+    "answer_index": 0,
+    "answer": "A. default Handler",
+    "topic": "Spring Core",
+    "explanation": "When no handler mapping matches a request, the default handler serves as a fallback mechanism to prevent null exceptions and handle unmatched routes gracefully.\n\nDispatcherServlet delegates to handler mappings, but if all fail, it uses the default handler to process the request uniformly.",
+    "corrected": false,
+    "id": "q1673",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "BeanNameUrlHandlerMapping maps request URLs to",
+    "options": [
+      "A. beans with the different name.",
+      "B. beans with the same name.",
+      "C. controller .",
+      "D. component."
+    ],
+    "answer_index": 1,
+    "answer": "B. beans with the same name.",
+    "topic": "Core Java & OOP",
+    "explanation": "BeanNameUrlHandlerMapping matches URL patterns to bean names that differ from the URL itself, using a mapping configuration to associate them.\n\nIt allows flexible routing where bean names don't need to match request URLs, enabling multiple beans to handle different URL patterns independently.",
+    "corrected": false,
+    "id": "q1674",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Defining a bean for BeanNameUrlHandlerMapping is not required",
+    "options": [
+      "A. true",
+      "B. false"
+    ],
+    "answer_index": 0,
+    "answer": "A. true",
+    "topic": "Core Java & OOP",
+    "explanation": "BeanNameUrlHandlerMapping automatically detects beans whose names start with \"/\" and maps them as URLs without explicit bean definition required.\n\nSpring's default configuration includes this handler mapping, so it works out-of-the-box for controller beans following the naming convention.",
+    "corrected": false,
+    "id": "q1675",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "In Spring MVC, what is the purpose of the SimpleUrlHandlerMapping class?",
+    "options": [
+      "A. It allows for direct and declarative mapping between bean instances and URLs",
+      "B. It does not allow for direct and declarative mapping between bean instances and URLs",
+      "C. It maps URLs to database tables directly without using beans",
+      "D. It automatically generates REST controllers from URL patterns"
+    ],
+    "answer_index": 0,
+    "answer": "A. It allows for direct and declarative mapping between bean instances and URLs",
+    "topic": "Core Java & OOP",
+    "explanation": "SimpleUrlHandlerMapping uses a properties-style mapping (URL pattern to bean name) configured in the application context, letting developers explicitly bind controller beans to specific URL paths. This declarative approach avoids annotation-based routing, giving centralized control over URL-to-handler associations directly in configuration.",
+    "corrected": false,
+    "id": "q1676",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "question": "To get the control over which mapping is used, the priorities are set using",
+    "options": [
+      "A. constructor .",
+      "B. getOrder(int order) method.",
+      "C. setOrder(int order) method",
+      "D. None"
+    ],
+    "answer_index": 2,
+    "answer": "C. setOrder(int order) method",
+    "topic": "Core Java & OOP",
+    "explanation": "Priorities for mapping selection are configured during object initialization through constructor parameters, which define the order before runtime execution begins. This approach ensures immutable priority assignment and prevents dynamic changes that could cause inconsistent mapping behavior.",
+    "corrected": false,
+    "id": "q1677",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "A handler will always be wrapped in a __________ instance",
+    "options": [
+      "A. RequestMappingURLHandlerMapping",
+      "B. HandlerExecutionChain",
+      "C. HandlerMethodAdapter",
+      "D. HandlerInterceptorChain"
+    ],
+    "answer_index": 1,
+    "answer": "B. HandlerExecutionChain",
+    "topic": "Core Java & OOP",
+    "explanation": "A handler is wrapped in RequestMappingURLHandlerMapping because this handler mapping class intercepts requests and associates them with appropriate handler objects based on URL patterns.\n\nRequestMappingURLHandlerMapping manages the mapping lifecycle, ensuring handlers are properly discovered, registered, and retrieved during request processing in Spring MVC.",
+    "corrected": false,
+    "id": "q1678",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "In Spring MVC, the HandlerExecutionChain class, which wraps a handler along with its applicable interceptors, belongs to which package?",
+    "options": [
+      "A. org.springframework.web.servlet",
+      "B. java.io",
+      "C. java.lang",
+      "D. javax.servlet"
+    ],
+    "answer_index": 0,
+    "answer": "A. org.springframework.web.servlet",
+    "topic": "Core Java & OOP",
+    "explanation": "HandlerExecutionChain is a core Spring MVC framework class that manages handler objects and their associated HandlerInterceptors during request processing. As part of Spring's web servlet infrastructure, it logically resides in org.springframework.web.servlet alongside DispatcherServlet and related handler mapping classes.",
+    "corrected": false,
+    "id": "q1679",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "question": "If Spring can’t found handler mapping, the DispatcherServlet will creates a _____________ automatically.",
+    "options": [
+      "A. RequestMappingURLHandlerMapping",
+      "B. HandlerExecutionChain",
+      "C. BeanNameUrlHandlerMapping",
+      "D. DispatcherServlet."
+    ],
+    "answer_index": 2,
+    "answer": "C. BeanNameUrlHandlerMapping",
+    "topic": "Spring Core",
+    "explanation": "If no HandlerMapping bean is explicitly defined in the application context, DispatcherServlet falls back to registering default strategies, including BeanNameUrlHandlerMapping. This default mapping matches incoming request URLs to bean names prefixed with \"/\" defined in the context, ensuring basic routing still functions.",
+    "corrected": false,
+    "id": "q1680",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "Which property is replaced by p-namespace in spring?",
+    "options": [
+      "A. <property/>",
+      "B. <constructor-arg>"
+    ],
+    "answer_index": 0,
+    "answer": "A. <property/>",
+    "topic": "Spring Core",
+    "explanation": "The p-namespace provides a shorthand XML attribute syntax for setting bean properties directly on the bean element, eliminating nested <property> tags. Each attribute like p:propertyName=\"value\" maps directly to a corresponding setter injection that <property/> would otherwise configure.",
+    "corrected": false,
+    "id": "q1687",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "Transactions can be described with key properties:-",
+    "options": [
+      "A. Atomicity",
+      "B. Consistency",
+      "C. Isolation",
+      "D. All of the mentioned"
+    ],
+    "answer_index": 3,
+    "answer": "D. All of the mentioned",
+    "topic": "Core Java & OOP",
+    "explanation": "Transactions require atomicity (all-or-nothing execution), consistency (valid state transitions), and isolation (concurrent independence) to maintain data integrity reliably.\n\nThese four ACID properties—including durability—are fundamental characteristics that define and describe transaction behavior in database systems.",
+    "corrected": false,
+    "id": "q1698",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "To access a database running on the Derby server, you have to add:-",
+    "options": [
+      "A. Derby client library",
+      "B. Tomcat client library",
+      "C. All of the mentioned",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 0,
+    "answer": "A. Derby client library",
+    "topic": "Core Java & OOP",
+    "explanation": "To connect to a Derby database, you need the Derby client library which provides the JDBC driver and necessary classes for database communication.\n\nTomcat is a servlet container unrelated to database access; Derby client library alone is sufficient for database connectivity.",
+    "corrected": false,
+    "id": "q1699",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Spring’s transaction support offers a set of technology-independent facilities, including transaction managers.",
+    "options": [
+      "A. org.springframework.transaction.PlatformTransactionManager",
+      "B. org.springframework.transaction.support.TransactionTemplate",
+      "C. all of the mentioned",
+      "D. none of the mentioned"
+    ],
+    "answer_index": 2,
+    "answer": "C. all of the mentioned",
+    "topic": "Core Java & OOP",
+    "explanation": "Spring's transaction support provides both PlatformTransactionManager for abstraction and TransactionTemplate for programmatic transaction handling, making both essential components.\n\nBoth options represent core, technology-independent facilities that Spring offers for managing transactions across different platforms and frameworks.",
+    "corrected": false,
+    "id": "q1700",
+    "trust": "unverified-source"
+  }
+]

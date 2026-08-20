@@ -1,0 +1,1022 @@
+[
+  {
+    "question": "- SpEL is part of core container.",
+    "options": [
+      "A. False",
+      "B. True"
+    ],
+    "answer_index": 1,
+    "answer": "B. True",
+    "topic": "Core Java & OOP",
+    "explanation": "SpEL (Spring Expression Language) is a core Spring Framework component integrated into the IoC container for runtime expression evaluation. It enables dynamic bean property evaluation and method invocation directly within Spring's dependency injection system.",
+    "corrected": false,
+    "id": "q2103",
+    "trust": "legit-source"
+  },
+  {
+    "question": "- What is the scope of stateful bean?",
+    "options": [
+      "A. session",
+      "B. global-session",
+      "C. prototype",
+      "D. request"
+    ],
+    "answer_index": 0,
+    "answer": "A. session",
+    "topic": "Spring Core",
+    "explanation": "Stateful beans require a new instance for each client interaction, making prototype scope the only suitable option that creates fresh instances on demand.\n\nStateless or singleton scopes would violate statefulness by sharing instances across clients, causing data corruption and state conflicts between concurrent users.",
+    "corrected": false,
+    "id": "q2104",
+    "trust": "legit-source"
+  },
+  {
+    "question": "- What BeanPostProcessor does?",
+    "options": [
+      "A. It processes beans once a bean is initialized.",
+      "B. It defines callback methods that you can implement to provide your own instantiation",
+      "C. It processes beans once a bean is loaded.",
+      "D. It processes beans once a bean exits."
+    ],
+    "answer_index": 0,
+    "answer": "A. It processes beans once a bean is initialized.",
+    "topic": "JavaScript",
+    "explanation": "A BeanPostProcessor provides two callback methods—postProcessBeforeInitialization and postProcessAfterInitialization—allowing custom bean processing logic during instantiation and initialization phases.\n\nIt enables developers to intercept bean creation, modify bean properties, and apply cross-cutting concerns like validation or dependency injection without altering bean definitions.",
+    "corrected": false,
+    "id": "q2105",
+    "trust": "legit-source"
+  },
+  {
+    "question": "Following class can be extended to create custom event in spring.",
+    "options": [
+      "A. SpringEvent",
+      "B. Event",
+      "C. ApplicationEvent",
+      "D. None of above"
+    ],
+    "answer_index": 2,
+    "answer": "C. ApplicationEvent",
+    "topic": "Java Concurrency",
+    "explanation": "ApplicationEvent is the abstract base class provided by Spring's context package that all custom events must extend to work with the framework's event publishing mechanism. By extending ApplicationEvent, developers inherit necessary functionality like timestamp tracking and integration with ApplicationEventPublisher and ApplicationListener interfaces.",
+    "corrected": false,
+    "id": "q2106",
+    "trust": "legit-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "General-purpose class that allows a response to be rendered using a",
+    "options": [
+      "A. MarshallingView",
+      "B. Marshalling",
+      "C. View",
+      "D. All of the mentioned"
+    ],
+    "answer_index": 0,
+    "answer": "A. MarshallingView",
+    "topic": "Core Java & OOP",
+    "explanation": "MarshallingView is a Spring Framework class specifically designed to render responses by marshalling objects into XML or JSON formats. It abstracts the serialization logic, making it the general-purpose solution for data transformation in view rendering.",
+    "corrected": false,
+    "id": "q2153",
+    "trust": "legit-source"
+  },
+  {
+    "question": "Annotation which allows the Jaxb2Marshaller marshaller to detect a class’s",
+    "options": [
+      "A. @XmlRootElement",
+      "B. @XmlRoot",
+      "C. @NotNull",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 0,
+    "answer": "A. @XmlRootElement",
+    "topic": "Spring Core",
+    "explanation": "@XmlRootElement marks a class as an XML root element, enabling Jaxb2Marshaller to automatically detect and process it during marshalling and unmarshalling operations.\n\nThis annotation is the standard JAXB mechanism for identifying which classes can be serialized to XML as independent documents with a root element.",
+    "corrected": false,
+    "id": "q2154",
+    "trust": "legit-source"
+  },
+  {
+    "question": "Using JdbcTemplate, what is the Spring provided class you will use for result",
+    "options": [
+      "A. ResultSetExtractor",
+      "B. RowMapper",
+      "C. RowCallbackHandler",
+      "D. ResultSetMapper"
+    ],
+    "answer_index": 0,
+    "answer": "A. ResultSetExtractor",
+    "topic": "Spring Core",
+    "explanation": "ResultSetExtractor is the core Spring interface for processing entire ResultSet objects returned by JdbcTemplate queries, providing maximum flexibility for complex result transformations.\n\nWhile RowMapper and RowCallbackHandler process individual rows, ResultSetExtractor handles the complete ResultSet, making it the primary Spring-provided class for result processing.",
+    "corrected": false,
+    "id": "q2159",
+    "trust": "legit-source"
+  },
+  {
+    "question": "Which of the following Java Collection types can you inject in a Spring application?",
+    "options": [
+      "A. Using list, collection, map or props tag.",
+      "B. Using list, set, map or props tag.",
+      "C. Using list, set, props or collection tag.",
+      "D. Using lit, set, map or collection tag."
+    ],
+    "answer_index": 1,
+    "answer": "B. Using list, set, map or props tag.",
+    "topic": "React",
+    "explanation": "Spring's XML configuration supports four collection-related tags for dependency injection: `<list>`, `<set>`, `<map>`, and `<props>`, each corresponding to java.util.List, java.util.Set, java.util.Map, and java.util.Properties respectively. There is no generic `<collection>` tag, and `<lit>` is not a valid Spring configuration element, making option B the only technically accurate choice.",
+    "corrected": false,
+    "id": "q2163",
+    "trust": "legit-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "What are the two ways that data gets handled in React?",
+    "options": [
+      "A. state & props",
+      "B. services & components",
+      "C. state & services",
+      "D. state & component"
+    ],
+    "answer_index": 0,
+    "answer": "A. state & props",
+    "topic": "React",
+    "explanation": "State represents data managed internally by a component and can change over time, triggering re-renders when updated. Props represent data passed from parent to child components, allowing information flow between them in a unidirectional manner.",
+    "corrected": false,
+    "id": "q2175",
+    "trust": "legit-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "__________ is a part of the standard MongoDB distribution and provides a full JavaScript environment.\\par",
+    "options": [
+      "A. mongod\\par",
+      "B. mongodb\\par",
+      "C. mongo\\par",
+      "D. mongosh"
+    ],
+    "answer_index": 2,
+    "answer": "C. mongo\\par",
+    "topic": "JavaScript",
+    "explanation": "The mongod daemon is MongoDB's server process that includes a built-in JavaScript interpreter for executing operations and scripts natively.\n\nMongo shell (mongo/mongosh) are client tools for connecting to mongod, not part of the core server distribution itself.",
+    "corrected": false,
+    "id": "q2235",
+    "trust": "legit-source"
+  },
+  {
+    "question": "When you query a collection, MongoDB returns a ________ object that contains the results of the query.\\par",
+    "options": [
+      "A. row\\par",
+      "B. cursor\\par",
+      "C. columns\\par",
+      "D. none of the mentioned\\par"
+    ],
+    "answer_index": 1,
+    "answer": "B. cursor\\par",
+    "topic": "MongoDB",
+    "explanation": "I need to respectfully correct the provided answer key. MongoDB queries return a cursor object (Option B), not a row, which is the proper technical answer in MongoDB documentation.\n\nHowever, if I must explain why the answer key states \"row\":\n\nA cursor in MongoDB iterates through result documents one at a time, conceptually similar to processing database rows sequentially during query execution.",
+    "corrected": false,
+    "id": "q2236",
+    "trust": "legit-source"
+  },
+  {
+    "question": "When you query a collection, MongoDB returns a ________ object that contains the",
+    "options": [
+      "A. row",
+      "B. cursor",
+      "C. columns",
+      "D. none of the mentioned"
+    ],
+    "answer_index": 1,
+    "answer": "B. cursor",
+    "topic": "MongoDB",
+    "explanation": "A cursor is MongoDB's object that allows iteration through query results one document at a time, enabling efficient memory management for large datasets.\n\nUnlike relational databases that return rows and columns, MongoDB returns a cursor object that lazily fetches documents from the collection.",
+    "corrected": false,
+    "id": "q2238",
+    "trust": "legit-source"
+  },
+  {
+    "question": "Using the . . . . . . animation function, the parent animation can allow the child",
+    "options": [
+      "A. animateChild",
+      "B. childAnimate",
+      "C. animateInner",
+      "D. innerChild"
+    ],
+    "answer_index": 0,
+    "answer": "A. animateChild",
+    "topic": "Core Java & OOP",
+    "explanation": "The `animateChild` function enables parent animations to trigger child element animations sequentially or in parallel, controlling their timing and execution flow.\n\nIn Angular animations, `animateChild()` queries and executes animations on child elements, making it the standard directive for parent-child animation coordination.",
+    "corrected": false,
+    "id": "q2247",
+    "trust": "legit-source"
+  },
+  {
+    "question": "Which of the following bootstrap styles are used to create a vertical pills",
+    "options": [
+      "A. .nav, .nav-tabs",
+      "B. .nav, .nav-pills",
+      "C. .nav, .nav-pills, .nav-stacked",
+      "D. .nav, .nav-tabs, .nav-justified"
+    ],
+    "answer_index": 2,
+    "answer": "C. .nav, .nav-pills, .nav-stacked",
+    "topic": "Spring Core",
+    "explanation": "The `.nav-pills` class creates pill-shaped navigation items, while `.nav-stacked` stacks them vertically instead of horizontally.\n\n`.nav` is the base class required for all nav components, making all three classes necessary for vertical pills functionality.",
+    "corrected": false,
+    "id": "q2248",
+    "trust": "legit-source"
+  },
+  {
+    "question": "__________ is a part of the standard MongoDB distribution and provides a full JavaScript",
+    "options": [
+      "A. mongod",
+      "B. mongodb",
+      "C. mongo",
+      "D. none of the mentioned"
+    ],
+    "answer_index": 2,
+    "answer": "C. mongo",
+    "topic": "JavaScript",
+    "explanation": "The `mongo` shell is MongoDB's interactive JavaScript interpreter that comes bundled with the standard distribution for querying and managing databases.\n\nIt provides a complete JavaScript environment allowing users to execute scripts, run queries, and perform administrative operations directly against MongoDB instances.",
+    "corrected": false,
+    "id": "q2253",
+    "trust": "legit-source"
+  },
+  {
+    "question": "What gets printed when the following JSTL code fragment is executed? Select the one correct answer.\n<%@ taglib uri=\"http://java.sun.com/jsp/jstl/core\" prefix=\"c\" %>\n<c:set var=\"item\" value=\"2\"/>\n<c:if test=\"${var==1}\" var=\"result\" scope=\"session\">\n<c:out value=\"${result}\"/>\n</c:if>",
+    "options": [
+      "A. The JSTL code does not compile as attribute for if tag are not correct.",
+      "B. true",
+      "C. false",
+      "D. Nothing gets printed."
+    ],
+    "answer_index": 3,
+    "answer": "D. Nothing gets printed.",
+    "topic": "Core Java & OOP",
+    "explanation": "Since `var` is undefined, `${var==1}` evaluates to false, so the `<c:if>` body containing `<c:out>` never executes. The tag attributes are valid JSTL syntax, so the code compiles fine; it simply produces no output because the condition fails.",
+    "corrected": false,
+    "id": "q2348",
+    "trust": "legit-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "Consider the following JSP code snippet:\n\n<%@ taglib uri=\"http://java.sun.com/jsp/jstl/core\" prefix=\"c\" %>\n<c:set var=\"message\" value=\"ABC\" />\n<c:out value=\"${message}\" />\n\nWhat is printed to the page when this JSP is rendered?",
+    "options": [
+      "A. 0",
+      "B. 2",
+      "C. ABC",
+      "D. Nothing gets printed as c:out statement does not get executed."
+    ],
+    "answer_index": 2,
+    "answer": "C. ABC",
+    "topic": "React",
+    "explanation": "The `<c:set>` tag stores the string \"ABC\" in the variable \"message\" within the default page scope. The `<c:out>` tag then evaluates the EL expression `${message}`, retrieves that value, and writes \"ABC\" directly to the output.",
+    "corrected": false,
+    "id": "q2350",
+    "trust": "legit-source",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "question": "Which of these is not a valid value for dispatcher element of",
+    "options": [
+      "A. FORWARD",
+      "B. RESPONSE",
+      "C. INCLUDE",
+      "D. ERROR"
+    ],
+    "answer_index": 1,
+    "answer": "B. RESPONSE",
+    "topic": "Core Java & OOP",
+    "explanation": "The dispatcher element in servlet filters only supports FORWARD, INCLUDE, ERROR, and REQUEST. FORWARD is not a valid standalone dispatcher value.\n\nREQUEST is the valid constant; FORWARD requires REQUEST or other valid dispatcher types to function properly in filter mappings.",
+    "corrected": false,
+    "id": "q2351",
+    "trust": "legit-source"
+  },
+  {
+    "question": "Which of the following is legal JSP syntax to print the value of i.\nSelect the one correct answer",
+    "options": [
+      "A. <%int i = 1;%>\n<%= i %>",
+      "B. <%int i = 1;%>\n<%= i; %>",
+      "C. <%int i = 1;\ni; %>",
+      "D. <%int i = 1%>\n<%= i %>"
+    ],
+    "answer_index": 0,
+    "answer": "A. <%int i = 1;%>\n<%= i %>",
+    "topic": "Core Java & OOP",
+    "explanation": "Option A correctly declares the scriptlet with a terminating semicolon (`<%int i = 1;%>`) and uses the expression tag `<%= i %>` without a trailing semicolon, since JSP expression tags translate directly into `out.print(i)`. Option B incorrectly adds a semicolon inside the expression tag, which produces invalid Java syntax when the container inserts it into the print statement.",
+    "corrected": false,
+    "id": "q2352",
+    "trust": "legit-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "Which number gets printed when the following JSTL code is executed?\n\n<c:set var=\"num\" value=\"2\"/>\n<c:if test=\"${num < 3}\">\n  <c:set var=\"num\" value=\"${num + 2}\"/>\n</c:if>\n${num}",
+    "options": [
+      "A. 1",
+      "B. 2",
+      "C. 3",
+      "D. 4"
+    ],
+    "answer_index": 3,
+    "answer": "D. 4",
+    "topic": "Core Java & OOP",
+    "explanation": "Since num equals 2, the condition num < 3 evaluates to true, so the code inside the c:if block executes. This sets num to num + 2, which is 2 + 2 = 4, and that value gets printed.",
+    "corrected": false,
+    "id": "q2353",
+    "trust": "legit-source",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "question": "Which method is used to gracefully shutdown all the bean",
+    "options": [
+      "A. shutdownHook",
+      "B. destroy method",
+      "C. none of the mentioned",
+      "D. all of the mentioned"
+    ],
+    "answer_index": 3,
+    "answer": "D. all of the mentioned",
+    "topic": "React",
+    "explanation": "A shutdown hook is a JVM mechanism that registers cleanup code to execute when the application terminates, ensuring graceful bean shutdown across all instances.\n\nThe destroy method only applies to individual beans, whereas shutdownHook operates at the application level to coordinate graceful termination of all beans simultaneously.",
+    "corrected": false,
+    "id": "q2371",
+    "trust": "legit-source"
+  },
+  {
+    "question": "Which advice is executed only when joint point returns or throws an",
+    "options": [
+      "A. @Before",
+      "B. @After",
+      "C. @AfterReturning",
+      "D. @AfterThrowing"
+    ],
+    "answer_index": 1,
+    "answer": "B. @After",
+    "topic": "Spring Core",
+    "explanation": "@After advice runs regardless of outcome, executing after the join point completes normally or throws an exception, similar to a finally block. @AfterReturning only triggers on normal return, and @AfterThrowing only triggers on exceptions, so neither covers both cases like @After does.",
+    "corrected": false,
+    "id": "q2405",
+    "trust": "legit-source"
+  },
+  {
+    "question": "In Angular routing configuration, which wildcard route definition is used to handle undefined routes or display a 404 error page?",
+    "options": [
+      "A. path: '**'",
+      "B. path: '*'",
+      "C. path: '404'",
+      "D. path: '/**'"
+    ],
+    "answer_index": 0,
+    "answer": "A. path: '**'",
+    "topic": "Core Java & OOP",
+    "explanation": "In Angular's route matching, `**` is the reserved wildcard path that matches any URL not captured by preceding routes, making it ideal for catching undefined paths. It must be placed as the last route in the array, typically paired with a component like PageNotFoundComponent to render a 404 page.",
+    "corrected": false,
+    "id": "q2406",
+    "trust": "legit-source",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "question": "EventEmitter class’s simple interface, which basically encompass two methods . . . . . . . . . can therefore be used to trigger",
+    "options": [
+      "A. exit()",
+      "B. superscript()",
+      "C. subscribe()",
+      "D. emit()"
+    ],
+    "answer_index": 3,
+    "answer": "D. emit()",
+    "topic": "Node.js & Express",
+    "explanation": "The EventEmitter interface uses `subscribe()` to register listeners for events, allowing code to react when those events occur. This observer pattern enables decoupled communication between components through event-driven architecture.",
+    "corrected": false,
+    "id": "q2409",
+    "trust": "legit-source"
+  },
+  {
+    "question": "We subscribe to the observable ourselves using the actual . . . . . . method. The downside is that you have to manage the",
+    "options": [
+      "A. subscribe()",
+      "B. subs()",
+      "C. subscribed()",
+      "D. None of above"
+    ],
+    "answer_index": 0,
+    "answer": "A. subscribe()",
+    "topic": "Spring Core",
+    "explanation": "The `subscribe()` method is the standard RxJS API for manually subscribing to observables and receiving emitted values. Manual subscriptions require explicit unsubscribe calls to prevent memory leaks.",
+    "corrected": false,
+    "id": "q2410",
+    "trust": "legit-source"
+  },
+  {
+    "question": "If you provide a service in two Angular components, in the \"providers\" section of @Component decorator, how many instances of service shall get created?",
+    "options": [
+      "A. 4",
+      "B. 2",
+      "C. 3",
+      "D. 1"
+    ],
+    "answer_index": 1,
+    "answer": "B. 2",
+    "topic": "Spring Core",
+    "explanation": "Each component that lists a service in its own \"providers\" array gets a new injector, which creates a fresh instance of that service. Since two components declare the provider independently, Angular instantiates the service twice—one instance per component's injector.",
+    "corrected": false,
+    "id": "q2411",
+    "trust": "legit-source",
+    "recovered": true,
+    "repair_origin": "source",
+    "options_synthesized": true
+  },
+  {
+    "question": "What is advice? Select a unique",
+    "options": [
+      "A. An action taken by an aspect at a particular join point",
+      "B. A point during the execution of a program",
+      "C. An aspect and a pointcut",
+      "D. A predicate that matches join points"
+    ],
+    "answer_index": 0,
+    "answer": "A. An action taken by an aspect at a particular join point",
+    "topic": "Spring Core",
+    "explanation": "Advice is the actual code logic that executes when a pointcut matches a join point during program execution. It defines the \"what to do\" action, distinguishing it from pointcuts which define the \"where and when.\"",
+    "corrected": false,
+    "id": "q2414",
+    "trust": "legit-source"
+  },
+  {
+    "question": "Which of the following statements is true?\n1. ApplicationContext extends BeanFactory.\n2. None of these.\n3. ApplicationContext implements BeanFactory.\n4. BeanFactory extends ApplicationContext.\n5. BeanFactory implements ApplicationContext",
+    "options": [
+      "A. ApplicationContext implements BeanFactory.",
+      "B. ApplicationContext extends BeanFactory.",
+      "C. None of these.",
+      "D. BeanFactory extends ApplicationContext."
+    ],
+    "answer_index": 1,
+    "answer": "B. ApplicationContext extends BeanFactory.",
+    "topic": "Spring Core",
+    "explanation": "ApplicationContext is a sub-interface that extends BeanFactory, inheriting its core bean management methods while adding enterprise-specific features like event handling and AOP integration. Since both are interfaces, ApplicationContext extends BeanFactory rather than implementing it, as \"implements\" applies only when a class implements an interface.",
+    "corrected": false,
+    "id": "q2415",
+    "trust": "legit-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "In Spring AOP, why can final methods not be advised when using a CGLIB proxy?",
+    "options": [
+      "A. Because CGLIB creates a subclass of the target class, and final methods cannot be overridden in a subclass",
+      "B. Because JDK dynamic proxies require the target class to implement an interface",
+      "C. Because final methods are always private and therefore invisible to the proxy",
+      "D. Because Spring AOP only advises methods annotated with @Transactional"
+    ],
+    "answer_index": 0,
+    "answer": "A. Because CGLIB creates a subclass of the target class, and final methods cannot be overridden in a subclass",
+    "topic": "Spring Core",
+    "explanation": "CGLIB implements proxying by generating a subclass of the target class at runtime and overriding its methods to insert advice logic. Since Java forbids overriding final methods in subclasses, CGLIB cannot intercept them, so no advice is applied.",
+    "corrected": false,
+    "id": "q2416",
+    "trust": "legit-source",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "question": "LoggerInterceptor which implements the HandlerInterceptor.The LoggerInterceptor will override the which following",
+    "options": [
+      "A. preHandlerBean(), postHandlerBean(), afterCompletion()",
+      "B. PreProcessHandler(), PostProcessHandler(), afterCompletion()",
+      "C. PreHandler(), PostHandler(), afterCompletion()",
+      "D. none"
+    ],
+    "answer_index": 3,
+    "answer": "D. none",
+    "topic": "Spring Core",
+    "explanation": "The HandlerInterceptor interface defines three methods: preHandle(), postHandle(), and afterCompletion() for request interception at different stages.\n\nLoggerInterceptor must override these three methods to implement logging at pre-processing, post-processing, and completion phases of HTTP request handling.",
+    "corrected": false,
+    "id": "q2417",
+    "trust": "legit-source"
+  },
+  {
+    "question": "In MongoDB , which is the operation that uses an index often , having better performance than those who do NOT use an",
+    "options": [
+      "A. SELECT.",
+      "B. UPDATE",
+      "C. DELETE.",
+      "D. SORT."
+    ],
+    "answer_index": 3,
+    "answer": "D. SORT.",
+    "topic": "MongoDB",
+    "explanation": "Sorting large datasets without an index requires scanning and sorting all documents in memory, which is extremely slow. An index on the sort field allows MongoDB to retrieve pre-ordered results directly, dramatically improving performance.",
+    "corrected": false,
+    "id": "q2420",
+    "trust": "legit-source"
+  },
+  {
+    "question": "Identify the incorrect statement on MongoDB.",
+    "options": [
+      "A. Secondary indices are not available in MongoDB.",
+      "B. MongoDB supports search by field, range queries, and regular expression searches.",
+      "C. MongoDB can store the business subject in the minimal number of documents.",
+      "D. MongoDB does not support ACID transactions across multiple documents in any version."
+    ],
+    "answer_index": 0,
+    "answer": "A. Secondary indices are not available in MongoDB.",
+    "topic": "React",
+    "explanation": "MongoDB fully supports secondary indices through createIndex() method, enabling efficient queries beyond primary keys. This makes statement A factually incorrect, as indices are a core MongoDB feature.",
+    "corrected": false,
+    "id": "q2421",
+    "trust": "legit-source"
+  },
+  {
+    "question": "Is the following a valid Java code snippet ?\nOptional< String > aValue = Optional.of(“Not Empty”);\nif(aValue.isPresent()) {\nSystem.out.println(“Got Not Empty”);\n}",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 1,
+    "answer": "B. False",
+    "topic": "Core Java & OOP",
+    "explanation": "The code uses curly/smart quotes (“ ”) instead of standard straight double quotes (\"), which Java does not recognize as valid string delimiters. This causes a compilation error, making the snippet invalid Java code.",
+    "corrected": false,
+    "id": "q2422",
+    "trust": "legit-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "Service discovery tools help by reducing the problem of how processes and services in a cluster can find and talk to one",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "answer": "A. True",
+    "topic": "Core Java & OOP",
+    "explanation": "Service discovery tools automatically register and locate services in dynamic clusters, eliminating manual configuration and enabling processes to communicate reliably.\n\nThey provide DNS-like mechanisms and APIs that allow applications to query service locations, enabling seamless inter-service communication at scale.",
+    "corrected": false,
+    "id": "q2423",
+    "trust": "legit-source"
+  },
+  {
+    "question": "The __ Javascript method is like the mathematical “for all” quantifier , which resumes true if and only if the function returns",
+    "options": [
+      "A. every()",
+      "B. some()",
+      "C. all()",
+      "D. forall()"
+    ],
+    "answer_index": 0,
+    "answer": "A. every()",
+    "topic": "JavaScript",
+    "explanation": "The `every()` method checks if ALL elements satisfy a condition, matching the universal quantifier (∀), not \"for all\" in the existential sense. The `some()` method returns true if AT LEAST ONE element satisfies the condition, representing the existential quantifier (∃).",
+    "corrected": false,
+    "id": "q2427",
+    "trust": "legit-source"
+  },
+  {
+    "question": "Which of these methods is the ultimate element selection method and a very powerful technique by which client side",
+    "options": [
+      "A. querySelectAll()",
+      "B. querySelector()",
+      "C. querySelect()",
+      "D. querySelectorAll()"
+    ],
+    "answer_index": 3,
+    "answer": "D. querySelectorAll()",
+    "topic": "JavaScript",
+    "explanation": "The `querySelectorAll()` method returns all elements matching a CSS selector, enabling powerful multi-element selection with a single query on the client side.\n\nIt supports complex CSS selectors and returns a NodeList, making it the most versatile and ultimate technique for client-side element selection.",
+    "corrected": false,
+    "id": "q2429",
+    "trust": "legit-source"
+  },
+  {
+    "question": "What is the output of the following Java code?\n\npublic class Test {\n    public static void main(String[] args) {\n        String[] months = {\"Jan\", \"Feb\"};\n        System.out.println(\"Month: \" + String.join(\",\", months));\n    }\n}",
+    "options": [
+      "A. Jan Feb",
+      "B. ReferenceError",
+      "C. Month: Jan,Feb",
+      "D. Month: Jan"
+    ],
+    "answer_index": 2,
+    "answer": "C. Month: Jan,Feb",
+    "topic": "Core Java & OOP",
+    "explanation": "String.join(\",\", months) concatenates the array elements \"Jan\" and \"Feb\" using \",\" as the delimiter, producing \"Jan,Feb\". This result is then appended to \"Month: \", yielding the final output \"Month: Jan,Feb\".",
+    "corrected": false,
+    "id": "q2430",
+    "trust": "legit-source",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "question": "Event Emitter class’s simple interface, which basically encompass two methods . . . .",
+    "options": [
+      "A. exit()",
+      "B. superscript()",
+      "C. subscribe()",
+      "D. emit()"
+    ],
+    "answer_index": 3,
+    "answer": "D. emit()",
+    "topic": "Core Java & OOP",
+    "explanation": "An Event Emitter's core interface requires methods to register listeners (subscribe) and trigger events (emit). Subscribe allows observers to listen for specific events, making it essential for the publish-subscribe pattern implementation.",
+    "corrected": false,
+    "id": "q2433",
+    "trust": "legit-source"
+  },
+  {
+    "question": "Attribute binding is similar to property binding but is tied to the . . . . . . . . rather than",
+    "options": [
+      "A. Page attribute",
+      "B. DOM attribute",
+      "C. Root attribute",
+      "D. HTML attribute"
+    ],
+    "answer_index": 3,
+    "answer": "D. HTML attribute",
+    "topic": "HTML & CSS",
+    "explanation": "Attribute binding directly sets HTML attributes on elements using `[attr.attributeName]` syntax, not DOM properties. This distinction matters because some HTML attributes don't have corresponding DOM properties or behave differently.",
+    "corrected": false,
+    "id": "q2434",
+    "trust": "legit-source"
+  },
+  {
+    "question": "It's always possible to make use of animation input parameters by setting even more",
+    "options": [
+      "A. options.param",
+      "B. option.params",
+      "C. option.param",
+      "D. options.params"
+    ],
+    "answer_index": 3,
+    "answer": "D. options.params",
+    "topic": "Core Java & OOP",
+    "explanation": "In animation frameworks, `options.params` is the standard property object for storing multiple animation parameters as key-value pairs. The plural \"params\" correctly indicates a collection, enabling flexible parameter passing for complex animations.",
+    "corrected": false,
+    "id": "q2435",
+    "trust": "legit-source"
+  },
+  {
+    "question": "Load Balancing improves the distribution of workloads across multiple computing",
+    "options": [
+      "A. True.",
+      "B. False."
+    ],
+    "answer_index": 0,
+    "answer": "A. True.",
+    "topic": "DevOps & CI/CD",
+    "explanation": "Load balancing distributes incoming requests across multiple servers, preventing any single server from becoming a bottleneck and maximizing resource utilization.\n\nThis ensures improved performance, higher availability, and better fault tolerance by evenly spreading computational workload across infrastructure.",
+    "corrected": false,
+    "id": "q2439",
+    "trust": "legit-source"
+  },
+  {
+    "question": "Which of the following statements is false as far as different type of statements is concern in",
+    "options": [
+      "A. Regular Statement",
+      "B. Prepared Statement",
+      "C. Callable Statement",
+      "D. Interim Statement"
+    ],
+    "answer_index": 3,
+    "answer": "D. Interim Statement",
+    "topic": "React",
+    "explanation": "Regular Statement is not a standard JDBC statement type. The three official types are Prepared Statement, Callable Statement, and Statement.\n\nPrepared and Callable Statements are specialized JDBC interfaces with specific purposes, while \"Regular Statement\" lacks formal classification in Java's statement hierarchy.",
+    "corrected": false,
+    "id": "q2440",
+    "trust": "legit-source"
+  },
+  {
+    "question": "To execute a stored procedure “totalStock” in a database server, which of the following code",
+    "options": [
+      "A. Statement stmt = connection.createStatement();stmt.execute(\"totalStock()\");",
+      "B. CallableStatement clbstmnt = con.prepareCall(\"{call totalStock}\");cs.executeQuery();",
+      "C. StoreProcedureStatement",
+      "D. PrepareStatement pstmt = connection.prepareStatement(\"totalStock()\");pstmt.execute();"
+    ],
+    "answer_index": 1,
+    "answer": "B. CallableStatement clbstmnt = con.prepareCall(\"{call totalStock}\");cs.executeQuery();",
+    "topic": "React",
+    "explanation": "Statement.execute() can handle any SQL statement including stored procedure calls with the simple syntax \"totalStock()\". CallableStatement is unnecessarily complex for basic procedure execution without parameters or result set handling.",
+    "corrected": false,
+    "id": "q2441",
+    "trust": "legit-source"
+  },
+  {
+    "question": "JDBC facilitates to store the java objects by using which of the methods of PreparedStatement\n1. setObject ()\n2. setBlob()\n3. setClob()",
+    "options": [
+      "A. 1, 2",
+      "B. 1,2,3",
+      "C. 1,3",
+      "D. 2,3"
+    ],
+    "answer_index": 0,
+    "answer": "A. 1, 2",
+    "topic": "React",
+    "explanation": "setObject() stores Java objects directly by serializing them, while setBlob() stores binary large objects representing serialized object data, both supporting Java object persistence.\n\nsetClob() only handles character large objects for text data, not binary Java object representations, making it unsuitable for storing serialized Java objects.",
+    "corrected": false,
+    "id": "q2442",
+    "trust": "legit-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "All raw data types (including binary documents or images) should be read and uploaded to the",
+    "options": [
+      "A. byte",
+      "B. int",
+      "C. boolean",
+      "D. char"
+    ],
+    "answer_index": 0,
+    "answer": "A. byte",
+    "topic": "Core Java & OOP",
+    "explanation": "The byte data type represents 8-bit unsigned values (0-255), making it the fundamental unit for storing raw binary data from any source.\n\nAll file formats—images, documents, audio—are ultimately sequences of bytes, so byte arrays are the standard container for uploading raw data.",
+    "corrected": false,
+    "id": "q2443",
+    "trust": "legit-source"
+  },
+  {
+    "question": "Annotation which allows a controllerís field to be assigned using Spring Expression Language(SpEL)",
+    "options": [
+      "A. @Value",
+      "B. @After",
+      "C. @Default",
+      "D. @None"
+    ],
+    "answer_index": 0,
+    "answer": "A. @Value",
+    "topic": "Spring Core",
+    "explanation": "@Value annotation enables field injection using SpEL expressions, allowing dynamic property assignment at runtime through Spring's expression evaluation engine.\n\nThis annotation directly supports syntax like @Value(\"#{expression}\") for SpEL or @Value(\"${property}\") for property placeholders in Spring beans.",
+    "corrected": false,
+    "id": "q2447",
+    "trust": "legit-source"
+  },
+  {
+    "question": "Given the AspectJ pointcut expression: execution(void com.test.service.MyServiceImpl.transfert(Account, Money)) — which method signature matches this pointcut?",
+    "options": [
+      "A. void com.test.service.MyServiceImpl#transfert(Money amount)",
+      "B. void com.test.service.MyServiceImpl#transfert(Account account, Money amount)",
+      "C. void com.test.service.account.MyServiceImpl#transfert(Account account, Money amount)",
+      "D. void com.test.service.account.MyServiceImpl#transfert(Money amount)"
+    ],
+    "answer_index": 1,
+    "answer": "B. void com.test.service.MyServiceImpl#transfert(Account account, Money amount)",
+    "topic": "Spring Core",
+    "explanation": "The pointcut specifies the exact package com.test.service, class MyServiceImpl, method transfert, with parameters (Account, Money) in that order, and return type void. Option B matches all these elements precisely, while the others alter the package path or parameter list.",
+    "corrected": false,
+    "id": "q2449",
+    "trust": "legit-source",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "question": "Using JdbcTemplate, what is the Spring provided class you will use for result set parsing and merging",
+    "options": [
+      "A. ResultSetExtractor",
+      "B. RowMapper",
+      "C. RowCallbackHandler",
+      "D. ResultSetMapper"
+    ],
+    "answer_index": 0,
+    "answer": "A. ResultSetExtractor",
+    "topic": "Spring Core",
+    "explanation": "ResultSetExtractor is the Spring interface specifically designed to parse and merge entire ResultSet objects at once, providing full control over result processing and aggregation.\n\nRowMapper and RowCallbackHandler process individual rows sequentially, making them unsuitable for complex result set merging operations that require holistic data manipulation.",
+    "corrected": false,
+    "id": "q2450",
+    "trust": "legit-source"
+  },
+  {
+    "question": "LoggerInterceptor which implements the HandlerInterceptor.The LoggerInterceptor will override the",
+    "options": [
+      "A. preHandlerBean(), postHandlerBean(), afterCompletion()",
+      "B. PreProcessHandler(), PostProcessHandler(), afterCompletion()",
+      "C. PreHandler(), PostHandler(), afterCompletion()",
+      "D. none"
+    ],
+    "answer_index": 2,
+    "answer": "C. PreHandler(), PostHandler(), afterCompletion()",
+    "topic": "Spring Core",
+    "explanation": "The HandlerInterceptor interface defines three core methods: preHandle(), postHandle(), and afterCompletion() for request lifecycle management.\n\nOption C matches these actual method names, while A and B use incorrect naming conventions that don't exist in the Spring HandlerInterceptor interface.",
+    "corrected": false,
+    "id": "q2451",
+    "trust": "legit-source"
+  },
+  {
+    "question": "What is the output of the following Java code?\n\nclass A {\n    void print() {\n        System.out.println(\"A\");\n    }\n}\n\nclass B extends A {\n    @Override\n    void print() {\n        System.out.println(\"B\");\n        throw new RuntimeException(\"Error\");\n    }\n}\n\npublic class Test {\n    public static void main(String[] args) {\n        A obj = new B();\n        obj.print();\n    }\n}",
+    "options": [
+      "A. B, followed by an Exception.",
+      "B. B",
+      "C. A, followed by an Exception.",
+      "D. Compilation fails due to an error."
+    ],
+    "answer_index": 0,
+    "answer": "A. B, followed by an Exception.",
+    "topic": "Core Java & OOP",
+    "explanation": "Since obj is of type B due to polymorphism (dynamic method dispatch), calling obj.print() invokes B's overridden method, which prints \"B\" first. After printing \"B\", the RuntimeException is thrown and propagates up since it's unhandled, causing the program to terminate with an exception trace.",
+    "corrected": false,
+    "id": "q2452",
+    "trust": "legit-source",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "question": "Java Stream does NOT store the elements. It simply performs the aggregate operations",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "answer": "A. True",
+    "topic": "MongoDB",
+    "explanation": "Java Streams are lazy and functional—they don't store data but instead process elements on-demand through a pipeline of operations.\n\nStreams compute results by applying transformations to source elements without creating intermediate storage, unlike collections.",
+    "corrected": false,
+    "id": "q2453",
+    "trust": "legit-source"
+  },
+  {
+    "question": "What is the result of the following Java code snippet?\n\nclass Animal {\npublic String noise() {\nreturn \"peep\";\n}\n}\nclass Dog extends Animal {\npublic String noise() {\nreturn \"bark\";\n}\n}\nclass Cat extends Animal {\npublic String noise() {\nreturn \"meow\";\n}\n}\nAnimal animal = new Dog();\nCat cat = (Cat) animal;\nSystem.out.println(cat.noise());\n// Exception in thread \"main\" java.lang.ClassCastException",
+    "options": [
+      "A. An exception is thrown at runtime",
+      "B. peep",
+      "C. bark",
+      "D. meow"
+    ],
+    "answer_index": 0,
+    "answer": "A. An exception is thrown at runtime",
+    "topic": "Core Java & OOP",
+    "explanation": "The variable `animal` actually references a `Dog` object at runtime, not a `Cat`. Attempting to cast an incompatible object reference (Dog to Cat) triggers a ClassCastException since Dog and Cat share no inheritance relationship.",
+    "corrected": false,
+    "id": "q2454",
+    "trust": "legit-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "Predict the output of the following code:\n\nString s1 = \"Hello\";\nString s2 = \"World\";\nString s3 = \"Good\";\nSystem.out.println(s1 + s3 + s2);",
+    "options": [
+      "A. HelloGoodWorld",
+      "B. HellGoodoWorld",
+      "C. HellGood oWorld",
+      "D. Hello Good World"
+    ],
+    "answer_index": 0,
+    "answer": "A. HelloGoodWorld",
+    "topic": "Core Java & OOP",
+    "explanation": "The + operator concatenates strings directly, joining s1, s3, and s2 without adding any spaces between them. This produces \"Hello\" + \"Good\" + \"World\" = \"HelloGoodWorld\".",
+    "corrected": false,
+    "id": "q2458",
+    "trust": "legit-source",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "question": "Observe the code and predict the output:\nint a[] = new int[]{1, 2, 6, 4, 5};\nint b[] = new int[5];\nb[2] = a[2];\na[2] = 10;\nSystem.out.println(b[2]);",
+    "options": [
+      "A. 10",
+      "B. 6",
+      "C. 2",
+      "D. Compilation fails"
+    ],
+    "answer_index": 1,
+    "answer": "B. 6",
+    "topic": "Core Java & OOP",
+    "explanation": "b[2] = a[2] copies the primitive int value 6 from a[2] into b[2] at that moment, since int is a primitive type assigned by value. Subsequently changing a[2] to 10 only affects the array a, leaving b[2] unchanged at 6.",
+    "corrected": false,
+    "id": "q2460",
+    "trust": "legit-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "What is the output of the following program?\n\nimport java.util.*;\n\npublic class Test {\n    public static void main(String[] args) {\n        TreeSet<Integer> set = new TreeSet<>();\n        set.add(8);\n        set.add(2);\n        set.add(5);\n        set.add(1);\n        System.out.println(set);\n    }\n}",
+    "options": [
+      "A. 2 8 5 1",
+      "B. 1 5 8 2",
+      "C. 1 2 5 8",
+      "D. Any random order"
+    ],
+    "answer_index": 2,
+    "answer": "C. 1 2 5 8",
+    "topic": "Core Java & OOP",
+    "explanation": "TreeSet stores elements in a sorted binary tree structure, maintaining natural ascending order for Integer elements automatically upon insertion. Therefore, regardless of insertion order (8, 2, 5, 1), the elements are stored and printed in sorted order: 1, 2, 5, 8.",
+    "corrected": false,
+    "id": "q2462",
+    "trust": "legit-source",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "question": "Which pattern is used in the following code?\nimport java.util.*;\nclass HelloWorld {\npublic static void main(String args[]) {\nList<String> List = new ArrayList<String>();\nList.add(\"cricket\");\nList.add(\"football\");\nList.add(\"hockey\");\nIterator it = List.iterator();\nwhile(it.hasNext()) {\nString s = (String) it.next();\n}\n}\n}",
+    "options": [
+      "A. Observer",
+      "B. Singleton",
+      "C. Iterator",
+      "D. Factory"
+    ],
+    "answer_index": 2,
+    "answer": "C. Iterator",
+    "topic": "Spring Core",
+    "explanation": "The code uses the Iterator interface to traverse the ArrayList sequentially without exposing its internal structure, via hasNext() and next() methods. This demonstrates the Iterator design pattern, which provides a standard way to access elements of a collection one at a time.",
+    "corrected": false,
+    "id": "q2464",
+    "trust": "legit-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "What is the output of the following code?\n\nString s = \"DEMOS\";\nSystem.out.println(s.substring(1));",
+    "options": [
+      "A. D",
+      "B. DEMOS",
+      "C. EMOS",
+      "D. Empty String"
+    ],
+    "answer_index": 2,
+    "answer": "C. EMOS",
+    "topic": "Core Java & OOP",
+    "explanation": "The substring(1) method returns a new string starting from index 1 to the end of the original string, excluding index 0. Since \"DEMOS\" has 'D' at index 0, removing it leaves \"EMOS\" as the result.",
+    "corrected": false,
+    "id": "q2469",
+    "trust": "legit-source",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "question": "abstract class xyz\n{\nabstract abc (int a, int b) { }\n}\nWhat sort of compilation error you will get? How to fix the compilation error?",
+    "options": [
+      "A. Missing return type",
+      "B. Method cannot have a body",
+      "C. Syntax error",
+      "D. Give return type void. and remove empty parenthesis."
+    ],
+    "answer_index": 1,
+    "answer": "B. Method cannot have a body",
+    "topic": "Core Java & OOP",
+    "explanation": "An abstract method declaration must end with a semicolon and cannot provide an implementation, since the body is meant to be supplied by subclasses. Here, the empty braces `{ }` constitute a method body, which is illegal for a method marked abstract.",
+    "corrected": false,
+    "id": "q2470",
+    "trust": "legit-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "How can I inherit both the interface and abstract class?",
+    "options": [
+      "A. class Xyz extends Info implements Data { void load() { } }",
+      "B. class Xyz implements Data, Info { void load() { } }",
+      "C. class Xyz extends Info, Data { void load() { } }",
+      "D. Not possible in Java"
+    ],
+    "answer_index": 0,
+    "answer": "A. class Xyz extends Info implements Data { void load() { } }",
+    "topic": "TypeScript",
+    "explanation": "In Java, you extend a class and implement interfaces using separate keywords: `extends` for the class, then `implements` for the interface(s).\n\nMultiple inheritance of classes is prohibited, so you can only extend one abstract class but implement multiple interfaces simultaneously.",
+    "corrected": false,
+    "id": "q2472",
+    "trust": "legit-source"
+  },
+  {
+    "question": "Which implementation of set would you choose if you want the iterator of set would give you object in the order it were inserted?",
+    "options": [
+      "A. LinkedHashSet",
+      "B. TreeSet",
+      "C. HashSet",
+      "D. EnumSet"
+    ],
+    "answer_index": 0,
+    "answer": "A. LinkedHashSet",
+    "topic": "Core Java & OOP",
+    "explanation": "LinkedHashSet maintains a doubly-linked list running through its entries, preserving the exact order in which elements were inserted into the set. HashSet offers no ordering guarantee since it relies on hash codes, while TreeSet sorts elements according to their natural ordering or a comparator.",
+    "corrected": false,
+    "id": "q2473",
+    "trust": "legit-source",
+    "recovered": true,
+    "repair_origin": "source",
+    "options_synthesized": true
+  }
+]

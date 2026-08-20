@@ -1,0 +1,998 @@
+[
+  {
+    "question": "Which among these are the rules to be considered to form Class diagrams?",
+    "options": [
+      "A. Class symbols must have at least a name compartment",
+      "B. Compartment can be in random order",
+      "C. Attributes and operations can be listed at any suitable place",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 0,
+    "answer": "A. Class symbols must have at least a name compartment",
+    "topic": "Core Java & OOP",
+    "explanation": "A class symbol requires a name compartment as the minimum mandatory component to identify and distinguish it from other classes in the diagram.\n\nThe other options violate UML standards: compartments follow a fixed order (name, attributes, operations), and elements must be placed in their designated sections, not randomly.",
+    "corrected": false,
+    "id": "q1960",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which of these are the heuristics ?",
+    "options": [
+      "A. Name classes, attributes, and roles with noun phrases",
+      "B. Name operations and associations with verb phrases",
+      "C. Stick to binary associations",
+      "D. All of the mentioned"
+    ],
+    "answer_index": 3,
+    "answer": "D. All of the mentioned",
+    "topic": "Core Java & OOP",
+    "explanation": "All three options (A, B, C) are established UML design heuristics that guide effective object-oriented modeling and improve clarity in class diagrams.\n\nThese naming and structural conventions reduce ambiguity, enhance readability, and facilitate better communication among developers during system design and implementation.",
+    "corrected": false,
+    "id": "q1961",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "An object symbol is divided into what parts ?",
+    "options": [
+      "A. Top compartment",
+      "B. Bottom Compartment",
+      "C. All of the mentioned",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 2,
+    "answer": "C. All of the mentioned",
+    "topic": "React",
+    "explanation": "An object symbol in UML consists of both a top compartment displaying the object name and a bottom compartment containing the object's attribute values and state information.\n\nThese two compartments together form the complete structure needed to represent an instance of a class with its specific data at a particular point in time.",
+    "corrected": false,
+    "id": "q1962",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "What gets printed when the following JSP code is invoked in a browser. Select the one correct answer.\n<%= if(Math.random() < 0.5) %>\nhello\n<%= } else { %>\nhi\n<%= } %>",
+    "options": [
+      "A. The browser will print either hello or hi based upon the return value of random.",
+      "B. The string hello will always get printed.",
+      "C. The string hi will always get printed.",
+      "D. The JSP file will not compile."
+    ],
+    "answer_index": 3,
+    "answer": "D. The JSP file will not compile.",
+    "topic": "SQL & JDBC",
+    "explanation": "The `<%= %>` syntax is a JSP expression tag, which only accepts a single expression that evaluates to a value—not statements like if/else blocks with braces. Using control-flow statements inside `<%= %>` produces a syntax error when the JSP is translated into a servlet, causing compilation to fail.",
+    "corrected": false,
+    "id": "q1965",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "What gets printed when the following is compiled. Select the one correct answer.\n<% int y = 0; %>\n<% int z = 0; %>\n<% for(int x=0;x<3;x++) { %>\n<% z++;++y;%>\n<% }%>\n<% if(z<y) {%>\n<%= z%>\n<% } else {%>\n<%= z - 1%>\n<% }%>",
+    "options": [
+      "A. 0",
+      "B. 1",
+      "C. 2",
+      "D. 3"
+    ],
+    "answer_index": 2,
+    "answer": "C. 2",
+    "topic": "SQL & JDBC",
+    "explanation": "After the loop, both z and y equal 3 since they increment together each iteration, so z<y is false. This makes the else branch execute, printing z-1, which is 3-1=2.",
+    "corrected": false,
+    "id": "q1966",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "Which of the following JSP variables are not available within a JSP expression. Select",
+    "options": [
+      "A. out",
+      "B. session",
+      "C. request",
+      "D. response"
+    ],
+    "answer_index": 0,
+    "answer": "A. out",
+    "topic": "SQL & JDBC",
+    "explanation": "The `out` object is an implicit variable of type `JspWriter` that writes directly to the response stream, making it unavailable within JSP expressions which cannot perform I/O operations.\n\nJSP expressions use `<%=` syntax and return values to `out` implicitly, so referencing `out` directly within an expression creates a circular dependency and is prohibited.",
+    "corrected": false,
+    "id": "q1967",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which of the following statements are true for <jsp:usebean>. Select the two correct",
+    "options": [
+      "A. The id attribute must be defined for <jsp:usebean>.",
+      "B. The scope attribute must be defined for <jsp:usebean>.",
+      "C. The class attribute must be defined for <jsp:usebean>.",
+      "D. The <jsp:usebean> must include either type or class attribute or both."
+    ],
+    "answer_index": 3,
+    "answer": "D. The <jsp:usebean> must include either type or class attribute or both.",
+    "topic": "React",
+    "explanation": "The `id` attribute is mandatory in `<jsp:useBean>` as it defines the variable name to reference the bean object in the page scope.\n\nWithout `id`, there would be no way to access or manipulate the bean instance created by the tag within the JSP page.",
+    "corrected": false,
+    "id": "q1969",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Assume that you need to write a JSP page that adds numbers from one to ten, and then print the output.\n<% int sum = 0;\nfor(j = 0; j < 10; j++) { %>\n// XXX --- Add j to sum\n<% } %>\n// YYY --- Display the sum\nWhich statement when placed at the location XXX can be used to compute the sum.",
+    "options": [
+      "A. <% sum = sum + j %>",
+      "B. <% sum = sum + j; %>",
+      "C. <%= sum = sum + j %>",
+      "D. <%= sum = sum + j; %>"
+    ],
+    "answer_index": 1,
+    "answer": "B. <% sum = sum + j; %>",
+    "topic": "Core Java & OOP",
+    "explanation": "A JSP scriptlet requires the `<% %>` tags for executing Java code, and Java statements must end with a semicolon to be syntactically valid. The `<%= %>` expression tag is reserved for outputting values directly, not for performing assignment operations like accumulating a sum.",
+    "corrected": false,
+    "id": "q1970",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "Now consider the same JSP example as last question. What must be added at the location",
+    "options": [
+      "A. <% sum %>",
+      "B. <% sum; %>",
+      "C. <%= sum %>",
+      "D. <%= sum; %>"
+    ],
+    "answer_index": 2,
+    "answer": "C. <%= sum %>",
+    "topic": "Core Java & OOP",
+    "explanation": "In JSP, `<% %>` is a scriptlet that executes Java code, while `<%= %>` is an expression tag that outputs values. The correct answer uses `<% sum %>` as a scriptlet statement without semicolon, which is valid JSP syntax for this context.",
+    "corrected": false,
+    "id": "q1971",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "JSP pages have access to implicit objects that are exposed automatically. One such object",
+    "options": [
+      "A. HttpRequest",
+      "B. ServletRequest",
+      "C. Request",
+      "D. HttpServletRequest"
+    ],
+    "answer_index": 3,
+    "answer": "D. HttpServletRequest",
+    "topic": "Core Java & OOP",
+    "explanation": "I need to respectfully correct this. The provided answer is incorrect. The actual correct answer is D. HttpServletRequest.\n\nJSP implicit objects include `request` (which is a ServletRequest), but there is no `HttpRequest` object in JSP or the servlet API.",
+    "corrected": false,
+    "id": "q1972",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "A JSP page uses the java.util.ArrayList class many times. Instead of referring the class by its complete package name each time, we want to just use ArrayList. Which attribute of page directive must be specified to achieve this. Select the one correct answer.",
+    "options": [
+      "A. import",
+      "B. extends",
+      "C. include",
+      "D. package"
+    ],
+    "answer_index": 0,
+    "answer": "A. import",
+    "topic": "Core Java & OOP",
+    "explanation": "The `import` attribute of the page directive lets you specify classes or packages, similar to Java's import statement, so `java.util.ArrayList` can be referenced simply as `ArrayList`. Without it, JSP would require the fully qualified class name every time the class is used in scriptlets or declarations.",
+    "corrected": false,
+    "id": "q1974",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "Name the implicit variable available to JSP pages that may be used to access all the other",
+    "options": [
+      "A. page",
+      "B. pageContext",
+      "C. context",
+      "D. object"
+    ],
+    "answer_index": 1,
+    "answer": "B. pageContext",
+    "topic": "Core Java & OOP",
+    "explanation": "The `page` object is an implicit variable in JSP that represents the current servlet instance, allowing access to all other implicit objects and servlet functionality.\n\nIt serves as the reference to the generated servlet class itself, making it the root object through which other JSP implicit variables can be accessed.",
+    "corrected": false,
+    "id": "q1975",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which of the following files is the correct name and location of deployment descriptor of a web application. Assume that the web application is rooted at \\doc-root. Select the one correct answer",
+    "options": [
+      "A. \\doc-root\\WEB-INF\\web.xml",
+      "B. \\doc-root\\dd.xml",
+      "C. \\doc-root\\web.xml",
+      "D. \\doc-root\\WEB_INF\\dd.xml"
+    ],
+    "answer_index": 0,
+    "answer": "A. \\doc-root\\WEB-INF\\web.xml",
+    "topic": "Core Java & OOP",
+    "explanation": "The Java EE servlet specification requires the deployment descriptor to be named web.xml and placed inside a WEB-INF directory located directly under the web application's root context. This standardized path allows the servlet container to locate and parse configuration settings, such as servlets, mappings, and security constraints, during application deployment.",
+    "corrected": false,
+    "id": "q1976",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "Which of these is true about deployment descriptors. Select the one correct answer.",
+    "options": [
+      "A. The order of elements in deployment descriptor is not important. The elements can follow any order.",
+      "B. The elements of deployment descriptor are case insensitive.",
+      "C. The servlet-mapping element, if defined, must be included within the servlet element.",
+      "D. The web-app element must include the servlet element."
+    ],
+    "answer_index": 0,
+    "answer": "A. The order of elements in deployment descriptor is not important. The elements can follow any order.",
+    "topic": "JavaScript",
+    "explanation": "The DTD for the deployment descriptor defines child elements of web-app using an unordered content model, meaning elements like servlet, servlet-mapping, and context-param can appear in any sequence. The parser validates presence and structure of required elements, not their relative ordering within the XML document.",
+    "corrected": false,
+    "id": "q1978",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "The exception-type element specifies an exception type and is used to handle exceptions",
+    "options": [
+      "A. error-page",
+      "B. servlet",
+      "C. exception",
+      "D. error-handling"
+    ],
+    "answer_index": 0,
+    "answer": "A. error-page",
+    "topic": "JavaScript",
+    "explanation": "The `error-page` element in web.xml maps exception types to error pages, allowing the application to handle exceptions by displaying designated responses. It specifies which exception class triggers which error page through the `exception-type` subelement.",
+    "corrected": false,
+    "id": "q1979",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which of these is a correct example of specifying a listener element resented by MyClass class. Assume myServlet element is defined correctly. Select the one correct answer.",
+    "options": [
+      "A. <listener>MyClass</listener>",
+      "B. <listener> <listener-class>MyClass</listener-class></listener>",
+      "C. <listener> <listener-name>aListener</listener-name> <listener-class>MyClass</listener-class> </listener>",
+      "D. <listener> <servlet-name>myServlet</servlet-name> <listener-class>MyClass</listener-class> </listener>"
+    ],
+    "answer_index": 1,
+    "answer": "B. <listener> <listener-class>MyClass</listener-class></listener>",
+    "topic": "Core Java & OOP",
+    "explanation": "The <listener> element in a deployment descriptor only requires a <listener-class> child element specifying the fully qualified class name implementing the listener interface. Unlike <servlet>, listeners don't need a <listener-name> or association with a <servlet-name>, making option B the minimal correct syntax.",
+    "corrected": false,
+    "id": "q1981",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "With in a context-param element of deployment descriptor, which of the following element is required?",
+    "options": [
+      "A. param-name",
+      "B. name",
+      "C. init-param",
+      "D. servlet-name"
+    ],
+    "answer_index": 0,
+    "answer": "A. param-name",
+    "topic": "Core Java & OOP",
+    "explanation": "The context-param element defines a servlet context initialization parameter, requiring both param-name and param-value as child elements to specify the parameter's identifier and value. Among the given options, only param-name is a valid, required child element within context-param, as the other options belong to different contexts like servlet or init-param configurations.",
+    "corrected": false,
+    "id": "q1982",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "Which of the follwing are mandatory elements within the filter element. Select two",
+    "options": [
+      "A. filter-name",
+      "B. name",
+      "C. value",
+      "D. filter-class"
+    ],
+    "answer_index": 3,
+    "answer": "D. filter-class",
+    "topic": "SQL & JDBC",
+    "explanation": "The `filter-name` element uniquely identifies each filter definition in the deployment descriptor and is required by the servlet specification schema.\n\nThe `filter-class` element specifies the filter implementation class, making both `filter-name` and `filter-class` mandatory for proper filter configuration.",
+    "corrected": false,
+    "id": "q1983",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which of these is not correct about the filter-mapping element of web-app. Select the one",
+    "options": [
+      "A. filter-name element must be present in the filter-mapping element.",
+      "B. Either url-pattern or servlet-name must be present in the filter-mapping element.",
+      "C. dispatcher element can be declared zero to three times in the filter-mapping",
+      "D. filter-name element in the filter-mapping should be same as the corresponding"
+    ],
+    "answer_index": 2,
+    "answer": "C. dispatcher element can be declared zero to three times in the filter-mapping",
+    "topic": "SQL & JDBC",
+    "explanation": "The filter-name element is mandatory in filter-mapping to link the filter definition to its URL patterns or servlet mappings. Without it, the container cannot identify which filter to apply to the specified resources.",
+    "corrected": false,
+    "id": "q1985",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which of these are legal return types of the doAfterBody method defined in a class that extends TagSupport class. Select the two correct answers.",
+    "options": [
+      "A. EVAL_PAGE",
+      "B. EVAL_BODY",
+      "C. EVAL_PAGE_AGAIN",
+      "D. EVAL_BODY_AGAIN"
+    ],
+    "answer_index": 3,
+    "answer": "D. EVAL_BODY_AGAIN",
+    "topic": "Core Java & OOP",
+    "explanation": "The doAfterBody method in BodyTagSupport can return either SKIP_BODY or EVAL_BODY_AGAIN, as defined by the BodyTag interface constants. EVAL_BODY_AGAIN instructs the JSP container to re-evaluate the tag's body content, enabling iterative processing like loops.",
+    "corrected": false,
+    "id": "q1986",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "What is spring?",
+    "options": [
+      "A. Spring is an open source development framework for enterprise Java.",
+      "B. Spring is a proprietary framework.",
+      "C. Spring is a development framework for .Net applications.",
+      "D. Spring is a development framework for PHP based applications."
+    ],
+    "answer_index": 0,
+    "answer": "A. Spring is an open source development framework for enterprise Java.",
+    "topic": "Spring Core",
+    "explanation": "Spring is an open-source framework licensed under Apache License 2.0, allowing free use, modification, and distribution by developers. It provides comprehensive infrastructure support for building enterprise-grade Java applications, including dependency injection, AOP, and transaction management.",
+    "corrected": false,
+    "id": "q1987",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "Which element is used to define a discrete unit of content such as a blogpost, comment,",
+    "options": [
+      "A. section",
+      "B. class",
+      "C. article",
+      "D. none of the mentioned"
+    ],
+    "answer_index": 2,
+    "answer": "C. article",
+    "topic": "Core Java & OOP",
+    "explanation": "The `<article>` element represents self-contained, independently distributable content like blog posts, news articles, and comments that can stand alone.\n\nIt semantically identifies discrete content units, improving document structure and accessibility compared to generic `<div>` or `<section>` tags.",
+    "corrected": false,
+    "id": "q1989",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "HTML5 documents may contain a ___________ element, which is used to set the header",
+    "options": [
+      "A. header",
+      "B. footer",
+      "C. section",
+      "D. none of the mentioned."
+    ],
+    "answer_index": 0,
+    "answer": "A. header",
+    "topic": "HTML & CSS",
+    "explanation": "The `<header>` element is a semantic HTML5 tag specifically designed to represent introductory content and navigation aids at the top of a page or section.\n\nIt contains metadata, logos, titles, and navigational elements that define the document's header area according to HTML5 specifications.",
+    "corrected": false,
+    "id": "q1990",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which element may be used within content to represent material that is tangential?",
+    "options": [
+      "A. aside",
+      "B. cite",
+      "C. article",
+      "D. class"
+    ],
+    "answer_index": 0,
+    "answer": "A. aside",
+    "topic": "Core Java & OOP",
+    "explanation": "The `<aside>` element is semantically designed in HTML to contain content that is tangentially related to the main content, such as sidebars or supplementary information.\n\nThe other options serve different purposes: `<cite>` marks citations, `<article>` defines independent content, and `class` is merely an attribute for styling or scripting, not semantic structure.",
+    "corrected": false,
+    "id": "q1991",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which of the following attribute is used to display date/time content?",
+    "options": [
+      "A. time",
+      "B. datetime",
+      "C. date",
+      "D. year"
+    ],
+    "answer_index": 1,
+    "answer": "B. datetime",
+    "topic": "Core Java & OOP",
+    "explanation": "The `datetime` attribute is the standard HTML5 attribute for marking up date and time content, enabling browsers and assistants to parse temporal information accurately.\n\nThe `datetime` value allows specification of both date AND time together, whereas `date` or `time` alone would be incomplete for full temporal representation.",
+    "corrected": false,
+    "id": "q1993",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "The element ___________ simply groups items within an enclosed dd tag, though it may associate them with a caption defined by a dt tag",
+    "options": [
+      "A. object",
+      "B. figure",
+      "C. embed",
+      "D. none of the mentioned"
+    ],
+    "answer_index": 3,
+    "answer": "D. none of the mentioned",
+    "topic": "Core Java & OOP",
+    "explanation": "The dl element groups items in dd tags and can associate them with captions in dt tags, forming definition or description lists. Since object, figure, and embed serve entirely different purposes—embedding media or grouping figures—none of the listed options match this description.",
+    "corrected": false,
+    "id": "q1994",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "Which of the following element is used for highlighting content similarly to how a highlighter pen might be used on important text in a book?",
+    "options": [
+      "A. em",
+      "B. strong",
+      "C. mark",
+      "D. none of the mentioned"
+    ],
+    "answer_index": 2,
+    "answer": "C. mark",
+    "topic": "Core Java & OOP",
+    "explanation": "The `<mark>` element visually highlights text with a yellow background by default, mimicking a highlighter pen used on printed material. Unlike `<em>` or `<strong>`, which convey semantic emphasis or importance, `<mark>` specifically denotes relevance to the current context without altering meaning.",
+    "corrected": false,
+    "id": "q1995",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "To insert a video, we use a video tag and set its src attribute to a local or remote URL",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "answer": "A. True",
+    "topic": "SQL & JDBC",
+    "explanation": "The `<video>` tag is the HTML5 semantic element for embedding video content, with the `src` attribute specifying the video file path or URL.\n\nBoth local file paths and remote URLs work with the `src` attribute, allowing flexible video source configuration.",
+    "corrected": false,
+    "id": "q1996",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which tag is used to encapsulate navigation and then style the elements appropriately as menu items?",
+    "options": [
+      "A. ul",
+      "B. li",
+      "C. nav",
+      "D. both a and b"
+    ],
+    "answer_index": 2,
+    "answer": "C. nav",
+    "topic": "Core Java & OOP",
+    "explanation": "The nav tag is an HTML5 semantic element specifically designed to wrap navigation links, signaling their purpose to browsers and assistive technologies. CSS can then target this container to style its child elements as menu items, controlling layout and appearance.",
+    "corrected": false,
+    "id": "q1997",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "__________ can be used to advise the browser to download media content in the background to improve playback.",
+    "options": [
+      "A. poster",
+      "B. autobuffer",
+      "C. buffer",
+      "D. data-X"
+    ],
+    "answer_index": 1,
+    "answer": "B. autobuffer",
+    "topic": "Core Java & OOP",
+    "explanation": "The autobuffer attribute is a boolean HTML media attribute that hints the browser to preload and buffer audio or video content before playback begins. This background downloading reduces stalling and ensures smoother playback once the user initiates media viewing.",
+    "corrected": false,
+    "id": "q1998",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "The _________ element is used to render simple graphics such as line art, graphs, and",
+    "options": [
+      "A. metadata",
+      "B. css",
+      "C. canvas",
+      "D. art"
+    ],
+    "answer_index": 2,
+    "answer": "C. canvas",
+    "topic": "HTML & CSS",
+    "explanation": "The canvas element provides a drawable surface for rendering graphics, animations, and visualizations using JavaScript APIs. It's specifically designed for dynamic, pixel-based graphics like line art and graphs.",
+    "corrected": false,
+    "id": "q1999",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "State true or False. \"Prior to HTML5 in web market, traditionally, multimedia has been inserted with the concept of tag-based multimedia back\".",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 1,
+    "answer": "B. False",
+    "topic": "React",
+    "explanation": "Prior to HTML5, multimedia was typically embedded using plugin-based technologies like Flash, Silverlight, or Java applets, requiring external plugins for playback. This approach relied on third-party software rather than native tag-based support, which HTML5 later introduced through elements like <video> and <audio>.",
+    "corrected": false,
+    "id": "q2000",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "Consider the following mark-up and answer the question that follow.\n<source src=\"html_5.mp4\" type=\"video/mp4\">\n<source src=\"html_5.ogv\" type=\"video/ogg\">\nWhat is the need to add multiple file formats for the same file?",
+    "options": [
+      "A. To provide fallback support",
+      "B. To address the media support problem",
+      "C. To provide fallback support & address the media support problem",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 2,
+    "answer": "C. To provide fallback support & address the media support problem",
+    "topic": "Core Java & OOP",
+    "explanation": "Different browsers support different video codecs and container formats, so providing multiple sources ensures at least one format plays across various browsers. This addresses both the fallback mechanism, where the browser tries each source until one works, and the underlying media support problem caused by inconsistent codec compatibility.",
+    "corrected": false,
+    "id": "q2001",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "Consider the markup and answer the question that follow.\n<? controls autobuffer autoplay>\n</?>\nWhich HTML5 element can replace the \"?\"?",
+    "options": [
+      "A. <audio>",
+      "B. <video>",
+      "C. <media>",
+      "D. both <audio> & <video>"
+    ],
+    "answer_index": 3,
+    "answer": "D. both <audio> & <video>",
+    "topic": "HTML & CSS",
+    "explanation": "Both the <audio> and <video> elements support the controls and autoplay attributes as standard HTML5 media attributes for playback behavior. The autobuffer attribute, though deprecated in favor of preload, was also historically valid on both elements since they share the same underlying media API.",
+    "corrected": false,
+    "id": "q2002",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "Which plugins can provide the fallback support for old browsers?",
+    "options": [
+      "A. Flash",
+      "B. Quicktime",
+      "C. Both Flash and Quicktime",
+      "D. none of the mentioned"
+    ],
+    "answer_index": 2,
+    "answer": "C. Both Flash and Quicktime",
+    "topic": "Core Java & OOP",
+    "explanation": "Flash and Quicktime are legacy plugins that browsers used to render multimedia content before modern HTML5 standards were widely supported across older browsers.\n\nThese plugins provided fallback mechanisms allowing developers to serve alternative media formats when native browser support was unavailable on older systems.",
+    "corrected": false,
+    "id": "q2003",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "What more needs to be achieved to fulfil the promises of the Open Web Platform?",
+    "options": [
+      "A. Security and Privacy",
+      "B. Performance and Tuning",
+      "C. Media and Real-Time Communications",
+      "D. All of the mentioned"
+    ],
+    "answer_index": 3,
+    "answer": "D. All of the mentioned",
+    "topic": "JavaScript",
+    "explanation": "The Open Web Platform requires comprehensive advancement across all domains—security/privacy protections, performance optimization, and media/communication capabilities—to achieve its full potential.\n\nEach category addresses critical gaps: security defends against threats, performance ensures usability, and media/real-time communications enable modern interactive applications.",
+    "corrected": false,
+    "id": "q2004",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "State whether the given statement is true or false. “HTML5 brings to the Web video and audio tracks without needing plugins”.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "answer": "A. True",
+    "topic": "React",
+    "explanation": "HTML5 introduces the native <video> and <audio> elements, allowing browsers to play media directly without external plugins like Flash or Silverlight. This is achieved through built-in browser support for codecs and media APIs, simplifying multimedia integration on web pages.",
+    "corrected": false,
+    "id": "q2005",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "Which protocol is supported by Android browsers?",
+    "options": [
+      "A. HTTPS",
+      "B. HLS",
+      "C. RTMP",
+      "D. FTP"
+    ],
+    "answer_index": 0,
+    "answer": "A. HTTPS",
+    "topic": "Core Java & OOP",
+    "explanation": "HLS (HTTP Live Streaming) is Apple's adaptive bitrate streaming protocol that Android browsers support natively through HTML5 video players for streaming media content.\n\nHTTPS, RTMP, and FTP are not streaming protocols; they're transport/security protocols unsuitable for browser-based adaptive video streaming on Android devices.",
+    "corrected": false,
+    "id": "q2006",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "__________ is a JavaScript library that implements the most common user interface",
+    "options": [
+      "A. JavaScript",
+      "B. JQuery UI",
+      "C. VTS",
+      "D. JCL"
+    ],
+    "answer_index": 1,
+    "answer": "B. JQuery UI",
+    "topic": "JavaScript",
+    "explanation": "jQuery UI is a curated set of user interface interactions, effects, and widgets built on top of jQuery, providing reusable components for common UI patterns.\n\nIt abstracts complex JavaScript functionality into simple, declarative methods, making it the standard library for implementing UI elements across web applications.",
+    "corrected": false,
+    "id": "q2007",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "In HTML Audio/Video DOM, __________ sets or returns whether the audio/video should be loaded when the page loads.",
+    "options": [
+      "A. preload",
+      "B. autoplay",
+      "C. buffered",
+      "D. controller"
+    ],
+    "answer_index": 0,
+    "answer": "A. preload",
+    "topic": "HTML & CSS",
+    "explanation": "The preload property sets or returns whether the audio/video should be loaded automatically when the page loads, with values like auto, metadata, or none. This directly controls the buffering behavior of media resources before playback is initiated by the user.",
+    "corrected": false,
+    "id": "q2008",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "Which of the following is not a HTML5 tag?",
+    "options": [
+      "A. <video>",
+      "B. <source>",
+      "C. <track>",
+      "D. <slider>"
+    ],
+    "answer_index": 3,
+    "answer": "D. <slider>",
+    "topic": "HTML & CSS",
+    "explanation": "The `<track>` tag is actually a valid HTML5 element used for specifying text tracks in video/audio elements. The `<slider>` tag is not a standard HTML5 tag; use `<input type=\"range\">` instead.",
+    "corrected": false,
+    "id": "q2009",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "What will happen if height and width of video are not set while video loads?",
+    "options": [
+      "A. page flickers",
+      "B. page does not load",
+      "C. page crash",
+      "D. none of the mentioned"
+    ],
+    "answer_index": 0,
+    "answer": "A. page flickers",
+    "topic": "Core Java & OOP",
+    "explanation": "When video dimensions aren't set, the browser can't reserve layout space, causing the page to reflow and repaint as content loads, creating a flickering effect.\n\nSetting explicit height and width prevents layout shifts by allocating the proper DOM space before the video resource downloads and renders.",
+    "corrected": false,
+    "id": "q2010",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which of the following HTML Video – Media Type is not supported in IE?",
+    "options": [
+      "A. WebM",
+      "B. MP4",
+      "C. Ogg",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 2,
+    "answer": "C. Ogg",
+    "topic": "HTML & CSS",
+    "explanation": "Internet Explorer does not support the Ogg video format, which uses Theora video codec and Vorbis audio codec compression.\n\nIE supports WebM and MP4 formats natively, making Ogg the unsupported format among the listed options.",
+    "corrected": false,
+    "id": "q2011",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "In HTML Audio/Video DOM, __________ sets or returns the default speed of the",
+    "options": [
+      "A. currentTime",
+      "B. duration",
+      "C. defaultPlaybackRate",
+      "D. playbackRate"
+    ],
+    "answer_index": 2,
+    "answer": "C. defaultPlaybackRate",
+    "topic": "HTML & CSS",
+    "explanation": "The `defaultPlaybackRate` property specifies the initial playback speed when media starts, separate from `playbackRate` which changes current playback.\n\n`currentTime` tracks position, `duration` shows length, and `playbackRate` alters existing playback—only `defaultPlaybackRate` sets the default speed.",
+    "corrected": false,
+    "id": "q2012",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "In HTML Audio/Video DOM, __________ sets or returns the CORS settings of the",
+    "options": [
+      "A. currentTime",
+      "B. duration",
+      "C. defaultPlaybackRate",
+      "D. crossOrigin"
+    ],
+    "answer_index": 3,
+    "answer": "D. crossOrigin",
+    "topic": "HTML & CSS",
+    "explanation": "The `crossOrigin` attribute specifically controls Cross-Origin Resource Sharing (CORS) permissions for audio/video elements, allowing or restricting cross-domain access.\n\nThe other options manage playback state (`currentTime`, `duration`, `defaultPlaybackRate`) rather than security policies for resource loading.",
+    "corrected": false,
+    "id": "q2013",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "In HTML Audio/Video DOM, __________ returns a TimeRanges object representing the",
+    "options": [
+      "A. preload",
+      "B. networkState",
+      "C. buffered",
+      "D. controller"
+    ],
+    "answer_index": 2,
+    "answer": "C. buffered",
+    "topic": "React",
+    "explanation": "The `buffered` property returns a TimeRanges object representing played portions of media. The correct answer should be `buffered`, not `preload` which is a string attribute.",
+    "corrected": false,
+    "id": "q2014",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "There is an audio format supported across all browsers.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "answer": "A. True",
+    "topic": "Core Java & OOP",
+    "explanation": "Different browsers support different audio formats due to varying codec implementations and licensing requirements. MP3, WAV, OGG, and FLAC each have inconsistent browser support across Chrome, Firefox, Safari, and Edge.",
+    "corrected": false,
+    "id": "q2015",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which of the following tag is used for audio in HTML5?",
+    "options": [
+      "A. <bgsound>",
+      "B. <audio>",
+      "C. <video>",
+      "D. <canvas>"
+    ],
+    "answer_index": 1,
+    "answer": "B. <audio>",
+    "topic": "HTML & CSS",
+    "explanation": "The `<audio>` tag is the HTML5 semantic element specifically designed to embed sound files and audio content directly in web pages.\n\nThe other options serve different purposes: `<bgsound>` is deprecated, `<video>` handles video content, and `<canvas>` is for drawing graphics.",
+    "corrected": false,
+    "id": "q2016",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which tag is used to defines multiple media resources for media elements audio and",
+    "options": [
+      "A. <source>",
+      "B. <canvas>",
+      "C. <audio>",
+      "D. None of the mentioned."
+    ],
+    "answer_index": 0,
+    "answer": "A. <source>",
+    "topic": "HTML & CSS",
+    "explanation": "The `<source>` tag specifies multiple media file formats within `<audio>` and `<video>` elements, allowing browsers to select compatible formats.\n\nIt defines the src and type attributes, enabling fallback support across different browsers with varying codec compatibility.",
+    "corrected": false,
+    "id": "q2017",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which of the following browser does not support wav file format?",
+    "options": [
+      "A. Opera",
+      "B. Firefox",
+      "C. Chrome",
+      "D. Internet Explorer"
+    ],
+    "answer_index": 3,
+    "answer": "D. Internet Explorer",
+    "topic": "Core Java & OOP",
+    "explanation": "Internet Explorer lacks native HTML5 audio support for the WAV codec, requiring external plugins or workarounds to play WAV files.\n\nAll other modern browsers (Opera, Firefox, Chrome) implement HTML5 audio with built-in WAV format support through their media engines.",
+    "corrected": false,
+    "id": "q2018",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "In HTML Audio/Video DOM, __________ sets or returns the volume of the audio/video.",
+    "options": [
+      "A. src",
+      "B. volume controls",
+      "C. volume",
+      "D. video Tracks"
+    ],
+    "answer_index": 2,
+    "answer": "C. volume",
+    "topic": "HTML & CSS",
+    "explanation": "The `volume` property directly controls audio/video playback level, accepting values from 0.0 (mute) to 1.0 (full volume) in the DOM API.\n\nOther options handle different functions: `src` specifies media source, `volumecontrols` is a boolean attribute, and `videoTracks` manages track selections.",
+    "corrected": false,
+    "id": "q2019",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which of the following attribute adds audio controls, like play, pause, and volume?",
+    "options": [
+      "A. audio",
+      "B. controls",
+      "C. source",
+      "D. src"
+    ],
+    "answer_index": 1,
+    "answer": "B. controls",
+    "topic": "Core Java & OOP",
+    "explanation": "The `controls` attribute enables the built-in browser audio player interface with play, pause, volume, and timeline controls on the `<audio>` element.\n\nWithout `controls`, the audio element is invisible and non-interactive to users, rendering the audio inaccessible for playback.",
+    "corrected": false,
+    "id": "q2020",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "In HTML Audio/Video DOM, __________ returns a MediaError object representing the",
+    "options": [
+      "A. ended",
+      "B. seeking",
+      "C. error",
+      "D. mediaGroup"
+    ],
+    "answer_index": 2,
+    "answer": "C. error",
+    "topic": "HTML & CSS",
+    "explanation": "The `error` property returns a MediaError object containing error details when audio/video loading or playback fails. Other options (ended, seeking, mediaGroup) are boolean flags or metadata, not error objects.",
+    "corrected": false,
+    "id": "q2021",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "In HTML Audio/Video DOM, __________ returns a TextTrackList object representing the",
+    "options": [
+      "A. readyState",
+      "B. startDate",
+      "C. videoTracks",
+      "D. textTracks"
+    ],
+    "answer_index": 3,
+    "answer": "D. textTracks",
+    "topic": "React",
+    "explanation": "The `textTracks` property specifically returns a TextTrackList object containing all text tracks associated with a media element, such as subtitles or captions.\n\nOther properties like `readyState` return numeric states, `startDate` returns timestamps, and `videoTracks` returns video tracks instead of text tracks.",
+    "corrected": false,
+    "id": "q2022",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which of the following element is used for canvas graphics?",
+    "options": [
+      "A. <paint>",
+      "B. <canvas>",
+      "C. <graphic>",
+      "D. <css>"
+    ],
+    "answer_index": 1,
+    "answer": "B. <canvas>",
+    "topic": "HTML & CSS",
+    "explanation": "The `<canvas>` element is an HTML5 feature that provides a drawable surface for JavaScript to render graphics, animations, and visual content dynamically.\n\nCSS, paint, and graphic are not standard HTML elements; only `<canvas>` is the official HTML element designed for canvas-based graphics rendering.",
+    "corrected": false,
+    "id": "q2023",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "Which of the following statement is true?",
+    "options": [
+      "A. SVG stands for Scalable Vector Graphics",
+      "B. SVG is used to define graphics for the Web",
+      "C. SVG is a W3C recommendation",
+      "D. All of the mentioned"
+    ],
+    "answer_index": 3,
+    "answer": "D. All of the mentioned",
+    "topic": "React",
+    "explanation": "SVG (Scalable Vector Graphics) is the official W3C standard for vector graphics that scales without quality loss across all resolutions and devices. It's the recommended format for web-based graphics, supporting interactivity and animation while maintaining crisp rendering at any size.",
+    "corrected": false,
+    "id": "q2024",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "To draw on the canvas, authors must first obtain a reference to a context using the",
+    "options": [
+      "A. getData",
+      "B. toDataURL",
+      "C. getContext",
+      "D. none of the mentioned"
+    ],
+    "answer_index": 2,
+    "answer": "C. getContext",
+    "topic": "Core Java & OOP",
+    "explanation": "The getContext method retrieves the rendering context object from a canvas element, which provides all drawing methods and properties needed for graphics operations.\n\nWithout calling getContext first, developers cannot access drawing functions like fillRect, strokePath, or drawImage to render content on the canvas.",
+    "corrected": false,
+    "id": "q2025",
+    "trust": "unverified-source"
+  },
+  {
+    "question": "The ___________ method must add the scaling transformation described by the arguments to the transformation matrix.",
+    "options": [
+      "A. scale(x, y)",
+      "B. translate(x, y)",
+      "C. rotate(angle)",
+      "D. none of the mentioned"
+    ],
+    "answer_index": 0,
+    "answer": "A. scale(x, y)",
+    "topic": "Core Java & OOP",
+    "explanation": "The scale(x, y) method multiplies the current transformation matrix by a scaling matrix using the x and y factors provided as arguments. This alters subsequent drawing operations by stretching or shrinking coordinates along the x and y axes accordingly.",
+    "corrected": false,
+    "id": "q2026",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "Which method must clear the pixels in the specified rectangle that also intersects the current clipping region to a fully transparent black, erasing any previous image?",
+    "options": [
+      "A. strokeRect(x, y, w, h)",
+      "B. clearRect(x, y, w, h)",
+      "C. fillRect(x, y, w, h)",
+      "D. none of the mentioned"
+    ],
+    "answer_index": 1,
+    "answer": "B. clearRect(x, y, w, h)",
+    "topic": "Core Java & OOP",
+    "explanation": "The clearRect(x, y, w, h) method resets pixels within the given rectangle to fully transparent black (RGBA 0,0,0,0), removing any prior drawn content. It differs from fillRect and strokeRect, which paint colors rather than clear pixel data to transparency.",
+    "corrected": false,
+    "id": "q2027",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "When the _____________ method is passed an animated image as its image argument, the user agent must use the poster frame of the animation, or, if there is no poster frame, the first frame of the animation.",
+    "options": [
+      "A. measureText()",
+      "B. imageData()",
+      "C. drawImage()",
+      "D. none of the mentioned"
+    ],
+    "answer_index": 2,
+    "answer": "C. drawImage()",
+    "topic": "Core Java & OOP",
+    "explanation": "The drawImage() method renders images, canvases, or video frames onto the canvas, so when given an animated image source, it must select a single representative frame to draw. Per the HTML specification, this frame is the poster frame if defined, or the first frame otherwise, ensuring consistent static rendering.",
+    "corrected": false,
+    "id": "q2028",
+    "trust": "unverified-source",
+    "recovered": true,
+    "repair_origin": "source"
+  }
+]

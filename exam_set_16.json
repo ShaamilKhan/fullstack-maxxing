@@ -1,0 +1,987 @@
+[
+  {
+    "id": "q1069",
+    "topic": "Java OOP",
+    "question": "Select method's signatures that match with the following pointcut: execution(* com.test.service..*.*(*))",
+    "options": [
+      "A. void com.test.service.MyServiceImpl#transfert(Money amount)",
+      "B. void com.test.service.account.MyServiceImpl#transfert(Money amount)",
+      "C. void com.test.service.MyServiceImpl#transfert(Account account, Money amount)",
+      "D. void com.test.service.account.MyServiceImpl#transfert(Account account, Money amount)"
+    ],
+    "answer_index": 0,
+    "explanation": "'void com.test.service.MyServiceImpl#transfert(Money amount)' is correct.",
+    "corrected": false,
+    "answer": "A. void com.test.service.MyServiceImpl#transfert(Money amount)",
+    "trust": "baseline"
+  },
+  {
+    "id": "q1070",
+    "topic": "Java OOP",
+    "question": "Given the Spring configuration file, which are the correct statements? <bean class=\"com.spring.service.BankServiceImpl\" p:bankName=\"NationalBank\"> </bean>",
+    "options": [
+      "A. The p namespace has to be declared",
+      "B. NationalBank is a scalar value",
+      "C. Bean id is bankServiceImpl",
+      "D. The BankServiceImpl references a NationalBank bean"
+    ],
+    "answer_index": 0,
+    "explanation": "The p namespace is a shorthand notation for property injection in Spring XML configuration that must be explicitly declared in the beans schema to be recognized by the parser. Without declaring `xmlns:p=\"http://www.springframework.org/schema/p\"` in the root element, the `p:bankName` attribute will cause an XML parsing error. The other options are incorrect because: B) \"NationalBank\" is a string literal, not a bean reference; C) no id attribute is specified, so Spring auto-generates one; D) a bean reference would require `ref=` syntax or nested `<ref>` element.",
+    "corrected": false,
+    "answer": "A. The p namespace has to be declared",
+    "trust": "baseline"
+  },
+  {
+    "id": "q1071",
+    "topic": "Java OOP",
+    "question": "How to reload my changes on Spring Boot without having to restart the server?",
+    "options": [
+      "A. org.springframework.boot spring-boot-devtools true",
+      "B. org.springframework.boot spring-boot-test true",
+      "C. org.springframework.boot spring-boot-web true",
+      "D. org.springframework.boot spring-boot-jasper true"
+    ],
+    "answer_index": 0,
+    "explanation": "'org.springframework.boot spring-boot-devtools true' is correct.",
+    "corrected": false,
+    "answer": "A. org.springframework.boot spring-boot-devtools true",
+    "trust": "baseline"
+  },
+  {
+    "id": "q1072",
+    "topic": "Java OOP",
+    "question": "LoggerInterceptor which implements the HandlerInterceptor.The LoggerInterceptor will override the which following methods",
+    "options": [
+      "A. preHandlerBean(), postHandlerBean(), afterCompletion()",
+      "B. PreProcessHandler(), PostProcessHandler(), afterCompletion()",
+      "C. PreHandler(), PostHandler(), afterCompletion()",
+      "D. none"
+    ],
+    "answer_index": 3,
+    "explanation": "'PreHandler(), PostHandler(), afterCompletion()' is correct.",
+    "corrected": false,
+    "answer": "D. none",
+    "trust": "baseline"
+  },
+  {
+    "id": "q1073",
+    "topic": "Java OOP",
+    "question": "How does the Spring Batch work?",
+    "options": [
+      "A. step, ItemReader, ItemProcessor, ItemStreamWriter",
+      "B. step, ItemProcessor, ItemStreamWriter",
+      "C. step, ItemReader, ItemStreamWriter",
+      "D. job, ItemReader, ItemProcessor, ItemStreamWriter"
+    ],
+    "answer_index": 0,
+    "explanation": "'step, ItemReader, ItemProcessor, ItemStreamWriter' is correct.",
+    "corrected": false,
+    "answer": "A. step, ItemReader, ItemProcessor, ItemStreamWriter",
+    "trust": "baseline"
+  },
+  {
+    "id": "q1075",
+    "topic": "Java OOP",
+    "question": "In the below notation, Student is of type { \"Student\": [ \"Amy\", \"Bob\", \"John\" ] }",
+    "options": [
+      "A. Not a valid JSON string",
+      "B. Array",
+      "C. Class",
+      "D. Object"
+    ],
+    "answer_index": 1,
+    "explanation": "The value assigned to the \"Student\" key is a JSON array, denoted by the square brackets `[ ]` containing three string elements. While the outer structure is an object (due to the curly braces), the question specifically asks about the type of \"Student,\" which is the array `[\"Amy\", \"Bob\", \"John\"]`.",
+    "corrected": false,
+    "answer": "B. Array",
+    "trust": "baseline"
+  },
+  {
+    "id": "q1076",
+    "topic": "Java OOP",
+    "question": "Which class is used to create a black navigation bar?",
+    "options": [
+      "A. .navbar-default",
+      "B. .navbar-black",
+      "C. .navbar-dark",
+      "D. .navbar-inverse"
+    ],
+    "answer_index": 3,
+    "explanation": "The `.navbar-inverse` class is the Bootstrap utility specifically designed to create a dark/black navigation bar by inverting the navbar's color scheme from the default light colors to dark backgrounds with light text. While `.navbar-dark` exists in Bootstrap 4+, `.navbar-inverse` was the standard method in Bootstrap 3 and earlier versions for achieving a black navbar appearance.",
+    "corrected": false,
+    "answer": "D. .navbar-inverse",
+    "trust": "baseline"
+  },
+  {
+    "id": "q1077",
+    "topic": "Java OOP",
+    "question": "The .container-fluid class provides",
+    "options": [
+      "A. Fixed width container",
+      "B. Table format",
+      "C. To create a Form",
+      "D. Full width container"
+    ],
+    "answer_index": 3,
+    "explanation": "The `.container-fluid` class in Bootstrap creates a responsive container that spans 100% of the viewport width at all breakpoints, unlike `.container` which has fixed max-widths at different screen sizes. The \"fluid\" suffix explicitly indicates that the container expands and contracts fluidly with the browser window rather than maintaining a fixed dimension.",
+    "corrected": false,
+    "answer": "D. Full width container",
+    "trust": "baseline"
+  },
+  {
+    "id": "q1078",
+    "topic": "Java OOP",
+    "question": "How to get information about browsers?",
+    "options": [
+      "A. Browser",
+      "B. version",
+      "C. navigator",
+      "D. window"
+    ],
+    "answer_index": 2,
+    "explanation": "The `navigator` object is a built-in JavaScript object that contains information about the user's browser, including its name, version, operating system, and capabilities. While `window` is the global object, `navigator` is specifically designed to provide browser-related metadata. Properties like `navigator.userAgent`, `navigator.platform`, and `navigator.language` all retrieve browser information.",
+    "corrected": false,
+    "answer": "C. navigator",
+    "trust": "baseline"
+  },
+  {
+    "id": "q1079",
+    "topic": "Concurrency",
+    "question": "What is the default value of the CSS 'display' property for a <div> element?",
+    "options": [
+      "A. None",
+      "B. inline",
+      "C. inline-block",
+      "D. block"
+    ],
+    "answer_index": 3,
+    "explanation": "The `<div>` element is a generic block-level container defined by the HTML specification, so browsers apply `display: block` by default in their user-agent stylesheets. This causes divs to occupy the full available width and stack vertically, starting on new lines unlike inline elements.",
+    "corrected": false,
+    "answer": "D. block",
+    "trust": "baseline",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "id": "q1080",
+    "topic": "HTML/CSS",
+    "question": "In CSS, which single shorthand property is commonly used to set background-color, background-image, background-repeat, background-attachment, and background-position all at once?",
+    "options": [
+      "A. background",
+      "B. background-style",
+      "C. background-set",
+      "D. background-config"
+    ],
+    "answer_index": 0,
+    "explanation": "The `background` property is CSS's shorthand notation that combines multiple individual background-related properties into a single declaration, saving code and improving readability. It accepts values for color, image, repeat, attachment, and position in a specific order, letting browsers parse and apply each corresponding longhand property automatically.",
+    "corrected": false,
+    "answer": "A. background",
+    "trust": "baseline",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "id": "q1081",
+    "topic": "Java OOP",
+    "question": "Which is the property that represents the content displayed in the window?",
+    "options": [
+      "A. document",
+      "B. content",
+      "C. window",
+      "D. frame"
+    ],
+    "answer_index": 0,
+    "explanation": "The `document` object contains all the HTML content, DOM elements, and text displayed within a browser window. It's the primary property for accessing and manipulating the actual page content shown to users.",
+    "corrected": false,
+    "answer": "A. document",
+    "trust": "baseline"
+  },
+  {
+    "id": "q1086",
+    "topic": "Java OOP",
+    "question": "When there is no match of the document in the collection what do upsert: true do?",
+    "options": [
+      "A. Delete",
+      "B. Nothing",
+      "C. Insert",
+      "D. Update"
+    ],
+    "answer_index": 2,
+    "explanation": "When upsert is true and no document matches the query, MongoDB inserts a new document with the query conditions and update operators applied.\n\nThis is the fundamental purpose of upsert: to either update existing documents or create new ones if none exist.",
+    "corrected": false,
+    "answer": "C. Insert",
+    "trust": "baseline"
+  },
+  {
+    "id": "q1097",
+    "topic": "Concurrency",
+    "question": "In which of the following situations will the compiler generate an error?",
+    "options": [
+      "A. Catching an checked exception that is not thrown in a try block",
+      "B. Mixing subclasses and superclasses in a throws clause",
+      "C. Don't having at least one catch block after a try block",
+      "D. Downcasting an instance of Exception to an incorrect type (e.g. RuntimeException re = (RuntimeException)e;)"
+    ],
+    "answer_index": 0,
+    "explanation": "'Catching an checked exception that is not thrown in a try block' is the correct answer per language specification.",
+    "corrected": false,
+    "answer": "A. Catching an checked exception that is not thrown in a try block",
+    "trust": "baseline"
+  },
+  {
+    "id": "q1098",
+    "topic": "Java OOP",
+    "question": "Select the correct statement for the given code based on Polymorphism in Java.\n\nclass Bike{\nvoid run(){System.out.println(\"running\");}\n}\nclass Splendor extends Bike{\nvoid run(){System.out.println(\"running safely with 60km\");}\npublic static void main(String args[]){\nBike b = new Splendor();\nb.run();\n}\n}",
+    "options": [
+      "A. Compile time polymorphism",
+      "B. Encapsulation Runtime",
+      "C. Java Runtime Polymorphism",
+      "D. None of the above"
+    ],
+    "answer_index": 2,
+    "explanation": "The method call b.run() is resolved at runtime based on the actual object type (Splendor), not the reference type (Bike), demonstrating dynamic method dispatch. This overriding behavior, where the JVM decides which overridden method to invoke during execution, is the defining characteristic of runtime polymorphism in Java.",
+    "corrected": false,
+    "answer": "C. Java Runtime Polymorphism",
+    "trust": "baseline",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "id": "q1099",
+    "topic": "Java OOP",
+    "question": "Which of the following is NOT a correct guideline to follow when a class inherits from another class?",
+    "options": [
+      "A. Override or add the minimum needed to accomplish the derived class' purpose",
+      "B. Override all the methods of its parent class",
+      "C. Make sure the result \"contains\" its base class",
+      "D. Make use of the parent class's capabilities"
+    ],
+    "answer_index": 1,
+    "explanation": "Overriding every inherited method is unnecessary and violates the principle of minimal modification, since a subclass should only change behavior relevant to its specific purpose. Blindly overriding all methods can also break the \"is-a\" relationship and needlessly duplicate or contradict functionality already correctly provided by the base class.",
+    "corrected": false,
+    "answer": "B. Override all the methods of its parent class",
+    "trust": "baseline",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "id": "q1105",
+    "topic": "Java OOP",
+    "question": "Which of these methods are used to read in from a file?",
+    "options": [
+      "A. get()",
+      "B. read()",
+      "C. scan()",
+      "D. readFileInput()"
+    ],
+    "answer_index": 1,
+    "explanation": "The `read()` method is the standard function across most programming languages for reading file contents into memory as a string or bytes.\n\nMethods like `get()`, `scan()`, and `readFileInput()` are either non-standard, language-specific for other purposes, or don't exist as universal file-reading functions.",
+    "corrected": false,
+    "answer": "B. read()",
+    "trust": "baseline"
+  },
+  {
+    "id": "q1108",
+    "topic": "Java OOP",
+    "question": "What is the output of the Java Code Snippet ? StringJoiner astring = new StringJoiner(\"-\", \" ( \", \" ) \"); astring.add(\"A\"); astring.add(\"B\"); astring.add(\"C\");",
+    "options": [
+      "A. (A-B-C)",
+      "B. -(B)-(C)",
+      "C. (-A-)(-B-)(-C-)",
+      "D. (A)-(B)-(C)"
+    ],
+    "answer_index": 0,
+    "explanation": "The code produces '(A-B-C)' based on Java execution semantics.",
+    "corrected": false,
+    "answer": "A. (A-B-C)",
+    "trust": "baseline"
+  },
+  {
+    "id": "q1110",
+    "topic": "Java OOP",
+    "question": "Which Servlet API is used to get security information?\ni. HttpServletRequest.isUserInRole()\nii. HttpServletRequest.getUserPrincipal()",
+    "options": [
+      "A. Only i",
+      "B. Only ii",
+      "C. Both i and ii",
+      "D. Neither i nor ii"
+    ],
+    "answer_index": 2,
+    "explanation": "HttpServletRequest.isUserInRole() checks whether the authenticated user belongs to a specified logical security role, returning a boolean based on role mapping. HttpServletRequest.getUserPrincipal() returns a java.security.Principal object containing the authenticated user's name, both methods exposing security context information to servlets.",
+    "corrected": false,
+    "answer": "C. Both i and ii",
+    "trust": "baseline",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "id": "q1111",
+    "topic": "Java OOP",
+    "question": "What does it mean by publishing a REST service in Spring ? i. Publishing an application's data as Json over a REST service. ii.Publishing an application's data as XML over a REST service. Iii. Sharing Database within two microservices using Spring Data Access Object (DAO).",
+    "options": [
+      "A. Only 1",
+      "B. Only 1 and 2",
+      "C. Only 2",
+      "D. All of the above."
+    ],
+    "answer_index": 1,
+    "explanation": "Publishing a REST service means exposing application data through HTTP endpoints in standard formats like JSON or XML for client consumption.\n\nSharing databases between microservices violates microservices architecture principles; REST services enable data sharing through APIs, not direct database access.",
+    "corrected": false,
+    "answer": "B. Only 1 and 2",
+    "trust": "baseline"
+  },
+  {
+    "id": "q1112",
+    "topic": "Java OOP",
+    "question": "In MongoDB , which is the operation that uses an index often , having better performance than those who do NOT use an index ?",
+    "options": [
+      "A. SELECT.",
+      "B. UPDATE",
+      "C. DELETE.",
+      "D. SORT."
+    ],
+    "answer_index": 3,
+    "explanation": "Sorting large datasets requires scanning all documents sequentially without an index, causing significant performance degradation that indexed sorting eliminates entirely.\n\nAn index on the sort field allows MongoDB to return results in pre-ordered sequence, avoiding expensive in-memory sorting operations on massive collections.",
+    "corrected": false,
+    "answer": "D. SORT.",
+    "trust": "baseline"
+  },
+  {
+    "id": "q1117",
+    "topic": "JavaScript",
+    "question": "Identify the correct ES6 statement. i. var React = require(‘react'); ii. import React from react; iii. module.exports = Component. iv. export default Component.",
+    "options": [
+      "A. Only i and ii",
+      "B. Only iv",
+      "C. Only i,ii and iv",
+      "D. Only ii and iv"
+    ],
+    "answer_index": 1,
+    "explanation": "Statement ii uses ES6 import syntax correctly (missing quotes is a typo, but it's ES6). Statement iv uses ES6 export syntax correctly.\n\nStatements i and iii are CommonJS syntax (require/module.exports), not ES6 modules, which use import/export instead.",
+    "corrected": false,
+    "answer": "B. Only iv",
+    "trust": "baseline"
+  },
+  {
+    "id": "q1120",
+    "topic": "Java OOP",
+    "question": "Identify the correct statement in MongoDB.",
+    "options": [
+      "A. Queries specify criteria, or conditions , which identify the documents that MongoDB returns to the clients.",
+      "B. Write Operations , or queries , retrieve data stored in the database.",
+      "C. The selection limits the amount of data that MongoDB returns to the client over the network.",
+      "D. Read Operations, or updates, modify the data stored in the database."
+    ],
+    "answer_index": 0,
+    "explanation": "'Queries specify criteria, or conditions , which identify the documents that MongoDB returns to the clients.' is correct.",
+    "corrected": false,
+    "answer": "A. Queries specify criteria, or conditions , which identify the documents that MongoDB returns to the clients.",
+    "trust": "baseline"
+  },
+  {
+    "id": "q1122",
+    "topic": "Java OOP",
+    "question": "Is the following a valid Java code snippet ?\n[CODE]\nOptional<String> aValue = Optional.of(\"Not Empty\");\nif (aValue.isPresent()) {\n    System.out.println(\"Got Not Empty\");\n}\n[/CODE]",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "explanation": "This code is valid Java syntax that correctly uses the Optional API to check if a value exists before accessing it. The `isPresent()` method returns true when Optional contains a non-null value, so the println executes successfully.",
+    "corrected": false,
+    "answer": "A. True",
+    "trust": "baseline"
+  },
+  {
+    "id": "q1124",
+    "topic": "Java OOP",
+    "question": "In Java Optional.ofNullable() method of the Optional Class, returns a Non-empty Optional if the given object has a value, otherwise it returns an empty Optional.",
+    "options": [
+      "A. true",
+      "B. false"
+    ],
+    "answer_index": 0,
+    "explanation": "Optional.ofNullable() accepts any value and wraps it in an Optional container, returning an empty Optional only if the argument is null.\n\nThis method allows safe handling of potentially null references without throwing NullPointerException, making it ideal for null-safety in functional programming.",
+    "corrected": false,
+    "answer": "A. true",
+    "trust": "baseline"
+  },
+  {
+    "id": "q1125",
+    "topic": "Java OOP",
+    "question": "Which of the following types of Java methods cannot be type parameterized ?",
+    "options": [
+      "A. FINAL methods.",
+      "B. Overriding methods.",
+      "C. Overloading methods.",
+      "D. Static methods."
+    ],
+    "answer_index": 1,
+    "explanation": "Final methods cannot be overridden, which prevents subclasses from specializing generic type parameters that the parent class defines.\n\nType parameterization relies on polymorphic behavior where subclasses refine generic constraints; final methods block this inheritance mechanism.",
+    "corrected": false,
+    "answer": "B. Overriding methods.",
+    "trust": "baseline"
+  },
+  {
+    "id": "q1127",
+    "topic": "Java OOP",
+    "question": "What are the core operations of DevOps with applications development and with infrastructure.",
+    "options": [
+      "A. Provisioning, Configuration and Orchestration.",
+      "B. Code Building, Coverage and Unit Testing.",
+      "C. Packaging and Deployment.",
+      "D. All of the above."
+    ],
+    "answer_index": 3,
+    "explanation": "DevOps encompasses the entire software delivery lifecycle, requiring infrastructure setup (provisioning, configuration, orchestration), application development practices (building, testing, coverage), and release management (packaging, deployment).\n\nAll listed operations are essential core DevOps functions that work together to enable continuous integration, continuous delivery, and automated infrastructure management.",
+    "corrected": false,
+    "answer": "D. All of the above.",
+    "trust": "baseline"
+  },
+  {
+    "id": "q1130",
+    "topic": "HTML/CSS",
+    "question": "After you initialize a new GIT repository and create a file named git-quiz.html , which of the following commands will NOT work if needed?",
+    "options": [
+      "A. git add git-quiz.html",
+      "B. git status",
+      "C. git add",
+      "D. git commit -m \"gut quiz web file added\""
+    ],
+    "answer_index": 2,
+    "explanation": "'git add' is the correct answer per language specification.",
+    "corrected": false,
+    "answer": "C. git add",
+    "trust": "baseline"
+  },
+  {
+    "id": "q1134",
+    "topic": "Java OOP",
+    "question": "The __ Javascript method is like the mathematical \"for all\" quantifier , which resumes true if and only if the function returns true for all elements in the array.",
+    "options": [
+      "A. every()",
+      "B. some()",
+      "C. all()",
+      "D. forall()"
+    ],
+    "answer_index": 0,
+    "explanation": "The correct answer is A. every(), not B. The \"for all\" quantifier requires ALL elements to satisfy the condition, which is exactly what every() does.\n\nsome() checks if AT LEAST ONE element satisfies the condition, making it equivalent to the existential quantifier, not the universal \"for all\" quantifier.",
+    "corrected": false,
+    "answer": "A. every()",
+    "trust": "baseline"
+  },
+  {
+    "id": "q1136",
+    "topic": "Java OOP",
+    "question": "In Javascript __ __ is a comma separated list of colon separated name value pairs enclosed within curly braces.",
+    "options": [
+      "A. An object prototype.",
+      "B. A map object.",
+      "C. An class",
+      "D. An object literal."
+    ],
+    "answer_index": 3,
+    "explanation": "An object literal is the syntax for creating objects in JavaScript using `{key: value, key: value}` format with curly braces and colon-separated pairs.\n\nThis matches the exact description: comma-separated key-value pairs enclosed in braces, which is the defining characteristic of object literal notation.",
+    "corrected": false,
+    "answer": "D. An object literal.",
+    "trust": "baseline"
+  },
+  {
+    "id": "q1137",
+    "topic": "Java OOP",
+    "question": "In Javascript , what is the observation made of the statement if (!a[i]) continue ? i. Skips the undefined elements. ii. Skips the null elements. iii. Skips the non existent elements.",
+    "options": [
+      "A. i and ii only.",
+      "B. ii and iii only.",
+      "C. i and iii only.",
+      "D. i,ii and iii"
+    ],
+    "answer_index": 3,
+    "explanation": "The condition `!a[i]` evaluates to true for undefined and null values, causing the loop to skip them. Non-existent array elements return undefined, which is already covered by condition i.",
+    "corrected": false,
+    "answer": "D. i,ii and iii",
+    "trust": "baseline"
+  },
+  {
+    "id": "q1138",
+    "topic": "JavaScript",
+    "question": "Which of these methods is the ultimate element selection method and a very powerful technique by which client side Javascript programs can select the document elements that they are going to manipulate ?",
+    "options": [
+      "A. querySelectAll()",
+      "B. querySelector()",
+      "C. querySelect()",
+      "D. querySelectorAll()"
+    ],
+    "answer_index": 3,
+    "explanation": "querySelectorAll() lets JavaScript select all elements matching a specified CSS selector, returning a static NodeList for manipulation. It is powerful because it supports complex CSS selector syntax, unlike simpler methods like getElementById or getElementsByClassName.",
+    "corrected": false,
+    "answer": "D. querySelectorAll()",
+    "trust": "baseline"
+  },
+  {
+    "id": "q1140",
+    "topic": "JavaScript",
+    "question": "Which of the following class makes round corner image for automatically adjust to fit the size of the screen?",
+    "options": [
+      "A. .img-res-image",
+      "B. .img-responsive-image * img-fluid (for full width responsible)",
+      "C. .img-responsive",
+      "D. .img-res"
+    ],
+    "answer_index": 2,
+    "explanation": "'.img-responsive' is the correct answer per language specification.",
+    "corrected": false,
+    "answer": "C. .img-responsive",
+    "trust": "baseline"
+  },
+  {
+    "id": "q1141",
+    "topic": "JavaScript",
+    "question": "Which of the following code will not throw an error?",
+    "options": [
+      "A. JSON.parse(\");",
+      "B. JSON.parse(null);",
+      "C. JSON.parse();",
+      "D. JSON.parse({});"
+    ],
+    "answer_index": 1,
+    "explanation": "'JSON.parse(null);' is the correct answer per language specification.",
+    "corrected": false,
+    "answer": "B. JSON.parse(null);",
+    "trust": "baseline"
+  },
+  {
+    "id": "q1144",
+    "topic": "JavaScript",
+    "question": "Which of the following can be impplemented using animation?",
+    "options": [
+      "A. Fireworks",
+      "B. fade Effect",
+      "C. Roll-in or Roll-out",
+      "D. All of the mentioned"
+    ],
+    "answer_index": 3,
+    "explanation": "'All of the mentioned' is the correct answer per language specification.",
+    "corrected": false,
+    "answer": "D. All of the mentioned",
+    "trust": "baseline"
+  },
+  {
+    "id": "q1145",
+    "topic": "JavaScript",
+    "question": "How to declear variable in Typescript?",
+    "options": [
+      "A. Var",
+      "B. Let",
+      "C. Both",
+      "D. Dim"
+    ],
+    "answer_index": 2,
+    "explanation": "In TypeScript, both `var` and `let` are valid keywords for declaring variables, though `let` is preferred for block-scoping and avoiding hoisting issues.\n\n`const` is also available for immutable declarations, making TypeScript flexible with multiple declaration options.",
+    "corrected": false,
+    "answer": "C. Both",
+    "trust": "baseline"
+  },
+  {
+    "id": "q1147",
+    "topic": "JavaScript",
+    "question": "Which field is requried in <input>",
+    "options": [
+      "A. required",
+      "B. minlength",
+      "C. Both",
+      "D. pattern"
+    ],
+    "answer_index": 0,
+    "explanation": "The `required` attribute is a boolean field that mandates user input before form submission, making it a fundamental validation requirement in HTML.\n\nThe `minlength`, `pattern`, and other attributes are optional constraints that only validate input format or length when a value is present.",
+    "corrected": false,
+    "answer": "A. required",
+    "trust": "baseline"
+  },
+  {
+    "id": "q1148",
+    "topic": "JavaScript",
+    "question": "How to implements inheritence in typescript?",
+    "options": [
+      "A. implements",
+      "B. extends",
+      "C. inherits",
+      "D. super"
+    ],
+    "answer_index": 1,
+    "explanation": "In TypeScript, the `extends` keyword is used to create a class that inherits from a parent class, allowing the child class to access parent properties and methods.\n\nThe `implements` keyword is for interfaces, `inherits` doesn't exist in TypeScript, and `super` only calls parent constructors or methods.",
+    "corrected": false,
+    "answer": "B. extends",
+    "trust": "baseline"
+  },
+  {
+    "id": "q1149",
+    "topic": "JavaScript",
+    "question": "Which keyword we can't use in JSON?",
+    "options": [
+      "A. Object",
+      "B. key",
+      "C. value",
+      "D. None"
+    ],
+    "answer_index": 3,
+    "explanation": "JSON has no concept of \"None\"; that is a Python-specific keyword representing null values, not part of the JSON specification. JSON uses \"null\" instead, making \"None\" the keyword that cannot be used directly in valid JSON syntax.",
+    "corrected": false,
+    "answer": "D. None",
+    "trust": "baseline",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "id": "q1150",
+    "topic": "JavaScript",
+    "question": "How can we add/ delete in array and returns the removed item.",
+    "options": [
+      "A. slice",
+      "B. shift",
+      "C. reverse",
+      "D. splice"
+    ],
+    "answer_index": 3,
+    "explanation": "The `splice()` method modifies an array by adding or removing elements and returns an array containing the removed items.\n\nUnlike `slice()` which doesn't modify the original, `splice()` is the only method that both mutates the array and returns deleted elements.",
+    "corrected": false,
+    "answer": "D. splice",
+    "trust": "baseline"
+  },
+  {
+    "id": "q1151",
+    "topic": "JavaScript",
+    "question": "Which of the following best describes TypeScript's relationship to JavaScript?",
+    "options": [
+      "A. A superset of JavaScript that adds static typing",
+      "B. A completely unrelated programming language with different syntax",
+      "C. A CSS preprocessor used for styling web pages",
+      "D. A database query language used for backend development"
+    ],
+    "answer_index": 0,
+    "explanation": "TypeScript extends JavaScript by adding optional static typing, interfaces, and other features while remaining fully compatible with existing JS code. Any valid JavaScript program is also valid TypeScript, since TypeScript compiles down to plain JavaScript for execution in browsers or Node.js.",
+    "corrected": true,
+    "answer": "A. A superset of JavaScript that adds static typing",
+    "trust": "baseline",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "id": "q1156",
+    "topic": "Concurrency",
+    "question": "Which of the following statements are true about Java finally block? i. A finally block is executed, only after the catch block is executed. ii. A finally block is executed whether an exception is thrown or not. iii. A finally block is NOT mandatory. iv. A finally block is executed, only if an exception occurs.",
+    "options": [
+      "A. i",
+      "B. iv",
+      "C. i and iv",
+      "D. ii and iii"
+    ],
+    "answer_index": 3,
+    "explanation": "A finally block always runs whether or not an exception is thrown (unless JVM exits). It is NOT mandatory.",
+    "corrected": false,
+    "answer": "D. ii and iii",
+    "trust": "baseline"
+  },
+  {
+    "id": "q1158",
+    "topic": "Concurrency",
+    "question": "What is the result of the following Java code snippet?\n[CODE]\nclass Animal {\n    public String noise() {\n        return \"peep\";\n    }\n}\n\nclass Dog extends Animal {\n    public String noise() {\n        return \"bark\";\n    }\n}\n\nclass Cat extends Animal {\n    public String noise() {\n        return \"meow\";\n    }\n}\n\nAnimal animal = new Dog();\nCat cat = (Cat) animal;\nSystem.out.println(cat.noise());\n// Exception in thread \"main\" java.lang.ClassCastException\n[/CODE]",
+    "options": [
+      "A. peep",
+      "B. bark",
+      "C. meow",
+      "D. Compilation fails"
+    ],
+    "answer_index": 0,
+    "explanation": "The code throws a `ClassCastException` at runtime because `animal` references a `Dog` object, not a `Cat`, making the cast invalid and preventing execution.\n\nThe correct answer is actually E: An exception is thrown at runtime, not A. The provided \"correct answer\" is incorrect.",
+    "corrected": false,
+    "answer": "A. peep",
+    "trust": "baseline"
+  },
+  {
+    "id": "q1159",
+    "topic": "Java OOP",
+    "question": "What is the output of the following Java code snippet?\n\nclass A {\n    void foo() throws Exception {\n        throw new Exception();\n    }\n}\n\nclass SubB2 extends A {\n    void foo() {\n        System.out.println(\"B \");\n    }\n}\n\nclass HelloWorld {\n    public static void main(String[] args) {\n        A a = new SubB2();\n        a.foo(); // line 15\n    }\n}",
+    "options": [
+      "A. Compilation fails due to an error on line 15.",
+      "B. B",
+      "C. B, followed by an Exception.",
+      "D. Compilation fails due to an error on line 9."
+    ],
+    "answer_index": 0,
+    "explanation": "The reference type A declares foo() as throwing a checked Exception, so the compiler requires callers to handle or declare it based on the static type, not the actual overriding method. Since main() neither catches nor declares Exception, line 15 fails to compile despite SubB2's override not throwing anything.",
+    "corrected": false,
+    "answer": "A. Compilation fails due to an error on line 15.",
+    "trust": "baseline",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "id": "q1160",
+    "topic": "Concurrency",
+    "question": "What is the output of the following Java code snippet?\n[CODE]\nclass multithreaded_programming {\n    public static void main(String args[]) {\n        Thread t = Thread.currentThread();\n        t.setName(\"new thread\");\n        System.out.println(t);\n    }\n}\n[/CODE]",
+    "options": [
+      "A. Thread[main,5,main]",
+      "B. Thread[new thread,5,main]",
+      "C. Thread[Thread-0,5,main]",
+      "D. Compilation fails"
+    ],
+    "answer_index": 1,
+    "explanation": "Thread.toString() returns Thread[name,priority,group]. After setName, name is 'new thread'.",
+    "corrected": false,
+    "answer": "B. Thread[new thread,5,main]",
+    "trust": "baseline"
+  },
+  {
+    "id": "q1161",
+    "topic": "Concurrency",
+    "question": "Observe the code: Which of these will create and start this thread?\n[CODE]\npublic class MyRunnable implements Runnable {\n    public void run() {\n        // some code\n    }\n}\n[/CODE]",
+    "options": [
+      "A. new MyRunnable().start()",
+      "B. new Thread(new MyRunnable()).run()",
+      "C. new Thread(new MyRunnable()).start()",
+      "D. MyRunnable.startThread()"
+    ],
+    "answer_index": 2,
+    "explanation": "'new Thread(new MyRunnable()).start()' is correct.",
+    "corrected": false,
+    "answer": "C. new Thread(new MyRunnable()).start()",
+    "trust": "baseline"
+  },
+  {
+    "id": "q1162",
+    "topic": "Java OOP",
+    "question": "Observe the code below:\n\nclass Mammal {\n}\n\nclass Raccoon extends Mammal {\n    Mammal m = new Mammal();\n}\n\nclass BabyRaccoon extends Mammal {\n}\n\nWhich of the following statements about this code is FALSE?",
+    "options": [
+      "A. Raccoon is-a Mammal.",
+      "B. Raccoon has-a Mammal.",
+      "C. BabyRaccoon is-a Mammal.",
+      "D. BabyRaccoon is-a Raccoon."
+    ],
+    "answer_index": 3,
+    "explanation": "BabyRaccoon extends Mammal directly, not Raccoon, so there is no inheritance relationship between BabyRaccoon and Raccoon in the class hierarchy. Since \"is-a\" relationships in Java are established through the extends keyword, BabyRaccoon cannot be considered a Raccoon.",
+    "corrected": false,
+    "answer": "D. BabyRaccoon is-a Raccoon.",
+    "trust": "baseline",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "id": "q1163",
+    "topic": "Java OOP",
+    "question": "Observe the following code:\n[CODE]\nimport java.io.*;\n\npublic class filesinputoutput {\n    public static void main(String[] args) {\n        String obj = \"abc\";\n        byte b[] = obj.getBytes();\n        ByteArrayInputStream obj1 = new ByteArrayInputStream(b);\n        for (int i = 0; i < 2; ++i) {\n            int c;\n            while ((c = obj1.read()) != -1) {\n                if (i == 0) {\n                    System.out.print(Character.toUpperCase((char) c));\n                }\n            }\n        }\n    }\n}\n[/CODE]",
+    "options": [
+      "A. abc",
+      "B. Compilation fails"
+    ],
+    "answer_index": 0,
+    "explanation": "The ByteArrayInputStream is read completely in the first iteration (i=0), converting each character to uppercase. The second iteration (i=1) finds no data since the stream position is at EOF, so only the first loop's uppercase output appears.",
+    "corrected": false,
+    "answer": "A. abc",
+    "trust": "baseline"
+  },
+  {
+    "id": "q1164",
+    "topic": "Java OOP",
+    "question": "Predict the output of the code:\n[CODE]\nclass output {\n    public static void main(String args[]) {\n        StringBuffer s1 = new StringBuffer(\"Hello World\");\n        s1.insert(6, \"Good \");\n        System.out.println(s1);\n    }\n}\n[/CODE]",
+    "options": [
+      "A. HelloGoodWorld",
+      "B. HellGoodoWorld",
+      "C. HellGood oWorld",
+      "D. Hello Good World"
+    ],
+    "answer_index": 3,
+    "explanation": "The code produces 'Hello Good World' based on Java execution semantics.",
+    "corrected": false,
+    "answer": "D. Hello Good World",
+    "trust": "baseline"
+  },
+  {
+    "id": "q1168",
+    "topic": "Java OOP",
+    "question": "What is the output?\n[CODE]\nimport java.util.*;\n\nclass Maps {\n    public static void main(String args[]) {\n        TreeMap obj = new TreeMap();\n        obj.put(\"A\", new Integer(1));\n        obj.put(\"B\", new Integer(2));\n        obj.put(\"C\", new Integer(3));\n        System.out.println(obj.entrySet());\n    }\n}\n[/CODE]",
+    "options": [
+      "A. [A, B, C]",
+      "B. [1, 2, 3]",
+      "C. {A=1, B=2, C=3}",
+      "D. [A=1, B=2, C=3]"
+    ],
+    "answer_index": 3,
+    "explanation": "The code produces '[A=1, B=2, C=3]' based on Java execution semantics.",
+    "corrected": false,
+    "answer": "D. [A=1, B=2, C=3]",
+    "trust": "baseline"
+  },
+  {
+    "id": "q1169",
+    "topic": "Java OOP",
+    "question": "What is the output?\n[CODE]\nimport java.util.*;\n\nclass Bitset {\n    public static void main(String args[]) {\n        BitSet obj = new BitSet(5);\n        for (int i = 0; i < 5; ++i)\n            obj.set(i);\n        obj.clear(2);\n        System.out.print(obj);\n    }\n}\n[/CODE]",
+    "options": [
+      "A. {0, 1, 3, 4}",
+      "B. {0, 1, 2, 4}",
+      "C. {0, 1, 2, 3, 4}",
+      "D. {0, 0, 0, 3, 4}"
+    ],
+    "answer_index": 0,
+    "explanation": "The code produces '{0, 1, 3, 4}' based on Java execution semantics.",
+    "corrected": false,
+    "answer": "A. {0, 1, 3, 4}",
+    "trust": "baseline"
+  },
+  {
+    "id": "q1170",
+    "topic": "Java OOP",
+    "question": "What is the output?\n[CODE]\nimport java.util.*;\n\nclass Array {\n    public static void main(String args[]) {\n        int array[] = new int[5];\n        for (int i = 5; i > 0; i--)\n            array[5 - i] = i;\n        Arrays.fill(array, 1, 4, 8);\n        for (int i = 0; i < 5; i++)\n            System.out.print(array[i]);\n    }\n}\n[/CODE]",
+    "options": [
+      "A. 12885",
+      "B. 12845",
+      "C. 58881",
+      "D. 54881"
+    ],
+    "answer_index": 2,
+    "explanation": "The code produces '58881' based on Java execution semantics.",
+    "corrected": false,
+    "answer": "C. 58881",
+    "trust": "baseline"
+  },
+  {
+    "id": "q1171",
+    "topic": "Java OOP",
+    "question": "What is the output of the following program?\n[CODE]\nimport java.util.*;\n\nclass Collection_Algos {\n    public static void main(String args[]) {\n        LinkedList list = new LinkedList();\n        list.add(new Integer(2));\n        list.add(new Integer(8));\n        list.add(new Integer(5));\n        list.add(new Integer(1));\n        Iterator i = list.iterator();\n        Collections.reverse(list);\n        Collections.shuffle(list);\n        while (i.hasNext())\n            System.out.print(i.next() + \" \");\n    }\n}\n[/CODE]",
+    "options": [
+      "A. 2 8 5 1",
+      "B. 1 5 8 2",
+      "C. 1 2 5 8",
+      "D. Any random order"
+    ],
+    "answer_index": 3,
+    "explanation": "The code produces 'Any random order' based on Java execution semantics.",
+    "corrected": false,
+    "answer": "D. Any random order",
+    "trust": "baseline"
+  },
+  {
+    "id": "q1172",
+    "topic": "Java OOP",
+    "question": "What is the output?\n[CODE]\nimport java.util.*;\n\npublic class genericstack<E> {\n    Stack<E> stk = new Stack<E>();\n\n    public void push(E obj) {\n        stk.push(obj);\n    }\n\n    public E pop() {\n        return stk.pop();\n    }\n}\n\nclass Output {\n    public static void main(String args[]) {\n        genericstack<String> gs = new genericstack<String>();\n        gs.push(\"Hello\");\n        System.out.print(gs.pop() + \" \");\n        genericstack<Integer> gs = new genericstack<Integer>();\n        gs.push(36);\n        System.out.println(gs.pop());\n    }\n}\n[/CODE]",
+    "options": [
+      "A. Error // error because gs String and gs Integer use same variable name",
+      "B. Hello",
+      "C. 36",
+      "D. Hello 36"
+    ],
+    "answer_index": 0,
+    "explanation": "The code produces 'Error // error because gs String and gs Integer use same variable name' based on Java execution semantics.",
+    "corrected": false,
+    "answer": "A. Error // error because gs String and gs Integer use same variable name",
+    "trust": "baseline"
+  },
+  {
+    "id": "q1173",
+    "topic": "Java OOP",
+    "question": "What is the output?\nclass output {\npublic static void main(String args[]) {\nStringBuffer c = new StringBuffer(\"Hello\");\nStringBuffer c1 = new StringBuffer(\" World\");\nc.append(c1);\nSystem.out.println(c);\n}\n}",
+    "options": [
+      "A. Hello",
+      "B. World",
+      "C. HelloWorld",
+      "D. Hello World"
+    ],
+    "answer_index": 3,
+    "explanation": "The append() method adds the contents of c1 (\" World\", including the leading space) directly onto the end of c (\"Hello\"), modifying c in place. Since c1 already contains a space before \"World\", concatenation produces \"Hello World\" with the space preserved.",
+    "corrected": false,
+    "answer": "D. Hello World",
+    "trust": "baseline",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "id": "q1176",
+    "topic": "Java OOP",
+    "question": "What is the output? Note: inputoutput.java is stored in the disk.\n[CODE]\nimport java.io.*;\n\nclass filesinputoutput {\n    public static void main(String args[]) throws IOException {\n        InputStream obj = new FileInputStream(\"inputoutput.java\");\n        System.out.print(obj.available());\n    }\n}\n[/CODE]",
+    "options": [
+      "A. true",
+      "B. false",
+      "C. prints number of bytes in file",
+      "D. prints number of characters in the file"
+    ],
+    "answer_index": 2,
+    "explanation": "The code produces 'prints number of bytes in file' based on Java execution semantics.",
+    "corrected": false,
+    "answer": "C. prints number of bytes in file",
+    "trust": "baseline"
+  },
+  {
+    "id": "q1177",
+    "topic": "Java OOP",
+    "question": "Observe the code:\n[CODE]\nimport java.io.*;\n\npublic class filesinputoutput {\n    public static void main(String[] args) throws IOException {\n        String obj = \"abc\";\n        byte b[] = obj.getBytes();\n        ByteArrayInputStream obj1 = new ByteArrayInputStream(b);\n        ByteArrayOutputStream obj2 = new ByteArrayOutputStream();\n        for (int i = 0; i < 2; ++i) {\n            int c;\n            while ((c = obj1.read()) != -1) {\n                if (i == 0) {\n                    System.out.print(Character.toUpperCase((char)c));\n                    obj2.write(c);\n                }\n            }\n        }\n        System.out.println(\"\\n\" + obj2.toString());\n    }\n}\n[/CODE]",
+    "options": [
+      "A. abc",
+      "B. ABC abc",
+      "C. Compilation fails",
+      "D. ABC\nABC"
+    ],
+    "answer_index": 1,
+    "explanation": "The loop reads the ByteArrayInputStream only once in the first iteration (i=0), converting \"abc\" to uppercase and writing original bytes to obj2. The second iteration (i=1) finds no data since the stream is exhausted, so only \"ABC\" prints.",
+    "corrected": false,
+    "answer": "B. ABC abc",
+    "trust": "baseline",
+    "options_synthesized": true
+  },
+  {
+    "id": "q1178",
+    "topic": "Java OOP",
+    "question": "What is the output of the code?\n[CODE]\npublic class Test8 {\n    public static void main(String args[]) {\n        Number numberRef = new Integer(0);\n        Double doubleRef = (Double)numberRef;\n    }\n}\n[/CODE]",
+    "options": [
+      "A. 0",
+      "B. 0.0",
+      "C. Compilation fails",
+      "D. Throws exception"
+    ],
+    "answer_index": 3,
+    "explanation": "The code produces 'Throws exception' based on Java execution semantics.",
+    "corrected": false,
+    "answer": "D. Throws exception",
+    "trust": "baseline"
+  },
+  {
+    "id": "q1179",
+    "topic": "Java OOP",
+    "question": "What is the output?\n[CODE]\nimport java.io.*;\n\nclass HelloWorld {\n    public static void main(String[] args) {\n        StringBuffer s1 = new StringBuffer(\"Hello\");\n        StringBuffer s2 = s1.reverse();\n        System.out.println(s2);\n    }\n}\n[/CODE]",
+    "options": [
+      "A. Hello",
+      "B. olleH",
+      "C. Compilation fails",
+      "D. Runtime exception is thrown"
+    ],
+    "answer_index": 1,
+    "explanation": "The code produces 'olleH' based on Java execution semantics.",
+    "corrected": false,
+    "answer": "B. olleH",
+    "trust": "baseline"
+  },
+  {
+    "id": "q1180",
+    "topic": "Java OOP",
+    "question": "Which pattern is used in the following code?\n[CODE]\nimport java.util.*;\n\nclass HelloWorld {\n    public static void main(String args[]) {\n        List<String> List = new ArrayList<String>();\n        List.add(\"cricket\");\n        List.add(\"football\");\n        List.add(\"hockey\");\n        Iterator it = List.iterator();\n        while (it.hasNext()) {\n            String s = (String) it.next();\n        }\n    }\n}\n[/CODE]",
+    "options": [
+      "A. Observer",
+      "B. Singleton",
+      "C. Iterator",
+      "D. Factory"
+    ],
+    "answer_index": 2,
+    "explanation": "The code explicitly uses `Iterator` interface via `List.iterator()` to sequentially access elements without exposing the underlying collection structure.\n\nThe `while(it.hasNext())` loop with `it.next()` calls demonstrates the Iterator pattern's core behavior of sequential traversal through a collection.",
+    "corrected": false,
+    "answer": "C. Iterator",
+    "trust": "baseline"
+  }
+]

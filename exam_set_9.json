@@ -1,0 +1,956 @@
+[
+  {
+    "id": "q0552",
+    "topic": "Java OOP",
+    "question": "How to inject service?",
+    "options": [
+      "A. Using @Inject",
+      "B. In constructor",
+      "C. Using @Service",
+      "D. In template"
+    ],
+    "answer_index": 1,
+    "explanation": "In frameworks like Angular, dependency injection is performed by declaring the service as a parameter in a class's constructor, letting the DI container automatically supply the instance. This approach ensures the dependency is available immediately upon object creation, promoting clean, testable, and decoupled code architecture.",
+    "corrected": false,
+    "answer": "B. In constructor",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0553",
+    "topic": "JavaScript",
+    "question": "What does FormBuilder simplify?",
+    "options": [
+      "A. HTTP requests",
+      "B. Reactive forms creation",
+      "C. Template rendering",
+      "D. Dependency injection"
+    ],
+    "answer_index": 1,
+    "explanation": "FormBuilder is an Angular service that provides convenient methods like group(), control(), and array() to generate FormControl, FormGroup, and FormArray instances. This reduces boilerplate code compared to manually instantiating each form control, making reactive form setup more concise and readable.",
+    "corrected": false,
+    "answer": "B. Reactive forms creation",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0554",
+    "topic": "Java OOP",
+    "question": "Output?\nint x = 5;\nSystem.out.println(x++ + ++x);",
+    "options": [
+      "A. 10",
+      "B. 11",
+      "C. 12",
+      "D. 13"
+    ],
+    "answer_index": 2,
+    "explanation": "x++ uses the current value of x (5) in the expression, then increments x to 6; next, ++x increments x to 7 and uses that value.\n\nThe sum is 5 + 7 = 12, so the printed result is 12.",
+    "corrected": false,
+    "answer": "C. 12",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0555",
+    "topic": "Java OOP",
+    "question": "\n[CODE]\nString s1 = \"Hello\";\nString s2 = new String(\"Hello\");\nSystem.out.println(s1 == s2);\n[/CODE]",
+    "options": [
+      "A. true",
+      "B. false",
+      "C. Error",
+      "D. null"
+    ],
+    "answer_index": 1,
+    "explanation": "s1 references a String literal stored in the string pool, while s2 uses the new keyword to explicitly create a new object on the heap. Since == compares object references rather than content, and s1 and s2 point to different memory locations, the comparison returns false.",
+    "corrected": false,
+    "answer": "B. false",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0556",
+    "topic": "Java OOP",
+    "question": "List<Integer> list=new ArrayList<>();\nlist.add(1);\nlist.add(2);\nlist.remove(Integer.valueOf(1));\nSystem.out.println(list);",
+    "options": [
+      "A. [1,2]",
+      "B. [2]",
+      "C. []",
+      "D. Error"
+    ],
+    "answer_index": 1,
+    "explanation": "The `remove()` method is overloaded in ArrayList. When passed `Integer.valueOf(1)`, it calls `remove(Object)` which removes the first element by value (not by index), so it removes the Integer object with value 1. If the method signature were `remove(int)`, it would instead remove by index position, but the Integer wrapper object forces the value-based removal.",
+    "corrected": false,
+    "answer": "B. [2]",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0557",
+    "topic": "Java OOP",
+    "question": "\n[CODE]\nstatic int x = 10;\nTest t = new Test();\nt.x = 20;\nSystem.out.println(Test.x);\n[/CODE]",
+    "options": [
+      "A. 10",
+      "B. 20",
+      "C. 30",
+      "D. Error"
+    ],
+    "answer_index": 1,
+    "explanation": "Since x is a static field, it belongs to the class itself rather than any instance, so all objects share the same copy of x. Accessing it via t.x still modifies the single static variable, changing it to 20, which is what Test.x then prints.",
+    "corrected": false,
+    "answer": "B. 20",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0558",
+    "topic": "Java OOP",
+    "question": "with try-catch.\n[CODE]\nint[] arr = {1, 2};\nSystem.out.println(arr[2]);\n[/CODE]",
+    "options": [
+      "A. 1",
+      "B. 2",
+      "C. Error",
+      "D. null"
+    ],
+    "answer_index": 2,
+    "explanation": "The array `arr` has length 2, so valid indices are 0 and 1. Accessing `arr[2]` is out of bounds and throws an `ArrayIndexOutOfBoundsException` at runtime. Although a try-catch block is mentioned in the question, without an explicit catch handler shown in the code, the exception will propagate and cause an error.",
+    "corrected": false,
+    "answer": "C. Error",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0559",
+    "topic": "Java OOP",
+    "question": "Java: What is the purpose of the final keyword?",
+    "options": [
+      "A. Prevents method overriding",
+      "B. Allows dynamic binding",
+      "C. Enables garbage collection",
+      "D. Permits multiple inheritance"
+    ],
+    "answer_index": 0,
+    "explanation": "The final keyword, when applied to a method, prevents subclasses from overriding that method's implementation. Similarly, final classes cannot be extended, and final variables cannot be reassigned once initialized, ensuring immutability.",
+    "corrected": false,
+    "answer": "A. Prevents method overriding",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0560",
+    "topic": "Concurrency",
+    "question": "Java: Which collection is synchronized by default?",
+    "options": [
+      "A. ArrayList",
+      "B. HashMap",
+      "C. Vector",
+      "D. LinkedList"
+    ],
+    "answer_index": 2,
+    "explanation": "Vector is a legacy collection class that is synchronized by default, meaning all its methods are thread-safe and can be safely accessed by multiple threads without external synchronization. In contrast, ArrayList, HashMap, and LinkedList are not synchronized by default and require external synchronization (such as Collections.synchronizedList()) or concurrent alternatives (like ConcurrentHashMap) to be thread-safe.",
+    "corrected": false,
+    "answer": "C. Vector",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0561",
+    "topic": "Java OOP",
+    "question": "Java: What is the default access modifier for class members?",
+    "options": [
+      "A. public",
+      "B. private",
+      "C. protected",
+      "D. package-private"
+    ],
+    "answer_index": 3,
+    "explanation": "When no access modifier is explicitly specified for a class member in Java, it defaults to package-private (also called default access), which means the member is accessible only within classes in the same package. This is more restrictive than public or protected, but less restrictive than private, making it the appropriate default for encapsulation purposes.",
+    "corrected": false,
+    "answer": "D. package-private",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0562",
+    "topic": "Concurrency",
+    "question": "Java: What does the transient keyword do?",
+    "options": [
+      "A. Prevents serialization",
+      "B. Enables multithreading",
+      "C. Marks a variable as static",
+      "D. Allows method overriding"
+    ],
+    "answer_index": 0,
+    "explanation": "The `transient` keyword marks a field to be excluded from the serialization process, meaning it won't be written to an object stream when an object is serialized. This is useful for sensitive data (like passwords) or fields that don't need to be persisted and can be recalculated upon deserialization. When a serialized object is deserialized, transient fields are restored to their default values (null for objects, 0 for primitives).",
+    "corrected": false,
+    "answer": "A. Prevents serialization",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0563",
+    "topic": "Java OOP",
+    "question": "Java: Which interface is used for sorting objects?",
+    "options": [
+      "A. Comparable",
+      "B. Comparator",
+      "C. Serializable",
+      "D. Cloneable"
+    ],
+    "answer_index": 0,
+    "explanation": "The `Comparable` interface defines a natural ordering for objects by implementing the `compareTo()` method, allowing classes to be sorted directly using standard sorting methods like `Collections.sort()` and `Arrays.sort()`. While `Comparator` is also used for sorting, it provides an external comparison strategy and is optional, whereas `Comparable` represents the object's intrinsic sorting capability. `Serializable` and `Cloneable` are unrelated to sorting functionality.",
+    "corrected": false,
+    "answer": "A. Comparable",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0564",
+    "topic": "Java OOP",
+    "question": "TypeScript: What is the purpose of interface in TypeScript?",
+    "options": [
+      "A. Define class behavior",
+      "B. Specify object structure",
+      "C. Create modules",
+      "D. Handle exceptions"
+    ],
+    "answer_index": 1,
+    "explanation": "TypeScript Interfaces: Purpose Explanation\n\nInterfaces in TypeScript define a contract that specifies the shape and structure of objects, including their properties and methods, without providing implementation. This allows developers to enforce type safety by ensuring objects conform to a specific structure at compile-time. While interfaces can describe class behavior through method signatures, their primary purpose is structural typing—defining what properties and methods an object must have.",
+    "corrected": false,
+    "answer": "B. Specify object structure",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0565",
+    "topic": "JavaScript",
+    "question": "TypeScript: What is the type of let x: any;?",
+    "options": [
+      "A. number",
+      "B. string",
+      "C. any",
+      "D. void"
+    ],
+    "answer_index": 2,
+    "explanation": "When a variable is explicitly annotated with the `any` type in TypeScript using `let x: any;`, the variable's type is literally `any`. The `any` type is a special TypeScript type that bypasses type checking and allows the variable to hold any value of any type, making it the declared type itself.",
+    "corrected": false,
+    "answer": "C. any",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0566",
+    "topic": "Java OOP",
+    "question": "TypeScript: What does this code do?\nfunction greet(name: string): string {\nreturn `Hello, ${name}`;\n}",
+    "options": [
+      "A. Throws a type error",
+      "B. Returns a string",
+      "C. Returns void",
+      "D. Returns any"
+    ],
+    "answer_index": 1,
+    "explanation": "The function has an explicit return type annotation of `: string`, which declares that it will return a string value. The function body uses a template literal to construct and return a string, satisfying this type contract. TypeScript's type system enforces this declaration, so the function will always return a string type.",
+    "corrected": false,
+    "answer": "B. Returns a string",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0567",
+    "topic": "Java OOP",
+    "question": "TypeScript: Which keyword extends a class?",
+    "options": [
+      "A. implements",
+      "B. extends",
+      "C. super",
+      "D. interface"
+    ],
+    "answer_index": 1,
+    "explanation": "The `extends` keyword in TypeScript is used to create a subclass that inherits properties and methods from a parent class. While `implements` is used for interfaces, `super` calls parent constructors/methods, and `interface` defines contracts, only `extends` establishes class inheritance.",
+    "corrected": false,
+    "answer": "B. extends",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0568",
+    "topic": "Java OOP",
+    "question": "TypeScript: How do you define an optional property?",
+    "options": [
+      "A. name: string?",
+      "B. name?: string",
+      "C. name: string | null",
+      "D. name: string = null"
+    ],
+    "answer_index": 1,
+    "explanation": "Why B is Correct\n\nThe `?` operator is TypeScript's dedicated syntax for declaring optional properties, making the property not required during object initialization. Options A uses incorrect syntax (the `?` comes after the type, not before it), C allows `null` but still requires the property to be defined, and D assigns a default value rather than making it optional. Option B is the standard TypeScript convention that allows the property to be omitted entirely when creating an object.",
+    "corrected": false,
+    "answer": "B. name?: string",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0569",
+    "topic": "Java OOP",
+    "question": "Spring Boot: Which dependency enables REST APIs?",
+    "options": [
+      "A. spring-boot-starter-web",
+      "B. spring-boot-starter-data-jpa",
+      "C. spring-boot-starter-security",
+      "D. spring-boot-starter-test"
+    ],
+    "answer_index": 0,
+    "explanation": "The `spring-boot-starter-web` dependency includes Spring MVC, embedded Tomcat, and Jackson for JSON serialization, which are the core components needed to build and expose REST APIs. While the other options provide data persistence (JPA), security, and testing capabilities respectively, none of them specifically enable REST endpoint creation and HTTP request handling.",
+    "corrected": false,
+    "answer": "A. spring-boot-starter-web",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0570",
+    "topic": "Java OOP",
+    "question": "Spring: What is Dependency Injection?",
+    "options": [
+      "A. Creating objects manually",
+      "B. Injecting dependencies into objects",
+      "C. Managing database connections",
+      "D. Handling HTTP requests"
+    ],
+    "answer_index": 1,
+    "explanation": "Dependency Injection Explanation\n\nDependency Injection is a design pattern where an object receives its required dependencies (other objects or services) from an external source rather than creating them itself. This decouples classes from their dependencies, making code more testable, maintainable, and flexible. Spring's DI container automatically instantiates and injects these dependencies, eliminating the need for manual object creation within classes.",
+    "corrected": false,
+    "answer": "B. Injecting dependencies into objects",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0571",
+    "topic": "Java OOP",
+    "question": "Spring: Which annotation maps HTTP GET requests?",
+    "options": [
+      "A. @PostMapping",
+      "B. @GetMapping",
+      "C. @RequestMapping",
+      "D. @PutMapping"
+    ],
+    "answer_index": 1,
+    "explanation": "`@GetMapping` is a specialized annotation that directly maps HTTP GET requests to handler methods in Spring controllers. While `@RequestMapping` can handle GET requests (when configured with `method=RequestMethod.GET`), `@GetMapping` is the dedicated shorthand annotation specifically designed for this purpose, making it the standard and most concise choice for mapping GET endpoints.",
+    "corrected": false,
+    "answer": "B. @GetMapping",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0572",
+    "topic": "Java OOP",
+    "question": "Spring Boot: What is the default embedded server?",
+    "options": [
+      "A. Jetty",
+      "B. Tomcat",
+      "C. Undertow",
+      "D. Netty"
+    ],
+    "answer_index": 1,
+    "explanation": "Spring Boot includes Tomcat as its default embedded servlet container for web applications. While Jetty, Undertow, and Netty are alternative options that can be configured, Tomcat is automatically provided in the spring-boot-starter-web dependency without requiring additional configuration. Tomcat's maturity, broad compatibility, and widespread adoption in the Spring ecosystem make it the default choice.",
+    "corrected": false,
+    "answer": "B. Tomcat",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0573",
+    "topic": "Java OOP",
+    "question": "Spring: What does @Transactional do?",
+    "options": [
+      "A. Manages database transactions",
+      "B. Configures REST endpoints",
+      "C. Injects dependencies",
+      "D. Scans components"
+    ],
+    "answer_index": 0,
+    "explanation": "@Transactional is a Spring annotation that declaratively manages database transactions, automatically handling commit/rollback based on method execution success or exceptions. It wraps the annotated method in a transaction boundary, ensuring ACID properties are maintained across database operations without requiring explicit transaction management code.",
+    "corrected": false,
+    "answer": "A. Manages database transactions",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0574",
+    "topic": "Java OOP",
+    "question": "Spring Boot: How do you connect to MongoDB?",
+    "options": [
+      "A. spring-boot-starter-data-mongodb",
+      "B. spring-boot-starter-data-jpa",
+      "C. spring-boot-starter-web",
+      "D. spring-boot-starter-security"
+    ],
+    "answer_index": 0,
+    "explanation": "The `spring-boot-starter-data-mongodb` dependency provides Spring Data MongoDB, which includes the necessary drivers, configuration classes, and repository abstractions to connect to and interact with MongoDB databases. While other starters like JPA (relational databases), Web (HTTP support), and Security (authentication) serve different purposes, only the MongoDB starter includes the MongoDB client and Spring Data integration required for MongoDB connectivity.",
+    "corrected": false,
+    "answer": "A. spring-boot-starter-data-mongodb",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0575",
+    "topic": "Java OOP",
+    "question": "DevOps: What is the purpose of Docker?",
+    "options": [
+      "A. Code compilation",
+      "B. Containerization",
+      "C. Version control",
+      "D. Load balancing"
+    ],
+    "answer_index": 1,
+    "explanation": "Why B is Correct\n\nDocker enables containerization by packaging applications with their dependencies, libraries, and runtime into isolated, lightweight containers that run consistently across any environment. This eliminates the \"works on my machine\" problem and is fundamental to modern DevOps practices for deployment automation and scalability. While Docker can support the other concepts indirectly (through CI/CD pipelines), containerization is its core and primary purpose.",
+    "corrected": false,
+    "answer": "B. Containerization",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0576",
+    "topic": "Java OOP",
+    "question": "DevOps: Which command builds a Docker image?",
+    "options": [
+      "A. docker run",
+      "B. docker build",
+      "C. docker push",
+      "D. docker pull"
+    ],
+    "answer_index": 1,
+    "explanation": "The `docker build` command constructs a Docker image from a Dockerfile and its build context by executing the instructions (FROM, RUN, COPY, etc.) layer by layer. The other commands perform different operations: `docker run` executes a container from an image, `docker push` uploads an image to a registry, and `docker pull` downloads an image from a registry.",
+    "corrected": false,
+    "answer": "B. docker build",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0577",
+    "topic": "Java OOP",
+    "question": "DevOps: What is CI/CD?",
+    "options": [
+      "A. Continuous Integration / Continuous Deployment",
+      "B. Code Inspection / Code Delivery",
+      "C. Continuous Improvement / Continuous Development",
+      "D. Code Integration / Code Deployment"
+    ],
+    "answer_index": 0,
+    "explanation": "'Continuous Integration / Continuous Deployment' is correct.",
+    "corrected": false,
+    "answer": "A. Continuous Integration / Continuous Deployment",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0578",
+    "topic": "Java OOP",
+    "question": "DevOps: Which tool manages container orchestration?",
+    "options": [
+      "A. Jenkins",
+      "B. Kubernetes",
+      "C. Git",
+      "D. Ansible"
+    ],
+    "answer_index": 1,
+    "explanation": "Kubernetes is a container orchestration platform that automates deployment, scaling, and management of containerized applications across clusters of machines. While Jenkins handles CI/CD pipelines, Git manages version control, and Ansible manages infrastructure configuration, only Kubernetes is purpose-built to orchestrate containers by managing their lifecycle, resource allocation, and networking.",
+    "corrected": false,
+    "answer": "B. Kubernetes",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0579",
+    "topic": "HTML/CSS",
+    "question": "DevOps: What does nginx -g \"daemon off;\" do in a Docker container?",
+    "options": [
+      "A. Runs NGINX in the background",
+      "B. Runs NGINX in the foreground",
+      "C. Stops NGINX",
+      "D. Restarts NGINX"
+    ],
+    "answer_index": 1,
+    "explanation": "The `-g` flag allows global directives to be passed to NGINX, and `daemon off;` disables NGINX's daemon mode, forcing it to run in the foreground instead of backgrounding itself. This is essential in Docker because containers need a foreground process to stay alive—if NGINX daemonized, the container would exit immediately since PID 1 would terminate.",
+    "corrected": false,
+    "answer": "B. Runs NGINX in the foreground",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0580",
+    "topic": "Java OOP",
+    "question": "DevOps: Which file defines a Jenkins pipeline?",
+    "options": [
+      "A. Dockerfile",
+      "B. Jenkinsfile",
+      "C. pom.xml",
+      "D. build.gradle"
+    ],
+    "answer_index": 1,
+    "explanation": "A Jenkinsfile is a text file that defines the entire CI/CD pipeline configuration in Jenkins using a declarative or scripted syntax, allowing pipeline stages, steps, and conditions to be version-controlled alongside the source code. The other options define different aspects of projects: Dockerfile containerizes applications, while pom.xml and build.gradle specify build dependencies and tasks for Maven and Gradle respectively—none of which define a Jenkins pipeline orchestration.",
+    "corrected": false,
+    "answer": "B. Jenkinsfile",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0581",
+    "topic": "Java OOP",
+    "question": "DevOps: What is Infrastructure as Code?",
+    "options": [
+      "A. Manual server setup",
+      "B. Defining infrastructure using scripts",
+      "C. Database management",
+      "D. Application deployment"
+    ],
+    "answer_index": 1,
+    "explanation": "Infrastructure as Code (IaC) Explanation\n\nInfrastructure as Code is the practice of managing and provisioning computing resources through machine-readable definition files (scripts, YAML, JSON, etc.) rather than manual processes, enabling version control, repeatability, and automation. This approach treats infrastructure the same way developers treat application code—it can be versioned, tested, and deployed consistently across environments. Tools like Terraform, CloudFormation, and Ansible exemplify this methodology by allowing teams to define entire cloud environments programmatically.",
+    "corrected": false,
+    "answer": "B. Defining infrastructure using scripts",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0582",
+    "topic": "Java OOP",
+    "question": "DevOps: Which AWS service manages containerized apps?",
+    "options": [
+      "A. EC2",
+      "B. ECS",
+      "C. S3",
+      "D. RDS"
+    ],
+    "answer_index": 1,
+    "explanation": "ECS (Elastic Container Service) is AWS's native container orchestration platform specifically designed to run and manage Docker containers at scale. While EC2 instances can host containers, ECS provides the orchestration layer that automates deployment, scaling, and lifecycle management of containerized applications. S3 and RDS are storage/database services unrelated to container management.",
+    "corrected": false,
+    "answer": "B. ECS",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0583",
+    "topic": "Java OOP",
+    "question": "Microservices: What is a key benefit of microservices architecture?",
+    "options": [
+      "A. Monolithic codebase",
+      "B. Independent scalability",
+      "C. Tight coupling",
+      "D. Single database"
+    ],
+    "answer_index": 1,
+    "explanation": "Microservices architecture allows each service to be scaled independently based on its specific demand, rather than scaling an entire application as a single unit. This enables efficient resource allocation—for example, scaling only the payment service during peak transactions while keeping other services at normal capacity. Options A, C, and D describe monolithic architecture characteristics, which microservices explicitly avoid.",
+    "corrected": false,
+    "answer": "B. Independent scalability",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0584",
+    "topic": "Java OOP",
+    "question": "Microservices: Which pattern ensures loose coupling in microservices?",
+    "options": [
+      "A. Circuit Breaker",
+      "B. Service Registry",
+      "C. Event-Driven",
+      "D. Monolith"
+    ],
+    "answer_index": 2,
+    "explanation": "Event-Driven architecture decouples services by having them communicate through asynchronous events rather than direct synchronous calls, allowing services to remain independent and unaware of each other's implementations. This eliminates hard dependencies between services—producers emit events without knowing consumers, and consumers listen to events without knowing producers. In contrast, Circuit Breaker is a failure-handling pattern (not a decoupling pattern), Service Registry is a discovery mechanism, and Monolith is the opposite of loose coupling.",
+    "corrected": false,
+    "answer": "C. Event-Driven",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0585",
+    "topic": "Java OOP",
+    "question": "Which is the correct Java code snippet to be used to create a Functional Interface?",
+    "options": [
+      "A. interface MyFunctionalInterface implements Functional {",
+      "B. @FunctionalInterface interface MyFunctionalInterface {",
+      "C. @Functional interface MyFunctionalInterface {",
+      "D. interface MyFunctionalInterface extends FunctionalInterface {"
+    ],
+    "answer_index": 1,
+    "explanation": "'@FunctionalInterface interface MyFunctionalInterface {' is correct.",
+    "corrected": false,
+    "answer": "B. @FunctionalInterface interface MyFunctionalInterface {",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0586",
+    "topic": "Java OOP",
+    "question": "Which one will allow traversing a Java collection in each direction?",
+    "options": [
+      "A. ListIterator",
+      "B. Iterator",
+      "C. MapIterator",
+      "D. SetIterator"
+    ],
+    "answer_index": 0,
+    "explanation": "ListIterator extends Iterator and supports forward (next()) and backward (previous()) traversal.",
+    "corrected": false,
+    "answer": "A. ListIterator",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0587",
+    "topic": "Java OOP",
+    "question": "In Java, which method is used to inform the observer of the change in observed object?",
+    "options": [
+      "A. Check",
+      "B. Update",
+      "C. Inform",
+      "D. notify"
+    ],
+    "answer_index": 1,
+    "explanation": "In Java's Observer pattern, the `update()` method is the callback mechanism that observers implement to receive notifications when the observed object changes. When the subject/observable detects a state change, it calls `update()` on all registered observers, passing relevant information about the change. This is the standard interface defined in the Observer pattern and Java's built-in observer framework.",
+    "corrected": false,
+    "answer": "B. Update",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0588",
+    "topic": "Java OOP",
+    "question": "In Java, it is NOT possible to override default serialization.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 1,
+    "explanation": "In Java, you can override default serialization by implementing custom `writeObject()` and `readObject()` methods in a serializable class, which the serialization framework will invoke instead of using default behavior. Additionally, you can implement the `Externalizable` interface for complete control over the serialization process. Therefore, the statement is false.",
+    "corrected": false,
+    "answer": "B. False",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0589",
+    "topic": "Java OOP",
+    "question": "Pick the class that is NOT part of Java collection framework.",
+    "options": [
+      "A. Map",
+      "B. List",
+      "C. Queue",
+      "D. Struct"
+    ],
+    "answer_index": 3,
+    "explanation": "Struct is not a Java type at all. Map, List, Queue are all part of the Java Collections Framework.",
+    "corrected": false,
+    "answer": "D. Struct",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0590",
+    "topic": "Java OOP",
+    "question": "Identify the parts of lambda expression in Java.",
+    "options": [
+      "A. Name",
+      "B. Parameter list",
+      "C. Body",
+      "D. Return Type"
+    ],
+    "answer_index": 1,
+    "explanation": "The parameter list is a core structural component of every lambda expression in Java, appearing between the arrow operator and body (e.g., `(x, y) -> x + y`). While lambda expressions do have a body and implicit return types, they notably lack explicit names—they are anonymous functions—making the parameter list the most universally defining characteristic. Options A and D are incorrect because lambdas are unnamed and don't require explicit return type declarations due to type inference.",
+    "corrected": false,
+    "answer": "B. Parameter list",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0592",
+    "topic": "Java OOP",
+    "question": "Which is the correct API to manage reactive streams in Java?",
+    "options": [
+      "A. java.util.concurrent.Flow",
+      "B. java.util.concurrent.Flow.Publisher",
+      "C. java.util.concurrent.Flow.Processor",
+      "D. All of the above"
+    ],
+    "answer_index": 3,
+    "explanation": "Java's reactive streams management is built on the `java.util.concurrent.Flow` interface, which provides three key components: `Flow.Publisher` (produces data), `Flow.Subscriber` (consumes data), and `Flow.Processor` (both produces and consumes). All three are integral parts of the same API specification introduced in Java 9, making them all correct choices for managing reactive streams.",
+    "corrected": false,
+    "answer": "D. All of the above",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0593",
+    "topic": "Java OOP",
+    "question": "In Java, which of the following data structure classes CANNOT be type parameterized?",
+    "options": [
+      "A. List",
+      "B. Set",
+      "C. Array",
+      "D. Map"
+    ],
+    "answer_index": 2,
+    "explanation": "Arrays in Java are non-reifiable types—their type information is erased at runtime, preventing them from being parameterized like `Array<String>`. In contrast, List, Set, and Map are generic collection interfaces that support type parameters (e.g., `List<String>`) because they preserve type information through type erasure mechanisms. Java's type system fundamentally forbids generic array creation to maintain type safety.",
+    "corrected": false,
+    "answer": "C. Array",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0594",
+    "topic": "Java OOP",
+    "question": "Which of these OOPS concept is enabled by method overriding in Java?",
+    "options": [
+      "A. Polymorphism",
+      "B. Abstraction",
+      "C. Inheritance",
+      "D. Encapsulation"
+    ],
+    "answer_index": 0,
+    "explanation": "Method overriding is the mechanism through which runtime polymorphism is achieved in Java.",
+    "corrected": false,
+    "answer": "A. Polymorphism",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0595",
+    "topic": "Java OOP",
+    "question": "What is the output of the following Java code snippet?\n[CODE]\nclass First {\n    public First() {\n        System.out.println(\"F\");\n    }\n}\n\nclass Second extends First {\n    public Second() {\n        System.out.println(\"S\");\n    }\n}\n\nclass Third extends Second {\n    public Third() {\n        System.out.println(\"T\");\n    }\n}\n\npublic class TestClass {\n    public static void main(String[] args) {\n        Third c = new Third();\n    }\n}\n[/CODE]",
+    "options": [
+      "A. TSF",
+      "B. T",
+      "C. F",
+      "D. FST"
+    ],
+    "answer_index": 3,
+    "explanation": "Constructor chaining: First() prints F, Second() prints S, Third() prints T → FST.",
+    "corrected": false,
+    "answer": "D. FST",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0596",
+    "topic": "Java OOP",
+    "question": "How does one assign system property values to variable using Java class fields?",
+    "options": [
+      "A. @Autowire(\"${aProperty}\") private String aSysProp;",
+      "B. @Environment(\"${aProperty}\") private String aSysProp;",
+      "C. @Property(\"${aProperty}\") private String aSysProp;",
+      "D. @Value(\"${aProperty}\") private String aSysProp;"
+    ],
+    "answer_index": 3,
+    "explanation": "'@Value(\"${aProperty}\") private String aSysProp;' is correct.",
+    "corrected": false,
+    "answer": "D. @Value(\"${aProperty}\") private String aSysProp;",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0599",
+    "topic": "Concurrency",
+    "question": "Which class is introduced in Java 8 to get the current milliseconds?",
+    "options": [
+      "A. Clock",
+      "B. Current Time",
+      "C. Date Time",
+      "D. Time"
+    ],
+    "answer_index": 0,
+    "explanation": "java.time.Clock was introduced in Java 8 and can be used to get the current time/millis in a testable way.",
+    "corrected": false,
+    "answer": "A. Clock",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0600",
+    "topic": "Concurrency",
+    "question": "In Java, which of these class types supports sequential and parallel processing of data?",
+    "options": [
+      "A. Queue",
+      "B. Lambda",
+      "C. ExecutorService",
+      "D. Streams"
+    ],
+    "answer_index": 3,
+    "explanation": "Streams in Java provide built-in support for both sequential and parallel processing through the `stream()` and `parallelStream()` methods, allowing developers to perform aggregate operations on collections with minimal code changes. While ExecutorService can manage concurrent tasks, it requires manual thread management; Streams abstract this complexity and are specifically designed for functional-style data processing pipelines. Queue and Lambda are data structures and functional interfaces respectively, neither of which inherently support dual-mode processing.",
+    "corrected": false,
+    "answer": "D. Streams",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0601",
+    "topic": "Concurrency",
+    "question": "Which Java Set implementation is sorted and synchronized?",
+    "options": [
+      "A. TreeSet",
+      "B. LinkedHashSet",
+      "C. HashSet",
+      "D. ConcurrentSkipListSet"
+    ],
+    "answer_index": 3,
+    "explanation": "ConcurrentSkipListSet is both sorted (like TreeSet) and thread-safe (synchronized).",
+    "corrected": false,
+    "answer": "D. ConcurrentSkipListSet",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0602",
+    "topic": "Java OOP",
+    "question": "Which of the following statements is NOT correct for JVM?",
+    "options": [
+      "A. JVM acts as a translator that translates different Machine code (on the basis of Host Machine) for a common Byte Code.",
+      "B. JVM is a Virtual Machine that acts as an intermediary between Java Application and Host Operating System.",
+      "C. JVM reads Byte Code and generates Machine Code.",
+      "D. JVM reads Source Code and generates Byte Code."
+    ],
+    "answer_index": 3,
+    "explanation": "The JVM reads bytecode (compiled .class files), not source code. The Java compiler (javac) reads source and produces bytecode.",
+    "corrected": false,
+    "answer": "D. JVM reads Source Code and generates Byte Code.",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0603",
+    "topic": "Java OOP",
+    "question": "Is the following a valid Java code snippet?\n[CODE]\nOptional<String> aValue = Optional.of(\"Not Empty\");\nif (aValue.ifPresent()) {\n    System.out.println(\"Got Not Empty\");\n}\n[/CODE]",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 1,
+    "explanation": "The `ifPresent()` method is a void method that accepts a `Consumer` parameter and performs a side effect; it does not return a boolean value. The correct approach would be to use `isPresent()` to check if a value exists, or pass a Consumer lambda to `ifPresent()` for conditional action.",
+    "corrected": false,
+    "answer": "B. False",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0604",
+    "topic": "Java OOP",
+    "question": "Java Stream does NOT store the elements. It simply performs the aggregate operations to get the desired stream of data.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "explanation": "Correct — Java Streams are lazy pipelines over a source; they don't store elements.",
+    "corrected": false,
+    "answer": "A. True",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0605",
+    "topic": "Java OOP",
+    "question": "Which Java class is used to apply reduction or aggregate functions on streams?",
+    "options": [
+      "A. Filters",
+      "B. Reduction",
+      "C. Collectors",
+      "D. Aggregators"
+    ],
+    "answer_index": 2,
+    "explanation": "The Collectors utility class provides factory methods for collectors (toList, groupingBy, reducing, etc.).",
+    "corrected": false,
+    "answer": "C. Collectors",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0606",
+    "topic": "Concurrency",
+    "question": "Which of the following statements are true about Java finally block?",
+    "options": [
+      "A. i. A finally block is executed, only after the catch block is executed.",
+      "B. ii. A finally block is executed whether an exception is thrown or not.",
+      "C. iii. A finally block is NOT mandatory.",
+      "D. iv. A finally block is executed, only if an exception occurs."
+    ],
+    "answer_index": 1,
+    "explanation": "A finally block always runs whether or not an exception is thrown (unless JVM exits). It is NOT mandatory.",
+    "corrected": false,
+    "answer": "B. ii. A finally block is executed whether an exception is thrown or not.",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0607",
+    "topic": "Java OOP",
+    "question": "Which of these is a standard Java Interface?",
+    "options": [
+      "A. Serializable",
+      "B. Long",
+      "C. System",
+      "D. Collections"
+    ],
+    "answer_index": 0,
+    "explanation": "`Serializable` is a marker interface in Java's `java.io` package that defines a contract for objects that can be converted into a byte stream. `Long` is a wrapper class, `System` is a final utility class, and `Collections` is a final utility class—none of these are interfaces.",
+    "corrected": false,
+    "answer": "A. Serializable",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0608",
+    "topic": "Java OOP",
+    "question": "What is the replacement for PermGen space in Java 8?",
+    "options": [
+      "A. FixedGen",
+      "B. Metaspace",
+      "C. MetaGenspace",
+      "D. HeapGen"
+    ],
+    "answer_index": 1,
+    "explanation": "Java 8 replaced PermGen with Metaspace, which uses native memory and can auto-resize.",
+    "corrected": false,
+    "answer": "B. Metaspace",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0609",
+    "topic": "Java OOP",
+    "question": "What is the output of the following Java code snippet?\n\nStringJoiner astring = new StringJoiner(\"-\", \"{\", \"}\");\nastring.add(\"A\");\nastring.add(\"B\");\nastring.add(\"C\");",
+    "options": [
+      "A. {A-B-C}",
+      "B. {A}-{B}-{C}",
+      "C. {-A-}{-B-}{-C-}",
+      "D. A-B-C"
+    ],
+    "answer_index": 0,
+    "explanation": "The code produces '{A-B-C}' based on Java execution semantics.",
+    "corrected": false,
+    "answer": "A. {A-B-C}",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0610",
+    "topic": "Java OOP",
+    "question": "What is the return type of Java Lambda expressions?",
+    "options": [
+      "A. Void",
+      "B. Lambda",
+      "C. Function",
+      "D. Regex"
+    ],
+    "answer_index": 2,
+    "explanation": "Lambda expressions return a functional interface type (e.g., Runnable, Callable, Function, etc.).",
+    "corrected": false,
+    "answer": "C. Function",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0611",
+    "topic": "Concurrency",
+    "question": "Name the two types of streams in Java.",
+    "options": [
+      "A. Sync and async",
+      "B. Sequential and parallel",
+      "C. Random and ordered",
+      "D. Buffered and unbuffered"
+    ],
+    "answer_index": 1,
+    "explanation": "Java 8 streams can be sequential (single-threaded) or parallel (multi-threaded via Fork/Join).",
+    "corrected": false,
+    "answer": "B. Sequential and parallel",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0612",
+    "topic": "Java OOP",
+    "question": "What is the difference between peek() and dequeue()?",
+    "options": [
+      "A. peek() returns the next item in line but dequeue() removes and returns the next item in line",
+      "B. peek() and dequeue() return the next item in line",
+      "C. peek() and dequeue() remove and return the next item in line",
+      "D. peek() removes and returns the next item in line but dequeue() only returns the next item in line without removing it"
+    ],
+    "answer_index": 0,
+    "explanation": "'peek() returns the next item in line but dequeue() removes and returns the next item in line' is correct.",
+    "corrected": false,
+    "answer": "A. peek() returns the next item in line but dequeue() removes and returns the next item in line",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0613",
+    "topic": "Java OOP",
+    "question": "Which one of the following statements on Java String is correct?",
+    "options": [
+      "A. replace() method replaces only first occurrences of a character in invoking string with the given character.",
+      "B. replace() method replaces last occurrence of a character in invoking string with the given character.",
+      "C. replace() method replaces all occurrences of one character in invoking string with the given character.",
+      "D. replace() method replaces all the characters in invoking string with the given character."
+    ],
+    "answer_index": 2,
+    "explanation": "'replace() method replaces all occurrences of one character in invoking string with the given character.' is correct.",
+    "corrected": false,
+    "answer": "C. replace() method replaces all occurrences of one character in invoking string with the given character.",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0614",
+    "topic": "Concurrency",
+    "question": "What is the result of the following Java code snippet?\n\nAnimal animal = new Dog();\nCat cat = (Cat) animal;\nSystem.out.println(cat.noise());\n// Exception in thread \"main\" java.lang.ClassCastException",
+    "options": [
+      "A. peep",
+      "B. bark",
+      "C. meow",
+      "D. Compilation fails"
+    ],
+    "answer_index": 0,
+    "explanation": "The correct answer is D. Compilation fails (not A as stated).\n\nThe code attempts an invalid cast: `animal` is a `Dog` instance, but the code tries to cast it to `Cat`. While this may compile (depending on the class hierarchy), it will throw a `ClassCastException` at runtime, not produce \"peep\". The provided \"correct answer\" appears to be incorrect—the code either fails to compile or throws a runtime exception rather than successfully executing and printing output.",
+    "corrected": false,
+    "answer": "A. peep",
+    "trust": "baseline"
+  }
+]

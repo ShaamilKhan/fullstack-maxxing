@@ -1,0 +1,958 @@
+[
+  {
+    "id": "q0071",
+    "topic": "HTML/CSS",
+    "question": "Choose the correct HTML element to define important text.",
+    "options": [
+      "A. <strong>",
+      "B. <important>",
+      "C. <b>",
+      "D. <pre>"
+    ],
+    "answer_index": 0,
+    "explanation": "The `<strong>` element is correct because it carries semantic meaning, indicating to browsers, screen readers, and search engines that the enclosed text has strong importance, seriousness, or urgency. While `<b>` produces similar bold visual styling, it is purely presentational and conveys no semantic significance—it's meant for stylistic bolding without implying importance. `<important>` isn't a valid HTML element, and `<pre>` is used for preformatted text that preserves whitespace, unrelated to emphasizing importance.",
+    "corrected": false,
+    "answer": "A. <strong>",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0072",
+    "topic": "HTML/CSS",
+    "question": "Which is the correct CSS Syntax?",
+    "options": [
+      "A. body color-black",
+      "B. {body color-black}",
+      "C. body {color:black;}",
+      "D. {body;color;black}"
+    ],
+    "answer_index": 2,
+    "explanation": "CSS syntax requires a selector (`body`) followed by a declaration block enclosed in curly braces, containing property-value pairs separated by a colon and terminated with a semicolon. Option C correctly follows this structure: `body {color:black;}` specifies the selector, opens the block, sets the `color` property to `black`, and closes with a semicolon. The other options misplace braces, omit the colon, or use incorrect delimiters, none of which conform to valid CSS syntax.",
+    "corrected": false,
+    "answer": "C. body {color:black;}",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0073",
+    "topic": "Java OOP",
+    "question": "How can you detect the client's browser name in Javascript?",
+    "options": [
+      "A. class.navName",
+      "B. navigator.appName",
+      "C. browser.name",
+      "D. window.browser"
+    ],
+    "answer_index": 1,
+    "explanation": "`navigator.appName` is a property of the built-in `navigator` object, which exposes information about the browser to JavaScript. It historically returned values like \"Netscape\" (used by most browsers for compatibility) to identify the browser name, making it the valid syntax among the given options. The other options—`class.navName`, `browser.name`, and `window.browser`—are not real JavaScript APIs or properties.",
+    "corrected": false,
+    "answer": "B. navigator.appName",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0074",
+    "topic": "Concurrency",
+    "question": "Let has block scope in JavaScript?",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "explanation": "In JavaScript, variables declared with `let` are scoped to the nearest enclosing block (denoted by `{}`), such as those in `if` statements, `for` loops, or standalone blocks—unlike `var`, which is function-scoped. This means a `let` variable is only accessible within the block it's defined in and any nested blocks, and it goes out of scope once that block execution ends. This behavior also enables `let` variables to be redeclared in different block scopes without conflict, and creates a \"temporal dead zone\" before initialization within that block.",
+    "corrected": false,
+    "answer": "A. True",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0075",
+    "topic": "HTML/CSS",
+    "question": "What does <aside> tag in HTML do?",
+    "options": [
+      "A. Defines content aside from the main page content",
+      "B. Creates a navigation menu",
+      "C. Defines a footer section",
+      "D. Adds a sidebar advertisement only"
+    ],
+    "answer_index": 0,
+    "explanation": "'Defines content aside from the main page content' is correct.",
+    "corrected": false,
+    "answer": "A. Defines content aside from the main page content",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0076",
+    "topic": "HTML/CSS",
+    "question": "Which Bootstrap class provides a responsive fixed width container?",
+    "options": [
+      "A. .container",
+      "B. .container-fluid",
+      "C. .wrapper",
+      "D. .row"
+    ],
+    "answer_index": 0,
+    "explanation": "The `.container` class provides a responsive, fixed-width container with predefined max-widths that change at different breakpoints (e.g., 540px, 720px, 960px, 1140px), while still centering content with padding on either side. This contrasts with `.container-fluid`, which spans the full width of the viewport at all breakpoints rather than using fixed max-widths. `.wrapper` isn't a native Bootstrap class, and `.row` is used for creating horizontal groups of columns within a container, not for defining container width behavior.",
+    "corrected": false,
+    "answer": "A. .container",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0077",
+    "topic": "HTML/CSS",
+    "question": "Which is the correct syntax for creating a standard navigation tab in Bootstrap?",
+    "options": [
+      "A. <ul class=\"nav nav-tabs\">",
+      "B. <ul class=\"tabs\">",
+      "C. <nav class=\"nav-tabs\">",
+      "D. <ul class=\"nav-tabs\">"
+    ],
+    "answer_index": 0,
+    "explanation": "Bootstrap requires the base \"nav\" class on the <ul> element to establish core flexbox styling and list-item structure for navigation components. The \"nav-tabs\" class is then added alongside it to apply the specific tab-styled borders and active-state appearance, since these two classes work together rather than independently.",
+    "corrected": false,
+    "answer": "A. <ul class=\"nav nav-tabs\">",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0078",
+    "topic": "Java OOP",
+    "question": "In Bootstrap, the class .img-circle is used to turn an image into a circle.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "explanation": "In Bootstrap 3, the `.img-circle` class applies `border-radius: 50%` to an image, which clips it into a circular shape (provided the image has equal width and height). This class was part of Bootstrap 3's image helper classes alongside `.img-rounded` and `.img-thumbnail`, though it was later replaced by `.rounded-circle` in Bootstrap 4 and later versions.",
+    "corrected": false,
+    "answer": "A. True",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0079",
+    "topic": "Concurrency",
+    "question": "In Java, which class type supports sequential and parallel processing of data?",
+    "options": [
+      "A. Streams",
+      "B. Collections",
+      "C. Iterators",
+      "D. Arrays"
+    ],
+    "answer_index": 0,
+    "explanation": "Java's Stream API (java.util.stream) provides a sequence of elements that can be processed using either sequential (stream()) or parallel (parallelStream()) execution, leveraging the Fork/Join framework internally for parallel operations. Unlike Collections, Iterators, or Arrays—which are primarily data storage/access structures—Streams are specifically designed as a functional pipeline abstraction for processing data, supporting operations like map, filter, and reduce that can be automatically parallelized across multiple threads.",
+    "corrected": false,
+    "answer": "A. Streams",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0080",
+    "topic": "Java OOP",
+    "question": "What replaced PermGen space in Java 8?",
+    "options": [
+      "A. Metaspace",
+      "B. HeapSpace",
+      "C. CodeCache",
+      "D. StackMemory"
+    ],
+    "answer_index": 0,
+    "explanation": "Java 8 replaced PermGen with Metaspace to store class metadata, moving this memory outside the JVM heap and into native memory managed by the operating system. Unlike PermGen, which had a fixed maximum size set at JVM startup (often causing `OutOfMemoryError: PermGen space`), Metaspace grows dynamically by default, reducing the likelihood of such errors in applications with heavy class loading, such as those using many dynamic proxies or application servers with frequent redeployments.",
+    "corrected": false,
+    "answer": "A. Metaspace",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0081",
+    "topic": "Java OOP",
+    "question": "Java Functional Interface can be defined as _____",
+    "options": [
+      "A. Single Abstract Method",
+      "B. Multiple Abstract Methods",
+      "C. Only Default Methods",
+      "D. No Methods"
+    ],
+    "answer_index": 0,
+    "explanation": "A Functional Interface has exactly one abstract method (SAM — Single Abstract Method).",
+    "corrected": true,
+    "answer": "A. Single Abstract Method",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0082",
+    "topic": "HTML/CSS",
+    "question": "Where in an HTML document should an external style sheet be referenced?",
+    "options": [
+      "A. Head section",
+      "B. Body section",
+      "C. Footer section",
+      "D. Anywhere in the page"
+    ],
+    "answer_index": 0,
+    "explanation": "External stylesheets are linked using the `<link>` tag, which must be placed in the `<head>` section so the browser loads and parses the CSS before rendering the page's content. This prevents the \"flash of unstyled content\" (FOUC), where elements briefly appear unstyled before styles are applied. Placing it elsewhere, like the body, is technically possible in most browsers but violates HTML standards and can cause rendering inconsistencies.",
+    "corrected": false,
+    "answer": "A. Head section",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0083",
+    "topic": "Java OOP",
+    "question": "Which is the correct way to implement a functional interface in Java?",
+    "options": [
+      "A. interface MyFunctionalInterface { }",
+      "B. class MyFunctionalInterface { }",
+      "C. abstract class MyFunctionalInterface { }",
+      "D. enum MyFunctionalInterface { }"
+    ],
+    "answer_index": 0,
+    "explanation": "A functional interface in Java is defined using the `interface` keyword and must contain exactly one abstract method (it can also include default, static, or private methods). Classes, abstract classes, and enums cannot be annotated as functional interfaces because the `@FunctionalInterface` annotation and the concept itself apply specifically to interfaces, which serve as the target type for lambda expressions and method references.",
+    "corrected": false,
+    "answer": "A. interface MyFunctionalInterface { }",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0084",
+    "topic": "Concurrency",
+    "question": "In JavaScript, const declares block scoped variables.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "explanation": "In JavaScript, `const` declares variables that are scoped to the nearest enclosing block (denoted by `{}`), rather than being hoisted to function or global scope like `var`. This means a `const` variable is only accessible within the block, loop, or conditional statement in which it is defined. Additionally, `const` variables are not accessible before their declaration due to the \"temporal dead zone,\" reinforcing their block-level scoping behavior.",
+    "corrected": false,
+    "answer": "A. True",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0085",
+    "topic": "JavaScript",
+    "question": "What is React in MVC architecture?",
+    "options": [
+      "A. Controller",
+      "B. Model",
+      "C. View",
+      "D. Router"
+    ],
+    "answer_index": 2,
+    "explanation": "React handles rendering UI components based on data, which is precisely the responsibility of the View layer in MVC. It doesn't manage application state or business logic like a Model, nor does it handle request routing and coordination like a Controller.",
+    "corrected": false,
+    "answer": "C. View",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0086",
+    "topic": "JavaScript",
+    "question": "How can you access the state of a component inside a member function in React?",
+    "options": [
+      "A. this.getState()",
+      "B. this.state",
+      "C. getState()",
+      "D. state()"
+    ],
+    "answer_index": 1,
+    "explanation": "The stated \"correct answer\" is actually wrong—there is no built-in `this.getState()` method in React. The correct way to access a component's state inside a member function is `this.state`, which refers to the state object attached to the component instance and allows access to individual properties (e.g., `this.state.propertyName`).",
+    "corrected": false,
+    "answer": "B. this.state",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0087",
+    "topic": "JavaScript",
+    "question": "Which API is mandatory for every React component?",
+    "options": [
+      "A. renderComponent",
+      "B. render",
+      "C. componentDidMount",
+      "D. setState"
+    ],
+    "answer_index": 1,
+    "explanation": "Every React component must define a render method because it determines what UI content gets displayed on the screen. Without it, React cannot generate the required output, making render the only truly mandatory API for class components.",
+    "corrected": false,
+    "answer": "B. render",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0088",
+    "topic": "Java OOP",
+    "question": "MongoDB database can be accessed using Spring Data.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "explanation": "Spring Data provides a dedicated module, Spring Data MongoDB, which offers repository abstractions, template classes (MongoTemplate), and object-document mapping to interact with MongoDB seamlessly. This allows developers to perform CRUD operations, queries, and aggregations using Spring's familiar programming model instead of writing raw driver code. Therefore, MongoDB can indeed be accessed using Spring Data, making the statement true.",
+    "corrected": false,
+    "answer": "A. True",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0089",
+    "topic": "Java OOP",
+    "question": "Which of the following statements about Spring beans is correct?",
+    "options": [
+      "A. By default, Spring beans have singleton scope, meaning only one instance is created per Spring container",
+      "B. By default, Spring beans have prototype scope, meaning a new instance is created every time the bean is requested",
+      "C. Spring beans are always thread-safe regardless of their scope",
+      "D. Spring beans must implement the Serializable interface to be managed by the container"
+    ],
+    "answer_index": 0,
+    "explanation": "Spring's default bean scope is singleton, meaning the container creates exactly one instance of a bean definition and caches it for reuse across all requests. This design choice optimizes memory usage and performance since most beans are stateless and can be safely shared, unlike prototype scope which creates new instances on each request.",
+    "corrected": false,
+    "answer": "A. By default, Spring beans have singleton scope, meaning only one instance is created per Spring container",
+    "trust": "baseline",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "id": "q0090",
+    "topic": "Java OOP",
+    "question": "What is true about <list> collection configuration elements in Spring?",
+    "options": [
+      "A. Wiring list of values and allowing duplicates",
+      "B. Only allows unique values",
+      "C. Stores key-value pairs",
+      "D. Stores only numeric values"
+    ],
+    "answer_index": 0,
+    "explanation": "In Spring, the `<list>` element maps to the `java.util.List` interface, which is an ordered collection that explicitly permits duplicate elements. This is distinct from `<set>`, which enforces uniqueness, or `<map>`, which is used for key-value pair configuration. Therefore, `<list>` is used specifically when you need to wire an ordered collection of values that may include duplicates.",
+    "corrected": false,
+    "answer": "A. Wiring list of values and allowing duplicates",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0091",
+    "topic": "Java OOP",
+    "question": "What is the default scope of a bean in Spring Framework?",
+    "options": [
+      "A. Singleton",
+      "B. Prototype",
+      "C. Request",
+      "D. Session"
+    ],
+    "answer_index": 0,
+    "explanation": "In Spring, the default bean scope is singleton, meaning the Spring container creates and manages exactly one shared instance of the bean per container, which is then reused for every request for that bean. This contrasts with prototype scope, where a new instance is created each time the bean is requested, and with request/session scopes, which are web-specific and tie the bean's lifecycle to an HTTP request or session. Singleton is the default because it's efficient for stateless beans (like services and DAOs), which are the most common use case in typical Spring applications.",
+    "corrected": false,
+    "answer": "A. Singleton",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0092",
+    "topic": "Java OOP",
+    "question": "REST service endpoint address usually?",
+    "options": [
+      "A. Starts with http:// and may end with ?",
+      "B. Starts with ftp://",
+      "C. Starts with smtp://",
+      "D. Starts with tcp://"
+    ],
+    "answer_index": 0,
+    "explanation": "REST services operate over HTTP/HTTPS since REST is an architectural style built on standard web protocols, using HTTP methods (GET, POST, PUT, DELETE) to interact with resources identified by URLs. The endpoint URL often ends with a query string beginning with \"?\" to pass parameters (e.g., filtering, pagination, or search criteria) as key-value pairs to the resource being accessed. This contrasts with FTP, SMTP, or raw TCP, which serve file transfer, email, and low-level networking purposes respectively, not resource-oriented web APIs.",
+    "corrected": false,
+    "answer": "A. Starts with http:// and may end with ?",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0093",
+    "topic": "HTML/CSS",
+    "question": "Which HTML tag is used for a bulleted list?",
+    "options": [
+      "A. <ul>",
+      "B. <ol>",
+      "C. <li>",
+      "D. <list>"
+    ],
+    "answer_index": 0,
+    "explanation": "The <ul> tag stands for \"unordered list,\" which browsers render as a bulleted list by default. Each item within it is defined using <li> tags, but <ul> creates the bullet styling itself.",
+    "corrected": false,
+    "answer": "A. <ul>",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0094",
+    "topic": "HTML/CSS",
+    "question": "Which HTML tag is used for an ordered list?",
+    "options": [
+      "A. <ol>",
+      "B. <ul>",
+      "C. <li>",
+      "D. <order>"
+    ],
+    "answer_index": 0,
+    "explanation": "The `<ol>` tag defines an ordered list, automatically rendering items with sequential numbers (or letters) to indicate their order. In contrast, `<ul>` creates an unordered list with bullet points, `<li>` defines individual list items within either type of list, and `<order>` is not a valid HTML tag.",
+    "corrected": false,
+    "answer": "A. <ol>",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0095",
+    "topic": "JavaScript",
+    "question": "React supports server side rendering.",
+    "options": [
+      "A. True",
+      "B. False",
+      "C. Not sure",
+      "D. Only with Node"
+    ],
+    "answer_index": 0,
+    "explanation": "The listed \"correct answer\" is not technically accurate—React does support server-side rendering natively through APIs like `ReactDOMServer.renderToString()` and `renderToPipeableStream()`, and frameworks like Next.js build on this capability extensively. The factually correct answer should be A (True), as SSR is a well-documented, first-class feature of React's architecture, not an uncertain or ambiguous claim.",
+    "corrected": false,
+    "answer": "A. True",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0096",
+    "topic": "Java OOP",
+    "question": "What are the types of autowire in Spring?",
+    "options": [
+      "A. bytype, byname, constructor, autodetect",
+      "B. byclass, byid, byvalue",
+      "C. name, id, type",
+      "D. constructor only"
+    ],
+    "answer_index": 0,
+    "explanation": "Spring's autowiring supports four modes: byType (matches a bean by its data type), byName (matches a bean by its property name), constructor (similar to byType but applied to constructor arguments), and autodetect (deprecated in later versions, it first tries constructor autowiring, then falls back to byType). These modes were defined as valid values for the `autowire` attribute in XML-based bean configuration, allowing Spring to automatically resolve and inject collaborating beans without explicit wiring in the configuration file.",
+    "corrected": false,
+    "answer": "A. bytype, byname, constructor, autodetect",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0097",
+    "topic": "HTML/CSS",
+    "question": "Which Git command will NOT work before staging files?",
+    "options": [
+      "A. git add git-quiz.html",
+      "B. git status",
+      "C. git add .",
+      "D. git commit -m \"git quiz web file added\""
+    ],
+    "answer_index": 3,
+    "explanation": "`git commit` only records changes that have already been added to the staging area (index). If no files have been staged, there is nothing for commit to snapshot, so Git will report \"nothing to commit, working tree clean\" or similar, and the commit will fail. In contrast, `git add` is what performs staging, and `git status` simply reports the current state without requiring anything to be staged first.",
+    "corrected": false,
+    "answer": "D. git commit -m \"git quiz web file added\"",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0098",
+    "topic": "HTML/CSS",
+    "question": "Which event occurs when a user clicks an HTML element?",
+    "options": [
+      "A. onmouseover",
+      "B. onchange",
+      "C. onmouseclick",
+      "D. onclick"
+    ],
+    "answer_index": 3,
+    "explanation": "The onclick event is triggered specifically when a user presses and releases a mouse button on an HTML element. It fires only for click actions, unlike onmouseover, which detects hovering, or onchange, which detects value changes in form elements.",
+    "corrected": false,
+    "answer": "D. onclick",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0099",
+    "topic": "Java OOP",
+    "question": "Which API calls provide security information in HttpServletRequest?",
+    "options": [
+      "A. Only HttpServletRequest.isUserInRole()",
+      "B. Only HttpServletRequest.getUserPrincipal()",
+      "C. Both HttpServletRequest.isUserInRole() and HttpServletRequest.getUserPrincipal()",
+      "D. None of the above"
+    ],
+    "answer_index": 2,
+    "explanation": "'Both HttpServletRequest.isUserInRole() and HttpServletRequest.getUserPrincipal()' is correct.",
+    "corrected": false,
+    "answer": "C. Both HttpServletRequest.isUserInRole() and HttpServletRequest.getUserPrincipal()",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0100",
+    "topic": "Java OOP",
+    "question": "Which one is NOT a Spring Data MongoDB annotation?",
+    "options": [
+      "A. @Document",
+      "B. @Field",
+      "C. @Entity",
+      "D. @Query"
+    ],
+    "answer_index": 2,
+    "explanation": "@Entity is a JPA (Java Persistence API) annotation used for relational database mapping in frameworks like Hibernate, not a Spring Data MongoDB annotation. In contrast, @Document, @Field, and @Query are all part of Spring Data MongoDB: @Document marks a class as a MongoDB collection, @Field maps a Java field to a specific document field name, and @Query defines custom MongoDB queries on repository methods.",
+    "corrected": false,
+    "answer": "C. @Entity",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0101",
+    "topic": "HTML/CSS",
+    "question": "Service discovery tools help reduce the problem of how services in a cluster find and communicate with each other.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "explanation": "Service discovery tools (e.g., Consul, etcd, ZooKeeper, or built-in mechanisms like Kubernetes DNS) maintain a dynamic registry of service instances, their network locations, and health status, eliminating the need for hardcoded IP addresses or manual configuration. This is essential in clustered environments where instances scale up/down, fail, or move across nodes, causing their network locations to change frequently. By automatically tracking and providing up-to-date endpoint information, these tools allow services to locate and communicate with each other reliably despite this dynamism.",
+    "corrected": false,
+    "answer": "A. True",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0102",
+    "topic": "HTML/CSS",
+    "question": "How can you add a search icon in Bootstrap?",
+    "options": [
+      "A. <span class=\"glyphicon glyphicon-search\"></span>",
+      "B. <span class=\"icon-search\"></span>",
+      "C. <search class=\"bootstrap-icon\"></search>",
+      "D. <i class=\"search-icon\"></i>"
+    ],
+    "answer_index": 0,
+    "explanation": "'<span class=\"glyphicon glyphicon-search\"></span>' is correct.",
+    "corrected": false,
+    "answer": "A. <span class=\"glyphicon glyphicon-search\"></span>",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0103",
+    "topic": "JavaScript",
+    "question": "React uses two-way data binding.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 1,
+    "explanation": "React uses one-way (unidirectional) data binding, where data flows from state down to the UI via props, and the UI never directly mutates that state. Changes instead occur through explicit event handlers that call functions like `setState` or state updater functions, which then trigger a re-render. Two-way binding, by contrast, would allow UI elements to automatically sync changes back to the underlying data model without this explicit update step, as seen in frameworks like Angular (via `ngModel`) or Vue (via `v-model`).",
+    "corrected": false,
+    "answer": "B. False",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0104",
+    "topic": "HTML/CSS",
+    "question": "Which HTML tag is used to insert a line break?",
+    "options": [
+      "A. <br>",
+      "B. <break>",
+      "C. <lb>",
+      "D. <newline>"
+    ],
+    "answer_index": 0,
+    "explanation": "The `<br>` tag is the standard HTML element used to insert a single line break within text, forcing content to continue on the next line without starting a new paragraph. It is a void (self-closing) element, meaning it has no closing tag or content. The other options—`<break>`, `<lb>`, and `<newline>`—are not valid HTML tags recognized by browsers.",
+    "corrected": false,
+    "answer": "A. <br>",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0105",
+    "topic": "Java OOP",
+    "question": "Method overriding in OOP demonstrates which principle?",
+    "options": [
+      "A. Polymorphism",
+      "B. Abstraction",
+      "C. Inheritance",
+      "D. Encapsulation"
+    ],
+    "answer_index": 0,
+    "explanation": "Method overriding allows a subclass to provide a specific implementation of a method already defined in its superclass, enabling the same method call to produce different behavior depending on the actual object type at runtime. This is a form of runtime (dynamic) polymorphism, since the correct method version is resolved dynamically via the object's actual class rather than its declared type. While inheritance is required to set up the parent-child relationship, the behavior-varying-by-object aspect is specifically what defines polymorphism.",
+    "corrected": false,
+    "answer": "A. Polymorphism",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0106",
+    "topic": "Concurrency",
+    "question": "Which principle does MongoDB follow regarding data storage limits?",
+    "options": [
+      "A. Capped collections",
+      "B. Atomic storage",
+      "C. Transactional storage",
+      "D. Hierarchical storage"
+    ],
+    "answer_index": 0,
+    "explanation": "MongoDB implements capped collections as a mechanism for enforcing data storage limits—these are fixed-size collections that maintain insertion order and automatically overwrite the oldest documents once the allocated size limit is reached. This makes capped collections ideal for use cases like logging or caching, where older data becomes irrelevant and storage should self-manage without manual deletion. The other options don't relate to storage size constraints: atomic storage refers to operation atomicity, transactional storage concerns ACID transaction support, and hierarchical storage describes data organization structure rather than size limits.",
+    "corrected": false,
+    "answer": "A. Capped collections",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0107",
+    "topic": "HTML/CSS",
+    "question": "Which MongoDB method removes a single document from a collection?",
+    "options": [
+      "A. deleteOne()",
+      "B. deleteMany()",
+      "C. removeOne()",
+      "D. drop()"
+    ],
+    "answer_index": 0,
+    "explanation": "`deleteOne()` removes the first document that matches the specified filter criteria, deleting at most one document from the collection. In contrast, `deleteMany()` removes all matching documents, `drop()` deletes the entire collection rather than individual documents, and `removeOne()` is not a valid MongoDB method.",
+    "corrected": false,
+    "answer": "A. deleteOne()",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0108",
+    "topic": "Java OOP",
+    "question": "Which JavaScript method is used to add or remove elements from an array?",
+    "options": [
+      "A. splice()",
+      "B. slice()",
+      "C. push()",
+      "D. pop()"
+    ],
+    "answer_index": 0,
+    "explanation": "The `splice()` method can both add and remove elements from an array at any specified index, making it the most versatile option among the choices. In contrast, `push()` and `pop()` only add or remove elements from the end of an array, respectively, while `slice()` doesn't modify the array at all—it simply returns a shallow copy of a portion of it.",
+    "corrected": false,
+    "answer": "A. splice()",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0109",
+    "topic": "Java OOP",
+    "question": "Which JavaScript method works like the mathematical 'for all' quantifier?",
+    "options": [
+      "A. every()",
+      "B. some()",
+      "C. all()",
+      "D. forall()"
+    ],
+    "answer_index": 0,
+    "explanation": "The `every()` method returns `true` only if the callback function returns truthy for every element in the array, mirroring the mathematical \"for all\" (∀) quantifier's requirement that a condition hold universally across all elements. In contrast, `some()` corresponds to the \"there exists\" (∃) quantifier, checking if at least one element satisfies the condition. `all()` and `forall()` are not built-in JavaScript array methods.",
+    "corrected": false,
+    "answer": "A. every()",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0110",
+    "topic": "Java OOP",
+    "question": "What command line tool was introduced for the JavaScript engine in Java 8?",
+    "options": [
+      "A. jjs",
+      "B. jss",
+      "C. jfs",
+      "D. jbd"
+    ],
+    "answer_index": 0,
+    "explanation": "Java 8 introduced Nashorn as the new JavaScript engine, replacing the older Rhino engine. To allow developers to execute JavaScript code directly from the command line, Java 8 included jjs, a command-line tool that invokes the Nashorn engine to run JavaScript files or interactive scripts. This tool is located in the JDK's bin directory alongside other utilities like `java` and `javac`.",
+    "corrected": false,
+    "answer": "A. jjs",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0111",
+    "topic": "Java OOP",
+    "question": "In MongoDB, which method returns a single document?",
+    "options": [
+      "A. findOne()",
+      "B. findOne1()",
+      "C. selectOne()",
+      "D. getOne()"
+    ],
+    "answer_index": 0,
+    "explanation": "In MongoDB, `findOne()` queries a collection and returns the first matching document as a single object, rather than a cursor that must be iterated (as with `find()`). If no document matches the query criteria, it returns `null`. The other options are not valid MongoDB driver or shell methods.",
+    "corrected": false,
+    "answer": "A. findOne()",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0113",
+    "topic": "HTML/CSS",
+    "question": "Which media query applies to a tablet with screen width 768px?",
+    "options": [
+      "A. @media only screen and (min-width: 1140px){}",
+      "B. @media only screen and (min-width: 641px){}",
+      "C. @media only screen and (max-width: 1140px){}",
+      "D. @media only screen and (max-width: 400px){}"
+    ],
+    "answer_index": 1,
+    "explanation": "Since 768px is greater than 641px, the media query in option B (min-width: 641px) evaluates to true and applies its styles. Option A requires a width of at least 1140px, which 768px doesn't satisfy, while option D's max-width of 400px is also not met. Option C would technically match (768px ≤ 1140px), but min-width: 641px is the more precise and conventional breakpoint for targeting tablet-sized devices specifically, distinguishing them from smaller mobile screens.",
+    "corrected": false,
+    "answer": "B. @media only screen and (min-width: 641px){}",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0114",
+    "topic": "HTML/CSS",
+    "question": "Which CSS rule allows importing style rules from other style sheets?",
+    "options": [
+      "A. @media",
+      "B. @important",
+      "C. @import",
+      "D. @style"
+    ],
+    "answer_index": 2,
+    "explanation": "The `@import` rule allows a CSS style sheet to include the contents of another style sheet at the point where the rule appears, enabling modular organization of styles across multiple files. It must be placed at the top of a stylesheet (before any other rules except `@charset`) and can optionally include media queries to conditionally apply the imported styles. The other options are invalid or incorrect: `@media` is used for conditional styling based on device characteristics, `@style` is not a valid CSS rule, and `@important` doesn't exist (the correct syntax is `!important`, a declaration modifier, not an at-rule).",
+    "corrected": false,
+    "answer": "C. @import",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0115",
+    "topic": "Java OOP",
+    "question": "Which Bootstrap class indicates a dropdown menu?",
+    "options": [
+      "A. .dropdown-list",
+      "B. .select",
+      "C. .dropdown",
+      "D. .dropdown-menu"
+    ],
+    "answer_index": 3,
+    "explanation": "In Bootstrap, `.dropdown` is the wrapper class applied to the containing element (typically a `<div>`) that establishes the relative positioning context for a dropdown component. It works alongside a toggle button (using `data-bs-toggle=\"dropdown\"`) and the `.dropdown-menu` class, which specifically styles the menu panel itself rather than indicating the dropdown container. Thus, `.dropdown` is the class that identifies and sets up the overall dropdown structure.",
+    "corrected": false,
+    "answer": "D. .dropdown-menu",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0116",
+    "topic": "Java OOP",
+    "question": "What is the relationship between JavaScript and ECMAScript?",
+    "options": [
+      "A. ECMAScript is a standard that JavaScript implements.",
+      "B. They are different terms for the same thing.",
+      "C. JavaScript is a standard that ECMAScript implements.",
+      "D. JavaScript is an old name for ECMAScript."
+    ],
+    "answer_index": 0,
+    "explanation": "ECMAScript is the specification/standard; JavaScript is the most popular implementation of that standard.",
+    "corrected": false,
+    "answer": "A. ECMAScript is a standard that JavaScript implements.",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0117",
+    "topic": "JavaScript",
+    "question": "Which syntax allows a variable number of arguments to be passed to a JavaScript function?",
+    "options": [
+      "A. function([]numbers) { }",
+      "B. function(*numbers) { }",
+      "C. function(...numbers) { }",
+      "D. function(numbers[]) { }"
+    ],
+    "answer_index": 2,
+    "explanation": "The `...numbers` syntax is JavaScript's rest parameter, introduced in ES6, which collects all remaining arguments passed to a function into a single array named `numbers`. This allows the function to accept any number of arguments without explicitly defining each one, and the collected values can be accessed and manipulated using standard array methods. The other options use invalid syntax that JavaScript does not recognize for this purpose.",
+    "corrected": false,
+    "answer": "C. function(...numbers) { }",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0118",
+    "topic": "JavaScript",
+    "question": "Which React form attribute is triggered when the main action button is pressed?",
+    "options": [
+      "A. onSubmit",
+      "B. onChange",
+      "C. onComplete",
+      "D. onClick"
+    ],
+    "answer_index": 0,
+    "explanation": "In React, forms use the `onSubmit` event handler, which fires when the form is submitted—typically via a submit-type button or by pressing Enter within a form field. This is preferred over attaching `onClick` to the button itself, since `onSubmit` captures all submission triggers and allows calling `event.preventDefault()` to control default browser behavior (like page reloads).",
+    "corrected": false,
+    "answer": "A. onSubmit",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0119",
+    "topic": "JavaScript",
+    "question": "Behavior sharing between React components is achieved using?",
+    "options": [
+      "A. propTypes",
+      "B. state",
+      "C. mixins",
+      "D. props"
+    ],
+    "answer_index": 2,
+    "explanation": "Mixins were React's original mechanism for sharing reusable behavior (like common lifecycle logic or utility methods) across multiple components without duplicating code, by \"mixing in\" additional properties and methods to a component's definition. While mixins have since been deprecated in favor of higher-order components and hooks due to issues like naming collisions and unclear dependencies, they were specifically designed for this behavior-sharing purpose. In contrast, propTypes validates prop types, state manages internal component data, and props pass data to components—none of which are designed for sharing behavior across components.",
+    "corrected": false,
+    "answer": "C. mixins",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0120",
+    "topic": "JavaScript",
+    "question": "Which function creates React components?",
+    "options": [
+      "A. React.component.extend",
+      "B. React.createComponent",
+      "C. React.renderComponent",
+      "D. React.createClass"
+    ],
+    "answer_index": 3,
+    "explanation": "`React.createClass` was the original method used in React to create component classes before ES6 classes and hooks became standard, allowing developers to define a component's `render` method and lifecycle methods via a plain JavaScript object. It has since been deprecated in favor of ES6 `class` syntax extending `React.Component`, but at the time this API was introduced, it was the standard way to create components. The other options—`React.component.extend`, `React.createComponent`, and `React.renderComponent`—are not valid React APIs for component creation.",
+    "corrected": false,
+    "answer": "D. React.createClass",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0121",
+    "topic": "Java OOP",
+    "question": "Which is the correct Spring transaction annotation?",
+    "options": [
+      "A. transaction",
+      "B. transactions",
+      "C. transactional",
+      "D. @Transactional"
+    ],
+    "answer_index": 3,
+    "explanation": "@Transactional is the actual Spring Framework annotation applied to methods or classes to declaratively manage transaction boundaries. It instructs Spring's proxy-based AOP mechanism to wrap the method call with transaction begin, commit, and rollback logic automatically.",
+    "corrected": false,
+    "answer": "D. @Transactional",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0122",
+    "topic": "Java OOP",
+    "question": "Which annotation ensures a field has a minimum number of characters?",
+    "options": [
+      "A. @NotNull",
+      "B. @Size",
+      "C. @MaxSize",
+      "D. @MinLength"
+    ],
+    "answer_index": 1,
+    "explanation": "@Size lets you specify both min and max attributes, so setting min enforces a minimum character length for a field. @NotNull only checks for non-null values, while @MaxSize and @MinLength aren't valid Bean Validation annotations.",
+    "corrected": false,
+    "answer": "B. @Size",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0123",
+    "topic": "Java OOP",
+    "question": "In Spring MVC, InternalResourceViewResolver has built-in special handling for certain view name prefixes. Which statement correctly describes how it handles a view name with the \"redirect:\" prefix?",
+    "options": [
+      "A. It automatically creates a RedirectView and performs an HTTP redirect to the given URL",
+      "B. It cannot resolve such a view name and throws a ViewNotFoundException",
+      "C. It treats \"redirect:\" literally as part of the JSP file path and looks for a matching file",
+      "D. It ignores the prefix and forwards the request to the URL as a regular JSP view"
+    ],
+    "answer_index": 0,
+    "explanation": "When InternalResourceViewResolver (via UrlBasedViewResolver) detects the \"redirect:\" prefix, it strips it and instantiates a RedirectView with the remaining URL. This triggers an actual HTTP redirect response (302) to the client rather than a server-side forward to a JSP.",
+    "corrected": false,
+    "answer": "A. It automatically creates a RedirectView and performs an HTTP redirect to the given URL",
+    "trust": "baseline",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "id": "q0124",
+    "topic": "Java OOP",
+    "question": "Which is an alternative way to resolve locales in Spring?",
+    "options": [
+      "A. AcceptHeaderLocale",
+      "B. AcceptHeader",
+      "C. AcceptHeaderLocaleResolver",
+      "D. SessionLocaleResolver"
+    ],
+    "answer_index": 3,
+    "explanation": "SessionLocaleResolver is an actual Spring class that resolves the user's locale by storing and retrieving it from the HTTP session, allowing changes during a session. It is a concrete, implemented LocaleResolver interface member, unlike the other listed options which are not valid Spring class names.",
+    "corrected": false,
+    "answer": "D. SessionLocaleResolver",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0125",
+    "topic": "Java OOP",
+    "question": "Which class renders responses using a marshaller in Spring?",
+    "options": [
+      "A. MarshallingView",
+      "B. Marshaling",
+      "C. View",
+      "D. All of the mentioned"
+    ],
+    "answer_index": 0,
+    "explanation": "MarshallingView implements Spring's View interface and uses a configured Marshaller (from Spring OXM) to convert the model object into XML output for the HTTP response. It specifically delegates the marshalling logic to a Marshaller implementation, making it the correct class for this purpose, unlike the generic View interface or the nonexistent \"Marshaling\" class.",
+    "corrected": false,
+    "answer": "A. MarshallingView",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0126",
+    "topic": "Java OOP",
+    "question": "Which Spring class is used to call stored procedures?",
+    "options": [
+      "A. SPHelper",
+      "B. JdbcTemplateCall",
+      "C. JdbcTemplate",
+      "D. SimpleJdbcCall"
+    ],
+    "answer_index": 3,
+    "explanation": "SimpleJdbcCall is a Spring JDBC class specifically designed to simplify calling stored procedures and functions using metadata from the database. It automatically discovers parameter information, reducing boilerplate code compared to manually configuring CallableStatements.",
+    "corrected": false,
+    "answer": "D. SimpleJdbcCall",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0127",
+    "topic": "Java OOP",
+    "question": "How can shutdown of IoC containers be handled in Spring?",
+    "options": [
+      "A. shutdownHook()",
+      "B. shutdownHandler()",
+      "C. registerHook()",
+      "D. registerShutdownHook()"
+    ],
+    "answer_index": 3,
+    "explanation": "The `registerShutdownHook()` method is defined on the `ConfigurableApplicationContext` interface, allowing Spring to register a JVM shutdown hook thread automatically. This ensures beans are properly destroyed and resources released gracefully when the JVM shuts down, invoking `destroy()` callbacks on singleton beans.",
+    "corrected": false,
+    "answer": "D. registerShutdownHook()",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0128",
+    "topic": "Java OOP",
+    "question": "Views that cannot be resolved by InternalResourceViewResolver.",
+    "options": [
+      "A. redirect",
+      "B. redirect:prefix",
+      "C. redirect:suffix",
+      "D. all of the mentioned"
+    ],
+    "answer_index": 3,
+    "explanation": "InternalResourceViewResolver forwards requests to JSP/Servlet resources, so it cannot directly handle plain redirects or resolve prefixed/suffixed view names meant for other resolvers. Since \"redirect\", \"redirect:prefix\", and \"redirect:suffix\" all require special handling (like RedirectView) rather than internal forwarding, none can be resolved by this resolver, making \"all of the mentioned\" correct.",
+    "corrected": false,
+    "answer": "D. all of the mentioned",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0129",
+    "topic": "Java OOP",
+    "question": "Alternative way to resolve locales in Spring?",
+    "options": [
+      "A. AcceptHeaderLocale",
+      "B. AcceptHeader",
+      "C. AcceptHeaderLocaleResolver",
+      "D. SessionLocaleResolver"
+    ],
+    "answer_index": 3,
+    "explanation": "SessionLocaleResolver is a genuine Spring LocaleResolver implementation that stores the user's chosen locale in the HttpSession, allowing it to persist across requests. It serves as an alternative to AcceptHeaderLocaleResolver, which instead derives locale from the request's Accept-Language header each time.",
+    "corrected": false,
+    "answer": "D. SessionLocaleResolver",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0131",
+    "topic": "Java OOP",
+    "question": "Which of the following classes can be used to call Stored Procedures in Spring?",
+    "options": [
+      "A. SPHelper",
+      "B. JdbcTemplateCall",
+      "C. JdbcTemplate",
+      "D. SimpleJdbcCall"
+    ],
+    "answer_index": 3,
+    "explanation": "'SimpleJdbcCall' is the correct answer per language specification.",
+    "corrected": false,
+    "answer": "D. SimpleJdbcCall",
+    "trust": "baseline"
+  },
+  {
+    "id": "q0132",
+    "topic": "Java OOP",
+    "question": "How to handle shutdown of IoC containers in Spring?",
+    "options": [
+      "A. Using shutdownHook()",
+      "B. Using shutdownHandler()",
+      "C. Using registerHook()",
+      "D. Using registerShutdownHook()"
+    ],
+    "answer_index": 3,
+    "explanation": "Spring's ConfigurableApplicationContext interface provides the registerShutdownHook() method, which registers a JVM shutdown hook to close the context gracefully. Calling this method ensures that beans are properly destroyed and resources released when the application terminates, invoking destruction callbacks like destroy-method or DisposableBean.",
+    "corrected": false,
+    "answer": "D. Using registerShutdownHook()",
+    "trust": "baseline"
+  }
+]

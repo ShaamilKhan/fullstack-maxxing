@@ -1,0 +1,982 @@
+[
+  {
+    "id": "q1295",
+    "topic": "Java OOP",
+    "question": "allows the same event handler function to be registered more than once. When an event of the specified type occurs, the registered function will be invoked as many times as it was registered.",
+    "options": [
+      "A. addEvent()",
+      "B. addMultipltEvent()",
+      "C. attachEvent()",
+      "D. reattachEvent()"
+    ],
+    "answer_index": 2,
+    "explanation": "The `attachEvent()` method allows multiple registrations of the same handler without removing previous ones, enabling duplicate invocations per event occurrence.\n\nThis legacy IE method differs from `addEventListener()` in that it doesn't check for duplicates, permitting the same function to execute multiple times.",
+    "corrected": false,
+    "answer": "C. attachEvent()",
+    "trust": "baseline"
+  },
+  {
+    "id": "q1296",
+    "topic": "Java OOP",
+    "question": "The constructor prototype refers to the correct prototype for .............................. but does not usually do so for objects created with Object.Create( ).",
+    "options": [
+      "A. object prototype",
+      "B. object literal",
+      "C. object class",
+      "D. associative arrays"
+    ],
+    "answer_index": 1,
+    "explanation": "Object literals created with `{}` syntax have their constructor property pointing to the Object constructor function, establishing the correct prototype chain relationship.\n\n`Object.create()` allows specifying a custom prototype, so the constructor property may not reference the actual constructor used, breaking the expected relationship.",
+    "corrected": false,
+    "answer": "B. object literal",
+    "trust": "baseline"
+  },
+  {
+    "id": "q1297",
+    "topic": "Java OOP",
+    "question": "Which routing guard is used to check whether routing can take place or not",
+    "options": [
+      "A. CanActivate",
+      "B. Resolve",
+      "C. CanLoad",
+      "D. CanDeactive"
+    ],
+    "answer_index": 0,
+    "explanation": "CanActivate is the primary guard that intercepts route navigation and determines if a route component can be activated based on custom logic.\n\nIt executes before component instantiation, making it ideal for authorization checks and preventing unauthorized access to protected routes.",
+    "corrected": false,
+    "answer": "A. CanActivate",
+    "trust": "baseline"
+  },
+  {
+    "id": "q1298",
+    "topic": "Java OOP",
+    "question": "When you apply ‘pipe', it changes the value of the underlying component's member variable as well.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 1,
+    "explanation": "Pipe operators create a new derived observable or value rather than mutating the original component's internal state. The underlying member variable remains unchanged; only the transformed output produced by the pipe is affected.",
+    "corrected": false,
+    "answer": "B. False",
+    "trust": "baseline"
+  },
+  {
+    "id": "q1300",
+    "topic": "JavaScript",
+    "question": "what is babel?",
+    "options": [
+      "A. compiler",
+      "B. interpreter",
+      "C. both",
+      "D. bundler"
+    ],
+    "answer_index": 0,
+    "explanation": "Babel transforms modern JavaScript (ES6+) into backward-compatible code that older browsers understand through compilation, not runtime interpretation.\n\nIt converts source code to different source code, making it a transpiler/compiler rather than an interpreter that executes code directly.",
+    "corrected": false,
+    "answer": "A. compiler",
+    "trust": "baseline"
+  },
+  {
+    "id": "q1301",
+    "topic": "HTML/CSS",
+    "question": "Which of the following is NOT a JavaScript keyword?",
+    "options": [
+      "A. if",
+      "B. with",
+      "C. use strict",
+      "D. function"
+    ],
+    "answer_index": 2,
+    "explanation": "\"use strict\" is a directive expressed as a string literal, not a reserved keyword recognized by the JavaScript grammar. In contrast, if, with, and function are all reserved words defined in the ECMAScript specification as actual language keywords.",
+    "corrected": false,
+    "answer": "C. use strict",
+    "trust": "baseline",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "id": "q1304",
+    "topic": "Java OOP",
+    "question": "You have a number of external properties that you want to use in your application. How can you configure your Spring Boot application to source them from a file? Add your .properties files to src/main/resources, where Spring Boot loads them automatically.",
+    "options": [
+      "A. Place the .properties file in the src/main/resources directory. In the code, load it with java.util.Properties.",
+      "B. Place the properties in my.properties and add the annotation @PropertySource(\"my.properties\") to the Spring Boot application main class.",
+      "C. Create a properties file named application.properties in the src/main/resources of your project.",
+      "D. Create a properties file named bootstrap.properties in the src/main/java of your project."
+    ],
+    "answer_index": 2,
+    "explanation": "Spring Boot automatically detects and loads application.properties from src/main/resources at startup without requiring any additional configuration or annotations. This convention-over-configuration approach binds properties directly to the Environment, making them accessible via @Value or @ConfigurationProperties throughout the application.",
+    "corrected": false,
+    "answer": "C. Create a properties file named application.properties in the src/main/resources of your project.",
+    "trust": "baseline",
+    "recovered": true,
+    "repair_origin": "source",
+    "options_synthesized": true
+  },
+  {
+    "id": "q1305",
+    "topic": "Java OOP",
+    "question": "The following method only queries or retrieves data from the data source: @Transactionalpublic Customer retreiveCustomer(String customerId) { ... } It does not perform any write operations. What optimizations can you make so the provider can process the query more efficiently?",
+    "options": [
+      "A. Add the readOnly option to the @Transactional annotation. This provides a hint to the provider to optimize the transaction for read-only operations. correct",
+      "B. Add the timeout option to the @Transactional annotation. This limits the time the transaction can run.",
+      "C. Add the readOnly option to the @Transactional annotation. This prevents any write operations in the transaction.",
+      "D. Set the appropriate transactionManager option in the @Transactional annotation. This allows you to customize the underlying provider."
+    ],
+    "answer_index": 0,
+    "explanation": "Setting `readOnly=true` signals the provider to disable write operations and flush overhead, enabling optimizations like connection pooling and caching strategies specific to read scenarios.\n\nThis hint allows the database provider to acquire read locks instead of write locks, reducing lock contention and improving query performance for retrieval-only operations.",
+    "corrected": false,
+    "answer": "A. Add the readOnly option to the @Transactional annotation. This provides a hint to the provider to optimize the transaction for read-only operations. correct",
+    "trust": "baseline"
+  },
+  {
+    "id": "q1306",
+    "topic": "Java OOP",
+    "question": "How do you configure a Spring Boot application to run as a command-line application?",
+    "options": [
+      "A. Implement CommandLineRunner and publish it to the application context. correct",
+      "B. Call SpringApplication#setHeadless(true).",
+      "C. Annotate a configuration class with @CommandLineApplication.",
+      "D. Use SpringConsoleApplication.run instead of SpringApplication.run"
+    ],
+    "answer_index": 0,
+    "explanation": "CommandLineRunner is a Spring Boot interface specifically designed for executing code after application startup in CLI contexts. Implementing and registering it as a bean ensures your custom logic runs automatically when the application initializes.",
+    "corrected": false,
+    "answer": "A. Implement CommandLineRunner and publish it to the application context. correct",
+    "trust": "baseline"
+  },
+  {
+    "id": "q1307",
+    "topic": "Java OOP",
+    "question": "How would you configure the default configuration and dependencies that a Spring Boot application requires in Maven?",
+    "options": [
+      "A. In the Project Object Model (POM) file, add the following parent configuration: <parent> <groupId>org.springframework.boot</groupId> <artifactId>spring-boot-starter-parent</artifactId> <version>X.Y.Z</version> </parent> correct",
+      "B. In the Project Object Model (POM) file, add the following parent configuration: <parent> <groupId>org.springframework.boot</groupId> <artifactId>spring-boot-dependencies</artifactId> <version>X.Y.Z</version> <relativePath>../../spring-boot-dependencies</relativePath></parent>",
+      "C. In the Project Object Model (POM) file, add the following dependency starter project: <dependencies> <dependency> <groupId>org.springframework.boot</groupId> <artifactId>spring-boot-starter-parent</artifactId> </dependency> </dependencies>",
+      "D. In the Project Object Model (POM) file, add the following dependency starter project: <dependencies> <dependency> <groupId>org.springframework.boot</groupId> <artifactId>spring-boot-starter</artifactId> </dependency> </dependencies>"
+    ],
+    "answer_index": 0,
+    "explanation": "The `spring-boot-starter-parent` POM provides default Maven configurations, dependency management, and plugin settings essential for Spring Boot projects.\n\nUsing it as a parent, not a dependency, enables proper inheritance of build configurations and transitive dependency version management across the entire project.",
+    "corrected": false,
+    "answer": "A. In the Project Object Model (POM) file, add the following parent configuration: <parent> <groupId>org.springframework.boot</groupId> <artifactId>spring-boot-starter-parent</artifactId> <version>X.Y.Z</version> </parent> correct",
+    "trust": "baseline"
+  },
+  {
+    "id": "q1308",
+    "topic": "Java OOP",
+    "question": "Which Spring class can you configure to function as a special environment with custom set properties for testing purposes?",
+    "options": [
+      "A. ConfigurableEnvironment",
+      "B. PropertySource",
+      "C. TestEnv",
+      "D. MockEnvironment Correct"
+    ],
+    "answer_index": 3,
+    "explanation": "ConfigurableEnvironment is the Spring interface that allows programmatic modification and management of environment properties during testing, enabling custom property configurations.\n\nIt provides methods like getPropertySources() to add or manipulate PropertySource objects, making it ideal for test environment setup and isolation.",
+    "corrected": false,
+    "answer": "D. MockEnvironment Correct",
+    "trust": "baseline"
+  },
+  {
+    "id": "q1309",
+    "topic": "Java OOP",
+    "question": "You write a test class. The test class should only run when the operating system is Apple macOS. Which built-in annotation could you add on top of the class to achieve this?",
+    "options": [
+      "A. @SpringJUnitWebConfig(system = \"mac\")",
+      "B. @EnabledOnMac",
+      "C. @EnabledIf(\"#{systemProperties['os.name'].toLowerCase().contains('mac')}\") correct",
+      "D. @DetectOS(category = \"mac\")"
+    ],
+    "answer_index": 2,
+    "explanation": "@SpringJUnitWebConfig provides OS-specific test execution filtering through its system parameter, enabling conditional test runs based on operating system.\n\nThis annotation is JUnit 5's built-in mechanism for platform-specific test configuration, directly supported by Spring's testing framework.",
+    "corrected": false,
+    "answer": "C. @EnabledIf(\"#{systemProperties['os.name'].toLowerCase().contains('mac')}\") correct",
+    "trust": "baseline"
+  },
+  {
+    "id": "q1310",
+    "topic": "Java OOP",
+    "question": "You want to package your application into a native image. You correctly configure Maven and Docker. What command do you need to build the image?",
+    "options": [
+      "A. mvn compile",
+      "B. mvn -Pnative spring-boot:build-image",
+      "C. mvn spring-boot:build-native-image",
+      "D. mvn package"
+    ],
+    "answer_index": 1,
+    "explanation": "The `-Pnative` flag activates the native build profile, which configures GraalVM's native-image tooling and required build plugins for ahead-of-time compilation. The `spring-boot:build-image` goal then packages the application into a Docker container using Cloud Native Buildpacks, producing a native executable image without manual Dockerfile creation.",
+    "corrected": false,
+    "answer": "B. mvn -Pnative spring-boot:build-image",
+    "trust": "baseline",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "id": "q1311",
+    "topic": "Java OOP",
+    "question": "How would you change the following code snippets so the list of names in the model contains four items?\n[CODE]\n@Controller\npublic class NameController {\n\n    @ModelAttribute(\"names\")\n    public List<String> getNames() {\n        List<String> names = new ArrayList<>();\n        names.add(\"User1\");\n        names.add(\"User2\");\n        names.add(\"User3\");\n        return names;\n    }\n\n    @GetMapping(\"/names\")\n    public String allNames(@ModelAttribute(\"list\") List<String> list, Model model) {\n        // Add another name\n        list.add(\"User4\");\n        return \"names\";\n    }\n}\n[/CODE]",
+    "options": [
+      "A. Change the signature of getNames to: public List <String> getNames(Model model)",
+      "B. Change the signature of getNames to: public List <String> getNames(Model model, @ModelAttribute(\"names\") List <String> names)",
+      "C. Change the signature of allNames to: public String allNames(Model model, @ModelAttribute(\"names\") List <String> names)",
+      "D. Change the signature of allNames to: public String allNames(@ModelAttribute(\"names\") List <String> names, Model model) Correct"
+    ],
+    "answer_index": 3,
+    "explanation": "The `@ModelAttribute(\"names\")` parameter in `allNames` currently binds to a non-existent model attribute \"list\", preventing it from receiving the three names from `getNames`. Adding `Model model` to `getNames` allows explicit model manipulation to ensure proper attribute binding.",
+    "corrected": false,
+    "answer": "D. Change the signature of allNames to: public String allNames(@ModelAttribute(\"names\") List <String> names, Model model) Correct",
+    "trust": "baseline"
+  },
+  {
+    "id": "q1312",
+    "topic": "Java OOP",
+    "question": "The ExceptionHandler that should pick up ArithmeticException is not working. The only problem is in the following code snippet. What is the explanation for this?\n[CODE]\n@ExceptionHandler(ArithmeticException.class)\n@ResponseBody\nMap<String, Object> handleException(Exception e, HttpServletRequest request) {\n    // implementation omitted\n}\n[/CODE]",
+    "options": [
+      "A. The method must have the name of the specific exception, so you must rename it handleArithmeticException.",
+      "B. Spring cannot find the view associated with this method because it is not specified in the annotation.",
+      "C. The return type is incorrect. It can only return views and strings.",
+      "D. The annotation should be @ExceptionHandler(exceptions={ArithmeticException.class})."
+    ],
+    "answer_index": 3,
+    "explanation": "The @ExceptionHandler annotation works regardless of method name; Spring uses the annotation parameter to match exceptions, not the method name.\n\nThe code is actually correct as written—method naming conventions don't affect exception handling. The correct answer provided is incorrect.",
+    "corrected": false,
+    "answer": "D. The annotation should be @ExceptionHandler(exceptions={ArithmeticException.class}).",
+    "trust": "baseline"
+  },
+  {
+    "id": "q1313",
+    "topic": "Java OOP",
+    "question": "Which statement about the TestTransaction class is true?",
+    "options": [
+      "A. The static methods on the TestTransaction class interact with the current transaction of the test method. Correct",
+      "B. TestTransaction only works on classes that you annotate with the @EnableTestTransaction and @Transactional annotations.",
+      "C. You must write your custom class to implement the abstract TestTransaction class to interact with the transaction of the test method.",
+      "D. You must autowire TestTransaction, then call the instance method to interact with the transactions of the entire test class."
+    ],
+    "answer_index": 0,
+    "explanation": "TestTransaction provides static utility methods like `start()`, `commit()`, and `rollback()` to programmatically manage transactions within individual test methods.\n\nThese static methods operate on the transaction context of the currently executing test, allowing fine-grained control over transaction boundaries during testing.",
+    "corrected": false,
+    "answer": "A. The static methods on the TestTransaction class interact with the current transaction of the test method. Correct",
+    "trust": "baseline"
+  },
+  {
+    "id": "q1314",
+    "topic": "Java OOP",
+    "question": "You configure your Maven-based Spring Boot application to be packaged as a jar. How would you create the jar from the command line?",
+    "options": [
+      "A. mvn install followed by jar cvf build/classes",
+      "B. mvn spring-boot:jar",
+      "C. mvn package",
+      "D. mvn compile"
+    ],
+    "answer_index": 2,
+    "explanation": "The `mvn package` command compiles the source code, runs tests, and packages the compiled code into a distributable format, such as a JAR file, as defined by the packaging type in the pom.xml. The Spring Boot Maven plugin hooks into this phase to repackage the JAR into an executable \"fat jar\" containing all dependencies.",
+    "corrected": false,
+    "answer": "C. mvn package",
+    "trust": "baseline",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "id": "q1315",
+    "topic": "Java OOP",
+    "question": "What is the default behavior of Spring's TestContext for handling database persistence?",
+    "options": [
+      "A. The framework creates a transaction for every test and does an automatic rollback. The database is the same as before the test. correct",
+      "B. TestContext configures a new database for every test that runs. The database persistence of the test does not influence the next test.",
+      "C. The framework stores the changes in the test database that is being configured by default. This influences the tests to follow. If you do not want this, you can apply @NoCommit.",
+      "D. You can mark tests with @Transactional, specifying to rollback for a certain custom exception. You will throw the exception at the end of the test to rollback."
+    ],
+    "answer_index": 0,
+    "explanation": "Spring's `@Transactional` on test methods automatically wraps each test in a transaction that rolls back after completion, preserving database state. This isolation ensures test independence without manual cleanup code.",
+    "corrected": false,
+    "answer": "A. The framework creates a transaction for every test and does an automatic rollback. The database is the same as before the test. correct",
+    "trust": "baseline"
+  },
+  {
+    "question": "Class used to have full access to the Spring context’slife cycle machinery and dependency injection.",
+    "options": [
+      "A. DelegatingFilterProxy",
+      "B. WebApplicationContextUtils.getRequiredWeb()",
+      "C. WebApplicationUtils.getRequiredWebApplicationContext()",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 0,
+    "answer": "A. DelegatingFilterProxy",
+    "topic": "Spring Core",
+    "explanation": "DelegatingFilterProxy acts as a bridge between servlet filters and Spring beans, enabling filters to access the full Spring context and its lifecycle management capabilities.\n\nIt delegates filter requests to a Spring-managed bean, providing dependency injection and lifecycle integration that standard servlet filters cannot achieve.",
+    "corrected": false,
+    "id": "q1318",
+    "trust": "legit-source"
+  },
+  {
+    "question": "Which of the following is advice supported by Aspect Annotation?",
+    "options": [
+      "A. @Before",
+      "B. @After",
+      "C. @AfterReturning",
+      "D. All of the mentioned"
+    ],
+    "answer_index": 3,
+    "answer": "D. All of the mentioned",
+    "topic": "Spring Core",
+    "explanation": "Aspect Annotation supports @Before, @After, and @AfterReturning as advice types that execute at different join points in method execution flow. These annotations are core AspectJ advice mechanisms for cross-cutting concerns in Spring AOP.",
+    "corrected": false,
+    "id": "q1342",
+    "trust": "legit-source"
+  },
+  {
+    "question": "What annotation is used in spring bean for declaring a document?",
+    "options": [
+      "A. @Document",
+      "B. @Entity",
+      "C. @Collection",
+      "D. None of the above"
+    ],
+    "answer_index": 0,
+    "answer": "A. @Document",
+    "topic": "MongoDB",
+    "explanation": "The @Document annotation is Spring Data MongoDB's marker for declaring a class as a MongoDB document entity, enabling automatic mapping and persistence.\n\n@Entity is for JPA relational databases, while @Collection only specifies the collection name but doesn't declare the document itself.",
+    "corrected": false,
+    "id": "q1434",
+    "trust": "legit-source"
+  },
+  {
+    "question": "Which of the following statement is wrong for mongodb?",
+    "options": [
+      "A. MongoDB supports search by field, range queries, regular expression searches",
+      "B. MongoDB can store the business subject in the minimal number of documents",
+      "C. ​Secondary indices is not available in MongoDB",
+      "D. MongoDB does not support ACID transactions in any scenario"
+    ],
+    "answer_index": 3,
+    "answer": "D. MongoDB does not support ACID transactions in any scenario",
+    "topic": "React",
+    "explanation": "Why Option A is Correct\n\nOption A is actually correct, not wrong. MongoDB fully supports field searches, range queries, and regex patterns, making all three claims true.\n\nThe wrong statement is Option D: MongoDB does support ACID transactions (multi-document transactions since version 4.0), contradicting the claim that it doesn't support them in any scenario.",
+    "corrected": false,
+    "id": "q1442",
+    "trust": "legit-source"
+  },
+  {
+    "question": "In a React class component, how can you access the component's state from inside a member function?",
+    "options": [
+      "A. this.state",
+      "B. this.props",
+      "C. self.state",
+      "D. State.current()"
+    ],
+    "answer_index": 0,
+    "answer": "A. this.state",
+    "topic": "React",
+    "explanation": "In a React class component, state is stored as an instance property called `state`, so any member function must reference it through the instance using `this.state`. This works because `this` inside a method bound to the component refers to the component instance itself, giving access to its properties and state.",
+    "corrected": false,
+    "id": "q1446",
+    "trust": "legit-source",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "question": "Class which declares a number of overloaded update() template methods to control the overall update",
+    "options": [
+      "A. org.springframework.jdbc.core.JdbcTemplate",
+      "B. org.springframework.jdbc.core.*",
+      "C. org.springframework.jdbc.*",
+      "D. none of the mentioned"
+    ],
+    "answer_index": 0,
+    "answer": "A. org.springframework.jdbc.core.JdbcTemplate",
+    "topic": "Spring Core",
+    "explanation": "JdbcTemplate is the central class in Spring's JDBC core package that provides overloaded update() template methods for executing INSERT, UPDATE, and DELETE operations.\n\nThese methods handle resource management, exception translation, and parameter binding, eliminating boilerplate JDBC code while maintaining flexibility through multiple method signatures.",
+    "corrected": false,
+    "id": "q1448",
+    "trust": "legit-source"
+  },
+  {
+    "question": "You implement this interface to override the statement creation task.",
+    "options": [
+      "A. PreparedStatement",
+      "B. PreparedStatementCreator",
+      "C. PreparedCreator",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 1,
+    "answer": "B. PreparedStatementCreator",
+    "topic": "TypeScript",
+    "explanation": "The `PreparedStatementCreator` interface is specifically designed in Spring's JdbcTemplate to allow custom creation and configuration of PreparedStatement objects during execution.\n\nIt provides a callback method `createPreparedStatement()` that gives developers full control over statement creation, including parameter binding and statement customization.",
+    "corrected": false,
+    "id": "q1449",
+    "trust": "legit-source"
+  },
+  {
+    "question": "It is better to implement the PreparedStatementCreator interface and other callback interfaces as inner",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "answer": "A. True",
+    "topic": "JavaScript",
+    "explanation": "Inner classes provide access to the outer class's context and state, reducing parameter passing and improving code organization for callback implementations.\n\nInner classes keep callback logic tightly coupled with its usage context, making code more readable and maintainable than separate top-level classes.",
+    "corrected": false,
+    "id": "q1451",
+    "trust": "legit-source"
+  },
+  {
+    "question": "PreparedStatementSetter, as its name indicates, create a PreparedStatement object on this connection the parameter as well as binding task of the overall update process.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 1,
+    "answer": "B. False",
+    "topic": "React",
+    "explanation": "PreparedStatementSetter only handles binding parameter values to a PreparedStatement that already exists; it does not create the PreparedStatement itself. Creating the PreparedStatement is the responsibility of PreparedStatementCreator, keeping the two concerns separated in Spring's JDBC framework.",
+    "corrected": false,
+    "id": "q1452",
+    "trust": "legit-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "The JdbcTemplate class offers template method for batch update operations.",
+    "options": [
+      "A. batchUpdate()",
+      "B. update()",
+      "C. all of the mentioned",
+      "D. none of the mentioned"
+    ],
+    "answer_index": 0,
+    "answer": "A. batchUpdate()",
+    "topic": "Spring Core",
+    "explanation": "JdbcTemplate provides multiple template methods for batch operations: batchUpdate() for batches and update() for single operations, both supporting batch scenarios. All mentioned methods are valid template methods within JdbcTemplate for update operations.",
+    "corrected": false,
+    "id": "q1453",
+    "trust": "legit-source"
+  },
+  {
+    "question": "The primary interface that allows you to process the current row of the result set.",
+    "options": [
+      "A. PreparedStatementSetter",
+      "B. PreparedStatementCreator",
+      "C. RowCallbackHandler",
+      "D. All of the mentioned"
+    ],
+    "answer_index": 2,
+    "answer": "C. RowCallbackHandler",
+    "topic": "JavaScript",
+    "explanation": "RowCallbackHandler is the Spring interface specifically designed to process each row of a result set sequentially through its processRow() method.\n\nIt provides row-by-row iteration without requiring result accumulation, making it ideal for handling large datasets or performing operations on individual rows.",
+    "corrected": false,
+    "id": "q1455",
+    "trust": "legit-source"
+  },
+  {
+    "question": "Method of RowMapper interface in which, you have to construct the object that represents a row and return",
+    "options": [
+      "A. mapRow()",
+      "B. query()",
+      "C. update()",
+      "D. none of the mentioned"
+    ],
+    "answer_index": 0,
+    "answer": "A. mapRow()",
+    "topic": "Spring Core",
+    "explanation": "The mapRow() method is called by Spring JDBC for each row in the ResultSet to map database columns to object properties and construct domain objects.\n\nRowMapper is a functional interface with a single mapRow(ResultSet rs, int rowNum) method that developers implement to define custom row-to-object mapping logic.",
+    "corrected": false,
+    "id": "q1457",
+    "trust": "legit-source"
+  },
+  {
+    "question": "RowMapper implementation which can automatically map a row to a new instance of the specified class.",
+    "options": [
+      "A. BeanPropertyRowMapper",
+      "B. BeanPropertyRow",
+      "C. All of the mentioned",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 0,
+    "answer": "A. BeanPropertyRowMapper",
+    "topic": "Spring Core",
+    "explanation": "BeanPropertyRowMapper is a Spring JDBC class that automatically maps database result set rows to JavaBean objects by matching column names with bean properties.\n\nOption B lacks the \"Mapper\" suffix and isn't a real Spring class; Option C is incorrect since only BeanPropertyRowMapper exists as the actual implementation.",
+    "corrected": false,
+    "id": "q1458",
+    "trust": "legit-source"
+  },
+  {
+    "question": "Method which provides list of maps.",
+    "options": [
+      "A. queryForList()",
+      "B. update",
+      "C. query()",
+      "D. all of the mentioned"
+    ],
+    "answer_index": 0,
+    "answer": "A. queryForList()",
+    "topic": "SQL & JDBC",
+    "explanation": "The `queryForList()` method is specifically designed to execute SQL queries and return results as a List of Maps, where each Map represents a row.\n\nThe other methods like `update()` and `query()` serve different purposes—`update()` modifies data and `query()` returns single objects, not Lists of Maps.",
+    "corrected": false,
+    "id": "q1459",
+    "trust": "legit-source"
+  },
+  {
+    "question": "Spring JDBC framework offers a convenient class, to simplify your DAO implementation.",
+    "options": [
+      "A. org.springframework.jdbc.core.support",
+      "B. org.springframework.jdbc.core.support.JdbcDaoSupport",
+      "C. all of the mentioned",
+      "D. none of the mentioned"
+    ],
+    "answer_index": 1,
+    "answer": "B. org.springframework.jdbc.core.support.JdbcDaoSupport",
+    "topic": "SQL & JDBC",
+    "explanation": "JdbcDaoSupport is a concrete class that provides pre-configured JdbcTemplate and DataSource, eliminating boilerplate initialization code in DAO implementations.\n\nOption A is a package name, not a class, making it incomplete; only option B provides the actual utility class Spring offers for DAO simplification.",
+    "corrected": false,
+    "id": "q1460",
+    "trust": "legit-source"
+  },
+  {
+    "question": "Method to retrieve the JDBC template.",
+    "options": [
+      "A. setJdbcTemplate()",
+      "B. getTemplate()",
+      "C. getJdbc()",
+      "D. getJdbcTemplate()"
+    ],
+    "answer_index": 3,
+    "answer": "D. getJdbcTemplate()",
+    "topic": "Spring Core",
+    "explanation": "The method `getJdbcTemplate()` follows standard Java getter naming conventions for retrieving object instances from classes like `JdbcDaoSupport`.\n\nThis method provides access to the underlying `JdbcTemplate` bean configured in Spring, enabling database operations within DAO implementations.",
+    "corrected": false,
+    "id": "q1462",
+    "trust": "legit-source"
+  },
+  {
+    "question": "Class which declares a number of overloaded update()template methods to control the overall",
+    "options": [
+      "A. org.springframework.jdbc.core.JdbcTemplate",
+      "B. org.springframework.jdbc.core.*",
+      "C. org.springframework.jdbc.*",
+      "D. none of the mentioned"
+    ],
+    "answer_index": 0,
+    "answer": "A. org.springframework.jdbc.core.JdbcTemplate",
+    "topic": "Spring Core",
+    "explanation": "JdbcTemplate is the central class in Spring's JDBC core package that provides multiple overloaded update() methods for executing SQL INSERT, UPDATE, and DELETE statements.\n\nThese template methods abstract away boilerplate JDBC code and handle resource management, making database operations simpler and more consistent across the application.",
+    "corrected": false,
+    "id": "q1463",
+    "trust": "legit-source"
+  },
+  {
+    "question": "PreparedStatementSetter, as its name indicates,create a PreparedStatement object on this",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 1,
+    "answer": "B. False",
+    "topic": "React",
+    "explanation": "PreparedStatementSetter is a callback interface that sets parameters on an already-created PreparedStatement object, not creating it.\n\nThe actual PreparedStatement creation is handled by JdbcTemplate or other frameworks before passing it to the setter.",
+    "corrected": false,
+    "id": "q1466",
+    "trust": "legit-source"
+  },
+  {
+    "question": "RowCallbackHandler’s purpose is to map a singlerow of the result set to a customized object.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 1,
+    "answer": "B. False",
+    "topic": "JavaScript",
+    "explanation": "RowCallbackHandler processes each row without returning a value; it performs actions like accumulating results into a collection rather than mapping to objects.\n\nRowMapper is the interface designed to map individual result set rows to custom objects, not RowCallbackHandler.",
+    "corrected": false,
+    "id": "q1468",
+    "trust": "legit-source"
+  },
+  {
+    "question": "Method of RowMapper interface in which, you haveto construct the object that represents a row",
+    "options": [
+      "A. mapRow()",
+      "B. query()",
+      "C. update()",
+      "D. none of the mentioned"
+    ],
+    "answer_index": 0,
+    "answer": "A. mapRow()",
+    "topic": "Spring Core",
+    "explanation": "The `mapRow()` method is specifically designed to map each row from a ResultSet to a corresponding object instance. It receives the ResultSet and row number, returning the constructed object for that row.",
+    "corrected": false,
+    "id": "q1469",
+    "trust": "legit-source"
+  },
+  {
+    "question": "RowMapper implementation which can automaticallymap a row to a new instance of the",
+    "options": [
+      "A. BeanPropertyRowMapper",
+      "B. BeanPropertyRow",
+      "C. All of the mentioned",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 0,
+    "answer": "A. BeanPropertyRowMapper",
+    "topic": "Spring Core",
+    "explanation": "BeanPropertyRowMapper is a Spring Framework class that automatically maps database result set rows to JavaBean instances using reflection and property naming conventions.\n\nIt eliminates manual row mapping code by matching column names to bean properties, making database queries cleaner and reducing boilerplate code significantly.",
+    "corrected": false,
+    "id": "q1470",
+    "trust": "legit-source"
+  },
+  {
+    "question": "The org.springframework.jdbc.core.support.JdbcDaoSupport class has a setDataSource()",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "answer": "A. True",
+    "topic": "SQL & JDBC",
+    "explanation": "JdbcDaoSupport is a Spring utility class that provides convenient access to JdbcTemplate through a DataSource, requiring setDataSource() to initialize the template.\n\nThis method is essential for dependency injection, allowing the DAO to obtain database connections and execute SQL operations through the configured DataSource.",
+    "corrected": false,
+    "id": "q1471",
+    "trust": "legit-source"
+  },
+  {
+    "question": "Publishing an application’s data as a REST service requires.",
+    "options": [
+      "A. @RequestMapping",
+      "B. @PathVariable",
+      "C. All of the mentioned",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 0,
+    "answer": "A. @RequestMapping",
+    "topic": "Spring Core",
+    "explanation": "@RequestMapping is essential for mapping HTTP requests to handler methods that expose application data as REST endpoints.\n\n@PathVariable is optional and only needed when REST endpoints require dynamic URL parameters, not for basic REST service publishing.",
+    "corrected": false,
+    "id": "q1524",
+    "trust": "legit-source"
+  },
+  {
+    "question": "General-purpose class that allows a response to be rendered",
+    "options": [
+      "A. MarshallingView",
+      "B. Marshalling",
+      "C. View",
+      "D. All of the mentioned"
+    ],
+    "answer_index": 2,
+    "answer": "C. View",
+    "topic": "Core Java & OOP",
+    "explanation": "MarshallingView is a general-purpose class that handles rendering responses by marshalling data into appropriate formats like XML or JSON.\n\nIt provides a framework-agnostic mechanism for converting domain objects into serialized response representations across different content types.",
+    "corrected": false,
+    "id": "q1536",
+    "trust": "legit-source"
+  },
+  {
+    "question": "What types of Dependency injection does spring supports?",
+    "options": [
+      "A. Constructor based, Setter based",
+      "B. Constructor based, Setter based, Getter Based",
+      "C. Setter based, Getter based, Properties based",
+      "D. Constructor based, Setter based, Properties based"
+    ],
+    "answer_index": 0,
+    "answer": "A. Constructor based, Setter based",
+    "topic": "Spring Core",
+    "explanation": "Spring Framework primarily supports constructor injection and setter injection as its two core DI mechanisms for managing bean dependencies and object creation.\n\nGetter-based and properties-based injection are not standard Spring DI patterns; Spring focuses on constructor and setter methods for dependency resolution.",
+    "corrected": false,
+    "id": "q1593",
+    "trust": "legit-source"
+  },
+  {
+    "question": "- Which class acts as IoC Container?",
+    "options": [
+      "A. ServletContext",
+      "B. DispatcherServlet",
+      "C. ApplicationContext",
+      "D. None of the above"
+    ],
+    "answer_index": 2,
+    "answer": "C. ApplicationContext",
+    "topic": "Spring Core",
+    "explanation": "ApplicationContext is the central interface in Spring that manages bean lifecycle, dependency injection, and configuration, functioning as the IoC container.\n\nDispatcherServlet delegates to ApplicationContext for bean management, while ServletContext is a standard servlet API class without IoC capabilities.",
+    "corrected": false,
+    "id": "q1608",
+    "trust": "legit-source"
+  },
+  {
+    "question": "Does Spring provide programmatic transaction management? Select a unique answer.",
+    "options": [
+      "A. Yes using the @Transactional bean post processor",
+      "B. Yes with the TransactionTemplate class",
+      "C. Yes with the TransactionService class",
+      "D. Yes with the PlatformTransactionManager class"
+    ],
+    "answer_index": 1,
+    "answer": "B. Yes with the TransactionTemplate class",
+    "topic": "Spring Core",
+    "explanation": "Spring provides the TransactionTemplate class as its core mechanism for programmatic transaction management, allowing developers to explicitly wrap code blocks in transactional logic using a callback-based approach. This differs from declarative transaction management, which relies on the @Transactional annotation and AOP proxies rather than explicit code, ruling out option A, while TransactionService is not an actual Spring class, ruling out option C.",
+    "corrected": false,
+    "id": "q1613",
+    "trust": "legit-source",
+    "recovered": true,
+    "repair_origin": "source",
+    "options_synthesized": true
+  },
+  {
+    "question": "How could you externalize constants from a Spring configuration file or a Spring annotation into a .properties file? Select one or more answers",
+    "options": [
+      "A. By using the <context:property-placeholder /> tag",
+      "B. By using the c: namespace",
+      "C. By using the <util:properties /> tag",
+      "D. By using the @Autowired annotation with a Properties bean"
+    ],
+    "answer_index": 0,
+    "answer": "A. By using the <context:property-placeholder /> tag",
+    "topic": "TypeScript",
+    "explanation": "The <context:property-placeholder /> tag registers a PropertyPlaceholderConfigurer bean that resolves ${...} placeholders in XML config or annotations against values loaded from specified .properties files. This mechanism directly externalizes constants by substituting placeholder tokens with property values at container startup, without requiring code changes.",
+    "corrected": false,
+    "id": "q1614",
+    "trust": "legit-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "Interface for Dispatcher Servlet to auto detect view resolver be",
+    "options": [
+      "A. localeResolver",
+      "B. tiles",
+      "C. ViewResolver",
+      "D. none of the mentioned."
+    ],
+    "answer_index": 2,
+    "answer": "C. ViewResolver",
+    "topic": "JavaScript",
+    "explanation": "The DispatcherServlet uses the ViewResolver interface to automatically detect and register view resolver beans from the application context during initialization.\n\nViewResolver implementations handle the mapping of logical view names returned by controllers to actual view objects for rendering responses.",
+    "corrected": false,
+    "id": "q1615",
+    "trust": "legit-source"
+  },
+  {
+    "question": "Using the Spring AOP framework, what is the visibility of the method matches by the following join point?\n@Pointcut(\"execution(* *(..))\")\nprivate void anyOperation() {};",
+    "options": [
+      "A. Public methods",
+      "B. All methods, whereas their visibility",
+      "C. Protected and public methods",
+      "D. Package-private and protected methods"
+    ],
+    "answer_index": 1,
+    "answer": "B. All methods, whereas their visibility",
+    "topic": "Spring Core",
+    "explanation": "The pointcut expression \"execution(* *(..))\" uses wildcards for both return type and method name without specifying any access modifier, so it matches methods regardless of their visibility. Spring AOP applies this to all matching methods within proxied beans, including public, protected, package-private, and private methods (subject to proxy limitations).",
+    "corrected": false,
+    "id": "q1618",
+    "trust": "legit-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "Which of the following is true regarding the below Spring controller?",
+    "options": [
+      "A. RequestMethod.GET method is more accurate than POST",
+      "B. @ResponseBody could be removed",
+      "C. @PathVariable should be replaced with the @PathParam annotation",
+      "D. Returning the 201 HTTP status code is better"
+    ],
+    "answer_index": 3,
+    "answer": "D. Returning the 201 HTTP status code is better",
+    "topic": "Core Java & OOP",
+    "explanation": "GET requests retrieve data without side effects, making them semantically correct for fetching resources. POST requests modify server state and shouldn't be used for read-only operations.",
+    "corrected": false,
+    "id": "q1620",
+    "trust": "legit-source"
+  },
+  {
+    "question": "What is an advice? Select a unique answer.",
+    "options": [
+      "A. An action taken by an aspect at a particular join point",
+      "B. A point during the execution of a program",
+      "C. An aspect and a pointcut",
+      "D. A predicate that matches join points"
+    ],
+    "answer_index": 0,
+    "answer": "A. An action taken by an aspect at a particular join point",
+    "topic": "Spring Core",
+    "explanation": "Advice is the actual code that executes when a pointcut matches, defining what happens at a specific join point. It represents the behavior injected by an aspect, distinct from pointcuts which only identify matching locations without specifying actions.",
+    "corrected": false,
+    "id": "q1621",
+    "trust": "legit-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "What is the easiest method to write a unit test?",
+    "options": [
+      "A. @RequestMapping(\"/displayAccount\")",
+      "B. void displayAccount(HttpServletRequest req, HttpServletResponse resp) throws ServletException,",
+      "C. void displayAccount(HttpServletRequest req, HttpSession Session)",
+      "D. @RequestMapping(\"/displayAccount\")\nString displayAccount(@RequestParam(\"accountId\") int id, Model model)"
+    ],
+    "answer_index": 3,
+    "answer": "D. @RequestMapping(\"/displayAccount\")\nString displayAccount(@RequestParam(\"accountId\") int id, Model model)",
+    "topic": "Spring Core",
+    "explanation": "Option D decouples the method from servlet APIs by using simple parameters like int and Model, making it easy to instantiate and invoke directly in a test. Since it avoids dependencies on HttpServletRequest, HttpServletResponse, or HttpSession, no mocking framework is required to simulate a container environment.",
+    "corrected": false,
+    "id": "q1622",
+    "trust": "legit-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "Select the method signature that matches the following pointcut expression: execution(void com.test.service.account.*.*(com.test.service.account.Account, com.test.service.account.Money))",
+    "options": [
+      "A. void com.test.service.account.MyServiceImpl#transfert(Money amount)",
+      "B. void com.test.service.MyServiceImpl#transfert(Account account, Money amount)",
+      "C. void com.test.service.account.MyServiceImpl#transfert(Account account, Money amount)",
+      "D. None of the above"
+    ],
+    "answer_index": 2,
+    "answer": "C. void com.test.service.account.MyServiceImpl#transfert(Account account, Money amount)",
+    "topic": "Spring Core",
+    "explanation": "The pointcut requires a void return type, any class in the com.test.service.account package, any method name, with exactly two parameters of types Account and Money in that order. Option C matches all criteria: correct package, void return, and matching parameter types and order.",
+    "corrected": false,
+    "id": "q1623",
+    "trust": "legit-source",
+    "recovered": true,
+    "repair_origin": "synthesized",
+    "options_synthesized": true,
+    "synthesized": true
+  },
+  {
+    "question": "Given the Spring configuration file, which are the correct statements?",
+    "options": [
+      "A. The p namespace has to be declared",
+      "B. NationalBank is a scalar value",
+      "C. Bean id is bankServiceImpl",
+      "D. The BankServiceImpl references a NationalBank bean"
+    ],
+    "answer_index": 3,
+    "answer": "D. The BankServiceImpl references a NationalBank bean",
+    "topic": "TypeScript",
+    "explanation": "The p namespace enables property injection syntax in Spring XML configuration, allowing shorthand attribute-based bean property assignment instead of nested `<property>` tags.\n\nWithout declaring the p namespace (xmlns:p=\"http://www.springframework.org/schema/p\"), Spring cannot parse p: prefixed attributes and will throw a configuration error.",
+    "corrected": false,
+    "id": "q1624",
+    "trust": "legit-source"
+  },
+  {
+    "question": "Given the following configuration class, what are the correct affirmations? Select one or more answers.\npublic class ApplicationConfig {\nprivate DataSource dataSource;\n@Autowired\npublic ApplicationConfig(DataSource dataSource) {\nthis.dataSource = dataSource;\n}\n@Bean(name=\"clientRepository\")\nClientRepository jpaClientRepository() {\nreturn new JpaClientRepository();\n}\n}",
+    "options": [
+      "A. Configuration annotation is missing",
+      "B. Default or no-arg constructor is missing",
+      "C. @Bean name is ambiguous",
+      "D. @Bean scope is prototype"
+    ],
+    "answer_index": 0,
+    "answer": "A. Configuration annotation is missing",
+    "topic": "Spring Core",
+    "explanation": "The class lacks the @Configuration annotation, so Spring won't recognize it as a source of bean definitions during component scanning or context loading. Without this annotation, the @Bean method jpaClientRepository() won't be processed, and the ClientRepository bean will never be registered in the application context.",
+    "corrected": false,
+    "id": "q1625",
+    "trust": "legit-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "Using JdbcTemplate, what is the Spring provided class you will use for result set parsing and merging rows",
+    "options": [
+      "A. ResultSetExtractor",
+      "B. RowMapper",
+      "C. RowCallbackHandler",
+      "D. ResultSetMapper"
+    ],
+    "answer_index": 0,
+    "answer": "A. ResultSetExtractor",
+    "topic": "Spring Core",
+    "explanation": "ResultSetExtractor processes the entire ResultSet at once, allowing custom parsing and merging multiple rows into a single aggregated result object.\n\nRowMapper and RowCallbackHandler process individual rows separately, making them unsuitable for row merging operations.",
+    "corrected": false,
+    "id": "q1626",
+    "trust": "legit-source"
+  },
+  {
+    "question": "LoggerInterceptor which implements the HandlerInterceptor.The LoggerInterceptor will override the which",
+    "options": [
+      "A. preHandlerBean(), postHandlerBean(), afterCompletion()",
+      "B. PreProcessHandler(), PostProcessHandler(), afterCompletion()",
+      "C. PreHandler(), PostHandler(), afterCompletion()",
+      "D. none"
+    ],
+    "answer_index": 3,
+    "answer": "D. none",
+    "topic": "Spring Core",
+    "explanation": "The HandlerInterceptor interface defines three specific methods: preHandle(), postHandle(), and afterCompletion() that interceptors must override for request processing.\n\nThese methods allow logging at key lifecycle points: before handler execution, after handler execution, and after view rendering completes.",
+    "corrected": false,
+    "id": "q1629",
+    "trust": "legit-source"
+  },
+  {
+    "question": "WebApplicationContext has more scopes like request, session, globalSession to the standard Application context (which only provides Singleton and Prototype scopes)",
+    "options": [
+      "A. true",
+      "B. false"
+    ],
+    "answer_index": 0,
+    "answer": "A. true",
+    "topic": "Spring Core",
+    "explanation": "WebApplicationContext extends the standard ApplicationContext to support web-aware environments, adding request, session, and globalSession scopes for beans tied to HTTP lifecycles. The standard ApplicationContext only supports singleton and prototype scopes since it lacks awareness of HTTP request/session contexts inherent to web applications.",
+    "corrected": false,
+    "id": "q1646",
+    "trust": "legit-source",
+    "recovered": true,
+    "repair_origin": "source"
+  },
+  {
+    "question": "How the Spring Dispatcher Servlet supports for returning the last-modification-date, as",
+    "options": [
+      "A. By implementing the LastModified interface",
+      "B. By implementing the LastSessionModified interface",
+      "C. By implementing the LastDateModified interface",
+      "D. By implementing the LastModifiedDate interface"
+    ],
+    "answer_index": 0,
+    "answer": "A. By implementing the LastModified interface",
+    "topic": "JavaScript",
+    "explanation": "The LastModified interface allows controllers to implement getLastModified() method, enabling Spring DispatcherServlet to generate appropriate HTTP cache headers like Last-Modified and ETag.\n\nThis mechanism supports conditional requests (If-Modified-Since), allowing browsers to cache responses and reducing bandwidth by returning 304 Not Modified when content hasn't changed.",
+    "corrected": false,
+    "id": "q1647",
+    "trust": "legit-source"
+  },
+  {
+    "question": "Which of the following layers the @Controller annotation is used in?",
+    "options": [
+      "A. Service layer.",
+      "B. Presentation layer.",
+      "C. None of these",
+      "D. Business layer."
+    ],
+    "answer_index": 1,
+    "answer": "B. Presentation layer.",
+    "topic": "Spring Core",
+    "explanation": "The @Controller annotation marks classes that handle HTTP requests and manage view logic, which is the responsibility of the presentation layer, not the service layer.\n\nThe correct answer should be B (Presentation layer), as @Controller is a Spring stereotype for web request handlers that belong to the MVC presentation tier.",
+    "corrected": false,
+    "id": "q1649",
+    "trust": "legit-source"
+  },
+  {
+    "question": "By default, XmlViewResolver loads view beans from /WEB-INF/views.xml which is",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "answer": "A. True",
+    "topic": "Core Java & OOP",
+    "explanation": "XmlViewResolver is a Spring Framework component that loads view definitions from an XML configuration file located at the default path /WEB-INF/views.xml.\n\nThis default location follows Spring's convention-over-configuration principle, allowing developers to define view beans declaratively without explicit path specification in most cases.",
+    "corrected": false,
+    "id": "q1662",
+    "trust": "legit-source"
+  }
+]
