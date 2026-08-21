@@ -127,6 +127,17 @@ html.cur-down #cur-glow { width: 20px; height: 20px; margin: -10px 0 0 -10px; }
 .opt-btn.reveal .opt-letter { background: rgba(16,185,129,.2); border-color: #10b981; color: #10b981; }
 .opt-btn.disabled { pointer-events: none; opacity: .7; }
 .opt-btn.disabled.correct, .opt-btn.disabled.wrong, .opt-btn.disabled.reveal { opacity: 1; }
+/* Exam mode: shows selected option neutrally, no answer revealed */
+.opt-btn.exam-selected {
+  border-color: var(--brand2);
+  background: rgba(139,92,246,.15);
+}
+.opt-btn.exam-selected .opt-letter {
+  background: rgba(139,92,246,.35);
+  border-color: var(--brand2);
+  color: #fff;
+}
+.opt-btn.disabled.exam-selected { opacity: 1; }
 
 /* Progress bar */
 .prog-track { height: 4px; background: var(--border); border-radius: 9px; overflow: hidden; }
@@ -316,6 +327,9 @@ select:focus { border-color: var(--brand); }
       Java, Spring, React, TypeScript, DevOps &amp; more
     </p>
   </div>
+
+  <!-- Resume session banner (shown if localStorage has an in-progress session) -->
+  <div id="resume-banner" style="display:none"></div>
 
   <!-- Weak Spots Banner -->
   <div id="weak-banner" style="display:none;margin-bottom:24px">
@@ -646,6 +660,11 @@ select:focus { border-color: var(--brand); }
   <div class="card anim-up" style="padding:22px 24px;margin-bottom:28px" id="weak-box">
     <h3 style="font-size:.78rem;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin-bottom:14px">⚠️ Weak Spots</h3>
     <div id="weak-spots"></div>
+  </div>
+  <!-- Exam mode only: full question review -->
+  <div class="card anim-up" id="exam-review-card" style="padding:22px 24px;margin-bottom:28px;display:none">
+    <h3 style="font-size:.78rem;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin-bottom:16px">📋 Question Review</h3>
+    <div id="exam-review"></div>
   </div>
   <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px" class="anim-up">
     <button onclick="App.retrySet()" class="btn-primary" style="justify-content:center;padding:15px">🔁 Retry (re-shuffled)</button>

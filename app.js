@@ -55,7 +55,128 @@ const App = (() => {
   const EXAM_SECS_PER_Q = 60;   // default: 1 minute per question in exam mode
 
   // ── Persistence ───────────────────────────────────────────
-  const LS_KEY = 'devquiz_stats_v2';
+  const LS_KEY      = 'devquiz_stats_v2';
+  const SESSION_KEY = 'devquiz_session_v1';
+
+  function saveSessionCache() {
+    if (!currentSet.length) return;
+    try {
+      localStorage.setItem(SESSION_KEY, JSON.stringify({
+        currentSet, currentIdx, score, answered, mode,
+        questionAnswers, sessionSetInfo, topicStats,
+        timerLeft, timerEnabled, timerTotal,
+        savedAt: Date.now()
+      }));
+    } catch(e) { /* localStorage full — ignore */ }
+  }
+
+  function clearSessionCache() { localStorage.removeItem(SESSION_KEY); }
+
+  function loadSessionCache() {
+    try {
+      const raw = localStorage.getItem(SESSION_KEY);
+      if (!raw) return null;
+      const s = JSON.parse(raw);
+      // Expire after 24 h
+      if (!s.savedAt || Date.now() - s.savedAt > 86400000) { clearSessionCache(); return null; }
+      if (!s.currentSet || !s.currentSet.length) return null;
+      return s;
+    } catch(e) { return null; }
+  }
+
+  function showResumeBanner(s) {
+    const banner = document.getElementById('resume-banner');
+    if (!banner) return;
+    const done  = (s.questionAnswers || []).filter(a => a !== null).length;
+    const total = s.currentSet.length;
+    const mLabel = s.mode === 'exam' ? '⏱ Timed Exam' : s.mode === 'practice' ? '🎯 Practice' : '📚 Normal';
+    banner.innerHTML = `
+      <div style="background:rgba(139,92,246,.1);border:1px solid rgba(139,92,246,.38);border-radius:12px;
+                  padding:13px 18px;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:20px">
+        <div>
+          <span style="font-size:.88rem;font-weight:700;color:#a78bfa">⚡ Resume session?</span>
+          <span style="font-size:.8rem;color:var(--muted);margin-left:8px">
+            ${mLabel} · ${s.sessionSetInfo?.name || 'Session'} · ${done}/${total} answered
+          </span>
+        </div>
+        <div style="display:flex;gap:8px">
+          <button onclick="App.resumeSession()"
+                  style="background:var(--brand);color:#fff;border:none;border-radius:8px;
+                         padding:7px 16px;font-size:.82rem;font-weight:700;cursor:pointer;font-family:inherit">
+            Resume →
+          </button>
+          <button onclick="App.dismissResume()"
+                  style="background:transparent;border:1px solid var(--border2);color:var(--muted);
+                         border-radius:8px;padding:7px 12px;font-size:.78rem;cursor:pointer;font-family:inherit">
+            Discard
+          </button>
+        </div>
+      </div>`;
+    banner.style.display = 'block';
+  }
+
+  function resumeSession() {
+    const s = loadSessionCache();
+    dismissResume();
+    if (!s) return;
+
+    currentSet      = s.currentSet;
+    currentIdx      = s.currentIdx;
+    score           = s.score;
+    answered        = s.answered;
+    mode            = s.mode;
+    questionAnswers = s.questionAnswers || new Array(s.currentSet.length).fill(null);
+    sessionSetInfo  = s.sessionSetInfo;
+    topicStats      = s.topicStats || {};
+    timerEnabled    = s.timerEnabled;
+    timerTotal      = s.timerTotal;
+    timerLeft       = s.timerLeft || 0;
+
+    TOPICS.forEach(t => { if (!topicStats[t.key]) topicStats[t.key] = { correct: 0, total: 0 }; });
+
+    const badge = document.getElementById('quiz-mode-badge');
+    if (mode === 'practice') {
+      badge.textContent = '🎯 Practice';
+      badge.style.cssText = 'background:rgba(167,139,250,.15);border:1px solid rgba(167,139,250,.4);color:#c084fc;padding:3px 10px;border-radius:20px;font-size:.78rem;font-weight:700';
+    } else if (mode === 'exam') {
+      badge.textContent = '⏱ Exam';
+      badge.style.cssText = 'background:rgba(251,191,36,.15);border:1px solid rgba(251,191,36,.4);color:#fbbf24;padding:3px 10px;border-radius:20px;font-size:.78rem;font-weight:700';
+    } else {
+      badge.textContent = '📚 Normal';
+      badge.style.cssText = 'background:rgba(139,92,246,.15);border:1px solid rgba(139,92,246,.4);color:#a78bfa;padding:3px 10px;border-radius:20px;font-size:.78rem;font-weight:700';
+    }
+
+    showScreen('quiz');
+    renderNavPanel();
+    renderQuestion();
+
+    // Restart timer from saved position
+    if (mode === 'exam' && timerLeft > 0) {
+      stopTimer();
+      updateTimerDisplay();
+      timerInterval = setInterval(() => {
+        timerLeft--;
+        if (timerLeft < 0) timerLeft = 0;
+        updateTimerDisplay();
+        if (timerLeft === 0) { clearInterval(timerInterval); timerInterval = null; showSummary(); }
+      }, 1000);
+    } else if (timerEnabled && timerLeft > 0) {
+      stopTimer();
+      updateTimerDisplay();
+      timerInterval = setInterval(() => {
+        timerLeft--;
+        if (timerLeft < 0) timerLeft = 0;
+        updateTimerDisplay();
+        if (timerLeft === 0) { clearInterval(timerInterval); timerInterval = null; showSummary(); }
+      }, 1000);
+    }
+  }
+
+  function dismissResume() {
+    clearSessionCache();
+    const banner = document.getElementById('resume-banner');
+    if (banner) banner.style.display = 'none';
+  }
 
   function loadStats() {
     try { return JSON.parse(localStorage.getItem(LS_KEY)) || {}; }
@@ -693,10 +814,12 @@ const App = (() => {
     const totalQ   = currentSet.length;
     const correct  = questionAnswers.filter(a => a && a.wasCorrect).length;
 
+    const isExam = (mode === 'exam');
+
     let summaryHtml = `<div style="padding:10px 10px 6px;border-bottom:1px solid var(--border)">
       <div style="font-size:.65rem;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--muted);margin-bottom:5px">Navigation</div>
       <div style="font-size:.72rem;color:var(--muted)">${totalAns}/${totalQ} answered</div>`;
-    if (totalAns > 0) {
+    if (!isExam && totalAns > 0) {
       summaryHtml += `<div style="font-size:.72rem;color:#34d399;margin-top:2px">${correct} correct</div>`;
     }
     summaryHtml += `</div>`;
@@ -711,6 +834,9 @@ const App = (() => {
         bg = 'rgba(139,92,246,.5)'; border = '#a78bfa'; color = '#fff'; fw = '800';
       } else if (ans === null) {
         bg = 'var(--surface2)'; border = 'var(--border)'; color = 'var(--muted)'; fw = '500';
+      } else if (isExam) {
+        // exam mode: answered but no correct/wrong colour — neutral teal
+        bg = 'rgba(20,184,166,.15)'; border = 'rgba(20,184,166,.6)'; color = '#2dd4bf'; fw = '700';
       } else if (ans.wasCorrect) {
         bg = 'rgba(16,185,129,.2)'; border = 'rgba(16,185,129,.7)'; color = '#34d399'; fw = '700';
       } else {
@@ -726,17 +852,26 @@ const App = (() => {
     gridHtml += `</div>`;
 
     // Legend
-    const legendHtml = `<div style="padding:0 10px 10px;display:flex;flex-wrap:wrap;gap:5px">
-      <span style="font-size:.6rem;color:var(--muted);display:flex;align-items:center;gap:3px">
-        <span style="width:8px;height:8px;background:rgba(16,185,129,.3);border:1px solid rgba(16,185,129,.7);border-radius:2px"></span>Correct
-      </span>
-      <span style="font-size:.6rem;color:var(--muted);display:flex;align-items:center;gap:3px">
-        <span style="width:8px;height:8px;background:rgba(244,63,94,.2);border:1px solid rgba(244,63,94,.6);border-radius:2px"></span>Wrong
-      </span>
-      <span style="font-size:.6rem;color:var(--muted);display:flex;align-items:center;gap:3px">
-        <span style="width:8px;height:8px;background:var(--surface2);border:1px solid var(--border);border-radius:2px"></span>Pending
-      </span>
-    </div>`;
+    const legendHtml = isExam
+      ? `<div style="padding:0 10px 10px;display:flex;flex-wrap:wrap;gap:5px">
+          <span style="font-size:.6rem;color:var(--muted);display:flex;align-items:center;gap:3px">
+            <span style="width:8px;height:8px;background:rgba(20,184,166,.2);border:1px solid rgba(20,184,166,.6);border-radius:2px"></span>Answered
+          </span>
+          <span style="font-size:.6rem;color:var(--muted);display:flex;align-items:center;gap:3px">
+            <span style="width:8px;height:8px;background:var(--surface2);border:1px solid var(--border);border-radius:2px"></span>Pending
+          </span>
+        </div>`
+      : `<div style="padding:0 10px 10px;display:flex;flex-wrap:wrap;gap:5px">
+          <span style="font-size:.6rem;color:var(--muted);display:flex;align-items:center;gap:3px">
+            <span style="width:8px;height:8px;background:rgba(16,185,129,.3);border:1px solid rgba(16,185,129,.7);border-radius:2px"></span>Correct
+          </span>
+          <span style="font-size:.6rem;color:var(--muted);display:flex;align-items:center;gap:3px">
+            <span style="width:8px;height:8px;background:rgba(244,63,94,.2);border:1px solid rgba(244,63,94,.6);border-radius:2px"></span>Wrong
+          </span>
+          <span style="font-size:.6rem;color:var(--muted);display:flex;align-items:center;gap:3px">
+            <span style="width:8px;height:8px;background:var(--surface2);border:1px solid var(--border);border-radius:2px"></span>Pending
+          </span>
+        </div>`;
 
     panel.innerHTML = summaryHtml + gridHtml + legendHtml;
   }
@@ -745,6 +880,7 @@ const App = (() => {
     if (idx < 0 || idx >= currentSet.length) return;
     clearTimeout(autoAdvanceTimeout);
     currentIdx = idx;
+    saveSessionCache();
     renderNavPanel();
     renderQuestion();
     // Scroll quiz main area to top
@@ -843,18 +979,20 @@ const App = (() => {
     const buttons = document.querySelectorAll('.opt-btn');
     buttons.forEach(b => b.classList.add('disabled'));
     const isCorrect = chosen === correct;
+
+    if (mode === 'exam') {
+      // Exam mode: only show which was selected, no answer revealed
+      buttons[chosen].classList.add('exam-selected');
+      document.getElementById('explanation-box').style.display = 'none';
+      document.getElementById('btn-next').style.display = 'none';
+      return;
+    }
+
     if (isCorrect) {
       buttons[chosen].classList.add('correct');
     } else {
       buttons[chosen].classList.add('wrong');
       if (buttons[correct]) buttons[correct].classList.add('reveal');
-    }
-
-    // In exam mode: no explanation — just locked buttons
-    if (mode === 'exam') {
-      document.getElementById('explanation-box').style.display = 'none';
-      document.getElementById('btn-next').style.display = 'none';
-      return;
     }
 
     // Normal / practice: show explanation
@@ -920,7 +1058,10 @@ const App = (() => {
     // Apply button visuals
     const buttons = document.querySelectorAll('.opt-btn');
     buttons.forEach(b => b.classList.add('disabled'));
-    if (isCorrect) {
+    if (mode === 'exam') {
+      // Exam mode: only show which option was selected, never reveal correct/wrong
+      buttons[chosen].classList.add('exam-selected');
+    } else if (isCorrect) {
       buttons[chosen].classList.add('correct');
     } else {
       buttons[chosen].classList.add('wrong');
@@ -930,11 +1071,14 @@ const App = (() => {
     document.getElementById('quiz-score').textContent    = score;
     document.getElementById('quiz-answered').textContent = answered;
 
+    // Persist progress
+    saveSessionCache();
+
     // Update nav panel
     renderNavPanel();
 
     if (mode === 'exam') {
-      // Exam mode: no explanation, auto-advance after brief pause
+      // Exam mode: neutral selection only — no correct/wrong revealed, no explanation
       document.getElementById('explanation-box').style.display = 'none';
       document.getElementById('btn-next').style.display        = 'none';
       updateNavButtons();
@@ -1007,6 +1151,7 @@ const App = (() => {
   // ── Summary ───────────────────────────────────────────────
   function showSummary() {
     clearTimeout(autoAdvanceTimeout);
+    clearSessionCache();   // session complete — no need to resume
     const total = currentSet.length;
     const pct   = total > 0 ? Math.round((score / total) * 100) : 0;
     document.getElementById('summary-score-pct').textContent  = pct + '%';
@@ -1060,6 +1205,67 @@ const App = (() => {
         </div>`;
       }).join('');
     }
+
+    // ── Exam mode: full question review ──────────────────────────────────────
+    const reviewCard = document.getElementById('exam-review-card');
+    const reviewEl   = document.getElementById('exam-review');
+    if (mode === 'exam' && reviewCard && reviewEl) {
+      reviewCard.style.display = 'block';
+      const LETTERS = ['A', 'B', 'C', 'D', 'E'];
+      reviewEl.innerHTML = currentSet.map((q, i) => {
+        const ans        = questionAnswers[i];
+        const userIdx    = ans ? ans.chosen : null;
+        const correctIdx = q.answer_index;
+        const wasCorrect = ans ? ans.wasCorrect : false;
+        const skipped    = ans === null;
+
+        const statusColor = skipped ? 'var(--muted)' : wasCorrect ? '#34d399' : '#f43f5e';
+        const statusIcon  = skipped ? '—' : wasCorrect ? '✓' : '✗';
+
+        const optsHtml = (q.options || []).map((opt, oi) => {
+          let bg = 'transparent', border = 'var(--border)', color = 'var(--muted)', extra = '';
+          const letter = LETTERS[oi] || oi;
+          if (oi === correctIdx && oi === userIdx) {
+            bg = 'rgba(16,185,129,.15)'; border = 'rgba(16,185,129,.7)'; color = '#34d399';
+            extra = `<span style="margin-left:auto;font-size:.7rem;font-weight:700;color:#34d399">Your answer ✓</span>`;
+          } else if (oi === correctIdx) {
+            bg = 'rgba(16,185,129,.10)'; border = 'rgba(16,185,129,.5)'; color = '#34d399';
+            extra = `<span style="margin-left:auto;font-size:.7rem;font-weight:700;color:#34d399">Correct ✓</span>`;
+          } else if (oi === userIdx) {
+            bg = 'rgba(244,63,94,.10)'; border = 'rgba(244,63,94,.5)'; color = '#f87171';
+            extra = `<span style="margin-left:auto;font-size:.7rem;font-weight:700;color:#f87171">Your answer ✗</span>`;
+          }
+          return `<div style="display:flex;align-items:center;gap:10px;padding:8px 12px;border-radius:8px;
+                              background:${bg};border:1px solid ${border};margin-bottom:5px">
+            <span style="font-weight:700;font-size:.75rem;color:${color};min-width:18px">${letter}.</span>
+            <span style="font-size:.82rem;color:${color};flex:1;line-height:1.45">${opt}</span>
+            ${extra}
+          </div>`;
+        }).join('');
+
+        const explanationHtml = q.explanation
+          ? `<div style="margin-top:8px;font-size:.78rem;color:var(--muted);line-height:1.5;
+                         padding:8px 12px;border-radius:7px;background:rgba(139,92,246,.07);
+                         border-left:3px solid rgba(139,92,246,.4)">${q.explanation}</div>`
+          : '';
+
+        return `<div style="padding:16px 0;border-bottom:1px solid var(--border)">
+          <div style="display:flex;align-items:flex-start;gap:10px;margin-bottom:10px">
+            <span style="font-weight:800;font-size:.8rem;color:${statusColor};white-space:nowrap;
+                         padding:2px 7px;border-radius:5px;border:1px solid ${statusColor};
+                         background:${wasCorrect ? 'rgba(16,185,129,.08)' : skipped ? 'var(--surface2)' : 'rgba(244,63,94,.08)'}">
+              Q${i + 1} ${statusIcon}
+            </span>
+            <span style="font-size:.88rem;color:var(--text);line-height:1.5;flex:1">${q.question}</span>
+          </div>
+          ${optsHtml}
+          ${explanationHtml}
+        </div>`;
+      }).join('');
+    } else if (reviewCard) {
+      reviewCard.style.display = 'none';
+    }
+
     showScreen('summary');
   }
 
@@ -1092,8 +1298,8 @@ const App = (() => {
   // ── Navigation & Modal ────────────────────────────────────
   function confirmExit() { document.getElementById('exit-modal').style.display = 'flex'; }
   function cancelExit()  { document.getElementById('exit-modal').style.display = 'none'; }
-  function forceExit()   { document.getElementById('exit-modal').style.display = 'none'; clearTimeout(autoAdvanceTimeout); stopTimer(); goHome(); }
-  function goHome()      { clearTimeout(autoAdvanceTimeout); stopTimer(); showScreen('landing'); showMode('normal'); renderWeakBanner(); }
+  function forceExit()   { document.getElementById('exit-modal').style.display = 'none'; clearTimeout(autoAdvanceTimeout); stopTimer(); clearSessionCache(); goHome(); }
+  function goHome()      { clearTimeout(autoAdvanceTimeout); stopTimer(); clearSessionCache(); showScreen('landing'); showMode('normal'); renderWeakBanner(); }
 
   let suppressHistory = false;
 
@@ -1134,6 +1340,8 @@ const App = (() => {
   window.addEventListener('DOMContentLoaded', () => {
     history.replaceState({ screen: 'landing' }, '', '#');
     init();
+    const saved = loadSessionCache();
+    if (saved) showResumeBanner(saved);
   });
 
   return {
@@ -1146,5 +1354,6 @@ const App = (() => {
     drillWeakSpots, resetStats,
     toggleTimerConfig,
     startQuarantineQuiz, renderQuarantineList, setQuarantineView,
+    resumeSession, dismissResume,
   };
 })();
