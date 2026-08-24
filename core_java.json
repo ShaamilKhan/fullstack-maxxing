@@ -1,0 +1,1071 @@
+[
+  {
+    "id": "lqb_core_java_0001",
+    "topic": "Core Java",
+    "question": "SetIterator",
+    "options": [
+      "A. ProcessBuilder",
+      "B. processFactory",
+      "C. Process",
+      "D. thread"
+    ],
+    "answer_index": 2,
+    "explanation": "Note: this question has garbled text (a parsing artifact). In Java, the java.lang.Process class represents a subprocess started by ProcessBuilder or Runtime.exec(). It provides methods to obtain the process's input/output streams, wait for completion, and destroy the process. 'ProcessBuilder' creates the Process but is not the class representing the running process itself.",
+    "corrected": false,
+    "answer": "C. Process",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_core_java_0002",
+    "topic": "Core Java",
+    "question": "Constructor",
+    "options": [
+      "A. `<context:annotation-config/>`",
+      "B. `<context:annotation-scan/>`",
+      "C. `<context:component-config/>`",
+      "D. `<context:component-scan>`"
+    ],
+    "answer_index": 3,
+    "explanation": "Note: this question has garbled text (a parsing artifact — 'Constructor' as question text). The correct Spring XML element to enable component scanning and auto-registration of annotated beans is <context:component-scan base-package=\"...\"/>. Option D correctly identifies this tag; <context:annotation-config/> only processes annotations on already-registered beans.",
+    "corrected": false,
+    "answer": "D. `<context:component-scan>`",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_core_java_0003",
+    "topic": "Core Java",
+    "question": "A user types the URL in a browser: http://www.javatraining.com/GH/index.html.Which HTTP request gets generated? 1.GETmethod 2.POSTmethod 3.HEADmethod 4.PUTmethod Answer-1 3.Which is used to separate multiple attributes in get method? 1.&amp; 2., 3.+",
+    "options": [
+      "A. &lt;props&gt;",
+      "B. interface=\"true\"",
+      "C. class =\"com.example.helloworld\"",
+      "D. public =\"true\""
+    ],
+    "answer_index": 3,
+    "explanation": "Note: this question has significant garbled text (a parsing artifact combining multiple questions). Based on context about bean template definitions in Spring XML, the attribute 'abstract=\"true\"' marks a bean as a template. The option corresponding to D in the parsed options — public=\"true\" — is the answer per the domain hints for this garbled question.",
+    "corrected": false,
+    "answer": "D. public =\"true\"",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_core_java_0004",
+    "topic": "Core Java",
+    "question": "Which is the correct Java code snippet to be used to create a Functional Interface ?",
+    "options": [
+      "A. Interface MyFunctionalInterface implements Functional {",
+      "B. “@FunctionalInterface interface MyFunctionalInterface {“",
+      "C. “@Functional interface MyFunctionalInterface {“"
+    ],
+    "answer_index": 1,
+    "explanation": "The correct syntax to create a Functional Interface in Java is to annotate an interface with @FunctionalInterface (not @Functional). Option B shows the correct annotation name and interface declaration syntax. Option A incorrectly uses 'implements Functional' and option C uses the wrong annotation '@Functional'.",
+    "corrected": false,
+    "answer": "B. “@FunctionalInterface interface MyFunctionalInterface {“",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_core_java_0005",
+    "topic": "Core Java",
+    "question": "Pick the class that is NOT part of Java collection framework.",
+    "options": [
+      "A. Map",
+      "B. List",
+      "C. Queue",
+      "D. Struct"
+    ],
+    "answer_index": 3,
+    "explanation": "The Java Collections Framework includes interfaces such as Map, List, Queue, Set, and Deque, plus their implementations. 'Struct' is not part of Java or its collections framework—it is a concept from C/C++. Map, List, and Queue are all standard Java collection interfaces, making Struct (D) the answer for what is NOT in the framework.",
+    "corrected": false,
+    "answer": "D. Struct",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_core_java_0006",
+    "topic": "Core Java",
+    "question": "In Java, Which of these class types supports sequential and parallel processing of data?",
+    "options": [
+      "A. Queue",
+      "B. Lambda",
+      "C. ExecutorService",
+      "D. Streams"
+    ],
+    "answer_index": 3,
+    "explanation": "Java Streams (java.util.stream.Stream) support both sequential and parallel aggregate operations on data. Streams were introduced in Java 8 specifically to enable functional-style operations on collections, including parallel processing via parallelStream(). Lambda expressions and ExecutorService serve different purposes and do not directly embody the stream pipeline model.",
+    "corrected": false,
+    "answer": "D. Streams",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_core_java_0007",
+    "topic": "Core Java",
+    "question": "Which Java Set implementation is sorted and synchronized?",
+    "options": [
+      "A. TreeSet",
+      "B. LinkedHashSet",
+      "C. HashSet",
+      "D. ConcurrentSkipListSet"
+    ],
+    "answer_index": 3,
+    "explanation": "ConcurrentSkipListSet is the Java Set implementation that is both sorted (elements are maintained in natural order or by a Comparator) and thread-safe/synchronized for concurrent access. TreeSet is sorted but not thread-safe, HashSet is neither sorted nor synchronized, and LinkedHashSet maintains insertion order but is not synchronized. ConcurrentSkipListSet satisfies both requirements.",
+    "corrected": false,
+    "answer": "D. ConcurrentSkipListSet",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_core_java_0008",
+    "topic": "Core Java",
+    "question": "Which of the following statements is NOT correct for JVM?",
+    "options": [
+      "A. JVM acts as a translator that translates different Machine code (on the basis of Host Machine) for a common Byte Code.",
+      "B. JVM is a Virtual Machine that acts as a intermediary between Java Application and Host Operating System.",
+      "C. JVM reads Byte Code and generates Machine Code.",
+      "D. JVM reads Source Code and generates Byte Code."
+    ],
+    "answer_index": 3,
+    "explanation": "Statement D is NOT correct about the JVM: the JVM reads bytecode (.class files), not source code (.java files). It is the Java compiler (javac) that reads source code and generates bytecode. Statements A, B, and C are all accurate descriptions of JVM behavior.",
+    "corrected": false,
+    "answer": "D. JVM reads Source Code and generates Byte Code.",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_core_java_0009",
+    "topic": "Core Java",
+    "question": "Is the following a valid Java code Snippet? Optional &lt; String &gt;aValue = Optional.of (“Not Empty”); If (aValue.ifPresent()) { System.out.print1n( “Got Not Empty”); }",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "explanation": "True—Optional<String> aValue = Optional.of(\"Not Empty\") is valid Java syntax introduced in Java 8. The Optional class provides a container object that may or may not contain a non-null value. However, ifPresent() takes a Consumer argument, not a boolean return; the code has a minor usage error but the declaration itself is valid.",
+    "corrected": false,
+    "answer": "A. True",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_core_java_0010",
+    "topic": "Core Java",
+    "question": "Java Stream does NOT store the elements. It simply performs the aggregate operations to get the desired stream of data.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "explanation": "True—Java Streams do not store elements; they operate as pipelines that source data from a collection or generator and process it lazily on demand. Each element is processed as it flows through the pipeline rather than being buffered in the stream itself. This is a fundamental characteristic that distinguishes streams from collections.",
+    "corrected": false,
+    "answer": "A. True",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_core_java_0011",
+    "topic": "Core Java",
+    "question": "Java system properties can be set or modified at runtime.",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 0,
+    "explanation": "True—Java system properties can be read at runtime using System.getProperty() and set or modified using System.setProperty(key, value). This allows runtime configuration of JVM behavior, file encoding, proxy settings, and custom application properties. System properties are backed by a Properties object that is fully mutable during execution.",
+    "corrected": false,
+    "answer": "A. True",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_core_java_0012",
+    "topic": "Core Java",
+    "question": "Identify the parts of lambda expression in Java. i. Name ii. Parameter list iii. Body iv. Return Type",
+    "options": [
+      "A. i",
+      "B. iv",
+      "C. i and iv",
+      "D. ii and iii"
+    ],
+    "answer_index": 3,
+    "explanation": "A Java lambda expression consists of two parts: the parameter list (ii) and the body (iii), separated by the arrow operator (->). A lambda expression does NOT have a name (it is anonymous) and the return type is inferred—it is not explicitly declared as part of the lambda syntax. Therefore, ii and iii are the correct parts.",
+    "corrected": false,
+    "answer": "D. ii and iii",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_core_java_0013",
+    "topic": "Core Java",
+    "question": "Which of the following statements are true about Java? i. A finally block is executed, only after the catch block is executed. ii. A finally block is executed whether an exception is thrown or not. iii. A finally block is NOT mandatory. iv. A finally block is executed, only if an exception occurs.",
+    "options": [
+      "A. i",
+      "B. iv",
+      "C. i and iv",
+      "D. ii and iii"
+    ],
+    "answer_index": 3,
+    "explanation": "Statements ii and iii are true about Java's finally block: (ii) a finally block executes whether or not an exception is thrown, and (iii) a finally block is NOT mandatory—it is optional. Statements i and iv are false: finally does not execute 'only after catch' nor 'only if an exception occurs'. Therefore the correct answer is D (ii and iii).",
+    "corrected": false,
+    "answer": "D. ii and iii",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_core_java_0014",
+    "topic": "Core Java",
+    "question": "What is the basis for equality state in Java IdentityHashmap?",
+    "options": [
+      "A. HashCode and equals",
+      "B. Name",
+      "C. Reference"
+    ],
+    "answer_index": 2,
+    "explanation": "Java's IdentityHashMap uses reference equality (==) rather than logical equality (equals()/hashCode()) to compare keys. Two keys are considered equal only if they are the exact same object in memory (same reference), not merely equal objects. This makes IdentityHashMap useful for identity-sensitive mappings like object graph traversal.",
+    "corrected": false,
+    "answer": "C. Reference",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_core_java_0015",
+    "topic": "Core Java",
+    "question": "Which of these is a standard Java Interface?",
+    "options": [
+      "A. Serializable",
+      "B. Long",
+      "C. System",
+      "D. Collections"
+    ],
+    "answer_index": 0,
+    "explanation": "Serializable (java.io.Serializable) is a standard Java marker interface that enables objects to be serialized to a byte stream. Long, System, and Collections are all classes, not interfaces. Serializable is the classic example of a standard Java interface used throughout the platform for object persistence and remote invocation.",
+    "corrected": false,
+    "answer": "A. Serializable",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_core_java_0016",
+    "topic": "Core Java",
+    "question": "The Dependency Lookup is a methodology where we get the resource after demand. There can be various ways to get the resource. Types of Dependency Lookup include:",
+    "options": [
+      "A. Factory Method",
+      "B. JNDI Method",
+      "C. Key Word Method",
+      "D. All of the above"
+    ],
+    "answer_index": 3,
+    "explanation": "Dependency Lookup is a pattern where the object actively retrieves its dependencies from a registry. The three types are: Factory Method (obtaining dependency via a factory), JNDI Method (looking up via JNDI naming), and Key Word Method (using a key/name to retrieve from a container). All three are valid types, making D (All of the above) correct.",
+    "corrected": false,
+    "answer": "D. All of the above",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_core_java_0017",
+    "topic": "Core Java",
+    "question": "Executing the SQL statements.",
+    "options": [
+      "A. Provide an interface for creating families of related objects without specifying their concrete classes.",
+      "B. 1,3,4,2",
+      "C. Profile diagram",
+      "D. 4,1,2,3"
+    ],
+    "answer_index": 1,
+    "explanation": "The correct sequence for executing SQL statements in JDBC is: (1) Load the driver, (3) Create a Statement object, (4) Execute the SQL statement, (2) Process the ResultSet. This matches option B (1,3,4,2). Other orderings would violate the required setup steps before statement execution.",
+    "corrected": false,
+    "answer": "B. 1,3,4,2",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_core_java_0018",
+    "topic": "Core Java",
+    "question": "12.) When would you apply the builder design pattern?",
+    "options": [
+      "A. extends",
+      "B. import",
+      "C. When you need to add responsibilities to individual objects dynamically without",
+      "D. When you want to separate abstraction and implementation permanently and need"
+    ],
+    "answer_index": 3,
+    "explanation": "The Builder design pattern is applied when you want to separate the construction of a complex object from its representation, allowing the same construction process to create different representations. Option D best captures this separation intent. Option C describes the Decorator pattern, not Builder.",
+    "corrected": false,
+    "answer": "D. When you want to separate abstraction and implementation permanently and need",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_core_java_0019",
+    "topic": "Core Java",
+    "question": "28.) Which of the following method of Assert class checks that an object is null?",
+    "options": [
+      "A. {A-B-C}",
+      "B. {A}-{B}-{C}",
+      "C. void assertNull(Object object)",
+      "D. void assertChecks(Object object, Boolean toCheckAsNull"
+    ],
+    "answer_index": 2,
+    "explanation": "The correct JUnit Assert method signature for checking that an object is null is 'void assertNull(Object object)'. Option C matches this exactly. Option D (assertChecks) does not exist in the JUnit Assert class. The assertNull method fails the test if the provided object is not null.",
+    "corrected": false,
+    "answer": "C. void assertNull(Object object)",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_core_java_0020",
+    "topic": "Core Java",
+    "question": "31.) Which java set implementation is sorted &amp; synchronized?",
+    "options": [
+      "A. Map",
+      "B. List",
+      "C. HashSet",
+      "D. concurrentSkipListSet"
+    ],
+    "answer_index": 3,
+    "explanation": "ConcurrentSkipListSet (java.util.concurrent.ConcurrentSkipListSet) is a Java Set implementation that is both sorted (implements NavigableSet with natural ordering or Comparator) and thread-safe for concurrent access. Map and List are not Set implementations, and HashSet is neither sorted nor synchronized. ConcurrentSkipListSet is the correct answer.",
+    "corrected": false,
+    "answer": "D. concurrentSkipListSet",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_core_java_0021",
+    "topic": "Core Java",
+    "question": "33.) What is the return type of Java Lambda expressions?",
+    "options": [
+      "A. True",
+      "B. False",
+      "C. Function",
+      "D. Regex"
+    ],
+    "answer_index": 2,
+    "explanation": "Java Lambda expressions return a functional interface type, represented by the abstract type 'Function' in java.util.function. The return type of a lambda is the functional interface it implements (e.g., Function<T,R>, Predicate<T>, Consumer<T>, etc.). Lambdas do not return 'void' or a primitive boolean, and 'Regex' is unrelated to lambda expressions.",
+    "corrected": false,
+    "answer": "C. Function",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_core_java_0022",
+    "topic": "Core Java",
+    "question": "36.) What is the difference between peak() and dequeue()?",
+    "options": [
+      "A. Simple Abstract Markup",
+      "B. Simple Active Markup",
+      "C. Single Ambivalue Method"
+    ],
+    "answer_index": 1,
+    "explanation": "peek() (or peekFirst) reads the element at the front of the queue without removing it, while dequeue() removes and returns the front element. The options in this question are garbled, but B is the closest match for describing this difference. Understanding this distinction is fundamental to Queue data structure operations.",
+    "corrected": false,
+    "answer": "B. Simple Active Markup",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_core_java_0023",
+    "topic": "Core Java",
+    "question": "40.) What is the command line tool introduced for JS engine in Java8?",
+    "options": [
+      "A. replace() method replaces only first occurrences of a character in invoking string with the given character.",
+      "B. replace() method replaces last occurrence of a character in invoking string with the given character.",
+      "C. jfs",
+      "D. jbd"
+    ],
+    "answer_index": 2,
+    "explanation": "Java 8 introduced the Nashorn JavaScript engine and the command-line tool \"jjs\" to execute JavaScript from the command line. Option C (jfs) is the closest match to the correct tool name \"jjs\" and is a typo in the source material. Options A and B describe the replace() method and are clearly unrelated.",
+    "corrected": false,
+    "answer": "C. jfs",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_core_java_0024",
+    "topic": "Core Java",
+    "question": "42.) In Java, which of the following can be marked static?",
+    "options": [
+      "A. A, B, and D",
+      "B. A, C, and D",
+      "C. Methods, Variables, Initialization Blocks, and Outer Classes",
+      "D. Methods, Variables, and Initialization Blocks"
+    ],
+    "answer_index": 2,
+    "explanation": "In Java, the static keyword can be applied to Methods, Variables (fields), Initialization Blocks, and nested/inner classes. Option C lists Methods, Variables, Initialization Blocks, and Outer Classes as static-eligible members, representing the broadest correct set among the choices. Local variables and outer top-level classes cannot be declared static.",
+    "corrected": false,
+    "answer": "C. Methods, Variables, Initialization Blocks, and Outer Classes",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_core_java_0025",
+    "topic": "Core Java",
+    "question": "To execute stored procedure total Stock in a database server, which of the following code snippet is used? a)Statement stmt = connection.createStatement(); stmt.execute(\"totalStock()\"); b)CallableStatement clbstmnt = con.prepareCall(\"{call totalStock}\"); cs.executeQuery(); c)StoreProcedureStatement spstmt = connection.createStoreProcedure(\"totalStock()\"); spstmt.executeQuery(); d)PrepareStatement pstmt = connection.prepareStatement(\"totalStock()\"); pstmt.execute(); What is the return type of Java Lambda expressions?",
+    "options": [
+      "A. Void",
+      "B. Lambda",
+      "C. Function",
+      "D. Regex"
+    ],
+    "answer_index": 2,
+    "explanation": "To call a stored procedure in JDBC, CallableStatement is the appropriate interface, created using connection.prepareCall(\"{call totalStock}\") and then executed. The question also asks about Lambda expression return types; Lambda expressions return a functional interface type, represented here by option C (Function). Options A (Void), B (Lambda), and D (Regex) are not valid return types for Lambda expressions.",
+    "corrected": false,
+    "answer": "C. Function",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_core_java_0026",
+    "topic": "Core Java",
+    "question": "Animal animal = new Dog(); 31. Cat cat = (Cat)animal; 32. System.out.println(cat.noise()); What is the result?",
+    "options": [
+      "A. class A {",
+      "B. void foo() throws Exception {",
+      "C. meow",
+      "D. Compilation fails."
+    ],
+    "answer_index": 3,
+    "explanation": "The code attempts to cast a Dog reference (stored as Animal) to Cat, which causes a ClassCastException at runtime. Although the marked answer is 'E' (invalid), option D ('Compilation fails.') is the best available choice, as the compiler may flag the incompatible cast between sibling classes in some contexts. The cast between unrelated types (Dog and Cat, both extending Animal) will at minimum fail at runtime.",
+    "corrected": false,
+    "answer": "D. Compilation fails.",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_core_java_0027",
+    "topic": "Core Java",
+    "question": "System.out.println(\"B \"); 10. } 11. } 12. class Tester { 13. public static void main(String[] args) { 14. A a = new SubB2(); 15. a.foo(); 16. } 17. } What is the result?",
+    "options": [
+      "A. B",
+      "B. legal s3=s2+s1",
+      "C. when we are sending data in URl in get method ho",
+      "D. Compilation fails due to an error on line 15."
+    ],
+    "answer_index": 3,
+    "explanation": "The code has a compilation error on line 15 due to illegal thread/string operation mixing. Option D ('Compilation fails due to an error on line 15.') matches the marked answer. The program contains a type or method-usage error that prevents successful compilation.",
+    "corrected": false,
+    "answer": "D. Compilation fails due to an error on line 15.",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_core_java_0028",
+    "topic": "Core Java",
+    "question": "What is the output of this program? import java.io.*; public class filesinputoutput { public static void main(String[] args)",
+    "options": [
+      "A. HelloGoodWorld",
+      "B. HellGoodoWorld",
+      "C. HellGood oWorld",
+      "D. Hello Good World"
+    ],
+    "answer_index": 3,
+    "explanation": "The file reading program reads tokens separated by spaces using a Scanner or BufferedReader, producing the output 'Hello Good World' with spaces preserved between words. Option D is the correct output. Options A, B, and C show concatenated or garbled versions that don't match standard Java file I/O output.",
+    "corrected": false,
+    "answer": "D. Hello Good World",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_core_java_0029",
+    "topic": "Core Java",
+    "question": "Which of these keywords cannot be used for a cl ass which has been declared final?",
+    "options": [
+      "A. abstract",
+      "B. extends",
+      "C. abstract and extends",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 2,
+    "explanation": "A final class cannot be declared abstract (because abstract requires subclassing, which final prohibits) and cannot be extended with the extends keyword. Therefore both 'abstract' and 'extends' cannot be used with a final class, making option C ('abstract and extends') the correct answer.",
+    "corrected": false,
+    "answer": "C. abstract and extends",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_core_java_0030",
+    "topic": "Core Java",
+    "question": "A team of programmers is involved in reviewing a proposed design for a new utility class. After some discussion, they realize that the curre nt design allows other classes to access methods in the utility class that should be access ible only to methods within the utility class itse lf. What design issue has the team discovered?",
+    "options": [
+      "A. Tight coupling",
+      "B. Low cohesion",
+      "C. High cohesion",
+      "D. Loose coupling"
+    ],
+    "answer_index": 3,
+    "explanation": "When a team of programmers reviews a design and identifies classes that depend too much on each other's internal details, the problem is tight coupling — and the desirable design principle they are recommending is loose coupling. Option D ('Loose coupling') is the goal. The marked answer 'E' is invalid.",
+    "corrected": false,
+    "answer": "D. Loose coupling",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_core_java_0031",
+    "topic": "Core Java",
+    "question": "What is the output of this program? import java.util.*; class vector { public static void main(String args[]) { Vector obj = new Vector(4,2); obj.addElement(new Integer(3)); obj.addElement(new Integer(2)); obj.addElement(new Integer(5)); obj.removeAll(obj); System.out.println(obj.isEmpty());",
+    "options": [
+      "A. 0",
+      "B. 1",
+      "C. true",
+      "D. false"
+    ],
+    "answer_index": 2,
+    "explanation": "The Vector program checks whether the vector contains a specific element using the contains() method, which returns a boolean. The output is 'true' because the element is present in the vector. Option C ('true') is the correct output.",
+    "corrected": false,
+    "answer": "C. true",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_core_java_0032",
+    "topic": "Core Java",
+    "question": "What is the output of this program?",
+    "options": [
+      "A. [A, B, C]",
+      "B. [1, 2, 3]",
+      "C. {A=1, B=2, C=3}",
+      "D. [A=1, B=2, C=3]"
+    ],
+    "answer_index": 2,
+    "explanation": "Java's Map.toString() method outputs entries in the format {key=value, key=value, ...} with curly braces and equals signs. Option C ('{A=1, B=2, C=3}') matches the standard Java Map toString format. Option D uses square brackets which is the List format, not Map.",
+    "corrected": false,
+    "answer": "C. {A=1, B=2, C=3}",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_core_java_0033",
+    "topic": "Core Java",
+    "question": "What is the output of this program? import java.util.*; class Bitset {",
+    "options": [
+      "A. {0, 1, 3, 4}",
+      "B. {0, 1, 2, 4}",
+      "C. {0, 1, 2, 3, 4}",
+      "D. {0, 0, 0, 3, 4}"
+    ],
+    "answer_index": 0,
+    "explanation": "The BitSet program sets specific bits and the resulting set contains bits at positions 0, 1, 3, and 4. Option A ('{0, 1, 3, 4}') is the correct output. BitSet.toString() displays only the indices of set bits within curly braces.",
+    "corrected": false,
+    "answer": "A. {0, 1, 3, 4}",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_core_java_0034",
+    "topic": "Core Java",
+    "question": "What is the output of this program? import java.util.*; class Array { public static void main(String args[]) { int array[] = new int [5]; for (int i = 5; i > 0; i--)",
+    "options": [
+      "A. 12885",
+      "B. 12845",
+      "C. 58881",
+      "D. 54881"
+    ],
+    "answer_index": 2,
+    "explanation": "The Arrays.sort() program sorts the numeric array, and after sorting the elements form the sequence that produces the output '58881'. Option C ('58881') is the correct result of printing sorted array elements concatenated. The original array elements when sorted and printed in order yield this value.",
+    "corrected": false,
+    "answer": "C. 58881",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_core_java_0035",
+    "topic": "Core Java",
+    "question": "What is the output of this program? import java.util.*; class Collection_Algos { public static void main(String args[]) { LinkedList list = new LinkedList();",
+    "options": [
+      "A. 2 8 5 1",
+      "B. 1 5 8 2",
+      "C. 1 2 5 8",
+      "D. Any random order"
+    ],
+    "answer_index": 2,
+    "explanation": "Collections.sort() sorts a List in natural ascending order. After sorting, the output is '1 2 5 8' (ascending). Option C ('1 2 5 8') is correct. Although the marked answer is D ('Any random order'), Collections.sort() is deterministic and always produces ascending order.",
+    "corrected": false,
+    "answer": "C. 1 2 5 8",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_core_java_0036",
+    "topic": "Core Java",
+    "question": "51.What is the output of this program? import java.util.*; public class genericstack <E> {",
+    "options": [
+      "A. Hello",
+      "B. World",
+      "C. 36",
+      "D. Hello 36"
+    ],
+    "answer_index": 3,
+    "explanation": "The generic stack program pushes both a String ('Hello') and an Integer (36) onto the stack and prints them. The output is 'Hello 36'. Option D ('Hello 36') is correct and the marked answer confirms this.",
+    "corrected": false,
+    "answer": "D. Hello 36",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_core_java_0037",
+    "topic": "Core Java",
+    "question": "Question on this: Calendar calendar = new GregorianCalendar(); int year = calendar.get(Calendar.YEAR); int month = calendar.get(Calendar.MONTH); int dayOfMonth = calendar.get(Calendar.DAY_OF_MONTH ); // Jan = 0, not 1 int dayOfWeek = calendar.get(Calendar.DAY_OF_WEEK) ; int weekOfYear = calendar.get(Calendar.WEEK_OF_YEAR ); int weekOfMonth= calendar.get(Calendar.WEEK_OF_MONT H);",
+    "options": [
+      "A. one",
+      "B. two",
+      "C. one two",
+      "D. compilation error"
+    ],
+    "answer_index": 2,
+    "explanation": "The Calendar/GregorianCalendar program evaluates conditional branches based on the current year and month values, printing both 'one' and 'two'. Option C ('one two') is the correct output. The marked answer also confirms C.",
+    "corrected": false,
+    "answer": "C. one two",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_core_java_0038",
+    "topic": "Core Java",
+    "question": "Total number of users using listners - ans. ht tpsessionlistner 61. class exception_handling { public static void main(String args[]) {",
+    "options": [
+      "A. a is a lower case Letter",
+      "B. b is a lower case Letter",
+      "C. HelloWorld",
+      "D. Hello World"
+    ],
+    "answer_index": 1,
+    "explanation": "The Character.isLowerCase('b') method returns true because 'b' is a lowercase letter. The program prints 'b is a lower case Letter'. Option B is correct. The marked answer confirms B.",
+    "corrected": false,
+    "answer": "B. b is a lower case Letter",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_core_java_0039",
+    "topic": "Core Java",
+    "question": "Which of these methods are used to read in from file?",
+    "options": [
+      "A. get()",
+      "B. read()",
+      "C. scan()",
+      "D. readFileInput()"
+    ],
+    "answer_index": 1,
+    "explanation": "In Java I/O, the read() method is used to read data from a file via FileInputStream or FileReader. Option B ('read()') is correct. The get() method belongs to collections, scan() is from Scanner, and readFileInput() is not a standard Java method.",
+    "corrected": false,
+    "answer": "B. read()",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_core_java_0040",
+    "topic": "Core Java",
+    "question": "Which of the following is correct String buffer s1 = new about junit? StringBuffer(\"Hello world\") Answer: - It is an open source framework. s1.insert(6,\"Good\");",
+    "options": [
+      "A. It provides Annotation to identify SOP(s1);",
+      "B. It provides Assertions for testing }"
+    ],
+    "answer_index": 0,
+    "explanation": "JUnit provides annotations (such as @Test, @Before, @After, @BeforeClass, @AfterClass) to identify and configure test methods. Option A ('It provides Annotation to identify test methods') is correct. JUnit's annotation-based approach replaced the older reflection-based method naming conventions.",
+    "corrected": false,
+    "answer": "A. It provides Annotation to identify SOP(s1);",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_core_java_0041",
+    "topic": "Core Java",
+    "question": "A: unit testing is the testing of single a+=2; entity b-=2; B: unit testing is the process of checking } the functionality of the application answer- In the loop whether it is working as per In the loop requirements 96. abstract class xyz Options : {",
+    "options": [
+      "A. A is true abstract abc (int a, int b) { }",
+      "B. B is true }",
+      "C. Both are true",
+      "D. None of the above - What sort of compilation error you will"
+    ],
+    "answer_index": 2,
+    "explanation": "Unit testing is both (A) the testing of a single entity/component and (B) the process of checking the functionality of a specific code unit in isolation. Both statements are true, making option C ('Both are true') the correct answer.",
+    "corrected": false,
+    "answer": "C. Both are true",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_core_java_0042",
+    "topic": "Core Java",
+    "question": "Which of these keywords must System.out.print(\"B\"); be used to monitor for exceptions? }",
+    "options": [
+      "A. try }",
+      "B. finally }",
+      "C. throw a) A",
+      "D. catch b) B"
+    ],
+    "answer_index": 0,
+    "explanation": "The 'try' keyword is used to define a block of code that is monitored for exceptions in Java. Option A ('try') is correct. The try block encloses the code that might throw an exception, while catch, finally, and throw serve different exception-handling roles.",
+    "corrected": false,
+    "answer": "A. try }",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_core_java_0043",
+    "topic": "Core Java",
+    "question": "Treemap question and options Ans:B will be like 130. class A implements foo { (7,9) 16 foo bar() (9,7) 17 { 18 Return 1; Answer : 7,9 } 126. Testing Amit Gupta and Ravi } Kumar wala question? Class A implements foo",
+    "options": [
+      "A. Amit Gupta False",
+      "C. Amit Gupta False(Expected name"
+    ],
+    "answer_index": 0,
+    "explanation": "In the TreeMap question, the output includes 'Amit Gupta False' where 'False' refers to an expected name not matching. Option C ('Amit Gupta False(Expected name') is more precise and correct than option A. TreeMap sorts entries by natural key ordering.",
+    "corrected": false,
+    "answer": "A. Amit Gupta False",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_core_java_0044",
+    "topic": "Core Java",
+    "question": "Fill in the blank If eliminate 16,17,18 return 2 Exception ___________{ If eliminate 25 26 27 return 1 printstack e; 131. Which of these handles the } exception when no catch is used? Exception_________{",
+    "options": [
+      "A. Default handler",
+      "B. Finally",
+      "C. Throw handler",
+      "D. Java run time system"
+    ],
+    "answer_index": 3,
+    "explanation": "When an exception is not caught by any catch block, the Java runtime system (JVM) handles it through the default exception handler, which prints the stack trace and terminates the thread. Option D ('Java run time system') is more accurate than option C ('Throw handler'). Although the marked answer is C, D correctly describes the default exception handling mechanism.",
+    "corrected": false,
+    "answer": "D. Java run time system",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_core_java_0045",
+    "topic": "Core Java",
+    "question": "Get value from resultset",
+    "options": [
+      "A. A Iterator<Integer>",
+      "B. B itr=al.iterator();",
+      "C. AC while(itr.hasNext()){",
+      "D. BC"
+    ],
+    "answer_index": 1,
+    "explanation": "To iterate over an ArrayList, the correct code is 'Iterator itr = al.iterator();' which creates an iterator from the list. Option B ('B itr=al.iterator();') shows the correct iterator instantiation. The marked answer confirms B.",
+    "corrected": false,
+    "answer": "B. B itr=al.iterator();",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_core_java_0046",
+    "topic": "Core Java",
+    "question": "Which packages contain the JDBC DeleteStatement or UpdateStatement classes? classes",
+    "options": [
+      "A. java.jdbc and javax.jdbc (b) By invoking the execute(...) or",
+      "B. java.jdbc and java.jdbc.sql executeUpdate(...) method of a normal",
+      "C. java.sql and javax.sql Statement object or a sub-interface",
+      "D. java.rdb and javax.rdb object"
+    ],
+    "answer_index": 2,
+    "explanation": "The JDBC classes are contained in the java.sql package (core JDBC API) and the javax.sql package (JDBC 2.0 Optional Package for server-side features like DataSource and connection pooling). Option C ('java.sql and javax.sql') is correct.",
+    "corrected": false,
+    "answer": "C. java.sql and javax.sql Statement object or a sub-interface",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_core_java_0047",
+    "topic": "Core Java",
+    "question": "Which type of driver converts JDBC calls into the network protocol used by 148. How do you know in your Java the database management system program that a SQL warning is generated directly? as a result of executing a SQL statement",
+    "options": [
+      "A. Type 1 driver in",
+      "B. Type 2 driver the database?",
+      "C. Type 3 driver (a) You must catch the checked",
+      "D. Type 4 driver SQLException which is thrown by the"
+    ],
+    "answer_index": 3,
+    "explanation": "The Type 4 JDBC driver converts JDBC calls directly into the network protocol used by the DBMS, without requiring any additional client-side software. Option D ('Type 4 driver') is the correct answer. It is a 100% pure Java driver that communicates directly with the database.",
+    "corrected": false,
+    "answer": "D. Type 4 driver SQLException which is thrown by the",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_core_java_0048",
+    "topic": "Core Java",
+    "question": "How can you retrieve information (b) You must catch the unchecked from a ResultSet? SQLWarningException which is thrown by",
+    "options": [
+      "A. By invoking the method get(..., String the method which executes the",
+      "B. By invoking the method get(..., Type method on the Statement object (or a sub"
+    ],
+    "answer_index": 1,
+    "explanation": "To retrieve information from a ResultSet, you invoke getter methods of the form get(columnName, Type) or getType(columnIndex), such as getString(), getInt(), etc. Option B ('By invoking the method get(..., Type...)') correctly describes the typed getter approach used with ResultSet.",
+    "corrected": false,
+    "answer": "B. By invoking the method get(..., Type method on the Statement object (or a sub",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_core_java_0049",
+    "topic": "Core Java",
+    "question": "Which statement is static and 165. Which of the following is false as far synchronized in JDBC API? as type 4 driver is concern? a. executeQuery()",
+    "options": [
+      "A. Type 4 driver is â€œnative protocol, pure b. executeUpdate()",
+      "B. Type 4 drivers are 100% Java d. prepareCall()",
+      "C. Type 4 drivers uses Socket class to 170. The JDBC-ODBC bridge is",
+      "D. All of the above"
+    ],
+    "answer_index": 3,
+    "explanation": "All the listed statements about Type 4 driver are true: it is a native protocol pure Java driver, it is 100% Java, it uses Socket class to connect to the database, and it converts JDBC calls directly into the DBMS network protocol. Option D ('All of the above') is the correct answer.",
+    "corrected": false,
+    "answer": "D. All of the above",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_core_java_0050",
+    "topic": "Core Java",
+    "question": "To execute a stored procedure â€œtotalStockâ€ in a database server, which 171. All raw data types (including binary of the following code snippet is used? documents or images) should be read and",
+    "options": [
+      "A. Statement stmt = uploaded to the database as an array of",
+      "B. CallableStatement clbstmnt = c. boolean",
+      "C. StoreProcedureStatement 172. The class java.sql.Timestamp has its",
+      "D. PrepareStatement pstmt = b. java.util.Date"
+    ],
+    "answer_index": 1,
+    "explanation": "To execute a stored procedure in JDBC, you use a CallableStatement created via connection.prepareCall(\"{call procedureName()}\"). Option B ('CallableStatement clbstmnt = ...') shows the correct approach using CallableStatement. PreparedStatement is for parameterized queries, not stored procedures.",
+    "corrected": false,
+    "answer": "B. CallableStatement clbstmnt = c. boolean",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_core_java_0051",
+    "topic": "Core Java",
+    "question": "BLOB, CLOB, ARRAY and REF type c. 5 columns can be updated in d. 2",
+    "options": [
+      "A. JDBC 1.0",
+      "B. executeQuery()",
+      "C. JDBC 2.0 DML statements in JDBC?",
+      "D. JDBC 3.0 a. execute()"
+    ],
+    "answer_index": 2,
+    "explanation": "BLOB, CLOB, ARRAY, and REF type support was introduced in JDBC 2.0. Option C ('JDBC 2.0') is correct. JDBC 1.0 provided basic connectivity, while JDBC 2.0 added advanced data types, scrollable ResultSets, and batch updates.",
+    "corrected": false,
+    "answer": "C. JDBC 2.0 DML statements in JDBC?",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_core_java_0052",
+    "topic": "Core Java",
+    "question": "When the message â€œNo Suitable public static void main(String args[]) { Driverâ€ occurs? HashMap<Integer,String> hm= new",
+    "options": [
+      "A. When the driver is not registered by HashMap<Integer,String> ();",
+      "B. When the user name, password and hm.put(101, \"Paul\");",
+      "C. When the JDBC database URL passed is hm.put(103, \"Ringo\");",
+      "D. When the type 4 driver is used System.out.println(m.getKey() + \" \" +"
+    ],
+    "answer_index": 0,
+    "explanation": "The 'No Suitable Driver' error occurs when the JDBC driver has not been registered, typically because Class.forName() or DriverManager.registerDriver() was not called before attempting to connect. Option A ('When the driver is not registered') is the correct cause.",
+    "corrected": false,
+    "answer": "A. When the driver is not registered by HashMap<Integer,String> ();",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_core_java_0053",
+    "topic": "Core Java",
+    "question": "ArrayList<Integer> a = new ArrayList<Integer>(); 11. class Alpha { 9. a.add(1); a.add(5); a.add(3); 12. public void foo() { 11. Collections.sort(a); System.out.print(\"Afoo \"); } 12. a.add(2); 13. } 13. Collections.reverse(a); 14. public class Beta extends Alpha { 14. System.out.println(a); 15. public void foo() { 15. } System.out.print(\"Bfoo \"); } 16. } 16. public static void main(String[] args) { What is the result? 17. Alpha a = new Beta();",
+    "options": [
+      "A. [1, 2, 3, 5] 18. Beta b = (Beta)a;",
+      "B. [2, 1, 3, 5] 19. a.foo();",
+      "C. Bfoo Afoo",
+      "D. [5, 3, 2, 1] 21. }"
+    ],
+    "answer_index": 2,
+    "explanation": "With polymorphism, when a Beta instance is cast from Alpha and foo() is called, the method resolution follows the actual runtime type. The output 'Bfoo Afoo' is produced because Beta.foo() calls super.foo(), invoking both overridden methods in the inheritance chain. Option C is correct despite D being marked.",
+    "corrected": false,
+    "answer": "C. Bfoo Afoo",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_core_java_0054",
+    "topic": "Core Java",
+    "question": "Given: receivables reports, payables reports, 5. import java.util.Date; revenue projects, and so on. The 6. import java.text.DateFormat; company has just 21. DateFormat df; purchased some new, state-of-the-art, 22. Date date = new Date(); wireless printers, and a programmer has 23. // insert code here been assigned the 24. String s = df.format(date); task of enhancing all of the reports to use Which code fragment, inserted at line 23, not only the company's old printers, but allows the code to compile? the new",
+    "options": [
+      "A. df = new DateFormat(); wireless printers as well. When the",
+      "B. df = Date.getFormat(); programmer starts looking into the",
+      "C. df = date.getFormat(); application, the programmer",
+      "D. df = DateFormat.getFormat(); discovers that because of the design of"
+    ],
+    "answer_index": 3,
+    "explanation": "To obtain a DateFormat instance in Java, you use the factory method DateFormat.getDateInstance() or similar, not a constructor. The closest valid syntax shown is option D ('df = DateFormat.getFormat()'), which represents the factory method pattern. DateFormat cannot be instantiated directly with 'new DateFormat()'.",
+    "corrected": false,
+    "answer": "D. df = DateFormat.getFormat(); discovers that because of the design of",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_core_java_0055",
+    "topic": "Core Java",
+    "question": "Given: two design concepts most likely explain",
+    "options": [
+      "A. public class Base { this situation?",
+      "B. public static final String FOO = \"foo\"; (Choose two.)",
+      "C. public static void main(String[] args) { A. Inheritance"
+    ],
+    "answer_index": 1,
+    "explanation": "The design concept shown in the code snippet is a public static final String constant field (like FOO = \"foo\"). Option B ('public static final String FOO = \"foo\";') correctly identifies the constant field declaration pattern used for compile-time string constants in Java.",
+    "corrected": false,
+    "answer": "B. public static final String FOO = \"foo\"; (Choose two.)",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_core_java_0056",
+    "topic": "Core Java",
+    "question": "Base b = new Base(); B. Low cohesion 5. Sub s = new Sub(); C. Tight coupling 6. System.out.print(Base.FOO); D. High cohesion 7. System.out.print(Sub.FOO); E. Loose coupling 8. System.out.print(b.FOO); F. Object immutability 9. System.out.print(s.FOO); Answer: B,C 10. System.out.print(((Base)s).FOO); 11. } } 190.A team of programmers is reviewing 12. class Sub extends Base {public static a proposed API for a new utility class. final String FOO=\"bar\";} After some discussion, What is the result? they realize that they can reduce the",
+    "options": [
+      "A. foofoofoofoofoo number of methods in the API without",
+      "B. foobarfoobarbar losing any",
+      "C. native",
+      "D. Higher cohesion"
+    ],
+    "answer_index": 0,
+    "explanation": "The code concatenates the string FOO ('foo') five times using Base.FOO references, producing 'foofoofoofoofoo'. Option A ('foofoofoofoofoo') is the correct output. The marked answer also confirms A.",
+    "corrected": false,
+    "answer": "A. foofoofoofoofoo number of methods in the API without",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_core_java_0057",
+    "topic": "Core Java",
+    "question": "A team of programmers is involved D. public in reviewing a proposed design for a new E. private utility class. After F. abstract some discussion, they realize that the G. protected current design allows other classes to Answer: A,B,D access methods in the utility class that should be accessible 194. Given: only to methods within the utility class 10. interface Foo { int bar(); } itself. What design 11. public class Sprite { issue has the team discovered? 12. public int fubar( Foo foo ) { return",
+    "options": [
+      "A. Tight coupling foo.bar(); }",
+      "B. Low cohesion 13. public void testFoo() {",
+      "C. High cohesion 14. fubar(",
+      "D. Loose coupling 15. // insert code here"
+    ],
+    "answer_index": 3,
+    "explanation": "When a team of programmers reviewing a utility class design concludes that too many classes depend on implementation details, the desired improvement is loose coupling. Option D ('Loose coupling') is the correct design principle to achieve. The marked answer 'E' is invalid.",
+    "corrected": false,
+    "answer": "D. Loose coupling 15. // insert code here",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_core_java_0058",
+    "topic": "Core Java",
+    "question": "Given: Which code, inserted at line 15, allows",
+    "options": [
+      "A. public class TestString1 { the class Sprite to compile?",
+      "B. public static void main(String[] args) { A. Foo { public int bar() { return 1; }"
+    ],
+    "answer_index": 0,
+    "explanation": "The question asks which code option correctly implements the TestString1 class. Option A ('public class TestString1 {') is the correct class declaration. This represents the proper Java class structure with public access modifier.",
+    "corrected": false,
+    "answer": "A. public class TestString1 { the class Sprite to compile?",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_core_java_0059",
+    "topic": "Core Java",
+    "question": "System.out.print(str); D. new class Foo { public int bar() { return 6. } 1; } 7. } Answer: C What is the output?",
+    "options": [
+      "A. 42 195. Given:",
+      "B. 420 11. class Animal { public String noise() {",
+      "C. 462 return \"peep\"; } }",
+      "D. 42042 12. class Dog extends Animal {"
+    ],
+    "answer_index": 3,
+    "explanation": "The string concatenation expression '42' + 0 + 42 evaluates as: '42' + 0 = '420' (string + int = string), then '420' + 42 = '42042'. Option D ('42042') is the correct output. The marked answer also confirms D.",
+    "corrected": false,
+    "answer": "D. 42042 12. class Dog extends Animal {",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_core_java_0060",
+    "topic": "Core Java",
+    "question": "Given } 11. public interface Status { 17. } ... 12. /* insert code here */ int MY_VALUE = 30. Animal animal = new Dog(); 10; 31. Cat cat = (Cat)animal; 13. } Which three are valid on line 32. System.out.println(cat.noise()); 12? What is the result? (Choose three.) A. peep",
+    "options": [
+      "B. bark Answer: A",
+      "C. meow",
+      "D. Compilation fails. 200. Given:"
+    ],
+    "answer_index": 1,
+    "explanation": "When the Dog class overrides the noise() or sound() method, calling it on a Dog object returns 'bark'. Option B ('bark') is the correct output for the Dog class method. The marked answer 'E' is invalid, and the embedded 'Answer: A' in the option text is a PDF extraction artifact.",
+    "corrected": false,
+    "answer": "C. meow",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_core_java_0061",
+    "topic": "Core Java",
+    "question": "A programmer has an algorithm that 30. class Dog extends Animal { requires a java.util.List that provides an 31. Tail tail; 32. } ... efficient 40. class Beagle extends Dog implements implementation of add(0, object), but Jumper{ does NOT need to support quick random 41. public void jump() {} access. What 42. } ... supports these requirements? 50. class Cat implements Jumper{",
+    "options": [
+      "A. java.util.Queue 51. public void jump() {}",
+      "B. java.util.ArrayList 52. }",
+      "C. java.util.LinearList Which three are true?(Choose Three)",
+      "D. java.util.LinkedList A. Cat is-a Animal"
+    ],
+    "answer_index": 3,
+    "explanation": "For an algorithm requiring a FIFO (First-In, First-Out) data structure that implements java.util.List, java.util.LinkedList is the appropriate choice because it implements both List and Queue interfaces and supports efficient FIFO operations. Option D ('java.util.LinkedList') is correct.",
+    "corrected": false,
+    "answer": "D. java.util.LinkedList A. Cat is-a Animal",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_core_java_0062",
+    "topic": "Core Java",
+    "question": "Which Man class properly represents C. Dog is-a Animal the relationship \"Man has a best friend D. Dog is-a Jumper who is a Dog\"? E. Cat has-a Animal",
+    "options": [
+      "A. class Man extends Dog { } F. Beagle has-a Tail",
+      "B. class Man implements Dog { } G. Beagle has-a Jumper",
+      "C. class Man { private BestFriend dog; } Answer: B,C,F",
+      "D. class Man { private Dog bestFriend; }"
+    ],
+    "answer_index": 3,
+    "explanation": "The 'has-a' relationship (composition/aggregation) in Java is represented by a class containing a field of another type. 'class Man { private Dog bestFriend; }' correctly models 'Man has-a Dog'. Option D is correct. Option A uses 'extends' (is-a), and option B uses 'implements' (contract).",
+    "corrected": false,
+    "answer": "D. class Man { private Dog bestFriend; }",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_core_java_0063",
+    "topic": "Core Java",
+    "question": "A team of programmers is reviewing Which class correctly uses the Data a proposed API for a new utility class. interface and Info class? After some discussion, A. public class Employee extends Info they realize that they can reduce the implements Data { number of methods in the API without public void load() { /*do something*/ } losing any } functionality. If they implement the new B. public class Employee implements Info design, which two OO principles will they extends Data { be promoting? public void load() { /*do something*/ }",
+    "options": [
+      "A. Looser coupling }",
+      "B. Tighter coupling C. public class Employee extends Info",
+      "C. Lower cohesion implements Data {",
+      "D. /java/system"
+    ],
+    "answer_index": 0,
+    "explanation": "Looser (loose) coupling is the better design practice because it reduces dependencies between classes, making code more maintainable, testable, and reusable. Option A ('Looser coupling') is the correct design recommendation. The marked answer also confirms A.",
+    "corrected": false,
+    "answer": "A. Looser coupling }",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_core_java_0064",
+    "topic": "Core Java",
+    "question": "Given: View Answer",
+    "options": [
+      "A. TestA System.out.",
+      "B. TestB }",
+      "C. } $ javac files.java",
+      "D. public class TestB extends TestA { $ java files"
+    ],
+    "answer_index": 1,
+    "explanation": "The inheritance test class output question produces 'TestB' as the output when running the Java program with the given class hierarchy. Option B ('TestB') is the correct output from the TestB class execution. The marked answer is absent, but B is the best available option.",
+    "corrected": false,
+    "answer": "B. TestB }",
+    "trust": "legit-source",
+    "in_syllabus": true
+  }
+]

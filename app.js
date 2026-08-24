@@ -10,6 +10,8 @@ const App = (() => {
     { key: 'core-java',    label: 'Core Java & OOP',       match: /core java|java oop/i,       color: '#3b82f6', bg: 'rgba(59,130,246,.15)', border: 'rgba(59,130,246,.4)'   },
     { key: 'spring-core',  label: 'Spring Core',           match: /spring core/i,              color: '#22c55e', bg: 'rgba(34,197,94,.15)',  border: 'rgba(34,197,94,.4)'    },
     { key: 'spring-boot',  label: 'Spring Boot',           match: /spring boot/i,              color: '#4ade80', bg: 'rgba(74,222,128,.12)', border: 'rgba(74,222,128,.35)'  },
+    { key: 'spring-mvc',   label: 'Spring Framework',      match: /spring framework|spring mvc/i, color: '#34d399', bg: 'rgba(52,211,153,.12)', border: 'rgba(52,211,153,.35)'  },
+    { key: 'jsp-servlet',  label: 'JSP & Servlet',         match: /jsp|servlet/i,              color: '#fb923c', bg: 'rgba(251,146,60,.12)', border: 'rgba(251,146,60,.35)'   },
     { key: 'javascript',   label: 'JavaScript',            match: /javascript/i,               color: '#facc15', bg: 'rgba(250,204,21,.12)', border: 'rgba(250,204,21,.35)'  },
     { key: 'typescript',   label: 'TypeScript',            match: /typescript/i,               color: '#60a5fa', bg: 'rgba(96,165,250,.12)', border: 'rgba(96,165,250,.35)'  },
     { key: 'react',        label: 'React',                 match: /react/i,                    color: '#38bdf8', bg: 'rgba(56,189,248,.12)', border: 'rgba(56,189,248,.35)'  },

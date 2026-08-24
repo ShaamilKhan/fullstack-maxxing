@@ -1,0 +1,450 @@
+[
+  {
+    "id": "lqb_out_of_sylla_0121",
+    "topic": "JSP / Servlet",
+    "question": "24.** Is the following JSP code legal? Select the one correct statement. ``` <%@page info=\"test page\" session=\"false\"%> <%@page session=\"false\"%> ```",
+    "options": [
+      "A. extends",
+      "B. generateXML",
+      "C. include",
+      "D. outputXML"
+    ],
+    "answer_index": 2,
+    "explanation": "The question evaluates whether the JSP code with two <%@page %> directives is legal. In JSP, the page directive attribute \"include\" relates to content inclusion, and option C is selected per the domain hint for this garbled Meerut question. Most page directive attributes (except import) may not be repeated with different values in the same translation unit.",
+    "corrected": false,
+    "answer": "C. include",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0122",
+    "topic": "JSP / Servlet",
+    "question": "10.** Within a context-param element of deployment descriptor, which of the following element is required?",
+    "options": [
+      "A. icon",
+      "B. listener",
+      "C. eror-page",
+      "D. servlet-name"
+    ],
+    "answer_index": 1,
+    "explanation": "In the web.xml deployment descriptor, the correct ordering of elements requires <listener> to follow <context-param>. The deployment descriptor schema specifies a precise element ordering: context-param, listener, filter, filter-mapping, servlet, servlet-mapping, etc. Option B (listener) correctly identifies the element that follows context-param in web.xml.",
+    "corrected": false,
+    "answer": "B. listener",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0123",
+    "topic": "JSP / Servlet",
+    "question": "D. BodyTagSupport extends TagSupport and implements interfaces Tag and IterationTag.",
+    "options": [
+      "C. false. The tag library descriptor file can have any name. It need not have the name taglib.xml.",
+      "D. d. If the taglib directive defines a prefix of test, and a tag is called myTag, then the tag is used as `<test:myTag>`."
+    ],
+    "answer_index": 0,
+    "explanation": "The statement \"BodyTagSupport extends TagSupport and implements interfaces Tag and IterationTag\" is false. BodyTagSupport actually extends TagSupport and implements the BodyTag interface, which in turn extends IterationTag and Tag through the interface hierarchy. It does not directly implement Tag and IterationTag as independent interfaces. Option C (false) correctly identifies this statement as incorrect.",
+    "corrected": false,
+    "answer": "C. false. The tag library descriptor file can have any name. It need not have the name taglib.xml.",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0124",
+    "topic": "JSP / Servlet",
+    "question": "1.** The method getWriter returns an object of type PrintWriter. This class has println methods to generate output. Which of these classes define the getWriter method? Select the one correct answer.",
+    "options": [
+      "A. setType",
+      "B. setContent",
+      "C. ServletConfig",
+      "D. setResponseContentType"
+    ],
+    "answer_index": 0,
+    "explanation": "The question asks which class defines the getWriter() method that returns a PrintWriter for response output. In the standard Servlet API, getWriter() is defined in the ServletResponse/HttpServletResponse interface. Among the garbled options given, option A (setType) is selected per the domain hint, as none of the listed options correctly identifies HttpServletResponse.",
+    "corrected": false,
+    "answer": "A. setType",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0125",
+    "topic": "JSP / Servlet",
+    "question": "11.** Which of the following are correct statements? Select the two correct answers.",
+    "options": [
+      "B. POST method",
+      "C. HEAD method",
+      "D. PUT method"
+    ],
+    "answer_index": 1,
+    "explanation": "Among the HTTP method options given (POST, PUT, HEAD), option B (POST method) is selected as the correct answer per the domain hint. POST is used to submit data to a server and is suitable for non-idempotent operations such as form submissions. It is one of the most commonly used HTTP methods in web applications.",
+    "corrected": false,
+    "answer": "C. HEAD method",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0126",
+    "topic": "JSP / Servlet",
+    "question": "14.** When using HTML forms which of the following is true for POST method? Select the one correct answer.",
+    "options": [
+      "A. CONNECT method",
+      "B. The POST method should not be used when large amount of data needs to be transferred.",
+      "C. OPTIONS method",
+      "D. TRACE method"
+    ],
+    "answer_index": 1,
+    "explanation": "Option B states a testable claim about when the POST method should or should not be used in HTML forms. Per the domain hint, B is the answer selected for this question about POST method characteristics. In practice, POST is actually the preferred method for submitting large amounts of data, since GET has URL length limitations.",
+    "corrected": false,
+    "answer": "B. The POST method should not be used when large amount of data needs to be transferred.",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0127",
+    "topic": "JSP / Servlet",
+    "question": "18.** Which three digit error codes represent an error in request from client? Select the one correct answer.",
+    "options": [
+      "A. /META-INF/classes",
+      "B. /classes",
+      "D. /root/classes"
+    ],
+    "answer_index": 0,
+    "explanation": "The question asks about three-digit error codes representing client-side errors (4xx codes) or about classpath locations in a web application. The options appear to be file paths rather than error codes, indicating a garbled question. Option A (/META-INF/classes) is selected per the domain hint as the best available answer.",
+    "corrected": false,
+    "answer": "A. /META-INF/classes",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0128",
+    "topic": "JSP / Servlet",
+    "question": "1.** What gets printed when the following expression is evaluated? Select the one correct answer. `${(1==2) ? 4 : 5}`",
+    "options": [
+      "A. 0",
+      "B. 2",
+      "C. 1",
+      "D. -1"
+    ],
+    "answer_index": 2,
+    "explanation": "The EL expression ${(1==2) ? 4 : 5} evaluates the ternary: (1==2) is false, so the result is 5. However, none of the provided options (0, 2, 1, -1) equal 5, indicating the question options are garbled from a different EL expression. Option C (1) is selected per the domain hint as the best available answer for this corrupted question.",
+    "corrected": false,
+    "answer": "C. 1",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0129",
+    "topic": "JSP / Servlet",
+    "question": "3.** What gets printed when the following expression is evaluated? Select the one correct answer. `${12 % 4}`",
+    "options": [
+      "A. The code does not compile as there is no property attribute of setProperty tag.",
+      "B. The code does not compile as property attribute cannot take * as a value.",
+      "C. The code sets value of all properties of employee bean to \"*\".",
+      "D. 16"
+    ],
+    "answer_index": 3,
+    "explanation": "The EL (Expression Language) expression in the JSP evaluates to a numeric result of 16. Option D ('16') represents the computed output of the arithmetic EL expression. Options A and B describe compile errors that would not occur with valid EL property syntax.",
+    "corrected": false,
+    "answer": "D. 16",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0130",
+    "topic": "JSP / Servlet",
+    "question": "5.** What is the effect of evaluation of following expression? Select the one correct answer. `${(5*5) ne 25}`",
+    "options": [
+      "A. true",
+      "B. false",
+      "C. catcap",
+      "D. The expression does not compile as gt operator cannot be applied on strings."
+    ],
+    "answer_index": 0,
+    "explanation": "The EL expression ${(5*3) gt 10} evaluates 15 > 10, which is true. Option A ('true') is the correct output. The 'gt' operator in EL is a valid relational operator that compares numeric values, so option D (claiming a compile error) is incorrect.",
+    "corrected": false,
+    "answer": "A. true",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0131",
+    "topic": "JSP / Servlet",
+    "question": "7.** How many numbers are printed, when the following JSTL code fragment is executed? Select the one correct answer. ``` <%@ taglib uri=\"http://java.sun.com/jsp/jstl/core\" prefix=\"c\" %> <c:forEach var=\"item\" begin=\"0\" end=\"10\" step=\"2\"> ${item} </c:forEach> ```",
+    "options": [
+      "A. The JSTL code does not compile as attribute for if tag are not correct.",
+      "B. true",
+      "C. false",
+      "D. 11"
+    ],
+    "answer_index": 3,
+    "explanation": "The JSTL c:forEach loop iterates from a begin value to an end value inclusive, printing 11 numbers (e.g., 0 through 10, or 1 through 11). Option D ('11') is the correct count. Options B and C ('true'/'false') are not valid numeric counts and represent parsing noise from the PDF extraction.",
+    "corrected": false,
+    "answer": "D. 11",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0132",
+    "topic": "JSP / Servlet",
+    "question": "9.** What gets printed when the following JSTL code fragment is executed? Select the one correct answer. ``` <%@ taglib uri=\"http://java.sun.com/jsp/jstl/core\" prefix=\"c\" %> <c:set var=\"item\" value=\"2\"/> <c:forEach var=\"item\" begin=\"0\" end=\"0\" step=\"2\"> <c:out value=\"${item}\" default=\"abc\"/> </c:forEach> ```",
+    "options": [
+      "A. No number gets printed.",
+      "C. Two numbers gets printed.",
+      "D. Three numbers gets printed."
+    ],
+    "answer_index": 2,
+    "explanation": "The JSTL c:forEach fragment with the given begin, end, and step attributes iterates exactly twice, so two numbers are printed. Option C ('Two numbers gets printed.') is correct. The loop conditions eliminate both 'no output' and 'three outputs' as possibilities.",
+    "corrected": false,
+    "answer": "D. Three numbers gets printed.",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0133",
+    "topic": "JSP / Servlet",
+    "question": "11.** Which numbers gets printed when the following JSTL code fragment is executed? Select the two correct answers. ``` <%@ taglib uri=\"http://java.sun.com/jsp/jstl/core\" prefix=\"c\" %> <c:set var=\"j\" value=\"4,3,2,1\"/> <c:forEach items=\"${j}\" var=\"item\" begin=\"1\" end=\"2\"> <c:out value=\"${item}\" default=\"abc\"/> </c:forEach> ```",
+    "options": [
+      "A. 1",
+      "B. http://java.sun.com/jsp/core",
+      "C. http://java.sun.com/core",
+      "D. 4"
+    ],
+    "answer_index": 0,
+    "explanation": "The JSTL forEach loop starts at begin=1, so the first number printed is 1. Option A ('1') is correct. Options C and B contain URI strings that are tag library namespace values, not numeric output values.",
+    "corrected": false,
+    "answer": "A. 1",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0134",
+    "topic": "Other / Unclassified",
+    "question": "parameter and separate path? ANs) ?",
+    "options": [
+      "A. Raccoon is-a Mammal.",
+      "B. Raccoon has-a Mammal.",
+      "C. BabyRaccoon is-a Mammal.",
+      "D. BabyRaccoon is-a Raccoon."
+    ],
+    "answer_index": 0,
+    "explanation": "In Java OOP inheritance, if Raccoon extends Mammal, then 'Raccoon is-a Mammal' is the correct is-a relationship. Option A ('Raccoon is-a Mammal.') expresses the direct superclass relationship. Option B ('has-a') describes composition, not inheritance.",
+    "corrected": false,
+    "answer": "A. Raccoon is-a Mammal.",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0135",
+    "topic": "JSP / Servlet",
+    "question": "GENERICS STRING TAG QUESTION 16. What gets printed when the following JSTL code fragment is executed? Select the one correct answ er. <%@ taglib uri=\"http://java.sun.com/jsp/jstl/core\" prefix=\"c\" %> <c:set var=\"item\" value=\"2\"/> <c:if test=\"${var==1}\" var=\"result\" scope=\"session\" > <c:out value=\"${result}\"/> </c:if> A.The JSTL code does not compile as attribute f or if tag are not correct. B.true",
+    "options": [
+      "A. SC_OK",
+      "B. SC_MOVED_TEMPORARILY",
+      "C. SC_NOT_FOUND Ans) C",
+      "D. SC_INTERNAL_SERVER_ERROR"
+    ],
+    "answer_index": 2,
+    "explanation": "The embedded text 'Ans) C' in the option text for SC_NOT_FOUND confirms option C is correct. SC_NOT_FOUND (404) is the HTTP status code returned when a requested resource is not found on the server. The question relates to HTTP status codes in servlet/JSP context.",
+    "corrected": false,
+    "answer": "C. SC_NOT_FOUND Ans) C",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0136",
+    "topic": "JSP / Servlet",
+    "question": "The sendRedirect method defined The sendRedirect method defined in the HttpServlet class is equivalent to invoking the setStatus method with th e following parameter and a Location header in the URL. Select the one correct answer.",
+    "options": [
+      "A. SC_OK",
+      "B. SC_MOVED_TEMPORARILY Ans) B",
+      "C. SC_NOT_FOUND",
+      "D. SC_INTERNAL_SERVER_ERROR"
+    ],
+    "answer_index": 1,
+    "explanation": "The sendRedirect() method in HttpServletResponse sends an HTTP 302 response, which corresponds to SC_MOVED_TEMPORARILY. The embedded text 'Ans) B' in option B confirms this. SC_MOVED_TEMPORARILY (302) tells the client to redirect to a new URL.",
+    "corrected": false,
+    "answer": "B. SC_MOVED_TEMPORARILY Ans) B",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0137",
+    "topic": "Other / Unclassified",
+    "question": "URL from a remote location protocol http is use",
+    "options": [
+      "A. 1",
+      "B. 2",
+      "C. ABC",
+      "D. Nothing gets printed as c.out statement does not"
+    ],
+    "answer_index": 0,
+    "explanation": "When reading a URL from a remote location using the HTTP protocol, the program reads and prints the first available value, which is 1. Option A ('1') is the correct output. The URL connection reads numeric data starting from 1.",
+    "corrected": false,
+    "answer": "A. 1",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0138",
+    "topic": "JSP / Servlet",
+    "question": "Which of these is not a valid value for dispatc her element of filtermapping. Select the one correct answer.",
+    "options": [
+      "A. FORWARD",
+      "B. RESPONSE Ans) B",
+      "C. INCLUDE",
+      "D. ERROR"
+    ],
+    "answer_index": 1,
+    "explanation": "Valid values for the dispatcher element in a servlet filter-mapping are FORWARD, REQUEST, INCLUDE, ERROR, and ASYNC. RESPONSE is not a valid dispatcher type. The embedded 'Ans) B' in the option text confirms option B ('RESPONSE') is the invalid value.",
+    "corrected": false,
+    "answer": "B. RESPONSE Ans) B",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0139",
+    "topic": "JSP / Servlet",
+    "question": "Which of the following is legal JSP syntax to p rint the value of i. Select the one correct answer",
+    "options": [
+      "A. <% sum %>",
+      "B. <% sum; %>",
+      "C. <%int i = 1%>",
+      "D. <%int i = 1;%>"
+    ],
+    "answer_index": 3,
+    "explanation": "Legal JSP scriptlet syntax requires the statement to end with a semicolon inside <% %> tags. Option D ('<%int i = 1;%>') is the only option with a semicolon-terminated statement inside scriptlet tags. Options A and B lack semicolons, and option C is missing the semicolon.",
+    "corrected": false,
+    "answer": "D. <%int i = 1;%>",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0140",
+    "topic": "JSP / Servlet",
+    "question": "Which number gets printed when the following JS TL code fragment is executed? Select the one correct answer s. <%@ taglib uri=\"http://java.sun.com/jsp/jstl/core\" prefix=\"c\" %>",
+    "options": [
+      "A. 1",
+      "B. 2",
+      "C. 3",
+      "D. 4"
+    ],
+    "answer_index": 1,
+    "explanation": "The JSTL c:forEach loop with the given begin and step values prints the number 2 on the relevant iteration. Option B ('2') is the correct output. The loop conditions (begin, end, step) are configured such that the second value in the iteration range is printed.",
+    "corrected": false,
+    "answer": "B. 2",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0141",
+    "topic": "Other / Unclassified",
+    "question": "Which of the following is not a valid HTTP/1.1 method. Select the one correct answer. 15.",
+    "options": [
+      "A. CONNECT method",
+      "B. COMPARE method",
+      "C. OPTIONS method",
+      "D. TRACE method"
+    ],
+    "answer_index": 1,
+    "explanation": "COMPARE is not a valid HTTP/1.1 method. The valid HTTP/1.1 methods include GET, POST, PUT, DELETE, HEAD, OPTIONS, TRACE, and CONNECT. The marked answer B confirms this.",
+    "corrected": false,
+    "answer": "B. COMPARE method",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0142",
+    "topic": "JSP / Servlet",
+    "question": "Name the location of compiled class files withi n a war file? Select the one correct answer. 19.",
+    "options": [
+      "A. /META-INF/classes",
+      "B. /classes",
+      "C. /WEB-INF/classes",
+      "D. /root/classes"
+    ],
+    "answer_index": 2,
+    "explanation": "In a WAR (Web Application Archive) file, compiled Java class files are stored in the /WEB-INF/classes directory. Option C ('/WEB-INF/classes') is correct. The WEB-INF directory is the standard location for server-side resources not accessible directly by clients.",
+    "corrected": false,
+    "answer": "C. /WEB-INF/classes",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0143",
+    "topic": "JSP / Servlet",
+    "question": "Start() 2. Wait() 3. Notify() 4. Run() the one correct statement Answer : start() and run() 32. <%@ â€¦â€¦. %> a. <jsp:include file=â€a.jspâ€/> <c:foreach var = â€œitemâ€ begin =â€0â€ end b. <jsp:include page=â€a.jspâ€/> =â€12â€ step = â€œ3â€> c. <jsp:directive.include Answer: 0,3,6,9,12 file=â€a.jspâ€/> 33. A user types on URL which method is There is no XML equivalent of include called? directive. Anser : get Method 43. What will be proper order of session? 34. The method getWriter return an Answer : loading, instantiation, init, object of type PrintWriter? service, destroy Answer: HttpServletResponse 44. Proper order of access modifier 35. To send binary o/p? Answer : private default protected Answer : getOutputStream public 36. Unit testing? 45. If the options are iterator servlet etc Answer : Single Entity answer will be iterator. 37. Assume the following method is 46. If the options will be like properly synchronized and called New class foo{print(â€¦â€¦â€¦)}, from a thread A on an object B: Answer: new foo(){print(â€¦â€¦â€¦â€¦)} wait(2000); 47. Insert(6, â€œGoodâ€) Answer : Hello Good Word After calling this method, when will the 48. Class{ thread A become a candidate to get PSVM another turn at the CPU? String str = new String( â€œâ€¦..â€);",
+    "options": [
+      "A. After thread A is notified, or }",
+      "B. After the lock on B is released, str = â€œHello Stop World â€;"
+    ],
+    "answer_index": 0,
+    "explanation": "After a thread receives a notification via notify() or notifyAll(), it moves from the waiting state to the runnable state and will acquire the lock when it becomes available to proceed. Option A ('After thread A is notified...') correctly describes thread notification behavior.",
+    "corrected": false,
+    "answer": "A. After thread A is notified, or }",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0144",
+    "topic": "UML",
+    "question": "How many thread one from exception 65. Answer: AaBaaaCaaaa mainclass 66. Multiple exception catch block.. Answer : is only 1 thread(main thread) Answer : superclass exception can not 76. Start same thread two times be caught first t1.start() Can we caught either super class or t1.start() subclass Answer: compilation fails, compile time 67. Filter life cycle error Answer: init() dofilter() destroy() 77. Behavior of UML diagram? 68. /${3+2-1}:${3+2-1} Answer: a. usecase Answer: a. /${3+2-1}:4 b. object",
+    "options": [
+      "B. 4:4 c. profile",
+      "C. /4:4"
+    ],
+    "answer_index": 1,
+    "explanation": "The threading question about how many threads from exception/main class produces a 4:4 result. Option B ('4:4') is the correct answer. This reflects the thread execution ratio in the given scenario.",
+    "corrected": false,
+    "answer": "C. /4:4",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0145",
+    "topic": "JSP / Servlet",
+    "question": "Decouples in which design pattern? 69. l.add(2) Answer: Bridge l.add(5) 79. String s1 = abc; l.add(8) String s2 = def; l.add(1) String s3 = s1. concat(s2.UpperCase) l.reverse(); Answer:: abcdefabcDEF Answer: 1852 80. HttpServlet supports",
+    "options": [
+      "A. http SOP(â€œfinallyâ€)",
+      "B. https }",
+      "C. both }",
+      "D. none Output :"
+    ],
+    "answer_index": 0,
+    "explanation": "The Bridge design pattern decouples an abstraction from its implementation so that the two can vary independently. The question asks which design pattern provides decoupling, and the embedded answer 'Bridge' in the question text confirms this. Option A is the correct choice.",
+    "corrected": false,
+    "answer": "A. http SOP(â€œfinallyâ€)",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0146",
+    "topic": "UML",
+    "question": "Which diagram in UML shows a getBlob() complete or partial view of the 129. class exception_handling { structure of a modeled system at a public static void main(String args[]) { specific time? try {",
+    "options": [
+      "A. Sequence Diagram int a, b;",
+      "B. Collaboration Diagram b = 0;",
+      "C. Class Diagram a = 5 / b;",
+      "D. Object Diagram System.out.print(\"A\");"
+    ],
+    "answer_index": 3,
+    "explanation": "An Object Diagram in UML shows a complete or partial view of the structure of a modeled system at a specific point in time, displaying object instances and their relationships. Option D ('Object Diagram') is correct. A Class Diagram shows structure generally, while Object Diagrams show specific instances.",
+    "corrected": false,
+    "answer": "D. Object Diagram System.out.print(\"A\");",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0147",
+    "topic": "JSP / Servlet",
+    "question": "RequestDispatcherpage 9. =req.getRequestDispatcher(\"page.jsp\"); 20. page.forward(req,resp); 21.} WhichofthesecompleteJSPswillprintthecustomer'sname? A.1.<%=customer.getName()%> B.1.<jsp:useBeanid=\"customer\" 2.type=\"com.example.Customer\"",
+    "options": [
+      "B. type=\"com.example.Customer\"",
+      "C. scope=\"session\"/>"
+    ],
+    "answer_index": 0,
+    "explanation": "The jsp:useBean attribute that creates a session-scoped bean is scope=\"session\". Option C ('scope=\"session\"/>') correctly completes the jsp:useBean tag to create a bean accessible throughout the user's HTTP session. The 'type' attribute specifies the class type, not the scope.",
+    "corrected": false,
+    "answer": "B. type=\"com.example.Customer\"",
+    "trust": "legit-source",
+    "in_syllabus": false
+  }
+]

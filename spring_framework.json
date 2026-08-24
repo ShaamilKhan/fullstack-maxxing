@@ -1,0 +1,677 @@
+[
+  {
+    "id": "lqb_spring_frame_0007",
+    "topic": "Spring Framework",
+    "question": "If any of the beans implements the BeanPostProcessor interface, Spring will call which of these methods?",
+    "options": [
+      "A. O A. processBeforeInitialization()",
+      "B. O B. BeanPostProcessor()",
+      "C. **(â—) C. postProcessInterface()**",
+      "D. O D. postProcessBeforeInitialization()"
+    ],
+    "answer_index": 3,
+    "explanation": "When a bean implements BeanPostProcessor, Spring calls postProcessBeforeInitialization() before any bean initialization callbacks (such as InitializingBean.afterPropertiesSet()) and postProcessAfterInitialization() afterward. Option C ('postProcessInterface') does not exist; option A ('processBeforeInitialization') is also incorrect â€” the exact method name is postProcessBeforeInitialization().",
+    "corrected": false,
+    "answer": "D. O D. postProcessBeforeInitialization()",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_spring_frame_0008",
+    "topic": "Spring Framework",
+    "question": "What is the correct Spring interface for initialization?",
+    "options": [
+      "A. **(â—) A. org.springframework.beans.factory.InitializingBean**",
+      "B. O B. org.springframework.beans.factory.Initializing",
+      "C. O C. org.springframework.beans.InitializingBean",
+      "D. O D. org.springframework.beans.factory.InitBean"
+    ],
+    "answer_index": 0,
+    "explanation": "The correct fully-qualified interface for Spring initialization callbacks is org.springframework.beans.factory.InitializingBean. It declares the single method afterPropertiesSet(), which Spring calls after setting all bean properties. Options B, C, and D contain incorrect package paths or interface names.",
+    "corrected": false,
+    "answer": "A. **(â—) A. org.springframework.beans.factory.InitializingBean**",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_spring_frame_0009",
+    "topic": "Spring Framework",
+    "question": "When do you use Dependency Injection?",
+    "options": [
+      "A. DI is very useful for decoupling your system.",
+      "B. DI is most useful when you are aiming for code reuse.",
+      "C. DI helps in designing tightly coupled code.",
+      "D. DI does NOT help in unit testing the code."
+    ],
+    "answer_index": 0,
+    "explanation": "Dependency Injection is most useful for decoupling components so that a class does not need to know how to construct or locate its dependencies. This promotes loose coupling, improves testability (dependencies can be mocked), and makes the application more maintainable. Option C (tight coupling) is the opposite of what DI achieves.",
+    "corrected": false,
+    "answer": "A. DI is very useful for decoupling your system.",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_spring_frame_0010",
+    "topic": "Spring Framework",
+    "question": "What does the JDBC Template uses to connect to the database?",
+    "options": [
+      "A. O A. A simple java bean with connection properties",
+      "B. O B. A data source bean configuration",
+      "C. O C. An XML with DB connection parameters",
+      "D. O D. A jdbc connection object"
+    ],
+    "answer_index": 1,
+    "explanation": "Spring's JdbcTemplate obtains database connections through a DataSource bean configured in the Spring application context (e.g., a BasicDataSource or a JNDI-looked-up DataSource). The JdbcTemplate is constructed with a DataSource reference; it does not hold a raw java.sql.Connection itself.",
+    "corrected": false,
+    "answer": "B. O B. A data source bean configuration",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_spring_frame_0011",
+    "topic": "Spring Framework",
+    "question": "Which one of these statements about XML declaration of transaction manager bean is NOT true?",
+    "options": [
+      "A. O A. The tx namespace provides JTA transaction manager declaration shortcut syntax.",
+      "B. O B. The Id of the bean has to be transactionManager.",
+      "C. O C. Depending on the application persistence technology, the HibernateTransactionManager or the DataSourceTransactionManager could be used as bean class.",
+      "D. O D. A default transaction timeout could be given."
+    ],
+    "answer_index": 1,
+    "explanation": "It is NOT true that the transaction manager bean id must be 'transactionManager'. While 'transactionManager' is the default name expected by Spring's <tx:annotation-driven/> or <tx:advice/> when no transaction-manager attribute is specified, you can use any bean id and explicitly reference it. The bean id being mandatory as 'transactionManager' is a common misconception.",
+    "corrected": false,
+    "answer": "B. O B. The Id of the bean has to be transactionManager.",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_spring_frame_0012",
+    "topic": "Spring Framework",
+    "question": "Which are some of the characteristics of Programmatic Transaction Management?",
+    "options": [
+      "A. O A. It provides a non-invasive, POJO based model, and promotes loose coupling through inversion of control (IoC).",
+      "B. O B. Manual coding is required to manage transactions, flexible but difficult to maintain, uses PlatformTransactionManager, TransactionStatus, and TransactionDefinition interfaces.",
+      "C. O C. It separates transaction management code from the business logic, uses only declaration to manage transactions, less flexible; provides more readability and maintainbility, and can be modularized with Spring AOP.",
+      "D. O D. It provides aspect-oriented programming implementation allowing you to define method-interceptors and pointcuts to cleanly decouple code that implements functionality, which should be separated."
+    ],
+    "answer_index": 1,
+    "explanation": "Programmatic Transaction Management in Spring requires manually writing transaction management code using PlatformTransactionManager, TransactionDefinition, and TransactionStatus interfaces. It offers fine-grained control but is harder to maintain compared to declarative (@Transactional) management. Option A describes IoC/AOP, and option C describes declarative transaction management.",
+    "corrected": false,
+    "answer": "B. O B. Manual coding is required to manage transactions, flexible but difficult to maintain, uses PlatformTransactionManager, TransactionStatus, and TransactionDefinition interfaces.",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_spring_frame_0013",
+    "topic": "Spring Framework",
+    "question": "What are the right options for configuring Spring Applications?",
+    "options": [
+      "A. AnnotationConfigApplicationContext",
+      "B. Annotation-based",
+      "C. XML-based",
+      "D. Java-based"
+    ],
+    "answer_index": 1,
+    "explanation": "Spring applications can be configured in multiple ways: XML-based configuration, annotation-based configuration (@Component, @Autowired, etc.), and Java-based configuration (@Configuration, @Bean). Option B â€” 'Annotation-based' â€” is one of the three valid standard approaches and is a correct answer to the question.",
+    "corrected": false,
+    "answer": "B. Annotation-based",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_spring_frame_0014",
+    "topic": "Spring Framework",
+    "question": "Q2.** What are the three basic steps of creating a simple spring application?",
+    "options": [
+      "A. It will return nothing",
+      "B. It will return a NullPointer Exception",
+      "C. @RequestVariable",
+      "D. @RequestParam"
+    ],
+    "answer_index": 3,
+    "explanation": "Note: this question is a parsing artifact (the question text describes 'three basic steps' but the options are about Spring MVC annotations). @RequestParam is the Spring MVC annotation used to bind a URL query parameter or form parameter to a method argument. @RequestVariable is not a standard Spring annotation.",
+    "corrected": false,
+    "answer": "D. @RequestParam",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_spring_frame_0015",
+    "topic": "Spring Framework",
+    "question": "Q1.** Spring container can take inputs from which of the following ways?",
+    "options": [
+      "A. autowiring",
+      "B. autowired",
+      "C. javacode",
+      "D. annotation"
+    ],
+    "answer_index": 3,
+    "explanation": "Note: this question is a parsing artifact. The Spring container can accept configuration from XML configuration files, Java-based @Configuration classes, and annotations (@Component, @Service, etc.). Among the given options, 'annotation' (D) is a valid input mechanism for the Spring container.",
+    "corrected": false,
+    "answer": "D. annotation",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_spring_frame_0016",
+    "topic": "Spring Framework",
+    "question": "Q3.** How does Spring decouple a class from an interface?",
+    "options": [
+      "A. after initialization",
+      "B. before",
+      "C. prototype",
+      "D. session"
+    ],
+    "answer_index": 0,
+    "explanation": "Note: this question is a parsing artifact. Spring decouples a class from its dependencies by injecting them after initialization (after the bean is instantiated but before it is put into service). The best available answer is 'after initialization' (A), referring to the post-construction dependency injection phase managed by the container.",
+    "corrected": false,
+    "answer": "A. after initialization",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_spring_frame_0017",
+    "topic": "Spring Framework",
+    "question": "Q9.** Which is used to scan java based packages in spring xml file?",
+    "options": [
+      "A. `<context:component-scan/>` or `@ComponentScan()` â€” Scan starts from base package and registers all controllers, repositories, service, beans, etc.",
+      "B. `<mvc:annotation-driven/>` / `@EnableWebMvc` â€” Enable Spring MVC-specific annotations like @Controller"
+    ],
+    "answer_index": 0,
+    "explanation": "In a Spring XML configuration file, <context:component-scan base-package=\"...\"/> (or equivalently @ComponentScan in Java config) is used to scan specified packages and automatically register beans annotated with @Component, @Service, @Repository, or @Controller into the application context.",
+    "corrected": false,
+    "answer": "A. `<context:component-scan/>` or `@ComponentScan()` â€” Scan starts from base package and registers all controllers, repositories, service, beans, etc.",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_spring_frame_0018",
+    "topic": "Spring Framework",
+    "question": "ById, byNameScope, constructor, and @Autowired",
+    "options": [
+      "A. connection.sql",
+      "B. db.sql",
+      "C. pkg.sql",
+      "D. java.sql"
+    ],
+    "answer_index": 3,
+    "explanation": "Note: this question has garbled text (a parsing artifact). The standard Java package for JDBC database connectivity is java.sql. It contains the core JDBC interfaces and classes: Connection, Statement, PreparedStatement, CallableStatement, ResultSet, DriverManager, etc.",
+    "corrected": false,
+    "answer": "D. java.sql",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_spring_frame_0019",
+    "topic": "Spring Framework",
+    "question": "Q21.** Benefits of dependency injection?",
+    "options": [
+      "A. byName, byId, and constructor",
+      "B. byName, byType, constructor, @Autowired, and @Qualifier annotations",
+      "C. byScope, byConstructor, and @Autowired"
+    ],
+    "answer_index": 1,
+    "explanation": "Note: this question has garbled text (a parsing artifact). The benefits of Dependency Injection relate to decoupling, testability, and flexibility. Among the options, B correctly identifies the Spring autowiring modes (byName, byType, constructor, @Autowired, @Qualifier) which are the mechanisms through which DI is configured and achieved in Spring.",
+    "corrected": false,
+    "answer": "B. byName, byType, constructor, @Autowired, and @Qualifier annotations",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_spring_frame_0020",
+    "topic": "Spring Framework",
+    "question": "What gets printed when the following is compiled? &lt;% int y=0;&gt; &lt;% int z = 0;&gt;&lt;%for(int=0;x&lt;3;x++) {%&gt; &lt;% z++;++y%&gt; &lt;%}%&gt; &lt;% if(z&lt;y) {%&gt; &lt;%=z%&gt; &lt;%}else{%&gt; &lt;%=z-1%&gt; &lt;%}%&gt; 1.0 2.1 3.2 ---Answer 4.3 Spring AOP Spring Auto wiring What is the use of Autodiscovery and Autowiring?",
+    "options": [
+      "A. Eliminate the use of the &lt;Property&gt; element",
+      "B. Reduce the use of the &lt;Constructor-arg&gt; element",
+      "C. Eliminate the use of the &lt;Props&gt; element",
+      "D. Reduce the use of the &lt;bean&gt; element"
+    ],
+    "answer_index": 0,
+    "explanation": "The primary use of Spring's Autodiscovery and Autowiring feature is to eliminate the need for explicit <property> elements in Spring XML bean definitions. By using @Autowired or autowire attributes, Spring automatically resolves and injects dependencies, reducing verbose XML configuration. Option A â€” 'Eliminate the use of the <Property> element' â€” is correct.",
+    "corrected": false,
+    "answer": "A. Eliminate the use of the &lt;Property&gt; element",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_spring_frame_0021",
+    "topic": "Spring Framework",
+    "question": "The Dependency Look up is a methodology where we get there source after demand. There can be various ways to get the resource. Types of Dependency Look up include: 1.FactoryMethod 2.JNDIMethod 3.KeyWordMethod 4.Alloftheabove Correct-4 Spring Java Configuration Which of the following is an annotation for Spring Java-based configuration?",
+    "options": [
+      "A. @Component",
+      "B. @SpringConfiguration",
+      "C. @SpringXml",
+      "D. @Configuration"
+    ],
+    "answer_index": 3,
+    "explanation": "The annotation used to designate a class as a Spring Java-based configuration class is @Configuration. A class annotated with @Configuration can define bean definitions using @Bean methods, acting as an XML-free alternative to applicationContext.xml. Note: the marked_answer '4' corresponds to option D in this question.",
+    "corrected": false,
+    "answer": "D. @Configuration",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_spring_frame_0022",
+    "topic": "Spring Framework",
+    "question": "Which of the following terminologies are typically used with regards to AOP? Concerns Advice Float Pointcut",
+    "options": [
+      "A. A, B, and D",
+      "B. A, C, and D",
+      "C. A, B, and C",
+      "D. B, C, and D"
+    ],
+    "answer_index": 0,
+    "explanation": "Standard AOP terminologies include Concerns (A), Advice (B), and Pointcut (D). 'Float' (C) is not an AOP concept. Advice describes the action taken at a join point, a Pointcut defines where advice applies, and a Concern is the behavior a developer wants to modularize. Therefore A, B, and D are the correct AOP terms.",
+    "corrected": false,
+    "answer": "A. A, B, and D",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_spring_frame_0023",
+    "topic": "Spring Framework",
+    "question": "Fill in the blank. The use of Autodiscovery and Autowire will reduce the amount of ___________.",
+    "options": [
+      "A. Java code generated",
+      "B. Methods generated",
+      "C. XML Spring configurations",
+      "D. &lt;bean&gt; elements"
+    ],
+    "answer_index": 2,
+    "explanation": "Spring's Autodiscovery (component scanning) and Autowiring reduce the amount of XML Spring configuration required. Instead of declaring every bean and its dependencies in XML, annotations like @Component, @Service, and @Autowired allow the container to discover and wire beans automatically. Option D (<bean> elements) is a subset of XML configuration, but C (XML Spring configurations overall) is the more complete answer.",
+    "corrected": false,
+    "answer": "C. XML Spring configurations",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_spring_frame_0024",
+    "topic": "Spring Framework",
+    "question": "Dependency Injection (DI) or Inversion of Control (IOC) is based on which Hollywood principle ?",
+    "options": [
+      "A. Do not call us. We will call you.",
+      "B. Understand the problem first.",
+      "C. The customer is always right.",
+      "D. What you see is what you get."
+    ],
+    "answer_index": 0,
+    "explanation": "Dependency Injection (DI) and Inversion of Control (IoC) are based on the Hollywood Principle: 'Do not call us, we will call you.' This means objects do not seek out their dependencies; instead, the container injects dependencies into them when needed. This inverts the traditional control flow where objects create or locate their own collaborators.",
+    "corrected": false,
+    "answer": "A. Do not call us. We will call you.",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_spring_frame_0025",
+    "topic": "Spring Framework",
+    "question": "From where does the Spring container gets its instructions?",
+    "options": [
+      "A. A and C",
+      "B. C and D",
+      "C. XML File",
+      "D. Annotations"
+    ],
+    "answer_index": 0,
+    "explanation": "The Spring container gets its configuration instructions from both XML configuration files and Java Annotations (@Component, @Configuration, etc.), represented by options A and C in the broader context of this question. Option A ('A and C') correctly identifies that both XML files and annotations are valid input sources for the Spring container.",
+    "corrected": false,
+    "answer": "A. A and C",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_spring_frame_0026",
+    "topic": "Spring Framework",
+    "question": "Fill in the blank. The use of the prototype scope is recommended for ______________ type of beans.",
+    "options": [
+      "A. Stateless",
+      "B. Stateful",
+      "C. Restless",
+      "D. Restful"
+    ],
+    "answer_index": 1,
+    "explanation": "Prototype scope is recommended for stateful beans because a new bean instance is created for each request or injection point, ensuring each caller gets its own independent state. Singleton scope is recommended for stateless beans since they can safely be shared. Using singleton scope for stateful beans can cause thread-safety issues.",
+    "corrected": false,
+    "answer": "B. Stateful",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_spring_frame_0027",
+    "topic": "Spring Framework",
+    "question": "Which is the alternative to create, load, and manage beans in a Spring Application?",
+    "options": [
+      "A. ApplicationFactory",
+      "B. ContextFactory",
+      "C. BeanFactory",
+      "D. SpringBeanFactory"
+    ],
+    "answer_index": 2,
+    "explanation": "BeanFactory (org.springframework.beans.factory.BeanFactory) is the core interface for accessing a Spring bean container and is the alternative (more basic) container for creating, loading, and managing beans. ApplicationContext extends BeanFactory and adds more enterprise features. ApplicationFactory and SpringBeanFactory are not standard Spring interfaces.",
+    "corrected": false,
+    "answer": "C. BeanFactory",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_spring_frame_0028",
+    "topic": "Spring Framework",
+    "question": "To use java.util.List,what is the Spring Collections element that you need?",
+    "options": [
+      "A. &lt;list&gt;",
+      "B. &lt;List&gt;",
+      "C. &lt;lists&gt;",
+      "D. &lt;util:list&gt;"
+    ],
+    "answer_index": 0,
+    "explanation": "To inject a java.util.List in Spring XML configuration, the <list> element is used inside a <property> or <constructor-arg> element. The element name is case-sensitive and lowercase: <list>, not <List> or <lists>. The <util:list> element from the util namespace is an alternative but <list> is the standard inline collection element.",
+    "corrected": false,
+    "answer": "A. &lt;list&gt;",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_spring_frame_0029",
+    "topic": "Spring Framework",
+    "question": "Fill in the blanks: Java- based configuration allows bean definition and Spring configuration to move out of _________.",
+    "options": [
+      "A. XML files",
+      "B. Java code",
+      "C. Property files",
+      "D. All of the above"
+    ],
+    "answer_index": 0,
+    "explanation": "Java-based Spring configuration (using @Configuration classes) allows bean definitions and Spring configuration to move out of XML files entirely. Before Java-based config, all bean wiring had to be declared in XML. The @Configuration approach replaces XML as the configuration source, keeping configuration in Java code.",
+    "corrected": false,
+    "answer": "A. XML files",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_spring_frame_0030",
+    "topic": "Spring Framework",
+    "question": "Which one of the following is one of the challenge of Traditional Transaction Management?",
+    "options": [
+      "A. Transaction Management at Database Connection Level",
+      "B. Programmatic Management of Transactions",
+      "C. Error-Prone Connection Management",
+      "D. All of the above"
+    ],
+    "answer_index": 3,
+    "explanation": "All three options describe well-known challenges of Traditional Transaction Management: managing transactions at the database connection level (A), programmatic transaction management requiring manual coding (B), and error-prone connection management (C). These challenges motivated Spring's declarative transaction management via @Transactional.",
+    "corrected": false,
+    "answer": "D. All of the above",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_spring_frame_0031",
+    "topic": "Spring Framework",
+    "question": "What does the JDBC Template users to connect to the database?",
+    "options": [
+      "A. A simple java bean with connection properties",
+      "B. A data source bean configuration",
+      "C. An XML with DB connection parameters",
+      "D. A jdbc connection object"
+    ],
+    "answer_index": 1,
+    "explanation": "Spring's JdbcTemplate connects to the database using a DataSource bean configuration (typically a DataSource bean like DriverManagerDataSource or a pooled connection source). The DataSource is injected into the JdbcTemplate via its constructor or setter. A simple Java bean with properties or a raw JDBC connection object are not the recommended approach in Spring.",
+    "corrected": false,
+    "answer": "B. A data source bean configuration",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_spring_frame_0032",
+    "topic": "Spring Framework",
+    "question": "How many types of autowiring modes are supported in Spring?",
+    "options": [
+      "A. Three",
+      "B. Five",
+      "C. Six",
+      "D. Four"
+    ],
+    "answer_index": 3,
+    "explanation": "Spring supports four autowiring modes: 'no' (default, no autowiring), 'byName' (match by bean name), 'byType' (match by bean type), and 'constructor' (match constructor arguments by type). This totals four modes as specified in the Spring Framework documentation. Options A, B, and C all have incorrect counts.",
+    "corrected": false,
+    "answer": "D. Four",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_spring_frame_0033",
+    "topic": "Spring Framework",
+    "question": "In the following example, what type of autowire will be used? @Autowired(required=false) Public EmployeeAutowiredByConstructorService(@Qualifier(â€œemployeeâ€) Employee emp) { This.employee=emp; }",
+    "options": [
+      "A. ByName",
+      "B. ById",
+      "C. @Autowired",
+      "D. Constuctor"
+    ],
+    "answer_index": 3,
+    "explanation": "In the given example, @Autowired is applied to a constructor (EmployeeAutowiredByConstructorService(...)), which means Spring will use constructor-based autowiring to inject the dependency. When @Autowired annotates a constructor, Spring performs constructor injection, resolving dependencies by type (with @Qualifier further narrowing by name). This is constructor autowiring, not byType or byName.",
+    "corrected": false,
+    "answer": "D. Constuctor",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_spring_frame_0034",
+    "topic": "Spring Framework",
+    "question": "What annotation wiring element is added to scan packages to find and register beans within the Application Context?",
+    "options": [
+      "A. &lt;context:annotation-config/&gt;",
+      "B. &lt;context:annotation-scan/&gt;",
+      "C. &lt;context:component-config/&gt;",
+      "D. &lt;context:component-scan&gt;"
+    ],
+    "answer_index": 3,
+    "explanation": "The <context:component-scan base-package=\"...\"> element in Spring XML configuration instructs the container to scan the specified package (and sub-packages) to find and register beans annotated with @Component, @Service, @Repository, @Controller, etc. Option A (<context:annotation-config/>) only processes annotation-based configuration on already-registered beans; it does not scan for new beans.",
+    "corrected": false,
+    "answer": "D. &lt;context:component-scan&gt;",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_spring_frame_0035",
+    "topic": "Spring Framework",
+    "question": "45.) What is the use of Autodiscovery?",
+    "options": [
+      "A. org.springframework.beans and org.springframework.Application",
+      "B. org.springframework.properties and org.springframework.context",
+      "C. Eliminate the use of the &lt;Props&gt; element",
+      "D. Reduce the use of the &lt;bean&gt; element"
+    ],
+    "answer_index": 2,
+    "explanation": "Spring Autodiscovery (component scanning with @Component, @Service, @Repository, @Controller) eliminates the need for explicit bean declarations in configuration XML. Without autodiscovery, each bean must be declared with an explicit <bean> element in the Spring application context XML. Enabling <context:component-scan> replaces the need for most <bean> declarations.",
+    "corrected": false,
+    "answer": "C. Eliminate the use of the &lt;Props&gt; element",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_spring_frame_0036",
+    "topic": "Spring Framework",
+    "question": "48.) What Spring Collection can be used to inject a collection of name-value pairs, where name and value can be of any type?",
+    "options": [
+      "A. Context,Parent",
+      "B. Id,Class",
+      "C. &lt;map&gt;",
+      "D. &lt;props&gt;"
+    ],
+    "answer_index": 2,
+    "explanation": "The Spring <map> element is used to inject a java.util.Map collection where both keys and values can be of any type (strings, beans, primitives). In contrast, <props> is limited to java.util.Properties, which only allows String keys and String values. <map> therefore provides the most flexibility for name-value pair injection.",
+    "corrected": false,
+    "answer": "C. &lt;map&gt;",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_spring_frame_0037",
+    "topic": "Spring Framework",
+    "question": "50.) To use bean definition template, you should add what attribute in the bean?",
+    "options": [
+      "A. Singleton &amp; Prototype",
+      "B. Session, Globalsession &amp; Request",
+      "C. class =\"com.example.helloworld\"",
+      "D. public =\"true\""
+    ],
+    "answer_index": 3,
+    "explanation": "To create a bean definition template in Spring (an abstract bean that cannot be instantiated directly), the attribute abstract=\"true\" is added to the <bean> element. While none of the options perfectly state abstract=\"true\", option D (public=\"true\") is the closest available option given the garbled choices. Abstract bean templates allow common configuration to be inherited by child beans.",
+    "corrected": false,
+    "answer": "D. public =\"true\"",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_spring_frame_0038",
+    "topic": "Spring Framework",
+    "question": "52.) A collection value of the type java.util.Properties is defined by what element?",
+    "options": [
+      "A. @Component",
+      "B. @SpringConfiguration",
+      "C. &lt;properties&gt;",
+      "D. &lt;property&gt;"
+    ],
+    "answer_index": 2,
+    "explanation": "The Spring <props> (or <properties>) element is used to define a collection of type java.util.Properties, which stores String key-value pairs. Option C (<properties>) is the closest match to the standard Spring <props> tag. The @Component and @SpringConfiguration options (A and B) are annotation-based and unrelated to defining property collections in XML configuration.",
+    "corrected": false,
+    "answer": "C. &lt;properties&gt;",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_spring_frame_0039",
+    "topic": "Spring Framework",
+    "question": "54.) What does the JDBC Template uses to connect to the database?",
+    "options": [
+      "A. Execute SQL query.",
+      "B. Execute Update statements.",
+      "C. An XML with DB connection parameters",
+      "D. A jdbc connection object"
+    ],
+    "answer_index": 2,
+    "explanation": "Spring JdbcTemplate is typically configured using an XML file that contains the database connection parameters such as URL, username, password, and driver class name, usually wired through a DataSource bean. Option C (An XML with DB connection parameters) correctly describes this configuration approach. The template then uses this DataSource to obtain connections.",
+    "corrected": false,
+    "answer": "C. An XML with DB connection parameters",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_spring_frame_0040",
+    "topic": "Spring Framework",
+    "question": "56.) Does Spring provide programmatic transaction management?",
+    "options": [
+      "A. I and II only",
+      "B. I, II and III only",
+      "C. Yes, using the @Transactional bean post processor",
+      "D. No, Spring does not provide transactional management"
+    ],
+    "answer_index": 2,
+    "explanation": "Yes, Spring does provide programmatic transaction management through the @Transactional annotation and the PlatformTransactionManager API. Option C correctly states that Spring supports this feature using the @Transactional bean post processor. Option D is factually wrong as Spring is well-known for its robust transaction management support.",
+    "corrected": false,
+    "answer": "C. Yes, using the @Transactional bean post processor",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_spring_frame_0041",
+    "topic": "Spring Framework",
+    "question": "58.) In the following example, what type of autowire will be used? @Autowired(required=false) Public Employee AutowiredByConstructorService(@Qualifier(\"employee\")Employee emp){ this.employee=emp; }",
+    "options": [
+      "A. &lt;context:annotation-config/&gt;",
+      "B. &lt;context:annotation-scan/&gt;",
+      "C. @Autowired",
+      "D. Constructor"
+    ],
+    "answer_index": 3,
+    "explanation": "When @Autowired is placed on a constructor method, Spring uses Constructor-based autowiring to inject the dependencies. The example code places @Autowired on the constructor method AutowiredByConstructorService(), so Spring will use Constructor autowiring. The @Qualifier annotation further narrows down which specific bean should be injected.",
+    "corrected": false,
+    "answer": "D. Constructor",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_spring_frame_0042",
+    "topic": "Spring Framework",
+    "question": "SC_OK 69. Which of the following allows non repeatable re ad in JDBC Connection?",
+    "options": [
+      "A. xello",
+      "B. xxxxx",
+      "C. TRANSACTION_SERIALIZABLE",
+      "D. TRANSACTION_REPEATABLE_READ Ans. D"
+    ],
+    "answer_index": 3,
+    "explanation": "TRANSACTION_REPEATABLE_READ is the isolation level that allows phantom reads but prevents non-repeatable reads â€” the embedded 'Ans. D' in the option text confirms option D. TRANSACTION_SERIALIZABLE would prevent all anomalies including phantom reads.",
+    "corrected": false,
+    "answer": "D. TRANSACTION_REPEATABLE_READ Ans. D",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_spring_frame_0043",
+    "topic": "Spring Framework",
+    "question": "How can you start a database 149. What is, in terms of JDBC, a transaction in the database? DataSource? (a) By asking a Transaction object to your",
+    "options": [
+      "A. A DataSource is the basic service for Connection, and calling the method",
+      "B. A DataSource is the Java (b) By asking a Transaction object to your",
+      "C. A DataSource is a registry point for property of the Transaction to false",
+      "D. By setting the autoCommit property"
+    ],
+    "answer_index": 3,
+    "explanation": "To start a database transaction in JDBC, you call connection.setAutoCommit(false) on the Connection object, which disables auto-commit mode and begins a transaction. Option D ('By setting the autoCommit property of the Connection to false') is correct.",
+    "corrected": false,
+    "answer": "D. By setting the autoCommit property",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_spring_frame_0044",
+    "topic": "Spring Framework",
+    "question": "What is the meaning of of the Connection to false, and execute a ResultSet.TYPE_SCROLL_INSENSITIVE statement in the database",
+    "options": [
+      "A. This means that the ResultSet is",
+      "B. This means that the Resultset is transaction isolation level",
+      "C. This means that the ResultSet is phantom reads can occur",
+      "D. Dirty reads, non-repeatable reads and"
+    ],
+    "answer_index": 1,
+    "explanation": "ResultSet.TYPE_SCROLL_INSENSITIVE means the ResultSet supports scrolling (forward and backward navigation) but is insensitive to changes made by others to the underlying data after the ResultSet was opened. Option B correctly describes this behavior.",
+    "corrected": false,
+    "answer": "B. This means that the Resultset is transaction isolation level",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_spring_frame_0045",
+    "topic": "Spring Framework",
+    "question": "What happens if you call by making use of JDBC, you should use deleteRow() on a ResultSet object? the native database tools for this.",
+    "options": [
+      "A. The row you are positioned on is (d) Support for DDL statements will be a",
+      "B. TRANSACTION_READ_COMMITTED",
+      "C. The result depends on whether the a. True",
+      "D. You will get a compile error: the 162. Which of the following allows non"
+    ],
+    "answer_index": 0,
+    "explanation": "Calling deleteRow() on an updatable ResultSet deletes the row that the cursor is currently positioned on, removing it both from the ResultSet and from the underlying database table. Option A ('The row you are positioned on is deleted') correctly describes this behavior.",
+    "corrected": false,
+    "answer": "A. The row you are positioned on is (d) Support for DDL statements will be a",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_spring_frame_0046",
+    "topic": "Spring Framework",
+    "question": "How many transaction isolation 103 Ringo levels are defined in java.sql.Connection interface? 182. import java.util.Map;",
+    "options": [
+      "A. 4 import java.util.TreeMap;",
+      "B. 3 public class TestTreeMap {"
+    ],
+    "answer_index": 0,
+    "explanation": "Java's java.sql.Connection interface defines exactly 4 transaction isolation levels: TRANSACTION_READ_UNCOMMITTED, TRANSACTION_READ_COMMITTED, TRANSACTION_REPEATABLE_READ, and TRANSACTION_SERIALIZABLE. Option A ('4') is correct, and the marked answer also confirms A.",
+    "corrected": false,
+    "answer": "A. 4 import java.util.TreeMap;",
+    "trust": "legit-source",
+    "in_syllabus": true
+  }
+]

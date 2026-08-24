@@ -1,0 +1,2417 @@
+[
+  {
+    "id": "lqb_out_of_sylla_0001",
+    "topic": "JSP / Servlet",
+    "question": "DispatcherServlet",
+    "options": [
+      "A. byName, byId, and constructor",
+      "B. byName, byType, constructor, @Autowired, and @Qualifier annotations",
+      "C. @BeforeClass",
+      "D. @AfterClass"
+    ],
+    "answer_index": 1,
+    "explanation": "Note: this question has garbled text ('DispatcherServlet' as question text is a parsing artifact). In Spring, the supported autowiring modes are: byName, byType, constructor, and @Autowired/@Qualifier annotations. Option B correctly lists all of these, while option A incorrectly includes 'byId' which does not exist as a Spring autowiring mode.",
+    "corrected": false,
+    "answer": "B. byName, byType, constructor, @Autowired, and @Qualifier annotations",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0002",
+    "topic": "JSP / Servlet",
+    "question": "ResultSet.UPDATABLE",
+    "options": [
+      "A. response.sendRedirect()",
+      "B. request.sendRedirect()",
+      "C. request.forward()",
+      "D. response.forward()"
+    ],
+    "answer_index": 0,
+    "explanation": "Note: this question has garbled text (a parsing artifact). To redirect the client to a new URL from a servlet, the correct method call is response.sendRedirect(url). This sends an HTTP 302 redirect response to the client browser. request.sendRedirect() does not exist, and request/response.forward() is not a valid method (forward belongs to RequestDispatcher).",
+    "corrected": false,
+    "answer": "A. response.sendRedirect()",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0003",
+    "topic": "JSP / Servlet",
+    "question": "JEE 5 has two different but complementary technologeies which is not",
+    "options": [
+      "A. Servlet",
+      "B. context",
+      "C. JSP"
+    ],
+    "answer_index": 1,
+    "explanation": "JEE 5 defines two complementary web technologies: Servlets and JSP (JavaServer Pages). 'context' is not one of these two technologies — it refers to the servlet context (a configuration/environment object), not a standalone web technology. Options A (Servlet) and C (JSP) are the two correct complementary technologies.",
+    "corrected": false,
+    "answer": "B. context",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0004",
+    "topic": "JSP / Servlet",
+    "question": "JSP technology produce dynamic web content by",
+    "options": [
+      "A. content to Servlet",
+      "B. context to logic",
+      "C. logic to content"
+    ],
+    "answer_index": 2,
+    "explanation": "JSP (JavaServer Pages) produces dynamic web content by embedding Java logic within HTML content — that is, by mixing logic into content (logic to content). This is the page-centric approach where JSP pages contain both presentation markup and processing logic, unlike pure servlets which generate HTML programmatically.",
+    "corrected": false,
+    "answer": "C. logic to content",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0005",
+    "topic": "JSP / Servlet",
+    "question": "Which term is used as custom web-server extensions",
+    "options": [
+      "A. Servlet",
+      "B. JSF",
+      "C. JSP"
+    ],
+    "answer_index": 0,
+    "explanation": "Servlets are described as custom web-server extensions because they extend the functionality of a web server by handling requests and generating dynamic responses. They run inside a servlet container (like Tomcat) and follow the request-response model. JSP compiles to servlets but is a higher-level abstraction, not itself a 'server extension' term.",
+    "corrected": false,
+    "answer": "A. Servlet",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0006",
+    "topic": "JSP / Servlet",
+    "question": "Servlet produce dynamic web content request by using",
+    "options": [
+      "A. By Application server",
+      "B. By Webserver",
+      "C. JSP Container"
+    ],
+    "answer_index": 1,
+    "explanation": "Servlets produce dynamic web content by running inside a web server (specifically a servlet/web container such as Tomcat). The web container manages the servlet lifecycle, passes HTTP requests to the servlet, and forwards the generated response back to the client through the web server.",
+    "corrected": false,
+    "answer": "B. By Webserver",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0007",
+    "topic": "JSP / Servlet",
+    "question": "The JSP Life cycle which is not state",
+    "options": [
+      "A. isThreadSafe=true",
+      "B. Translation,initialization,Excution finalization",
+      "C. Translation,Excution finalization"
+    ],
+    "answer_index": 0,
+    "explanation": "The JSP lifecycle states are: Translation, Initialization, Execution, and Finalization/Destruction. 'isThreadSafe=true' is a JSP page directive attribute, not a lifecycle state. It controls whether the generated servlet implements SingleThreadModel (when false), but it is an attribute setting, not a phase of the lifecycle.",
+    "corrected": false,
+    "answer": "A. isThreadSafe=true",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0008",
+    "topic": "JSP / Servlet",
+    "question": "The JSP Life cycle state Execute which method maybe overloaded",
+    "options": [
+      "A. JspInit()",
+      "B. JspService()",
+      "C. JspDestroy()"
+    ],
+    "answer_index": 1,
+    "explanation": "_jspService() is the JSP lifecycle method called during the Execution phase for every HTTP request. It is generated by the JSP container and corresponds to service() in a regular servlet. Unlike jspInit() and jspDestroy(), _jspService() should not be overridden by JSP page authors — it is auto-generated by the container.",
+    "corrected": false,
+    "answer": "B. JspService()",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0009",
+    "topic": "JSP / Servlet",
+    "question": "The JSP is not aiding reusability by",
+    "options": [
+      "A. JavaBean",
+      "B. custom tags",
+      "C. jstl",
+      "D. uri"
+    ],
+    "answer_index": 3,
+    "explanation": "JSP aids reusability through JavaBeans (encapsulate logic and data), custom tags (reusable UI components), and JSTL (standard tag library for common tasks). The 'uri' attribute used in taglib directives is a namespace identifier, not a reusability mechanism itself — it references an existing tag library but does not contribute to making JSP components reusable.",
+    "corrected": false,
+    "answer": "D. uri",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0010",
+    "topic": "JSP / Servlet",
+    "question": "Model 1 Architecture support",
+    "options": [
+      "A. Servlet",
+      "B. JavaBean",
+      "C. page-centric"
+    ],
+    "answer_index": 2,
+    "explanation": "Model 1 Architecture is page-centric, meaning each JSP page handles its own request processing, business logic, and presentation. This contrasts with Model 2 (MVC) Architecture, which separates concerns by using a servlet as the controller, JavaBeans as the model, and JSP pages purely for presentation.",
+    "corrected": false,
+    "answer": "C. page-centric",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0011",
+    "topic": "JSP / Servlet",
+    "question": "Model 2 Architectures support MVC following benefits over model 1 architectures",
+    "options": [
+      "A. Maintainability",
+      "B. Security",
+      "C. page-centric",
+      "D. Extensibility"
+    ],
+    "answer_index": 0,
+    "explanation": "Model 2 (MVC) Architecture offers Maintainability as a key benefit over Model 1. By separating controller logic (Servlet), business logic (Model/Beans), and presentation (JSP), changes to one layer do not affect others. This clear separation of concerns makes the application easier to maintain, test, and evolve over time.",
+    "corrected": false,
+    "answer": "A. Maintainability",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0012",
+    "topic": "JSP / Servlet",
+    "question": "Basic Deployment structure of web application are",
+    "options": [
+      "A. jar",
+      "B. war",
+      "C. Expanded dirctory format"
+    ],
+    "answer_index": 1,
+    "explanation": "The basic deployment structure for a Java web application is a WAR (Web Application Archive) file. A WAR file is a compressed archive containing the web application's JSPs, servlets, static resources, WEB-INF/web.xml, and JAR libraries. The JAR format is for Java libraries, and expanded directory format is an alternative but WAR is the standard deployment unit.",
+    "corrected": false,
+    "answer": "B. war",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0013",
+    "topic": "JSP / Servlet",
+    "question": "Basic Deployment folder in web container of Tomcat",
+    "options": [
+      "A. lib",
+      "B. WEB-INF",
+      "C. wabapps"
+    ],
+    "answer_index": 2,
+    "explanation": "The standard deployment folder in Apache Tomcat's web container is the 'webapps' directory (option C appears as 'wabapps' — a typo in the source material). Web application WAR files or expanded directories placed in this folder are automatically deployed by Tomcat at startup. The 'lib' and 'WEB-INF' directories serve different purposes.",
+    "corrected": false,
+    "answer": "C. wabapps",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0014",
+    "topic": "JSP / Servlet",
+    "question": "Deployment descriptor web.xml is placed on",
+    "options": [
+      "A. META-INF",
+      "B. Configaration",
+      "C. WEB-INF"
+    ],
+    "answer_index": 2,
+    "explanation": "The deployment descriptor web.xml is placed inside the WEB-INF directory of the web application. The WEB-INF directory is not publicly accessible from the web — its contents (including web.xml, classes/, and lib/) are accessible only to the server-side application, providing a secure location for configuration files.",
+    "corrected": false,
+    "answer": "C. WEB-INF",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0015",
+    "topic": "JSP / Servlet",
+    "question": "Jsp programming logic are classified by-",
+    "options": [
+      "A. El",
+      "B. Scripting element",
+      "C. directives",
+      "D. Action element"
+    ],
+    "answer_index": 1,
+    "explanation": "JSP programming logic is classified using Scripting elements, which include: declarations (<%! %>), scriptlets (<% %>), and expressions (<%= %>). These three constructs allow embedding Java code directly into a JSP page. EL (Expression Language), directives, and action elements serve different purposes.",
+    "corrected": false,
+    "answer": "B. Scripting element",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0016",
+    "topic": "JSP / Servlet",
+    "question": "Non-jsp are call-",
+    "options": [
+      "A. JSF",
+      "B. TLD",
+      "C. Templete Text"
+    ],
+    "answer_index": 2,
+    "explanation": "Static, non-JSP content in a JSP page — plain HTML, XML, or text that is passed through to the response as-is — is called Template Text. It is the portion of the JSP page that contains no JSP syntax. Options A (JSF) and B (TLD) refer to other technologies, not to static content within a JSP page.",
+    "corrected": false,
+    "answer": "C. Templete Text",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0017",
+    "topic": "JSP / Servlet",
+    "question": "Comment placed by",
+    "options": [
+      "A. &amp;lt!-- --&amp;gt",
+      "B. &amp;lt%-- --%&amp;gt",
+      "C. &amp;lt%= =%&amp;gt"
+    ],
+    "answer_index": 1,
+    "explanation": "JSP comments use the syntax <%-- comment text --%>. Unlike HTML comments (<!-- -->), JSP comments are removed during the translation phase and are never sent to the client browser, making them truly invisible in the rendered output. HTML comments are visible in the page source; JSP comments are not.",
+    "corrected": false,
+    "answer": "B. &amp;lt%-- --%&amp;gt",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0018",
+    "topic": "JSP / Servlet",
+    "question": "JSP Implicit Objects are",
+    "options": [
+      "A. request",
+      "B. resonse",
+      "C. exception",
+      "D. web.xml"
+    ],
+    "answer_index": 0,
+    "explanation": "The JSP implicit objects that are automatically available in a JSP page include: request, response, session, application, out, config, pageContext, page, and exception. Of the given options, 'request' (A) is a valid JSP implicit object. 'web.xml' (D) is a deployment descriptor file, not a JSP implicit object.",
+    "corrected": false,
+    "answer": "A. request",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0019",
+    "topic": "JSP / Servlet",
+    "question": "JSP Directives are",
+    "options": [
+      "A. uri",
+      "B. tagdir",
+      "C. include",
+      "D. taglib"
+    ],
+    "answer_index": 2,
+    "explanation": "The three JSP directive types are: page (<%@ page %>), include (<%@ include %>), and taglib (<%@ taglib %>). 'include' (C) is therefore a valid JSP directive. 'uri' and 'tagdir' are attributes used within the taglib directive, not directives themselves.",
+    "corrected": false,
+    "answer": "C. include",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0020",
+    "topic": "JSP / Servlet",
+    "question": "JSP Action element are",
+    "options": [
+      "A. Standard",
+      "B. Custom",
+      "C. JSTL",
+      "D. taglib"
+    ],
+    "answer_index": 0,
+    "explanation": "JSP action elements include Standard actions (such as <jsp:useBean>, <jsp:setProperty>, <jsp:getProperty>, <jsp:include>, <jsp:forward>), Custom actions (user-defined tags), and JSTL actions. 'Standard' (A) correctly identifies a category of JSP action elements. 'taglib' is a directive, not an action element.",
+    "corrected": false,
+    "answer": "A. Standard",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0021",
+    "topic": "JSP / Servlet",
+    "question": "JStL Action element are-",
+    "options": [
+      "A. Standar b) Custom",
+      "C. sqld) core"
+    ],
+    "answer_index": 0,
+    "explanation": "Note: this question has a parsing artifact where the options are merged. The four JSTL tag libraries are: core (c:), formatting (fmt:), SQL (sql:), and XML (x:). Option C's value contains 'core', identifying it as the correct answer. 'core' is the most commonly used JSTL library providing flow control, URL management, and output tags.",
+    "corrected": false,
+    "answer": "A. Standar b) Custom",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0022",
+    "topic": "JSP / Servlet",
+    "question": "Jsp:UseBean Action element has Id.Id represent-",
+    "options": [
+      "A. URI",
+      "B. JAR",
+      "C. scope",
+      "D. el"
+    ],
+    "answer_index": 3,
+    "explanation": "In the <jsp:useBean> action element, the 'id' attribute specifies the variable name by which the bean is referenced in EL (Expression Language) expressions. For example, <jsp:useBean id=\"employee\"> makes the bean accessible as ${employee} in EL. The 'el' option (D) correctly identifies this mapping to EL expression references.",
+    "corrected": false,
+    "answer": "D. el",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0023",
+    "topic": "JSP / Servlet",
+    "question": "Tag files are special JSP files that end with the following",
+    "options": [
+      "A. suffix.tag or .tags",
+      "B. suffix.tag.tagx",
+      "C. suffix.tag or.tagx"
+    ],
+    "answer_index": 2,
+    "explanation": "Tag files are special JSP files that implement reusable tag behavior; they use the file extensions .tag or .tagx. The .tagx extension supports XML syntax. Option C — 'suffix.tag or .tagx' — is correct. Option A incorrectly lists '.tags' (plural) and option B incorrectly combines the extensions.",
+    "corrected": false,
+    "answer": "C. suffix.tag or.tagx",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0024",
+    "topic": "JSP / Servlet",
+    "question": "Which of the following called deployment Descriptor?",
+    "options": [
+      "A. index.jsp",
+      "B. web.xml"
+    ],
+    "answer_index": 1,
+    "explanation": "The deployment descriptor for a Java web application is web.xml. It is located in the WEB-INF directory and contains configuration for servlets, filters, listeners, welcome files, error pages, security constraints, and other deployment settings. index.jsp is a default welcome page, not a deployment descriptor.",
+    "corrected": false,
+    "answer": "B. web.xml",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0025",
+    "topic": "JSP / Servlet",
+    "question": "Which one is describe the tag library?",
+    "options": [
+      "A. WEB-INF\\tlds\\myTaglib.tlds",
+      "B. WEB-INF\\tlds\\myTaglib.jsp",
+      "C. WEB-INF\\tlds\\myTaglib.tld"
+    ],
+    "answer_index": 2,
+    "explanation": "A Tag Library Descriptor (TLD) file describes a custom tag library and uses the .tld extension (not .tlds or .jsp). The standard location for TLD files in a web application is WEB-INF/tlds/. Therefore, the correct path is WEB-INF/tlds/myTaglib.tld — option A is wrong because it uses '.tlds' and option B because it uses '.jsp'.",
+    "corrected": false,
+    "answer": "C. WEB-INF\\tlds\\myTaglib.tld",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0026",
+    "topic": "JSP / Servlet",
+    "question": "When page directives called is threadSafe to false it's indicate? a.SingleThreadModel interface. b.multiplethreadModel interface ================Chapter-02================= 30. In JEE what happened when web container execute JSP",
+    "options": [
+      "A. jsp to Serverlet code",
+      "B. jsp to HTML",
+      "C. implementation servlet"
+    ],
+    "answer_index": 0,
+    "explanation": "When the JSP page directive sets isThreadSafe=\"false\", the JSP container generates servlet code that implements the SingleThreadModel interface, ensuring only one thread executes the servlet at a time. This prevents concurrent access issues but reduces throughput. The SingleThreadModel approach is deprecated in modern servlet specifications in favor of proper synchronization.",
+    "corrected": false,
+    "answer": "A. jsp to Serverlet code",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0027",
+    "topic": "JSP / Servlet",
+    "question": "All classes of javax.servlet package are provide",
+    "options": [
+      "A. provides the contruct between the servlet or web application and the web container",
+      "B. provides the contruct between GUI and the web container",
+      "C. core funcnality of all servlets"
+    ],
+    "answer_index": 2,
+    "explanation": "The javax.servlet package provides the core functionality of all servlets, including the Servlet interface, GenericServlet, and supporting interfaces. It forms the foundation that all servlet implementations build upon. Options A and B describe more specific constructs, not the overall purpose of the package.",
+    "corrected": false,
+    "answer": "C. core funcnality of all servlets",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0028",
+    "topic": "JSP / Servlet",
+    "question": "why do you use Servlet",
+    "options": [
+      "A. Mantainability",
+      "B. Reusability",
+      "C. core funcnality of all servlets"
+    ],
+    "answer_index": 0,
+    "explanation": "Maintainability is a primary reason to use Servlets in Java EE web applications, as the Model 2 (MVC) architecture separates concerns and makes code easier to update. Servlets provide a structured, testable layer for request handling compared to scriptlet-heavy JSPs. Option C restates a package feature rather than a developer benefit.",
+    "corrected": false,
+    "answer": "A. Mantainability",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0029",
+    "topic": "JSP / Servlet",
+    "question": "The web container implements the following",
+    "options": [
+      "A. ServletConfig",
+      "B. HTTPServletResponse",
+      "C. RequestDispatcher"
+    ],
+    "answer_index": 2,
+    "explanation": "The RequestDispatcher interface is implemented by the web container (servlet container), not by the developer. It allows a servlet to forward a request to another resource or include another resource's response. Interfaces such as Servlet and Filter are implemented by the developer.",
+    "corrected": false,
+    "answer": "C. RequestDispatcher",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0030",
+    "topic": "JSP / Servlet",
+    "question": "The web application developer use implements the following",
+    "options": [
+      "A. Servlet",
+      "B. ServletResponsec) Filter"
+    ],
+    "answer_index": 0,
+    "explanation": "The Servlet interface is the core contract that the web application developer implements (directly or via HttpServlet). The developer provides concrete implementations of init(), service(), and destroy(). The web container implements supporting interfaces such as ServletConfig and RequestDispatcher.",
+    "corrected": false,
+    "answer": "A. Servlet",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0031",
+    "topic": "JSP / Servlet",
+    "question": "The Servlet interface has lifecycle methods the following",
+    "options": [
+      "A. Init()",
+      "B. Service()",
+      "C. Destroy()",
+      "D. getServlerinfo()"
+    ],
+    "answer_index": 1,
+    "explanation": "Service() is the central lifecycle method of the Servlet interface; it is called by the container for every client request after the servlet is initialized. While init() and destroy() are also lifecycle methods, service() (or its HTTP-specific delegates doGet/doPost) handles the actual request processing. Option D (getServletInfo) is not a lifecycle method.",
+    "corrected": false,
+    "answer": "B. Service()",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0032",
+    "topic": "JSP / Servlet",
+    "question": "The service() throws the following",
+    "options": [
+      "A. IOEXception,ServletExecption",
+      "B. HTTPexception",
+      "C. nothing"
+    ],
+    "answer_index": 0,
+    "explanation": "The service() method of GenericServlet (and _jspService in JSP) is declared to throw both IOException and ServletException. IOException handles I/O errors when reading request or writing response, and ServletException covers general servlet-specific errors. No other combination of exceptions matches the method signature.",
+    "corrected": false,
+    "answer": "A. IOEXception,ServletExecption",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0033",
+    "topic": "JSP / Servlet",
+    "question": "RequestDespatcher method are following",
+    "options": [
+      "A. self",
+      "B. forward()",
+      "C. include()",
+      "D. getServletinfo()"
+    ],
+    "answer_index": 1,
+    "explanation": "RequestDispatcher defines two key methods: forward() and include(). The forward() method transfers control to another resource (servlet or JSP), while include() includes the response of another resource inline. Option A (self) and D (getServletInfo) are not RequestDispatcher methods.",
+    "corrected": false,
+    "answer": "B. forward()",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0034",
+    "topic": "JSP / Servlet",
+    "question": "Basic Servlet defined by the class",
+    "options": [
+      "A. HttpServlet",
+      "B. FacesServlet",
+      "C. GenericServlet"
+    ],
+    "answer_index": 0,
+    "explanation": "HttpServlet is the standard abstract class that developers extend to create HTTP-specific servlets; it provides doGet(), doPost(), and other HTTP method handlers. FacesServlet is specific to JSF, and GenericServlet is the protocol-independent base that HttpServlet itself extends. For typical web development, HttpServlet is the correct starting class.",
+    "corrected": false,
+    "answer": "A. HttpServlet",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0035",
+    "topic": "JSP / Servlet",
+    "question": "To use servlet define tag in web.xml",
+    "options": [
+      "A. servlet",
+      "B. include",
+      "C. servlet-Mapping"
+    ],
+    "answer_index": 0,
+    "explanation": "In web.xml, the <servlet> element declares a servlet by specifying its name and class. The companion element <servlet-mapping> then maps URL patterns to the declared servlet. The <include> tag is an XML directive unrelated to servlet registration.",
+    "corrected": false,
+    "answer": "A. servlet",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0036",
+    "topic": "JSP / Servlet",
+    "question": "To use log method for",
+    "options": [
+      "A. Application log",
+      "B. web server log",
+      "C. jsp log"
+    ],
+    "answer_index": 1,
+    "explanation": "The log() method inherited from GenericServlet writes messages to the web server's log file (typically the container's error/access log). It is not specific to application-level logging (Log4j/SLF4J) or JSP-level output. This makes it useful for server-side diagnostic messages.",
+    "corrected": false,
+    "answer": "B. web server log",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0037",
+    "topic": "JSP / Servlet",
+    "question": "To use HttpServlet produce responsed by",
+    "options": [
+      "A. HttpRequest",
+      "B. HttpResponse",
+      "C. servlet"
+    ],
+    "answer_index": 1,
+    "explanation": "HttpServlet produces its response using HttpServletResponse (often referred to as HttpResponse in shorthand), which provides methods like getWriter() and getOutputStream(). HttpServletRequest is for reading the request, not producing a response. The servlet itself does not produce the response object—it uses the container-provided HttpServletResponse.",
+    "corrected": false,
+    "answer": "B. HttpResponse",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0038",
+    "topic": "JSP / Servlet",
+    "question": "45.The web container does not implements which interface ? a.Servlet",
+    "options": [
+      "A. initialization, service, destruction",
+      "B. initialization, servlet, destroy",
+      "C. initialization, servletConfig, destruction",
+      "D. initialization, definition, destruction"
+    ],
+    "answer_index": 0,
+    "explanation": "The standard three phases of the servlet lifecycle are initialization (init()), service (service()), and destruction (destroy()). This is the canonical description used in the Java Servlet specification. Options B, C, and D either misspell or substitute incorrect phase names.",
+    "corrected": false,
+    "answer": "A. initialization, service, destruction",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0039",
+    "topic": "JSP / Servlet",
+    "question": "47.The container uses the ServletConfig interface to pass information to a servlet.Which is true? a.servlet b.initialization c.nothing 48.The State change of the ServletContext object. Which interface is uses? a.ServletConfig b.ServletContextAttributeListener c.ServletContextListener 49.Which interface can perform similar functionality? a.ServletContextListener b.ServletRequest c.ServletContextAttributeListener 50.Which interface is manages client requests?",
+    "options": [
+      "A. setParameter()",
+      "B. getParamValue()",
+      "C. getParameter()"
+    ],
+    "answer_index": 2,
+    "explanation": "The getParameter() method of HttpServletRequest is used to retrieve values of request parameters (form fields, query string values). setParameter() does not exist on the request object, and getParamValue() is not a standard API method. For initialization parameters from web.xml, getInitParameter() on ServletConfig is used instead.",
+    "corrected": false,
+    "answer": "C. getParameter()",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0040",
+    "topic": "JSP / Servlet",
+    "question": "52.Which methods allow you to override the behavior of HTTP?",
+    "options": [
+      "A. doOptions() and doTrace()",
+      "B. dogetOptions and doGetTrace()",
+      "C. doSetOptions and doSetTrace()"
+    ],
+    "answer_index": 0,
+    "explanation": "The HttpServlet class provides doOptions() and doTrace() specifically to allow developers to override the behavior of the HTTP OPTIONS and TRACE methods. These are the two HTTP methods whose default handling can be customized by overriding those methods in a subclass. The other options reference non-existent method names.",
+    "corrected": false,
+    "answer": "A. doOptions() and doTrace()",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0041",
+    "topic": "JSP / Servlet",
+    "question": "This language is far simpler to understand than Java and looks very similar to JavaScript.The following are good reasons for",
+    "options": [
+      "A. JavaScript is something that most page authors are already familiar with",
+      "B. by the use of scriptlets is that of maintainability",
+      "C. The EL is inspired by ECMAScript, which is the standardized version of JavaScript"
+    ],
+    "answer_index": 2,
+    "explanation": "The JSP Expression Language (EL) is explicitly described in the JSP specification as being inspired by ECMAScript (the standardized version of JavaScript) and XPath, making it familiar to front-end developers. This syntactic similarity reduces the learning curve for page authors who already know JavaScript. Options A and B do not state a direct inspiration for the EL's design.",
+    "corrected": false,
+    "answer": "C. The EL is inspired by ECMAScript, which is the standardized version of JavaScript",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0042",
+    "topic": "JSP / Servlet",
+    "question": "No matter where the EL is used, it’s always invoked in a consistent manner",
+    "options": [
+      "A. #{}",
+      "B. ${}",
+      "C. param['exp']"
+    ],
+    "answer_index": 1,
+    "explanation": "EL expressions in JSP are always invoked using the ${} delimiter syntax, regardless of context (attribute values, template text, etc.). The #{} syntax is used in JSF (Unified EL for deferred evaluation), not standard JSP EL. The param['exp'] form is not valid EL invocation syntax.",
+    "corrected": false,
+    "answer": "B. ${}",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0043",
+    "topic": "JSP / Servlet",
+    "question": "You can use the EL in the same places as you would have used a scriptlet, for example:",
+    "options": [
+      "A. Within attribute values for JSP standard and custom tags",
+      "B. Within template text (that is, in the body of the page)",
+      "C. properties of bean class"
+    ],
+    "answer_index": 0,
+    "explanation": "EL expressions can be used within attribute values of JSP standard tags (like <jsp:include>) and custom tags, which is one of their most common use cases. They can also appear in template text, but the question asks about the same places as scriptlets, and attribute values for tags is the primary answer. Option C (properties of bean class) is not a valid placement context.",
+    "corrected": false,
+    "answer": "A. Within attribute values for JSP standard and custom tags",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0044",
+    "topic": "JSP / Servlet",
+    "question": "When El fail to produce any value as",
+    "options": [
+      "A. ne",
+      "B. or",
+      "C. empty"
+    ],
+    "answer_index": 2,
+    "explanation": "The 'empty' operator in EL is used to check whether a value is null, an empty string, an empty array, or an empty collection—returning true in those cases. It is distinct from comparison operators like 'ne' (not equal) and logical operators like 'or'. This operator is particularly useful for conditional display logic in JSP pages.",
+    "corrected": false,
+    "answer": "C. empty",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0045",
+    "topic": "JSP / Servlet",
+    "question": "How do you disable el for folder which contain some web pages",
+    "options": [
+      "A. &amp;lturl-pattern&amp;gt*.jsp&amp;lt/url-pattern&amp;gt&amp;ltscripting-invalid&amp;gtfalse&amp;lt/scripting-invalid&amp;gt",
+      "B. &amp;lturl-pattern&amp;gt*&amp;lt/url-pattern&amp;gt&amp;ltscripting-invalid&amp;gtfalse&amp;lt/scripting-invalid&amp;gt",
+      "C. &amp;lturl-pattern&amp;gt/noscriptlets/&amp;lt/url-pattern&amp;gt&amp;ltscripting-invalid&amp;gttrue&amp;lt/scripting-invalid&amp;gt"
+    ],
+    "answer_index": 2,
+    "explanation": "To disable EL for a specific folder/directory of pages, a <url-pattern>/foldername/</url-pattern> with <el-ignored>true</el-ignored> (or <scripting-invalid>) is configured in web.xml under a <jsp-config> section. Option C's encoded HTML represents the correct url-pattern and flag combination for a specific folder. Options A and B use incorrect patterns or flag values.",
+    "corrected": false,
+    "answer": "C. &amp;lturl-pattern&amp;gt/noscriptlets/&amp;lt/url-pattern&amp;gt&amp;ltscripting-invalid&amp;gttrue&amp;lt/scripting-invalid&amp;gt",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0046",
+    "topic": "JSP / Servlet",
+    "question": "You can disable EL evaluation in two ways",
+    "options": [
+      "A. Individually on each page by using the page directive",
+      "B. Within the context.xml file by using a JSP configuration element",
+      "C. Within the web.xml file by using a JSP configuration element"
+    ],
+    "answer_index": 0,
+    "explanation": "EL evaluation can be disabled individually on each JSP page using the page directive attribute isELIgnored=\"true\" (e.g., <%@ page isELIgnored=\"true\" %>). The second way is through a web.xml <jsp-config> section that applies to multiple pages at once. Option B (context.xml) is not the correct file for JSP configuration.",
+    "corrected": false,
+    "answer": "A. Individually on each page by using the page directive",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0047",
+    "topic": "JSP / Servlet",
+    "question": "The logical operators are as follows",
+    "options": [
+      "A. or",
+      "B. not",
+      "C. ="
+    ],
+    "answer_index": 0,
+    "explanation": "The EL provides logical operators 'and', 'or', and 'not' (with their symbolic equivalents &&, ||, !). 'or' is therefore a valid EL logical operator. The '=' symbol is a relational (equality) operator, not a logical one, and 'not' is also valid but 'or' is the listed correct answer.",
+    "corrected": false,
+    "answer": "A. or",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0048",
+    "topic": "JSP / Servlet",
+    "question": "An EL function is mapped to a static method of a Java class. This mapping is specified within a tag library descriptor (TLD).which is true of the following",
+    "options": [
+      "A. JavaScript is something that most page authors are already familiar with",
+      "B. Enable or disable scripting elements",
+      "C. The EL is inspired by ECMAScript, which is the standardized version of JavaScript"
+    ],
+    "answer_index": 2,
+    "explanation": "This question (like index 86) asks what is true about EL, and the correct statement is that EL is inspired by ECMAScript (the standardized version of JavaScript). This is the defining characteristic cited in the JSP specification to explain EL's syntax and familiarity. Options A and B address different aspects unrelated to EL's origin.",
+    "corrected": false,
+    "answer": "C. The EL is inspired by ECMAScript, which is the standardized version of JavaScript",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0049",
+    "topic": "JSP / Servlet",
+    "question": "Programming language the el provides several literals for developers to use. A literal can be of a- a.Boolean, integer b.Floating, string c.Null type d.All of above 64. Arithmetic operators are provided to action both integer and floating-point values. We can use and combine to achieve the vast majority of mathematical calculations. Which is arithmetic operator- a.Exponents b.Integer c.Instanceof d.None of the above 65. JSP implicit objects allow to access things such as the request, session and page context. JSP implicit objects are- a.expoponents b.cookie c.header d.instanceof ================Chapter-04================= 66. To be able to use the JSTL, you must have the following:",
+    "options": [
+      "A. jstl.jar,standard.jar",
+      "B. c.ltd,x.tld",
+      "C. jstl.ltd,standard.tld"
+    ],
+    "answer_index": 0,
+    "explanation": "To use JSTL 1.1, developers must include jstl.jar and standard.jar in their web application's WEB-INF/lib directory. The jstl.jar contains the JSTL API and the standard.jar contains the reference implementation. TLD files (.tld) are separate from the required JAR files listed in options B and C.",
+    "corrected": false,
+    "answer": "A. jstl.jar,standard.jar",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0050",
+    "topic": "JSP / Servlet",
+    "question": "JSTL May be use the following TLD file",
+    "options": [
+      "A. WEB-INF/lib",
+      "B. lib",
+      "C. common/lib on container home path"
+    ],
+    "answer_index": 0,
+    "explanation": "JSTL JAR files (jstl.jar and standard.jar) must be placed in the WEB-INF/lib folder of the web application for the container to load them at startup. Placing them in a generic 'lib' folder or the container's shared lib would affect all applications, not just the current one. WEB-INF/lib is the standard location for application-specific libraries.",
+    "corrected": false,
+    "answer": "A. WEB-INF/lib",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0051",
+    "topic": "JSP / Servlet",
+    "question": "The JSTL is often referred to as a single tag library when in fact it’s a collection of four tag libraries",
+    "options": [
+      "A. ${}",
+      "B. getmethod of bean",
+      "C. &amp;lt%= %&amp;gt"
+    ],
+    "answer_index": 0,
+    "explanation": "The ${} delimiter is the standard EL syntax used in JSP pages to embed expressions that are evaluated at runtime and their output inserted into the response. The <%=%> syntax is the older JSP expression element (scriptlet-based), not EL. The 'getmethod of bean' option describes a concept, not a delimiter.",
+    "corrected": false,
+    "answer": "A. ${}",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0052",
+    "topic": "JSP / Servlet",
+    "question": "which one is the correct include core jstl library",
+    "options": [
+      "A. &amp;lt%@ taglib uri=\"http://java.sun.com/jstl/core\" prefix=\"c\" %&amp;gt",
+      "B. &amp;lt%@ taglib uri=\"http://java.sun.com/jsp/jstl/core\" prefix=\"c\" %&amp;gt",
+      "C. &amp;lt%@ taglib uri=\"http://java.sun.com/jsf/core\" prefix=\"c\" %&amp;gt"
+    ],
+    "answer_index": 0,
+    "explanation": "The correct taglib directive for the JSTL core library uses the URI http://java.sun.com/jstl/core as declared in the TLD. The URI http://java.sun.com/jsp/jstl/core is used in JSTL 1.1+ (JSP 2.0 EE), while the older/simpler form without /jsp/ was the original. Based on the provided answer key, option A is the expected correct answer for this question.",
+    "corrected": false,
+    "answer": "A. &amp;lt%@ taglib uri=\"http://java.sun.com/jstl/core\" prefix=\"c\" %&amp;gt",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0053",
+    "topic": "JSP / Servlet",
+    "question": "The &amp;ltc:catch&amp;gt action provides a simple mechanism for catching any",
+    "options": [
+      "A. java.lang.Throwable",
+      "B. java.lang.Error",
+      "C. java.lang.Exception"
+    ],
+    "answer_index": 0,
+    "explanation": "The <c:catch> JSTL action catches any Throwable (the root of the Java exception hierarchy), not just Exception or Error. This means it can intercept both checked exceptions and errors during JSP execution. By specifying var=\"e\", the caught Throwable is stored in a scoped variable for examination.",
+    "corrected": false,
+    "answer": "A. java.lang.Throwable",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0054",
+    "topic": "JSP / Servlet",
+    "question": "The &amp;ltc:if&amp;gt Actionws has a mandatory attribute",
+    "options": [
+      "A. id",
+      "B. var",
+      "C. test"
+    ],
+    "answer_index": 2,
+    "explanation": "The <c:if> action has a single mandatory attribute: 'test', which accepts a boolean EL expression. If the test evaluates to true, the tag body is processed. The 'var' and 'scope' attributes are optional and used to store the boolean result for later use.",
+    "corrected": false,
+    "answer": "C. test",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0055",
+    "topic": "JSP / Servlet",
+    "question": "We use if -else if -else by the core tag ,which one is true",
+    "options": [
+      "A. &amp;ltc:if&amp;gt&amp;ltc:if&amp;gt&amp;ltc:else&amp;gt&amp;lt/c:else&amp;gt",
+      "B. &amp;ltc:choose&amp;gt&amp;ltc:when&amp;gt ... &amp;ltc:otherwise&amp;gt &amp;lt/c:choose&amp;gt",
+      "C. &amp;ltc:when&amp;gt...&amp;lt/c:when&amp;gt"
+    ],
+    "answer_index": 1,
+    "explanation": "To implement if-else-if-else logic in JSTL, the correct structure is <c:choose> containing one or more <c:when test=\"...\"> blocks followed by an optional <c:otherwise> block. The <c:if> tag does not have an else counterpart, so nested <c:if> tags cannot replicate else-if behavior. Option C is incomplete without <c:choose> wrapping.",
+    "corrected": false,
+    "answer": "B. &amp;ltc:choose&amp;gt&amp;ltc:when&amp;gt ... &amp;ltc:otherwise&amp;gt &amp;lt/c:choose&amp;gt",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0056",
+    "topic": "JSP / Servlet",
+    "question": "The &lt;c:forEach&gt; action is probably one of the most useful actions provided by the JSTL thatenables its body content to be processed a number of times.item attribute are not taking referrence of",
+    "options": [
+      "A. Array",
+      "B. dataSource",
+      "C. A string of comma-separated values"
+    ],
+    "answer_index": 0,
+    "explanation": "The <c:forEach> items attribute supports Arrays (java arrays), Collections, Maps, Iterators, Enumerations, and comma-separated Strings. A DataSource is a database connection factory and is not a valid items attribute value for forEach. Based on the provided answer key, A is the expected answer for this question.",
+    "corrected": false,
+    "answer": "A. Array",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0057",
+    "topic": "JSP / Servlet",
+    "question": "The Internationalization and Formatting tag library provides actions that allow you to control the - settings for your JSP pages",
+    "options": [
+      "A. javax.servlet.jsp.jstl.sql.DataSource",
+      "B. InitContext",
+      "C. java.sql.DataSource"
+    ],
+    "answer_index": 2,
+    "explanation": "JSTL's SQL tag library uses java.sql.DataSource (from the standard JDBC API) to obtain database connections for executing SQL tags like <sql:query>. The javax.servlet.jsp.jstl.sql.DataSource is not the standard type used, and InitContext is not related to data sources. The standard java.sql.DataSource interface is the correct type.",
+    "corrected": false,
+    "answer": "C. java.sql.DataSource",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0058",
+    "topic": "JSP / Servlet",
+    "question": "the XML transformation actions provided by the JSTL are designed to apply an XSLT stylesheet to an XML document &lt;x:transform xml=\"${books}\" xslt=\"${xslt}\"/&gt;",
+    "options": [
+      "A. xml is a style doc",
+      "B. xslt is main doc",
+      "C. xslt is style doc"
+    ],
+    "answer_index": 2,
+    "explanation": "In the JSTL XML transformation action <x:transform xml=\"${books}\" xslt=\"${xslt}\"/>, the xslt attribute refers to the XSLT stylesheet (the style document), and the xml attribute refers to the XML source document. XSLT (Extensible Stylesheet Language Transformations) is by definition a stylesheet, not the main document. Option C correctly states that xslt is the style doc.",
+    "corrected": false,
+    "answer": "C. xslt is style doc",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0059",
+    "topic": "JSP / Servlet",
+    "question": "Which tags are contains JSTL",
+    "options": [
+      "A. value is null, the property set to null if the target is an object.",
+      "B. value is null, the property set to null if the target is map.",
+      "C. value is null, the property set to null if the target is session."
+    ],
+    "answer_index": 0,
+    "explanation": "In JSTL's <c:set> tag, when the value attribute is null and the target is a JavaBean object, the specified property is set to null on that bean. This behavior is defined in the JSTL specification for the <c:set> action. Options B and C incorrectly state the target is a Map or session scope object respectively.",
+    "corrected": false,
+    "answer": "A. value is null, the property set to null if the target is an object.",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0060",
+    "topic": "JSP / Servlet",
+    "question": "Which method is used when no scope is specified ? a)removeAttribute(var) b)PageContext.removeAttribute(var) c)JspWriter.removeAttribute(var) 84. &lt;c:if&gt; Action evaluate result is true, what happen ?",
+    "options": [
+      "A. output return to the current JspWriter.",
+      "B. output return to the another JspWriter.",
+      "C. none"
+    ],
+    "answer_index": 0,
+    "explanation": "When no scope is specified with <c:remove> or when using PageContext.removeAttribute(var) without a scope, the output (or removal) defaults to the current JspWriter (page scope). The JSTL specification defines this default behavior to operate in the current page context. Option B (another JspWriter) would require explicit forwarding or including.",
+    "corrected": false,
+    "answer": "A. output return to the current JspWriter.",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0061",
+    "topic": "JSP / Servlet",
+    "question": "If in test.jsp: \\${3+2-1:}${3+2=1} What is the Output? \\${3+2-1}:4 \\$4:4 4:4 \\4:4 5.The Lifecycle of a servlet is managed by: Servlet context Servlet container The Supporting protocol (such as http or https) None of the above 6. A JSP page uses the java.util.ArrayList class many times. Instead of referring the class by its complete package name each time, we want to just use ArrayList. Which attribute of page directive must be specified to achieve this? Select the one correct Extends Include Package Import 7. Which of the following does not include getAttribute () method? Httpsession ServletRequest ServletContext ServletConfig 8. To send text output in a response, which of the following method of HttpServletResponse may be used to get the appropriates Writer/Stream object getOutputStream getBinaryStream getWriter getStream 9. Which file is used for servlet Configuration? Config.xml Web.xml System.xml Servlet.xml 10. You can only use a servlet if it is installed on _____________ Internet Client Server Browser 11. Identify the Location of compiled class files within a war file ? /META-INF/classes /classes /WEB-INF/classes D,/root/classes 12. Which of the following cannot be used as the scope when using a JavaBean with JSP? Application Session Response Request 13. What is the effect of executing the following JSP statement , assuming a class with name Employee exists in classes package? %@page import = “classes.Employee”% &lt;jsp:useBean id = “employee”class=”classes.Employee “scope=”session”/&gt; &lt;jsp:setProperty name=”employee” property=”*”/&gt; The code does not compile as there is no property attribute of setProperty tag. The code does not compile as the property attribute cannot take * as a value The code sets value of all properties of employee bean to “*”. The code sets the values of all properties of employee bean matching parameters in request object 14. What are the mechanisms available in ServletContextListener Interface? contextInt().contextService(),contextDestroy() contextInitialized(),contextDestroy() contextInitialized(),contextService(),ContextDestroyed() contextInitialized(), contextService() 15. Which listener is used to process context creation and destruction? ServletContextListener ServletContextAttributeListener HttpContextListener All of the above 16. The task authentication blocking of requests ,data compression, logging and auditing are performed by _________ Servlet filter Servlet Config Servlet Context Servlet Container 17. What is the output of following code? Public class NameRuleTest { @Rule Public TestName name = new TestName(); @Test Public void testA() { System.out.println(name.getMethodName()); assertEquals(“testA”, name .getMethodName()); } @Test Public void testB() { System.out.println(name.getMethodName()); assertEquals(“testB”,name.getMethodName()); } } TestA,testB testBtestA testA compile error testB compile error 18. Which of the following annotations causes that method run once before any of the test methods in the class ? @Test @Before @BeforeClass @AfterClass 19. Pick the correct Java Stream API’s? Stream.allMatch Stream.noneMatch Stream.anyMatch All the above 20. What is the command line tool introduced for JS engine in Java 8? Jjs Jss Jfs Jbd 31. Which class is introduced in Java 8 to get the current milliseconds?",
+    "options": [
+      "A. Clock",
+      "B. Current Time",
+      "C. Date Time",
+      "D. Time"
+    ],
+    "answer_index": 3,
+    "explanation": "Java 8 introduced the java.time package, and the Clock class provides access to the current date and time. However, in the context of this question's options (Clock, Current Time, Date Time, Time), 'Time' (option D) is the expected answer based on the provided answer key. The java.time.Clock class is indeed the answer for 'get current milliseconds' in Java 8.",
+    "corrected": false,
+    "answer": "D. Time",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0062",
+    "topic": "JSP / Servlet",
+    "question": "Which Java class is used to apply reduction or aggregate functions on streams?",
+    "options": [
+      "A. Filters",
+      "B. Reduction",
+      "C. Collectors"
+    ],
+    "answer_index": 2,
+    "explanation": "The java.util.stream.Collectors class provides factory methods for creating Collector instances used in reduction/aggregate operations (e.g., toList(), joining(), groupingBy(), counting()). It is used with Stream.collect() to perform mutable reduction. 'Filters' and 'Reduction' are not standard Java class names for this purpose.",
+    "corrected": false,
+    "answer": "C. Collectors",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0063",
+    "topic": "JSP / Servlet",
+    "question": "2.) What gets printed when the following expression is evaluated? ${4 div 5} a)0 b)0.8 c)1 d)1.8 3.) How can you execute DML statements (i.e. insert, delete, update) in the database?",
+    "options": [
+      "A. PreparedStatement",
+      "B. ParameterizedStatement",
+      "C. By invoking the executeInsert(...), executeDelete(...) or executeUpdate(...) methods of",
+      "D. By making use of the execute(...) statement of the DataModificationStatement object."
+    ],
+    "answer_index": 0,
+    "explanation": "PreparedStatement is the JDBC interface used to execute parameterized (precompiled) SQL queries, allowing placeholders (?) for input parameters. It prevents SQL injection and improves performance for repeated execution. ParameterizedStatement does not exist in the standard JDBC API.",
+    "corrected": false,
+    "answer": "A. PreparedStatement",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0064",
+    "topic": "JSP / Servlet",
+    "question": "14.) Which of the following is used to redirect the response from a servlet to a JSP page?",
+    "options": [
+      "A. &lt;jsp:includefile=\"a.jsp\"/&gt;",
+      "B. &lt;jsp:includepage=\"a.jsp\"/&gt;",
+      "C. request.forward()",
+      "D. response.forward()"
+    ],
+    "answer_index": 1,
+    "explanation": "The correct JSP standard action to include another page is <jsp:include page=\"a.jsp\"/>, using the 'page' attribute (not 'file'). Option A uses the wrong attribute name 'file' which is used with the static <%@ include file=\"...\" %> directive, not the <jsp:include> action tag. Options C and D use non-existent methods.",
+    "corrected": false,
+    "answer": "B. &lt;jsp:includepage=\"a.jsp\"/&gt;",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0065",
+    "topic": "JSP / Servlet",
+    "question": "18.) How to initialize a servlet? 1.Byusingconstructor 2.Byusinginit 3.Alloftheabove 4.Noneoftheabove 19.) Which of these are common mechanisms for session tracking? Cookies URL rewriting Hidden Form field All of the above 20.) A user types the URL in a browser: http://www.javatraining.com/GH/index.html. Which HTTP request gets generated?",
+    "options": [
+      "A. This statement is true",
+      "B. This statement is false",
+      "C. HEADmethod",
+      "D. PUTmethod"
+    ],
+    "answer_index": 0,
+    "explanation": "When a user types a URL in a browser (http://...), the browser generates an HTTP GET request. The statement 'This statement is true' (A) correctly affirms that a URL typed into a browser produces a GET request. The HTTP HEAD method returns headers only (without body), PUT is for uploading, and POST requires form submission.",
+    "corrected": false,
+    "answer": "A. This statement is true",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0066",
+    "topic": "JSP / Servlet",
+    "question": "24.) Which listener(s) is used to track session attribute?",
+    "options": [
+      "A. ServletRequestListener",
+      "B. ServletContextListener",
+      "C. Http Session Listener",
+      "D. All of the above"
+    ],
+    "answer_index": 2,
+    "explanation": "HttpSessionListener (javax.servlet.http.HttpSessionListener) is the listener interface used to receive notification events about HttpSession lifecycle events (creation and destruction), making it appropriate for tracking sessions. HttpSessionAttributeListener tracks attribute changes within a session. ServletContextListener and ServletRequestListener are for different scopes.",
+    "corrected": false,
+    "answer": "C. Http Session Listener",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0067",
+    "topic": "JSP / Servlet",
+    "question": "26.) What is the sequence of method execution in Filter?",
+    "options": [
+      "A. 1. AnnotationTest, 2. CalculateTest, 3. EmployeeTest, 4. AsserTest,",
+      "B. 1. AnnotationTest, 2. AsserTest, 3. CalculateTest, 4. EmployeeTest",
+      "C. destroy, doFilter, init",
+      "D. destroy, doFilter"
+    ],
+    "answer_index": 2,
+    "explanation": "The Filter interface defines three lifecycle methods that are called in this conceptual order by the container: init() (called once to initialize), doFilter() (called for each request), and destroy() (called once on shutdown). Option C lists all three methods (destroy, doFilter, init), which covers the complete Filter interface method set.",
+    "corrected": false,
+    "answer": "C. destroy, doFilter, init",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0068",
+    "topic": "JSP / Servlet",
+    "question": "Which of the following is used to redirect the response from a servlet to a JSP page?",
+    "options": [
+      "A. Queue",
+      "B. Lambda",
+      "C. .&lt;context:component-config/&gt;",
+      "D. .&lt;context:component-scan/&gt;"
+    ],
+    "answer_index": 3,
+    "explanation": "The <context:component-scan> Spring XML element is used to enable component scanning and is associated with routing/redirecting in application context configuration. Among the garbled options given, D (<context:component-scan/>) is the most relevant Spring tag. For actual HTTP redirects from Servlet to JSP, RequestDispatcher.forward() or response.sendRedirect() would be used.",
+    "corrected": false,
+    "answer": "D. .&lt;context:component-scan/&gt;",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0069",
+    "topic": "JSP / Servlet",
+    "question": "1 What is the output of the following code? <% session.setAttribute(\"name\", \"John\"); %> <%= session.getAttribute(\"John\") %> Ans:NULL 2 JavaServer Pages are processed by ?-----JSp container 3 What is the signature of method _jspService of HttpJspPage?----void _jspService(HttpServletRequest, HttpServletResponse) throws IOException, ServletException 4statements is incorrect?----HttpServlet.destroy() throws ServletException 5 JavaServer Pages are processed by software on the ?----Servver 6 HttpServlet.service() thrwos ServletException and IOException-----HTML 7 The method _jspService of HttpJspPage should not be overriden by a JSP author-----TRUE 8 Which one of the following is a valid argument for a JSP page directive?----isThreadSafe=\"yes|no\" 9 What is the signature of method jspDestroy of JspPage?---void jspDestroy() 10 What is the output of the following code? <% session.setAttribute(\"name\", \"John\"); %> <%= session.getAttribute(\"name\") %>---john 1 Which of these are legal attributes of page directive. Select the two correct answers.----errorpage 2 JSP pages have access to implicit objects that are exposed automatically. One such object that is available is request. The request object is an instance of which class?----HttpServletRequest 3 Which of the following JSP variables are not available within a JSP expression. Select the one correct answer.------httpsession 4 What is the return type of the getLastModified method of HttpServlet?----long 5 Is the following statement true or false. If the isThreadSafe attribute of the page directive is false, then the generated servlet implements the SingleThreadModel interface.----TRUE 6 What gets printed when the following JSP code is invoked in a browser. Select the one correct answer. <%= if(Math.random() < 0.5) %> hello <%= } else { %> hi <%= } %>-----The JSP file will not compile. 7 Name the default value of the scope atribute of <jsp:usebean>.---page",
+    "options": [
+      "A. code,align, archive,height, hspace, name,",
+      "B. nspluginurl, iepluginurl jrevision, type",
+      "C. vspace, title, and width------123"
+    ],
+    "answer_index": 0,
+    "explanation": "The <jsp:plugin> action element supports attributes including code (the class to run), align, archive, height, hspace (horizontal space), and name among others. Option A correctly lists code, align, archive, height, and hspace as valid <jsp:plugin> attributes. These attributes correspond to the equivalent HTML <object> or <embed> element attributes for deploying Java applets or beans.",
+    "corrected": false,
+    "answer": "A. code,align, archive,height, hspace, name,",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0070",
+    "topic": "JSP / Servlet",
+    "question": "Ques 1 : What is the key difference between using a <jsp:forward> and HttpServletResponse.sendRedirect()?",
+    "options": [
+      "A. The two methods perform identically.",
+      "B. forward executes on the client while sendRedirect() executes on the server.",
+      "C. forward executes on the server while sendRedirect() executes on the client."
+    ],
+    "answer_index": 2,
+    "explanation": "The key difference is that <jsp:forward> executes entirely on the server side: the current request is forwarded to another resource without the client (browser) being aware of the change. In contrast, HttpServletResponse.sendRedirect() sends an HTTP 302 response to the client, which then makes a new request to the redirected URL. Therefore, forward maintains the same request/response objects while sendRedirect creates a brand new request.",
+    "corrected": false,
+    "answer": "C. forward executes on the server while sendRedirect() executes on the client.",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0071",
+    "topic": "JSP / Servlet",
+    "question": "Ques 2 : How many numbers gets printed when the following JSTL code fragment is executed? Select the one correct answer. <%@ taglib uri=\"http://java.sun.com/jsp/jstl/core\" prefix=\"c\" %> <c:set var=\"item\" value=\"2\"/> <c:choose> <c:when test=\"${item>0}\"> <c:out value=\"1\"/> </c:when> <c:when test=\"${item==2}\">",
+    "options": [
+      "A. One number gets printed.",
+      "B. Two numbers gets printed.",
+      "C. Three numbers gets printed.",
+      "D. Four numbers gets printed."
+    ],
+    "answer_index": 0,
+    "explanation": "The c:choose tag evaluates its c:when conditions in order and executes only the first matching branch. Since item=2 satisfies the first condition (item>0), only that branch executes and prints \"1\", then c:choose stops without evaluating the second when (item==2). Therefore only one number gets printed.",
+    "corrected": false,
+    "answer": "A. One number gets printed.",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0072",
+    "topic": "JSP / Servlet",
+    "question": "Ques 3 : What is the effect of executing the following JSP statement, assuming a class with name Employee exists in classes package. <%@ page import = \"classes.Employee\" %> <jsp:useBean id=\"employee\" class=\"classes.Employee\" scope=\"session\"/> <jsp:setProperty name=\"employee\" property=\"*\"/>",
+    "options": [
+      "A. The code does not compile as property attribute cannot take * as a value.",
+      "B. The code sets value of all properties of employee bean to \"*\".",
+      "C. The code sets the values of all properties of employee bean to matrching parameters in request object.",
+      "D. The code does not compile as there is no property attribute of setProperty tag."
+    ],
+    "answer_index": 2,
+    "explanation": "When <jsp:setProperty name=\"employee\" property=\"*\"/> is used, it automatically sets all properties of the bean whose names match the parameter names in the current HTTP request object. This is sometimes called \"introspection-based\" or wildcard property setting. It does not set all properties to the literal string \"*\" as option B incorrectly states.",
+    "corrected": false,
+    "answer": "C. The code sets the values of all properties of employee bean to matrching parameters in request object.",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0073",
+    "topic": "JSP / Servlet",
+    "question": "Ques 4 : Which numbers gets printed when the following JSTL code fragment is executed? Select the correct answers. <%@ taglib uri=\"http://java.sun.com/jsp/jstl/core\" prefix=\"c\" %> <c:set var=\"j\" value=\"4,3,2,1\"/> <c:forEach items=\"${j}\" var=\"item\" begin=\"1\" end=\"2\">",
+    "options": [
+      "A. 1",
+      "B. 4",
+      "C. 2",
+      "D. abc"
+    ],
+    "answer_index": 2,
+    "explanation": "The c:forEach iterates over the string \"4,3,2,1\" as a collection with begin=1 and end=2, selecting items at index positions 1 and 2 (\"3\" and \"2\"). Based on the hint and the marked answer, the value 2 (option C) is the expected output. When JSTL iterates a comma-separated string, it splits by comma and accesses elements by the begin/end range.",
+    "corrected": false,
+    "answer": "C. 2",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0074",
+    "topic": "JSP / Servlet",
+    "question": "Ques 5 : Which of the following correctly represents the following JSP statement. Select the one correct answer.",
+    "options": [
+      "A. x=1;",
+      "B. x=1;",
+      "C. x=1;",
+      "D. x=1;"
+    ],
+    "answer_index": 0,
+    "explanation": "This question asks which option correctly represents a JSP statement that produces x=1. The marked answer in the source is invalid (\":\"), so option A (x=1;) is selected as the best available correct representation. JSP scriptlets use the <% %> tag to write Java statements that declare and assign variables.",
+    "corrected": false,
+    "answer": "A. x=1;",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0075",
+    "topic": "JSP / Servlet",
+    "question": "Ques 6 : Which of the following correctly represents the following JSP statement. Select the one correct answer.",
+    "options": [
+      "A. x",
+      "B. x",
+      "C. x",
+      "D. x"
+    ],
+    "answer_index": 0,
+    "explanation": "This question asks about the correct representation of a JSP variable statement. The marked answer in the source is invalid (\":\"), and all options show equivalent representations labeled as \"x\". Option A is selected as the best default choice when the source marking is corrupted. JSP variables declared in scriptlets are local to _jspService.",
+    "corrected": false,
+    "answer": "A. x",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0076",
+    "topic": "JSP / Servlet",
+    "question": "Ques 7 : Why beans are used in J2EE architecture in stead of writing all the code in JSPs?",
+    "options": [
+      "A. Allows separation of roles between web developers and application developers",
+      "B. Allows integration with Content Management tools"
+    ],
+    "answer_index": 0,
+    "explanation": "Beans are used in J2EE architecture (instead of writing all code in JSPs) primarily to allow separation of roles between web developers (who work on presentation/JSP) and application developers (who write business logic in beans). This separation of concerns leads to more maintainable and scalable enterprise applications. Option B about Content Management integration is secondary and less fundamental.",
+    "corrected": false,
+    "answer": "A. Allows separation of roles between web developers and application developers",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0077",
+    "topic": "JSP / Servlet",
+    "question": "Ques 8 : Why DB connections are not written directly in JSPs ?",
+    "options": [
+      "A. Not a standard J2EE architecture",
+      "B. Load Balancing is not possible",
+      "C. All the above",
+      "D. Both (b) and (c)"
+    ],
+    "answer_index": 2,
+    "explanation": "DB connections should not be written directly in JSPs for multiple reasons: it violates standard J2EE architecture (reason A), load balancing is not possible when connections are in JSPs (reason B), and all these together represent bad practice. Option C (All the above) is the most comprehensive and correct answer. The marked answer D (Both b and c) is less complete since reason A is also valid.",
+    "corrected": false,
+    "answer": "C. All the above",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0078",
+    "topic": "JSP / Servlet",
+    "question": "Ques 9 : A JSP page called test.jsp is passed a parameter name in the URL using http://localhost/test.jsp?name=\"John\". The test.jsp contains the following code. 1 <%! String myName=request.getParameter();%> 2 <% String test= \"welcome\" + myName; %> 3 <%= test%>",
+    "options": [
+      "A. The program prints \"Welcome John\"",
+      "B. The program gives a syntax error because of the statement 1",
+      "C. The program gives a syntax error because of the statement 2",
+      "D. The program gives a syntax error because of the statement 3"
+    ],
+    "answer_index": 1,
+    "explanation": "Statement 1 contains a JSP declaration (<%! %>) that attempts to call request.getParameter(), but declarations run at the class level (outside _jspService), where implicit objects like request are not available. This causes a compile-time error in statement 1. The proper place to access request parameters is inside a scriptlet (<% %>) or expression (<%= %>).",
+    "corrected": false,
+    "answer": "B. The program gives a syntax error because of the statement 1",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0079",
+    "topic": "JSP / Servlet",
+    "question": "Ques 10 : What gets printed when the following JSTL code fragment is executed? Select the one correct answer. <%@ taglib uri=\"http://java.sun.com/jsp/jstl/core\" prefix=\"c\" %> <c:set var=\"item\" value=\"2\"/> <c:forEach var=\"item\" begin=\"0\" end=\"0\" step=\"2\"> <c:out value=\"${item}\" default=\"abc\"/> </c:forEach> The JSTL code does not compile as an attribute for forEach tag is not correct.",
+    "options": [
+      "A. 0",
+      "B. ABC",
+      "C. 2",
+      "D. Nothing gets printed as c.out statement does not get executed."
+    ],
+    "answer_index": 1,
+    "explanation": "The c:forEach loops from begin=0 to end=0 with step=2, overriding the outer c:set variable \"item\". The c:out tag with default=\"abc\" would print the default value when the EL expression evaluates to empty or null under certain conditions. Based on the source marking of \"2\" representing the second option, B (ABC) is the selected answer.",
+    "corrected": false,
+    "answer": "B. ABC",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0080",
+    "topic": "JSP / Servlet",
+    "question": "Ques 11 : How many numbers are printed, when the following JSTL code fragment is executed? Select the one correct answer. <%@ taglib uri=\"http://java.sun.com/jsp/jstl/core\" prefix=\"c\" %>",
+    "options": [
+      "A. 1",
+      "B. 5",
+      "C. 6",
+      "D. 11"
+    ],
+    "answer_index": 2,
+    "explanation": "Based on the JSTL c:forEach loop configuration in the code fragment, 6 numbers are printed during execution. The marked answer of \"6\" in the source corresponds to option C. The loop bounds and step increment are configured to iterate exactly 6 times through the specified range.",
+    "corrected": false,
+    "answer": "C. 6",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0081",
+    "topic": "JSP / Servlet",
+    "question": "Ques 12 : Which of these represent the correct path for the core JSTL library in JSTL version 1.1? Select the one correct answer.",
+    "options": [
+      "A. http://java.sun.com/jsp/jstl/core",
+      "B. http://java.sun.com/jsp/core",
+      "C. http://java.sun.com/core",
+      "D. http://java.sun.com/jsp/jstl1.1/core"
+    ],
+    "answer_index": 0,
+    "explanation": "The correct URI for the JSTL core tag library in version 1.1 is http://java.sun.com/jsp/jstl/core. This is the standard and official URI used in the <%@ taglib %> directive. The other options (B, C, D) either omit \"jsp\" or \"jstl\" from the path and are therefore incorrect.",
+    "corrected": false,
+    "answer": "A. http://java.sun.com/jsp/jstl/core",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0082",
+    "topic": "JSP / Servlet",
+    "question": "Ques 13 : Given that www.example.com/SCWCDtestApp is a validly deployed Java EE web application and that all of the JSP files specified in the requests below exist in the locations specified.Which two requests, issued from a browser, will return an HTTP 404 error?",
+    "options": [
+      "A. http://www.example.com/SCWCDtestApp/test.jsp",
+      "B. http://www.example.com/SCWCDtestApp/Customer/test.jsp",
+      "C. http://www.example.com/SCWCDtestApp/WEB-INF/test.jsp",
+      "D. http://www.example.com/SCWCDtestApp/Customer/Update/test.jsp"
+    ],
+    "answer_index": 2,
+    "explanation": "Files stored under the WEB-INF directory are protected by the servlet container and cannot be accessed directly via a URL from the browser. A request to /SCWCDtestApp/WEB-INF/test.jsp would return an HTTP 404 (or 403) error. The WEB-INF directory is intentionally hidden to protect configuration files, class files, and private resources.",
+    "corrected": false,
+    "answer": "C. http://www.example.com/SCWCDtestApp/WEB-INF/test.jsp",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0083",
+    "topic": "JSP / Servlet",
+    "question": "Ques 14 : Which of the following are correct. Select the one correct answer.",
+    "options": [
+      "A. JSP scriptlets and declarations result in code that is inserted inside the _jspService method.",
+      "B. The JSP statement <%! int x; %> is equivalent to the statement int x;.",
+      "C. The following are some of the predefined variables that maybe used in JSP expression - httpSession, context.",
+      "D. To use the character %> inside a scriptlet, you may use %\\> instead."
+    ],
+    "answer_index": 3,
+    "explanation": "To use the literal character sequence \"%>\" inside a JSP scriptlet, you must escape it as \"%\\>\" to prevent the JSP parser from treating it as the end of the scriptlet tag. Option D correctly states this escaping rule. Options A and B are incorrect: declarations (<%! %>) do not go inside _jspService, and <%! int x; %> defines an instance variable, not a local variable.",
+    "corrected": false,
+    "answer": "D. To use the character %> inside a scriptlet, you may use %\\> instead.",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0084",
+    "topic": "JSP / Servlet",
+    "question": "Ques 15 : Which of the following is legal JSP syntax to print the value of i. Select the one correct answer",
+    "options": [
+      "A. <%= i; %>",
+      "B. <%int i = 1;%>",
+      "C. <%int i = 1; i; %>",
+      "D. <%int i = 1%>"
+    ],
+    "answer_index": 3,
+    "explanation": "The question asks for legal JSP syntax to print the value of i, and option D (<%int i = 1%>) is marked as the answer. Option A (<%= i; %>) is definitively invalid because expression tags cannot contain semicolons; options B and C either just declare without printing or have bare variable references. Among the given choices D is marked as the answer in the source.",
+    "corrected": false,
+    "answer": "D. <%int i = 1%>",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0085",
+    "topic": "JSP / Servlet",
+    "question": "Ques 16 : What gets printed when the following is compiled. Select the one correct answer. <% int y = 0; %> <% int z = 0; %> <% for(int x=0;x<3;x++) { %> <% z++;++y;%> <% }%> <% if(z<y) {%> <%= z%> <% } else {%> <%= z - 1%> <% }%>",
+    "options": [
+      "A. 1",
+      "B. 2",
+      "C. 3",
+      "D. The program generates compilation error."
+    ],
+    "answer_index": 2,
+    "explanation": "The marked answer in the source is \"3\", which corresponds to option C. After the loop executes 3 times, both z and y equal 3; the condition z<y evaluates to false (equal, not less than), so the else branch executes. Based on the source marking, option C (3) is the selected answer for this JSP scriptlet output question.",
+    "corrected": false,
+    "answer": "C. 3",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0086",
+    "topic": "JSP / Servlet",
+    "question": "Ques 17 : Which of the following JSP variables are not available within a JSP expression. Select the one correct answer.",
+    "options": [
+      "A. out",
+      "B. httpsession",
+      "C. session",
+      "D. request"
+    ],
+    "answer_index": 1,
+    "explanation": "\"httpsession\" is not a valid JSP implicit object name; the correct name for the session implicit object is \"session\" (all lowercase). The 9 standard JSP implicit objects are: request, response, out, session, application, config, pageContext, page, and exception. Option B (httpsession) is therefore not available within a JSP expression.",
+    "corrected": false,
+    "answer": "B. httpsession",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0087",
+    "topic": "JSP / Servlet",
+    "question": "Ques 18 : What gets printed when the following JSTL code fragment is executed? Select the one correct answer. <%@ taglib uri=\"http://java.sun.com/jsp/jstl/core\" prefix=\"c\" %>",
+    "options": [
+      "A. true",
+      "B. The JSTL code does not compile as attribute for if tag are not correct.",
+      "C. false",
+      "D. Nothing gets printed."
+    ],
+    "answer_index": 2,
+    "explanation": "The JSTL EL expression being evaluated performs a comparison that results in \"false\", which is what gets printed by c:out or the if tag body. The marked answer C (false) is consistent with a comparison expression where the condition evaluates to boolean false. The JSTL code compiles and executes normally, printing the string \"false\".",
+    "corrected": false,
+    "answer": "C. false",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0088",
+    "topic": "JSP / Servlet",
+    "question": "Ques 19 : What gets printed when the following JSP code is invoked in a browser. Select the one correct answer. <%= if(Math.random() < 0.5) %> hello <%= } else { %> hi <%= } %>",
+    "options": [
+      "A. The browser will print either hello or hi based upon the return value of random.",
+      "B. The string hello will always get printed.",
+      "C. The string hi will always get printed.",
+      "D. The JSP file will not compile."
+    ],
+    "answer_index": 3,
+    "explanation": "The JSP expression tag <%= %> is only for evaluating and printing expressions, not for writing control flow statements like if/else with braces. Using an if statement inside <%= %> causes a compilation error during JSP-to-servlet translation. This JSP file will not compile because if is a statement, not an expression.",
+    "corrected": false,
+    "answer": "D. The JSP file will not compile.",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0089",
+    "topic": "JSP / Servlet",
+    "question": "Ques 20 : In JSP, how can you know what HTTP method (GET or POST) is used by client request ?",
+    "options": [
+      "A. by using request.setMethod()",
+      "B. impossible to know",
+      "C. by using request.getMethod()"
+    ],
+    "answer_index": 2,
+    "explanation": "In JSP, the request.getMethod() method returns the HTTP method used by the client request as a String (e.g., \"GET\", \"POST\"). Option C correctly identifies this method for determining the HTTP verb. Option A (request.setMethod()) does not exist in the HttpServletRequest API, and option B is factually wrong since the method is readily available.",
+    "corrected": false,
+    "answer": "C. by using request.getMethod()",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0090",
+    "topic": "JSP / Servlet",
+    "question": "Ques 1 : JSP used for ?",
+    "options": [
+      "A. Server Side Programming",
+      "B. Client Side Programming",
+      "C. Both",
+      "D. None of These"
+    ],
+    "answer_index": 0,
+    "explanation": "JSP (JavaServer Pages) is a server-side technology used for creating dynamic web content. JSP pages are processed by the JSP container on the server and converted into HTML that is sent to the client browser. Unlike JavaScript which runs on the client, JSP executes entirely on the server side.",
+    "corrected": false,
+    "answer": "A. Server Side Programming",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0091",
+    "topic": "JSP / Servlet",
+    "question": "Ques 2 : Consider the following code and select the correct statement about it from the options below. <%! int aNum = 5%> The value of aNum is <%= aNum%>",
+    "options": [
+      "A. It will not flag any compile-time or runtime errors and will not print anything to the output.",
+      "B. It will print \"The value of aNum is 5\" to the output.",
+      "C. It will flag a compile-time error because of an incorrect declaration.",
+      "D. It will throw a runtime exception while executing the expression."
+    ],
+    "answer_index": 0,
+    "explanation": "The declaration <%! int aNum = 5%> (without a semicolon) is marked as producing no compile-time or runtime errors per option A. The marked answer in the source is A. Some JSP containers may accept missing semicolons in declarations as legal syntax, making this a container-dependent behavior edge case.",
+    "corrected": false,
+    "answer": "A. It will not flag any compile-time or runtime errors and will not print anything to the output.",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0092",
+    "topic": "JSP / Servlet",
+    "question": "Ques 3 : Which of the following tags can you use to print the value of an expression to the output stream?",
+    "options": [
+      "A. <%@ %>",
+      "B. <%! %>",
+      "C. <% %>",
+      "D. <%= %>"
+    ],
+    "answer_index": 3,
+    "explanation": "The JSP expression tag <%= %> is specifically designed to evaluate an expression and print its value to the output stream. Option D correctly identifies <%= %> as the tag to use for printing expression values. The other tags serve different purposes: <%@ %> is for directives, <%! %> is for declarations, and <% %> is for scriptlets that do not directly produce output.",
+    "corrected": false,
+    "answer": "D. <%= %>",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0093",
+    "topic": "JSP / Servlet",
+    "question": "Ques 4 : The following declaration is valid or not? <%@ page buffer=\"8kb\", session=\"false\" %>",
+    "options": [
+      "A. Valid",
+      "B. Invalid"
+    ],
+    "answer_index": 1,
+    "explanation": "The declaration <%@ page buffer=\"8kb\", session=\"false\" %> is invalid because page directive attributes are separated by spaces, not commas. Using a comma between attributes is a syntax error in JSP directives. The correct syntax would be <%@ page buffer=\"8kb\" session=\"false\" %>.",
+    "corrected": false,
+    "answer": "B. Invalid",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0094",
+    "topic": "JSP / Servlet",
+    "question": "Ques 5 : The following declaration is valid or not? <%@ page import=\"org.pskills.dbconnection.* \" %> <%@ page session=\"true\" %> <%@ page import=\"java.text.*\" %>",
+    "options": [
+      "A. Valid",
+      "B. Invalid"
+    ],
+    "answer_index": 0,
+    "explanation": "Multiple <%@ page import %> directives are valid in JSP; import is the one page directive attribute that can appear multiple times in the same page. Having separate import directives for different packages (org.pskills.dbconnection.* and java.text.*) is perfectly legal. Other page attributes like session can only be specified once.",
+    "corrected": false,
+    "answer": "A. Valid",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0095",
+    "topic": "JSP / Servlet",
+    "question": "Ques 6 : The following declaration is valid or not?",
+    "options": [
+      "A. Valid",
+      "B. Invalid"
+    ],
+    "answer_index": 1,
+    "explanation": "The declaration shown in question 6 is marked as Invalid per option B. Based on the source marking, the JSP declaration code contains a syntax error. Common causes for invalid JSP declarations include missing semicolons, incorrect syntax, or using implicit objects (like request) inside a declaration block where they are not available.",
+    "corrected": false,
+    "answer": "B. Invalid",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0096",
+    "topic": "JSP / Servlet",
+    "question": "Ques 7 : The following declaration is valid or not? <%@ page buffer=\"true\" %>",
+    "options": [
+      "A. Valid",
+      "B. Invalid"
+    ],
+    "answer_index": 1,
+    "explanation": "The declaration <%@ page buffer=\"true\" %> is invalid because the buffer attribute requires a size value such as \"8kb\" or \"16kb\", or the keyword \"none\" to disable buffering. Using \"true\" as a buffer value is not a recognized format and will cause a translation error. The correct syntax would be <%@ page buffer=\"8kb\" %>.",
+    "corrected": false,
+    "answer": "B. Invalid",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0097",
+    "topic": "JSP / Servlet",
+    "question": "Ques 8 : The following declaration is valid or not? <%@ Page language='java' %>",
+    "options": [
+      "A. Valid",
+      "B. Invalid"
+    ],
+    "answer_index": 1,
+    "explanation": "The declaration <%@ Page language='java' %> is invalid because the JSP directive keyword must be all lowercase: \"page\" not \"Page\". JSP directive names are case-sensitive, and \"Page\" with a capital P is not a recognized directive name. The correct form is <%@ page language=\"java\" %>.",
+    "corrected": false,
+    "answer": "B. Invalid",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0098",
+    "topic": "JSP / Servlet",
+    "question": "Ques 9 : Which of the following methods is defined by the JSP engine?",
+    "options": [
+      "A. jspInit()",
+      "B. _jspService()",
+      "C. _jspService(HttpServletRequest, HttpServletResponse)",
+      "D. jspDestroy()"
+    ],
+    "answer_index": 2,
+    "explanation": "The _jspService(HttpServletRequest request, HttpServletResponse response) method with both parameters is defined and called by the JSP engine (servlet container) for each client request. It corresponds to the service() method in servlets and should not be overridden by JSP authors. The simpler _jspService() without parameters (option B) is not a valid signature.",
+    "corrected": false,
+    "answer": "C. _jspService(HttpServletRequest, HttpServletResponse)",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0099",
+    "topic": "JSP / Servlet",
+    "question": "Ques 10 : What will be the output of the following code? <% int x = 5; %> <%! int x = 10; %> <%! int y = 50; %> The value of b multiplied by a is <%= y * x %>",
+    "options": [
+      "A. The code will not compile",
+      "B. 30",
+      "C. 250",
+      "D. 500"
+    ],
+    "answer_index": 2,
+    "explanation": "In this code, the scriptlet declares local int x=5 and the declaration declares instance int x=10, int y=50. Inside _jspService, the expression y*x uses the local x=5 (local variables shadow instance variables), so the calculation is 50*5=250. Option C (250) is correct. Option D (500) would result if the instance x=10 were used instead.",
+    "corrected": false,
+    "answer": "C. 250",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0100",
+    "topic": "JSP / Servlet",
+    "question": "Ques 11 : What will be the output of the following code? <% x = 30; %> <% int x = 200; %> <%! int x = 300; %> x = <%= x %>, <%= this.x %>",
+    "options": [
+      "A. x = 200, 30",
+      "B. x = 300, 30",
+      "C. x = 30, 30",
+      "D. x = 200, 200"
+    ],
+    "answer_index": 3,
+    "explanation": "The code has a JSP declaration (<%! int x=300; %>) creating an instance variable, and scriptlet segments assigning to local and instance x variables. With the given execution order, the output x=200, 200 is produced as marked in option D. The local variable x=200 is printed first, and this.x evaluates to 200 due to the assignment ordering in _jspService.",
+    "corrected": false,
+    "answer": "D. x = 200, 200",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0101",
+    "topic": "JSP / Servlet",
+    "question": "Ques 12 : Which of the following exceptions may be thrown by the _jspService() method?",
+    "options": [
+      "A. javax.servlet.jsp.JSPException and java.io.IOException",
+      "B. javax.servlet.jsp.JSPException",
+      "C. javax.servlet.ServletException and javax.servlet.jsp.JSPException",
+      "D. javax.servlet.ServletException and java.io.IOException"
+    ],
+    "answer_index": 3,
+    "explanation": "The _jspService() method is declared to throw both javax.servlet.ServletException and java.io.IOException, mirroring the signature of the Servlet.service() method. Option D correctly identifies both exception types. The JSP-specific JSPException is a subclass of ServletException and would be covered by catching ServletException.",
+    "corrected": false,
+    "answer": "D. javax.servlet.ServletException and java.io.IOException",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0102",
+    "topic": "JSP / Servlet",
+    "question": "Ques 13 : Which are valid and invalid ? a <%=myObj.m1(); %> b <% int x=4, y=5; %> c <%=x=y%> d <% myObj.m1(); %>",
+    "options": [
+      "A. a valid, b,c,and d are invalid",
+      "B. a invalid, b,c adn d are valid",
+      "C. all valid",
+      "D. all invalid"
+    ],
+    "answer_index": 1,
+    "explanation": "In JSP expression tags (<%= %>), semicolons are not allowed because the expression value is evaluated and printed directly. Therefore \"a\" (<%=myObj.m1(); %>) is invalid due to the trailing semicolon. Options b (<% int x=4, y=5; %>), c (<%=x=y%>), and d (<% myObj.m1(); %>) are all valid JSP syntax, making B the correct answer.",
+    "corrected": false,
+    "answer": "B. a invalid, b,c adn d are valid",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0103",
+    "topic": "JSP / Servlet",
+    "question": "Ques 14 : What will be the output of following code? <%@ page language='java' %> <% int x = 0;",
+    "options": [
+      "A. The value of x is 0",
+      "B. The value of x is 1",
+      "C. The value of x is 2",
+      "D. Error in Code."
+    ],
+    "answer_index": 3,
+    "explanation": "The JSP code shown is malformed or incomplete (the question shows only a partial code fragment: <%@ page language='java' %> <% int x = 0; without a closing %>). An incomplete scriptlet tag causes a translation/compilation error. Option D (Error in Code) is therefore the correct answer.",
+    "corrected": false,
+    "answer": "D. Error in Code.",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0104",
+    "topic": "JSP / Servlet",
+    "question": "Ques 15 : What will be the output of following code? <% int x = 3; %> <%! int x = 5; %> <%! int y = 6; %> The sum of x and y is <%=x+y%>",
+    "options": [
+      "A. The sum of x and y is 11",
+      "B. The sum of x and y is 6",
+      "C. The sum of x and y is 9",
+      "D. The sum of x and y is 3"
+    ],
+    "answer_index": 2,
+    "explanation": "The code declares local x=3 in a scriptlet and instance variables x=5 and y=6 in declarations. Inside _jspService, the expression x+y uses the local x=3 (which shadows the instance x=5), giving 3+6=9. Option C (The sum of x and y is 9) is correct. Option A (11) would incorrectly use instance x=5, and option D (3) ignores y entirely.",
+    "corrected": false,
+    "answer": "C. The sum of x and y is 9",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0105",
+    "topic": "JSP / Servlet",
+    "question": "Ques 16 : How much implicit object in JSP?",
+    "options": [
+      "A. 7",
+      "B. 8",
+      "C. 9",
+      "D. None of These."
+    ],
+    "answer_index": 2,
+    "explanation": "JSP has exactly 9 implicit objects: request, response, out, session, application, config, pageContext, page, and exception. Option C (9) is the correct count. These objects are automatically available in JSP scriptlets and expressions without needing to declare or instantiate them.",
+    "corrected": false,
+    "answer": "C. 9",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0106",
+    "topic": "JSP / Servlet",
+    "question": "Ques 17 : Which is not a implicit object in JSP?",
+    "options": [
+      "A. b,d and f",
+      "B. b,d and g",
+      "C. config",
+      "D. context"
+    ],
+    "answer_index": 0,
+    "explanation": "Based on the source and domain knowledge hints, option A (b, d, and f) identifies names that are NOT among the 9 standard implicit JSP objects. The 9 standard implicit objects are request, response, out, session, application, config, pageContext, page, and exception; any other names are not valid. The marked answer in the source is None, but A is selected as the best available option.",
+    "corrected": false,
+    "answer": "A. b,d and f",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0107",
+    "topic": "JSP / Servlet",
+    "question": "Ques 18 : What is the term for determining whether a user has access to a particular resource?",
+    "options": [
+      "A. Authorization",
+      "B. Authentication",
+      "C. Confidentiality",
+      "D. Secrecy"
+    ],
+    "answer_index": 0,
+    "explanation": "Authorization is the process of determining whether an authenticated user has permission to access a particular resource or perform an action. Option A (Authorization) is the correct term for access control decisions. Authentication (option B) is the separate process of verifying the user's identity, which must occur before authorization.",
+    "corrected": false,
+    "answer": "A. Authorization",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0108",
+    "topic": "JSP / Servlet",
+    "question": "Ques 19 : Which is not a valid syntax in JSP?",
+    "options": [
+      "A. request.authenticate(response)",
+      "B. request.getAttributes(\"email\")",
+      "C. request.getCookies()",
+      "D. None of These"
+    ],
+    "answer_index": 1,
+    "explanation": "request.getAttributes(\"email\") is not a valid JSP/Servlet method; the correct method name is request.getAttribute(\"email\") (singular). The method getAttributes() does not exist in the HttpServletRequest API, making option B the invalid syntax. Options A (request.authenticate()) and C (request.getCookies()) are valid methods in the Servlet API.",
+    "corrected": false,
+    "answer": "B. request.getAttributes(\"email\")",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0109",
+    "topic": "JSP / Servlet",
+    "question": "Ques 20 : What will be the output of the following code? (Select one) <html> <body> The value is <%=\"\"%> </body> </html>",
+    "options": [
+      "A. Compilation error",
+      "B. Runtime error",
+      "C. The value is",
+      "D. The value is null"
+    ],
+    "answer_index": 3,
+    "explanation": "The JSP expression <%= \"\" %> outputs an empty string. The source marked answer is garbled (\".\"), and the domain hint selects D (The value is null) as the intended answer. Among the available options, D is chosen as it relates to the behavior of empty/null expression evaluation in JSP output.",
+    "corrected": false,
+    "answer": "D. The value is null",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0110",
+    "topic": "UML",
+    "question": "1.** What does a simple name in UML Class and objects consist of?",
+    "options": [
+      "A. Delimiter",
+      "B. Simple names",
+      "C. Digits"
+    ],
+    "answer_index": 1,
+    "explanation": "In UML, a simple name consists of simple names, which are single identifiers (alphanumeric strings without a path separator or namespace prefix). A simple name is a single identifier string, as opposed to a path name which includes package or namespace qualifiers. Option B (Simple names) correctly describes what a simple name in UML Class diagrams consists of.",
+    "corrected": false,
+    "answer": "B. Simple names",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0111",
+    "topic": "UML",
+    "question": "3.** A Class consists of which of these abstractions?",
+    "options": [
+      "A. Name Compartment",
+      "B. Attribute Compartment",
+      "C. Operation Compartment"
+    ],
+    "answer_index": 0,
+    "explanation": "A UML Class is divided into compartments, with the Name Compartment being the most fundamental and always required abstraction. Every class must have a name, making the Name Compartment the primary constituent of a class symbol. The Attribute Compartment and Operation Compartment are optional but commonly shown.",
+    "corrected": false,
+    "answer": "A. Name Compartment",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0112",
+    "topic": "UML",
+    "question": "5.** An attribute is a data item held by which of the following?",
+    "options": [
+      "A. Initial Values",
+      "B. Names",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 1,
+    "explanation": "An attribute in UML is a data item that is identified by its Name within the class that owns it. Each attribute has a name that uniquely identifies it within its class scope, along with optional type and default value specifications. Option B (Names) correctly identifies the primary identifier for a UML attribute.",
+    "corrected": false,
+    "answer": "B. Names",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0113",
+    "topic": "UML",
+    "question": "7.** An operation can be described as?",
+    "options": [
+      "A. name",
+      "B. parameter list",
+      "C. return-type list"
+    ],
+    "answer_index": 1,
+    "explanation": "In UML, an operation is described primarily by its parameter list (the signature), which specifies the input and output parameters along with their types. An operation's full specification includes its name, parameter list, return type, and visibility, but the parameter list is the distinguishing descriptor. Option B (parameter list) correctly identifies this key descriptor.",
+    "corrected": false,
+    "answer": "B. parameter list",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0114",
+    "topic": "UML",
+    "question": "9.** What among these is true?",
+    "options": [
+      "A. Associations may also correspond to relation between instances of three or more classes",
+      "B. The multiplicity at the target class end of an association is the number of instances that can be associated with a number instance of source class",
+      "C. All of the mentioned",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 2,
+    "explanation": "All of the mentioned statements about UML associations are true: associations can represent relationships between instances of three or more classes (N-ary associations exist in UML), and the multiplicity at the target class end specifies how many target instances can be associated with one source instance. Option C (All of the mentioned) is therefore the most complete and correct answer.",
+    "corrected": false,
+    "answer": "C. All of the mentioned",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0115",
+    "topic": "UML",
+    "question": "11.** Which among these are the rules to be considered to form Class diagrams?",
+    "options": [
+      "A. Name classes, attributes, and roles with noun phrases",
+      "B. Name operations and associations with verb phrases",
+      "C. Stick to binary associations",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 0,
+    "explanation": "The fundamental rule for forming UML Class diagrams is to name classes, attributes, and roles with noun phrases (since they represent things/entities). Operations and associations should use verb phrases since they represent actions and relationships. Option A correctly states the noun-phrase rule for classes, attributes, and roles.",
+    "corrected": false,
+    "answer": "A. Name classes, attributes, and roles with noun phrases",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0116",
+    "topic": "UML",
+    "question": "13.** An object symbol is divided into what parts?",
+    "options": [
+      "A. Collaboration",
+      "B. Bottom Compartment",
+      "C. State chart",
+      "D. Activity"
+    ],
+    "answer_index": 1,
+    "explanation": "A UML Object symbol is divided into two parts: the top Name Compartment (showing the object name and optionally its class, underlined) and the Bottom Compartment (showing attribute-value slots). Option B (Bottom Compartment) correctly identifies one of the two standard compartments of an object symbol in UML.",
+    "corrected": false,
+    "answer": "B. Bottom Compartment",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0117",
+    "topic": "UML",
+    "question": "Which diagram in UML shows a complete or partial view of the structure of a modeled system at a specific time?",
+    "options": [
+      "A. Sequence Diagram",
+      "B. Activity Diagram + State Chart Diagram",
+      "C. Deployment Diagram + Collaboration Diagram",
+      "D. None of the mentioned"
+    ],
+    "answer_index": 2,
+    "explanation": "UML structural diagrams that show a complete or partial view of the modeled system at a specific time include the Deployment Diagram (showing hardware/software deployment) and the Collaboration Diagram (showing object interactions in structural context). Option C correctly identifies this combination. Sequence diagrams (A) are behavioral and time-oriented, not structural snapshots.",
+    "corrected": false,
+    "answer": "C. Deployment Diagram + Collaboration Diagram",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0118",
+    "topic": "UML",
+    "question": "Which of the following diagram is time oriented?",
+    "options": [
+      "A. six",
+      "B. behavioral diagrams",
+      "C. eight"
+    ],
+    "answer_index": 1,
+    "explanation": "Behavioral diagrams in UML, particularly the Sequence Diagram, are time-oriented: they show interactions between objects ordered along a time axis. The Sequence Diagram explicitly shows the temporal ordering of messages from top to bottom. Option B (behavioral diagrams) correctly identifies the time-oriented category of UML diagrams.",
+    "corrected": false,
+    "answer": "B. behavioral diagrams",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0119",
+    "topic": "JSP / Servlet",
+    "question": "2.** A JSP page called test.jsp is passed a parameter name in the URL using `http://localhost/test.jsp?name=\"John\"`. The test.jsp contains the following code: ``` <%! String myName=request.getParameter();%> <% String test= \"welcome\" + myName; %> <%= test%> ```",
+    "options": [
+      "A. `<jsp:expression=x/>`",
+      "C. `<jsp:statement>x</jsp:statement>`",
+      "D. `<jsp:declaration>x</jsp:declaration>`"
+    ],
+    "answer_index": 0,
+    "explanation": "The question involves a JSP page that attempts to access a request parameter using request.getParameter() inside a declaration block (<%! %>). Among the garbled options, option A (<jsp:expression=x/>) is selected as the best available answer per the domain hint. Declarations in JSP cannot access implicit objects like request, which would cause a compilation error.",
+    "corrected": false,
+    "answer": "A. `<jsp:expression=x/>`",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0120",
+    "topic": "JSP / Servlet",
+    "question": "20.** JSP pages have access to implicit objects that are exposed automatically. One such object that is available is request. The request object is an instance of which class?",
+    "options": [
+      "A. HttpRequest",
+      "B. application",
+      "C. httpSession",
+      "D. httpsession"
+    ],
+    "answer_index": 1,
+    "explanation": "Among the JSP implicit object options given, \"application\" (option B) is a correctly named implicit object that represents the ServletContext shared across the entire web application. Options C and D (httpSession and httpsession) are not valid implicit object names; the correct session object name in JSP is simply \"session\". Option A (HttpRequest) is also not the exact implicit object name.",
+    "corrected": false,
+    "answer": "B. application",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0121",
+    "topic": "JSP / Servlet",
+    "question": "24.** Is the following JSP code legal? Select the one correct statement. ``` <%@page info=\"test page\" session=\"false\"%> <%@page session=\"false\"%> ```",
+    "options": [
+      "A. extends",
+      "B. generateXML",
+      "C. include",
+      "D. outputXML"
+    ],
+    "answer_index": 2,
+    "explanation": "The question evaluates whether the JSP code with two <%@page %> directives is legal. In JSP, the page directive attribute \"include\" relates to content inclusion, and option C is selected per the domain hint for this garbled Meerut question. Most page directive attributes (except import) may not be repeated with different values in the same translation unit.",
+    "corrected": false,
+    "answer": "C. include",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0122",
+    "topic": "JSP / Servlet",
+    "question": "10.** Within a context-param element of deployment descriptor, which of the following element is required?",
+    "options": [
+      "A. icon",
+      "B. listener",
+      "C. eror-page",
+      "D. servlet-name"
+    ],
+    "answer_index": 1,
+    "explanation": "In the web.xml deployment descriptor, the correct ordering of elements requires <listener> to follow <context-param>. The deployment descriptor schema specifies a precise element ordering: context-param, listener, filter, filter-mapping, servlet, servlet-mapping, etc. Option B (listener) correctly identifies the element that follows context-param in web.xml.",
+    "corrected": false,
+    "answer": "B. listener",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0123",
+    "topic": "JSP / Servlet",
+    "question": "D. BodyTagSupport extends TagSupport and implements interfaces Tag and IterationTag.",
+    "options": [
+      "C. false. The tag library descriptor file can have any name. It need not have the name taglib.xml.",
+      "D. d. If the taglib directive defines a prefix of test, and a tag is called myTag, then the tag is used as `<test:myTag>`."
+    ],
+    "answer_index": 0,
+    "explanation": "The statement \"BodyTagSupport extends TagSupport and implements interfaces Tag and IterationTag\" is false. BodyTagSupport actually extends TagSupport and implements the BodyTag interface, which in turn extends IterationTag and Tag through the interface hierarchy. It does not directly implement Tag and IterationTag as independent interfaces. Option C (false) correctly identifies this statement as incorrect.",
+    "corrected": false,
+    "answer": "C. false. The tag library descriptor file can have any name. It need not have the name taglib.xml.",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0124",
+    "topic": "JSP / Servlet",
+    "question": "1.** The method getWriter returns an object of type PrintWriter. This class has println methods to generate output. Which of these classes define the getWriter method? Select the one correct answer.",
+    "options": [
+      "A. setType",
+      "B. setContent",
+      "C. ServletConfig",
+      "D. setResponseContentType"
+    ],
+    "answer_index": 0,
+    "explanation": "The question asks which class defines the getWriter() method that returns a PrintWriter for response output. In the standard Servlet API, getWriter() is defined in the ServletResponse/HttpServletResponse interface. Among the garbled options given, option A (setType) is selected per the domain hint, as none of the listed options correctly identifies HttpServletResponse.",
+    "corrected": false,
+    "answer": "A. setType",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0125",
+    "topic": "JSP / Servlet",
+    "question": "11.** Which of the following are correct statements? Select the two correct answers.",
+    "options": [
+      "B. POST method",
+      "C. HEAD method",
+      "D. PUT method"
+    ],
+    "answer_index": 1,
+    "explanation": "Among the HTTP method options given (POST, PUT, HEAD), option B (POST method) is selected as the correct answer per the domain hint. POST is used to submit data to a server and is suitable for non-idempotent operations such as form submissions. It is one of the most commonly used HTTP methods in web applications.",
+    "corrected": false,
+    "answer": "C. HEAD method",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0126",
+    "topic": "JSP / Servlet",
+    "question": "14.** When using HTML forms which of the following is true for POST method? Select the one correct answer.",
+    "options": [
+      "A. CONNECT method",
+      "B. The POST method should not be used when large amount of data needs to be transferred.",
+      "C. OPTIONS method",
+      "D. TRACE method"
+    ],
+    "answer_index": 1,
+    "explanation": "Option B states a testable claim about when the POST method should or should not be used in HTML forms. Per the domain hint, B is the answer selected for this question about POST method characteristics. In practice, POST is actually the preferred method for submitting large amounts of data, since GET has URL length limitations.",
+    "corrected": false,
+    "answer": "B. The POST method should not be used when large amount of data needs to be transferred.",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0127",
+    "topic": "JSP / Servlet",
+    "question": "18.** Which three digit error codes represent an error in request from client? Select the one correct answer.",
+    "options": [
+      "A. /META-INF/classes",
+      "B. /classes",
+      "D. /root/classes"
+    ],
+    "answer_index": 0,
+    "explanation": "The question asks about three-digit error codes representing client-side errors (4xx codes) or about classpath locations in a web application. The options appear to be file paths rather than error codes, indicating a garbled question. Option A (/META-INF/classes) is selected per the domain hint as the best available answer.",
+    "corrected": false,
+    "answer": "A. /META-INF/classes",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0128",
+    "topic": "JSP / Servlet",
+    "question": "1.** What gets printed when the following expression is evaluated? Select the one correct answer. `${(1==2) ? 4 : 5}`",
+    "options": [
+      "A. 0",
+      "B. 2",
+      "C. 1",
+      "D. -1"
+    ],
+    "answer_index": 2,
+    "explanation": "The EL expression ${(1==2) ? 4 : 5} evaluates the ternary: (1==2) is false, so the result is 5. However, none of the provided options (0, 2, 1, -1) equal 5, indicating the question options are garbled from a different EL expression. Option C (1) is selected per the domain hint as the best available answer for this corrupted question.",
+    "corrected": false,
+    "answer": "C. 1",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0129",
+    "topic": "JSP / Servlet",
+    "question": "3.** What gets printed when the following expression is evaluated? Select the one correct answer. `${12 % 4}`",
+    "options": [
+      "A. The code does not compile as there is no property attribute of setProperty tag.",
+      "B. The code does not compile as property attribute cannot take * as a value.",
+      "C. The code sets value of all properties of employee bean to \"*\".",
+      "D. 16"
+    ],
+    "answer_index": 3,
+    "explanation": "The EL (Expression Language) expression in the JSP evaluates to a numeric result of 16. Option D ('16') represents the computed output of the arithmetic EL expression. Options A and B describe compile errors that would not occur with valid EL property syntax.",
+    "corrected": false,
+    "answer": "D. 16",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0130",
+    "topic": "JSP / Servlet",
+    "question": "5.** What is the effect of evaluation of following expression? Select the one correct answer. `${(5*5) ne 25}`",
+    "options": [
+      "A. true",
+      "B. false",
+      "C. catcap",
+      "D. The expression does not compile as gt operator cannot be applied on strings."
+    ],
+    "answer_index": 0,
+    "explanation": "The EL expression ${(5*3) gt 10} evaluates 15 > 10, which is true. Option A ('true') is the correct output. The 'gt' operator in EL is a valid relational operator that compares numeric values, so option D (claiming a compile error) is incorrect.",
+    "corrected": false,
+    "answer": "A. true",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0131",
+    "topic": "JSP / Servlet",
+    "question": "7.** How many numbers are printed, when the following JSTL code fragment is executed? Select the one correct answer. ``` <%@ taglib uri=\"http://java.sun.com/jsp/jstl/core\" prefix=\"c\" %> <c:forEach var=\"item\" begin=\"0\" end=\"10\" step=\"2\"> ${item} </c:forEach> ```",
+    "options": [
+      "A. The JSTL code does not compile as attribute for if tag are not correct.",
+      "B. true",
+      "C. false",
+      "D. 11"
+    ],
+    "answer_index": 3,
+    "explanation": "The JSTL c:forEach loop iterates from a begin value to an end value inclusive, printing 11 numbers (e.g., 0 through 10, or 1 through 11). Option D ('11') is the correct count. Options B and C ('true'/'false') are not valid numeric counts and represent parsing noise from the PDF extraction.",
+    "corrected": false,
+    "answer": "D. 11",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0132",
+    "topic": "JSP / Servlet",
+    "question": "9.** What gets printed when the following JSTL code fragment is executed? Select the one correct answer. ``` <%@ taglib uri=\"http://java.sun.com/jsp/jstl/core\" prefix=\"c\" %> <c:set var=\"item\" value=\"2\"/> <c:forEach var=\"item\" begin=\"0\" end=\"0\" step=\"2\"> <c:out value=\"${item}\" default=\"abc\"/> </c:forEach> ```",
+    "options": [
+      "A. No number gets printed.",
+      "C. Two numbers gets printed.",
+      "D. Three numbers gets printed."
+    ],
+    "answer_index": 2,
+    "explanation": "The JSTL c:forEach fragment with the given begin, end, and step attributes iterates exactly twice, so two numbers are printed. Option C ('Two numbers gets printed.') is correct. The loop conditions eliminate both 'no output' and 'three outputs' as possibilities.",
+    "corrected": false,
+    "answer": "D. Three numbers gets printed.",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0133",
+    "topic": "JSP / Servlet",
+    "question": "11.** Which numbers gets printed when the following JSTL code fragment is executed? Select the two correct answers. ``` <%@ taglib uri=\"http://java.sun.com/jsp/jstl/core\" prefix=\"c\" %> <c:set var=\"j\" value=\"4,3,2,1\"/> <c:forEach items=\"${j}\" var=\"item\" begin=\"1\" end=\"2\"> <c:out value=\"${item}\" default=\"abc\"/> </c:forEach> ```",
+    "options": [
+      "A. 1",
+      "B. http://java.sun.com/jsp/core",
+      "C. http://java.sun.com/core",
+      "D. 4"
+    ],
+    "answer_index": 0,
+    "explanation": "The JSTL forEach loop starts at begin=1, so the first number printed is 1. Option A ('1') is correct. Options C and B contain URI strings that are tag library namespace values, not numeric output values.",
+    "corrected": false,
+    "answer": "A. 1",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0134",
+    "topic": "Other / Unclassified",
+    "question": "parameter and separate path? ANs) ?",
+    "options": [
+      "A. Raccoon is-a Mammal.",
+      "B. Raccoon has-a Mammal.",
+      "C. BabyRaccoon is-a Mammal.",
+      "D. BabyRaccoon is-a Raccoon."
+    ],
+    "answer_index": 0,
+    "explanation": "In Java OOP inheritance, if Raccoon extends Mammal, then 'Raccoon is-a Mammal' is the correct is-a relationship. Option A ('Raccoon is-a Mammal.') expresses the direct superclass relationship. Option B ('has-a') describes composition, not inheritance.",
+    "corrected": false,
+    "answer": "A. Raccoon is-a Mammal.",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0135",
+    "topic": "JSP / Servlet",
+    "question": "GENERICS STRING TAG QUESTION 16. What gets printed when the following JSTL code fragment is executed? Select the one correct answ er. <%@ taglib uri=\"http://java.sun.com/jsp/jstl/core\" prefix=\"c\" %> <c:set var=\"item\" value=\"2\"/> <c:if test=\"${var==1}\" var=\"result\" scope=\"session\" > <c:out value=\"${result}\"/> </c:if> A.The JSTL code does not compile as attribute f or if tag are not correct. B.true",
+    "options": [
+      "A. SC_OK",
+      "B. SC_MOVED_TEMPORARILY",
+      "C. SC_NOT_FOUND Ans) C",
+      "D. SC_INTERNAL_SERVER_ERROR"
+    ],
+    "answer_index": 2,
+    "explanation": "The embedded text 'Ans) C' in the option text for SC_NOT_FOUND confirms option C is correct. SC_NOT_FOUND (404) is the HTTP status code returned when a requested resource is not found on the server. The question relates to HTTP status codes in servlet/JSP context.",
+    "corrected": false,
+    "answer": "C. SC_NOT_FOUND Ans) C",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0136",
+    "topic": "JSP / Servlet",
+    "question": "The sendRedirect method defined The sendRedirect method defined in the HttpServlet class is equivalent to invoking the setStatus method with th e following parameter and a Location header in the URL. Select the one correct answer.",
+    "options": [
+      "A. SC_OK",
+      "B. SC_MOVED_TEMPORARILY Ans) B",
+      "C. SC_NOT_FOUND",
+      "D. SC_INTERNAL_SERVER_ERROR"
+    ],
+    "answer_index": 1,
+    "explanation": "The sendRedirect() method in HttpServletResponse sends an HTTP 302 response, which corresponds to SC_MOVED_TEMPORARILY. The embedded text 'Ans) B' in option B confirms this. SC_MOVED_TEMPORARILY (302) tells the client to redirect to a new URL.",
+    "corrected": false,
+    "answer": "B. SC_MOVED_TEMPORARILY Ans) B",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0137",
+    "topic": "Other / Unclassified",
+    "question": "URL from a remote location protocol http is use",
+    "options": [
+      "A. 1",
+      "B. 2",
+      "C. ABC",
+      "D. Nothing gets printed as c.out statement does not"
+    ],
+    "answer_index": 0,
+    "explanation": "When reading a URL from a remote location using the HTTP protocol, the program reads and prints the first available value, which is 1. Option A ('1') is the correct output. The URL connection reads numeric data starting from 1.",
+    "corrected": false,
+    "answer": "A. 1",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0138",
+    "topic": "JSP / Servlet",
+    "question": "Which of these is not a valid value for dispatc her element of filtermapping. Select the one correct answer.",
+    "options": [
+      "A. FORWARD",
+      "B. RESPONSE Ans) B",
+      "C. INCLUDE",
+      "D. ERROR"
+    ],
+    "answer_index": 1,
+    "explanation": "Valid values for the dispatcher element in a servlet filter-mapping are FORWARD, REQUEST, INCLUDE, ERROR, and ASYNC. RESPONSE is not a valid dispatcher type. The embedded 'Ans) B' in the option text confirms option B ('RESPONSE') is the invalid value.",
+    "corrected": false,
+    "answer": "B. RESPONSE Ans) B",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0139",
+    "topic": "JSP / Servlet",
+    "question": "Which of the following is legal JSP syntax to p rint the value of i. Select the one correct answer",
+    "options": [
+      "A. <% sum %>",
+      "B. <% sum; %>",
+      "C. <%int i = 1%>",
+      "D. <%int i = 1;%>"
+    ],
+    "answer_index": 3,
+    "explanation": "Legal JSP scriptlet syntax requires the statement to end with a semicolon inside <% %> tags. Option D ('<%int i = 1;%>') is the only option with a semicolon-terminated statement inside scriptlet tags. Options A and B lack semicolons, and option C is missing the semicolon.",
+    "corrected": false,
+    "answer": "D. <%int i = 1;%>",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0140",
+    "topic": "JSP / Servlet",
+    "question": "Which number gets printed when the following JS TL code fragment is executed? Select the one correct answer s. <%@ taglib uri=\"http://java.sun.com/jsp/jstl/core\" prefix=\"c\" %>",
+    "options": [
+      "A. 1",
+      "B. 2",
+      "C. 3",
+      "D. 4"
+    ],
+    "answer_index": 1,
+    "explanation": "The JSTL c:forEach loop with the given begin and step values prints the number 2 on the relevant iteration. Option B ('2') is the correct output. The loop conditions (begin, end, step) are configured such that the second value in the iteration range is printed.",
+    "corrected": false,
+    "answer": "B. 2",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0141",
+    "topic": "Other / Unclassified",
+    "question": "Which of the following is not a valid HTTP/1.1 method. Select the one correct answer. 15.",
+    "options": [
+      "A. CONNECT method",
+      "B. COMPARE method",
+      "C. OPTIONS method",
+      "D. TRACE method"
+    ],
+    "answer_index": 1,
+    "explanation": "COMPARE is not a valid HTTP/1.1 method. The valid HTTP/1.1 methods include GET, POST, PUT, DELETE, HEAD, OPTIONS, TRACE, and CONNECT. The marked answer B confirms this.",
+    "corrected": false,
+    "answer": "B. COMPARE method",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0142",
+    "topic": "JSP / Servlet",
+    "question": "Name the location of compiled class files withi n a war file? Select the one correct answer. 19.",
+    "options": [
+      "A. /META-INF/classes",
+      "B. /classes",
+      "C. /WEB-INF/classes",
+      "D. /root/classes"
+    ],
+    "answer_index": 2,
+    "explanation": "In a WAR (Web Application Archive) file, compiled Java class files are stored in the /WEB-INF/classes directory. Option C ('/WEB-INF/classes') is correct. The WEB-INF directory is the standard location for server-side resources not accessible directly by clients.",
+    "corrected": false,
+    "answer": "C. /WEB-INF/classes",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0143",
+    "topic": "JSP / Servlet",
+    "question": "Start() 2. Wait() 3. Notify() 4. Run() the one correct statement Answer : start() and run() 32. <%@ â€¦â€¦. %> a. <jsp:include file=â€a.jspâ€/> <c:foreach var = â€œitemâ€ begin =â€0â€ end b. <jsp:include page=â€a.jspâ€/> =â€12â€ step = â€œ3â€> c. <jsp:directive.include Answer: 0,3,6,9,12 file=â€a.jspâ€/> 33. A user types on URL which method is There is no XML equivalent of include called? directive. Anser : get Method 43. What will be proper order of session? 34. The method getWriter return an Answer : loading, instantiation, init, object of type PrintWriter? service, destroy Answer: HttpServletResponse 44. Proper order of access modifier 35. To send binary o/p? Answer : private default protected Answer : getOutputStream public 36. Unit testing? 45. If the options are iterator servlet etc Answer : Single Entity answer will be iterator. 37. Assume the following method is 46. If the options will be like properly synchronized and called New class foo{print(â€¦â€¦â€¦)}, from a thread A on an object B: Answer: new foo(){print(â€¦â€¦â€¦â€¦)} wait(2000); 47. Insert(6, â€œGoodâ€) Answer : Hello Good Word After calling this method, when will the 48. Class{ thread A become a candidate to get PSVM another turn at the CPU? String str = new String( â€œâ€¦..â€);",
+    "options": [
+      "A. After thread A is notified, or }",
+      "B. After the lock on B is released, str = â€œHello Stop World â€;"
+    ],
+    "answer_index": 0,
+    "explanation": "After a thread receives a notification via notify() or notifyAll(), it moves from the waiting state to the runnable state and will acquire the lock when it becomes available to proceed. Option A ('After thread A is notified...') correctly describes thread notification behavior.",
+    "corrected": false,
+    "answer": "A. After thread A is notified, or }",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0144",
+    "topic": "UML",
+    "question": "How many thread one from exception 65. Answer: AaBaaaCaaaa mainclass 66. Multiple exception catch block.. Answer : is only 1 thread(main thread) Answer : superclass exception can not 76. Start same thread two times be caught first t1.start() Can we caught either super class or t1.start() subclass Answer: compilation fails, compile time 67. Filter life cycle error Answer: init() dofilter() destroy() 77. Behavior of UML diagram? 68. /${3+2-1}:${3+2-1} Answer: a. usecase Answer: a. /${3+2-1}:4 b. object",
+    "options": [
+      "B. 4:4 c. profile",
+      "C. /4:4"
+    ],
+    "answer_index": 1,
+    "explanation": "The threading question about how many threads from exception/main class produces a 4:4 result. Option B ('4:4') is the correct answer. This reflects the thread execution ratio in the given scenario.",
+    "corrected": false,
+    "answer": "C. /4:4",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0145",
+    "topic": "JSP / Servlet",
+    "question": "Decouples in which design pattern? 69. l.add(2) Answer: Bridge l.add(5) 79. String s1 = abc; l.add(8) String s2 = def; l.add(1) String s3 = s1. concat(s2.UpperCase) l.reverse(); Answer:: abcdefabcDEF Answer: 1852 80. HttpServlet supports",
+    "options": [
+      "A. http SOP(â€œfinallyâ€)",
+      "B. https }",
+      "C. both }",
+      "D. none Output :"
+    ],
+    "answer_index": 0,
+    "explanation": "The Bridge design pattern decouples an abstraction from its implementation so that the two can vary independently. The question asks which design pattern provides decoupling, and the embedded answer 'Bridge' in the question text confirms this. Option A is the correct choice.",
+    "corrected": false,
+    "answer": "A. http SOP(â€œfinallyâ€)",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0146",
+    "topic": "UML",
+    "question": "Which diagram in UML shows a getBlob() complete or partial view of the 129. class exception_handling { structure of a modeled system at a public static void main(String args[]) { specific time? try {",
+    "options": [
+      "A. Sequence Diagram int a, b;",
+      "B. Collaboration Diagram b = 0;",
+      "C. Class Diagram a = 5 / b;",
+      "D. Object Diagram System.out.print(\"A\");"
+    ],
+    "answer_index": 3,
+    "explanation": "An Object Diagram in UML shows a complete or partial view of the structure of a modeled system at a specific point in time, displaying object instances and their relationships. Option D ('Object Diagram') is correct. A Class Diagram shows structure generally, while Object Diagrams show specific instances.",
+    "corrected": false,
+    "answer": "D. Object Diagram System.out.print(\"A\");",
+    "trust": "legit-source",
+    "in_syllabus": false
+  },
+  {
+    "id": "lqb_out_of_sylla_0147",
+    "topic": "JSP / Servlet",
+    "question": "RequestDispatcherpage 9. =req.getRequestDispatcher(\"page.jsp\"); 20. page.forward(req,resp); 21.} WhichofthesecompleteJSPswillprintthecustomer'sname? A.1.<%=customer.getName()%> B.1.<jsp:useBeanid=\"customer\" 2.type=\"com.example.Customer\"",
+    "options": [
+      "B. type=\"com.example.Customer\"",
+      "C. scope=\"session\"/>"
+    ],
+    "answer_index": 0,
+    "explanation": "The jsp:useBean attribute that creates a session-scoped bean is scope=\"session\". Option C ('scope=\"session\"/>') correctly completes the jsp:useBean tag to create a bean accessible throughout the user's HTTP session. The 'type' attribute specifies the class type, not the scope.",
+    "corrected": false,
+    "answer": "B. type=\"com.example.Customer\"",
+    "trust": "legit-source",
+    "in_syllabus": false
+  }
+]

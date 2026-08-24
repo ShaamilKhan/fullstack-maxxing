@@ -66,6 +66,30 @@
     "trust": "legit-source"
   },
   {
+    "file": "core_java.json",
+    "name": "Core Java",
+    "count": 64,
+    "trust": "legit-source"
+  },
+  {
+    "file": "spring_framework.json",
+    "name": "Spring Framework",
+    "count": 40,
+    "trust": "legit-source"
+  },
+  {
+    "file": "jdbc_spring_jdbc.json",
+    "name": "JDBC / Spring JDBC",
+    "count": 31,
+    "trust": "legit-source"
+  },
+  {
+    "file": "out_of_syllabus.json",
+    "name": "Out of Syllabus",
+    "count": 147,
+    "trust": "legit-source"
+  },
+  {
     "file": "set_12.json",
     "name": "Set 12",
     "count": 120,

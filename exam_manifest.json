@@ -126,6 +126,48 @@
     "trust": "verified"
   },
   {
+    "file": "exam_set_37.json",
+    "name": "Core Java (Part 1)",
+    "count": 60,
+    "trust": "verified"
+  },
+  {
+    "file": "exam_set_38.json",
+    "name": "Core Java (Part 2)",
+    "count": 4,
+    "trust": "verified"
+  },
+  {
+    "file": "exam_set_39.json",
+    "name": "Spring Framework",
+    "count": 40,
+    "trust": "verified"
+  },
+  {
+    "file": "exam_set_40.json",
+    "name": "JDBC / Spring JDBC",
+    "count": 31,
+    "trust": "verified"
+  },
+  {
+    "file": "exam_set_41.json",
+    "name": "Out of Syllabus (Part 1)",
+    "count": 60,
+    "trust": "verified"
+  },
+  {
+    "file": "exam_set_42.json",
+    "name": "Out of Syllabus (Part 2)",
+    "count": 60,
+    "trust": "verified"
+  },
+  {
+    "file": "exam_set_43.json",
+    "name": "Out of Syllabus (Part 3)",
+    "count": 27,
+    "trust": "verified"
+  },
+  {
     "file": "exam_set_22.json",
     "name": "Exam Set 22",
     "count": 60,

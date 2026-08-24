@@ -1,0 +1,517 @@
+[
+  {
+    "id": "lqb_jdbc_spring__0001",
+    "topic": "JDBC / Spring JDBC",
+    "question": "When the message\"No suitable driver\" occurs?",
+    "options": [
+      "A. When the driver is not registered by Class.forname() method",
+      "B. When the user name, password and the database does not match",
+      "C. When the JDBC database URL passed is not constructed properly",
+      "D. When the type 4 driver is used."
+    ],
+    "answer_index": 2,
+    "explanation": "When JDBC throws 'No suitable driver', the most common cause is that the JDBC URL is not properly formatted. DriverManager iterates through registered drivers and calls acceptsURL() on each; none will accept a malformed URL. Always verify the URL format matches your database driver's specification (e.g., jdbc:mysql://host/db).",
+    "corrected": false,
+    "answer": "C. When the JDBC database URL passed is not constructed properly",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_jdbc_spring__0002",
+    "topic": "JDBC / Spring JDBC",
+    "question": "Which of the following is false as far as Type4 driver is concerned?",
+    "options": [
+      "C. Type 4 drivers uses Socket class to connect to the database.",
+      "D. Type 4 drivers can not be used with Netscape."
+    ],
+    "answer_index": 0,
+    "explanation": "Type 4 (thin/native-protocol) drivers are 100% Java and communicate directly with the database over a socket, so they CAN be used in any Java-capable environment including Netscape. The statement 'Type 4 drivers cannot be used with Netscape' is therefore false. Type 4 drivers actually have excellent portability because they require no client-side native libraries.",
+    "corrected": false,
+    "answer": "C. Type 4 drivers uses Socket class to connect to the database.",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_jdbc_spring__0003",
+    "topic": "JDBC / Spring JDBC",
+    "question": "Which statement is static and synchronized in JDBC API? a)executeQuery()",
+    "options": [
+      "B. executeUpdate()",
+      "C. getConnection()",
+      "D. prepareCall()"
+    ],
+    "answer_index": 2,
+    "explanation": "DriverManager.getConnection() is the method in the JDBC API that is both static and synchronized. Being static means it is called on the class itself rather than an instance, and being synchronized ensures thread-safe access to the list of registered drivers when establishing a connection.",
+    "corrected": false,
+    "answer": "D. prepareCall()",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_jdbc_spring__0004",
+    "topic": "JDBC / Spring JDBC",
+    "question": "What is the disadvantage of Type-4 Native Protocol Driver? a)At client side, a separate driver is needed for each database.",
+    "options": [
+      "B. Type-4 driver is entirely written in Java",
+      "C. The driver converts JDBC calls into vendor-specific database protocol",
+      "D. It does not support to read MySQL data."
+    ],
+    "answer_index": 0,
+    "explanation": "Note: this question has a parsing artifact where option (a) is embedded in the question text. The disadvantage of the Type-4 Native Protocol driver is that a separate, database-vendor-specific driver must be installed on the client side for each database being connected to. Options B and C are actually advantages of Type-4, not disadvantages.",
+    "corrected": false,
+    "answer": "B. Type-4 driver is entirely written in Java",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_jdbc_spring__0005",
+    "topic": "JDBC / Spring JDBC",
+    "question": "JDBC is a ..................... interface, which means that it is used to invoke SQL commands directly?",
+    "options": [
+      "A. low-level",
+      "B. middle-level",
+      "C. higher-level",
+      "D. user"
+    ],
+    "answer_index": 0,
+    "explanation": "JDBC is a low-level API that allows Java programs to send SQL commands directly to a relational database. Unlike higher-level frameworks such as JPA or Hibernate, JDBC operates close to the database and requires the developer to manage connections, statements, and result sets explicitly.",
+    "corrected": false,
+    "answer": "A. low-level",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_jdbc_spring__0006",
+    "topic": "JDBC / Spring JDBC",
+    "question": "Which JDBC driver Type(s) can be used in either applet or servlet code?",
+    "options": [
+      "A. Both Type 1 and Type 2",
+      "B. Both Type 1 and Type 3",
+      "C. Both Type 3 and Type 4",
+      "D. Type 4 only"
+    ],
+    "answer_index": 2,
+    "explanation": "Both Type 3 (network-protocol/middleware) and Type 4 (native-protocol/thin) drivers are written entirely in Java and require no platform-specific native libraries, making them suitable for use in applets and servlets. Type 1 and Type 2 drivers depend on native code and are therefore not safe for applet or servlet deployment.",
+    "corrected": false,
+    "answer": "C. Both Type 3 and Type 4",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_jdbc_spring__0007",
+    "topic": "JDBC / Spring JDBC",
+    "question": "Which JDBC driver Type(s) can you use in a three-tier architecture and if the Web server and the DBMS are running on the same machine?",
+    "options": [
+      "A. Type 1 only",
+      "B. Type 2 only",
+      "C. Both Type 3 and Type 4",
+      "D. All of Type 1, Type 2, Type 3 and Type 4"
+    ],
+    "answer_index": 3,
+    "explanation": "When the web server and DBMS run on the same machine in a three-tier architecture, all four driver types (Type 1 through Type 4) are usable, because the native libraries required by Types 1 and 2 can be installed locally. There is no restriction on driver choice in this co-located scenario.",
+    "corrected": false,
+    "answer": "D. All of Type 1, Type 2, Type 3 and Type 4",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_jdbc_spring__0008",
+    "topic": "JDBC / Spring JDBC",
+    "question": "ODBC is not appropriate for direct use from java because it uses a ..............",
+    "options": [
+      "A. C interface",
+      "B. C# interface",
+      "C. java interface",
+      "D. Both A and C"
+    ],
+    "answer_index": 0,
+    "explanation": "ODBC (Open Database Connectivity) is not appropriate for direct use from Java because its API is defined in C, not Java. Calling a C-based interface from Java requires JNI or a bridging layer, introducing complexity, portability problems, and potential security issues. JDBC was designed as a native Java alternative to ODBC.",
+    "corrected": false,
+    "answer": "A. C interface",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_jdbc_spring__0009",
+    "topic": "JDBC / Spring JDBC",
+    "question": "Which statements about JDBC are true?",
+    "options": [
+      "A. JDBC is an API to connect to relational-, object- and XML data sources",
+      "B. JDBC stands for Java DataBase Connectivity",
+      "C. JDBC is an API to access relational databases, spreadsheets and flat files",
+      "D. JDBC is an API to bridge the object-relational mismatch between OO programs and relational"
+    ],
+    "answer_index": 1,
+    "explanation": "The correct statement about JDBC is that 'JDBC stands for Java DataBase Connectivity'. JDBC is specifically designed for relational databases accessed via SQL; it is not a general-purpose connector for object stores or XML sources (those are addressed by other APIs), making options A, C, and D inaccurate descriptions.",
+    "corrected": false,
+    "answer": "B. JDBC stands for Java DataBase Connectivity",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_jdbc_spring__0010",
+    "topic": "JDBC / Spring JDBC",
+    "question": "Which type of driver converts JDBC calls into the network protocol used by the database management system directly?",
+    "options": [
+      "A. Type 1 driver",
+      "B. Type 2 driver",
+      "C. Type 3 driver",
+      "D. Type 4 driver"
+    ],
+    "answer_index": 3,
+    "explanation": "The Type 4 (thin/native-protocol) driver converts JDBC calls directly into the proprietary network protocol of the target DBMS without any intermediate translation layer. This gives it the best performance and is the most common driver type used in modern Java database applications.",
+    "corrected": false,
+    "answer": "D. Type 4 driver",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_jdbc_spring__0011",
+    "topic": "JDBC / Spring JDBC",
+    "question": "Which type of Statement can execute parameterized queries?",
+    "options": [
+      "A. PreparedStatement",
+      "B. ParameterizedStatement",
+      "C. ParameterizedStatement and CallableStatement",
+      "D. All kinds of Statements (i.e. which implement a sub interface of Statement)"
+    ],
+    "answer_index": 0,
+    "explanation": "PreparedStatement is the JDBC interface designed for executing parameterized (pre-compiled) SQL queries with placeholder parameters. It provides better performance through query plan caching and protects against SQL injection attacks. CallableStatement extends PreparedStatement for stored procedures, but a plain Statement cannot accept parameters.",
+    "corrected": false,
+    "answer": "A. PreparedStatement",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_jdbc_spring__0012",
+    "topic": "JDBC / Spring JDBC",
+    "question": "How can you retrieve information from a ResultSet?",
+    "options": [
+      "A. By invoking the method get(..., String type) on the ResultSet, where type is the database type",
+      "B. By invoking the method get(..., Type type) on the ResultSet,",
+      "C. By invoking the method getValue(...), and cast the result to the desired Java type.",
+      "D. By invoking the special getter methods on the ResultSet: getString(...), getBoolean (...),"
+    ],
+    "answer_index": 3,
+    "explanation": "Information is retrieved from a ResultSet using its type-specific getter methods such as getString(), getInt(), getBoolean(), getClob(), getDate(), etc. These methods accept either a column index (1-based) or a column name. There is no generic get(type) method on ResultSet.",
+    "corrected": false,
+    "answer": "D. By invoking the special getter methods on the ResultSet: getString(...), getBoolean (...),",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_jdbc_spring__0013",
+    "topic": "JDBC / Spring JDBC",
+    "question": "What statements are correct about JDBC transactions?",
+    "options": [
+      "A. A transaction is a set of successfully executed statements in the database",
+      "B. A transaction is finished when commit() or rollback() is called on the Connection object,",
+      "C. A transaction is finished when commit() or rollback() is called on the Transaction object",
+      "D. A transaction is finished when close() is called on the Connection object."
+    ],
+    "answer_index": 1,
+    "explanation": "A JDBC transaction is completed by calling either commit() or rollback() on the Connection object. When auto-commit is disabled (setAutoCommit(false)), all subsequent SQL statements form part of a transaction until one of these methods is called. The Transaction class does not exist in JDBC; close() does not commit.",
+    "corrected": false,
+    "answer": "B. A transaction is finished when commit() or rollback() is called on the Connection object,",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_jdbc_spring__0014",
+    "topic": "JDBC / Spring JDBC",
+    "question": "What happens if you call deleteRow() on a ResultSet object?",
+    "options": [
+      "A. The row you are positioned on is deleted from the ResultSet, but not from the database.",
+      "B. The row you are positioned on is deleted from the ResultSet and from the database.",
+      "D. You will get a compile error: the method does not exist because you can not delete rows from a"
+    ],
+    "answer_index": 1,
+    "explanation": "Calling deleteRow() on an updatable ResultSet deletes the current row both from the ResultSet cursor and from the underlying database table. This is a direct, immediate database operation — not merely a local, in-memory removal. The ResultSet must have been created with CONCUR_UPDATABLE concurrency.",
+    "corrected": false,
+    "answer": "B. The row you are positioned on is deleted from the ResultSet and from the database.",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_jdbc_spring__0015",
+    "topic": "JDBC / Spring JDBC",
+    "question": "The JDBC-ODBC Bridge supports multiple concurrent open statements per connection?",
+    "options": [
+      "A. True",
+      "B. False"
+    ],
+    "answer_index": 1,
+    "explanation": "The statement is False. The JDBC-ODBC Bridge (Type 1 driver) does NOT support multiple concurrent open statements per connection; it allows only one open Statement at a time per connection. This is one of its known limitations and a reason it has been deprecated and removed in later JDK versions.",
+    "corrected": false,
+    "answer": "B. False",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_jdbc_spring__0016",
+    "topic": "JDBC / Spring JDBC",
+    "question": "84. try { 85. ResourceConnection con = resourceFactory.getConnection(); 86. Results r = con.query(\"GET INFO FROM CUSTOMER\"); 87. info = r.getData(); 88. con.close(); 89. } catch (ResourceException re) {",
+    "options": [
+      "A. Line 92 will not execute.",
+      "B. The connection will not be retrieved in line 85.",
+      "C. The resource connection will not be closed on line 88.",
+      "D. The enclosing method will throw an exception to its caller"
+    ],
+    "answer_index": 2,
+    "explanation": "If a ResourceException is thrown at line 86 (the query call), execution jumps directly to the catch block on line 89. Because the close() call is on line 88 (inside the try block but after the exception point), it will never execute, leaving the connection open and causing a resource leak.",
+    "corrected": false,
+    "answer": "C. The resource connection will not be closed on line 88.",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_jdbc_spring__0017",
+    "topic": "JDBC / Spring JDBC",
+    "question": "Which packages contain the JDBC classes? a)java.jdbc and javax.jdbc b)java.jdbc and java.jdbc.sql",
+    "options": [
+      "C. java.sql and javax.sql",
+      "D. java.rdb and javax.rdb"
+    ],
+    "answer_index": 0,
+    "explanation": "The JDBC API is split across two packages: java.sql (the core package containing Connection, Statement, ResultSet, etc.) and javax.sql (the extension package adding DataSource, RowSet, and connection pooling). There is no java.jdbc or javax.jdbc package in the standard Java SE/EE library.",
+    "corrected": false,
+    "answer": "C. java.sql and javax.sql",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_jdbc_spring__0018",
+    "topic": "JDBC / Spring JDBC",
+    "question": "How can you execute DML statements (i.e. insert, delete, update) in the database?",
+    "options": [
+      "A. By making use of the InsertStatement, DeleteStatement or",
+      "B. By invoking the execute(...) or executeUpdate(...) method of a",
+      "C. By invoking the executeInsert(...), executeDelete(...) or",
+      "D. By making use of the execute(...) statement of the"
+    ],
+    "answer_index": 1,
+    "explanation": "DML statements (INSERT, UPDATE, DELETE) are executed using the execute() method or the executeUpdate() method on a Statement or PreparedStatement object. executeUpdate() returns an int indicating the number of rows affected. There are no separate InsertStatement or DeleteStatement classes in JDBC.",
+    "corrected": false,
+    "answer": "B. By invoking the execute(...) or executeUpdate(...) method of a",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_jdbc_spring__0019",
+    "topic": "JDBC / Spring JDBC",
+    "question": "What is, in terms of JDBC, a DataSource?",
+    "options": [
+      "A. A DataSource is the basic service for managing a set of JDBC drivers.",
+      "B. A DataSource is the Java representation of a physical data source.",
+      "C. A DataSource is a registry point for JNDI-services.",
+      "D. A DataSource is a factory of connections to a physical data source."
+    ],
+    "answer_index": 3,
+    "explanation": "A DataSource is a factory of connections to a physical data source. It is the preferred alternative to DriverManager because it supports connection pooling and distributed transactions. DataSource objects are typically configured by the application server or container and looked up via JNDI.",
+    "corrected": false,
+    "answer": "D. A DataSource is a factory of connections to a physical data source.",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_jdbc_spring__0020",
+    "topic": "JDBC / Spring JDBC",
+    "question": "What is correct about DDL statements (create, grant,...)",
+    "options": [
+      "A. DDL statements are treated as normal SQL statements, and are executed by calling the execute()",
+      "B. To execute DDL statements, you have to install additional support files",
+      "C. DDL statements can not be executed by making use of JDBC, you should use the native database",
+      "D. Support for DDL statements will be a feature of a future release of JDBC’"
+    ],
+    "answer_index": 0,
+    "explanation": "DDL statements such as CREATE TABLE, DROP TABLE, and GRANT are executed in JDBC by calling the execute() method on a Statement object — the same mechanism used for any SQL statement. No additional support files are needed; JDBC handles DDL through the standard Statement interface.",
+    "corrected": false,
+    "answer": "A. DDL statements are treated as normal SQL statements, and are executed by calling the execute()",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_jdbc_spring__0021",
+    "topic": "JDBC / Spring JDBC",
+    "question": "Which of the following allows non repeatable read in JDBC Connection?a a)TRANSACTION_READ_UNCOMMITTED",
+    "options": [
+      "B. TRANSACTION_READ_COMMITTED",
+      "C. TRANSACTION_SERIALIZABLE",
+      "D. TRANSACTION_REPEATABLE_READ"
+    ],
+    "answer_index": 1,
+    "explanation": "Note: option A (TRANSACTION_READ_UNCOMMITTED) is embedded in the question text due to a parsing artifact. TRANSACTION_READ_COMMITTED prevents dirty reads but still allows non-repeatable reads, because a second read of the same row within a transaction can see committed changes made by other transactions between the two reads.",
+    "corrected": false,
+    "answer": "C. TRANSACTION_SERIALIZABLE",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_jdbc_spring__0022",
+    "topic": "JDBC / Spring JDBC",
+    "question": "The class java.sql.Timestamp has its super class as?",
+    "options": [
+      "A. java.sql.Time",
+      "B. java.util.Date",
+      "C. java.util.Time",
+      "D. None of the above"
+    ],
+    "answer_index": 1,
+    "explanation": "java.sql.Timestamp extends java.util.Date to add nanosecond precision required for SQL TIMESTAMP values. It is NOT a subclass of java.sql.Time (which represents time-of-day only) or java.util.Time (which does not exist). The inheritance chain is java.util.Date -> java.sql.Timestamp.",
+    "corrected": false,
+    "answer": "B. java.util.Date",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_jdbc_spring__0023",
+    "topic": "JDBC / Spring JDBC",
+    "question": "Which type of driver provides JDBC (c) By invoking the executeInsert(...), access via one or more ODBC drivers? executeDelete(...) or executeUpdate(...)",
+    "options": [
+      "A. Type 1 driver methods of the",
+      "B. Type 2 driver DataModificationStatement object",
+      "C. Type 3 driver (d) By making use of the execute(...)",
+      "D. Type 4 driver statement of the"
+    ],
+    "answer_index": 3,
+    "explanation": "Type 4 (Native Protocol Pure Java) driver provides JDBC connectivity by converting JDBC calls directly into the database vendor's native network protocol. Option D ('Type 4 driver') is correct. Type 1 uses ODBC, Type 2 uses native libraries, and Type 3 uses a middleware server.",
+    "corrected": false,
+    "answer": "D. Type 4 driver statement of the",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_jdbc_spring__0024",
+    "topic": "JDBC / Spring JDBC",
+    "question": "Are ResultSets updateable? phantom reads are prevented",
+    "options": [
+      "A. Yes, but only if you call the method",
+      "B. Yes, but only if you indicate a ResultSets? (2",
+      "C. Yes, but only if the ResultSet is an in the current row of a ResultSet",
+      "D. No, ResultSets are never updateable. can use this approach to change the data"
+    ],
+    "answer_index": 1,
+    "explanation": "ResultSets are updatable only if you specify ResultSet.CONCUR_UPDATABLE as the concurrency mode when creating the Statement or PreparedStatement. Option B ('Yes, but only if you indicate CONCUR_UPDATABLE') is the correct condition for updateable ResultSets.",
+    "corrected": false,
+    "answer": "B. Yes, but only if you indicate a ResultSets? (2",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_jdbc_spring__0025",
+    "topic": "JDBC / Spring JDBC",
+    "question": "How can you execute a stored [a] To create a batch of insert and update procedure in the database? statements, you create an object of type",
+    "options": [
+      "A. Call method execute() on a Batch, and call the method",
+      "B. Call method executeProcedure() on a statement you want to execute in the",
+      "C. Call method execute() on a [b] Batch insert and updates are only",
+      "D. Call method run() on a parameterized queries."
+    ],
+    "answer_index": 2,
+    "explanation": "To execute a stored procedure in JDBC, you create a CallableStatement using connection.prepareCall() and then call execute() on it. Option C ('Call method execute() on a CallableStatement object') is correct. executeQuery() returns ResultSet, executeProcedure() and run() are not standard JDBC methods.",
+    "corrected": false,
+    "answer": "C. Call method execute() on a [b] Batch insert and updates are only",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_jdbc_spring__0026",
+    "topic": "JDBC / Spring JDBC",
+    "question": "What happens if you call the method Statement object for each statement you close() on a ResultSet object? want to execute in the batch",
+    "options": [
+      "A. the method close() does not exist for [d] To execute a batched update/insert,",
+      "B. the database and JDBC resources are",
+      "C. DDL statements can not be executed",
+      "D. the ResultSet, together with the calling the execute() method on a"
+    ],
+    "answer_index": 3,
+    "explanation": "Calling close() on a ResultSet closes the ResultSet itself along with any associated JDBC resources (database cursors, network connections). Option D describes this behavior. The underlying Statement and Connection are not automatically closed, but the ResultSet resources are released.",
+    "corrected": false,
+    "answer": "D. the ResultSet, together with the calling the execute() method on a",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_jdbc_spring__0027",
+    "topic": "JDBC / Spring JDBC",
+    "question": "Which driver is efficient and always 163. Which of the following statements is preferable for using JDBC applications? false as far as different type of statements a. Type â€“ 4 is concern in JDBC? b. Type â€“ 1",
+    "options": [
+      "A. Regular Statement c. Type â€“ 3",
+      "B. Prepared Statement d. Type â€“ 2",
+      "C. Callable Statement",
+      "D. Interim Statement 168. JDBC facilitates to store the java"
+    ],
+    "answer_index": 1,
+    "explanation": "PreparedStatement is the most efficient choice for repeated SQL queries because it is precompiled on the database server, allowing it to be executed multiple times with different parameters without re-parsing. Option B ('Prepared Statement') is correct over regular Statement.",
+    "corrected": false,
+    "answer": "B. Prepared Statement d. Type â€“ 2",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_jdbc_spring__0028",
+    "topic": "JDBC / Spring JDBC",
+    "question": "Which of the following methods are PreparedStatement needed for loading a database driver in setObject () 2. setBlob() 3. setClob() JDBC? a. 1, 2",
+    "options": [
+      "A. registerDriver() method b. 1,2,3",
+      "B. Class.forName() c. 1,3",
+      "C. Both A and B d. 2,3",
+      "D. getConnection()"
+    ],
+    "answer_index": 2,
+    "explanation": "Loading a JDBC driver requires either calling DriverManager.registerDriver() directly or using Class.forName() to load the driver class (which triggers static initialization and auto-registration). Both methods are needed/valid, making option C ('Both A and B') the correct answer.",
+    "corrected": false,
+    "answer": "C. Both A and B d. 2,3",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_jdbc_spring__0029",
+    "topic": "JDBC / Spring JDBC",
+    "question": "Which of the following methods c. executeUpdate() finds the maximum number of d. executeResult() connections that a specific driver can obtain? 180. What is the disadvantage of Type-4",
+    "options": [
+      "A. Database.getMaxConnections Native-Protocol Driver?",
+      "B. Connection.getMaxConnections a. At client side, a separate driver is",
+      "C. DatabaseMetaData.getMaxConnections needed for each database.",
+      "D. b. Type-4 driver is entirely written in Java"
+    ],
+    "answer_index": 2,
+    "explanation": "The method DatabaseMetaData.getMaxConnections() returns the maximum number of simultaneous connections that a specific database can support. Option C ('DatabaseMetaData.getMaxConnections') is correct. Database and Connection classes do not have a getMaxConnections() method.",
+    "corrected": false,
+    "answer": "C. DatabaseMetaData.getMaxConnections needed for each database.",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_jdbc_spring__0030",
+    "topic": "JDBC / Spring JDBC",
+    "question": "Are prepared statements actually d. It does not support to read MySQL compiled? data.",
+    "options": [
+      "A. Yes, they compiled",
+      "B. No, they are bound by the JDBC driver 181. import java.util.*;"
+    ],
+    "answer_index": 0,
+    "explanation": "PreparedStatements are indeed compiled (precompiled) on the database server when they are created. Option A ('Yes, they compiled') is correct. This precompilation is the key performance advantage of PreparedStatement over regular Statement for repeated query execution.",
+    "corrected": false,
+    "answer": "A. Yes, they compiled",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_jdbc_spring__0031",
+    "topic": "JDBC / Spring JDBC",
+    "question": "Which driver is called as thin-driver } in JDBC? }",
+    "options": [
+      "A. Type-4 driver }",
+      "B. Type-1 driver Answer:",
+      "C. Type-3 driver 100 John",
+      "D. Type-2 driver 101 Paul"
+    ],
+    "answer_index": 0,
+    "explanation": "Type 4 JDBC driver is commonly known as the 'thin driver' or 'native protocol pure Java driver' because it is a 100% Java implementation that communicates directly with the database using its native protocol. Option A ('Type-4 driver') is the correct answer.",
+    "corrected": false,
+    "answer": "A. Type-4 driver }",
+    "trust": "legit-source",
+    "in_syllabus": true
+  }
+]

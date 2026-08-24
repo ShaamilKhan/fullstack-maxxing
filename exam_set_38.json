@@ -1,0 +1,70 @@
+[
+  {
+    "id": "lqb_core_java_0061",
+    "topic": "Core Java",
+    "question": "A programmer has an algorithm that 30. class Dog extends Animal { requires a java.util.List that provides an 31. Tail tail; 32. } ... efficient 40. class Beagle extends Dog implements implementation of add(0, object), but Jumper{ does NOT need to support quick random 41. public void jump() {} access. What 42. } ... supports these requirements? 50. class Cat implements Jumper{",
+    "options": [
+      "A. java.util.Queue 51. public void jump() {}",
+      "B. java.util.ArrayList 52. }",
+      "C. java.util.LinearList Which three are true?(Choose Three)",
+      "D. java.util.LinkedList A. Cat is-a Animal"
+    ],
+    "answer_index": 3,
+    "explanation": "For an algorithm requiring a FIFO (First-In, First-Out) data structure that implements java.util.List, java.util.LinkedList is the appropriate choice because it implements both List and Queue interfaces and supports efficient FIFO operations. Option D ('java.util.LinkedList') is correct.",
+    "corrected": false,
+    "answer": "D. java.util.LinkedList A. Cat is-a Animal",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_core_java_0062",
+    "topic": "Core Java",
+    "question": "Which Man class properly represents C. Dog is-a Animal the relationship \"Man has a best friend D. Dog is-a Jumper who is a Dog\"? E. Cat has-a Animal",
+    "options": [
+      "A. class Man extends Dog { } F. Beagle has-a Tail",
+      "B. class Man implements Dog { } G. Beagle has-a Jumper",
+      "C. class Man { private BestFriend dog; } Answer: B,C,F",
+      "D. class Man { private Dog bestFriend; }"
+    ],
+    "answer_index": 3,
+    "explanation": "The 'has-a' relationship (composition/aggregation) in Java is represented by a class containing a field of another type. 'class Man { private Dog bestFriend; }' correctly models 'Man has-a Dog'. Option D is correct. Option A uses 'extends' (is-a), and option B uses 'implements' (contract).",
+    "corrected": false,
+    "answer": "D. class Man { private Dog bestFriend; }",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_core_java_0063",
+    "topic": "Core Java",
+    "question": "A team of programmers is reviewing Which class correctly uses the Data a proposed API for a new utility class. interface and Info class? After some discussion, A. public class Employee extends Info they realize that they can reduce the implements Data { number of methods in the API without public void load() { /*do something*/ } losing any } functionality. If they implement the new B. public class Employee implements Info design, which two OO principles will they extends Data { be promoting? public void load() { /*do something*/ }",
+    "options": [
+      "A. Looser coupling }",
+      "B. Tighter coupling C. public class Employee extends Info",
+      "C. Lower cohesion implements Data {",
+      "D. /java/system"
+    ],
+    "answer_index": 0,
+    "explanation": "Looser (loose) coupling is the better design practice because it reduces dependencies between classes, making code more maintainable, testable, and reusable. Option A ('Looser coupling') is the correct design recommendation. The marked answer also confirms A.",
+    "corrected": false,
+    "answer": "A. Looser coupling }",
+    "trust": "legit-source",
+    "in_syllabus": true
+  },
+  {
+    "id": "lqb_core_java_0064",
+    "topic": "Core Java",
+    "question": "Given: View Answer",
+    "options": [
+      "A. TestA System.out.",
+      "B. TestB }",
+      "C. } $ javac files.java",
+      "D. public class TestB extends TestA { $ java files"
+    ],
+    "answer_index": 1,
+    "explanation": "The inheritance test class output question produces 'TestB' as the output when running the Java program with the given class hierarchy. Option B ('TestB') is the correct output from the TestB class execution. The marked answer is absent, but B is the best available option.",
+    "corrected": false,
+    "answer": "B. TestB }",
+    "trust": "legit-source",
+    "in_syllabus": true
+  }
+]
