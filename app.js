@@ -627,6 +627,7 @@ const App = (() => {
     showScreen('quiz');
     renderNavPanel();
     renderQuestion();
+    saveSessionCache();
   }
 
   // ── Question Navigation Panel ─────────────────────────────
@@ -1123,8 +1124,8 @@ const App = (() => {
   // ── Navigation & Modal ────────────────────────────────────
   function confirmExit() { document.getElementById('exit-modal').style.display = 'flex'; }
   function cancelExit()  { document.getElementById('exit-modal').style.display = 'none'; }
-  function forceExit()   { document.getElementById('exit-modal').style.display = 'none'; clearTimeout(autoAdvanceTimeout); stopTimer(); clearSessionCache(); goHome(); }
-  function goHome()      { clearTimeout(autoAdvanceTimeout); stopTimer(); clearSessionCache(); showScreen('landing'); showMode('normal'); renderWeakBanner(); }
+  function forceExit()   { document.getElementById('exit-modal').style.display = 'none'; clearTimeout(autoAdvanceTimeout); stopTimer(); saveSessionCache(); goHome(); }
+  function goHome()      { clearTimeout(autoAdvanceTimeout); stopTimer(); showScreen('landing'); showMode('normal'); renderWeakBanner(); const saved = loadSessionCache(); if (saved) showResumeBanner(saved); }
 
   let suppressHistory = false;
 
@@ -1168,6 +1169,8 @@ const App = (() => {
     const saved = loadSessionCache();
     if (saved) showResumeBanner(saved);
   });
+
+  window.addEventListener('beforeunload', () => { saveSessionCache(); });
 
   return {
     showMode,
