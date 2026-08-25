@@ -405,12 +405,12 @@ select:focus { border-color: var(--brand); }
     </div>
   </div>
 
-  <!-- Mode tabs: Normal | Exam | Practice | Quarantine -->
+  <!-- Mode tabs: Normal | Exam | Practice | Practice Papers -->
   <div style="display:flex;gap:10px;margin-bottom:24px;flex-wrap:wrap">
     <button class="tab-btn active"   id="tab-normal"     onclick="App.showMode('normal')">📚 Normal Mode</button>
     <button class="tab-btn inactive" id="tab-exam"       onclick="App.showMode('exam')">⏱ Exam Mode</button>
     <button class="tab-btn inactive" id="tab-practice"   onclick="App.showMode('practice')">🎯 Practice Mode</button>
-    <button class="tab-btn inactive" id="tab-quarantine" onclick="App.showMode('quarantine')">🚧 Quarantine</button>
+    <a class="tab-btn inactive" href="practice_papers.html" style="text-decoration:none">📝 Practice Papers</a>
   </div>
 
   <!-- ── NORMAL PANEL ── -->
@@ -505,50 +505,6 @@ select:focus { border-color: var(--brand); }
     </div>
   </div>
 
-  <!-- ── QUARANTINE PANEL ── -->
-  <div id="panel-quarantine" style="display:none" class="anim-up">
-    <div style="background:rgba(251,191,36,.07);border:1px solid rgba(251,191,36,.28);border-radius:14px;padding:18px 22px;margin-bottom:22px">
-      <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px">
-        <span style="font-size:1.1rem">🚧</span>
-        <span style="font-size:.9rem;font-weight:700;color:#fbbf24">Quarantined Questions</span>
-      </div>
-      <p style="color:var(--muted);font-size:.84rem;line-height:1.6;margin:0">
-        Failed automated verification — excluded from all normal quizzes. Browse only here.
-      </p>
-    </div>
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;margin-bottom:22px">
-      <div class="card" style="padding:20px;border-color:rgba(16,185,129,.3)">
-        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:6px">
-          <span style="font-size:.72rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:#34d399">✓ Verified sources</span>
-          <span style="font-size:1.6rem;font-weight:800;color:#34d399" id="quar-verified-n">—</span>
-        </div>
-        <p style="font-size:.76rem;color:var(--muted);line-height:1.55;margin-bottom:14px">From your own material. Quarantined only because extraction damaged them.</p>
-        <button class="btn-primary" style="width:100%;justify-content:center" onclick="App.startQuarantineQuiz('verified')">Practice Verified ⚡</button>
-      </div>
-      <div class="card" style="padding:20px;border-color:rgba(251,191,36,.3)">
-        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:6px">
-          <span style="font-size:.72rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:#fbbf24">⚠ Unverified origin</span>
-          <span style="font-size:1.6rem;font-weight:800;color:#fbbf24" id="quar-unverified-n">—</span>
-        </div>
-        <p style="font-size:.76rem;color:var(--muted);line-height:1.55;margin-bottom:14px">Traced only to the anonymous IBM dump, or to no source at all.</p>
-        <button class="btn-primary" style="width:100%;justify-content:center;background:linear-gradient(135deg,#d97706,#fbbf24);border-color:transparent"
-                onclick="App.startQuarantineQuiz('unverified')">Practice Unverified ⚡</button>
-      </div>
-    </div>
-    <div style="display:flex;gap:8px;margin-bottom:14px;flex-wrap:wrap;align-items:center">
-      <button class="tab-btn active"   id="quar-view-all"        onclick="App.setQuarantineView('all')">All <span id="quar-n-all"></span></button>
-      <button class="tab-btn inactive" id="quar-view-verified"   onclick="App.setQuarantineView('verified')">Verified</button>
-      <button class="tab-btn inactive" id="quar-view-unverified" onclick="App.setQuarantineView('unverified')">Unverified</button>
-      <input type="text" id="quar-filter" placeholder="Filter by text or topic…"
-             oninput="App.renderQuarantineList()"
-             style="flex:1;min-width:200px;background:var(--surface2);border:1.5px solid var(--border);
-                    border-radius:8px;padding:10px 14px;color:var(--text);font-family:inherit;
-                    font-size:.86rem;outline:none;transition:border-color .15s"
-             onfocus="this.style.borderColor='var(--brand)'"
-             onblur="this.style.borderColor='var(--border)'"/>
-    </div>
-    <div id="quar-list"></div>
-  </div>
 
 </div>
 </div>

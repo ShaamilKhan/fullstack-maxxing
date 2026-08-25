@@ -38,7 +38,7 @@ const App = (() => {
   let currentIdx      = 0;
   let score           = 0;
   let answered        = 0;
-  let mode            = 'normal';   // 'normal' | 'exam' | 'practice' | 'quarantine'
+  let mode            = 'normal';   // 'normal' | 'exam' | 'practice'
   let sessionSetInfo  = null;
   let topicStats      = {};
   let sliderLock      = false;
@@ -289,7 +289,7 @@ const App = (() => {
       </div>`;
       return;
     }
-    const totalQ = manifest.reduce((s, x) => s + x.count, 0);
+    const totalQ = manifest.reduce((s, x) => s + x.count, 0) + 329;
     document.getElementById('stat-total').textContent = totalQ.toLocaleString();
     document.getElementById('stat-sets').textContent  = manifest.length;
     buildSetGrid();
@@ -309,10 +309,12 @@ const App = (() => {
     document.getElementById('stat-topics').textContent = topics;
     const blurb = document.getElementById('landing-blurb');
     if (blurb) {
+      const practiceExtra = 329;
+      const grandTotal = allQuestions.length + practiceExtra;
       blurb.textContent =
-        `${allQuestions.length.toLocaleString()} questions across ${topics} topics — ` +
-        `${verified.toLocaleString()} traced to verified sources, ` +
-        `${(allQuestions.length - verified).toLocaleString()} of unverified origin.`;
+        `${grandTotal.toLocaleString()} questions across ${topics}+ topics — ` +
+        `${allQuestions.length.toLocaleString()} in the quiz bank, ` +
+        `${practiceExtra} more in Practice Papers.`;
     }
   }
 
@@ -415,192 +417,13 @@ const App = (() => {
   // ── Mode tabs ─────────────────────────────────────────────
   function showMode(m) {
     mode = m;
-    ['normal', 'exam', 'practice', 'quarantine'].forEach(k => {
+    ['normal', 'exam', 'practice'].forEach(k => {
       const panel = document.getElementById('panel-' + k);
       const tab   = document.getElementById('tab-' + k);
       if (panel) panel.style.display = (m === k) ? 'block' : 'none';
       if (tab)   tab.className = 'tab-btn ' + (m === k ? 'active' : 'inactive');
     });
-    if (m === 'quarantine') loadQuarantine();
-    if (m === 'exam')       loadExamManifest();
-  }
-
-  // ── Quarantine ────────────────────────────────────────────
-  let quarantineQs = null;
-  let quarView     = 'all';
-  const isVerifiedQ = q => q.trust === 'baseline' || q.trust === 'legit-source';
-
-  function quarPool(kind) {
-    if (!quarantineQs) return [];
-    if (kind === 'verified')   return quarantineQs.filter(isVerifiedQ);
-    if (kind === 'unverified') return quarantineQs.filter(q => !isVerifiedQ(q));
-    return quarantineQs;
-  }
-
-  async function loadQuarantine() {
-    if (quarantineQs) return;
-    const listEl = document.getElementById('quar-list');
-    listEl.innerHTML = `<p style="color:var(--muted);font-size:.86rem">Loading…</p>`;
-    try {
-      const r = await fetch('quarantine.json');
-      if (!r.ok) throw new Error('not found');
-      quarantineQs = await r.json();
-    } catch(e) {
-      quarantineQs = [];
-      listEl.innerHTML = `<p style="color:var(--muted);font-size:.86rem">No quarantine.json yet.</p>`;
-      return;
-    }
-    const nVer = quarPool('verified').length;
-    const nUnv = quarPool('unverified').length;
-    document.getElementById('quar-verified-n').textContent   = nVer;
-    document.getElementById('quar-unverified-n').textContent = nUnv;
-    document.getElementById('quar-n-all').textContent        = `(${quarantineQs.length})`;
-    document.getElementById('quar-view-verified').textContent   = `Verified (${nVer})`;
-    document.getElementById('quar-view-unverified').textContent = `Unverified (${nUnv})`;
-    renderQuarantineList();
-  }
-
-  function setQuarantineView(v) {
-    quarView = v;
-    ['all', 'verified', 'unverified'].forEach(k => {
-      const b = document.getElementById('quar-view-' + k);
-      if (b) b.className = 'tab-btn ' + (k === v ? 'active' : 'inactive');
-    });
-    renderQuarantineList();
-  }
-
-  function renderQuarantineList() {
-    if (!quarantineQs) return;
-    const listEl = document.getElementById('quar-list');
-    const term   = (document.getElementById('quar-filter').value || '').toLowerCase().trim();
-    const base   = quarPool(quarView);
-    const rows   = term ? base.filter(q =>
-      (q.question || '').toLowerCase().includes(term) ||
-      (q.topic || '').toLowerCase().includes(term)) : base;
-
-    if (!rows.length) { listEl.innerHTML = `<p style="color:var(--muted);font-size:.86rem">No matches.</p>`; return; }
-    listEl.innerHTML = '';
-    rows.slice(0, 300).forEach(q => {
-      const card = document.createElement('div');
-      card.className = 'card';
-      card.style.cssText = 'padding:16px 18px;margin-bottom:10px';
-
-      const head = document.createElement('div');
-      head.style.cssText = 'display:flex;justify-content:space-between;gap:10px;margin-bottom:8px;flex-wrap:wrap';
-      const topic = document.createElement('span');
-      topic.style.cssText = 'font-size:.7rem;font-weight:700;color:#a78bfa;text-transform:uppercase;letter-spacing:.05em';
-      topic.textContent = q.topic || 'General';
-      const badges = document.createElement('span');
-      badges.style.cssText = 'display:flex;gap:6px;flex-wrap:wrap';
-
-      const ver = isVerifiedQ(q);
-      const tb  = document.createElement('span');
-      tb.style.cssText = `font-size:.64rem;font-weight:700;padding:2px 8px;border-radius:20px;
-        background:${ver ? 'rgba(16,185,129,.14)' : 'rgba(251,191,36,.14)'};
-        border:1px solid ${ver ? 'rgba(16,185,129,.4)' : 'rgba(251,191,36,.4)'};
-        color:${ver ? '#34d399' : '#fbbf24'}`;
-      tb.textContent = ver ? '✓ VERIFIED' : '⚠ UNVERIFIED';
-      badges.appendChild(tb);
-
-      const isMis  = (q.quarantine_reason || '').startsWith('MISMATCHED');
-      const badge2 = document.createElement('span');
-      badge2.style.cssText = `font-size:.64rem;font-weight:700;padding:2px 8px;border-radius:20px;
-        background:${isMis ? 'rgba(248,113,113,.15)' : 'rgba(139,92,246,.15)'};
-        border:1px solid ${isMis ? 'rgba(248,113,113,.4)' : 'rgba(139,92,246,.4)'};
-        color:${isMis ? '#f87171' : '#a78bfa'}`;
-      badge2.textContent = isMis ? 'WRONG OPTIONS' : 'MISSING CONTENT';
-      badges.appendChild(badge2);
-      head.appendChild(topic); head.appendChild(badges);
-      card.appendChild(head);
-
-      const stem = document.createElement('div');
-      stem.style.cssText = 'font-size:.9rem;font-weight:600;margin-bottom:8px;line-height:1.5;white-space:pre-wrap';
-      stem.textContent = (q.question || '').replace(/\[\/?CODE\]/g, '').trim();
-      card.appendChild(stem);
-
-      const optRows = (q.options || []).map((o, i) => {
-        const row = document.createElement('div');
-        row.style.cssText = 'font-size:.82rem;padding:3px 0;color:var(--muted);font-weight:400';
-        row.textContent = '    ' + o;
-        card.appendChild(row);
-        return row;
-      });
-
-      const revealWrap = document.createElement('div');
-      revealWrap.style.cssText = 'margin-top:12px';
-      const revealBtn = document.createElement('button');
-      revealBtn.type = 'button';
-      revealBtn.style.cssText =
-        'background:rgba(16,185,129,.12);border:1px solid rgba(16,185,129,.38);color:#34d399;' +
-        'padding:6px 14px;border-radius:8px;font-size:.75rem;font-weight:700;cursor:pointer;' +
-        'font-family:inherit;transition:background .18s ease';
-      revealBtn.textContent = '👁 Reveal answer';
-      revealBtn.onmouseover = () => revealBtn.style.background = 'rgba(16,185,129,.24)';
-      revealBtn.onmouseout  = () => revealBtn.style.background = 'rgba(16,185,129,.12)';
-
-      const answerBox = document.createElement('div');
-      answerBox.style.cssText = 'display:none;margin-top:10px';
-
-      let revealed = false;
-      revealBtn.addEventListener('click', () => {
-        revealed = !revealed;
-        if (revealed) {
-          const ai = q.answer_index;
-          optRows.forEach((row, i) => {
-            const ok = i === ai;
-            row.style.color      = ok ? '#34d399' : 'var(--muted)';
-            row.style.fontWeight = ok ? '700' : '400';
-            row.textContent = (ok ? '✓ ' : '    ') + (q.options[i] || '');
-          });
-          answerBox.innerHTML = '';
-          if (q.explanation) {
-            const exp = document.createElement('div');
-            exp.style.cssText = 'font-size:.78rem;color:var(--text);line-height:1.55;' +
-              'background:var(--surface2);border:1px solid var(--border);border-radius:8px;padding:10px 12px';
-            exp.textContent = q.explanation;
-            answerBox.appendChild(exp);
-          }
-          answerBox.style.display = 'block';
-          revealBtn.textContent = '🙈 Hide answer';
-        } else {
-          optRows.forEach((row, i) => {
-            row.style.color      = 'var(--muted)';
-            row.style.fontWeight = '400';
-            row.textContent = '    ' + (q.options[i] || '');
-          });
-          answerBox.style.display = 'none';
-          revealBtn.textContent = '👁 Reveal answer';
-        }
-      });
-      revealWrap.appendChild(revealBtn);
-      card.appendChild(revealWrap);
-      card.appendChild(answerBox);
-
-      if (q.quarantine_reason) {
-        const why = document.createElement('div');
-        why.style.cssText = 'margin-top:10px;font-size:.75rem;color:#fbbf24;font-style:italic';
-        why.textContent = '⚠ ' + q.quarantine_reason;
-        card.appendChild(why);
-      }
-      listEl.appendChild(card);
-    });
-    if (rows.length > 300) {
-      const more = document.createElement('p');
-      more.style.cssText = 'color:var(--muted);font-size:.8rem;margin-top:10px';
-      more.textContent = `Showing first 300 of ${rows.length}. Use the filter to narrow.`;
-      listEl.appendChild(more);
-    }
-  }
-
-  async function startQuarantineQuiz(kind) {
-    await loadQuarantine();
-    const pool = quarPool(kind || 'all');
-    if (!pool.length) { alert('No quarantined questions in that pool.'); return; }
-    const label = kind === 'verified'   ? 'Quarantine · Verified'
-                : kind === 'unverified' ? 'Quarantine · Unverified'
-                : 'Quarantine';
-    sessionSetInfo = { file: 'quarantine.json', name: label, mode: 'practice' };
-    beginQuiz(shuffle(pool.slice()), 'practice', label);
+    if (m === 'exam') loadExamManifest();
   }
 
   // ── Practice Setup ────────────────────────────────────────
@@ -1355,7 +1178,6 @@ const App = (() => {
     confirmExit, cancelExit, forceExit,
     drillWeakSpots, resetStats,
     toggleTimerConfig,
-    startQuarantineQuiz, renderQuarantineList, setQuarantineView,
     resumeSession, dismissResume,
   };
 })();
